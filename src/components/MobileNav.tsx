@@ -7,12 +7,12 @@ const MobileNav = () => {
                 <span className="text-xs">Booklet</span>
             </Link>
 
-            <Link to="/mission">
-                <span className="text-xs">Mission</span>
+            <Link to="/M001">
+                <span className="text-xs">Mr. Johnson</span>
             </Link>
 
             <Link to="/T001">
-                <span className="text-xs">Town</span>
+                <span className="text-xs">NeonHollow</span>
             </Link>
 
             <Link to="/C001">
