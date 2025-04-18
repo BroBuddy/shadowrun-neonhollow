@@ -1,6 +1,7 @@
 import Select from 'react-select'
 import { useEffect, useState } from 'react'
 import { Characters as CharactersData } from '@/data/characters'
+import { Town as TownData } from '@/data/town'
 import Card from './Card'
 import { Outlet, useNavigate, useParams } from 'react-router-dom'
 import { TagItem, TagOption } from '@/lib/types'
@@ -8,8 +9,16 @@ import { customStyles } from '@/lib/data'
 
 const groupedOptions = [
     {
-        label: 'Rules',
+        label: 'Character',
         options: CharactersData.map(({ content, ...item }) => item).map(
+            ({ id, title }) => {
+                return { value: id, label: `${id}: ${title}` }
+            }
+        ),
+    },
+    {
+        label: 'Town',
+        options: TownData.map(({ content, ...item }) => item).map(
             ({ id, title }) => {
                 return { value: id, label: `${id}: ${title}` }
             }
@@ -22,7 +31,7 @@ const Booklet = () => {
     const navigate = useNavigate()
     const [_, setActiveTag] = useState<TagItem | null>(null)
     const [selectedTag, setSelectedTag] = useState<TagOption | null>(null)
-    const dataSet = CharactersData
+    const dataSet = CharactersData.concat(TownData)
 
     const setTagsBySelection = (tagId: string) => {
         const activeTag = dataSet.find((item: TagItem) => item.id === tagId)

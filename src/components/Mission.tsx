@@ -18,7 +18,7 @@ const Mission = () => {
                     wants something done off the books... and you’re the asset.
                 </p>
                 <p>
-                    <strong>Mission from Mr. Johnson:</strong>
+                    <strong>Missions from Mr. Johnson:</strong>
                 </p>
                 <ul>
                     <li>

@@ -11,7 +11,7 @@ const MobileNav = () => {
                 <span className="text-xs">Mission</span>
             </Link>
 
-            <Link to="/town">
+            <Link to="/T001">
                 <span className="text-xs">Town</span>
             </Link>
 

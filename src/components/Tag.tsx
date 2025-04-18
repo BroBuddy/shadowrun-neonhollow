@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom'
 import { Characters as CharactersData } from '@/data/characters'
+import { Town as TownData } from '@/data/town'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable, rulesRegex } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
@@ -10,7 +11,7 @@ const Tag = () => {
     const tagsInRow = 7
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [linkTags, setLinkTags] = useState<string[]>([])
-    const dataSet = CharactersData
+    const dataSet = CharactersData.concat(TownData)
     const transformedContent = makeUrlsClickable(activeTag?.content)
 
     useEffect(() => {
