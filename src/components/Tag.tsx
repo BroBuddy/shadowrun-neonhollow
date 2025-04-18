@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { Characters as CharactersData } from '@/data/character'
+import { Characters as CharactersData } from '@/data/characters'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
