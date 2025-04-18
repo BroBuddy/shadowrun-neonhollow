@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { Characters as CharactersData } from '@/data/characters'
 import { useEffect, useState } from 'react'
-import { makeUrlsClickable } from '@/lib/helper'
+import { makeUrlsClickable, rulesRegex } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
 import Card from './Card'
 
@@ -14,7 +14,6 @@ const Tag = () => {
     const transformedContent = makeUrlsClickable(activeTag?.content)
 
     useEffect(() => {
-        const rulesRegex = /[ER]\d{3}[A-Z]?/g
         const findTags = activeTag?.content.match(rulesRegex)
         const uniqueTags = [...new Set(findTags)]
         setLinkTags(uniqueTags)
