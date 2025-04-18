@@ -157,7 +157,7 @@ export const Characters = [
         title: 'Name',
         content:
             '<p>Each class has its own name pool.</p>' +
-            '<ul><li>(C041) Street Samurai</li><li>(C042) Decker</li><li>(C043) Decker</li><li>(C044) Mage</li><li>(C045) Face</li><li>(C046) Shaman</li></ul>',
+            '<ul><li>(C041) Street Samurai</li><li>(C042) Decker</li><li>(C043) Rigger</li><li>(C044) Mage</li><li>(C045) Face</li><li>(C046) Shaman</li></ul>',
     },
     {
         id: 'C041',
