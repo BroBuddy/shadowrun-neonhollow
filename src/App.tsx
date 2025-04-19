@@ -12,7 +12,9 @@ function App() {
 
     return (
         <>
-            <h1 className="logo">NeonHollow</h1>
+            <div className="mt-3 justify-items-center">
+                <img src="/images/Logo.png" alt="Logo" />
+            </div>
             <Outlet />
             <MobileNav />
         </>

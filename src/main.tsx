@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const Tag = React.lazy(() => import('./components/Tag'))
 const Booklet = React.lazy(() => import('./components/Booklet'))
-const Mission = React.lazy(() => import('./components/Mission'))
 
 const router = createBrowserRouter([
     {
@@ -29,14 +28,6 @@ const router = createBrowserRouter([
                         ),
                     },
                 ],
-            },
-            {
-                path: '/mission',
-                element: (
-                    <React.Suspense fallback={<>...</>}>
-                        <Mission />
-                    </React.Suspense>
-                ),
             },
         ],
     },

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     --black-1: #000;
     --black-2: #000;
     --white-1: #fff;
@@ -21,8 +20,8 @@
 }
 
 body {
-    background-color: var(--turquoise-1);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--black-1);
+    font-family: 'Exo 2', sans-serif;
     font-size: 12px;
     color: var(--white-2);
     padding-bottom: 30px;
@@ -76,8 +75,8 @@ a {
     color: var(--turquoise-1);
 }
 
-img {
-    border-radius: 10px;
+section img {
+    border-radius: 5px;
 }
 
 table tr th {
@@ -86,16 +85,6 @@ table tr th {
 
 table tr td {
     padding: 4px;
-}
-
-.logo {
-    color: var(--turquoise-2);
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 0;
-    margin-bottom: -22px;
-    text-align: center;
 }
 
 .mobile-nav {
@@ -110,7 +99,10 @@ table tr td {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 20px;
-    border-top: 5px solid var(--white-1);
+    border-top: 3px solid var(--turquoise-1);
+    -webkit-box-shadow: 0 0 20px 15px var(--turquoise-1);
+    -moz-box-shadow: 0 0 20px 15px var(--turquoise-1);
+    box-shadow: 0 0 20px 15px var(--turquoise-1);
 }
 
 .mobile-nav > a {

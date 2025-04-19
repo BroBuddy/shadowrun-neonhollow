@@ -3,26 +3,28 @@ import { TagSheet } from './types'
 const customStyles = {
     input: (base: any) => ({
         ...base,
-        color: '#d00',
+        color: 'var(--violet-1)',
     }),
     control: (base: any) => ({
         ...base,
-        backgroundColor: '#1e1e1e',
+        backgroundColor: 'var(--black-1)',
+        borderColor: 'var(--violet-1)',
+        borderWidth: '2px',
     }),
     menu: (base: any) => ({
         ...base,
-        backgroundColor: '#2a2a2a',
-        color: '#fff',
+        backgroundColor: 'var(--black-1)',
+        color: 'var(--violet-1)',
     }),
     option: (base: any, state: any) => ({
         ...base,
         backgroundColor: state.isFocused ? '#444' : '#2a2a2a',
-        color: '#fff',
+        color: 'var(--turquoise-1)',
         cursor: 'pointer',
     }),
     singleValue: (base: any) => ({
         ...base,
-        color: '#fff',
+        color: 'var(--turquoise-1)',
     }),
 }
 

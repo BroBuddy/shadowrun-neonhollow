@@ -62,7 +62,7 @@ const Booklet = () => {
     }, [tagId])
 
     return (
-        <section className="flex flex-col py-2 w-full">
+        <section className="flex flex-col w-full">
             <Card>
                 <Select
                     value={selectedTag}
