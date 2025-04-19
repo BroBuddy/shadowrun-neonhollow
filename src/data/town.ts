@@ -117,7 +117,8 @@ export const Town = [
             '<li>9-11: <strong>Small Talk Sync</strong> – You chat with a few fellow runners. Nothing major, but you get a feel for who`s around.<ul><li>+1 Intel</li></ul></li>' +
             '<li>12-14: <strong>Shared War Stories</strong> – A runner opens up about a recent job. You walk away with useful info.<ul><li>+2 Intel</li></ul></li>' +
             '<li>15+: <strong>Formed Connection</strong> – You hit it off with a skilled runner. They might help you next time.<ul><li>+2 Intel, +1 random Runner</li></ul></li>' +
-            '</ul>',
+            '</ul>' +
+            '<p>When rolling for a random runner, refer to the runner matrix for guidance (N001).</p>',
     },
     {
         id: 'T040',
@@ -200,7 +201,23 @@ export const Town = [
         content:
             '<p>Choose one of your physical attributes:</p>' +
             '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>' +
-            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>',
+            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
+            '<ol><li><strong>Size up your opponent.</strong> Compare your chosen attribute with theirs to determine your edge.</li>' +
+            '<li><strong>Feel the adrenaline.</strong> Add or subtract the difference to your 2d6 roll.</li>' +
+            '<li><strong>Face the outcome.</strong> Consult the challenge result (T063) to see if you walk away stronger — or bruised.</li></ol>',
+    },
+    {
+        id: 'T063',
+        title: 'IronGym: Result',
+        content:
+            '<p>Once the sweat dries and the dust settles, it’s time to see what you gained — or lost.</p>' +
+            '<ul>' +
+            '<li>2-3: <strong>Crushed</strong> – You were completely outmatched — maybe stick to cardio.<ul><li>-1 Health, -1 Reputation</li></ul></li>' +
+            '<li>4-5: <strong>Outperformed</strong> – You gave it your all, but your opponent had the upper hand.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>6-8: <strong>Even Match</strong> – Neither of you gained the upper hand — this one’s a draw.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-10: <strong>Dominant</strong> – You held your ground and impressed everyone watching.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>11-12: <strong>Flawless Victory</strong> – You completely outshined your opponent — respect earned.<ul><li>+1.000 ¥, +1 Reputation</li></ul></li>' +
+            '</ul>',
     },
     {
         id: 'T070',
@@ -234,7 +251,23 @@ export const Town = [
         content:
             '<p>Choose one of your mental attributes:</p>' +
             '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>' +
-            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>',
+            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
+            '<ol><li><strong>Scan their psyche.</strong> Compare your chosen attribute with your opponent’s to gauge mental strength.</li>' +
+            '<li><strong>Process the data.</strong> Add or subtract the difference to your 2d6 roll.</li>' +
+            '<li><strong>Interpret the result.</strong> Consult the challenge result (T073) to uncover your gains — or losses.</li></ol>',
+    },
+    {
+        id: 'T073',
+        title: 'NeuralNexus: Result',
+        content:
+            '<p>When the last thought echoes and digital sparks fade, your mind’s resilience speaks louder than words.</p>' +
+            '<ul>' +
+            '<li>2-3: <strong>System Crash</strong> – Your mind failed under pressure — embarrassing.<ul><li>-1 Health, -1 Reputation</li></ul></li>' +
+            '<li>4-5: <strong>Lagging Response</strong> – You kept up, but just barely — room for improvement.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>6-8: <strong>Cognitive Deadlock</strong> – An even match — neither side gained the edge.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-10: <strong>Synaptic Precision</strong> – You processed faster, reacted smarter — nicely done.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>11-12: <strong>Neural Mastery</strong> – Your opponent never stood a chance — flawless execution.<ul><li>+1.000 ¥, +1 Reputation</li></ul></li>' +
+            '</ul>',
     },
     {
         id: 'T080',
