@@ -7,7 +7,8 @@ export const Town = [
             '<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>' +
             '<p><strong>NeonHollow</strong> is a fractured sprawl of flickering holo-ads, decaying arcologies, and back-alley deals. The corporations rule from mirrored towers, the gangs own the ground, and the rest just try to survive in the haze of smog and digital noise. Nothing here is clean—least of all your conscience.</p>' +
             '<p><strong>Facilities in NeonHollow:</strong></p>' +
-            '<ul><li>BioCare (T010)</li><li>CyberBite (T020)</li><li>DreamSphere (T030)</li><li>EchoGarden (T040)</li><li>HoloLounge (T050)</li><li>IronGym (T060)</li><li>NeuralNexus (T070)</li><li>PatrolHub (T080)</li><li>SmugglerDen (T090)</li></ul>',
+            '<ul><li>BioCare (T010)</li><li>CyberBite (T020)</li><li>DreamSphere (T030)</li><li>EchoGarden (T040)</li><li>HoloLounge (T050)</li><li>IronGym (T060)</li><li>NeuralNexus (T070)</li><li>PatrolHub (T080)</li><li>SmugglerDen (T090)</li></ul>' +
+            '<p>After each town action, you step back into the chaotic streets of Neonhollow. Roll on the Event Matrix (E001) to see what happens next in this neon-lit maze.</p>',
     },
     {
         id: 'T010',
@@ -156,7 +157,8 @@ export const Town = [
         id: 'T052',
         title: 'HoloLounge: Hiring',
         content:
-            '<p>To hire a runner for your team, you must have at least 50.000 ¥ available.</p>' +
+            '<p>Roll on the Runner Matrix (N001) to find out who`s available to be hired.</p>' +
+            '<p>To hire this runner for your team, you must have at least 50.000 ¥ available.</p>' +
             '<p>Add your <strong>Charisma</strong> value to the 2d6 roll to haggle with the runner for lower payment.</p>' +
             '<ul>' +
             '<li>2-5: <strong>Overpriced Hire</strong> – You’ve hired a runner, but it’s going to cost you dearly.<ul><li>-50.000 ¥, +1 random Runner</li></ul></li>' +
@@ -197,7 +199,8 @@ export const Town = [
         title: 'IronGym: Challenge',
         content:
             '<p>Choose one of your physical attributes:</p>' +
-            '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>',
+            '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>' +
+            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>',
     },
     {
         id: 'T070',
@@ -230,7 +233,8 @@ export const Town = [
         title: 'NeuralNexus: Challenge',
         content:
             '<p>Choose one of your mental attributes:</p>' +
-            '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>',
+            '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>' +
+            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>',
     },
     {
         id: 'T080',
@@ -248,11 +252,11 @@ export const Town = [
         content:
             '<p>Slip 10,000 ¥ to a crooked cop — if you`re lucky, the heat cools off... for now.</p>' +
             '<ul>' +
-            '<li>2-5: <strong>Blowback</strong> – The payoff is rejected, and your actions raise suspicion.<ul><li>+1 Heat, -1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Indifference</strong> – The authorities are too busy or unconvinced.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Partial Success</strong> – Some of the heat dies down, but it’s still warm out there.<ul><li>-1 Heat</li></ul></li>' +
-            '<li>12-14: <strong>Bribe Accepted</strong> – The right hand gets greased, and the heat backs off noticeably.<ul><li>-2 Heat</li></ul></li>' +
-            '<li>15+: <strong>Clean Slate</strong> – Your generosity and connections buy you peace—for now.<ul><li>-3 Heat, +1 Reputation</li></ul></li>' +
+            '<li>2-3: <strong>Blowback</strong> – The payoff is rejected, and your actions raise suspicion.<ul><li>+1 Heat, -1 Energy</li></ul></li>' +
+            '<li>4-5: <strong>Indifference</strong> – The authorities are too busy or unconvinced.<ul><li>No Effect</li></ul></li>' +
+            '<li>6-8: <strong>Partial Success</strong> – Some of the heat dies down, but it’s still warm out there.<ul><li>-1 Heat</li></ul></li>' +
+            '<li>9-10: <strong>Bribe Accepted</strong> – The right hand gets greased, and the heat backs off noticeably.<ul><li>-2 Heat</li></ul></li>' +
+            '<li>11-12: <strong>Clean Slate</strong> – Your generosity and connections buy you peace—for now.<ul><li>-3 Heat, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {

@@ -2,8 +2,8 @@ import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable, rulesRegex } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
-import { dataSet } from './Booklet'
 import Card from './Card'
+import { Data } from '@/data/data'
 
 const Tag = () => {
     const { tagId } = useParams()
@@ -19,7 +19,7 @@ const Tag = () => {
     }, [activeTag?.content])
 
     useEffect(() => {
-        const findTag = dataSet.find((item: TagItem) => item.id === tagId)
+        const findTag = Data.find((item: TagItem) => item.id === tagId)
         setActiveTag(findTag as TagItem)
     }, [tagId])
 
