@@ -2,12 +2,12 @@ import { Link, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable, rulesRegex } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
-import Card from './Card'
 import { dataSet } from './Booklet'
+import Card from './Card'
 
 const Tag = () => {
     const { tagId } = useParams()
-    const tagsInRow = 7
+    const tagsInRow = 6
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const [linkTags, setLinkTags] = useState<string[]>([])
     const transformedContent = makeUrlsClickable(activeTag?.content)

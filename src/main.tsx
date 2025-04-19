@@ -33,8 +33,15 @@ const router = createBrowserRouter([
     },
 ])
 
-createRoot(document.getElementById('root')!).render(
-    <StrictMode>
-        <RouterProvider router={router} />
-    </StrictMode>
-)
+const container = document.getElementById('root') as HTMLElement & {
+    _reactRootContainer?: unknown
+}
+
+if (!container._reactRootContainer) {
+    const root = createRoot(container)
+    root.render(
+        <StrictMode>
+            <RouterProvider router={router} />
+        </StrictMode>
+    )
+}

@@ -172,9 +172,32 @@ export const Town = [
         content:
             '<p><em>"Muscle isn`t old-school—it`s survival."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>' +
-            '<p>Rusty weights and bloodied mats where bodies are forged and limits shattered.</p>' +
+            '<p>At IronGym, you can enhance your physical attributes through training or pit them against other runners in a challenging showdown.</p>' +
             '<p><strong>Actions at IronGym:</strong></p>' +
-            '<ul><li>Weightlifting (+ Strength)</li><li>Acrobatics (+ Agility)</li><li>Speed Drills (+ Reaction)</li></ul>',
+            '<ul><li>Training (T061)</li><li>Challenge (T062)</li></ul>',
+    },
+    {
+        id: 'T061',
+        title: 'IronGym: Training',
+        content:
+            '<p>Choose one of your physical attributes:</p>' +
+            '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>' +
+            '<p>The training session costs you 10,000 ¥ multiplied by your current attribute value.</p>' +
+            '<p>Roll 2d6 to determine the effectiveness of your training:</p>' +
+            '<ul>' +
+            '<li>2-3: <strong>Injury</strong> – You overexert yourself and suffer a setback.<ul><li>-1 Energy, -1 Health</li></ul></li>' +
+            '<li>4-5: <strong>Minor Progress</strong> – The training leaves you feeling sore but no noticeable improvement.<ul><li>No Effect</li></ul></li>' +
+            '<li>6-8: <strong>Steady Improvement</strong> – Your body adapts to the training, and you feel stronger.<ul><li>+1 Attribute</li></ul></li>' +
+            '<li>9-10: <strong>Focused Training</strong> – Intense training sessions lead to real gains.<ul><li>+1 Attribute, +1 Energy</li></ul></li>' +
+            '<li>11-12: <strong>Peak Performance</strong> – You’ve mastered the routine, achieving substantial improvement.<ul><li>+1 Attribute, +2 Energy</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T062',
+        title: 'IronGym: Challenge',
+        content:
+            '<p>Choose one of your physical attributes:</p>' +
+            '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>',
     },
     {
         id: 'T070',
@@ -182,9 +205,32 @@ export const Town = [
         content:
             '<p><em>"Where minds meet machines."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>' +
-            "<p>Hackers' sanctum filled with cold light and hot code. Logic sharpens here like a blade.</p>" +
+            '<p>At NeuralNexus, you can refine your mental attributes with targeted training or challenge other runners to test your skills.</p>' +
             '<p><strong>Actions at NeuralNexus:</strong></p>' +
-            '<ul><li>Programming (+ Logic)</li><li>Meditation (+ Intuition)</li><li>Debating (+ Charisma)</li></ul>',
+            '<ul><li>Training (T071)</li><li>Challenge (T072)</li></ul>',
+    },
+    {
+        id: 'T071',
+        title: 'NeuralNexus: Training',
+        content:
+            '<p>Choose one of your mental attributes:</p>' +
+            '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>' +
+            '<p>The training session costs you 10,000 ¥ multiplied by your current attribute value.</p>' +
+            '<p>Roll 2d6 to determine the effectiveness of your training:</p>' +
+            '<ul>' +
+            '<li>2-3: <strong>Mental Block</strong> – Your focus falters, and you can’t seem to grasp the concepts. Training has little effect.<ul><li>-1 Energy, -1 Health</li></ul></li>' +
+            '<li>4-5: <strong>Stagnant Progress</strong> – 	The training didn’t push you to your limits, and you’re feeling stuck.<ul><li>No Effect</li></ul></li>' +
+            '<li>6-8: <strong>Moderate Improvement</strong> – The training session is steady, leaving you with a slight boost.<ul><li>+1 Attribute</li></ul></li>' +
+            '<li>9-10: <strong>Focused Mastery</strong> – You put in the work and feel like you`re gaining ground. Your mind is sharp.<ul><li>+1 Attribute, +1 Energy</li></ul></li>' +
+            '<li>11-12: <strong>Mental Breakthrough</strong> –  A moment of clarity and insight takes your training to the next level, unlocking hidden potential.<ul><li>+1 Attribute, +2 Energy</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T072',
+        title: 'NeuralNexus: Challenge',
+        content:
+            '<p>Choose one of your mental attributes:</p>' +
+            '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>',
     },
     {
         id: 'T080',
@@ -194,7 +240,20 @@ export const Town = [
             '<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>' +
             '<p>Half-abandoned precincts where drones recharge and jaded officers monitor chaos from dusty screens.</p>' +
             '<p><strong>Actions at PatrolHub:</strong></p>' +
-            '<ul><li>Selling Intel</li><li>Pay Off Heat</li></ul>',
+            '<ul><li>Pay Off Heat (T081)</li><li>Selling Intel</li></ul>',
+    },
+    {
+        id: 'T081',
+        title: 'PatrolHub: Pay Off Heat',
+        content:
+            '<p>Slip 10,000 ¥ to a crooked cop — if you`re lucky, the heat cools off... for now.</p>' +
+            '<ul>' +
+            '<li>2-5: <strong>Blowback</strong> – The payoff is rejected, and your actions raise suspicion.<ul><li>+1 Heat, -1 Energy</li></ul></li>' +
+            '<li>6-8: <strong>Indifference</strong> – The authorities are too busy or unconvinced.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-11: <strong>Partial Success</strong> – Some of the heat dies down, but it’s still warm out there.<ul><li>-1 Heat</li></ul></li>' +
+            '<li>12-14: <strong>Bribe Accepted</strong> – The right hand gets greased, and the heat backs off noticeably.<ul><li>-2 Heat</li></ul></li>' +
+            '<li>15+: <strong>Clean Slate</strong> – Your generosity and connections buy you peace—for now.<ul><li>-3 Heat, +1 Reputation</li></ul></li>' +
+            '</ul>',
     },
     {
         id: 'T090',
