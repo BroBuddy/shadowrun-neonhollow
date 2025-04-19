@@ -1,41 +1,25 @@
 import Select from 'react-select'
 import { useEffect, useState } from 'react'
 import { Characters as CharactersData } from '@/data/characters'
-import { Missions as MissionsData } from '@/data/missions'
+import { Runs as RunsData } from '@/data/runs'
 import { Town as TownData } from '@/data/town'
 import Card from './Card'
 import { Outlet, useNavigate, useParams } from 'react-router-dom'
 import { TagItem, TagOption } from '@/lib/types'
 import { customStyles } from '@/lib/data'
 
+export const dataSet = CharactersData.concat(RunsData).concat(TownData)
+
 const groupedOptions = [
     {
-        label: 'Character',
-        options: CharactersData.map(({ content, ...item }) => item).map(
-            ({ id, title }) => {
+        label: 'Tags',
+        options: dataSet
+            .map(({ content, ...item }) => item)
+            .map(({ id, title }) => {
                 return { value: id, label: `${id}: ${title}` }
-            }
-        ),
-    },
-    {
-        label: 'Mission',
-        options: MissionsData.map(({ content, ...item }) => item).map(
-            ({ id, title }) => {
-                return { value: id, label: `${id}: ${title}` }
-            }
-        ),
-    },
-    {
-        label: 'Town',
-        options: TownData.map(({ content, ...item }) => item).map(
-            ({ id, title }) => {
-                return { value: id, label: `${id}: ${title}` }
-            }
-        ),
+            }),
     },
 ]
-
-export const dataSet = CharactersData.concat(MissionsData).concat(TownData)
 
 const Booklet = () => {
     const { tagId } = useParams()

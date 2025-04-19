@@ -4,7 +4,45 @@ export const Characters = [
         title: 'Character',
         content:
             '<p>Follow this guide to build your shadowrunner before diving into the shadows.</p>' +
-            '<ol><li>(C010) Class</li><li>(C020) Race</li><li>(C030) Background</li><li>(C040) Name</li></ol>',
+            '<ol><li>(C010) Class</li><li>(C020) Race</li><li>(C030) Background</li><li>(C040) Name</li></ol>' +
+            '<p>When rolling for a random attribute, refer to the attribute details for guidance (C002).</p>',
+    },
+    {
+        id: 'C002',
+        title: 'Character: Attributes',
+        content:
+            '<p>Roll 1d6 to determine your random attribute:</p>' +
+            '<ol><li><strong>Strength</strong> – The Power to Endure</li><li><strong>Agility</strong> – The Speed to Slip Between Shadows</li><li><strong>Reaction</strong> – The Edge That Comes Before Thought</li><li><strong>Logic</strong> – The Key That Unlocks Every Door</li><li><strong>Intuition</strong> – The Sixth Sense of the Streets</li><li><strong>Charisma</strong> – The Power That Doesn’t Need Guns</li></ol>',
+    },
+    {
+        id: 'C003',
+        title: 'Character: Time',
+        content: '<p>Time</p>',
+    },
+    {
+        id: 'C004',
+        title: 'Character: Health',
+        content: '<p>Health</p>',
+    },
+    {
+        id: 'C005',
+        title: 'Character: Energy',
+        content: '<p>Energy</p>',
+    },
+    {
+        id: 'C006',
+        title: 'Character: Reputation',
+        content: '<p>Reputation</p>',
+    },
+    {
+        id: 'C007',
+        title: 'Character: Heat',
+        content: '<p>Heat</p>',
+    },
+    {
+        id: 'C008',
+        title: 'Character: Intel',
+        content: '<p>Intel</p>',
     },
     {
         id: 'C010',

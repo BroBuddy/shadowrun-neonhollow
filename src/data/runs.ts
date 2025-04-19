@@ -1,4 +1,4 @@
-export const Missions = [
+export const Runs = [
     {
         id: 'M001',
         title: 'Mr. Johnson',
@@ -6,13 +6,13 @@ export const Missions = [
             '<p><em>"The smile’s fake. The creds are real."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>' +
             '<p>No one knows his real name—and that’s the point. Mr. Johnson is the middleman between shadow and silver, offering dirty jobs with clean payouts. Always dressed sharp, always calm, and never without a plan. If he calls, it means someone wants something done off the books... and you’re the asset.</p>' +
-            '<p>Every mission unfolds in six shadow-drenched tasks — each one a test of grit, skill, and survival.</p>' +
-            '<p>Roll 1d6 to determine your mission type:</p>' +
+            '<p>Every run unfolds in six shadow-drenched tasks — each one a test of grit, skill, and survival.</p>' +
+            '<p>Roll 1d6 to determine your type of run:</p>' +
             '<ol><li>Assassination (M010)</li><li>Sabotage (M020)</li><li>Smuggling (M030)</li><li>Infiltration (M040)</li><li>Extraction (M050)</li><li>Negotiation (M060)</li></ol>',
     },
     {
         id: 'M010',
-        title: 'Mission: Assassination',
+        title: 'Run: Assassination',
         content:
             '<p><em>"The Silent Execution"</em></p>' +
             '<p>The objective is to eliminate a target under tight time constraints, requiring physical strength to overpower guards, carry heavy weapons, or climb to high places.</p>' +
@@ -28,10 +28,10 @@ export const Missions = [
     },
     {
         id: 'M020',
-        title: 'Mission: Sabotage',
+        title: 'Run: Sabotage',
         content:
             '<p><em>"Breaking the Chains"</em></p>' +
-            '<p>Involves stealth, precision, and quick reactions to disable or destroy equipment without getting caught. The mission requires dexterity to avoid security systems and sabotage the target efficiently.</p>' +
+            '<p>Involves stealth, precision, and quick reactions to disable or destroy equipment without getting caught. The run requires dexterity to avoid security systems and sabotage the target efficiently.</p>' +
             '<p><strong>Six shadow-drenched tasks:</strong></p>' +
             '<ol>' +
             '<li>Infiltrating the Factory</li>' +
@@ -44,10 +44,10 @@ export const Missions = [
     },
     {
         id: 'M030',
-        title: 'Mission: Smuggling',
+        title: 'Run: Smuggling',
         content:
             '<p><em>"Silent Run"</em></p>' +
-            '<p>This mission focuses on moving illicit goods through checkpoints, avoiding detection by customs, and quickly reacting to surprise searches or sudden obstacles.</p>' +
+            '<p>This run focuses on moving illicit goods through checkpoints, avoiding detection by customs, and quickly reacting to surprise searches or sudden obstacles.</p>' +
             '<p><strong>Six shadow-drenched tasks:</strong></p>' +
             '<ol>' +
             '<li>Preparing the Shipment</li>' +
@@ -60,7 +60,7 @@ export const Missions = [
     },
     {
         id: 'M040',
-        title: 'Mission: Infiltration',
+        title: 'Run: Infiltration',
         content:
             '<p><em>"The Quiet Approach"</em></p>' +
             '<p>You need to plan and analyze security systems to infiltrate a well-guarded facility, bypassing high-tech systems, gathering intel, and executing a detailed strategy.</p>' +
@@ -76,10 +76,10 @@ export const Missions = [
     },
     {
         id: 'M050',
-        title: 'Mission: Extraction',
+        title: 'Run: Extraction',
         content:
             '<p><em>"The Silent Rescue"</em></p>' +
-            '<p>Extraction missions require the ability to read the environment, understand people’s behaviors, and make quick decisions based on gut feelings, such as knowing when to act or hide, or anticipating how enemies will react.</p>' +
+            '<p>Extraction runs require the ability to read the environment, understand people’s behaviors, and make quick decisions based on gut feelings, such as knowing when to act or hide, or anticipating how enemies will react.</p>' +
             '<p><strong>Six shadow-drenched tasks:</strong></p>' +
             '<ol>' +
             '<li>Locating the Target</li>' +
@@ -92,10 +92,10 @@ export const Missions = [
     },
     {
         id: 'M060',
-        title: 'Mission: Negotiation',
+        title: 'Run: Negotiation',
         content:
             '<p><em>"The Dealbreaker"</em></p>' +
-            '<p>The mission focuses on persuading others through speech or force of personality, perhaps to secure valuable information, arrange a deal, or convince an NPC to cooperate.</p>' +
+            '<p>The run focuses on persuading others through speech or force of personality, perhaps to secure valuable information, arrange a deal, or convince an NPC to cooperate.</p>' +
             '<p><strong>Six shadow-drenched tasks:</strong></p>' +
             '<ol>' +
             '<li>Opening the Discussion</li>' +
