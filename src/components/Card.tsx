@@ -1,6 +1,6 @@
 const Card = ({ id, time, title, children }: any) => {
     return (
-        <div className="flex flex-col bg-black/70 p-4 text-xs">
+        <div className="flex flex-col bg-black p-4 text-xs">
             <div className="grid grid-cols-2">
                 {id && <h3 className="text-sm mb-2">{id}</h3>}
 

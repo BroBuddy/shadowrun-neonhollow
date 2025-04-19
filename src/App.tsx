@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
+import Dice from './components/Dice'
 import './App.css'
 
 function App() {
@@ -12,11 +13,23 @@ function App() {
 
     return (
         <>
-            <div className="mt-3 justify-items-center">
-                <img src="/images/Logo.png" alt="Logo" />
+            <div className="flex sticky top-0 bg-black justify-between items-center px-3 z-10">
+                <Dice label="1d6" min={1} max={6} />
+
+                <div className="mt-3 justify-items-center">
+                    <img src="/images/Logo.png" alt="Logo" />
+                </div>
+
+                <Dice label="2d6" min={2} max={11} />
             </div>
-            <Outlet />
-            <MobileNav />
+
+            <div className="z-0">
+                <Outlet />
+            </div>
+
+            <div className="z-10">
+                <MobileNav />
+            </div>
         </>
     )
 }

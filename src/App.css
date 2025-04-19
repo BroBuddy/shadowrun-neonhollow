@@ -87,6 +87,23 @@ table tr td {
     padding: 4px;
 }
 
+.dice {
+    cursor: pointer;
+    border: 2px solid var(--black-1);
+    color: var(--turquoise-1);
+    border-radius: 5px;
+    padding: 5px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.active-dice {
+    background-color: var(--turquoise-1);
+    color: var(--black-1);
+}
+
 .mobile-nav {
     position: fixed;
     left: 0;
@@ -100,9 +117,9 @@ table tr td {
     justify-content: space-between;
     padding: 5px 20px;
     border-top: 3px solid var(--turquoise-1);
-    -webkit-box-shadow: 0 0 20px 15px var(--turquoise-1);
-    -moz-box-shadow: 0 0 20px 15px var(--turquoise-1);
-    box-shadow: 0 0 20px 15px var(--turquoise-1);
+    -webkit-box-shadow: 0 0 15px 10px var(--turquoise-1);
+    -moz-box-shadow: 0 0 15px 10px var(--turquoise-1);
+    box-shadow: 0 0 15px 10px var(--turquoise-1);
 }
 
 .mobile-nav > a {
