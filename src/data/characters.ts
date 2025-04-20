@@ -4,7 +4,7 @@ export const Characters = [
         title: 'Character',
         content:
             '<p>Follow this guide to build your shadowrunner before diving into the shadows.</p>' +
-            '<ol><li>(C010) Class</li><li>(C020) Race</li><li>(C030) Background</li><li>(C040) Name</li></ol>' +
+            '<ol><li>(C010) Class</li><li>(C020) Race</li><li>(C030) Background</li><li>(C040) Name</li><li>(C050) Mode</li></ol>' +
             '<p>When rolling for a random attribute, refer to the attribute details for guidance (C002).</p>',
     },
     {
@@ -46,7 +46,7 @@ export const Characters = [
     },
     {
         id: 'C010',
-        title: 'Class',
+        title: 'Character: Class',
         content:
             '<p>Roll 1d6 to determine your class:</p>' +
             '<ol><li>(C011) Street Samurai</li><li>(C012) Decker</li><li>(C013) Rigger</li><li>(C014) Mage</li><li>(C015) Face</li><li>(C016) Shaman</li></ol>' +
@@ -102,7 +102,7 @@ export const Characters = [
     },
     {
         id: 'C020',
-        title: 'Race',
+        title: 'Character: Race',
         content:
             '<p>Roll 1d6 to determine your race:</p>' +
             '<ol><li>(C021) Human</li><li>(C022) Elf</li><li>(C023) Dwarf</li><li>(C024) Orc</li><li>(C025) Troll</li><li>Roll Again</li></ol>' +
@@ -112,6 +112,7 @@ export const Characters = [
         id: 'C021',
         title: 'Race: Human',
         content:
+            '<p class="flex items-center justify-center"><img src="/images/Human.jpg" alt="Human" /></p>' +
             '<p>The most adaptable and versatile race, humans have the ability to excel in nearly every environment. They may not possess the natural enhancements of the other races, but their drive and determination make them a powerful force in any situation.</p>' +
             '<p><strong>Bonuses:</strong></p>' +
             "<p>+1 to any attribute (Player's choice)</p>",
@@ -120,6 +121,7 @@ export const Characters = [
         id: 'C022',
         title: 'Race: Elf',
         content:
+            '<p class="flex items-center justify-center"><img src="/images/Elf.jpg" alt="Elf" /></p>' +
             '<p>"Graceful, elegant, and with a keen intellect, elves are often seen as the aristocrats of the Shadowrun world. Their natural agility and charisma make them invaluable in both social and combat situations.</p>' +
             '<p><strong>Bonuses:</strong></p>' +
             '<p>+1 to Agility / Charisma</p>',
@@ -128,6 +130,7 @@ export const Characters = [
         id: 'C023',
         title: 'Race: Dwarf',
         content:
+            '<p class="flex items-center justify-center"><img src="/images/Dwarf.jpg" alt="Dwarf" /></p>' +
             '<p>Dwarves are the embodiment of endurance and resilience. Shorter in stature but larger in presence, they are known for their strength, toughness, and unyielding determination. They’re often the reliable backbone of any crew</p>' +
             '<p><strong>Bonuses:</strong></p>' +
             '<p>+1 to Strength / Logic</p>',
@@ -136,6 +139,7 @@ export const Characters = [
         id: 'C024',
         title: 'Race: Ork',
         content:
+            '<p class="flex items-center justify-center"><img src="/images/Ork.jpg" alt="Ork" /></p>' +
             '<p>With a natural inclination toward physical power and aggression, orks are often misunderstood as brutish, but they have a strong sense of loyalty and honor. Their towering frames and raw strength make them formidable in any fight.</p>' +
             '<p><strong>Bonuses:</strong></p>' +
             '<p>+1 to Strength / Intuition</p>',
@@ -144,13 +148,14 @@ export const Characters = [
         id: 'C025',
         title: 'Race: Troll',
         content:
+            '<p class="flex items-center justify-center"><img src="/images/Troll.jpg" alt="Troll" /></p>' +
             '<p>Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.</p>' +
             '<p><strong>Bonuses:</strong></p>' +
             '<p>+1 to Strength / Reaction</p>',
     },
     {
         id: 'C030',
-        title: 'Background',
+        title: 'Character: Background',
         content:
             '<p>Your origins matter—pick your race to unveil the path that led you here.</p>' +
             '<ul><li>(C031) Human</li><li>(C032) Elf</li><li>(C033) Dwarf</li><li>(C034) Orc</li><li>(C035) Troll</li></ul>',
@@ -192,7 +197,7 @@ export const Characters = [
     },
     {
         id: 'C040',
-        title: 'Name',
+        title: 'Character: Name',
         content:
             '<p>Each class has its own name pool.</p>' +
             '<ul><li>(C041) Street Samurai</li><li>(C042) Decker</li><li>(C043) Rigger</li><li>(C044) Mage</li><li>(C045) Face</li><li>(C046) Shaman</li></ul>',
@@ -256,5 +261,18 @@ export const Characters = [
             '<ol><li>Tala</li><li>Soren</li><li>Freya</li><li>Bastian</li><li>Naya</li><li>Zane</li></ol>' +
             '<p><strong>Last Name:</strong></p>' +
             '<ol><li>Spirit</li><li>Wolf</li><li>Storm</li><li>Wind</li><li>Sky</li><li>Shadow</li></ol>',
+    },
+    {
+        id: 'C050',
+        title: 'Character: Mode',
+        content:
+            '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +
+            '<p>For your first journey, I suggest starting with Easy Mode to get a feel for the city`s pulse.</p>' +
+            '<p><strong>Easy Mode:</strong></p>' +
+            '<ul><li>7.000 ¥</li><li>7 Health</li><li>7 Energy</li><li>1 Reputation</li><li>1 Intel</li></ul>' +
+            '<p><strong>Medium Mode:</strong></p>' +
+            '<ul><li>5.000 ¥</li><li>5 Health</li><li>5 Energy</li><li>1 Reputation</li><li>0 Intel</li></ul>' +
+            '<p><strong>Hard Mode:</strong></p>' +
+            '<ul><li>3.000 ¥</li><li>3 Health</li><li>3 Energy</li><li>0 Reputation</li><li>0 Intel</li></ul>',
     },
 ]
