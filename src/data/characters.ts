@@ -22,27 +22,48 @@ export const Characters = [
     {
         id: 'C004',
         title: 'Character: Health',
-        content: '<p>Health</p>',
+        content:
+            '<p>Health represents the physical state of a runner, a fragile balance between vitality and deterioration. </p>' +
+            '<p>It ranges from 0 to 10, with higher values reflecting peak condition—faster reflexes, sharper senses, and resilience in the face of adversity. The closer to 10 you are, the better your chances to endure the harsh world around you. But as your Health drops, so does your effectiveness. Injuries, exhaustion, and the harshness of your environment weigh heavily on you.</p>' +
+            '<p>At 0, your journey ends. Your runner is dead. No more chances.</p>' +
+            '<p>To restore Health, visit <strong>BioCare</strong>, where skilled techs patch you up for a price. Or indulge in a hearty meal at <strong>CyberBite</strong> to give yourself a boost.</p>' +
+            '<p>Outside these options, the streets of NeonHollow may offer unexpected moments to mend, but don’t rely on luck alone. Stay sharp, or you might not live to fight another day.</p>',
     },
     {
         id: 'C005',
         title: 'Character: Energy',
-        content: '<p>Energy</p>',
+        content:
+            '<p>Energy is the lifeblood of a runner, the fuel that keeps you going in the neon-lit streets of NeonHollow. It measures your stamina, your ability to push through the grind of daily tasks, from town events to dangerous runs for Mr. Johnson.</p>' +
+            '<p>Your energy ranges from 0 to 10—at higher levels, you`ll find yourself sharp, quicker on your feet, and more resilient. But let your energy dip too low, and you’ll start feeling the strain: at lower levels, you’ll suffer setbacks, and when it hits zero, every further drain on your energy will cost you precious health.</p>' +
+            '<p>To restore your energy, the <strong>DreamSphere</strong> is your best bet, offering a peaceful sanctuary where you can recharge your batteries.</p>' +
+            '<p>There are also other opportunities to recover energy during town events, but don’t rely too heavily on them—staying rested and ready is crucial to surviving the harsh life of a runner in this chaotic city.</p>',
     },
     {
         id: 'C006',
         title: 'Character: Reputation',
-        content: '<p>Reputation</p>',
+        content:
+            '<p>Reputation is the weight your name carries in the shadows of NeonHollow. It’s the reputation you’ve built through your actions and the whispers that follow you wherever you go.</p>' +
+            '<p>As you rise, it opens doors to high-stakes jobs and elite missions, but fall too far, and those doors will slam shut.</p>' +
+            '<p>Your Reputation ranges from 0 to 5, growing with every courteous interaction, successful mission, or display of skill. On the flip side, if your actions are reckless, your performance subpar, or you rub others the wrong way, you’ll find yourself losing respect in the underworld.</p>' +
+            '<p>How others see you can be the difference between a lucrative gig and being left out in the cold.</p>',
     },
     {
         id: 'C007',
         title: 'Character: Heat',
-        content: '<p>Heat</p>',
+        content:
+            '<p>Heat represents your notoriety with the law in NeonHollow. It rises when you engage in illegal activities and decreases when you stick to the straight and narrow.</p>' +
+            '<p>The scale ranges from 0 to 10, with three distinct levels: at Level 0, you`re practically invisible to the authorities—nothing out of the ordinary.</p>' +
+            '<p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>' +
+            '<p>To reduce heat, you can pay off an officer for a quick fix, or you can choose to lay low for a while, allowing time to dull the memory of your face and your criminal activities.</p>',
     },
     {
         id: 'C008',
         title: 'Character: Intel',
-        content: '<p>Intel</p>',
+        content:
+            '<p>Intel is the lifeblood of your runner’s network—sought-after information about the city, the corps, or anyone who’s in the know. It’s not just facts; it’s power in a world where knowledge can be as valuable as a weapon.</p>' +
+            '<p>Your Intel ranges from 0 to 5, and it’s a currency of its own in the shadows of NeonHollow.</p>' +
+            '<p>You can spend 1 Intel to reroll any check you’ve just failed, a chance to turn the tide when your luck’s running thin—though you can only use this trick once per roll. If you’ve gathered enough, you can unload your stash of Intel to an underground fixer, swapping secrets for cold, hard nuyen.</p>' +
+            '<p>Whether you’re tracking down an informant or stumbling upon valuable intel in the city’s chaos, every piece you gather sharpens your edge in this cutthroat world.</p>',
     },
     {
         id: 'C010',
