@@ -20,13 +20,13 @@ export const Runs = [
         id: 'M003',
         title: 'Run: Performance',
         content:
-            '<p>Mr. Johnson doesn’t just care that the job’s done—he cares how it’s done.</p>' +
+            '<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done.</p>' +
             '<ul>' +
-            '<li>-3/-4: <strong>Disastrous</strong> – Mission failed catastrophically. Severe fallout and consequences.<ul><li>+10,000 ¥, -1 Reputation</li></ul></li>' +
-            '<li>-1/-2: <strong>Underwhelming</strong> – You scraped by, but not without burning bridges. The job’s done—barely.<ul><li>+15.000 ¥</li></ul></li>' +
-            '<li>0: <strong>Mediocre</strong> – Mission completed, but with some compromises.<ul><li>+20.000 ¥</li></ul></li>' +
-            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+25.000 ¥</li></ul></li>' +
-            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+30.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>-3/-4: <strong>Disastrous</strong> – Mission failed catastrophically. Severe fallout and consequences.<ul><li>+1.000 ¥, -1 Reputation</li></ul></li>' +
+            '<li>-1/-2: <strong>Underwhelming</strong> – You scraped by, but not without burning bridges. The job’s done—barely.<ul><li>+2.000 ¥</li></ul></li>' +
+            '<li>0: <strong>Mediocre</strong> – Mission completed, but with some compromises.<ul><li>+3.000 ¥</li></ul></li>' +
+            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+4.000 ¥</li></ul></li>' +
+            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+5.000 ¥, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
