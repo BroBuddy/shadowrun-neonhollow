@@ -27,8 +27,7 @@ const Booklet = () => {
         const activeTag = Data.find((item: TagItem) => item.id === tagId)
 
         if (!activeTag) {
-            setActiveTag(null)
-            setSelectedTag(null)
+            navigate('/R001')
             return
         }
 

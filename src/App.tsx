@@ -17,7 +17,7 @@ function App() {
                 <Dice label="1d6" min={1} max={6} />
 
                 <div className="mt-3 justify-items-center">
-                    <Link to="/">
+                    <Link to="/R001">
                         <img src="/images/Logo.png" alt="Logo" />
                     </Link>
                 </div>
