@@ -7,12 +7,12 @@ export const Town = [
             '<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>' +
             '<p><strong>NeonHollow</strong> is a fractured sprawl of flickering holo-ads, decaying arcologies, and back-alley deals. The corporations rule from mirrored towers, the gangs own the ground, and the rest just try to survive in the haze of smog and digital noise. Nothing here is clean—least of all your conscience.</p>' +
             '<p><strong>Entertainment District:</strong></p>' +
-            '<ul><li>BioCare (T010)</li><li>HoloLounge (T020)</li><li>DreamSphere (T030)</li><li>EchoGarden (T040)</li></ul>' +
+            '<ul><li>BioCare (T010)</li><li>HoloLounge (T020)</li><li>CyberBite (T030)</li><li>DreamSphere (T040)</li></ul>' +
             '<p><strong>Industrial District:</strong></p>' +
-            '<ul><li>PatrolHub (T050)</li><li>IronGym (T060)</li><li>NeuralNexus (T070)</li></ul>' +
+            '<ul><li>EchoGarden (T050)</li><li>PatrolHub (T060)</li><li>IronGym (T070)</li><li>NeuralNexus (T080)</li></ul>' +
             '<p><strong>Underground District:</strong></p>' +
-            '<ul><li>SmugglerDen (T080)</li><li>ZeroZone (T090)</li></ul>' +
-            '<p>When a town event unfolds, roll on the Event Matrix (E001) to discover what new twist awaits you in the neon-drenched streets of Neonhollow.</p>',
+            '<ul><li>SmugglerDen (T090)</li><li>ZeroZone (T100)</li></ul>' +
+            '<p>When a town event unfolds, roll on the Event Matrix (E001) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>',
     },
     {
         id: 'T010',
@@ -45,7 +45,7 @@ export const Town = [
             '<p>By sacrificing a bit of your own vitality, you exchange <strong>-1 Health</strong> for a quick boost of <strong>1.000 ¥</strong>.</p>' +
             '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
             '<ul>' +
-            '<li>2-3: <strong>Critical Withdrawal</strong> – Your veins rebel. The extraction is messy and painful.<ul><li>-1 Energy, -1 Reputation</li></ul></li>' +
+            '<li>2-3: <strong>Critical Withdrawal</strong> – Your veins rebel. The extraction is messy and painful.<ul><li>-1 Energy, +1 Heat</li></ul></li>' +
             '<li>4-5: <strong>Unstable Plasma</strong> – The extraction goes through, but it’s far from smooth.<ul><li>-1 Energy</li></ul></li>' +
             '<li>6-8: <strong>Suboptimal Donation</strong> – The plasma is harvested with moderate success, but it’s not ideal.<ul><li>No Effect</li></ul></li>' +
             '<li>9-10: <strong>Standard Donation</strong> – A clean and efficient extraction. The transaction goes as planned.<ul><li>+1 Energy</li></ul></li>' +
@@ -60,23 +60,10 @@ export const Town = [
             '<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>' +
             '<p>Plug in and drift away — virtual escapism meets social surveillance. Someone’s always watching.</p>' +
             '<p><strong>Actions at HoloLounge:</strong></p>' +
-            '<ul><li>Eating (T021)</li><li>Drinking (T022)</li><li>Gambling (T023)</li></ul>',
+            '<ul><li>Drinking (T021)</li><li>Gambling (T022)</li></ul>',
     },
     {
         id: 'T021',
-        title: 'HoloLounge: Eating',
-        content:
-            '<p>Add your <strong>Logic</strong> to the 2d6 roll when choosing or preparing meals to optimize quality and benefits.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Spoiled Slop</strong> – The meal was synthetic... and suspiciously expired.<ul><li>-1 Health, -1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Greasy Grub</strong> – Cheap calories and greasy additives fill your gut—but little else.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Street Standard</strong> – A balanced mix of synth-protein and carbs, enough to keep you moving.<ul><li>+1 Health</li></ul></li>' +
-            '<li>12-14: <strong>NutriBurst Platter</strong> – Fortified nutrient cubes and stim-enhanced flavor. Tastes weird, works wonders.<ul><li>+2 Health</li></ul></li>' +
-            '<li>15+: <strong>Gourmet Clone Cuisine</strong> – A masterfully engineered meal loaded with bio-nutrients, protein stacks, and trace nanites.<ul><li>+3 Health, +1 Strength (next Run)</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'T022',
         title: 'HoloLounge: Drinking',
         content:
             '<p>Add your <strong>Agility</strong> to the 2d6 roll when drinking to handle the physical effects and avoid getting too drunk.</p>' +
@@ -89,7 +76,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T023',
+        id: 'T022',
         title: 'HoloLounge: Gambling',
         content:
             '<p>To participate in gambling, you must have at least 2.000 ¥ in your pocket.</p>' +
@@ -104,16 +91,54 @@ export const Town = [
     },
     {
         id: 'T030',
+        title: 'NeonHollow: CyberBite',
+        content:
+            '<p><em>"Food, but wired."</em></p>' +
+            '<p class="flex items-center justify-center"><img src="/images/CyberBite.jpg" alt="CyberBite" /></p>' +
+            '<p>Nutrient paste and synth meat, spiked with nootropics and stim flavoring. Keeps your edge sharp.</p>' +
+            '<p><strong>Actions at CyberBite:</strong></p>' +
+            '<ul><li>Eating Meals (T031)</li><li>Stimulant Injection (T032)</li></ul>',
+    },
+    {
+        id: 'T031',
+        title: 'CyberBite: Eating Meals',
+        content:
+            '<p>Add your <strong>Logic</strong> to the 2d6 roll when choosing or preparing meals to optimize quality and benefits.</p>' +
+            '<ul>' +
+            '<li>2-5: <strong>Spoiled Slop</strong> – The meal was synthetic... and suspiciously expired.<ul><li>-1 Health, -1 Energy</li></ul></li>' +
+            '<li>6-8: <strong>Greasy Grub</strong> – Cheap calories and greasy additives fill your gut—but little else.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-11: <strong>Street Standard</strong> – A balanced mix of synth-protein and carbs, enough to keep you moving.<ul><li>+1 Health</li></ul></li>' +
+            '<li>12-14: <strong>NutriBurst Platter</strong> – Fortified nutrient cubes and stim-enhanced flavor. Tastes weird, works wonders.<ul><li>+2 Health</li></ul></li>' +
+            '<li>15+: <strong>Gourmet Clone Cuisine</strong> – A masterfully engineered meal loaded with bio-nutrients, protein stacks, and trace nanites.<ul><li>+3 Health, +1 Strength (next Run)</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T032',
+        title: 'CyberBite: Stimulant Injection',
+        content:
+            '<p>A dose will set you back 1.000 ¥, a price for pushing your limits.</p>' +
+            '<p>Roll for a random attribute (C002) — the effects of the injection are unpredictable, making every dose a risky bet with your body and mind.</p>' +
+            '<p>Add your <strong>Strength</strong> value to the 2d6 roll — your raw power will shape the outcome.</p>' +
+            '<ul>' +
+            '<li>2-5: <strong>System Crash</strong> – The stimulant overwhelms your system, causing your body to overreact. <ul><li>+1 Heat, -1 Attribute Temporary</li></ul></li>' +
+            '<li>6-8: <strong>Jittery Burnout</strong> – You feel the surge of energy but quickly realize it’s not as effective as you hoped.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>9-11: <strong>Tense Surge</strong> –  The stimulant enhances your physical or mental abilities, but not without cost. <ul><li>+1 Attribute Temporary, -1 Health</li></ul></li>' +
+            '<li>12-14: <strong>Sharp Precision</strong> – You experience a smooth boost of energy and focus<ul><li>+1 Attribute Temporary</li></ul></li>' +
+            '<li>15+: <strong>Peak Condition</strong> – Y You feel invigorated, as the stimulant fine-tunes your abilities to their peak.<ul><li>+1 Attribute Temporary, +1 Reputation</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T040',
         title: 'NeonHollow: DreamSphere',
         content:
             '<p><em>"Where your nightmares become hobbies."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>' +
             '<p>Immersive simulations, deep dives, and curated dreams. Your mind may wander, but your body pays.</p>' +
             '<p><strong>Actions at DreamSphere:</strong></p>' +
-            '<ul><li>Battery Recharge (T031)</li></ul>',
+            '<ul><li>Battery Recharge (T041)</li><li>Memory Mining (T042)</li></ul>',
     },
     {
-        id: 'T031',
+        id: 'T041',
         title: 'DreamSphere: Battery Recharge',
         content:
             '<p>Recharging your battery will cost you 2.000 ¥.</p>' +
@@ -127,17 +152,31 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T040',
+        id: 'T042',
+        title: 'DreamSphere: Memory Mining',
+        content:
+            '<p>Drain some of your energy to fuel your wallet. Exchange <strong>-2 Energy</strong> for a quick infusion of <strong>1.000 ¥</strong>.</p>' +
+            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
+            '<ul>' +
+            '<li>2-3: <strong>Glitched Memory</strong> – The data extraction goes haywire, causing intense mental strain.<ul><li>-1 Health, +1 Heat</li></ul></li>' +
+            '<li>4-5: <strong>Fragmented Recall</strong> – You manage to pull something useful, but the process is rough and incomplete.<ul><li>-1 Health</li></ul></li>' +
+            '<li>6-8: <strong>Fuzzy Memories</strong> – A somewhat smooth extraction, but the memory data is flawed or fragmented. <ul><li>No Effect</li></ul></li>' +
+            '<li>9-10: <strong>Clear Vision</strong> – The memory mining goes well, providing you with a decent payout and valuable data.<ul><li>+1 Intel</li></ul></li>' +
+            '<li>11-12: <strong>Prime Data Stream</strong> – The extraction is flawless, and the memories are pristine, yielding rich rewards.<ul><li>+1 Intel, +1 Reputation</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T050',
         title: 'NeonHollow: EchoGarden',
         content:
             '<p><em>"The city’s memory grows here."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>' +
             '<p>Overgrown ruins tuned to ancient tech and spirit circuits. The wind speaks, if you know how to listen.</p>' +
             '<p><strong>Actions at EchoGarden:</strong></p>' +
-            '<ul><li>Laying Off (T041)</li><li>Informant Detection (T042)</li></ul>',
+            '<ul><li>Laying Off (T051)</li><li>Informant Detection (T052)</li></ul>',
     },
     {
-        id: 'T041',
+        id: 'T051',
         title: 'EchoGarden: Laying Off',
         content:
             '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
@@ -150,7 +189,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T042',
+        id: 'T052',
         title: 'EchoGarden: Informant Detection',
         content:
             '<p>Add your <strong>Reaction</strong> to the 2d6 roll when spying on an informant — your ability to blend into the crowd and avoid detection is key to gathering intel.</p>' +
@@ -163,17 +202,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T050',
+        id: 'T060',
         title: 'NeonHollow: PatrolHub',
         content:
             '<p><em>"The law`s last flicker."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>' +
             '<p>Half-abandoned precincts where drones recharge and jaded officers monitor chaos from dusty screens.</p>' +
             '<p><strong>Actions at PatrolHub:</strong></p>' +
-            '<ul><li>Pay Off Heat (T051)</li><li>Selling Intel (T052)</li></ul>',
+            '<ul><li>Pay Off Heat (T061)</li><li>Bounty Hunting (T062)</li></ul>',
     },
     {
-        id: 'T051',
+        id: 'T061',
         title: 'PatrolHub: Pay Off Heat',
         content:
             '<p>Slip 2.000 ¥ to a crooked cop — if you`re lucky, the heat cools off... for now.</p>' +
@@ -186,31 +225,30 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T052',
-        title: 'PatrolHub: Selling Intel',
+        id: 'T062',
+        title: 'PatrolHub: Bounty Hunting',
         content:
-            '<p>You need at least one piece of intel to approach an officer. Regardless of the outcome, the intel is used up in the process.</p>' +
-            '<p>Add your <strong>Logic</strong> value to the 2d6 roll — sharp insight turns raw intel into real cred on the streets.</p>' +
+            '<p>Add any <strong>Attribute</strong> value to the 2d6 roll — your skills guide you through the city, hunting for your target.</p>' +
             '<ul>' +
-            '<li>2-5: <strong>Flagged</strong> – Your intel was traced — you`re now on their radar<ul><li>+1 Heat</li></ul></li>' +
-            '<li>6-8: <strong>Disregarded</strong> – Low-level intel. No one’s interested.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Standard Trade</strong> – Decent info, fair price.<ul><li>+1.000 ¥</li></ul></li>' +
-            '<li>12-14: <strong>Valuable Lead</strong> – They found use in your intel. <ul><li>+2.000 ¥, -1 Heat</li></ul></li>' +
-            '<li>15+: <strong>Classified Gold</strong> – Your intel changes plans<ul><li>+3.000 ¥, -1 Heat, +1 Reputation</li></ul></li>' +
+            '<li>2-5: <strong>Failed Pursuit</strong> – The bounty got away, leaving you with nothing to show for it.<ul><li>-1 Reputation</li></ul></li>' +
+            '<li>6-8: <strong>Close Call</strong> – You managed to chase down the target, but just barely.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-11: <strong>	Decent Capture</strong> – You tracked and caught the bounty, but it wasn’t easy.<ul><li>+1.000 ¥</li></ul></li>' +
+            '<li>12-14: <strong>Swift Success</strong> – The bounty was caught quickly and efficiently.<ul><li>+1.000 ¥, -1 Heat</li></ul></li>' +
+            '<li>15+: <strong>Flawless Capture</strong> – You captured the bounty without any issues, impressing everyone in the system.<ul><li>+1.000 ¥, -1 Heat, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
-        id: 'T060',
+        id: 'T070',
         title: 'NeonHollow: IronGym',
         content:
             '<p><em>"Muscle isn`t old-school—it`s survival."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>' +
             '<p>At IronGym, you can enhance your attributes through training or pit them against other runners in a challenging showdown.</p>' +
             '<p><strong>Actions at IronGym:</strong></p>' +
-            '<ul><li>Physical Training (T061)</li></ul>',
+            '<ul><li>Physical Training (T071)</li></ul>',
     },
     {
-        id: 'T061',
+        id: 'T071',
         title: 'IronGym: Physical Training',
         content:
             '<p>Choose one of your attributes:</p>' +
@@ -226,17 +264,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T070',
+        id: 'T080',
         title: 'NeonHollow: NeuralNexus',
         content:
             '<p><em>"Where minds meet machines."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>' +
             '<p>At NeuralNexus, you can refine your attributes with targeted training or challenge other runners to test your skills.</p>' +
             '<p><strong>Actions at NeuralNexus:</strong></p>' +
-            '<ul><li>Mental Training (T071)</li></ul>',
+            '<ul><li>Mental Training (T081)</li></ul>',
     },
     {
-        id: 'T071',
+        id: 'T081',
         title: 'NeuralNexus: Mental Training',
         content:
             '<p>Choose one of your attributes:</p>' +
@@ -252,17 +290,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T080',
+        id: 'T090',
         title: 'NeonHollow: SmugglerDen',
         content:
             '<p><em>"The city`s forgotten veins."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>' +
             '<p>Crates of contraband, whispered deals, and guarded nods. If it’s illegal or rare, it passed through here.</p>' +
             '<p><strong>Actions at SmugglerDen:</strong></p>' +
-            '<ul><li>Cyberware Installation (T081)</li><li>Stimulant Injection (T082)</li></ul>',
+            '<ul><li>Cyberware Installation (T091)</li><li>Selling Intel (T092)</li></ul>',
     },
     {
-        id: 'T081',
+        id: 'T091',
         title: 'SmugglerDen: Cyberware Installation',
         content:
             '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
@@ -276,32 +314,31 @@ export const Town = [
             '<p>When rolling for a random attribute, refer to the attribute details for guidance (C002).</p>',
     },
     {
-        id: 'T082',
-        title: 'SmugglerDen: Stimulant Injection',
+        id: 'T092',
+        title: 'SmugglerDen: Selling Intel',
         content:
-            '<p>A dose will set you back 1.000 ¥, a price for pushing your limits.</p>' +
-            '<p>Roll for a random attribute (C002) — the effects of the injection are unpredictable, making every dose a risky bet with your body and mind.</p>' +
-            '<p>Add your <strong>Strength</strong> value to the 2d6 roll — your raw power will shape the outcome.</p>' +
+            '<p>You need at least one piece of intel to approach a fixer. Regardless of the outcome, the intel is used up in the process.</p>' +
+            '<p>Add your <strong>Logic</strong> value to the 2d6 roll — sharp insight turns raw intel into real cred on the streets.</p>' +
             '<ul>' +
-            '<li>2-5: <strong>System Crash</strong> – The stimulant overwhelms your system, causing your body to overreact. <ul><li>+1 Heat, -1 Attribute Temporary</li></ul></li>' +
-            '<li>6-8: <strong>Jittery Burnout</strong> – You feel the surge of energy but quickly realize it’s not as effective as you hoped.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>9-11: <strong>Tense Surge</strong> –  The stimulant enhances your physical or mental abilities, but not without cost. <ul><li>+1 Attribute Temporary, -1 Health</li></ul></li>' +
-            '<li>12-14: <strong>Sharp Precision</strong> – You experience a smooth boost of energy and focus<ul><li>+1 Attribute Temporary</li></ul></li>' +
-            '<li>15+: <strong>Peak Condition</strong> – Y You feel invigorated, as the stimulant fine-tunes your abilities to their peak.<ul><li>+1 Attribute Temporary, +1 Reputation</li></ul></li>' +
+            '<li>2-5: <strong>Flagged</strong> – Your intel was traced — you`re now on their radar<ul><li>+1 Heat</li></ul></li>' +
+            '<li>6-8: <strong>Disregarded</strong> – Low-level intel. No one’s interested.<ul><li>No Effect</li></ul></li>' +
+            '<li>9-11: <strong>Standard Trade</strong> – Decent info, fair price.<ul><li>+1.000 ¥</li></ul></li>' +
+            '<li>12-14: <strong>Valuable Lead</strong> – They found use in your intel.<ul><li>+2.000 ¥</li></ul></li>' +
+            '<li>15+: <strong>Classified Gold</strong> – Your intel changes plans<ul><li>+3.000 ¥, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
-        id: 'T090',
+        id: 'T100',
         title: 'NeonHollow: ZeroZone',
         content:
             '<p><em>"Where the shadows test their own."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>' +
             '<p>ZeroZone is more than just a meeting ground—it`s the crucible where shadowrunners prove their worth. Every interaction here is a gamble, whether it’s a whispered offer or a brutal showdown. Step inside, and the city’s underbelly watches.</p>' +
             '<p><strong>Actions at ZeroZone:</strong></p>' +
-            '<ul><li>Wire a Contact (T091)</li><li>Challenge (T092)</li></ul>',
+            '<ul><li>Wire a Contact (T101)</li><li>Challenge (T102)</li></ul>',
     },
     {
-        id: 'T091',
+        id: 'T101',
         title: 'ZeroZone: Wire a Contact',
         content:
             '<p>Jack into the Runner Matrix (N001) to trace the digital scent of freelance talent ready to run.</p>' +
@@ -316,17 +353,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T092',
+        id: 'T102',
         title: 'ZeroZone: Challenge',
         content:
             '<p>Choose one of your physical or mental attributes.</p>' +
             '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
             '<ol><li><strong>Size up your opponent.</strong> Compare your chosen attribute with theirs to determine your edge.</li>' +
             '<li><strong>Feel the adrenaline.</strong> Add or subtract the difference to your 2d6 roll.</li>' +
-            '<li><strong>Face the outcome.</strong> Consult the challenge result (T093) to see if you walk away stronger — or bruised.</li></ol>',
+            '<li><strong>Face the outcome.</strong> Consult the challenge result (T103) to see if you walk away stronger — or bruised.</li></ol>',
     },
     {
-        id: 'T093',
+        id: 'T103',
         title: 'ZeroZone: Result',
         content:
             '<p>Once the sweat dries and the dust settles, it’s time to see what you gained — or lost.</p>' +
