@@ -21,11 +21,30 @@ export const Town = [
             '<p><em>"Healing flesh, not souls."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>' +
             '<p>Gene-hacked meds and synthetic organs in sterile, humming rooms. You’ll walk out fixed. Probably.</p>' +
+            '<p>Before using the actions, roll 2d6 on the Event Table (T011) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at BioCare:</strong></p>' +
-            '<ul><li>Vital Restoration (T011)</li><li>Plasma Donation (T012)</li></ul>',
+            '<ul><li>Vital Restoration (T012)</li><li>Plasma Donation (T013)</li></ul>',
     },
     {
         id: 'T011',
+        title: 'BioCare: Event Table',
+        content:
+            '<ul>' +
+            '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
+            '<li>3: <strong>Security Screening</strong> – The facial recognition software mistakes you for someone else.<ul><li>-1 Energy, +1 Heat</li></ul></li>' +
+            '<li>4: <strong>Suspicious Scan</strong> – The scanner picks up something "unusual" in your body.<ul><li>-1 Health</li></ul></li>' +
+            '<li>5: <strong>Rogue Doc Encounter</strong> – A shady employee offers "off-the-record" services.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>6: <strong>Delayed Appointment</strong> – Your appointment is pushed back due to a mix-up.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
+            '<li>8: <strong>Quick Service</strong> – The process is quicker than expected.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>9: <strong>Strange Gift</strong> – An anonymous package is sent to you during your wait.<ul><li>+1.000 ¥</li></ul></li>' +
+            '<li>10: <strong>Relaxed Environment</strong> – You rest fully in the waiting area’s relaxation pods.<ul><li>+1 Charisma Temporary, +1 Energy</li></ul></li>' +
+            '<li>11: <strong>Lucky Break</strong> – The system accidentally upgrades your service.<ul><li>+1 Agility Temporary, +1 Health</li></ul></li>' +
+            '<li>12: <strong>VIP Escort</strong> – A corporate representative recognizes you and provides expedited service.<ul><li>+1 Reputation, +1 Intel</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T012',
         title: 'BioCare: Vital Restoration',
         content:
             '<p>Restoring your wounds requires a payment of 3.000 ¥ for the necessary treatment and care.</p>' +
@@ -39,7 +58,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T012',
+        id: 'T013',
         title: 'BioCare: Plasma Donation',
         content:
             '<p>By sacrificing a bit of your own vitality, you exchange <strong>-1 Health</strong> for a quick boost of <strong>1.000 ¥</strong>.</p>' +
@@ -59,11 +78,30 @@ export const Town = [
             '<p><em>"Reality? Optional."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>' +
             '<p>Plug in and drift away — virtual escapism meets social surveillance. Someone’s always watching.</p>' +
+            '<p>Before using the actions, roll 2d6 on the Event Table (T021) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at HoloLounge:</strong></p>' +
-            '<ul><li>Drinking (T021)</li><li>Gambling (T022)</li></ul>',
+            '<ul><li>Drinking (T022)</li><li>Gambling (T023)</li></ul>',
     },
     {
         id: 'T021',
+        title: 'HoloLounge: Event Table',
+        content:
+            '<ul>' +
+            '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
+            '<li>3: <strong>Bar Fight Breaks Out</strong> – A nearby patron bumps into you, sparking a fight.<ul><li>-1 Health</li></ul></li>' +
+            '<li>4: <strong>Data Corruption</strong> – A data corruption issue halts your service as your information is temporarily inaccessible.<ul><li>-1.000 ¥</li></ul></li>' +
+            '<li>5: <strong>Exotic Drink Offer</strong> – A bartender offers you a special drink that could "enhance" your experience.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>6: <strong>Unwanted Attention</strong> – Someone at the bar takes too much interest in you, trying to strike up an uncomfortable conversation.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
+            '<li>8: <strong>Lucky Encounter</strong> – You spot someone you’ve been looking for.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>9: <strong>HoloShow Surprise</strong> – A stunning live hologram show begins right as you sit down.<ul><li>+1 Agility Temporary</li></ul></li>' +
+            '<li>10: <strong>Free Round</strong> – The bartender offers you a free drink as part of a promotion.<ul><li>+1 Intuition Temporary</li></ul></li>' +
+            '<li>11: <strong>HoloLounge Jackpot</strong> – A mysterious figure gifts you a lucky chip, which you use to win a prize.<ul><li>+2.000 ¥</li></ul></li>' +
+            '<li>12: <strong>VIP Table Reserved</strong> – A corporate rep sees you and upgrades your seating to a VIP table.<ul><li>+1 Reputation</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T022',
         title: 'HoloLounge: Drinking',
         content:
             '<p>Add your <strong>Agility</strong> to the 2d6 roll when drinking to handle the physical effects and avoid getting too drunk.</p>' +
@@ -76,7 +114,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T022',
+        id: 'T023',
         title: 'HoloLounge: Gambling',
         content:
             '<p>To participate in gambling, you must have at least 2.000 ¥ in your pocket.</p>' +
@@ -96,11 +134,30 @@ export const Town = [
             '<p><em>"Food, but wired."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/CyberBite.jpg" alt="CyberBite" /></p>' +
             '<p>Nutrient paste and synth meat, spiked with nootropics and stim flavoring. Keeps your edge sharp.</p>' +
+            '<p>Before using the actions, roll 2d6 on the Event Table (T031) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at CyberBite:</strong></p>' +
-            '<ul><li>Eating Meals (T031)</li><li>Stimulant Injection (T032)</li></ul>',
+            '<ul><li>Eating Meals (T032)</li><li>Stimulant Injection (T033)</li></ul>',
     },
     {
         id: 'T031',
+        title: 'CyberBite: Event Table',
+        content:
+            '<ul>' +
+            '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
+            '<li>3: <strong>Missing Credstick</strong> – As you reach the counter, you realize your credstick is missing.<ul><li>-1 Reputation</li></ul></li>' +
+            '<li>4: <strong>Contamination Alert</strong> – A health scanner detects a false biohazard signature from your last visit.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>5: <strong>Overpriced Menu</strong> – The menu is far more expensive than anticipated.<ul><li>-1.000 ¥</li></ul></li>' +
+            '<li>6: <strong>Overflowing Crowds</strong> – The restaurant is packed beyond capacity.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
+            '<li>8: <strong>Speedy Service</strong> – Your order is processed quickly, and the meal arrives with no delay.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>9: <strong>Surprise Special</strong> – The chef offers a free, surprise dish on the house. It`s surprisingly delicious.<ul><li>+1 Health</li></ul></li>' +
+            '<li>10: <strong>Power Pour</strong> – The bartender slides you a glowing crimson shot on the house.<ul><li>+1 Strength Temporary</li></ul></li>' +
+            '<li>11: <strong>Exclusive Invite</strong> – You gain access to the VIP section.<ul><li>+1 Logic Temporary</li></ul></li>' +
+            '<li>12: <strong>Perfect Experience</strong> – The food is exceptional, and the atmosphere is perfect.<ul><li>+1 Reputation</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T032',
         title: 'CyberBite: Eating Meals',
         content:
             '<p>Add your <strong>Logic</strong> to the 2d6 roll when choosing or preparing meals to optimize quality and benefits.</p>' +
@@ -113,7 +170,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T032',
+        id: 'T033',
         title: 'CyberBite: Stimulant Injection',
         content:
             '<p>A dose will set you back 1.000 ¥, a price for pushing your limits.</p>' +
@@ -134,11 +191,30 @@ export const Town = [
             '<p><em>"Where your nightmares become hobbies."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>' +
             '<p>Immersive simulations, deep dives, and curated dreams. Your mind may wander, but your body pays.</p>' +
+            '<p>Before using the actions, roll 2d6 on the Event Table (T041) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at DreamSphere:</strong></p>' +
-            '<ul><li>Battery Recharge (T041)</li><li>Memory Mining (T042)</li></ul>',
+            '<ul><li>Battery Recharge (T042)</li><li>Memory Mining (T043)</li></ul>',
     },
     {
         id: 'T041',
+        title: 'DreamSphere: Event Table',
+        content:
+            '<ul>' +
+            '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
+            '<li>2: <strong>Welcome Drink Fail</strong> – The bartender serves you a drink that tastes completely wrong.<ul><li>-1 Health</li></ul></li>' +
+            '<li>4: <strong>Eyes on You</strong> – A corp agent sits quietly in the lobby, staring as you enter.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>5: <strong>Payment Verification Loop</strong> – Your credstick triggers an endless scan loop at check-in.<ul><li>-1.000 ¥</li></ul></li>' +
+            '<li>6: <strong>Security Delay</strong> – You`re stuck at the entrance as drones sweep the lobby.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
+            '<li>9: <strong>Complimentary Sleep Enhancer</strong> – You`re offered a free neural bath.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>8: <strong>Lucky Find</strong> – While passing through the lobby, you spot a forgotten wallet.<ul><li>+1.000 ¥</li></ul></li>' +
+            '<li>10: <strong>DreamBoost Package</strong> – A promo code in the system gives you a bonus service.<ul><li>+1 Health</li></ul></li>' +
+            '<li>11: <strong>VIP Recognition</strong> – The manager personally escorts you in, citing your stellar rep.<ul><li>+1 Intuition Temporary</li></ul></li>' +
+            '<li>12: <strong>Lucid Experience Access</strong> – A rare opening gives you access to the Lucid Lounge.<ul><li>+1 Reputation</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'T042',
         title: 'DreamSphere: Battery Recharge',
         content:
             '<p>Recharging your battery will cost you 2.000 ¥.</p>' +
@@ -152,7 +228,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T042',
+        id: 'T043',
         title: 'DreamSphere: Memory Mining',
         content:
             '<p>Drain some of your energy to fuel your wallet. Exchange <strong>-2 Energy</strong> for a quick infusion of <strong>1.000 ¥</strong>.</p>' +
