@@ -1,4 +1,4 @@
-import { Outlet, useLocation } from 'react-router-dom'
+import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
 import Dice from './components/Dice'
@@ -17,7 +17,9 @@ function App() {
                 <Dice label="1d6" min={1} max={6} />
 
                 <div className="mt-3 justify-items-center">
-                    <img src="/images/Logo.png" alt="Logo" />
+                    <Link to="/">
+                        <img src="/images/Logo.png" alt="Logo" />
+                    </Link>
                 </div>
 
                 <Dice label="2d6" min={2} max={11} />

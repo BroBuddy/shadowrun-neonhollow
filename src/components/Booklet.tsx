@@ -26,10 +26,14 @@ const Booklet = () => {
     const setTagsBySelection = (tagId: string) => {
         const activeTag = Data.find((item: TagItem) => item.id === tagId)
 
-        if (activeTag) {
-            setActiveTag(activeTag as TagItem)
-            setSelectedTag({ value: activeTag.id, label: activeTag.title })
+        if (!activeTag) {
+            setActiveTag(null)
+            setSelectedTag(null)
+            return
         }
+
+        setActiveTag(activeTag as TagItem)
+        setSelectedTag({ value: activeTag.id, label: activeTag.title })
     }
 
     const handleChange = (selectedTag: any) => {

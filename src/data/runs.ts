@@ -6,6 +6,7 @@ export const Runs = [
             '<p><em>"The smile’s fake. The creds are real."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>' +
             '<p>No one knows his real name — and that’s the point. Mr. Johnson is the middleman between shadow and silver, offering dirty jobs with clean payouts. Always dressed sharp, always calm, and never without a plan. If he calls, it means someone wants something done off the books... and you’re the asset.</p>' +
+            '<p>To take on a mission from Mr. Johnson, you’ll need to spend <strong>1 Reputation</strong>.</p>' +
             '<p>Roll 1d6 to determine your type of run:</p>' +
             '<ol><li>Assassination (M010)</li><li>Sabotage (M020)</li><li>Smuggling (M030)</li><li>Infiltration (M040)</li><li>Extraction (M050)</li><li>Negotiation (M060)</li></ol>' +
             '<p>To master the shadows, study the Rules (M002) — and after every run, debrief with the Performance (M003) to assess your impact.</p>',
@@ -22,11 +23,11 @@ export const Runs = [
         content:
             '<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done.</p>' +
             '<ul>' +
-            '<li>-3/-4: <strong>Disastrous</strong> – Mission failed catastrophically. Severe fallout and consequences.<ul><li>+1.000 ¥, -1 Reputation</li></ul></li>' +
+            '<li>-3/-4: <strong>Disastrous</strong> – Mission failed catastrophically. Severe fallout and consequences.<ul><li>-1 Reputation</li></ul></li>' +
             '<li>-1/-2: <strong>Underwhelming</strong> – You scraped by, but not without burning bridges. The job’s done—barely.<ul><li>+2.000 ¥</li></ul></li>' +
-            '<li>0: <strong>Mediocre</strong> – Mission completed, but with some compromises.<ul><li>+3.000 ¥</li></ul></li>' +
-            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+4.000 ¥</li></ul></li>' +
-            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+5.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>0: <strong>Mediocre</strong> – Mission completed, but with some compromises.<ul><li>+4.000 ¥</li></ul></li>' +
+            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+6.000 ¥</li></ul></li>' +
+            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+8.000 ¥, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
