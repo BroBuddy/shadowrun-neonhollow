@@ -26,8 +26,8 @@ export const Runs = [
             '<li>-3/-4: <strong>Disastrous</strong> – Mission failed catastrophically. Severe fallout and consequences.<ul><li>-1 Reputation</li></ul></li>' +
             '<li>-1/-2: <strong>Underwhelming</strong> – You scraped by, but not without burning bridges. The job’s done—barely.<ul><li>+2.000 ¥</li></ul></li>' +
             '<li>0: <strong>Mediocre</strong> – Mission completed, but with some compromises.<ul><li>+4.000 ¥</li></ul></li>' +
-            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+6.000 ¥</li></ul></li>' +
-            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+8.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>+1/+2: <strong>Impressive</strong> – You handled the mission well — efficient and mostly clean. Johnson’s pleased.<ul><li>+6.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>+3/+4: <strong>Exceptional</strong> – Mission flawlessly executed. No trace left behind.<ul><li>+8.000 ¥, +1 Reputation, +1 Intel</li></ul></li>' +
             '</ul>',
     },
     {

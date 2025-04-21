@@ -7,7 +7,7 @@ const MobileNav = () => {
                 <span className="text-xs">Character</span>
             </Link>
 
-            <Link to="/T001">
+            <Link to="/R101">
                 <span className="text-xs">NeonHollow</span>
             </Link>
 
