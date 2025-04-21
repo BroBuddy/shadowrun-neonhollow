@@ -13,7 +13,7 @@ export const Town = [
             '<p><strong>Industrial District:</strong></p>' +
             '<ul><li>EchoGarden (R160)</li><li>IronGym (R170)</li><li>NeuralNexus (R180)</li></ul>' +
             '<p><strong>Underground District:</strong></p>' +
-            '<ul><li>SmugglerDen (R190)</li><li>ZeroZone (T200)</li></ul>' +
+            '<ul><li>SmugglerDen (R190)</li><li>ZeroZone (R200)</li></ul>' +
             '<p>When a town event unfolds, roll on the Event Matrix (E001) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>',
     },
     {
@@ -440,17 +440,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T200',
+        id: 'R200',
         title: 'NeonHollow: ZeroZone',
         content:
             '<p><em>"Where the shadows test their own."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>' +
             '<p>ZeroZone is more than just a meeting ground—it`s the crucible where shadowrunners prove their worth. Every interaction here is a gamble, whether it’s a whispered offer or a brutal showdown. Step inside, and the city’s underbelly watches.</p>' +
             '<p><strong>Actions at ZeroZone:</strong></p>' +
-            '<ul><li>Wire a Contact (T201)</li><li>Challenge (T202)</li></ul>',
+            '<ul><li>Wire a Contact (R201)</li><li>Challenge (R202)</li></ul>',
     },
     {
-        id: 'T201',
+        id: 'R201',
         title: 'ZeroZone: Wire a Contact',
         content:
             '<p>Jack into the Runner Matrix (N001) to trace the digital scent of freelance talent ready to run.</p>' +
@@ -465,17 +465,17 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T202',
+        id: 'R202',
         title: 'ZeroZone: Challenge',
         content:
             '<p>Choose one of your physical or mental attributes.</p>' +
             '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
             '<ol><li><strong>Size up your opponent.</strong> Compare your chosen attribute with theirs to determine your edge.</li>' +
             '<li><strong>Feel the adrenaline.</strong> Add or subtract the difference to your 2d6 roll.</li>' +
-            '<li><strong>Face the outcome.</strong> Consult the challenge result (T103) to see if you walk away stronger — or bruised.</li></ol>',
+            '<li><strong>Face the outcome.</strong> Consult the challenge result (R203) to see if you walk away stronger — or bruised.</li></ol>',
     },
     {
-        id: 'T203',
+        id: 'R203',
         title: 'ZeroZone: Result',
         content:
             '<p>Once the sweat dries and the dust settles, it’s time to see what you gained — or lost.</p>' +
@@ -488,7 +488,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'T800',
+        id: 'R800',
         title: 'NeonHollow: SafeHouse',
         content:
             '<p><em>"No names. No noise. No light."</em></p>' +
@@ -497,7 +497,7 @@ export const Town = [
             '<p><strong>Actions at SafeHouse:</strong></p>',
     },
     {
-        id: 'T900',
+        id: 'R900',
         title: 'NeonHollow: CyberBite',
         content:
             '<p><em>"Food, but wired."</em></p>' +
@@ -505,10 +505,10 @@ export const Town = [
             '<p>Nutrient paste and synth meat, spiked with nootropics and stim flavoring. Keeps your edge sharp.</p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at CyberBite:</strong></p>' +
-            '<ul><li>Eating Meals (T901)</li></ul>',
+            '<ul><li>Eating Meals (R901)</li></ul>',
     },
     {
-        id: 'T901',
+        id: 'R901',
         title: 'CyberBite: Event Table',
         content:
             '<ul>' +
