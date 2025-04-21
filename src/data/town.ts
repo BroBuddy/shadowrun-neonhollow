@@ -25,21 +25,35 @@ export const Town = [
             '<p>The CorpTower stands above NeonHollow like a digital god—cold, untouchable, and always watching. Only those who’ve scrubbed their trail clean — <strong>Heat Level 0</strong> — can step inside.</p>' +
             '<p>Each action is a crucial move in your war against the Corp — complete them all to bring the tower crashing down.</p>' +
             '<p><strong>Actions at CorpTower:</strong></p>' +
-            '<ul><li>Leak Sensitive Data (R111)</li><li>Sabotage Critical Systems</li><li>Confront the Core</li></ul>',
+            '<ul><li>Leak Sensitive Data (R111)</li><li>Crash Security Systems (R112)</li><li>Confront the CEO (R113)</li></ul>',
     },
     {
         id: 'R111',
         title: 'CorpTower: Leak Sensitive Data',
         content:
             '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
-            '<p>Add your <strong>Logic</strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>' +
+            '<p>Add your <strong>Logic</strong> plus <strong>Intuition</strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>' +
             '<ul>' +
-            '<li>2–5: <strong>Data Backfire</strong> – You leaked a decoy file or were traced mid-upload.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
-            '<li>6–8: <strong>Small Breach</strong> – A minor internal memo goes public, raising a few eyebrows.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>9–11: <strong>Solid Leak</strong> – You release damaging, verifiable data. The corp scrambles to respond.<ul><li>-1 Corp Influence</li></ul></li>' +
-            '<li>12–14: <strong>Mass Disruption</strong> – Your leak hits a nerve: financial records, secret ops, or illegal R&D.<ul><li>-2 Corp Influence</li></ul></li>' +
-            '<li>15+: <strong>Cataclysmic Exposure</strong> – You shatter their image. Global attention, internal chaos, lawsuits incoming.<ul><li>-2 Corp Influence, +1 Reputation</li></ul></li>' +
+            '<li>2–5: <strong>Disastrous Failure</strong> – You’ve either sent a decoy file or were traced mid-upload, leaving a trail of evidence.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
+            '<li>6–9: <strong>Unsuccessful Attempt</strong> – The leak was sloppy, and it barely made an impact.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>10–13: <strong>Corp Defenses Hold</strong> – Your leak didn’t have the desired effect.<ul><li>No Effect</li></ul></li>' +
+            '<li>14–17: <strong>Moderate Success</strong> – The data released is credible and damaging.<ul><li>-1 Corp Influence</li></ul></li>' +
+            '<li>18+: <strong>Catastrophic Blow</strong> – The leak hits them hard. Global attention, corporate turmoil, and public outrage leave the Corp scrambling.<ul><li>-2 Corp Influence, +1 Reputation</li></ul></li>' +
             '</ul>',
+    },
+    {
+        id: 'R112',
+        title: 'CorpTower: Crash Security Systems',
+        content:
+            '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
+            '<p>Add your <strong>Agility</strong> plus <strong>Reaction </strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>',
+    },
+    {
+        id: 'R113',
+        title: 'CorpTower: Confront the CEO',
+        content:
+            '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
+            '<p>Add your <strong>Strength</strong> plus <strong>Charisma</strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>',
     },
     {
         id: 'R120',
