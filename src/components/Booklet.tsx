@@ -1,10 +1,10 @@
 import Select from 'react-select'
 import { useEffect, useState } from 'react'
-import Card from './Card'
 import { Outlet, useNavigate, useParams } from 'react-router-dom'
 import { TagItem, TagOption } from '@/lib/types'
 import { customStyles } from '@/lib/data'
 import { Data } from '@/data/data'
+import Card from './Card'
 
 const groupedOptions = [
     {

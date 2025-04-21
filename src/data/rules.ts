@@ -79,14 +79,14 @@ export const Rules = [
         id: 'R009',
         title: 'Heat: Events',
         content:
-            '<p>Roll 1d6 to see how the Corp retaliates against your rising threat:</p>' +
+            '<p><strong>Heat drops by 1</strong>, but now the corp’s next move is up in the air — roll a 1d6 to see how they respond.</p>' +
             '<ol>' +
-            '<li><strong>Hacked Account</strong> — A corp hacker infiltrates your system and drains your virtual wallet.<ul><li>-1.000 ¥</li></ul></li>' +
+            '<li><strong>Wrong Target</strong> — The corp grabs someone who almost matches your profile.<ul><li>No Effect</li></ul></li>' +
             '<li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>' +
-            '<li><strong>Surveillance Spike</strong> — Drones and streetcams are tracking your movements.<ul><li>+1 Heat</li></ul></li>' +
             '<li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Health</li></ul></li>' +
-            '<li><strong>Undercover Op</strong> — A fixer turns out to be a corp informant.<ul><li>-1 Reputation</li></ul></li>' +
-            '<li><strong>Unauthorized Access</strong> — A corp bot infiltrates your network, posing as a system update and stealing your Intel.<ul><li>-1 Intel</li></ul></li>' +
+            '<li><strong>Blackout Protocol</strong> — The corp cuts power in your sector to flush you out.<ul><li>-1 Health, -1 Energy</li></ul></li>' +
+            '<li><strong>Neuroshock Intercept</strong> — A neural disruptor pulse hits you mid-hack.<ul><li>-2 Health, -1 Energy</li></ul></li>' +
+            '<li><strong>Tactical Strike Drone</strong> — A silent drone shadows you, then hits with a low-yield concussive blast.<ul><li>-2 Health, -2 Energy</li></ul></li>' +
             '</ul>',
     },
     {
@@ -130,6 +130,26 @@ export const Rules = [
             '<li>Runner Matrix (N001)</li>' +
             '<li>Event Matrix (E001)</li>' +
             '</ul>',
+    },
+    {
+        id: 'R014',
+        title: 'Well Done',
+        content:
+            '<p>The Corp is no more. You’ve dismantled their influence and shattered their operations. <strong>NeonHollow</strong> will breathe easier now, though it will take time for the dust to settle.</p>' +
+            '<p>You’ve done well — this victory may be only the beginning of something bigger. Still, tonight, you’ve earned your place among the shadows.</p>' +
+            '<p>You notice the lights dimming, gradually fading until everything is engulfed in complete darkness.</p>' +
+            '<p>From afar, a familiar sound echoes...</p>' +
+            '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
+    },
+    {
+        id: 'R015',
+        title: 'Overwhelmingly Great',
+        content:
+            '<p>The Corp has crumbled. You’ve not only crushed their empire, you’ve sent shockwaves through the entire city. News of their downfall spreads like wildfire, and for once, it’s the people of <strong>NeonHollow</strong> who are celebrating.</p>' +
+            '<p>The city is yours, and you’ve rewritten its future in a single, devastating blow. Your name will be whispered in awe across the streets for years to come.</p>' +
+            '<p>You notice the lights dimming, gradually fading until everything is engulfed in complete darkness.</p>' +
+            '<p>From afar, a familiar sound echoes...</p>' +
+            '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
     },
     {
         id: 'R020',

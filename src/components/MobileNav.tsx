@@ -8,11 +8,11 @@ const MobileNav = () => {
             </Link>
 
             <Link to="/R101">
-                <span className="text-xs">NeonHollow</span>
+                <span className="text-xs">City</span>
             </Link>
 
             <Link to="/M001">
-                <span className="text-xs">Mr. Johnson</span>
+                <span className="text-xs">Runs</span>
             </Link>
         </section>
     )

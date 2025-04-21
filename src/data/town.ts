@@ -33,37 +33,49 @@ export const Town = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>' +
             '<p><em>"Order. Control. Perfection."</em></p>' +
-            '<p>Each action is a crucial move in your war against the Corp — complete them all to bring the tower crashing down.</p>' +
-            '<p><strong>Actions at CorpTower:</strong></p>' +
-            '<ul><li>Leak Sensitive Data (R111)</li><li>Crash Security Systems (R112)</li><li>Confront the CEO (R113)</li></ul>',
+            '<p>To bring down the Corp, you must follow the three steps in chronological order — only then will your duty be fulfilled.</p>' +
+            '<p>To progress, you must spend <strong>2 Intel</strong> for each step—no shortcuts on the road to revolution.</p>' +
+            '<p><strong>Steps at CorpTower:</strong></p>' +
+            '<ol><li>Leak Sensitive Data (R111)</li><li>Crash Security Systems (R112)</li><li>Confront the CEO (R113)</li></ol>',
     },
     {
         id: 'R111',
         title: 'CorpTower: Leak Sensitive Data',
         content:
-            '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
-            '<p>Add your <strong>Logic</strong> plus <strong>Intuition</strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>' +
+            '<p>Make a roll with <strong>Logic</strong> + <strong>Intuition</strong> to push forward.</p>' +
             '<ul>' +
-            '<li>2–5: <strong>Disastrous Failure</strong> – You’ve either sent a decoy file or were traced mid-upload, leaving a trail of evidence.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
-            '<li>6–9: <strong>Unsuccessful Attempt</strong> – The leak was sloppy, and it barely made an impact.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>10–13: <strong>Corp Defenses Hold</strong> – Your leak didn’t have the desired effect.<ul><li>No Effect</li></ul></li>' +
-            '<li>14–17: <strong>Moderate Success</strong> – The data released is credible and damaging.<ul><li>-1 Corp Influence</li></ul></li>' +
-            '<li>18+: <strong>Catastrophic Blow</strong> – The leak hits them hard. Global attention, corporate turmoil, and public outrage leave the Corp scrambling.<ul><li>-1 Corp Influence, +1 Reputation</li></ul></li>' +
+            '<li>0: <strong>Disastrous Failure</strong> – You’ve either sent a decoy file or were traced mid-upload, leaving a trail of evidence.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
+            '<li>1: <strong>Unsuccessful Attempt</strong> – The leak was sloppy, and it barely made an impact.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>2: <strong>Corp Defenses Hold</strong> – Your leak didn’t have the desired effect.<ul><li>No Effect</li></ul></li>' +
+            '<li>3: <strong>Moderate Success</strong> – The data released is credible and damaging.<ul><li>The task is complete</li></ul></li>' +
+            '<li>4+: <strong>Catastrophic Blow</strong> – The leak hits them hard. Global attention, corporate turmoil, and public outrage leave the Corp scrambling.<ul><li>The task is complete, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
         id: 'R112',
         title: 'CorpTower: Crash Security Systems',
         content:
-            '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
-            '<p>Add your <strong>Agility</strong> plus <strong>Reaction </strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>',
+            '<p>Make a roll with <strong>Agility</strong> + <strong>Reaction</strong> to push forward.</p>' +
+            '<ul>' +
+            '<li>0: <strong>Critical Breach</strong> – You’ve triggered an alarm, and the system locks down, sending the corp into high alert.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
+            '<li>1: <strong>Botched Attempt</strong> – The system is still mostly intact, but you’ve made a small hole in their defenses.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>2: <strong>Fortified Defenses</strong> – The system detects your intrusion, and your efforts are quickly neutralized.<ul><li>No Effect</li></ul></li>' +
+            '<li>3: <strong>Shaky Success</strong> – You’ve caused some damage, disrupting their security protocol for a brief period.<ul><li>The task is complete</li></ul></li>' +
+            '<li>4+: <strong>Security Meltdown</strong> – You’ve overwhelmed their security, leaving them scrambling to recover and cover their tracks.<ul><li>The task is complete, +1 Reputation</li></ul></li>' +
+            '</ul>',
     },
     {
         id: 'R113',
         title: 'CorpTower: Confront the CEO',
         content:
-            '<p>You must spend <strong>2 Intel</strong> to interact. No exceptions.</p>' +
-            '<p>Add your <strong>Strength</strong> plus <strong>Charisma</strong> value to the 2d6 roll to orchestrate the leak and manage the fallout.</p>',
+            '<p>Make a roll with <strong>Strength</strong> + <strong>Charisma</strong> to push forward.</p>' +
+            '<ul>' +
+            '<li>0: <strong>Epic Fail</strong> – The CEO laughs you off, and security is alerted.<ul><li>+1 Heat, -1 Reputation</li></ul></li>' +
+            '<li>1: <strong>Botched Negotiation</strong> – Your attempt at confrontation falters, and the CEO calls in reinforcements.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>2: <strong>Minor Setback</strong> – You manage to get a few words in, but the CEO turns the tables.<ul><li>No Effect</li></ul></li>' +
+            '<li>3: <strong>Crack the Mask</strong> – The CEO flinches. You`re getting to them.<ul><li>Victory! (R014)</li></ul></li>' +
+            '<li>4+: <strong>Toppled Tyrant</strong> – You break through. The corp`s reign is crumbling.<ul><li>Victory! (R015)</li></ul></li>' +
+            '</ul>',
     },
     {
         id: 'R120',
@@ -114,9 +126,9 @@ export const Town = [
             '<ul>' +
             '<li>2-5: <strong>Failed Pursuit</strong> – The bounty got away, leaving you with nothing to show for it.<ul><li>-1 Reputation</li></ul></li>' +
             '<li>6-8: <strong>Close Call</strong> – You managed to chase down the target, but just barely.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>	Decent Capture</strong> – You tracked and caught the bounty, but it wasn’t easy.<ul><li>+1.000 ¥</li></ul></li>' +
-            '<li>12-14: <strong>Swift Success</strong> – The bounty was caught quickly and efficiently.<ul><li>+1.000 ¥, -1 Heat</li></ul></li>' +
-            '<li>15+: <strong>Flawless Capture</strong> – You captured the bounty without any issues, impressing everyone in the system.<ul><li>+1.000 ¥, -1 Heat, +1 Reputation</li></ul></li>' +
+            '<li>9-11: <strong>	Decent Capture</strong> – You tracked and caught the bounty, but it wasn’t easy.<ul><li>+2.000 ¥</li></ul></li>' +
+            '<li>12-14: <strong>Swift Success</strong> – The bounty was caught quickly and efficiently.<ul><li>+4.000 ¥, -1 Heat</li></ul></li>' +
+            '<li>15+: <strong>Flawless Capture</strong> – You captured the bounty without any issues, impressing everyone in the system.<ul><li>+6.000 ¥, -1 Heat, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
@@ -151,7 +163,7 @@ export const Town = [
         id: 'R132',
         title: 'BioCare: Vital Restoration',
         content:
-            '<p>Restoring your wounds requires a payment of 3.000 ¥ for the necessary treatment and care.</p>' +
+            '<p>Restoring your wounds requires a payment of 1.000 ¥ for the necessary treatment and care.</p>' +
             '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
             '<ul>' +
             '<li>2-3: <strong>Malfunctioning Treatment</strong> – The procedure goes wrong, leaving you feeling disoriented and weak.<ul><li>-2 Energy</li></ul></li>' +
@@ -227,8 +239,8 @@ export const Town = [
             '<li>2-5: <strong>Big Loss</strong> – Your luck is about as bad as it gets tonight. The losses hit hard.<ul><li>-2.000 ¥, -1 Energy, -1 Reputation</li></ul></li>' +
             '<li>6-8: <strong>Unlucky Streak</strong> – The cards aren’t in your favor, and your winnings feel like they don’t matter much.<ul><li>-1.000 ¥, -1 Energy</li></ul></li>' +
             '<li>9-11: <strong>Even Luck</strong> – It’s a wash. No gains, no losses.<ul><li>No Effect</li></ul></li>' +
-            '<li>12-14: <strong>Lucky Break</strong> – The house can’t touch you tonight, and you’re getting the payout you’ve been waiting for.<ul><li>+1.000 ¥, +1 Energy</li></ul></li>' +
-            '<li>15+: <strong>Jackpot!</strong> – The payout is massive, and the room watches in awe as you walk away with a fortune.<ul><li>+2.000 ¥, +1 Energy, +1 Heat</li></ul></li>' +
+            '<li>12-14: <strong>Lucky Break</strong> – The house can’t touch you tonight, and you’re getting the payout you’ve been waiting for.<ul><li>+2.000 ¥, +1 Energy</li></ul></li>' +
+            '<li>15+: <strong>Jackpot!</strong> – The payout is massive, and the room watches in awe as you walk away with a fortune.<ul><li>+4.000 ¥, +1 Energy, +1 Heat</li></ul></li>' +
             '</ul>',
     },
     {
@@ -247,7 +259,7 @@ export const Town = [
         content:
             '<ul>' +
             '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
-            '<li>2: <strong>Welcome Drink Fail</strong> – The bartender serves you a drink that tastes completely wrong.<ul><li>-1 Health</li></ul></li>' +
+            '<li>3: <strong>Welcome Drink Fail</strong> – The bartender serves you a drink that tastes completely wrong.<ul><li>-1 Health</li></ul></li>' +
             '<li>4: <strong>Eyes on You</strong> – A corp agent sits quietly in the lobby, staring as you enter.<ul><li>+1 Heat</li></ul></li>' +
             '<li>5: <strong>Payment Verification Loop</strong> – Your credstick triggers an endless scan loop at check-in.<ul><li>-1.000 ¥</li></ul></li>' +
             '<li>6: <strong>Security Delay</strong> – You`re stuck at the entrance as drones sweep the lobby.<ul><li>-1 Energy</li></ul></li>' +
@@ -263,7 +275,7 @@ export const Town = [
         id: 'R152',
         title: 'DreamSphere: Battery Recharge',
         content:
-            '<p>Recharging your battery will cost you 2.000 ¥.</p>' +
+            '<p>Recharging your battery will cost you 1.000 ¥.</p>' +
             '<p>Add your <strong>Intuition</strong> to the 2d6 roll when sleeping — your instincts help you find rest in the chaos.</p>' +
             '<ul>' +
             '<li>2-5: <strong>Glitching Nightmare</strong> – The DreamSphere malfunctions, bombarding your mind with fractured code and unsettling visions.<ul><li>+2 Energy, -2 Health</li></ul></li>' +
@@ -334,11 +346,11 @@ export const Town = [
         content:
             '<p>Add your <strong>Reaction</strong> to the 2d6 roll when spying on an informant — your ability to blend into the crowd and avoid detection is key to gathering intel.</p>' +
             '<ul>' +
-            '<li>2-5: <strong>Spotted!</strong> – You fail to blend in and the informant notices your presence. They might take evasive action or call for backup.<ul><li>-1 Reputation, +1 Heat</li></ul></li>' +
-            '<li>6-8: <strong>Close Call</strong> – You manage to hide in the crowd, but the informant grows suspicious, narrowing their eyes. They might leave the area soon.<ul><li>-1 Reputation</li></ul></li>' +
-            '<li>9-11: <strong>Subtle Observation</strong> – You keep a low profile, tailing the informant without arousing suspicion. You gather valuable information.<ul><li>+1 Intel</li></ul></li>' +
-            '<li>12-14: <strong>Unseen</strong> – You move through the crowd effortlessly, your presence completely unnoticed. The informant doesn`t suspect a thing.<ul><li>+2 Intel</li></ul></li>' +
-            '<li>15+: <strong>Master of Shadows</strong> – Your skills in evasion are unmatched. Not only do you gather intel, but you also gain a better insight into the informant`s network.<ul><li>+2 Intel, +1 Reputation</li></ul></li>' +
+            '<li>2-5: <strong>Spotted!</strong> – You fail to blend in and the informant notices your presence.<ul><li>+1 Heat</li></ul></li>' +
+            '<li>6-8: <strong>Subtle Observation</strong> – You keep a low profile, tailing the informant without arousing suspicion.<ul><li>-1 Energy</li></ul></li>' +
+            '<li>9-11: <strong>Close Call</strong> – You manage to hide in the crowd, but the informant grows suspicious, narrowing their eyes.<ul><li>No Effect</li></ul></li>' +
+            '<li>12-14: <strong>Unseen</strong> – You move through the crowd effortlessly, your presence completely unnoticed.<ul><li>+1 Intel</li></ul></li>' +
+            '<li>15+: <strong>Master of Shadows</strong> – Your skills in evasion are unmatched.<ul><li>+1 Intel, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
@@ -452,9 +464,9 @@ export const Town = [
             '<ul>' +
             '<li>2-5: <strong>Flagged</strong> – Your intel was traced — you`re now on their radar<ul><li>+1 Heat</li></ul></li>' +
             '<li>6-8: <strong>Disregarded</strong> – Low-level intel. No one’s interested.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Standard Trade</strong> – Decent info, fair price.<ul><li>+1.000 ¥</li></ul></li>' +
-            '<li>12-14: <strong>Valuable Lead</strong> – They found use in your intel.<ul><li>+2.000 ¥</li></ul></li>' +
-            '<li>15+: <strong>Classified Gold</strong> – Your intel changes plans<ul><li>+3.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>9-11: <strong>Standard Trade</strong> – Decent info, fair price.<ul><li>+5.000 ¥</li></ul></li>' +
+            '<li>12-14: <strong>Valuable Lead</strong> – They found use in your intel.<ul><li>+10.000 ¥</li></ul></li>' +
+            '<li>15+: <strong>Classified Gold</strong> – Your intel changes plans<ul><li>+15.000 ¥</li></ul></li>' +
             '</ul>',
     },
     {
@@ -488,7 +500,8 @@ export const Town = [
             '<p>Choose one of your physical or mental attributes.</p>' +
             '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
             '<ol><li><strong>Size up your opponent.</strong> Compare your chosen attribute with theirs to determine your edge.</li>' +
-            '<li><strong>Feel the adrenaline.</strong> Add or subtract the difference to your 2d6 roll.</li>' +
+            '<li><strong>Enter the fray.</strong> Roll the dice equal to your attribute—then watch your opponent strike back.</li>' +
+            '<li><strong>Steel meets shadow.</strong> Compare successes and feel the tide of battle shift.</li>' +
             '<li><strong>Face the outcome.</strong> Consult the challenge result (R203) to see if you walk away stronger — or bruised.</li></ol>',
     },
     {
@@ -497,11 +510,11 @@ export const Town = [
         content:
             '<p>Once the sweat dries and the dust settles, it’s time to see what you gained — or lost.</p>' +
             '<ul>' +
-            '<li>2-3: <strong>Crushed</strong> – You were completely outmatched — maybe stick to cardio.<ul><li>-1 Health, -1 Reputation</li></ul></li>' +
-            '<li>4-5: <strong>Outperformed</strong> – You gave it your all, but your opponent had the upper hand.<ul><li>-1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Even Match</strong> – Neither of you gained the upper hand — this one’s a draw.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-10: <strong>Dominant</strong> – You held your ground and impressed everyone watching.<ul><li>+1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Flawless Victory</strong> – You completely outshined your opponent — respect earned.<ul><li>+1.000 ¥, +1 Reputation</li></ul></li>' +
+            '<li>-3/-4: <strong>Crushed</strong> – You were completely outmatched — maybe stick to cardio.<ul><li>-1 Health, -1 Reputation</li></ul></li>' +
+            '<li>-1/-2: <strong>Outperformed</strong> – You gave it your all, but your opponent had the upper hand.<ul><li>-1 Health</li></ul></li>' +
+            '<li>0: <strong>Even Match</strong> – Neither of you gained the upper hand — this one’s a draw.<ul><li>No Effect</li></ul></li>' +
+            '<li>+1/+2: <strong>Dominant</strong> – You held your ground and impressed everyone watching.<ul><li>+2.000 ¥</li></ul></li>' +
+            '<li>+3/+4: <strong>Flawless Victory</strong> – You completely outshined your opponent — respect earned.<ul><li>+4.000 ¥, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
