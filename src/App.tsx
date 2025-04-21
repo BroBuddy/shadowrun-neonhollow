@@ -1,7 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
-import Dice from './components/Dice'
 import './App.css'
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
     return (
         <>
             <div className="flex sticky top-0 bg-black justify-between items-center px-3 z-10">
-                <Dice label="1d6" min={1} max={6} />
+                <Link to="/N001">RM</Link>
 
                 <div className="mt-3 justify-items-center">
                     <Link to="/R001">
@@ -22,7 +21,7 @@ function App() {
                     </Link>
                 </div>
 
-                <Dice label="2d6" min={2} max={11} />
+                <Link to="/E001">EM</Link>
             </div>
 
             <div className="z-0">

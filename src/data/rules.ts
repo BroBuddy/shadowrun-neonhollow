@@ -18,7 +18,7 @@ export const Rules = [
             '<li><strong>Suit Up</strong> – Grab 2d6, a pen, and something to write on. That’s your loadout.</li>' +
             '<li><strong>Create Your Runner</strong> (R003) – Build the shadow operative who’ll face the city’s dark corners.</li>' +
             '<li><strong>Know Your Core</strong> – Get familiar with what keeps you alive:' +
-            '<ul><li>Health (R005)</li><li>Energy (R006)</li><li>Reputation (R007)</li><li>Heat (R008)</li><li>Intel (R009)</li></ul></li>' +
+            '<ul><li>Health (R005)</li><li>Energy (R006)</li><li>Reputation (R007)</li><li>Heat (R008)</li><li>Intel (R010)</li><li>Time (R011)</li><li>Dice Rolling (R012)</li></ul></li>' +
             '<li><strong>Enter NeonHollow</strong> (R101) – The city’s waiting. Time to make your move.</li>' +
             '</ol>',
     },
@@ -27,7 +27,7 @@ export const Rules = [
         title: 'Rules: Runner',
         content:
             '<p>Follow this guide to build your runner before diving into the shadows.</p>' +
-            '<ol><li>(R010) Archetype</li><li>(R020) Metatype</li><li>(R030) Background</li><li>(R040) Name</li><li>(R050) Mode</li></ol>' +
+            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R040) Name</li><li>(R050) Background</li><li>(R060) Mode</li></ol>' +
             '<p>When rolling for a random attribute, refer to the attribute details for guidance (R004).</p>',
     },
     {
@@ -70,74 +70,66 @@ export const Rules = [
         title: 'Character: Heat',
         content:
             '<p>Heat represents your notoriety with the law in NeonHollow. It rises when you engage in illegal activities and decreases when you stick to the straight and narrow.</p>' +
-            '<p>The scale ranges from 0 to 10, with three distinct levels: at Level 0, you`re practically invisible to the authorities—nothing out of the ordinary.</p>' +
+            '<p>The scale ranges from 0 to 5, at the end of each day, roll 1d6.</p>' +
+            '<p>If the result is equal to or higher than your current Heat, the Corp takes notice — roll on the Heat Events (R009) to see how they respond.</p>' +
             '<p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>' +
             '<p>To reduce heat, you can pay off an officer for a quick fix, or you can choose to lay low for a while, allowing time to dull the memory of your face and your criminal activities.</p>',
     },
     {
         id: 'R009',
+        title: 'Heat: Events',
+        content:
+            '<p>Roll 1d6 to see how the Corp retaliates against your rising threat:</p>' +
+            '<ol>' +
+            '<li><strong>Hacked Account</strong> — A corp hacker infiltrates your system and drains your virtual wallet.<ul><li>-1.000 ¥</li></ul></li>' +
+            '<li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>' +
+            '<li><strong>Surveillance Spike</strong> — Drones and streetcams are tracking your movements.<ul><li>+1 Heat</li></ul></li>' +
+            '<li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Health</li></ul></li>' +
+            '<li><strong>Undercover Op</strong> — A fixer turns out to be a corp informant.<ul><li>-1 Reputation</li></ul></li>' +
+            '<li><strong>Unauthorized Access</strong> — A corp bot infiltrates your network, posing as a system update and stealing your Intel.<ul><li>-1 Intel</li></ul></li>' +
+            '</ul>',
+    },
+    {
+        id: 'R010',
         title: 'Character: Intel',
         content:
-            '<p>Intel is the lifeblood of your runner’s network—sought-after information about the city, the corps, or anyone who’s in the know. It’s not just facts; it’s power in a world where knowledge can be as valuable as a weapon.</p>' +
+            '<p>Intel is the lifeblood of your runner’s network — sought-after information about the city, the corps, or anyone who’s in the know. It’s not just facts; it’s power in a world where knowledge can be as valuable as a weapon.</p>' +
             '<p>Your Intel ranges from 0 to 5, and it’s a currency of its own in the shadows of NeonHollow.</p>' +
             '<p>The primary reason to gather Intel is to strike at the heart of the megacorp’s influence—leaking secrets, sabotaging control systems, or blackmailing key players. And if you’re low on creds, you can always sell your findings to a fixer for a quick payout.</p>' +
             '<p>Whether you’re tracking down an informant or stumbling upon hidden data caches, every sliver of Intel you collect sharpens your edge in this cutthroat world.</p>',
     },
     {
-        id: 'R010',
-        title: 'Character: Archetype',
-        content:
-            '<p>Roll 1d6 to determine your archetype:</p>' +
-            '<ol><li>(R011) Street Samurai</li><li>(R012) Decker</li><li>(R013) Rigger</li><li>(R014) Mage</li><li>(R015) Face</li><li>(R016) Shaman</li></ol>' +
-            '<p>Each archetype has unique strengths, weaknesses, and a default set of attribute values.</p>',
-    },
-    {
         id: 'R011',
-        title: 'Archetype: Street Samurai',
+        title: 'Character: Time',
         content:
-            '<p>A master of combat, both physical and ranged. Often a hired gun or mercenary, the Street Samurai relies on strength and agility to survive in the harsh world of the shadows.</p>' +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 4</li><li>Agility: 4</li><li>Reaction: 3</li><li>Logic: 2</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>',
+            '<p>You’ve got 14 days to take down the corp. The clock’s ticking, and you need to move fast.</p>' +
+            '<p>Each day starts at <strong>0 hours</strong>, and every action you take in the town eats up <strong>1 hour</strong> of your time.</p>' +
+            '<p>The day ends either when a town event (E001) occurs or when you take on a job from <strong>Mr. Johnson</strong> (M001).</p>' +
+            '<p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>',
     },
     {
         id: 'R012',
-        title: 'Archetype: Decker',
+        title: 'Rules: Dice Rolling',
         content:
-            "<p>The digital cowboy. A Decker navigates the Matrix, hacking and controlling systems with a mix of tech skills and speed. They're often the go-to for gathering information or manipulating digital environments.</p>" +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 2</li><li>Agility: 3</li><li>Reaction: 4</li><li>Logic: 4</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>',
+            '<p>When prompted to roll <strong>1d6</strong>, it means you must roll a single six-sided die — your fate resting on a number between 1 and 6.</p>' +
+            '<p>Rolling <strong>2d6</strong> means tossing two six-sided dice and adding the results together.</p>' +
+            '<p>For Matrix checks, throw two sixers: the first die gives you the tens, the second the ones.</p>' +
+            '<p>Whenever you roll double ones, it triggers a critical glitch—data corruption, misfire, or worse. You immediately lose <strong>1 Intel</strong>.</p>' +
+            '<p>On the flip side, if you roll double sixes, you strike digital gold: gain <strong>1 Intel</strong> as the shadows reward your precision.</p>',
     },
     {
         id: 'R013',
-        title: 'Archetype: Rigger',
+        title: 'Rules: Sheet',
         content:
-            '<p>Riggers specialize in controlling drones, vehicles, and machinery. Their physical prowess allows them to take charge of mechanical and robotic assets, making them versatile in combat and exploration.</p>' +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 3</li><li>Agility: 4</li><li>Reaction: 2</li><li>Logic: 3</li><li>Intuition: 2</li><li>Charisma: 4</li></ul>',
-    },
-    {
-        id: 'R014',
-        title: 'Archetype: Mage',
-        content:
-            '<p>The wielder of magical powers. Mages use their abilities to manipulate the elements, enchant objects, and protect themselves from harm. They rely heavily on their mental attributes to tap into their magical forces.</p>' +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 3</li><li>Agility: 2</li><li>Reaction: 2</li><li>Logic: 4</li><li>Intuition: 4</li><li>Charisma: 3</li></ul>',
-    },
-    {
-        id: 'R015',
-        title: 'Archetype: Face',
-        content:
-            '<p>The social expert, often the face of the team. Faces specialize in negotiations, deception, and influence. They rely on charisma to manipulate others and can charm or intimidate their way through various situations.</p>' +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 2</li><li>Agility: 3</li><li>Reaction: 4</li><li>Logic: 3</li><li>Intuition: 2</li><li>Charisma: 4</li></ul>',
-    },
-    {
-        id: 'R016',
-        title: 'Archetype: Shaman',
-        content:
-            "<p>A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.</p>" +
-            '<p><strong>Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 3</li><li>Logic: 2</li><li>Intuition: 4</li><li>Charisma: 3</li></ul>',
+            '<p>A fast-access reference sheet featuring the most essential rules and frequently used tables for quick decision-making in the field.</p>' +
+            '<ul>' +
+            '<li>Instructions (R002)</li>' +
+            '<li>Heat: Events (R009)</li>' +
+            '<li>Run: Rules (M002)</li>' +
+            '<li>Run: Performance (M003)</li>' +
+            '<li>Runner Matrix (N001)</li>' +
+            '<li>Event Matrix (E001)</li>' +
+            '</ul>',
     },
     {
         id: 'R020',
@@ -153,8 +145,8 @@ export const Rules = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/Human.jpg" alt="Human" /></p>' +
             '<p>The most adaptable and versatile race, humans have the ability to excel in nearly every environment. They may not possess the natural enhancements of the other races, but their drive and determination make them a powerful force in any situation.</p>' +
-            '<p><strong>Bonuses:</strong></p>' +
-            "<p>+1 to any attribute (Player's choice)</p>",
+            '<p><strong>Starting Attributes:</strong></p>' +
+            '<ul><li>Strength: 3</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>',
     },
     {
         id: 'R022',
@@ -162,8 +154,8 @@ export const Rules = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/Elf.jpg" alt="Elf" /></p>' +
             '<p>"Graceful, elegant, and with a keen intellect, elves are often seen as the aristocrats of the Shadowrun world. Their natural agility and charisma make them invaluable in both social and combat situations.</p>' +
-            '<p><strong>Bonuses:</strong></p>' +
-            '<p>+1 to Agility / Charisma</p>',
+            '<p><strong>Starting Attributes:</strong></p>' +
+            '<ul><li>Strength: 2</li><li>Agility: 4</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 2</li><li>Charisma: 4</li></ul>',
     },
     {
         id: 'R023',
@@ -171,8 +163,8 @@ export const Rules = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/Dwarf.jpg" alt="Dwarf" /></p>' +
             '<p>Dwarves are the embodiment of endurance and resilience. Shorter in stature but larger in presence, they are known for their strength, toughness, and unyielding determination. They’re often the reliable backbone of any crew</p>' +
-            '<p><strong>Bonuses:</strong></p>' +
-            '<p>+1 to Strength / Logic</p>',
+            '<p><strong>Starting Attributes:</strong></p>' +
+            '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 2</li><li>Logic: 4</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>',
     },
     {
         id: 'R024',
@@ -180,8 +172,8 @@ export const Rules = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/Ork.jpg" alt="Ork" /></p>' +
             '<p>With a natural inclination toward physical power and aggression, orks are often misunderstood as brutish, but they have a strong sense of loyalty and honor. Their towering frames and raw strength make them formidable in any fight.</p>' +
-            '<p><strong>Bonuses:</strong></p>' +
-            '<p>+1 to Strength / Intuition</p>',
+            '<p><strong>Starting Attributes:</strong></p>' +
+            '<ul><li>Strength: 4</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 2</li><li>Intuition: 4</li><li>Charisma: 2</li></ul>',
     },
     {
         id: 'R025',
@@ -189,50 +181,64 @@ export const Rules = [
         content:
             '<p class="flex items-center justify-center"><img src="/images/Troll.jpg" alt="Troll" /></p>' +
             '<p>Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.</p>' +
-            '<p><strong>Bonuses:</strong></p>' +
-            '<p>+1 to Strength / Reaction</p>',
+            '<p><strong>Starting Attributes:</strong></p>' +
+            '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 4</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>',
     },
     {
         id: 'R030',
-        title: 'Character: Background',
+        title: 'Character: Archetype',
         content:
-            '<p>Your origins matter — pick your metatype to unveil the path that led you here.</p>' +
-            '<ul><li>(R031) Human</li><li>(R032) Elf</li><li>(R033) Dwarf</li><li>(R034) Orc</li><li>(R035) Troll</li></ul>',
+            '<p>Roll 1d6 to determine your archetype:</p>' +
+            '<ol><li>(R031) Street Samurai</li><li>(R032) Decker</li><li>(R033) Rigger</li><li>(R034) Mage</li><li>(R035) Face</li><li>(R036) Shaman</li></ol>' +
+            '<p>Each archetype has unique strengths, weaknesses, and a default set of attribute values.</p>',
     },
     {
         id: 'R031',
-        title: 'Background: Human',
+        title: 'Archetype: Street Samurai',
         content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Corporate Soldier:</strong><br />You worked in the security detail of a corporate mega-conglomerate. You understand the balance of power and the weight of wealth.</li><li><strong>Street Hustler:</strong><br />You grew up on the streets, using your wits and charm to survive. You’re a smooth talker and a quick thinker.</li><li><strong>Tech Salvager:</strong><br />You spent years collecting and selling tech scraps, learning the ins and outs of electronics. Your mind works well with complex systems.</li><li><strong>Military Veteran:</strong><br />Years of service have given you discipline and experience under pressure. You are tough and resilient in combat.</li><li><strong>Escape Artist:</strong><br />You’ve mastered the art of getting out of tight spots with agility.</li><li><strong>Runaway Noble:</strong><br />Born into wealth but raised on the streets, you blend both worlds with ease.</li></ol>',
+            '<p>A master of combat, both physical and ranged. Often a hired gun or mercenary, the Street Samurai relies on strength and agility to survive in the harsh world of the shadows.</p>' +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Strength</li><li>+1 Agility</li></ul>',
     },
     {
         id: 'R032',
-        title: 'Background: Elf',
+        title: 'Archetype: Decker',
         content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Elven Noble:</strong><br />You were raised in the lap of luxury, trained in etiquette, and surrounded by politics.</li><li><strong>Forest Scout:</strong><br />Raised in the deep forests, you’re quick, quiet, and aware of everything around you.</li><li><strong>Arcane Scholar:</strong><br />Years of study have sharpened your logical mind and magical knowledge.</li><li><strong>Speedster:</strong><br />Whether in the woods or streets, you’re faster than the rest.</li><li><strong>High Society Rebel:</strong><br />Born into privilege but now a free spirit with street wisdom.</li><li><strong>Master of Disguise:</strong><br />You blend into any crowd with ease and grace.</li></ol>',
+            "<p>The digital cowboy. A Decker navigates the Matrix, hacking and controlling systems with a mix of tech skills and speed. They're often the go-to for gathering information or manipulating digital environments.</p>" +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Reaction</li><li>+1 Logic</li></ul>',
     },
     {
         id: 'R033',
-        title: 'Background: Dwarf',
+        title: 'Archetype: Rigger',
         content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Forge Worker:</strong><br />A life at the forge made you strong, hardy, and skilled with your hands.</li><li><strong>Engineer:</strong><br />You can fix or build anything, even under pressure.</li><li><strong>Underground Tracker:</strong><br />Raised in the tunnels, your sense of direction is legendary.</li><li><strong>Mercenary:</strong><br />Battle-hardened and unshakable in combat.</li><li><strong>Craftsman:</strong><br />Your work is detailed, refined, and always functional.</li><li><strong>Grumpy Old Mentor:</strong><br />Gruff but wise, you’ve got decades of experience to offer.</li></ol>',
+            '<p>Riggers specialize in controlling drones, vehicles, and machinery. Their physical prowess allows them to take charge of mechanical and robotic assets, making them versatile in combat and exploration.</p>' +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Agility</li><li>+1 Logic</li></ul>',
     },
     {
         id: 'R034',
-        title: 'Background: Ork',
+        title: 'Archetype: Mage',
         content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Street Enforcer:</strong><br />People don’t argue with you—you’re the muscle they fear.</li><li><strong>Rage Fighter:</strong><br />You strike fast and hard, fueled by fury.</li><li><strong>Tech Scrapper:</strong><br />You’ve got grease under your nails and a working knowledge of tech.</li><li><strong>Hunter:</strong><br />Keen instincts and quick reflexes keep you alive in the wild.</li><li><strong>Urban Scout:</strong><br />You own the alleys and rooftops—urban terrain is your jungle.</li><li><strong>Grunt:</strong><br />You’ve been on the frontlines, taking the hits and surviving the worst.</li></ol>',
+            '<p>The wielder of magical powers. Mages use their abilities to manipulate the elements, enchant objects, and protect themselves from harm. They rely heavily on their mental attributes to tap into their magical forces.</p>' +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Intuition</li><li>+1 Charisma</li></ul>',
     },
     {
         id: 'R035',
-        title: 'Background: Troll',
+        title: 'Archetype: Face',
         content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Pit Fighter:</strong><br />You’ve battled in the arena—brute strength is your game.</li><li><strong>Bouncer:</strong><br />You protect, intimidate, and shut things down with your presence.</li><li><strong>Mossback:</strong><br />Tough, seasoned, and unmovable in a fight.</li><li><strong>Ravager:</strong><br />You charge like a freight train—melee combat is your playground.</li><li><strong>Beastmaster:</strong><br />You’ve tamed wild creatures and learned their ways.</li><li><strong>Troll Outlaw:</strong><br />A nomad and survivor with a fearsome reputation.</li></ol>',
+            '<p>The social expert, often the face of the team. Faces specialize in negotiations, deception, and influence. They rely on charisma to manipulate others and can charm or intimidate their way through various situations.</p>' +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Reaction</li><li>+1 Charisma</li></ul>',
+    },
+    {
+        id: 'R036',
+        title: 'Archetype: Shaman',
+        content:
+            "<p>A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.</p>" +
+            '<p><strong>Bonus Attributes:</strong></p>' +
+            '<ul><li>+1 Strength</li><li>+1 Intuition</li></ul>',
     },
     {
         id: 'R040',
@@ -303,6 +309,48 @@ export const Rules = [
     },
     {
         id: 'R050',
+        title: 'Character: Background',
+        content:
+            '<p>Your origins matter — pick your metatype to unveil the path that led you here.</p>' +
+            '<ul><li>(R051) Human</li><li>(R052) Elf</li><li>(R053) Dwarf</li><li>(R054) Orc</li><li>(R055) Troll</li></ul>',
+    },
+    {
+        id: 'R051',
+        title: 'Background: Human',
+        content:
+            '<p>Roll 1d6 to determine your background:</p>' +
+            '<ol><li><strong>Corporate Soldier:</strong><br />You worked in the security detail of a corporate mega-conglomerate. You understand the balance of power and the weight of wealth.</li><li><strong>Street Hustler:</strong><br />You grew up on the streets, using your wits and charm to survive. You’re a smooth talker and a quick thinker.</li><li><strong>Tech Salvager:</strong><br />You spent years collecting and selling tech scraps, learning the ins and outs of electronics. Your mind works well with complex systems.</li><li><strong>Military Veteran:</strong><br />Years of service have given you discipline and experience under pressure. You are tough and resilient in combat.</li><li><strong>Escape Artist:</strong><br />You’ve mastered the art of getting out of tight spots with agility.</li><li><strong>Runaway Noble:</strong><br />Born into wealth but raised on the streets, you blend both worlds with ease.</li></ol>',
+    },
+    {
+        id: 'R052',
+        title: 'Background: Elf',
+        content:
+            '<p>Roll 1d6 to determine your background:</p>' +
+            '<ol><li><strong>Elven Noble:</strong><br />You were raised in the lap of luxury, trained in etiquette, and surrounded by politics.</li><li><strong>Forest Scout:</strong><br />Raised in the deep forests, you’re quick, quiet, and aware of everything around you.</li><li><strong>Arcane Scholar:</strong><br />Years of study have sharpened your logical mind and magical knowledge.</li><li><strong>Speedster:</strong><br />Whether in the woods or streets, you’re faster than the rest.</li><li><strong>High Society Rebel:</strong><br />Born into privilege but now a free spirit with street wisdom.</li><li><strong>Master of Disguise:</strong><br />You blend into any crowd with ease and grace.</li></ol>',
+    },
+    {
+        id: 'R053',
+        title: 'Background: Dwarf',
+        content:
+            '<p>Roll 1d6 to determine your background:</p>' +
+            '<ol><li><strong>Forge Worker:</strong><br />A life at the forge made you strong, hardy, and skilled with your hands.</li><li><strong>Engineer:</strong><br />You can fix or build anything, even under pressure.</li><li><strong>Underground Tracker:</strong><br />Raised in the tunnels, your sense of direction is legendary.</li><li><strong>Mercenary:</strong><br />Battle-hardened and unshakable in combat.</li><li><strong>Craftsman:</strong><br />Your work is detailed, refined, and always functional.</li><li><strong>Grumpy Old Mentor:</strong><br />Gruff but wise, you’ve got decades of experience to offer.</li></ol>',
+    },
+    {
+        id: 'R054',
+        title: 'Background: Ork',
+        content:
+            '<p>Roll 1d6 to determine your background:</p>' +
+            '<ol><li><strong>Street Enforcer:</strong><br />People don’t argue with you—you’re the muscle they fear.</li><li><strong>Rage Fighter:</strong><br />You strike fast and hard, fueled by fury.</li><li><strong>Tech Scrapper:</strong><br />You’ve got grease under your nails and a working knowledge of tech.</li><li><strong>Hunter:</strong><br />Keen instincts and quick reflexes keep you alive in the wild.</li><li><strong>Urban Scout:</strong><br />You own the alleys and rooftops—urban terrain is your jungle.</li><li><strong>Grunt:</strong><br />You’ve been on the frontlines, taking the hits and surviving the worst.</li></ol>',
+    },
+    {
+        id: 'R055',
+        title: 'Background: Troll',
+        content:
+            '<p>Roll 1d6 to determine your background:</p>' +
+            '<ol><li><strong>Pit Fighter:</strong><br />You’ve battled in the arena—brute strength is your game.</li><li><strong>Bouncer:</strong><br />You protect, intimidate, and shut things down with your presence.</li><li><strong>Mossback:</strong><br />Tough, seasoned, and unmovable in a fight.</li><li><strong>Ravager:</strong><br />You charge like a freight train—melee combat is your playground.</li><li><strong>Beastmaster:</strong><br />You’ve tamed wild creatures and learned their ways.</li><li><strong>Troll Outlaw:</strong><br />A nomad and survivor with a fearsome reputation.</li></ol>',
+    },
+    {
+        id: 'R060',
         title: 'Character: Mode',
         content:
             '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +

@@ -3,9 +3,8 @@ export const Runs = [
         id: 'M001',
         title: 'Mr. Johnson',
         content:
-            '<p><em>"The smile’s fake. The creds are real."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>' +
-            '<p>No one knows his real name — and that’s the point. Mr. Johnson is the middleman between shadow and silver, offering dirty jobs with clean payouts. Always dressed sharp, always calm, and never without a plan. If he calls, it means someone wants something done off the books... and you’re the asset.</p>' +
+            '<p><em>"The smile’s fake. The creds are real."</em></p>' +
             '<p>To take on a mission from Mr. Johnson, you’ll need to spend <strong>1 Reputation</strong>.</p>' +
             '<p>Roll 1d6 to determine your type of run:</p>' +
             '<ol><li>Assassination (M010)</li><li>Sabotage (M020)</li><li>Smuggling (M030)</li><li>Infiltration (M040)</li><li>Extraction (M050)</li><li>Negotiation (M060)</li></ol>' +

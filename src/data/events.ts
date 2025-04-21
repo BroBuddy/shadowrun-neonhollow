@@ -23,7 +23,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Use your gut feeling to judge if this is a trap or a legitimate offer.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E012',
@@ -34,7 +34,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Reaction:</strong> React quickly and dive into an alley or hide to avoid being seen by the pursuers.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E013',
@@ -45,7 +45,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Logic:</strong> Analyze the situation and quickly access the terminal to extract the information first.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E014',
@@ -56,7 +56,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Use your instincts to determine if there are any dangerous individuals lurking nearby.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Health</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E015',
@@ -67,7 +67,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1.000 ¥</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your speed and dexterity to grab the item while avoiding being noticed.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E016',
@@ -78,7 +78,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Trust your instincts to assess if they’re truly reformed or setting you up for betrayal.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E021',
@@ -89,7 +89,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your speed and reflexes to dodge and counter your opponent’s attacks.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E022',
@@ -100,7 +100,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1.000 ¥</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Use your instincts to detect any hidden dangers or traps within the deal.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Health</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E023',
@@ -111,7 +111,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Reaction:</strong> React quickly to counter the security system’s failsafes before they trigger an alarm.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E024',
@@ -122,7 +122,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use your physical presence to intimidate them into offering more favorable terms.</p>' +
             '<ul><li><strong>Success:</strong> +1.000 ¥</li><li><strong>Fail:</strong> -1 Health</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E025',
@@ -133,7 +133,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Follow your instincts and pick up on small clues that lead to the contact.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E026',
@@ -144,7 +144,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your speed to navigate through the store and stop the robbers without getting hurt.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E031',
@@ -155,7 +155,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Logic:</strong> Analyze the ingredients and find a dish that best suits your nutritional needs.</p>' +
             '<ul><li><strong>Success:</strong> +1 Health</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E032',
@@ -166,7 +166,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your words to de-escalate the situation and convince both parties to walk away peacefully.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E033',
@@ -177,7 +177,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your social skills to negotiate a better deal for the information offered.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E034',
@@ -188,7 +188,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1.000 ¥</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Quickly grab the item before anyone notices you and avoids detection by other scavengers.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E035',
@@ -199,7 +199,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use brute force to disable the drone by physically overpowering it or damaging its components.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E036',
@@ -210,7 +210,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Use your instincts to determine if the hacker is setting you up for a trap.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E041',
@@ -221,7 +221,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Reaction:</strong> React quickly to sudden changes in the race and other drivers’ tactics.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> -1 Health</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E042',
@@ -232,7 +232,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Trust your instincts to predict the gang leader’s next move and track them down swiftly.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E043',
@@ -243,7 +243,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your agility to dodge attacks and help calm down the situation before it gets worse.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E044',
@@ -254,7 +254,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your charm to convince others to clear the path and ensure the delivery is smooth.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E045',
@@ -265,7 +265,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Trust your instincts to spot security measures and hack the system before it catches on.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E046',
@@ -276,7 +276,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use your physical strength to move heavy cargo or confront those involved in the theft.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E051',
@@ -287,7 +287,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use your strength to handle the goods and ensure the transaction goes off without a hitch.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E052',
@@ -298,7 +298,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Rely on your instincts to detect hidden defenses and ensure the virus doesn’t trigger alarms.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E053',
@@ -309,7 +309,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Trust your instincts to anticipate the spy’s movements and corner them before they escape.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E054',
@@ -320,7 +320,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your charisma to talk your way through security and avoid a full inspection of your cargo.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E055',
@@ -331,7 +331,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use your physical presence to intimidate the officer into compliance without paying the bribe.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E056',
@@ -342,7 +342,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your agility to avoid getting caught in the chaos and escape the scene unharmed.</p>' +
             '<ul><li><strong>Success:</strong> +1 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E061',
@@ -353,7 +353,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your charm to convince the ring’s operators to let you join the game and possibly gain an advantage.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E062',
@@ -364,7 +364,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your quick reflexes to dodge guards and slip past them unnoticed.</p>' +
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E063',
@@ -375,7 +375,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Health</li></ul></li>' +
             '<li><p><strong>Intuition:</strong> Trust your instincts to find the kidnappers’ hideout and rescue the informant.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E064',
@@ -386,7 +386,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Charisma:</strong> Use your charisma to negotiate a peace between the warring factions, preventing further bloodshed.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E065',
@@ -397,7 +397,7 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Agility:</strong> Use your agility to sneak into the auction and steal valuable items without being caught.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
     {
         id: 'E066',
@@ -408,6 +408,6 @@ export const Events = [
             '<ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul></li>' +
             '<li><p><strong>Strength:</strong> Use your strength to confront any danger head-on and secure the situation.</p>' +
             '<ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll.</p>',
+            '<p>Choose one and add your <strong>Attribute</strong> value to a 2d6 roll. A roll of <strong>10</strong> or higher counts as a success.</p>',
     },
 ]

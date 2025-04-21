@@ -3,9 +3,8 @@ export const Town = [
         id: 'R101',
         title: 'NeonHollow',
         content:
-            '<p><em>"Where the lights never die — only the people do."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>' +
-            '<p><strong>NeonHollow</strong> is a fractured sprawl of flickering holo-ads, decaying arcologies, and back-alley deals. The corporations rule from mirrored towers, the gangs own the ground, and the rest just try to survive in the haze of smog and digital noise. Nothing here is clean—least of all your conscience.</p>' +
+            '<p><em>"Where the lights never die — only the people do."</em></p>' +
             '<p><strong>Security District:</strong></p>' +
             '<ul><li>CorpTower (R110)</li><li>PatrolHub (R120)</li></ul>' +
             '<p><strong>Entertainment District:</strong></p>' +
@@ -14,15 +13,26 @@ export const Town = [
             '<ul><li>EchoGarden (R160)</li><li>IronGym (R170)</li><li>NeuralNexus (R180)</li></ul>' +
             '<p><strong>Underground District:</strong></p>' +
             '<ul><li>SmugglerDen (R190)</li><li>ZeroZone (R200)</li></ul>' +
-            '<p>When a town event unfolds, roll on the Event Matrix (E001) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>',
+            '<p>Dive into the rules (R102) to get a taste of how things run at <strong>NeonHollow</strong>.</p>',
+    },
+    {
+        id: 'R102',
+        title: 'NeonHollow: Rules',
+        content:
+            '<p>NeonHollow’s split into four districts. Moving between them drains <strong>1 Energy</strong>, a small price to pay for what you might find.</p>' +
+            '<p>Each district is home to various facilities. Upon entering one, you`ll need to roll on an event table to see what unfolds within.</p>' +
+            '<p>Every action takes <strong>1 hour</strong>, and once you`re done, you`ll return to the streets. Afterward, roll 1d6 to see if a town event kicks off.</p>' +
+            '<p>If the roll exceeds your current hour, the streets stay quiet — no surprises this time.</p>' +
+            '<p>When a town event unfolds, roll on the <strong>Event Matrix</strong> (E001) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>' +
+            '<p>As long as no town event pops up, you can pay a visit to <strong>Mr. Johnson</strong> (M001) and line up your next run.</p>' +
+            '<p>A day ends either when a town event kicks off or when the runner takes on a job from Mr. Johnson.</p>',
     },
     {
         id: 'R110',
         title: 'NeonHollow: CorpTower',
         content:
-            '<p><em>"Order. Control. Perfection."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>' +
-            '<p>The CorpTower stands above NeonHollow like a digital god—cold, untouchable, and always watching. Only those who’ve scrubbed their trail clean — <strong>Heat Level 0</strong> — can step inside.</p>' +
+            '<p><em>"Order. Control. Perfection."</em></p>' +
             '<p>Each action is a crucial move in your war against the Corp — complete them all to bring the tower crashing down.</p>' +
             '<p><strong>Actions at CorpTower:</strong></p>' +
             '<ul><li>Leak Sensitive Data (R111)</li><li>Crash Security Systems (R112)</li><li>Confront the CEO (R113)</li></ul>',
@@ -38,7 +48,7 @@ export const Town = [
             '<li>6–9: <strong>Unsuccessful Attempt</strong> – The leak was sloppy, and it barely made an impact.<ul><li>+1 Heat</li></ul></li>' +
             '<li>10–13: <strong>Corp Defenses Hold</strong> – Your leak didn’t have the desired effect.<ul><li>No Effect</li></ul></li>' +
             '<li>14–17: <strong>Moderate Success</strong> – The data released is credible and damaging.<ul><li>-1 Corp Influence</li></ul></li>' +
-            '<li>18+: <strong>Catastrophic Blow</strong> – The leak hits them hard. Global attention, corporate turmoil, and public outrage leave the Corp scrambling.<ul><li>-2 Corp Influence, +1 Reputation</li></ul></li>' +
+            '<li>18+: <strong>Catastrophic Blow</strong> – The leak hits them hard. Global attention, corporate turmoil, and public outrage leave the Corp scrambling.<ul><li>-1 Corp Influence, +1 Reputation</li></ul></li>' +
             '</ul>',
     },
     {
@@ -59,9 +69,8 @@ export const Town = [
         id: 'R120',
         title: 'NeonHollow: PatrolHub',
         content:
-            '<p><em>"The law`s last flicker."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>' +
-            '<p>Half-abandoned precincts where drones recharge and jaded officers monitor chaos from dusty screens.</p>' +
+            '<p><em>"The law`s last flicker."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R121) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at PatrolHub:</strong></p>' +
             '<ul><li>Pay Off Heat (R122)</li><li>Bounty Hunting (R123)</li></ul>',
@@ -114,9 +123,8 @@ export const Town = [
         id: 'R130',
         title: 'NeonHollow: BioCare',
         content:
-            '<p><em>"Healing flesh, not souls."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>' +
-            '<p>Gene-hacked meds and synthetic organs in sterile, humming rooms. You’ll walk out fixed. Probably.</p>' +
+            '<p><em>"Healing flesh, not souls."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at BioCare:</strong></p>' +
             '<ul><li>Vital Restoration (R132)</li><li>Plasma Donation (R133)</li></ul>',
@@ -171,9 +179,8 @@ export const Town = [
         id: 'R140',
         title: 'NeonHollow: HoloLounge',
         content:
-            '<p><em>"Reality? Optional."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>' +
-            '<p>Plug in and drift away — virtual escapism meets social surveillance. Someone’s always watching.</p>' +
+            '<p><em>"Reality? Optional."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R141) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at HoloLounge:</strong></p>' +
             '<ul><li>Drinking Shots (R142)</li><li>Gambling (R143)</li></ul>',
@@ -200,6 +207,7 @@ export const Town = [
         id: 'R142',
         title: 'HoloLounge: Drinking Shots',
         content:
+            '<p>Quenching your thirst with a round of shots comes at a cost of 1.00 ¥ per drink.</p>' +
             '<p>Add your <strong>Agility</strong> to the 2d6 roll when drinking to handle the physical effects and avoid getting too drunk.</p>' +
             '<ul>' +
             '<li>2-5: <strong>Glitched Gut</strong> – Your stomach churns, vision blurs, and you knock over a table. Someone`s watching now.<ul><li>-1 Energy, +1 Heat</li></ul></li>' +
@@ -227,9 +235,8 @@ export const Town = [
         id: 'R150',
         title: 'NeonHollow: DreamSphere',
         content:
-            '<p><em>"Where your nightmares become hobbies."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>' +
-            '<p>Immersive simulations, deep dives, and curated dreams. Your mind may wander, but your body pays.</p>' +
+            '<p><em>"Where your nightmares become hobbies."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R151) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at DreamSphere:</strong></p>' +
             '<ul><li>Battery Recharge (R152)</li><li>Eating Meals (R153)</li></ul>',
@@ -245,8 +252,8 @@ export const Town = [
             '<li>5: <strong>Payment Verification Loop</strong> – Your credstick triggers an endless scan loop at check-in.<ul><li>-1.000 ¥</li></ul></li>' +
             '<li>6: <strong>Security Delay</strong> – You`re stuck at the entrance as drones sweep the lobby.<ul><li>-1 Energy</li></ul></li>' +
             '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
-            '<li>9: <strong>Complimentary Sleep Enhancer</strong> – You`re offered a free neural bath.<ul><li>+1 Energy</li></ul></li>' +
-            '<li>8: <strong>Lucky Find</strong> – While passing through the lobby, you spot a forgotten wallet.<ul><li>+1.000 ¥</li></ul></li>' +
+            '<li>8: <strong>Complimentary Sleep Enhancer</strong> – You`re offered a free neural bath.<ul><li>+1 Energy</li></ul></li>' +
+            '<li>9: <strong>Lucky Find</strong> – While passing through the lobby, you spot a forgotten wallet.<ul><li>+1.000 ¥</li></ul></li>' +
             '<li>10: <strong>DreamBoost Package</strong> – A promo code in the system gives you a bonus service.<ul><li>+1 Health</li></ul></li>' +
             '<li>11: <strong>VIP Recognition</strong> – The manager personally escorts you in, citing your stellar rep.<ul><li>+1 Intuition Temporary</li></ul></li>' +
             '<li>12: <strong>Lucid Experience Access</strong> – A rare opening gives you access to the Lucid Lounge.<ul><li>+1 Reputation</li></ul></li>' +
@@ -270,6 +277,7 @@ export const Town = [
         id: 'R153',
         title: 'DreamSphere: Eating Meals',
         content:
+            '<p>Satisfying your hunger with a hearty meal costs 1.000 ¥.</p>' +
             '<p>Add your <strong>Logic</strong> to the 2d6 roll when choosing or preparing meals to optimize quality and benefits.</p>' +
             '<ul>' +
             '<li>2-5: <strong>Spoiled Slop</strong> – The meal was synthetic... and suspiciously expired.<ul><li>-1 Health, -1 Energy</li></ul></li>' +
@@ -283,9 +291,8 @@ export const Town = [
         id: 'R160',
         title: 'NeonHollow: EchoGarden',
         content:
-            '<p><em>"The city’s memory grows here."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>' +
-            '<p>Overgrown ruins tuned to ancient tech and spirit circuits. The wind speaks, if you know how to listen.</p>' +
+            '<p><em>"The city’s memory grows here."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R161) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at EchoGarden:</strong></p>' +
             '<ul><li>Laying Off (R162)</li><li>Informant Detection (R163)</li></ul>',
@@ -338,9 +345,8 @@ export const Town = [
         id: 'R170',
         title: 'NeonHollow: IronGym',
         content:
-            '<p><em>"Muscle isn`t old-school—it`s survival."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>' +
-            '<p>At IronGym, you can enhance your attributes through training or pit them against other runners in a challenging showdown.</p>' +
+            '<p><em>"Muscle isn`t old-school — it`s survival."</em></p>' +
             '<p><strong>Actions at IronGym:</strong></p>' +
             '<ul><li>Physical Training (R171)</li><li>Stimulant Injection (R172)</li></ul>',
     },
@@ -379,9 +385,8 @@ export const Town = [
         id: 'R180',
         title: 'NeonHollow: NeuralNexus',
         content:
-            '<p><em>"Where minds meet machines."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>' +
-            '<p>At NeuralNexus, you can refine your attributes with targeted training or challenge other runners to test your skills.</p>' +
+            '<p><em>"Where minds meet machines."</em></p>' +
             '<p><strong>Actions at NeuralNexus:</strong></p>' +
             '<ul><li>Mental Training (R181)</li><li>Memory Mining (R182)</li></ul>',
     },
@@ -419,9 +424,8 @@ export const Town = [
         id: 'R190',
         title: 'NeonHollow: SmugglerDen',
         content:
-            '<p><em>"The city`s forgotten veins."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>' +
-            '<p>Crates of contraband, whispered deals, and guarded nods. If it’s illegal or rare, it passed through here.</p>' +
+            '<p><em>"The city`s forgotten veins."</em></p>' +
             '<p><strong>Actions at SmugglerDen:</strong></p>' +
             '<ul><li>Cyberware Installation (R191)</li><li>Selling Intel (R192)</li></ul>',
     },
@@ -457,9 +461,8 @@ export const Town = [
         id: 'R200',
         title: 'NeonHollow: ZeroZone',
         content:
-            '<p><em>"Where the shadows test their own."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>' +
-            '<p>ZeroZone is more than just a meeting ground—it`s the crucible where shadowrunners prove their worth. Every interaction here is a gamble, whether it’s a whispered offer or a brutal showdown. Step inside, and the city’s underbelly watches.</p>' +
+            '<p><em>"Where the shadows test their own."</em></p>' +
             '<p><strong>Actions at ZeroZone:</strong></p>' +
             '<ul><li>Wire a Contact (R201)</li><li>Challenge (R202)</li></ul>',
     },
@@ -505,18 +508,16 @@ export const Town = [
         id: 'R800',
         title: 'NeonHollow: SafeHouse',
         content:
-            '<p><em>"No names. No noise. No light."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>' +
-            '<p>Beneath the rotting infrastructure of NeonHollow’s oldest sector lies your Safehouse—a forgotten utility chamber swallowed by darkness and moisture. Pipes run like veins along the low ceiling, rattling with pressure and age.</p>' +
+            '<p><em>"No names. No noise. No light."</em></p>' +
             '<p><strong>Actions at SafeHouse:</strong></p>',
     },
     {
         id: 'R900',
         title: 'NeonHollow: CyberBite',
         content:
-            '<p><em>"Food, but wired."</em></p>' +
             '<p class="flex items-center justify-center"><img src="/images/CyberBite.jpg" alt="CyberBite" /></p>' +
-            '<p>Nutrient paste and synth meat, spiked with nootropics and stim flavoring. Keeps your edge sharp.</p>' +
+            '<p><em>"Food, but wired."</em></p>' +
             '<p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>' +
             '<p><strong>Actions at CyberBite:</strong></p>' +
             '<ul><li>Eating Meals (R901)</li></ul>',
