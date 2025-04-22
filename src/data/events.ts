@@ -5,7 +5,8 @@ export const Events = [
         content:
             '<p>To roll on the Event Matrix:</p>' +
             '<ol><li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li><li>Combine the two rolls to form a two-digit number.</li><li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>' +
-            '<li>Choose how to handle the event, then roll the corresponding number of 1d6 based on your skill level.</li></ol>' +
+            '<li>Choose how to handle the event, then roll the number of <strong>1d6</strong> corresponding to the value of your chosen attribute.</li>' +
+            '<li>To achieve success, you always need at least <strong>2 Successes</strong>.</li></ol>' +
             '<ul>' +
             '<li>E011, E012, E013, E014, E015, E016</li>' +
             '<li>E021, E022, E023, E024, E025, E026</li>' +
@@ -17,363 +18,686 @@ export const Events = [
     },
     {
         id: 'E011',
-        title: 'Midnight Deal',
-        content:
-            '<p>You meet a shady figure in an alleyway offering a rare item in exchange for your services later.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your social skills to negotiate better terms for the deal.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Use your gut feeling to judge if this is a trap or a legitimate offer.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Power Surge',
+        content: `<p>In the blink of an eye, lights across the district flicker out. Emergency backups hum weakly, but critical systems are down. Doors won’t open, elevators stall, and neon signs die, leaving the streets eerily dark. People panic while others see opportunity in the shadows.</p>
+        <ul>
+            <li><strong>Logic:</strong> Diagnose grid failures and reroute energy manually.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> Navigate the chaos and avoid hazards in the dark.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E012',
-        title: 'Parkour Escape',
-        content:
-            '<p>You witness a chase through the city streets, with an individual fleeing from security forces. The target runs in your direction.</p>' +
-            '<ul><li><p><strong>Agility:</strong> Use your parkour skills to escape through the city and avoid getting caught in the chaos.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Reaction:</strong> React quickly and dive into an alley or hide to avoid being seen by the pursuers.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Gang Skirmish',
+        content: `<p>The distant sound of gunfire quickly becomes a brutal street clash as rival gangs bring their turf war into the open. Civilians run for cover as drones scan for threats and trigger-happy thugs shoot first, ask never. You’re in the middle—like it or not.</p>
+        <ul>
+            <li><strong>Strength:</strong> Push through the brawl and shield others from crossfire.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Agility:</strong> Dodge debris and gunfire while escaping the scene.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E013',
-        title: 'Corporate Espionage',
-        content:
-            '<p>You discover a corporate agent trying to steal information from a nearby terminal. They haven’t noticed you yet.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical strength to overpower the agent before they can escape.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Logic:</strong> Analyze the situation and quickly access the terminal to extract the information first.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'System Audit',
+        content: `<p>Unmarked corp vans roll in with men in suits and mirrored shades. It’s a spontaneous citywide audit—identity checks, data sweeps, and silence. Those with clean records walk. The rest... vanish. It’s a bad time to look suspicious.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Convince officials you’re just a harmless citizen.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Logic:</strong> Forge clean credentials on the fly.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E014',
-        title: 'Night Market Mystery',
-        content:
-            '<p>You stumble upon a hidden market in the back alleys, where strange and unusual items are being sold.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your charm to strike up a conversation with the vendors and get a special item for a bargain.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Use your instincts to determine if there are any dangerous individuals lurking nearby.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li></ul>',
+        title: 'HoloMalfunction',
+        content: `<p>Suddenly, reality bends. Public holograms glitch, flicker, and merge with corrupted ads and rogue sensory loops. People stumble, stunned by the overload. Some go into panic, others collapse. The city turns into a dizzying circus of synthetic hallucinations.</p>
+        <ul>
+            <li><strong>Intuition:</strong> Identify a safe route through the visual chaos.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> React quickly to avoid running into danger.
+                <ul>
+                    <li><strong>Success:</strong> +1 Agility Temporary</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E015',
-        title: 'Junkyard Scavenger Hunt',
-        content:
-            '<p>You find a group of scavengers fighting over some valuable scraps in a junkyard. There’s a rare piece of equipment among the debris.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your strength to push through the crowd and claim the valuable item for yourself.</p>' +
-            '<ul><li><strong>2+:</strong> +1.000 ¥</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your speed and dexterity to grab the item while avoiding being noticed.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Riot Response',
+        content: `<p>What started as a peaceful protest explodes into full-scale unrest. Flames flicker in the distance. Armed patrols clash with rioters. Barricades rise. Drones buzz overhead. You're either part of the cleanup—or collateral.</p>
+        <ul>
+            <li><strong>Agility:</strong> Slip through the crowds unnoticed and unharmed.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Strength:</strong> Hold the line or break through violent crowds.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E016',
-        title: 'Unlikely Ally',
-        content:
-            '<p>A former enemy seeks your help with a personal problem. They claim they’ve turned over a new leaf and want to make amends.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your social skills to gauge their sincerity and decide if you should help.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Trust your instincts to assess if they’re truly reformed or setting you up for betrayal.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>' +
-            '<p>Choose an option, then roll the corresponding number of 1d6 based on your skill level. You need at least one success (5+).</p>',
+        title: 'Data Leak',
+        content: `<p>Confidential data floods the net—blacklists, corp secrets, even underground aliases. Everyone wants a piece of it. Fixers, runners, and enforcers scramble to secure or erase traces before they’re burned by the fallout.</p>
+        <ul>
+            <li><strong>Intuition:</strong> Locate the source and capture valuable files.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Charisma:</strong> Sell false leads to rival fixers.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E021',
-        title: 'Underground Fight Club',
-        content:
-            '<p>You are invited to an underground fight club where illegal matches are held. The prize for victory is significant.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical power to dominate the opponent and win the fight.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your speed and reflexes to dodge and counter your opponent’s attacks.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Drone Interference',
+        content: `<p>Surveillance drones are behaving erratically, hovering too low, scanning innocents, and occasionally crashing. The glitch might be random—or a test. Citizens are unnerved, and runners are being flagged as high-priority threats.</p>
+        <ul>
+            <li><strong>Reaction:</strong> Evade malfunctioning drones before you're tagged.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Logic:</strong> Override a drone’s routine and redirect it.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E022',
-        title: 'Smuggler’s Deal',
-        content:
-            '<p>You come across a smuggler trying to offload illegal goods in a back alley. You may either help them or report them.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your negotiation skills to strike a deal for a good cut of the goods.</p>' +
-            '<ul><li><strong>2+:</strong> +1.000 ¥</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Use your instincts to detect any hidden dangers or traps within the deal.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li></ul>',
+        title: 'Toxic Leak',
+        content: `<p>Alarms blare in the Industrial District. A transport truck jackknifed near a biochem depot, leaking fluorescent vapor. The air burns to breathe, and cleanup crews are late. Residents flee while looters dive in for rare salvage.</p>
+        <ul>
+            <li><strong>Strength:</strong> Help seal the rupture using brute force and gear.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -2 Health</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Find a clean exit before the toxin spreads.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E023',
-        title: 'Hack the Grid',
-        content:
-            '<p>You find a terminal with a weakened security system. It’s tempting to try and hack into it for valuable data.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your hacking skills to bypass the system and extract valuable intel.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Reaction:</strong> React quickly to counter the security system’s failsafes before they trigger an alarm.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Black Market Raid',
+        content: `<p>Word spreads fast: authorities are raiding underground trade hubs. Smugglers ditch crates in alleys, buyers scatter. Some see it as a chance to snatch unclaimed tech—others know it’s a trap with teeth.</p>
+        <ul>
+            <li><strong>Agility:</strong> Dash in, grab goods, and escape before backup arrives.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Charisma:</strong> Convince raiders you’re part of the cleanup crew.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E024',
-        title: 'Streetwise Negotiation',
-        content:
-            '<p>A local street gang offers you a deal: protection in exchange for your loyalty. They want an answer quickly.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your charm and negotiation skills to get a better deal.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use your physical presence to intimidate them into offering more favorable terms.</p>' +
-            '<ul><li><strong>2+:</strong> +1.000 ¥</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li></ul>',
+        title: 'Neural Broadcast Glitch',
+        content: `<p>All over town, neural implants start buzzing with strange pulses—random memories, thoughts, or encrypted fragments. It leaves people dizzy or worse. Someone’s testing a signal... or sending a message.</p>
+        <ul>
+            <li><strong>Logic:</strong> Decode the pulse and stabilize your implant.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Resist the mental assault and clear your head.
+                <ul>
+                    <li><strong>Success:</strong> +1 Health</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E025',
-        title: 'Lost Contact',
-        content:
-            '<p>You receive an encrypted message from a former contact who’s gone missing. They’re in trouble and need your help to escape a dangerous situation.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your logical thinking to track down the contact and figure out their location.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Follow your instincts and pick up on small clues that lead to the contact.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Rogue Courier',
+        content: `<p>A courier bot meant for secure corp deliveries has gone rogue, jetting through alleys and rooftop routes. Rumor says it’s carrying data chips worth a fortune—or an AI with secrets someone didn’t want released.</p>
+        <ul>
+            <li><strong>Reaction:</strong> Track and intercept the bot mid-run.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Predict the courier’s next location.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E026',
-        title: 'Robbery in Progress',
-        content:
-            '<p>You witness a robbery in a nearby store. The thieves are armed, and you must decide how to act.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical power to intervene and disarm the robbers.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your speed to navigate through the store and stop the robbers without getting hurt.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Street Prophet',
+        content: `<p>A cloaked figure preaches doom at every intersection, warning of firewalls collapsing and AIs waking up. Most ignore him—until his predictions start coming true. Traffic crashes, drones dive, and digital ads flicker to static eyes.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Calm the crowd and rally them away from chaos.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Piece together what the prophet truly knows.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E031',
-        title: 'Street Food Encounter',
-        content:
-            '<p>You find yourself standing in front of a street food stall offering exotic dishes from various cultures.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your charm to talk the vendor into giving you a special discount or a free meal.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Logic:</strong> Analyze the ingredients and find a dish that best suits your nutritional needs.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Health</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Night Howlers',
+        content: `<p>As dusk falls, an unknown gang launches a blitz through the Underground District. Cyber-hacked beasts and augmented enforcers clash with patrols. Chaos spreads fast—and you're caught in the middle.</p>
+        <ul>
+            <li><strong>Strength:</strong> Fight off an aggressive ganger blocking your escape.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -2 Health</li>
+                </ul>
+            </li>
+            <li><strong>Agility:</strong> Slip between crossfire and vanish into the shadows.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E032',
-        title: 'Late Night Argument',
-        content:
-            '<p>You overhear a heated argument between two locals. One of them is becoming increasingly aggressive.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical presence to break up the argument before it escalates further.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your words to de-escalate the situation and convince both parties to walk away peacefully.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Encrypted Broadcast',
+        content: `<p>A rogue signal overrides public screens, displaying cryptic messages and flickering blueprints. Corps rush to shut it down, but it’s spreading like wildfire through backchannels.</p>
+        <ul>
+            <li><strong>Logic:</strong> Decode the stream before it gets scrubbed.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Follow the hidden markers to the source.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E033',
-        title: 'Streetwise Informant',
-        content:
-            '<p>You are approached by a shady informant offering inside information about a new job opportunity.</p>' +
-            '<ul><li><p><strong>Intuition:</strong> Use your gut feeling to judge if the informant can be trusted.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your social skills to negotiate a better deal for the information offered.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Corporate Parade',
+        content: `<p>A major corp rolls through downtown with a flashy security showcase—drones, armored convoys, and neon-clad execs. It’s all PR, but the street is a minefield of surveillance.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Blend in with the crowd and fake a corp ID.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> Duck through blind spots before the scanners catch you.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E034',
-        title: 'Trash Bin Treasure',
-        content:
-            '<p>You find a trash bin filled with discarded electronics and spare parts. One item catches your eye.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your knowledge to identify a valuable part that could be resold or used for upgrades.</p>' +
-            '<ul><li><strong>2+:</strong> +1.000 ¥</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Quickly grab the item before anyone notices you and avoids detection by other scavengers.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Neon Storm',
+        content: `<p>A rare energy storm warps electronics citywide. Neon signs flicker violently, streetlights burst, and vehicles stall. The unstable surge makes neural links flare dangerously.</p>
+        <ul>
+            <li><strong>Logic:</strong> Ground your system and save your gear from frying.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Strength:</strong> Drag civilians out of a crashed tram's danger zone.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E035',
-        title: 'Rogue Drone Attack',
-        content:
-            '<p>A rogue drone starts attacking civilians in the area. It’s up to you to take it down before it causes further chaos.</p>' +
-            '<ul><li><p><strong>Reaction:</strong> Use your quick reflexes to dodge the drone’s attacks and retaliate effectively.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use brute force to disable the drone by physically overpowering it or damaging its components.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Lost Shipment',
+        content: `<p>A container marked with a restricted corp seal washed up in the city’s canal. It's half-submerged, blinking, and unguarded—for now. The question is: grab it or walk away?</p>
+        <ul>
+            <li><strong>Reaction:</strong> Quickly recover the container before corp drones arrive.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Scan for traps and avoid potential setup.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E036',
-        title: 'Hacker’s Gambit',
-        content:
-            '<p>You encounter a skilled hacker in the area who offers to help you crack into a corporate system for a price.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your own hacking skills to offer a counterproposal or solve the issue without needing help.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Use your instincts to determine if the hacker is setting you up for a trap.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Echo in the Wires',
+        content: `<p>Old net architecture beneath the city pulses online for the first time in years. Ghost code floods public terminals, and runners whisper of an AI waking from dormancy.</p>
+        <ul>
+            <li><strong>Logic:</strong> Interface with the terminal and pull data before it fades.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Charisma:</strong> Convince a rival crew to share their decrypted fragment.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E041',
-        title: 'Illegal Street Racing',
-        content:
-            '<p>You’re offered a chance to participate in an illegal street race. The stakes are high, and only the fastest will win.</p>' +
-            '<ul><li><p><strong>Agility:</strong> Use your driving skills and reflexes to navigate the racecourse and avoid obstacles.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Reaction:</strong> React quickly to sudden changes in the race and other drivers’ tactics.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li></ul>',
+        title: 'Synthetic Plague',
+        content: `<p>A mutated bio-virus has slipped containment in a nearby lab. Streets are locked down, and drones scan for signs of infection. Runners are being blamed for the breach.</p>
+        <ul>
+            <li><strong>Logic:</strong> Reprogram a med-drone to scan and clear you.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Agility:</strong> Escape quarantine patrols before they close in.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -2 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E042',
-        title: 'Underground Bounty Hunt',
-        content:
-            '<p>A bounty has been placed on a local gang leader. You’re given the chance to track them down and collect the reward.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical prowess to take down the gang leader and bring them to justice.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Trust your instincts to predict the gang leader’s next move and track them down swiftly.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'False Broadcast',
+        content: `<p>Someone hijacks a local media node, broadcasting a deepfake of you committing a high-profile crime. Your reputation takes a hit—unless you fix it fast.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Convince a trusted informant to discredit the footage.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Track the origin of the false feed.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E043',
-        title: 'Local Bar Brawl',
-        content:
-            '<p>You’re sitting at a bar when a sudden brawl breaks out between two rival gangs. The situation is escalating quickly.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your muscle to break up the fight or help your side win the altercation.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your agility to dodge attacks and help calm down the situation before it gets worse.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Burning Skies',
+        content: `<p>A corp zeppelin crashes into a tenement block in the Industrial District. Fires spread, alarms wail, and panic floods the street. You’re nearby—and you might be able to help.</p>
+        <ul>
+            <li><strong>Strength:</strong> Pull survivors from debris before the fire spreads.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> Dodge falling wreckage and reach the scene first.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E044',
-        title: 'Discreet Delivery',
-        content:
-            '<p>You’re tasked with delivering a sensitive package to a contact across town. Time is of the essence, and there are several obstacles in your way.</p>' +
-            '<ul><li><p><strong>Reaction:</strong> Use your quick thinking and reflexes to avoid the obstacles and deliver the package on time.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your charm to convince others to clear the path and ensure the delivery is smooth.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Midnight Deal',
+        content: `<p>You overhear a fixer negotiating a risky black-market exchange in a back alley. You could step in, assist—or walk away before things get ugly.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Mediate the deal and win both sides' trust.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Notice the hidden ambush and slip out early.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E045',
-        title: 'Hacker’s Deal',
-        content:
-            '<p>A local hacker offers you an opportunity to access a secure corporate network. It could provide valuable information if you succeed.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your logical thinking and technical skills to crack the system and retrieve the data.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Trust your instincts to spot security measures and hack the system before it catches on.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Neural Glitch',
+        content: `<p>A new firmware patch pushes to the entire district. Those with implants experience spasms, hallucinations, and memory gaps. If you’re wired, you feel it instantly.</p>
+        <ul>
+            <li><strong>Logic:</strong> Patch the code manually before your implants fry.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Strength:</strong> Hold steady and ride out the seizures.
+                <ul>
+                    <li><strong>Success:</strong> +1 Health</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E046',
-        title: 'Disappearing Cargo',
-        content:
-            '<p>You’re hired to track down a stolen shipment of goods that has gone missing in transit. The trail is cold, but you might find something important.</p>' +
-            '<ul><li><p><strong>Intuition:</strong> Follow your instincts and clues to find the stolen goods.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use your physical strength to move heavy cargo or confront those involved in the theft.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li></ul>',
+        title: 'Encrypted Cache',
+        content: `<p>A runner posts a cryptic location drop for an abandoned corp cache. Dozens begin the hunt, but the system guarding it is old—and dangerous.</p>
+        <ul>
+            <li><strong>Logic:</strong> Crack the encryption before rival runners catch on.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> Outrun competitors and reach the cache first.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E051',
-        title: 'Black Market Deal',
-        content:
-            '<p>You’re offered a shady deal in a back alley. A local fixer wants you to help transport illegal goods, but it could lead to trouble if you’re not careful.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your charm and negotiation skills to make the deal go smoothly and avoid attracting attention.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use your strength to handle the goods and ensure the transaction goes off without a hitch.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Corporate Espionage',
+        content: `<p>A rival corporation's espionage team attempts to steal sensitive data from the district. The chaos is unfolding around you. You have to decide how to get involved.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Convince a bystander to leak crucial information.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Track the espionage team's movements and sabotage their plan.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E052',
-        title: 'Viral Hack',
-        content:
-            '<p>A hacker group offers you a lucrative contract to plant a virus in a corporation’s systems. The catch is, they want you to do it discreetly.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your technical skills to craft the virus and deploy it without getting caught.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Rely on your instincts to detect hidden defenses and ensure the virus doesn’t trigger alarms.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Hacker Riot',
+        content: `<p>A local hacker group starts a riot, disrupting city-wide comms and electronics. The streets are chaotic as they demand greater freedom from corporate control.</p>
+        <ul>
+            <li><strong>Agility:</strong> Navigate the riot safely and avoid danger.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Logic:</strong> Hack into the group's system and disable their riot control equipment.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E053',
-        title: 'Runaway Corporate Spy',
-        content:
-            '<p>A corporate spy has gone rogue with sensitive data. You’re hired to track them down before they sell the information to the highest bidder.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your strength to subdue the spy and retrieve the data by force if necessary.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Trust your instincts to anticipate the spy’s movements and corner them before they escape.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Corruption Unveiled',
+        content: `<p>A city councilor is publicly exposed for embezzlement, sparking protests in the streets. You can either fuel the fire or try to put out the flames.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Use your influence to calm the crowds.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Investigate the situation to gather intelligence on the corrupt official.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E054',
-        title: 'Smuggling Run',
-        content:
-            '<p>You’re tasked with transporting a shipment of contraband goods through a heavily monitored area. It’s a risky run, but the reward is worth it if you succeed.</p>' +
-            '<ul><li><p><strong>Agility:</strong> Use your agility and quick reflexes to navigate through checkpoints and avoid detection.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your charisma to talk your way through security and avoid a full inspection of your cargo.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Underground Duel',
+        content: `<p>An underground arena has just announced a high-stakes combat tournament. Crowds are gathering, and the opportunity for a quick payout is tempting. But the risks are high.</p>
+        <ul>
+            <li><strong>Strength:</strong> Enter the tournament and fight for the prize money.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Reaction:</strong> Bet on another fighter and avoid the fight yourself.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E055',
-        title: 'Corrupt Officer Bribe',
-        content:
-            '<p>You come across a corrupt security officer who offers to look the other way for a price. You can either accept or refuse, but it could lead to further complications.</p>' +
-            '<ul><li><p><strong>Charisma:</strong> Use your charm and persuasion to strike a deal with the officer and avoid further conflict.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use your physical presence to intimidate the officer into compliance without paying the bribe.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Neon Storm',
+        content: `<p>A massive storm has rolled in, causing disruptions to power and communication networks across the district. The neon lights flicker as the city braces for the worst.</p>
+        <ul>
+            <li><strong>Logic:</strong> Analyze the storm's pattern to find the safest route out of the area.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Agility:</strong> Dodge falling debris and move swiftly through the chaos.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E056',
-        title: 'Street Heist',
-        content:
-            '<p>A street gang attempts a heist right in front of you. You can either intervene or watch as things unfold.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your strength to stop the heist and take down the gang members.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your agility to avoid getting caught in the chaos and escape the scene unharmed.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Energy</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Black Market Deal',
+        content: `<p>The black market is buzzing with a high-value deal involving rare weapons tech. It's a perfect opportunity to buy, sell, or steal—if you dare.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Negotiate a better deal with the black market vendors.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Strength:</strong> Use force to take the weapons tech by intimidation.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E061',
-        title: 'Illegal Gambling Ring',
-        content:
-            '<p>You come across an underground gambling ring where the stakes are high and the risks are even higher. The ring is guarded, and entering unnoticed is the key.</p>' +
-            '<ul><li><p><strong>Agility:</strong> Use your agility to sneak past the guards and join the game undetected.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your charm to convince the ring’s operators to let you join the game and possibly gain an advantage.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Blackout in the District',
+        content: `<p>A sudden power outage plunges the district into darkness. The blackout causes chaos as people scramble to figure out what happened.</p>
+        <ul>
+            <li><strong>Logic:</strong> Investigate the cause of the blackout by accessing nearby systems.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Agility:</strong> Navigate through the dark streets, avoiding dangers like looters.
+                <ul>
+                    <li><strong>Success:</strong> +1 Energy</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E062',
-        title: 'Corporate Espionage',
-        content:
-            '<p>You’re hired to steal valuable corporate data, but the job involves infiltrating a heavily guarded facility. You’ll need to outsmart security to succeed.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your analytical skills to bypass security systems and avoid detection.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your quick reflexes to dodge guards and slip past them unnoticed.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Rogue AI',
+        content: `<p>A rogue AI has gained control of a local security system and is attacking citizens. Its influence spreads across nearby electronics, including your personal devices.</p>
+        <ul>
+            <li><strong>Reaction:</strong> React quickly to avoid the AI's detection systems.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Logic:</strong> Hack the AI to shut it down before it causes more damage.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E063',
-        title: 'Kidnapped Informant',
-        content:
-            '<p>An informant you were supposed to meet has been kidnapped by a rival faction. You need to track down the kidnappers and get them back alive.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your strength to overpower the kidnappers and free the informant.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1 Health</li></ul></li>' +
-            '<li><p><strong>Intuition:</strong> Trust your instincts to find the kidnappers’ hideout and rescue the informant.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li></ul>',
+        title: 'Gang Showdown',
+        content: `<p>A gang war breaks out in the heart of the district. Gunfire echoes in the streets as rival factions clash over turf. You need to decide whether to get involved or avoid the chaos.</p>
+        <ul>
+            <li><strong>Strength:</strong> Charge in and confront one of the gangs directly.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Charisma:</strong> Use diplomacy to try and calm the gangs and stop the violence.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E064',
-        title: 'Gang Turf War',
-        content:
-            '<p>A gang war breaks out in the streets, and you’re caught in the middle. You can either ally with one faction or try to avoid the conflict altogether.</p>' +
-            '<ul><li><p><strong>Strength:</strong> Use your physical strength to assist one of the gangs in battle and assert dominance.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Charisma:</strong> Use your charisma to negotiate a peace between the warring factions, preventing further bloodshed.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Corporate Bribery',
+        content: `<p>A high-ranking corporate exec is caught in a bribery scandal. The news spreads quickly, and protests begin to stir. You can either exploit the situation or help calm the tensions.</p>
+        <ul>
+            <li><strong>Charisma:</strong> Use your social influence to sway the public opinion and calm the protesters.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Reputation</li>
+                </ul>
+            </li>
+            <li><strong>Intuition:</strong> Investigate the scandal and uncover hidden details that could be used for leverage.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E065',
-        title: 'Shadow Auction',
-        content:
-            '<p>You hear about a secret auction where high-value illegal goods are sold to the highest bidder. You can either attend or try to sabotage the event.</p>' +
-            '<ul><li><p><strong>Logic:</strong> Use your reasoning to gather intel on the auction and ensure you outbid your competitors.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Agility:</strong> Use your agility to sneak into the auction and steal valuable items without being caught.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Street Race',
+        content: `<p>A street race is taking place through the district, and it’s drawing huge crowds. The potential rewards are great, but the risks are just as high. Are you in?</p>
+        <ul>
+            <li><strong>Agility:</strong> Join the race and prove your driving skills.
+                <ul>
+                    <li><strong>Success:</strong> +1.000 ¥</li>
+                    <li><strong>Fail:</strong> -1 Health</li>
+                </ul>
+            </li>
+            <li><strong>Strength:</strong> Help a racer with their vehicle to ensure they win the race.
+                <ul>
+                    <li><strong>Success:</strong> +1 Reputation</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+        </ul>`,
     },
     {
         id: 'E066',
-        title: 'Fixer’s Request',
-        content:
-            '<p>A well-known fixer offers you a job that seems simple but could involve some dangerous individuals. You’ll need to tread carefully.</p>' +
-            '<ul><li><p><strong>Intuition:</strong> Use your instincts to sense potential traps and avoid getting caught by surprise.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Reputation</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> +1 Heat</li></ul></li>' +
-            '<li><p><strong>Strength:</strong> Use your strength to confront any danger head-on and secure the situation.</p>' +
-            '<ul><li><strong>2+:</strong> +1 Intel</li><li><strong>1:</strong> No Effect</li><li><strong>0:</strong> -1.000 ¥</li></ul></li></ul>',
+        title: 'Medical Crisis',
+        content: `<p>A viral outbreak hits the district, causing widespread panic. Medical facilities are overwhelmed, and only the most desperate are left to fend for themselves.</p>
+        <ul>
+            <li><strong>Logic:</strong> Analyze the virus and help create a makeshift cure.
+                <ul>
+                    <li><strong>Success:</strong> +1 Intel</li>
+                    <li><strong>Fail:</strong> -1 Energy</li>
+                </ul>
+            </li>
+            <li><strong>Charisma:</strong> Rally the people to stay calm and follow safety procedures.
+                <ul>
+                    <li><strong>Success:</strong> -1 Heat</li>
+                    <li><strong>Fail:</strong> +1 Heat</li>
+                </ul>
+            </li>
+        </ul>`,
     },
 ]

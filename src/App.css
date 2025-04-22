@@ -31,6 +31,10 @@ body {
     min-height: 100vh;
 }
 
+.emoji {
+    font-family: 'Noto Emoji';
+}
+
 ul,
 ol {
     padding-left: 18px;
