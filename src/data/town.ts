@@ -145,6 +145,12 @@ export const Town = [
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Logic</strong></li>
                 <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
+            </ol>
+            <p><strong>Cyberware Enhancement:</strong></p>
+            <ol>
+                <li>Select whether to enhanc: <strong>Strength</strong> or <strong>Logic</strong></li>
+                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
+                <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
     },
     {
@@ -279,23 +285,13 @@ export const Town = [
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Charisma</strong></li>
                 <li>See R301</li>
+            </ol>
+            <p><strong>Endurance Drill:</strong></p>
+            <ol>
+                <li>Select whether to enhanc: <strong>Agility</strong> or <strong>Reaction</strong></li>
+                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
+                <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
-    },
-    {
-        id: 'R171',
-        title: 'IronGym: Physical Training',
-        content:
-            '<p>Choose one of your attributes:</p>' +
-            '<ul><li>Strength</li><li>Agility</li><li>Reaction</li></ul>' +
-            '<p>The training session costs you 1.000 ¥ multiplied by your current attribute value.</p>' +
-            '<p>Roll 2d6 to determine the effectiveness of your training:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Injury</strong> – You overexert yourself and suffer a setback.<ul><li>-1 Energy, -1 Health</li></ul></li>' +
-            '<li>4-5: <strong>Minor Progress</strong> – The training leaves you feeling sore but no noticeable improvement.<ul><li>No Effect</li></ul></li>' +
-            '<li>6-8: <strong>Steady Improvement</strong> – Your body adapts to the training, and you feel stronger.<ul><li>+1 Attribute</li></ul></li>' +
-            '<li>9-10: <strong>Focused Training</strong> – Intense training sessions lead to real gains.<ul><li>+1 Attribute, +1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Peak Performance</strong> – You’ve mastered the routine, achieving substantial improvement.<ul><li>+1 Attribute, +2 Energy</li></ul></li>' +
-            '</ul>',
     },
     {
         id: 'R180',
@@ -306,23 +302,13 @@ export const Town = [
             <ol>
                 <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Logic</strong></li>
                 <li>See R302</li>
+            </ol>
+            <p><strong>Cyberware Enhancement:</strong></p>
+            <ol>
+                <li>Select whether to enhanc: <strong>Intuition</strong> or <strong>Charisma</strong></li>
+                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
+                <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
-    },
-    {
-        id: 'R181',
-        title: 'NeuralNexus: Mental Training',
-        content:
-            '<p>Choose one of your attributes:</p>' +
-            '<ul><li>Logic</li><li>Intuition</li><li>Charisma</li></ul>' +
-            '<p>The training session costs you 1.000 ¥ multiplied by your current attribute value.</p>' +
-            '<p>Roll 2d6 to determine the effectiveness of your training:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Mental Block</strong> – Your focus falters, and you can’t seem to grasp the concepts. Training has little effect.<ul><li>-1 Energy, -1 Health</li></ul></li>' +
-            '<li>4-5: <strong>Stagnant Progress</strong> – 	The training didn’t push you to your limits, and you’re feeling stuck.<ul><li>No Effect</li></ul></li>' +
-            '<li>6-8: <strong>Moderate Improvement</strong> – The training session is steady, leaving you with a slight boost.<ul><li>+1 Attribute</li></ul></li>' +
-            '<li>9-10: <strong>Focused Mastery</strong> – You put in the work and feel like you`re gaining ground. Your mind is sharp.<ul><li>+1 Attribute, +1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Mental Breakthrough</strong> –  A moment of clarity and insight takes your training to the next level, unlocking hidden potential.<ul><li>+1 Attribute, +2 Energy</li></ul></li>' +
-            '</ul>',
     },
     {
         id: 'R190',
@@ -393,36 +379,14 @@ export const Town = [
         title: 'NeonHollow: SafeHouse',
         content:
             '<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>' +
-            '<p><em>"No names. No noise. No light."</em></p>' +
-            '<p><strong>Actions at SafeHouse:</strong></p>',
+            '<p><em>"No names. No noise. No light."</em></p>',
     },
     {
         id: 'R900',
         title: 'NeonHollow: CyberBite',
         content:
             '<p class="flex items-center justify-center"><img src="/images/CyberBite.jpg" alt="CyberBite" /></p>' +
-            '<p><em>"Food, but wired."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at CyberBite:</strong></p>' +
-            '<ul><li>Eating Meals (R901)</li></ul>',
-    },
-    {
-        id: 'R901',
-        title: 'CyberBite: Event Table',
-        content:
-            '<ul>' +
-            '<li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>' +
-            '<li>3: <strong>Missing Credstick</strong> – As you reach the counter, you realize your credstick is missing.<ul><li>-1 Reputation</li></ul></li>' +
-            '<li>4: <strong>Contamination Alert</strong> – A health scanner detects a false biohazard signature from your last visit.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>5: <strong>Overpriced Menu</strong> – The menu is far more expensive than anticipated.<ul><li>-1.000 ¥</li></ul></li>' +
-            '<li>6: <strong>Overflowing Crowds</strong> – The restaurant is packed beyond capacity.<ul><li>-1 Energy</li></ul></li>' +
-            '<li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>' +
-            '<li>8: <strong>Speedy Service</strong> – Your order is processed quickly, and the meal arrives with no delay.<ul><li>+1 Energy</li></ul></li>' +
-            '<li>9: <strong>Surprise Special</strong> – The chef offers a free, surprise dish on the house. It`s surprisingly delicious.<ul><li>+1 Health</li></ul></li>' +
-            '<li>10: <strong>Power Pour</strong> – The bartender slides you a glowing crimson shot on the house.<ul><li>+1 Strength Temporary</li></ul></li>' +
-            '<li>11: <strong>Exclusive Invite</strong> – You gain access to the VIP section.<ul><li>+1 Logic Temporary</li></ul></li>' +
-            '<li>12: <strong>Perfect Experience</strong> – The food is exceptional, and the atmosphere is perfect.<ul><li>+1 Reputation</li></ul></li>' +
-            '</ul>',
+            '<p><em>"Food, but wired."</em></p>',
     },
     {
         id: 'R301',
@@ -635,6 +599,43 @@ export const Town = [
                 <ul>
                     <li>You uncover crucial and highly valuable intelligence that could change the course of the mission.</li>
                     <li>+4 Intel, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R306',
+        title: 'Outcome: Attribute',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Failure</strong> – The enhancement doesn’t sync well with your body.
+                <ul>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – The boost kicks in as expected.
+                <ul>
+                    <li>+1 to Attribute</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – You feel sharp, fast, and focused.
+                <ul>
+                    <li>+1 to Attribute, +1 Energy</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
+                <ul>
+                    <li>+2 to Attribute</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – The enhancement merges flawlessly with your system.
+                <ul>
+                    <li>+2 to Attribute, +2 Energy</li>
                 </ul>
             </li>
         </ol>`,
