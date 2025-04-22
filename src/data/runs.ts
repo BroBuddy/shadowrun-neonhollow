@@ -2,13 +2,15 @@ export const Runs = [
     {
         id: 'M001',
         title: 'Mr. Johnson',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>' +
-            '<p><em>"The smile’s fake. The creds are real."</em></p>' +
-            '<p>To take on a mission from Mr. Johnson, you’ll need to spend <strong>2 Reputation</strong>.</p>' +
-            '<p>Roll 1d6 to determine the location:</p>' +
-            '<ol><li>BioCare (M010)</li><li>HoloLounge (M020)</li><li>DreamSphere (M030)</li><li>EchoGarden (M040)</li><li>IronGym (M050)</li><li>NeuralNexus (M060)</li></ol>' +
-            '<p>To master the shadows, study the Rules (M002) — and after every run, debrief with the Performance (M003) to assess your impact.</p>',
+        content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
+            <p><em>"The smile's fake. The creds are real."</em></p>
+            <p><strong>Spend <strong>3 Intel</strong> &#8594; Roll 1d6 for your mission:</strong></p>
+            <ul>
+                <li>1-2: <strong>Operation Blackout</strong> (M010)</li>
+                <li>3-4: <strong>Neon Evac</strong> (M020)</li>
+                <li>5-6: <strong>Phantom Strike</strong> (M030)</li>
+            </ul>
+            <p>To master the shadows, study the Rules (M002) — and after every run, debrief with the Performance (M003) to assess your impact.</p>`,
     },
     {
         id: 'M002',
@@ -46,12 +48,12 @@ export const Runs = [
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
                     <ul>
-                        <li>+6.000 ¥, +1 Reputation</li>
+                        <li>+6.000 ¥, -1 Corp Influence</li>
                     </ul>
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+8.000 ¥, +1 Reputation, +1 Intel</li>
+                        <li>+8.000 ¥, -1 Corp Influence, +1 Reputation</li>
                     </ul>
                 </li>
             </ol>`,
@@ -60,10 +62,14 @@ export const Runs = [
         id: 'M010',
         title: 'Mission: Operation Blackout',
         content: `
+            <p><strong>Client:</strong><br />
+            BioCare</p>
+            <p><strong>Location:</strong><br />
+            CorpTower</p>
             <p><strong>Briefing:</strong><br />
-            BioCare’s lab is off the grid. Nighthawk Industries needs you to disable security, breach the facility, and uncover any secrets. Do it quietly and swiftly.</p>
+            A silent data breach threatens BioCare's neural implant protocols. Traces lead to the upper floors of CorpTower—specifically the Data Regulation Wing. Someone within the corporate matrix is cloning patient data and selling it off-network. BioCare needs this stopped, quietly.</p>
             <ol>
-                <li><strong>Disable the Medical Drones</strong>
+                <li><strong>Disable the Drones</strong>
                     <ul>
                         <li>2-5: <strong>Logic (DC 3)</strong>: Hack the drone control system.</li>
                         <li>6-8: <strong>Reaction (DC 2)</strong>: Evade and disable drones.</li>
@@ -71,7 +77,7 @@ export const Runs = [
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
-                <li><strong>Bypass the Laser Security in the Operating Room</strong>
+                <li><strong>Bypass the Laser Security</strong>
                     <ul>
                         <li>2-5: <strong>Agility (DC 3)</strong>: Crawl through the lasers.</li>
                         <li>6-8: <strong>Intuition (DC 2)</strong>: Identify weak points in the grid.</li>
@@ -98,11 +104,23 @@ export const Runs = [
     },
     {
         id: 'M020',
-        title: 'Mission: HoloLounge Extraction',
+        title: 'Mission: Neon Evac',
         content: `
+            <p><strong>Client:</strong><br />
+            HoloLounge</p>
+            <p><strong>Location:</strong><br />
+            CorpTower</p>
             <p><strong>Briefing:</strong><br />
-            HoloLounge is a popular bar for both locals and high-profile individuals. Your job is to locate a target in the lounge, extract a confidential data chip from them, and disappear before anyone notices. Stay low-key and blend into the crowd.</p>
+            One of HoloLounge's VIP clients—a famous synth performer named KALLA-X—is being detained by corporate agents after refusing to sign an exclusive media rights contract. She’s holed up in a luxury suite on the Executive Entertainment Deck, monitored by corp security and biometric locks.</p>
             <ol>
+                <li><strong>Solve Passcode Puzzle</strong>
+                    <ul>
+                        <li>2-5: <strong>Logic (DC 3)</strong>: Hack the target’s device to access the data chip.</li>
+                        <li>6-8: <strong>Agility (DC 2)</strong>: Pickpocket the chip without alerting the target.</li>
+                        <li>9-12: <strong>Strength (DC 1)</strong>: Forcefully take the chip from the target.</li>
+                        <li><strong>Fail:</strong> Performance 2</li>
+                    </ul>
+                </li>
                 <li><strong>Locate the Target</strong>
                     <ul>
                         <li>2-5: <strong>Intuition (DC 3)</strong>: Spot the target among the patrons.</li>
@@ -111,15 +129,7 @@ export const Runs = [
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
-                <li><strong>Extract the Data Chip</strong>
-                    <ul>
-                        <li>2-5: <strong>Logic (DC 3)</strong>: Hack the target’s device to access the data chip.</li>
-                        <li>6-8: <strong>Agility (DC 2)</strong>: Pickpocket the chip without alerting the target.</li>
-                        <li>9-12: <strong>Strength (DC 1)</strong>: Forcefully take the chip from the target.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
-                    </ul>
-                </li>
-                <li><strong>Escape the Lounge</strong>
+                <li><strong>Escape from Penthouse</strong>
                     <ul>
                         <li>2-5: <strong>Agility (DC 3)</strong>: Slip out the back exit unnoticed.</li>
                         <li>6-8: <strong>Intuition (DC 2)</strong>: Spot the safest exit route without alerting security.</li>
@@ -138,10 +148,14 @@ export const Runs = [
     },
     {
         id: 'M030',
-        title: 'Mission: Hotel Heist',
+        title: 'Mission: Phantom Strike',
         content: `
+            <p><strong>Client:</strong><br />
+            DreamSphere</p>
+            <p><strong>Location:</strong><br />
+            CorpTower</p>
             <p><strong>Briefing:</strong><br />
-            DreamSphere is known for its luxurious clientele, but it also holds high-value targets. Your mission is to infiltrate the hotel, acquire sensitive data from the hotel's penthouse, and make it out undetected. Discretion is paramount—take what you need, and leave no trace.</p>
+            DreamSphere has learned that CorpTower’s corporate intelligence division is running covert operations to intercept and manipulate data streams tied to DreamSphere’s underground network. This is a breach of their privacy agreement, and the client demands retaliation.</p>
             <ol>
                 <li><strong>Infiltrate the Lobby</strong>
                     <ul>
@@ -153,23 +167,23 @@ export const Runs = [
                 </li>
                 <li><strong>Bypass the Elevator Security</strong>
                     <ul>
-                        <li>2-5: <strong>Logic (DC 3)</strong>: Hack the elevator control system.</li>
-                        <li>6-8: <strong>Agility (DC 2)</strong>: Use your agility to sneak into an unguarded elevator.</li>
-                        <li>9-12: <strong>Strength (DC 1)</strong>: Force open the emergency hatch and bypass the elevator system.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
+                        <li>2-5: <strong>Agility (DC 3)</strong>: Scale the exterior and access the cellar undetected.</li>
+                        <li>6-8: <strong>Intuition (DC 2)</strong>: Locate the hidden access point in the building's ventilation shaft.</li>
+                        <li>9-12: <strong>Strength (DC 1)</strong>: Force open a locked maintenance door.</li>
+                        <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
-                <li><strong>Access the Penthouse</strong>
+                <li><strong>Fetch sensitive data</strong>
                     <ul>
-                        <li>2-5: <strong>Agility (DC 3)</strong>: Scale the exterior and access the penthouse window.</li>
-                        <li>6-8: <strong>Intuition (DC 2)</strong>: Spot the hidden access point in the hotel's ventilation system.</li>
-                        <li>9-12: <strong>Strength (DC 1)</strong>: Force open a locked door to gain entry.</li>
-                        <li><strong>Fail:</strong> Performance 3</li>
+                        <li>2-5: <strong>Logic (DC 3)</strong>:  Hack into the building’s security control system.</li>
+                        <li>6-8: <strong>Agility (DC 2)</strong>: Sneak past the security cameras and enter an unguarded elevator.</li>
+                        <li>9-12: <strong>Strength (DC 1)</strong>: Pry open the elevator’s emergency hatch and bypass the system.</li>
+                        <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
             </ol>
             <p><strong>Twist:</strong><br />
-            The penthouse is not as empty as expected. The target is under heavy surveillance.</p>
+            The server room is not as empty as expected. The target is under heavy surveillance.</p>
             <ul>
                 <li><strong>Intuition (DC 3)</strong>: Detect hidden surveillance cameras.</li>
                 <li><strong>Fail:</strong> Performance 4</li>

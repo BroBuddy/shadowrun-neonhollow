@@ -30,16 +30,39 @@ export const Town = [
     {
         id: 'R110',
         title: 'NeonHollow: CorpTower',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>' +
-            '<p><em>"Order. Control. Perfection."</em></p>' +
-            '<p>To bring down the Corp, you must follow the three steps in chronological order — only then will your duty be fulfilled.</p>' +
-            '<p>To progress, you must spend <strong>2 Intel</strong> for each step—no shortcuts on the road to revolution.</p>' +
-            '<p><strong>Steps at CorpTower:</strong></p>' +
-            '<ol><li>Leak Sensitive Data (R111)</li><li>Crash Security Systems (R112)</li><li>Confront the CEO (R113)</li></ol>',
+        content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
+            <p><em>"Order. Control. Perfection."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R111) to determine what happens during your visit.</p>
+            <p><strong>Hack the Network:</strong></p>
+            <ol>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Intuition</strong></li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
+            </ol>
+            <p><strong>Infiltrate the Terrain:</strong></p>
+            <ol>
+                <li>Spend <strong>3 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Intuition</strong></li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
+            </ol>`,
     },
     {
         id: 'R111',
+        title: 'CorpTower: Event Table',
+        content: `<ul>
+            <li>2: <strong>Access Denied</strong><ul><li>Security ejects you from the building.</li></ul></li>
+            <li>3: <strong>Retina Scan Error</strong> – The scanner glitches and rejects your ID.<ul><li>+1 Heat</li></ul></li>
+            <li>4: <strong>System Loop</strong> – You get stuck in a malfunctioning elevator.<ul><li>-1 Health</li></ul></li>
+            <li>5: <strong>Unauthorized Access</strong> – You accidentally trigger a silent alarm.<ul><li>-1.000 ¥</li></ul></li>
+            <li>6: <strong>Overwatched</strong> – Drones lock onto your movement patterns.<ul><li>-1 Energy</li></ul></li>
+            <li>7: <strong>Standard Procedure</strong><ul><li>No Effect</li></ul></li>
+            <li>8: <strong>Fast Pass</strong> – Your access code is unexpectedly validated.<ul><li>+1 Energy</li></ul></li>
+            <li>9: <strong>Corporate Favor</strong> – You assist with a minor internal task.<ul><li>+1.000 ¥</li></ul></li>
+            <li>10: <strong>Clean Record</strong> – Surveillance clears your ID file.<ul><li>-1 Heat</li></ul></li>
+            <li>11: <strong>Silent Support</strong> – An insider flags your presence as “cleared.”<ul><li>+1 Reputation</li></ul></li>
+            <li>12: <strong>Data Whisper</strong> – A passing exec leaks classified info.<ul><li>+1 Intel</li></ul></li>
+        </ul>`,
+    },
+    {
+        id: 'R112',
         title: 'CorpTower: Leak Sensitive Data',
         content:
             '<p>Make a roll with <strong>Logic</strong> + <strong>Intuition</strong> to push forward.</p>' +
@@ -52,7 +75,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R112',
+        id: 'R113',
         title: 'CorpTower: Crash Security Systems',
         content:
             '<p>Make a roll with <strong>Agility</strong> + <strong>Reaction</strong> to push forward.</p>' +
@@ -65,7 +88,7 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R113',
+        id: 'R114',
         title: 'CorpTower: Confront the CEO',
         content:
             '<p>Make a roll with <strong>Strength</strong> + <strong>Charisma</strong> to push forward.</p>' +
@@ -80,12 +103,19 @@ export const Town = [
     {
         id: 'R120',
         title: 'NeonHollow: PatrolHub',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>' +
-            '<p><em>"The law`s last flicker."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R121) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at PatrolHub:</strong></p>' +
-            '<ul><li>Pay Off Heat (R122)</li><li>Bounty Hunting (R123)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>
+            <p><em>"The law's last flicker."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R121) to determine what happens during your visit.</p>
+            <p><strong>Bounty Hunting:</strong></p>
+            <ol>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Agility</strong></li>
+                <li>See R303</li>
+            </ol>
+            <p><strong>Bribe the Officer:</strong></p>
+            <ol>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Charisma</strong></li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
+            </ol>`,
     },
     {
         id: 'R121',
@@ -106,40 +136,16 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R122',
-        title: 'PatrolHub: Pay Off Heat',
-        content:
-            '<p>Slip 2.000 ¥ to a crooked cop — if you`re lucky, the heat cools off... for now.</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Blowback</strong> – The payoff is rejected, and your actions raise suspicion.<ul><li>+1 Heat, -1 Energy</li></ul></li>' +
-            '<li>4-5: <strong>Indifference</strong> – The authorities are too busy or unconvinced.<ul><li>No Effect</li></ul></li>' +
-            '<li>6-8: <strong>Partial Success</strong> – Some of the heat dies down, but it’s still warm out there.<ul><li>-1 Heat</li></ul></li>' +
-            '<li>9-10: <strong>Bribe Accepted</strong> – The right hand gets greased, and the heat backs off noticeably.<ul><li>-2 Heat</li></ul></li>' +
-            '<li>11-12: <strong>Clean Slate</strong> – Your generosity and connections buy you peace — for now.<ul><li>-3 Heat, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R123',
-        title: 'PatrolHub: Bounty Hunting',
-        content:
-            '<p>Add any <strong>Attribute</strong> value to the 2d6 roll — your skills guide you through the city, hunting for your target.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Failed Pursuit</strong> – The bounty got away, leaving you with nothing to show for it.<ul><li>-1 Reputation</li></ul></li>' +
-            '<li>6-8: <strong>Close Call</strong> – You managed to chase down the target, but just barely.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>	Decent Capture</strong> – You tracked and caught the bounty, but it wasn’t easy.<ul><li>+2.000 ¥</li></ul></li>' +
-            '<li>12-14: <strong>Swift Success</strong> – The bounty was caught quickly and efficiently.<ul><li>+4.000 ¥, -1 Heat</li></ul></li>' +
-            '<li>15+: <strong>Flawless Capture</strong> – You captured the bounty without any issues, impressing everyone in the system.<ul><li>+6.000 ¥, -1 Heat, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R130',
         title: 'NeonHollow: BioCare',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>' +
-            '<p><em>"Healing flesh, not souls."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at BioCare:</strong></p>' +
-            '<ul><li>Vital Restoration (R132)</li><li>Plasma Donation (R133)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>
+            <p><em>"Healing flesh, not souls."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>
+            <p><strong>Restorative Treatment:</strong></p>
+            <ol>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Logic</strong></li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
+            </ol>`,
     },
     {
         id: 'R131',
@@ -160,42 +166,21 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R132',
-        title: 'BioCare: Vital Restoration',
-        content:
-            '<p>Restoring your wounds requires a payment of 1.000 ¥ for the necessary treatment and care.</p>' +
-            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Malfunctioning Treatment</strong> – The procedure goes wrong, leaving you feeling disoriented and weak.<ul><li>-2 Energy</li></ul></li>' +
-            '<li>4-5: <strong>Basic Care</strong> – Standard treatment leaves you feeling a bit better, but not fully restored.<ul><li>+2 Health, -1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Enhanced Healing</strong> – A smooth treatment leaves you feeling better with some improvement.<ul><li>+4 Health</li></ul></li>' +
-            '<li>9-10: <strong>Revitalizing Therapy</strong> – The treatment boosts your health significantly.<ul><li>+6 Health, +1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Nano-Boost</strong> – Cutting-edge technology restores you fully and enhances your health.<ul><li>+8 Health, +2 Energy</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R133',
-        title: 'BioCare: Plasma Donation',
-        content:
-            '<p>By sacrificing a bit of your own vitality, you exchange <strong>-1 Health</strong> for a quick boost of <strong>1.000 ¥</strong>.</p>' +
-            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Critical Withdrawal</strong> – Your veins rebel. The extraction is messy and painful.<ul><li>-1 Energy, +1 Heat</li></ul></li>' +
-            '<li>4-5: <strong>Unstable Plasma</strong> – The extraction goes through, but it’s far from smooth.<ul><li>-1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Suboptimal Donation</strong> – The plasma is harvested with moderate success, but it’s not ideal.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-10: <strong>Standard Donation</strong> – A clean and efficient extraction. The transaction goes as planned.<ul><li>+1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Prime Fluid Harvest</strong> – The extraction is flawless, and your blood is of excellent quality.<ul><li>+1 Energy, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R140',
         title: 'NeonHollow: HoloLounge',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>' +
-            '<p><em>"Reality? Optional."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R141) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at HoloLounge:</strong></p>' +
-            '<ul><li>Drinking Shots (R142)</li><li>Gambling (R143)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>
+            <p><em>"Reality? Optional."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R141) to determine what happens during your visit.</p>
+            <p><strong>Nutritional Meal:</strong></p>
+            <ol>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Intuition</strong></li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R301</li>
+            </ol>
+            <p><strong>High-Stakes Gambling:</strong></p>
+            <ol>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Intuition</strong> and <strong>Charisma</strong></li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
+            </ol>`,
     },
     {
         id: 'R141',
@@ -216,42 +201,21 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R142',
-        title: 'HoloLounge: Drinking Shots',
-        content:
-            '<p>Quenching your thirst with a round of shots comes at a cost of 1.00 ¥ per drink.</p>' +
-            '<p>Add your <strong>Agility</strong> to the 2d6 roll when drinking to handle the physical effects and avoid getting too drunk.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Glitched Gut</strong> – Your stomach churns, vision blurs, and you knock over a table. Someone`s watching now.<ul><li>-1 Energy, +1 Heat</li></ul></li>' +
-            '<li>6-8: <strong>Static Sip</strong> – It hits like flat soda. No kick, no buzz<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Average Buzz</strong> – A steady flow warms your nerves, keeping the shadows at bay.<ul><li>+1 Energy</li></ul></li>' +
-            '<li>12-14: <strong>Pleasant Glow</strong> – Relaxed and sociable, you catch wind of a useful rumor.<ul><li>+2 Energy, +1 Intel</li></ul></li>' +
-            '<li>15+: <strong>Euphoric High</strong> – The mix hits perfect. Your confidence is sky-high, and even strangers like you.<ul><li>+3 Energy, +1 Charisma (next Run)</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R143',
-        title: 'HoloLounge: Gambling',
-        content:
-            '<p>To participate in gambling, you must have at least 2.000 ¥ in your pocket.</p>' +
-            '<p>Add your <strong>Logic</strong> or <strong>Intuition</strong> value to the 2d6 roll when gambling, depending on whether you rely on gut instincts or persuasive tactics to sway the odds in your favor.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Big Loss</strong> – Your luck is about as bad as it gets tonight. The losses hit hard.<ul><li>-2.000 ¥, -1 Energy, -1 Reputation</li></ul></li>' +
-            '<li>6-8: <strong>Unlucky Streak</strong> – The cards aren’t in your favor, and your winnings feel like they don’t matter much.<ul><li>-1.000 ¥, -1 Energy</li></ul></li>' +
-            '<li>9-11: <strong>Even Luck</strong> – It’s a wash. No gains, no losses.<ul><li>No Effect</li></ul></li>' +
-            '<li>12-14: <strong>Lucky Break</strong> – The house can’t touch you tonight, and you’re getting the payout you’ve been waiting for.<ul><li>+2.000 ¥, +1 Energy</li></ul></li>' +
-            '<li>15+: <strong>Jackpot!</strong> – The payout is massive, and the room watches in awe as you walk away with a fortune.<ul><li>+4.000 ¥, +1 Energy, +1 Heat</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R150',
         title: 'NeonHollow: DreamSphere',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>' +
-            '<p><em>"Where your nightmares become hobbies."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R151) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at DreamSphere:</strong></p>' +
-            '<ul><li>Battery Recharge (R152)</li><li>Eating Meals (R153)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>
+            <p><em>"Where your nightmares become hobbies."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R151) to determine what happens during your visit.</p>
+            <p><strong>Restorative Sleep:</strong></p>
+            <ol>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Intuition</strong></li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
+            </ol>
+            <p><strong>Calm Your Mind:</strong></p>
+            <ol>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Logic</strong></li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R304</li>
+            </ol>`,
     },
     {
         id: 'R151',
@@ -272,42 +236,21 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R152',
-        title: 'DreamSphere: Battery Recharge',
-        content:
-            '<p>Recharging your battery will cost you 1.000 ¥.</p>' +
-            '<p>Add your <strong>Intuition</strong> to the 2d6 roll when sleeping — your instincts help you find rest in the chaos.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Glitching Nightmare</strong> – The DreamSphere malfunctions, bombarding your mind with fractured code and unsettling visions.<ul><li>+2 Energy, -2 Health</li></ul></li>' +
-            '<li>6-8: <strong>Data Noise Dreams</strong> – Your sleep is shallow, haunted by corrupted memories and ad jingle echoes.<ul><li>+3 Energy, -1 Health</li></ul></li>' +
-            '<li>9-11: <strong>Mediocre Recharge</strong> – You drift through bland dreamscapes. Not bad, not great—just enough.<ul><li>+4 Energy</li></ul></li>' +
-            '<li>12-14: <strong>REM Reboot</strong> – The DreamSphere calibrates your vitals perfectly. You wake up feeling refreshed.<ul><li>+5 Energy, +1 Health</li></ul></li>' +
-            '<li>15+: <strong>Neural Harmony</strong> – Total system sync. Your mind and body align in a deep, healing trance.<ul><li>+6 Energy, +2 Health, +1 Reaction (next Run)</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R153',
-        title: 'DreamSphere: Eating Meals',
-        content:
-            '<p>Satisfying your hunger with a hearty meal costs 1.000 ¥.</p>' +
-            '<p>Add your <strong>Logic</strong> to the 2d6 roll when choosing or preparing meals to optimize quality and benefits.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Spoiled Slop</strong> – The meal was synthetic... and suspiciously expired.<ul><li>-1 Health, -1 Energy</li></ul></li>' +
-            '<li>6-8: <strong>Greasy Grub</strong> – Cheap calories and greasy additives fill your gut—but little else.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Street Standard</strong> – A balanced mix of synth-protein and carbs, enough to keep you moving.<ul><li>+1 Health</li></ul></li>' +
-            '<li>12-14: <strong>NutriBurst Platter</strong> – Fortified nutrient cubes and stim-enhanced flavor. Tastes weird, works wonders.<ul><li>+2 Health</li></ul></li>' +
-            '<li>15+: <strong>Gourmet Clone Cuisine</strong> – A masterfully engineered meal loaded with bio-nutrients, protein stacks, and trace nanites.<ul><li>+3 Health, +1 Strength (next Run)</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R160',
         title: 'NeonHollow: EchoGarden',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>' +
-            '<p><em>"The city’s memory grows here."</em></p>' +
-            '<p>Before using the actions, roll 2d6 on the Event Table (R161) to determine what happens during your visit.</p>' +
-            '<p><strong>Actions at EchoGarden:</strong></p>' +
-            '<ul><li>Laying Off (R162)</li><li>Informant Detection (R163)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>
+            <p><em>"The city’s memory grows here."</em></p>
+            <p>Before using the actions, roll 2d6 on the Event Table (R161) to determine what happens during your visit.</p>
+            <p><strong>Meditation Lesson:</strong></p>
+            <ol>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Reaction</strong></li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R302</li>
+            </ol>
+            <p><strong>Pressure the Informant:</strong></p>
+            <ol>
+                <li>Pay <strong>1 Energy</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Reaction</strong></li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R305</li>
+            </ol>`,
     },
     {
         id: 'R161',
@@ -328,39 +271,15 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R162',
-        title: 'EchoGarden: Laying Off',
-        content:
-            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Unsuccessful Escape</strong> – The moment you think you`re hiding, you draw unwanted attention.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>4-5: <strong>Tension Lingers</strong> – No change. You lay low, but your movements are still being watched.<ul><li>No Effect</li></ul></li>' +
-            '<li>6-8: <strong>Low Profile</strong> – You manage to blend in and stay under the radar.<ul><li>-1 Heat</li></ul></li>' +
-            '<li>9-10: <strong>Under the Radar</strong> – You`ve really gotten the hang of being discreet.<ul><li>-1 Heat, +1 Energy</li></ul></li>' +
-            '<li>11-12: <strong>Master of Discretion</strong> –  You`ve perfectly avoided attention, and the city feels quieter around you.<ul><li>-1 Heat, +1 Energy, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R163',
-        title: 'EchoGarden: Informant Detection',
-        content:
-            '<p>Add your <strong>Reaction</strong> to the 2d6 roll when spying on an informant — your ability to blend into the crowd and avoid detection is key to gathering intel.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Spotted!</strong> – You fail to blend in and the informant notices your presence.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>6-8: <strong>Subtle Observation</strong> – You keep a low profile, tailing the informant without arousing suspicion.<ul><li>-1 Energy</li></ul></li>' +
-            '<li>9-11: <strong>Close Call</strong> – You manage to hide in the crowd, but the informant grows suspicious, narrowing their eyes.<ul><li>No Effect</li></ul></li>' +
-            '<li>12-14: <strong>Unseen</strong> – You move through the crowd effortlessly, your presence completely unnoticed.<ul><li>+1 Intel</li></ul></li>' +
-            '<li>15+: <strong>Master of Shadows</strong> – Your skills in evasion are unmatched.<ul><li>+1 Intel, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R170',
         title: 'NeonHollow: IronGym',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>' +
-            '<p><em>"Muscle isn`t old-school — it`s survival."</em></p>' +
-            '<p><strong>Actions at IronGym:</strong></p>' +
-            '<ul><li>Physical Training (R171)</li><li>Stimulant Injection (R172)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>
+            <p><em>"Muscle isn't old-school — it's survival."</em></p>
+            <p><strong>Recovery Training:</strong></p>
+            <ol>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Charisma</strong></li>
+                <li>See R301</li>
+            </ol>`,
     },
     {
         id: 'R171',
@@ -379,28 +298,15 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R172',
-        title: 'IronGym: Stimulant Injection',
-        content:
-            '<p>A dose will set you back 1.000 ¥, a price for pushing your limits.</p>' +
-            '<p>Roll for a random attribute (C002) — the effects of the injection are unpredictable, making every dose a risky bet with your body and mind.</p>' +
-            '<p>Add your <strong>Strength</strong> value to the 2d6 roll — your raw power will shape the outcome.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>System Crash</strong> – The stimulant overwhelms your system, causing your body to overreact. <ul><li>+1 Heat, -1 Attribute Temporary</li></ul></li>' +
-            '<li>6-8: <strong>Jittery Burnout</strong> – You feel the surge of energy but quickly realize it’s not as effective as you hoped.<ul><li>+1 Heat</li></ul></li>' +
-            '<li>9-11: <strong>Tense Surge</strong> –  The stimulant enhances your physical or mental abilities, but not without cost. <ul><li>+1 Attribute Temporary, -1 Health</li></ul></li>' +
-            '<li>12-14: <strong>Sharp Precision</strong> – You experience a smooth boost of energy and focus<ul><li>+1 Attribute Temporary</li></ul></li>' +
-            '<li>15+: <strong>Peak Condition</strong> – Y You feel invigorated, as the stimulant fine-tunes your abilities to their peak.<ul><li>+1 Attribute Temporary, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R180',
         title: 'NeonHollow: NeuralNexus',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>' +
-            '<p><em>"Where minds meet machines."</em></p>' +
-            '<p><strong>Actions at NeuralNexus:</strong></p>' +
-            '<ul><li>Mental Training (R181)</li><li>Memory Mining (R182)</li></ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>
+            <p><em>"Where minds meet machines."</em></p>
+            <p><strong>Memory Mining:</strong></p>
+            <ol>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Logic</strong></li>
+                <li>See R302</li>
+            </ol>`,
     },
     {
         id: 'R181',
@@ -419,55 +325,20 @@ export const Town = [
             '</ul>',
     },
     {
-        id: 'R182',
-        title: 'NeuralNexus: Memory Mining',
-        content:
-            '<p>Drain some of your energy to fuel your wallet. Exchange <strong>-2 Energy</strong> for a quick infusion of <strong>1.000 ¥</strong>.</p>' +
-            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Glitched Memory</strong> – The data extraction goes haywire, causing intense mental strain.<ul><li>-1 Health, +1 Heat</li></ul></li>' +
-            '<li>4-5: <strong>Fragmented Recall</strong> – You manage to pull something useful, but the process is rough and incomplete.<ul><li>-1 Health</li></ul></li>' +
-            '<li>6-8: <strong>Fuzzy Memories</strong> – A somewhat smooth extraction, but the memory data is flawed or fragmented. <ul><li>No Effect</li></ul></li>' +
-            '<li>9-10: <strong>Clear Vision</strong> – The memory mining goes well, providing you with a decent payout and valuable data.<ul><li>+1 Intel</li></ul></li>' +
-            '<li>11-12: <strong>Prime Data Stream</strong> – The extraction is flawless, and the memories are pristine, yielding rich rewards.<ul><li>+1 Intel, +1 Reputation</li></ul></li>' +
-            '</ul>',
-    },
-    {
         id: 'R190',
         title: 'NeonHollow: SmugglerDen',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>' +
-            '<p><em>"The city`s forgotten veins."</em></p>' +
-            '<p><strong>Actions at SmugglerDen:</strong></p>' +
-            '<ul><li>Cyberware Installation (R191)</li><li>Selling Intel (R192)</li></ul>',
-    },
-    {
-        id: 'R191',
-        title: 'SmugglerDen: Cyberware Installation',
-        content:
-            '<p>Roll 2d6 to see how your actions shape the shadows:</p>' +
-            '<ul>' +
-            '<li>2-3: <strong>Malfunctioning</strong> – The cyberware fails to integrate properly, causing glitches and instability.<ul><li>-1 random Attribute, +1 Heat</li></ul></li>' +
-            '<li>4-5: <strong>Hiccup</strong> – The cyberware installation is partially successful, but some functions are not working as expected.<ul><li>-1 random Attribute Temporary</li></ul></li>' +
-            '<li>6-8: <strong>Stable</strong> – The cyberware is successfully installed and functions as intended, but without optimal performance.<ul><li>+1 random Attribute Temporary</li></ul></li>' +
-            '<li>9-10: <strong>Enhanced</strong> – The cyberware installation goes smoothly, improving the system’s overall performance.<ul><li>+1 random Attribute</li></ul></li>' +
-            '<li>11-12: <strong>Perfect Sync</strong> – The installation is flawless, and the cyberware integrates seamlessly, enhancing the user experience.<ul><li>+1 random Attribute, +1 Reputation</li></ul></li>' +
-            '</ul>' +
-            '<p>When rolling for a random attribute, refer to the attribute details for guidance (C002).</p>',
-    },
-    {
-        id: 'R192',
-        title: 'SmugglerDen: Selling Intel',
-        content:
-            '<p>You need at least one piece of intel to approach a fixer. Regardless of the outcome, the intel is used up in the process.</p>' +
-            '<p>Add your <strong>Logic</strong> value to the 2d6 roll — sharp insight turns raw intel into real cred on the streets.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Flagged</strong> – Your intel was traced — you`re now on their radar<ul><li>+1 Heat</li></ul></li>' +
-            '<li>6-8: <strong>Disregarded</strong> – Low-level intel. No one’s interested.<ul><li>No Effect</li></ul></li>' +
-            '<li>9-11: <strong>Standard Trade</strong> – Decent info, fair price.<ul><li>+5.000 ¥</li></ul></li>' +
-            '<li>12-14: <strong>Valuable Lead</strong> – They found use in your intel.<ul><li>+10.000 ¥</li></ul></li>' +
-            '<li>15+: <strong>Classified Gold</strong> – Your intel changes plans<ul><li>+15.000 ¥</li></ul></li>' +
-            '</ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>
+            <p><em>"The city's forgotten veins."</em></p>
+            <p><strong>Ask for Protection:</strong></p>
+            <ol>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Charisma</strong></li>
+                <li>See R304</li>
+            </ol>
+            <p><strong>Buy Confidential Info:</strong></p>
+            <ol>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Charisma</strong></li>
+                <li>See R305</li>
+            </ol>`,
     },
     {
         id: 'R200',
@@ -552,5 +423,220 @@ export const Town = [
             '<li>11: <strong>Exclusive Invite</strong> – You gain access to the VIP section.<ul><li>+1 Logic Temporary</li></ul></li>' +
             '<li>12: <strong>Perfect Experience</strong> – The food is exceptional, and the atmosphere is perfect.<ul><li>+1 Reputation</li></ul></li>' +
             '</ul>',
+    },
+    {
+        id: 'R301',
+        title: 'Outcome: Health',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Critical Failure</strong> – The treatment backfires, causing harm.
+                <ul>
+                    <li>-2 Health, +1 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Failure</strong> – Healing stalls. You’re patched, but need more time.
+                <ul>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
+                <ul>
+                    <li>+2 Health, +1 Energy</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – Cells respond well, and you feel stronger.
+                <ul>
+                    <li>+4 Health, +2 Energy</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
+                <ul>
+                    <li>+6 Health, +3 Energy</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
+                <ul>
+                    <li>+8 Health, +4 Energy, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R302',
+        title: 'Outcome: Energy',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Critical Failure</strong> – The treatment leaves you feeling more drained than before.
+                <ul>
+                    <li>-2 Energy, +1 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Failure</strong> – The process does little to restore your energy, but you feel slightly better.
+                <ul>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – You start to regain some energy, though not at full capacity.
+                <ul>
+                    <li>+2 Energy, +1 Health</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – The treatment has a noticeable effect, and you feel more refreshed.
+                <ul>
+                    <li>+4 Energy, +2 Health</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
+                <ul>
+                    <li>+6 Energy, +3 Health</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
+                <ul>
+                    <li>+8 Energy, +4 Health, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R303',
+        title: 'Outcome: Nuyen',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Critical Failure</strong> – The job backfired or was a setup.
+                <ul>
+                    <li>0 ¥, +1 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Failure</strong> – You earned something, but it's barely worth the risk.
+                <ul>
+                    <li>1.000 ¥</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – A modest payout for solid work.
+                <ul>
+                    <li>3.000 ¥</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – A smooth job and fair compensation.
+                <ul>
+                    <li>6.000 ¥</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – The plan worked perfectly and paid well.
+                <ul>
+                    <li>10.000 ¥</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – Flawless execution, and the money shows it.
+                <ul>
+                    <li>15.000 ¥, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R304',
+        title: 'Outcome: Heat',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Critical Failure</strong> – Your actions attract major attention from the authorities.
+                <ul>
+                    <li>+2 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Failure</strong> – You leave behind traces that raise suspicion.
+                <ul>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – You keep a low profile, but eyes are still on you.
+                <ul>
+                    <li>-1 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – You take extra precautions and shake off pursuit.
+                <ul>
+                    <li>-2 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – You reroute your trail and erase your digital footprint.
+                <ul>
+                    <li>-3 Heat</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – Your actions are so clean, you’re mistaken for a civilian.
+                <ul>
+                    <li>-4 Heat, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R305',
+        title: 'Outcome: Intel',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li><strong>Critical Failure</strong>
+                <ul>
+                    <li>Your attempt to gather intel fails miserably, and you end up losing crucial data.</li>
+                    <li>-1 Intel, +1 Heat</li>
+                </ul>
+            </li>
+            <li><strong>Failure</strong>
+                <ul>
+                    <li>You manage to retrieve some information, but it's incomplete and unreliable.</li>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li><strong>Standard</strong>
+                <ul>
+                    <li>You gather basic intel that may be useful, but it's not game-changing.</li>
+                    <li>+1 Intel</li>
+                </ul>
+            </li>
+            <li><strong>Good</strong>
+                <ul>
+                    <li>The intel you collect is solid, providing useful insights into your mission.</li>
+                    <li>+2 Intel</li>
+                </ul>
+            </li>
+            <li><strong>Great</strong>
+                <ul>
+                    <li>Your intel collection goes exceptionally well, uncovering valuable information.</li>
+                    <li>+3 Intel</li>
+                </ul>
+            </li>
+            <li><strong>Exceptional</strong>
+                <ul>
+                    <li>You uncover crucial and highly valuable intelligence that could change the course of the mission.</li>
+                    <li>+4 Intel, +1 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
     },
 ]
