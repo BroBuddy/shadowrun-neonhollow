@@ -148,7 +148,7 @@ export const Town = [
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
-                <li>Select whether to enhanc: <strong>Strength</strong> or <strong>Logic</strong></li>
+                <li>Select whether to enhance: <strong>Strength</strong> or <strong>Logic</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
                 <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
@@ -288,7 +288,7 @@ export const Town = [
             </ol>
             <p><strong>Endurance Drill:</strong></p>
             <ol>
-                <li>Select whether to enhanc: <strong>Agility</strong> or <strong>Reaction</strong></li>
+                <li>Select whether to enhance: <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
                 <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
@@ -305,7 +305,7 @@ export const Town = [
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
-                <li>Select whether to enhanc: <strong>Intuition</strong> or <strong>Charisma</strong></li>
+                <li>Select whether to enhance: <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
                 <li>Roll your selected attribute &#8594; See R306</li>
             </ol>`,
@@ -329,50 +329,26 @@ export const Town = [
     {
         id: 'R200',
         title: 'NeonHollow: ZeroZone',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>' +
-            '<p><em>"Where the shadows test their own."</em></p>' +
-            '<p><strong>Actions at ZeroZone:</strong></p>' +
-            '<ul><li>Wire a Contact (R201)</li><li>Challenge (R202)</li></ul>',
-    },
-    {
-        id: 'R201',
-        title: 'ZeroZone: Wire a Contact',
-        content:
-            '<p>Jack into the Runner Matrix (N001) to trace the digital scent of freelance talent ready to run.</p>' +
-            '<p>To hire this runner for your squad, you must have at least 8.000 ¥ available.</p>' +
-            '<p>Add your <strong>Charisma</strong> value to the 2d6 roll to haggle with the runner for lower payment.</p>' +
-            '<ul>' +
-            '<li>2-5: <strong>Overpriced Hire</strong> – You’ve hired a runner, but it’s going to cost you dearly.<ul><li>-8.000 ¥, +1 random Runner</li></ul></li>' +
-            '<li>6-8: <strong>Expensive but Acceptable</strong> – The runner’s skill set is solid, but they’re not exactly cheap.<ul><li>-7.000 ¥, +1 random Runner</li></ul></li>' +
-            '<li>9-11: <strong>Standard Price</strong> – The runner`s price is what you would expect for their skill level.<ul><li>-6.000 ¥, +1 random Runner</li></ul></li>' +
-            '<li>12-14: <strong>Reasonable Hire</strong> – You’ve managed to secure a solid deal for this runner.<ul><li>-5.000 ¥, +1 random Runner</li></ul></li>' +
-            '<li>15+: <strong>Bargain Hire</strong> – You’ve managed to convince the runner to work for less than their usual rate.<ul><li>-4.000 ¥, +1 random Runner</li></ul></li>' +
-            '</ul>',
-    },
-    {
-        id: 'R202',
-        title: 'ZeroZone: Challenge',
-        content:
-            '<p>Choose one of your physical or mental attributes.</p>' +
-            '<p>Roll on the Runner Matrix (N001) to find out who`s your opponent in this challenge.</p>' +
-            '<ol><li><strong>Size up your opponent.</strong> Compare your chosen attribute with theirs to determine your edge.</li>' +
-            '<li><strong>Enter the fray.</strong> Roll the dice equal to your attribute—then watch your opponent strike back.</li>' +
-            '<li><strong>Steel meets shadow.</strong> Compare successes and feel the tide of battle shift.</li>' +
-            '<li><strong>Face the outcome.</strong> Consult the challenge result (R203) to see if you walk away stronger — or bruised.</li></ol>',
-    },
-    {
-        id: 'R203',
-        title: 'ZeroZone: Result',
-        content:
-            '<p>Once the sweat dries and the dust settles, it’s time to see what you gained — or lost.</p>' +
-            '<ul>' +
-            '<li>-3/-4: <strong>Crushed</strong> – You were completely outmatched — maybe stick to cardio.<ul><li>-1 Health, -1 Reputation</li></ul></li>' +
-            '<li>-1/-2: <strong>Outperformed</strong> – You gave it your all, but your opponent had the upper hand.<ul><li>-1 Health</li></ul></li>' +
-            '<li>0: <strong>Even Match</strong> – Neither of you gained the upper hand — this one’s a draw.<ul><li>No Effect</li></ul></li>' +
-            '<li>+1/+2: <strong>Dominant</strong> – You held your ground and impressed everyone watching.<ul><li>+2.000 ¥</li></ul></li>' +
-            '<li>+3/+4: <strong>Flawless Victory</strong> – You completely outshined your opponent — respect earned.<ul><li>+4.000 ¥, +1 Reputation</li></ul></li>' +
-            '</ul>',
+        content: `<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>
+            <p><em>"Where the shadows test their own."</em></p>
+            <p><strong>Challenge a Runner:</strong></p>
+            <ol>
+                <li>Select <strong>two Attributes</strong> for the Challenge</li>
+                <li>Roll your chosen <strong>Attributes</strong></li>
+                <li>Track your <strong>Successes</strong></li>
+                <li>Roll on the Runner Matrix (N001)</li>
+                <li>Roll the opponent's <strong>Attributes</strong></li>
+                <li>Substract opponent's successes from yours</li>
+                <li>See R303</li>
+            </ol>
+            <p><strong>Recruit a Runner:</strong></p>
+            <ol>
+                <li>You must have at least <strong>8.000 ¥</strong> available</li>
+                <li>Roll on the Runner Matrix (N001)</li>
+                <li>Remember the two highest Attributes</li>
+                <li>Roll your <strong>Charisma</strong> and another <strong>Attribute</strong></li>
+                <li>See R307</li>
+            </ol>`,
     },
     {
         id: 'R800',
@@ -420,13 +396,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
-                    <li>+6 Health, +3 Energy</li>
+                    <li>+6 Health, +3 Energy, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
-                    <li>+8 Health, +4 Energy, +1 Reputation</li>
+                    <li>+8 Health, +4 Energy, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -463,13 +439,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
                 <ul>
-                    <li>+6 Energy, +3 Health</li>
+                    <li>+6 Energy, +3 Health, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
                 <ul>
-                    <li>+8 Energy, +4 Health, +1 Reputation</li>
+                    <li>+8 Energy, +4 Health, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -488,31 +464,31 @@ export const Town = [
             <li>
                 <strong>Failure</strong> – You earned something, but it's barely worth the risk.
                 <ul>
-                    <li>1.000 ¥</li>
+                    <li>2.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Standard</strong> – A modest payout for solid work.
                 <ul>
-                    <li>3.000 ¥</li>
+                    <li>5.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Good</strong> – A smooth job and fair compensation.
                 <ul>
-                    <li>6.000 ¥</li>
+                    <li>9.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Great</strong> – The plan worked perfectly and paid well.
                 <ul>
-                    <li>10.000 ¥</li>
+                    <li>14.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Flawless execution, and the money shows it.
                 <ul>
-                    <li>15.000 ¥, +1 Reputation</li>
+                    <li>20.000 ¥, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -549,13 +525,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – You reroute your trail and erase your digital footprint.
                 <ul>
-                    <li>-3 Heat</li>
+                    <li>-3 Heat, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Your actions are so clean, you’re mistaken for a civilian.
                 <ul>
-                    <li>-4 Heat, +1 Reputation</li>
+                    <li>-4 Heat, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -592,13 +568,13 @@ export const Town = [
             <li><strong>Great</strong>
                 <ul>
                     <li>Your intel collection goes exceptionally well, uncovering valuable information.</li>
-                    <li>+3 Intel</li>
+                    <li>+3 Intel, +1 Reputation</li>
                 </ul>
             </li>
             <li><strong>Exceptional</strong>
                 <ul>
                     <li>You uncover crucial and highly valuable intelligence that could change the course of the mission.</li>
-                    <li>+4 Intel, +1 Reputation</li>
+                    <li>+4 Intel, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -623,19 +599,62 @@ export const Town = [
             <li>
                 <strong>Good</strong> – You feel sharp, fast, and focused.
                 <ul>
-                    <li>+1 to Attribute, +1 Energy</li>
+                    <li>+1 to Attribute, +1 Intel</li>
                 </ul>
             </li>
             <li>
                 <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
                 <ul>
-                    <li>+2 to Attribute</li>
+                    <li>+1 to Attribute, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – The enhancement merges flawlessly with your system.
                 <ul>
-                    <li>+2 to Attribute, +2 Energy</li>
+                    <li>+1 to Attribute, +2 Reputation</li>
+                </ul>
+            </li>
+        </ol>`,
+    },
+    {
+        id: 'R307',
+        title: 'Outcome: Runner',
+        content: `<p>The number of successes determines the outcome of the action.</p>
+        <ol start="0">
+            <li>
+                <strong>Critical Failure</strong> – No interest, dismisses the offer.
+                <ul>
+                    <li>No Effect</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
+                <ul>
+                    <li>-8.000 ¥, 1. Attribute Temporary</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
+                <ul>
+                    <li>-7.000 ¥, 1. Attribute Temporary, 2. Attribute Temporary</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Good</strong> – The runner's price is what you would expect for their skill level.
+                <ul>
+                    <li>-6.000 ¥, 1. Attribute</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
+                <ul>
+                    <li>-5.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
+                <ul>
+                    <li>-4.000 ¥, 1. Attribute, 2. Attribute, +2 Reputation</li>
                 </ul>
             </li>
         </ol>`,
