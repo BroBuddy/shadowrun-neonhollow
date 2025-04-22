@@ -27,7 +27,7 @@ export const Rules = [
         title: 'Rules: Runner',
         content:
             '<p>Follow this guide to build your runner before diving into the shadows.</p>' +
-            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R040) Name</li><li>(R050) Background</li><li>(R060) Mode</li></ol>' +
+            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R040) Name</li><li>(R050) Gear</li><li>(R060) Mode</li></ol>' +
             '<p>When rolling for a random attribute, refer to the attribute details for guidance (R004).</p>',
     },
     {
@@ -329,45 +329,32 @@ export const Rules = [
     },
     {
         id: 'R050',
-        title: 'Character: Background',
-        content:
-            '<p>Your origins matter — pick your metatype to unveil the path that led you here.</p>' +
-            '<ul><li>(R051) Human</li><li>(R052) Elf</li><li>(R053) Dwarf</li><li>(R054) Orc</li><li>(R055) Troll</li></ul>',
-    },
-    {
-        id: 'R051',
-        title: 'Background: Human',
-        content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Corporate Soldier:</strong><br />You worked in the security detail of a corporate mega-conglomerate. You understand the balance of power and the weight of wealth.</li><li><strong>Street Hustler:</strong><br />You grew up on the streets, using your wits and charm to survive. You’re a smooth talker and a quick thinker.</li><li><strong>Tech Salvager:</strong><br />You spent years collecting and selling tech scraps, learning the ins and outs of electronics. Your mind works well with complex systems.</li><li><strong>Military Veteran:</strong><br />Years of service have given you discipline and experience under pressure. You are tough and resilient in combat.</li><li><strong>Escape Artist:</strong><br />You’ve mastered the art of getting out of tight spots with agility.</li><li><strong>Runaway Noble:</strong><br />Born into wealth but raised on the streets, you blend both worlds with ease.</li></ol>',
-    },
-    {
-        id: 'R052',
-        title: 'Background: Elf',
-        content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Elven Noble:</strong><br />You were raised in the lap of luxury, trained in etiquette, and surrounded by politics.</li><li><strong>Forest Scout:</strong><br />Raised in the deep forests, you’re quick, quiet, and aware of everything around you.</li><li><strong>Arcane Scholar:</strong><br />Years of study have sharpened your logical mind and magical knowledge.</li><li><strong>Speedster:</strong><br />Whether in the woods or streets, you’re faster than the rest.</li><li><strong>High Society Rebel:</strong><br />Born into privilege but now a free spirit with street wisdom.</li><li><strong>Master of Disguise:</strong><br />You blend into any crowd with ease and grace.</li></ol>',
-    },
-    {
-        id: 'R053',
-        title: 'Background: Dwarf',
-        content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Forge Worker:</strong><br />A life at the forge made you strong, hardy, and skilled with your hands.</li><li><strong>Engineer:</strong><br />You can fix or build anything, even under pressure.</li><li><strong>Underground Tracker:</strong><br />Raised in the tunnels, your sense of direction is legendary.</li><li><strong>Mercenary:</strong><br />Battle-hardened and unshakable in combat.</li><li><strong>Craftsman:</strong><br />Your work is detailed, refined, and always functional.</li><li><strong>Grumpy Old Mentor:</strong><br />Gruff but wise, you’ve got decades of experience to offer.</li></ol>',
-    },
-    {
-        id: 'R054',
-        title: 'Background: Ork',
-        content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Street Enforcer:</strong><br />People don’t argue with you—you’re the muscle they fear.</li><li><strong>Rage Fighter:</strong><br />You strike fast and hard, fueled by fury.</li><li><strong>Tech Scrapper:</strong><br />You’ve got grease under your nails and a working knowledge of tech.</li><li><strong>Hunter:</strong><br />Keen instincts and quick reflexes keep you alive in the wild.</li><li><strong>Urban Scout:</strong><br />You own the alleys and rooftops—urban terrain is your jungle.</li><li><strong>Grunt:</strong><br />You’ve been on the frontlines, taking the hits and surviving the worst.</li></ol>',
-    },
-    {
-        id: 'R055',
-        title: 'Background: Troll',
-        content:
-            '<p>Roll 1d6 to determine your background:</p>' +
-            '<ol><li><strong>Pit Fighter:</strong><br />You’ve battled in the arena—brute strength is your game.</li><li><strong>Bouncer:</strong><br />You protect, intimidate, and shut things down with your presence.</li><li><strong>Mossback:</strong><br />Tough, seasoned, and unmovable in a fight.</li><li><strong>Ravager:</strong><br />You charge like a freight train—melee combat is your playground.</li><li><strong>Beastmaster:</strong><br />You’ve tamed wild creatures and learned their ways.</li><li><strong>Troll Outlaw:</strong><br />A nomad and survivor with a fearsome reputation.</li></ol>',
+        title: 'Character: Gear',
+        content: `<p>Choose an item that boosts your starting attributes:</p>
+        <p><strong>Power Gauntlets:</strong></p>
+        <ul>
+            <li>+1 Strength</li>
+        </ul>
+        <p><strong>Nano-Tread Boots:</strong></p>
+        <ul>
+            <li>+1 Agility</li>
+        </ul>
+        <p><strong>Reflex Enhancer Implant:</strong></p>
+        <ul>
+            <li>+1 Reaction</li>
+        </ul>
+        <p><strong>Neural Interface Headset:</strong></p>
+        <ul>
+            <li>+1 Logic</li>
+        </ul>
+        <p><strong>Synaptic Amplifier:</strong></p>
+        <ul>
+            <li>+1 Intuition</li>
+        </ul>
+        <p><strong>Holo-Disguise Mask:</strong></p>
+        <ul>
+            <li>+1 Charisma</li>
+        </ul>`,
     },
     {
         id: 'R060',
@@ -376,10 +363,12 @@ export const Rules = [
             '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +
             '<p>For your first journey, I suggest starting with Easy Mode to get a feel for the city`s pulse.</p>' +
             '<p><strong>Easy Mode:</strong></p>' +
-            '<ul><li>7.000 ¥</li><li>7 Health</li><li>7 Energy</li><li>2 Reputation</li></ul>' +
+            '<ul><li>10.000 ¥</li><li>10 Health</li><li>10 Energy</li><li>3 Reputation</li></ul>' +
             '<p><strong>Medium Mode:</strong></p>' +
-            '<ul><li>5.000 ¥</li><li>5 Health</li><li>5 Energy</li><li>1 Reputation</li></ul>' +
+            '<ul><li>8.000 ¥</li><li>8 Health</li><li>8 Energy</li><li>2 Reputation</li></ul>' +
             '<p><strong>Hard Mode:</strong></p>' +
-            '<ul><li>3.000 ¥</li><li>3 Health</li><li>3 Energy</li><li>0 Reputation</li></ul>',
+            '<ul><li>6.000 ¥</li><li>6 Health</li><li>6 Energy</li><li>1 Reputation</li></ul>' +
+            '<p><strong>Insane Mode:</strong></p>' +
+            '<ul><li>4.000 ¥</li><li>4 Health</li><li>4 Energy</li><li>0 Reputation</li></ul>',
     },
 ]

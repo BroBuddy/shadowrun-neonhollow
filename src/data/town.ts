@@ -36,12 +36,12 @@ export const Town = [
             <p><strong>Hack the Network:</strong></p>
             <ol>
                 <li>Spend <strong>3 Energy</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
+                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R303</li>
             </ol>
             <p><strong>Infiltrate the Terrain:</strong></p>
             <ol>
                 <li>Spend <strong>3 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
+                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R305</li>
             </ol>`,
     },
     {
@@ -109,12 +109,12 @@ export const Town = [
             <p><strong>Bounty Hunting:</strong></p>
             <ol>
                 <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Agility</strong></li>
-                <li>See R303</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
             </ol>
             <p><strong>Bribe the Officer:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
+                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R304</li>
             </ol>`,
     },
     {
@@ -144,7 +144,7 @@ export const Town = [
             <p><strong>Restorative Treatment:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Logic</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
+                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R301</li>
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
@@ -180,12 +180,12 @@ export const Town = [
             <p><strong>Nutritional Meal:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Intuition</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R301</li>
+                <li>See R301</li>
             </ol>
             <p><strong>High-Stakes Gambling:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Intuition</strong> and <strong>Charisma</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
+                <li>See R303</li>
             </ol>`,
     },
     {
@@ -215,12 +215,12 @@ export const Town = [
             <p><strong>Restorative Sleep:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
+                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R302</li>
             </ol>
             <p><strong>Calm Your Mind:</strong></p>
             <ol>
                 <li>Spend <strong>1 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Logic</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R304</li>
+                <li>See R304</li>
             </ol>`,
     },
     {
@@ -250,12 +250,12 @@ export const Town = [
             <p><strong>Meditation Lesson:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Reaction</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R302</li>
+                <li>See R302</li>
             </ol>
             <p><strong>Pressure the Informant:</strong></p>
             <ol>
                 <li>Pay <strong>1 Energy</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Reaction</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R305</li>
+                <li>See R305</li>
             </ol>`,
     },
     {
@@ -284,7 +284,7 @@ export const Town = [
             <p><strong>Recovery Training:</strong></p>
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Charisma</strong></li>
-                <li>See R301</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
             </ol>
             <p><strong>Endurance Drill:</strong></p>
             <ol>
@@ -301,7 +301,7 @@ export const Town = [
             <p><strong>Memory Mining:</strong></p>
             <ol>
                 <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Logic</strong></li>
-                <li>See R302</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
@@ -318,12 +318,12 @@ export const Town = [
             <p><strong>Ask for Protection:</strong></p>
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Charisma</strong></li>
-                <li>See R304</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
             </ol>
             <p><strong>Buy Confidential Info:</strong></p>
             <ol>
                 <li>Pay <strong>2.000 ¥</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Charisma</strong></li>
-                <li>See R305</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
             </ol>`,
     },
     {
