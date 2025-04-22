@@ -2,18 +2,82 @@ export const Runners = [
     {
         id: 'N001',
         title: 'Runner Matrix',
-        content:
-            '<p>If you hired a Runner, you`ll receive a bonus based on their two highest attributes.</p>' +
-            '<p>To roll on the Runner Matrix:</p>' +
-            '<ol><li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li><li>Combine the two rolls to form a two-digit number.</li><li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li></ol>' +
-            '<ul>' +
-            '<li>N011, N012, N013, N014, N015, N016</li>' +
-            '<li>N021, N022, N023, N024, N025, N026</li>' +
-            '<li>N031, N032, N033, N034, N035, N036</li>' +
-            '<li>N041, N042, N043, N044, N045, N046</li>' +
-            '<li>N051, N052, N053, N054, N055, N056</li>' +
-            '<li>N061, N062, N063, N064, N065, N066</li>' +
-            '</ul>',
+        content: `<table>
+            <thead>
+                <tr>
+                    <th>2d6</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>N011</td>
+                    <td>N012</td>
+                    <td>N013</td>
+                    <td>N014</td>
+                    <td>N015</td>
+                    <td>N016</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>N021</td>
+                    <td>N022</td>
+                    <td>N023</td>
+                    <td>N024</td>
+                    <td>N025</td>
+                    <td>N026</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>N031</td>
+                    <td>N032</td>
+                    <td>N033</td>
+                    <td>N034</td>
+                    <td>N035</td>
+                    <td>N036</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>N041</td>
+                    <td>N042</td>
+                    <td>N043</td>
+                    <td>N044</td>
+                    <td>N045</td>
+                    <td>N046</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>N051</td>
+                    <td>N052</td>
+                    <td>N053</td>
+                    <td>N054</td>
+                    <td>N055</td>
+                    <td>N056</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>N061</td>
+                    <td>N062</td>
+                    <td>N063</td>
+                    <td>N064</td>
+                    <td>N065</td>
+                    <td>N066</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <p>To roll on the Runner Matrix:</p>
+        <ol>
+            <li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li>
+            <li>Combine the two rolls to form a two-digit number.</li>
+            <li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>
+        </ol>`,
     },
     {
         id: 'N011',

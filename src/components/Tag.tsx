@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { makeUrlsClickable, rulesRegex } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
@@ -7,10 +7,11 @@ import { Data } from '@/data/data'
 
 const Tag = () => {
     const { tagId } = useParams()
-    const tagsInRow = 6
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
-    const [linkTags, setLinkTags] = useState<string[]>([])
-    const transformedContent = makeUrlsClickable(activeTag?.content)
+    const [_, setLinkTags] = useState<string[]>([])
+    const transformedContent = activeTag?.content
+        ? makeUrlsClickable(activeTag.content)
+        : null
 
     useEffect(() => {
         const findTags = activeTag?.content.match(rulesRegex)
@@ -31,15 +32,11 @@ const Tag = () => {
                     time={activeTag.time || null}
                     title={activeTag.title}
                 >
-                    <div
-                        dangerouslySetInnerHTML={{
-                            __html: transformedContent,
-                        }}
-                    />
+                    <div>{transformedContent}</div>
                 </Card>
             )}
 
-            {linkTags?.length >= 1 && (
+            {/* {linkTags?.length >= 1 && (
                 <Card title="Links">
                     <p>
                         {linkTags?.map((tag: string, index: number) => {
@@ -55,7 +52,7 @@ const Tag = () => {
                         })}
                     </p>
                 </Card>
-            )}
+            )} */}
         </>
     )
 }

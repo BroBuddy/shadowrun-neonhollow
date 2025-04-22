@@ -1,7 +1,6 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
-import Matrix from './components/MatrixLink'
 import './App.css'
 
 function App() {
@@ -14,7 +13,9 @@ function App() {
     return (
         <>
             <div className="flex sticky top-0 bg-black justify-between items-center px-3 z-10">
-                <Matrix prefix="N0" label="RM" />
+                <Link to="/N001" className="mt-3">
+                    RM
+                </Link>
 
                 <div className="mt-3 justify-items-center">
                     <Link to="/R001">
@@ -22,7 +23,9 @@ function App() {
                     </Link>
                 </div>
 
-                <Matrix prefix="E0" label="EM" />
+                <Link to="/E001" className="mt-3">
+                    EM
+                </Link>
             </div>
 
             <div className="z-0">

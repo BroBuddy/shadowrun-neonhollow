@@ -2,18 +2,75 @@ export const Town = [
     {
         id: 'R101',
         title: 'NeonHollow',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>' +
-            '<p><em>"Where the lights never die — only the people do."</em></p>' +
-            '<p><strong>Security District:</strong></p>' +
-            '<ul><li>CorpTower (R110)</li><li>PatrolHub (R120)</li></ul>' +
-            '<p><strong>Entertainment District:</strong></p>' +
-            '<ul><li>BioCare (R130)</li><li>HoloLounge (R140)</li><li>DreamSphere (R150)</li></ul>' +
-            '<p><strong>Industrial District:</strong></p>' +
-            '<ul><li>EchoGarden (R160)</li><li>IronGym (R170)</li><li>NeuralNexus (R180)</li></ul>' +
-            '<p><strong>Underground District:</strong></p>' +
-            '<ul><li>SmugglerDen (R190)</li><li>ZeroZone (R200)</li></ul>' +
-            '<p>Dive into the rules (R102) to get a taste of how things run at <strong>NeonHollow</strong>.</p>',
+        content: `<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>
+            <p><em>"Where the lights never die — only the people do."</em></p>
+            <p>Dive into the rules (R102) to get a taste of how things run at <strong>NeonHollow</strong>.</p>
+            <p><strong>Security District:</strong></p>
+            <div class="flex gap-8">
+                <div class="flex-1 basis-1/3">
+                    <p>CorpTower<br />
+                    <img src="/images/CorpTower.jpg" alt="CorpTower" />
+                    R110</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>PatrolHub<br />
+                    <img src="/images/PatrolHub.jpg" alt="PatrolHub" />
+                    R120</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                </div>
+            </div>
+            <p><strong>Entertainment District:</strong></p>
+            <div class="flex gap-8">
+                <div class="flex-1 basis-1/3">
+                    <p>BioCare<br />
+                    <img src="/images/BioCare.jpg" alt="BioCare" />
+                    R130</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>HoloLounge<br />
+                    <img src="/images/HoloLounge.jpg" alt="HoloLounge" />
+                    R140</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>DreamSphere<br />
+                    <img src="/images/DreamSphere.jpg" alt="DreamSphere" />
+                    R150</p>
+                </div>
+            </div>
+            <p><strong>Industrial District:</strong></p>
+            <div class="flex gap-8">
+                <div class="flex-1 basis-1/3">
+                    <p>EchoGarden<br />
+                    <img src="/images/EchoGarden.jpg" alt="EchoGarden" />
+                    R160</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>IronGym<br />
+                    <img src="/images/IronGym.jpg" alt="IronGym" />
+                    R170</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>NeuralNexus<br />
+                    <img src="/images/NeuralNexus.jpg" alt="NeuralNexus" />
+                    R180</p>
+                </div>
+            </div>
+            <p><strong>Underground District:</strong></p>
+            <div class="flex gap-8">
+                <div class="flex-1 basis-1/3">
+                    <p>SmugglerDen<br />
+                    <img src="/images/SmugglerDen.jpg" alt="SmugglerDen" />
+                    R190</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                    <p>ZeroZone<br />
+                    <img src="/images/ZeroZone.jpg" alt="ZeroZone" />
+                    R200</p>
+                </div>
+                <div class="flex-1 basis-1/3">
+                </div>
+            </div>`,
     },
     {
         id: 'R102',
@@ -32,16 +89,16 @@ export const Town = [
         title: 'NeonHollow: CorpTower',
         content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
             <p><em>"Order. Control. Perfection."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R111) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R111</p>
             <p><strong>Hack the Network:</strong></p>
             <ol>
                 <li>Spend <strong>3 Energy</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R303</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
             </ol>
             <p><strong>Infiltrate the Terrain:</strong></p>
             <ol>
                 <li>Spend <strong>3 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R305</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
             </ol>`,
     },
     {
@@ -105,16 +162,16 @@ export const Town = [
         title: 'NeonHollow: PatrolHub',
         content: `<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>
             <p><em>"The law's last flicker."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R121) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R121</p>
             <p><strong>Bounty Hunting:</strong></p>
             <ol>
                 <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Agility</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
+                <li>See R303</li>
             </ol>
             <p><strong>Bribe the Officer:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R304</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
             </ol>`,
     },
     {
@@ -140,11 +197,11 @@ export const Town = [
         title: 'NeonHollow: BioCare',
         content: `<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>
             <p><em>"Healing flesh, not souls."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R131) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R131</p>
             <p><strong>Restorative Treatment:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Logic</strong></li>
-                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R301</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
@@ -176,16 +233,16 @@ export const Town = [
         title: 'NeonHollow: HoloLounge',
         content: `<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>
             <p><em>"Reality? Optional."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R141) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R141</p>
             <p><strong>Nutritional Meal:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Intuition</strong></li>
-                <li>See R301</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R301</li>
             </ol>
             <p><strong>High-Stakes Gambling:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Intuition</strong> and <strong>Charisma</strong></li>
-                <li>See R303</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
             </ol>`,
     },
     {
@@ -211,16 +268,16 @@ export const Town = [
         title: 'NeonHollow: DreamSphere',
         content: `<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>
             <p><em>"Where your nightmares become hobbies."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R151) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R151</p>
             <p><strong>Restorative Sleep:</strong></p>
             <ol>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>2 Successes</strong> to your roll &#8594; See R302</li>
+                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
             </ol>
             <p><strong>Calm Your Mind:</strong></p>
             <ol>
                 <li>Spend <strong>1 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Logic</strong></li>
-                <li>See R304</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R304</li>
             </ol>`,
     },
     {
@@ -246,16 +303,16 @@ export const Town = [
         title: 'NeonHollow: EchoGarden',
         content: `<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>
             <p><em>"The city’s memory grows here."</em></p>
-            <p>Before using the actions, roll 2d6 on the Event Table (R161) to determine what happens during your visit.</p>
+            <p>Enter &#8594; Roll 2d6 &#8594; See R161</p>
             <p><strong>Meditation Lesson:</strong></p>
             <ol>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Reaction</strong></li>
-                <li>See R302</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R302</li>
             </ol>
             <p><strong>Pressure the Informant:</strong></p>
             <ol>
                 <li>Pay <strong>1 Energy</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Reaction</strong></li>
-                <li>See R305</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R305</li>
             </ol>`,
     },
     {
@@ -284,7 +341,7 @@ export const Town = [
             <p><strong>Recovery Training:</strong></p>
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
+                <li>See R301</li>
             </ol>
             <p><strong>Endurance Drill:</strong></p>
             <ol>
@@ -301,7 +358,7 @@ export const Town = [
             <p><strong>Memory Mining:</strong></p>
             <ol>
                 <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Logic</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
+                <li>See R302</li>
             </ol>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ol>
@@ -318,12 +375,12 @@ export const Town = [
             <p><strong>Ask for Protection:</strong></p>
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
+                <li>See R304</li>
             </ol>
             <p><strong>Buy Confidential Info:</strong></p>
             <ol>
                 <li>Pay <strong>2.000 ¥</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
+                <li>See R305</li>
             </ol>`,
     },
     {
@@ -339,7 +396,7 @@ export const Town = [
                 <li>Roll on the Runner Matrix (N001)</li>
                 <li>Roll the opponent's <strong>Attributes</strong></li>
                 <li>Substract opponent's successes from yours</li>
-                <li>See R303</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
             </ol>
             <p><strong>Recruit a Runner:</strong></p>
             <ol>
@@ -347,7 +404,7 @@ export const Town = [
                 <li>Roll on the Runner Matrix (N001)</li>
                 <li>Remember the two highest Attributes</li>
                 <li>Roll your <strong>Charisma</strong> and another <strong>Attribute</strong></li>
-                <li>See R307</li>
+                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R307</li>
             </ol>`,
     },
     {
@@ -396,13 +453,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
-                    <li>+6 Health, +3 Energy, +1 Reputation</li>
+                    <li>+6 Health, +3 Energy</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
-                    <li>+8 Health, +4 Energy, +2 Reputation</li>
+                    <li>+8 Health, +4 Energy, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -439,13 +496,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
                 <ul>
-                    <li>+6 Energy, +3 Health, +1 Reputation</li>
+                    <li>+6 Energy, +3 Health</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
                 <ul>
-                    <li>+8 Energy, +4 Health, +2 Reputation</li>
+                    <li>+8 Energy, +4 Health, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -464,31 +521,31 @@ export const Town = [
             <li>
                 <strong>Failure</strong> – You earned something, but it's barely worth the risk.
                 <ul>
-                    <li>2.000 ¥</li>
+                    <li>1.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Standard</strong> – A modest payout for solid work.
                 <ul>
-                    <li>5.000 ¥</li>
+                    <li>3.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Good</strong> – A smooth job and fair compensation.
                 <ul>
-                    <li>9.000 ¥</li>
+                    <li>6.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Great</strong> – The plan worked perfectly and paid well.
                 <ul>
-                    <li>14.000 ¥, +1 Reputation</li>
+                    <li>10.000 ¥</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Flawless execution, and the money shows it.
                 <ul>
-                    <li>20.000 ¥, +2 Reputation</li>
+                    <li>15.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -525,13 +582,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – You reroute your trail and erase your digital footprint.
                 <ul>
-                    <li>-3 Heat, +1 Reputation</li>
+                    <li>-3 Heat</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – Your actions are so clean, you’re mistaken for a civilian.
                 <ul>
-                    <li>-4 Heat, +2 Reputation</li>
+                    <li>-4 Heat, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -568,13 +625,13 @@ export const Town = [
             <li><strong>Great</strong>
                 <ul>
                     <li>Your intel collection goes exceptionally well, uncovering valuable information.</li>
-                    <li>+3 Intel, +1 Reputation</li>
+                    <li>+3 Intel</li>
                 </ul>
             </li>
             <li><strong>Exceptional</strong>
                 <ul>
                     <li>You uncover crucial and highly valuable intelligence that could change the course of the mission.</li>
-                    <li>+4 Intel, +2 Reputation</li>
+                    <li>+4 Intel, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -605,13 +662,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
                 <ul>
-                    <li>+1 to Attribute, +1 Reputation</li>
+                    <li>+1 to Attribute</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – The enhancement merges flawlessly with your system.
                 <ul>
-                    <li>+1 to Attribute, +2 Reputation</li>
+                    <li>+1 to Attribute, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -648,13 +705,13 @@ export const Town = [
             <li>
                 <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
                 <ul>
-                    <li>-5.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
+                    <li>-5.000 ¥, 1. Attribute, 2. Attribute Temporary</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
                 <ul>
-                    <li>-4.000 ¥, 1. Attribute, 2. Attribute, +2 Reputation</li>
+                    <li>-4.000 ¥, 1. Attribute, 2. Attribute, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,

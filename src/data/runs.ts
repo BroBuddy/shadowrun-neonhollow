@@ -33,17 +33,17 @@ export const Runs = [
             <ol>
                 <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.
                     <ul>
-                        <li>No Effect</li>
+                        <li>+1 Heat</li>
                     </ul>
                 </li>
                 <li><strong>Underwhelming</strong> – Barely completed the job, but left a mess.
                     <ul>
-                        <li>+2.000 ¥</li>
+                        <li>No Effect</li>
                     </ul>
                 </li>
                 <li><strong>Partial</strong> – Mission completed, but with setbacks.
                     <ul>
-                        <li>+4.000 ¥</li>
+                        <li>+3.000 ¥</li>
                     </ul>
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
@@ -53,7 +53,7 @@ export const Runs = [
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+8.000 ¥, -1 Corp Influence, +1 Reputation</li>
+                        <li>+9.000 ¥, -1 Corp Influence, +1 Reputation</li>
                     </ul>
                 </li>
             </ol>`,
@@ -68,6 +68,7 @@ export const Runs = [
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
             A silent data breach threatens BioCare's neural implant protocols. Traces lead to the upper floors of CorpTower—specifically the Data Regulation Wing. Someone within the corporate matrix is cloning patient data and selling it off-network. BioCare needs this stopped, quietly.</p>
+            <hr class="glowing" />
             <ol>
                 <li><strong>Disable the Drones</strong>
                     <ul>
@@ -94,6 +95,7 @@ export const Runs = [
                     </ul>
                 </li>
             </ol>
+            <hr class="glowing" />
             <p><strong>Twist:</strong><br />
             The target is in a bio-containment area. New security measures are active.</p>
             <ul>
@@ -112,13 +114,14 @@ export const Runs = [
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
             One of HoloLounge's VIP clients—a famous synth performer named KALLA-X—is being detained by corporate agents after refusing to sign an exclusive media rights contract. She’s holed up in a luxury suite on the Executive Entertainment Deck, monitored by corp security and biometric locks.</p>
+            <hr class="glowing" />
             <ol>
                 <li><strong>Solve Passcode Puzzle</strong>
                     <ul>
                         <li>2-5: <strong>Logic (DC 3)</strong>: Hack the target’s device to access the data chip.</li>
                         <li>6-8: <strong>Agility (DC 2)</strong>: Pickpocket the chip without alerting the target.</li>
                         <li>9-12: <strong>Strength (DC 1)</strong>: Forcefully take the chip from the target.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
+                        <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Locate the Target</strong>
@@ -126,7 +129,7 @@ export const Runs = [
                         <li>2-5: <strong>Intuition (DC 3)</strong>: Spot the target among the patrons.</li>
                         <li>6-8: <strong>Agility (DC 2)</strong>: Stealthily observe the target from a distance.</li>
                         <li>9-12: <strong>Strength (DC 1)</strong>: Push through the crowd to get a closer look.</li>
-                        <li><strong>Fail:</strong> Performance 1</li>
+                        <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Escape from Penthouse</strong>
@@ -138,6 +141,7 @@ export const Runs = [
                     </ul>
                 </li>
             </ol>
+            <hr class="glowing" />
             <p><strong>Twist:</strong><br />
             The target’s bodyguards are already on high alert and begin scanning the lounge.</p>
             <ul>
@@ -156,6 +160,7 @@ export const Runs = [
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
             DreamSphere has learned that CorpTower’s corporate intelligence division is running covert operations to intercept and manipulate data streams tied to DreamSphere’s underground network. This is a breach of their privacy agreement, and the client demands retaliation.</p>
+            <hr class="glowing" />
             <ol>
                 <li><strong>Infiltrate the Lobby</strong>
                     <ul>
@@ -170,7 +175,7 @@ export const Runs = [
                         <li>2-5: <strong>Agility (DC 3)</strong>: Scale the exterior and access the cellar undetected.</li>
                         <li>6-8: <strong>Intuition (DC 2)</strong>: Locate the hidden access point in the building's ventilation shaft.</li>
                         <li>9-12: <strong>Strength (DC 1)</strong>: Force open a locked maintenance door.</li>
-                        <li><strong>Fail:</strong> Performance 3</li>
+                        <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Fetch sensitive data</strong>
@@ -178,10 +183,11 @@ export const Runs = [
                         <li>2-5: <strong>Logic (DC 3)</strong>:  Hack into the building’s security control system.</li>
                         <li>6-8: <strong>Agility (DC 2)</strong>: Sneak past the security cameras and enter an unguarded elevator.</li>
                         <li>9-12: <strong>Strength (DC 1)</strong>: Pry open the elevator’s emergency hatch and bypass the system.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
+                        <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
             </ol>
+            <hr class="glowing" />
             <p><strong>Twist:</strong><br />
             The server room is not as empty as expected. The target is under heavy surveillance.</p>
             <ul>

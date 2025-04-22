@@ -2,19 +2,84 @@ export const Events = [
     {
         id: 'E001',
         title: 'Event Matrix',
-        content:
-            '<p>To roll on the Event Matrix:</p>' +
-            '<ol><li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li><li>Combine the two rolls to form a two-digit number.</li><li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>' +
-            '<li>Choose how to handle the event, then roll the number of <strong>1d6</strong> corresponding to the value of your chosen attribute.</li>' +
-            '<li>To achieve success, you always need at least <strong>2 Successes</strong>.</li></ol>' +
-            '<ul>' +
-            '<li>E011, E012, E013, E014, E015, E016</li>' +
-            '<li>E021, E022, E023, E024, E025, E026</li>' +
-            '<li>E031, E032, E033, E034, E035, E036</li>' +
-            '<li>E041, E042, E043, E044, E045, E046</li>' +
-            '<li>E051, E052, E053, E054, E055, E056</li>' +
-            '<li>E061, E062, E063, E064, E065, E066</li>' +
-            '</ul>',
+        content: `<table>
+            <thead>
+                <tr>
+                    <th>2d6</th>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>E011</td>
+                    <td>E012</td>
+                    <td>E013</td>
+                    <td>E014</td>
+                    <td>E015</td>
+                    <td>E016</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>E021</td>
+                    <td>E022</td>
+                    <td>E023</td>
+                    <td>E024</td>
+                    <td>E025</td>
+                    <td>E026</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>E031</td>
+                    <td>E032</td>
+                    <td>E033</td>
+                    <td>E034</td>
+                    <td>E035</td>
+                    <td>E036</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>E041</td>
+                    <td>E042</td>
+                    <td>E043</td>
+                    <td>E044</td>
+                    <td>E045</td>
+                    <td>E046</td>
+                </tr>
+                <tr>
+                    <th>5</th>
+                    <td>E051</td>
+                    <td>E052</td>
+                    <td>E053</td>
+                    <td>E054</td>
+                    <td>E055</td>
+                    <td>E056</td>
+                </tr>
+                <tr>
+                    <th>6</th>
+                    <td>E061</td>
+                    <td>E062</td>
+                    <td>E063</td>
+                    <td>E064</td>
+                    <td>E065</td>
+                    <td>E066</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <p>To roll on the Event Matrix:</p>
+        <ol>
+            <li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li>
+            <li>Combine the two rolls to form a two-digit number.</li>
+            <li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>
+            <li>Choose how to handle the event, then roll the number of <strong>1d6</strong> corresponding to the value of your chosen attribute.</li>
+            <li>To achieve success, you always need at least <strong>2 Successes</strong>.</li>
+        </ol>`,
     },
     {
         id: 'E011',

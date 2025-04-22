@@ -31,10 +31,6 @@ body {
     min-height: 100vh;
 }
 
-.emoji {
-    font-family: 'Noto Emoji';
-}
-
 ul,
 ol {
     padding-left: 18px;
@@ -84,11 +80,18 @@ section img {
 }
 
 table tr th {
-    padding: 2px;
+    padding: 4px;
 }
 
 table tr td {
-    padding: 4px;
+    padding: 8px;
+}
+
+.glowing {
+    border: none;
+    height: 2px;
+    background-color: var(--violet-1);
+    margin: 20px 0;
 }
 
 .dice {

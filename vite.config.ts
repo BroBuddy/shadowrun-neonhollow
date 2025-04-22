@@ -5,18 +5,19 @@ import tailwindcss from 'tailwindcss'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
-  css: {
-      postcss: {
-          plugins: [tailwindcss()],
-      },
-  },
-  resolve: {
-      alias: {
-          '@': path.resolve(__dirname, './src'),
-      },
-  },
-  optimizeDeps: {
-      exclude: ['js-big-decimal'],
-  },
+    plugins: [react()],
+    css: {
+        postcss: {
+            plugins: [tailwindcss()],
+        },
+    },
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, './src'),
+        },
+    },
+    optimizeDeps: {
+        include: ['html-react-parser'],
+        exclude: ['js-big-decimal'],
+    },
 })
