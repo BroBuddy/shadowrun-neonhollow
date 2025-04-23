@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 
-const Tag = React.lazy(() => import('./components/Tag'))
+const TagContent = React.lazy(() => import('./components/TagContent'))
 
 const router = createBrowserRouter([
     {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
                 path: '/:tagId',
                 element: (
                     <React.Suspense fallback={<></>}>
-                        <Tag />
+                        <TagContent />
                     </React.Suspense>
                 ),
             },

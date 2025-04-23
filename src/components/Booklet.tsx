@@ -1,20 +1,9 @@
 import Select from 'react-select'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { TagItem, TagOption } from '@/lib/types'
 import { customStyles } from '@/lib/data'
 import { Data } from '@/data/data'
-
-const groupedOptions = [
-    {
-        label: 'Data',
-        options: Data.map(({ content, ...item }) => item).map(
-            ({ id, title }) => {
-                return { value: id, label: `${id}: ${title}` }
-            }
-        ),
-    },
-]
 
 const Booklet = () => {
     const { tagId } = useParams()
@@ -22,8 +11,28 @@ const Booklet = () => {
     const [_, setActiveTag] = useState<TagItem | null>(null)
     const [selectedTag, setSelectedTag] = useState<TagOption | null>(null)
 
+    const groupedOptions = useMemo(
+        () => [
+            {
+                label: 'Data',
+                options: Data.map(({ content, ...item }) => item).map(
+                    ({ id, title }) => ({
+                        value: id,
+                        label: `${id}: ${title}`,
+                    })
+                ),
+            },
+        ],
+        [Data]
+    )
+
+    const allTags = useMemo(
+        () => Data.map(({ id, title }) => ({ id, title })),
+        [Data]
+    )
+
     const setTagsBySelection = (tagId: string) => {
-        const activeTag = Data.find((item: TagItem) => item.id === tagId)
+        const activeTag = allTags.find((tag) => tag.id === tagId)
 
         if (!activeTag) {
             navigate('/R001')
@@ -31,7 +40,10 @@ const Booklet = () => {
         }
 
         setActiveTag(activeTag as TagItem)
-        setSelectedTag({ value: activeTag.id, label: activeTag.title })
+        setSelectedTag({
+            value: activeTag.id,
+            label: activeTag.title,
+        })
     }
 
     const handleChange = (selectedTag: any) => {
@@ -40,7 +52,9 @@ const Booklet = () => {
     }
 
     useEffect(() => {
-        setTagsBySelection(tagId as string)
+        if (tagId) {
+            setTagsBySelection(tagId as string)
+        }
     }, [tagId])
 
     return (
