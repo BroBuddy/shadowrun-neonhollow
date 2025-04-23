@@ -163,7 +163,7 @@ export const Town = [
             <ul>
                 <li>Select whether to enhance: <strong>Strength</strong> or <strong>Logic</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll your selected attribute &#8594; See R306</li>
+                <li>Roll 6d6 &#8594; See R306</li>
             </ul>`,
     },
     {
@@ -284,7 +284,7 @@ export const Town = [
             <ul>
                 <li>Select whether to enhance: <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll your selected attribute &#8594; See R306</li>
+                <li>Roll 6d6 &#8594; See R306</li>
             </ul>`,
     },
     {
@@ -315,7 +315,7 @@ export const Town = [
             <ol>
                 <li>Select whether to enhance: <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll your selected attribute &#8594; See R306</li>
+                <li>Roll 6d6 &#8594; See R306</li>
             </ol>`,
     },
     {
@@ -551,12 +551,12 @@ export const Town = [
         <ol start="0">
             <li><strong>Critical Failure</strong> – Your attempt to gather intel fails miserably
                 <ul>
-                    <li>-1 Intel, +1 Heat</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
-            <li><strong>Failure</strong> – You manage to retrieve some information
+            <li><strong>Failure</strong> –  You recover minor insight, but it’s not enough
                 <ul>
-                    <li>+1 Heat</li>
+                    <li>No Effect</li>
                 </ul>
             </li>
             <li><strong>Standard</strong> – You gather basic intel that may be useful
@@ -593,27 +593,27 @@ export const Town = [
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – The boost kicks in as expected.
+                <strong>Standard</strong> – The enhancement settles in properly.
                 <ul>
-                    <li>+1 to Attribute</li>
+                    <li>+1 to Attribute Temporary</li>
                 </ul>
             </li>
             <li>
                 <strong>Good</strong> – You feel sharp, fast, and focused.
                 <ul>
-                    <li>+1 to Attribute, +1 Intel</li>
+                    <li>+1 to Attribute</li>
                 </ul>
             </li>
             <li>
                 <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
                 <ul>
-                    <li>+1 to Attribute, +1 Reputation</li>
+                    <li>+1 to Attribute, +1 to Attribute Temporary, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – The enhancement merges flawlessly with your system.
+                <strong>Exceptional</strong> – The upgrade merges seamlessly with your essence.
                 <ul>
-                    <li>+1 to Attribute, +1 Reputation</li>
+                    <li>+2 to Attribute, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
@@ -626,37 +626,37 @@ export const Town = [
             <li>
                 <strong>Critical Failure</strong> – No interest, dismisses the offer.
                 <ul>
-                    <li>No Effect</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
                 <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
                 <ul>
-                    <li>-10.000 ¥, 1. Attribute Temporary</li>
+                    <li>-8.000 ¥, 1. Attribute Temporary</li>
                 </ul>
             </li>
             <li>
                 <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
                 <ul>
-                    <li>-9.000 ¥, 1. Attribute Temporary, 2. Attribute Temporary</li>
+                    <li>-7.000 ¥, 1. Attribute Temporary, 2. Attribute Temporary</li>
                 </ul>
             </li>
             <li>
                 <strong>Good</strong> – The runner's price is what you would expect for their skill level.
                 <ul>
-                    <li>-8.000 ¥, 1. Attribute</li>
+                    <li>-6.000 ¥, 1. Attribute</li>
                 </ul>
             </li>
             <li>
                 <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
                 <ul>
-                    <li>-7.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
+                    <li>-5.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
                 <ul>
-                    <li>-6.000 ¥, 1. Attribute, 2. Attribute, +1 Reputation</li>
+                    <li>-4.000 ¥, 1. Attribute, 2. Attribute, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
