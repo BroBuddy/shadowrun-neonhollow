@@ -134,7 +134,7 @@ export const Town = [
             <p><strong>Silence the Badge:</strong></p>
             <ul>
                 <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>Add <strong>Logic</strong> or <strong>Charisma</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ul>
             <p><strong>Bounty Pursuit:</strong></p>
