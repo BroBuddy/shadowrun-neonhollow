@@ -362,23 +362,40 @@ export const Town = [
         title: 'NeonHollow: ZeroZone',
         content: `<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>
             <p><em>"Where the shadows test their own."</em></p>
-            <p><strong>Challenge a Runner:</strong></p>
-            <ol>
-                <li>Select <strong>two Attributes</strong> for the Challenge</li>
-                <li>Roll your chosen <strong>Attributes</strong></li>
-                <li>Track your <strong>Successes</strong></li>
-                <li>Roll on the Runner Matrix (N001)</li>
-                <li>Roll the opponent's <strong>Attributes</strong></li>
-                <li>Substract opponent's successes from yours</li>
-                <li>See R303</li>
-            </ol>
             <p><strong>Recruit a Runner:</strong></p>
             <ol>
                 <li>You must have at least <strong>8.000 ¥</strong> available</li>
                 <li>Roll on the Runner Matrix (N001)</li>
                 <li>Remember the two highest Attributes</li>
                 <li>Roll your <strong>Charisma</strong> and another <strong>Attribute</strong></li>
-                <li>See R307</li>
+                <li>See R307 &#8594; Runner</li>
+            </ol>
+            <p><strong>Challenge a Runner:</strong></p>
+            <ol>
+                <li>
+                    <strong>Select Combat Type:</strong>
+                    <ul>
+                        <li><strong>Close-Combat:</strong> Strength, Agility</li>
+                        <li><strong>Hacking Assault: </strong> Reaction, Logic</li>
+                        <li><strong>Psionic Warfare:</strong> Intuition, Charisma</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Opponent Generation:</strong>
+                    <ul>
+                        <li>Roll on the <strong>Runner Matrix</strong> (R501) to identify your opponent.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Attribute Clash:</strong>
+                    <ul>
+                        <li>Roll 2d6 for each selected attribute</li>
+                        <li>Add your Attribute score</li>
+                        <li>Sutract opponent's corresponding attribute</li>
+                    </ul>
+                </li>
+                <li>Add both attribute results to determine outcome.</li>
+                <li>See R303 &#8594; Nuyen</li>
             </ol>`,
     },
     {
@@ -484,7 +501,7 @@ export const Town = [
     {
         id: 'R303',
         title: 'Outcome: Nuyen',
-        content: `<p>The number of successes determines the outcome of the action.</p>
+        content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
                 2-5: <strong>Critical Failure</strong> – The job backfired or was a setup.
@@ -650,7 +667,7 @@ export const Town = [
     {
         id: 'R307',
         title: 'Outcome: Runner',
-        content: `<p>The number of successes determines the outcome of the action.</p>
+        content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
                 2-5: <strong>Critical Failure</strong> – No interest, dismisses the offer.
