@@ -71,7 +71,7 @@ export const Events = [
                 </tr>
             </tbody>
         </table>
-        <br />
+        <hr />
         <p>To roll on the Event Matrix:</p>
         <ol>
             <li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li>

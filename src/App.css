@@ -33,7 +33,7 @@ body {
 
 ul,
 ol {
-    padding-left: 18px;
+    padding-left: 25px;
     margin-bottom: 15px;
     font-size: 14px;
     line-height: 1.5;
@@ -54,15 +54,13 @@ h2 {
     margin: 0;
 }
 
-h3,
-.tag {
-    color: var(--violet-1);
-    font-weight: bold;
-}
-
 p {
     margin-bottom: 15px;
     line-height: 1.2rem;
+}
+
+p > strong {
+    color: var(--turquoise-1);
 }
 
 p,
@@ -72,7 +70,7 @@ span {
 
 a {
     font-weight: bold;
-    color: var(--turquoise-1);
+    color: var(--violet-1);
 }
 
 section img {
@@ -87,7 +85,7 @@ table tr td {
     padding: 8px;
 }
 
-.glowing {
+hr {
     border: none;
     height: 2px;
     background-color: var(--violet-1);

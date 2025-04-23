@@ -27,32 +27,10 @@ const Tag = () => {
     return (
         <>
             {activeTag && (
-                <Card
-                    id={activeTag.id}
-                    time={activeTag.time || null}
-                    title={activeTag.title}
-                >
+                <Card title={activeTag.title}>
                     <div>{transformedContent}</div>
                 </Card>
             )}
-
-            {/* {linkTags?.length >= 1 && (
-                <Card title="Links">
-                    <p>
-                        {linkTags?.map((tag: string, index: number) => {
-                            return (
-                                <span key={index}>
-                                    <Link to={`/${tag}`}>{tag}</Link>
-                                    {index + 1 < linkTags.length ? ', ' : null}
-                                    {(index + 1) % tagsInRow == 0 ? (
-                                        <br />
-                                    ) : null}
-                                </span>
-                            )
-                        })}
-                    </p>
-                </Card>
-            )} */}
         </>
     )
 }
