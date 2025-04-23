@@ -128,14 +128,16 @@ export const Rules = [
         id: 'R013',
         title: 'Rules: Sheet',
         content:
-            '<p>A fast-access reference sheet featuring the most essential rules and frequently used tables for quick decision-making in the field.</p>' +
+            '<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>' +
             '<ul>' +
+            '<li>Welcome to NeonHollow (R001)</li>' +
             '<li>Instructions (R002)</li>' +
+            '<li>Rules: Runner (R003)</li>' +
             '<li>Heat: Events (R009)</li>' +
-            '<li>Run: Rules (M002)</li>' +
-            '<li>Run: Performance (M003)</li>' +
-            '<li>Runner Matrix (N001)</li>' +
-            '<li>Event Matrix (E001)</li>' +
+            '<li>NeonHollow: Rules (R102)</li>' +
+            '<li>Event Matrix (R401)</li>' +
+            '<li>Runner Matrix (R501)</li>' +
+            '<li>Run: Rules (R602)</li>' +
             '</ul>',
     },
     {

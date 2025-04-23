@@ -1,10 +1,9 @@
 import Select from 'react-select'
 import { useEffect, useState } from 'react'
-import { Outlet, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { TagItem, TagOption } from '@/lib/types'
 import { customStyles } from '@/lib/data'
 import { Data } from '@/data/data'
-import Card from './Card'
 
 const groupedOptions = [
     {
@@ -45,19 +44,13 @@ const Booklet = () => {
     }, [tagId])
 
     return (
-        <section className="flex flex-col w-full">
-            <Card>
-                <Select
-                    value={selectedTag}
-                    styles={customStyles}
-                    isSearchable={true}
-                    onChange={handleChange}
-                    options={groupedOptions}
-                />
-            </Card>
-
-            <Outlet />
-        </section>
+        <Select
+            value={selectedTag}
+            styles={customStyles}
+            isSearchable={true}
+            onChange={handleChange}
+            options={groupedOptions}
+        />
     )
 }
 

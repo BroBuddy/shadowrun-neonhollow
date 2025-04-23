@@ -1,6 +1,7 @@
 import { Link, Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
+import Booklet from './components/Booklet'
 import './App.css'
 
 function App() {
@@ -13,17 +14,15 @@ function App() {
     return (
         <>
             <div className="flex sticky top-0 bg-black justify-between items-center px-3 z-10">
-                <Link to="/N001" className="mt-3">
+                <Link to="/R501" className="mt-3 left-3">
                     RM
                 </Link>
 
-                <div className="mt-3 justify-items-center">
-                    <Link to="/R001">
-                        <img src="/images/Logo.png" alt="Logo" />
-                    </Link>
+                <div className="mt-3 justify-items-center w-3/4 flex">
+                    <Booklet />
                 </div>
 
-                <Link to="/E001" className="mt-3">
+                <Link to="/R401" className="mt-3 right-3">
                     EM
                 </Link>
             </div>

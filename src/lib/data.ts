@@ -1,6 +1,10 @@
 import { TagSheet } from './types'
 
 const customStyles = {
+    container: (base: any) => ({
+        ...base,
+        width: '100%',
+    }),
     input: (base: any) => ({
         ...base,
         color: 'var(--violet-1)',

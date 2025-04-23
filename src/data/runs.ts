@@ -1,20 +1,20 @@
 export const Runs = [
     {
-        id: 'M001',
+        id: 'R601',
         title: 'Mr. Johnson',
         content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
             <p><em>"The smile's fake. The creds are real."</em></p>
             <p><strong>Spend <strong>3 Intel</strong> per mission attempt:</strong></p>
             <ol>
-                <li><strong>Leak Sensitive Data</strong> (M010)</li>
-                <li><strong>Crash Security Systems</strong> (M020)</li>
-                <li><strong>Confront the CEO</strong> (M030)</li>
+                <li><strong>Leak Sensitive Data</strong> (R610)</li>
+                <li><strong>Crash Security Systems</strong> (R620)</li>
+                <li><strong>Confront the CEO</strong> (R630)</li>
             </ol>
             <hr />
-            <p>To master the shadows, study the Rules (M002) — and after every run, debrief with the Performance (M003) to assess your impact.</p>`,
+            <p>To master the shadows, study the Rules (R602) — and after every run, debrief with the Performance (R603) to assess your impact.</p>`,
     },
     {
-        id: 'M002',
+        id: 'R602',
         title: 'Run: Rules',
         content: `<ol>
             <li>Roll 1d6 to determine the mission location.</li>
@@ -23,11 +23,11 @@ export const Runs = [
             </li>
             <li>If you succeed at all three, the twist is revealed.</li>
             <li>Each success contributes to your overall Performance score.</li>
-            <li>After the run, report to Mr. Johnson and receive your reward based on Performance (M003).</li>
+            <li>After the run, report to Mr. Johnson and receive your reward based on Performance (R603).</li>
             </ol>`,
     },
     {
-        id: 'M003',
+        id: 'R603',
         title: 'Run: Performance',
         content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done.</p>
             <p>The better your performance, the greater the reward.</p>
@@ -60,7 +60,7 @@ export const Runs = [
             </ol>`,
     },
     {
-        id: 'M010',
+        id: 'R610',
         title: 'Mission: Leak Sensitive Data',
         content: `
             <p><strong>Client:</strong><br />
@@ -106,7 +106,7 @@ export const Runs = [
             </ul>`,
     },
     {
-        id: 'M020',
+        id: 'R620',
         title: 'Mission: Crash Security Systems',
         content: `
             <p><strong>Client:</strong><br />
@@ -152,7 +152,7 @@ export const Runs = [
             </ul>`,
     },
     {
-        id: 'M030',
+        id: 'R630',
         title: 'Mission: Confront the CEO',
         content: `
             <p><strong>Client:</strong><br />

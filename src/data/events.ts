@@ -1,6 +1,6 @@
 export const Events = [
     {
-        id: 'E001',
+        id: 'R401',
         title: 'Event Matrix',
         content: `<table>
             <thead>
@@ -17,57 +17,57 @@ export const Events = [
             <tbody>
                 <tr>
                     <th>1</th>
-                    <td>E011</td>
-                    <td>E012</td>
-                    <td>E013</td>
-                    <td>E014</td>
-                    <td>E015</td>
-                    <td>E016</td>
+                    <td>R411</td>
+                    <td>R412</td>
+                    <td>R413</td>
+                    <td>R414</td>
+                    <td>R415</td>
+                    <td>R416</td>
                 </tr>
                 <tr>
                     <th>2</th>
-                    <td>E021</td>
-                    <td>E022</td>
-                    <td>E023</td>
-                    <td>E024</td>
-                    <td>E025</td>
-                    <td>E026</td>
+                    <td>R421</td>
+                    <td>R422</td>
+                    <td>R423</td>
+                    <td>R424</td>
+                    <td>R425</td>
+                    <td>R426</td>
                 </tr>
                 <tr>
                     <th>3</th>
-                    <td>E031</td>
-                    <td>E032</td>
-                    <td>E033</td>
-                    <td>E034</td>
-                    <td>E035</td>
-                    <td>E036</td>
+                    <td>R431</td>
+                    <td>R432</td>
+                    <td>R433</td>
+                    <td>R434</td>
+                    <td>R435</td>
+                    <td>R436</td>
                 </tr>
                 <tr>
                     <th>4</th>
-                    <td>E041</td>
-                    <td>E042</td>
-                    <td>E043</td>
-                    <td>E044</td>
-                    <td>E045</td>
-                    <td>E046</td>
+                    <td>R441</td>
+                    <td>R442</td>
+                    <td>R443</td>
+                    <td>R444</td>
+                    <td>R445</td>
+                    <td>R446</td>
                 </tr>
                 <tr>
                     <th>5</th>
-                    <td>E051</td>
-                    <td>E052</td>
-                    <td>E053</td>
-                    <td>E054</td>
-                    <td>E055</td>
-                    <td>E056</td>
+                    <td>R451</td>
+                    <td>R452</td>
+                    <td>R453</td>
+                    <td>R454</td>
+                    <td>R455</td>
+                    <td>R456</td>
                 </tr>
                 <tr>
                     <th>6</th>
-                    <td>E061</td>
-                    <td>E062</td>
-                    <td>E063</td>
-                    <td>E064</td>
-                    <td>E065</td>
-                    <td>E066</td>
+                    <td>R461</td>
+                    <td>R462</td>
+                    <td>R463</td>
+                    <td>R464</td>
+                    <td>R465</td>
+                    <td>R466</td>
                 </tr>
             </tbody>
         </table>
@@ -82,7 +82,7 @@ export const Events = [
         </ol>`,
     },
     {
-        id: 'E011',
+        id: 'R411',
         title: 'Power Surge',
         content: `<p>In the blink of an eye, lights across the district flicker out. Emergency backups hum weakly, but critical systems are down. Doors won’t open, elevators stall, and neon signs die, leaving the streets eerily dark. People panic while others see opportunity in the shadows.</p>
         <ul>
@@ -101,7 +101,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E012',
+        id: 'R412',
         title: 'Gang Skirmish',
         content: `<p>The distant sound of gunfire quickly becomes a brutal street clash as rival gangs bring their turf war into the open. Civilians run for cover as drones scan for threats and trigger-happy thugs shoot first, ask never. You’re in the middle—like it or not.</p>
         <ul>
@@ -120,7 +120,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E013',
+        id: 'R413',
         title: 'System Audit',
         content: `<p>Unmarked corp vans roll in with men in suits and mirrored shades. It’s a spontaneous citywide audit—identity checks, data sweeps, and silence. Those with clean records walk. The rest... vanish. It’s a bad time to look suspicious.</p>
         <ul>
@@ -139,7 +139,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E014',
+        id: 'R414',
         title: 'HoloMalfunction',
         content: `<p>Suddenly, reality bends. Public holograms glitch, flicker, and merge with corrupted ads and rogue sensory loops. People stumble, stunned by the overload. Some go into panic, others collapse. The city turns into a dizzying circus of synthetic hallucinations.</p>
         <ul>
@@ -158,7 +158,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E015',
+        id: 'R415',
         title: 'Riot Response',
         content: `<p>What started as a peaceful protest explodes into full-scale unrest. Flames flicker in the distance. Armed patrols clash with rioters. Barricades rise. Drones buzz overhead. You're either part of the cleanup—or collateral.</p>
         <ul>
@@ -177,7 +177,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E016',
+        id: 'R416',
         title: 'Data Leak',
         content: `<p>Confidential data floods the net—blacklists, corp secrets, even underground aliases. Everyone wants a piece of it. Fixers, runners, and enforcers scramble to secure or erase traces before they’re burned by the fallout.</p>
         <ul>
@@ -196,7 +196,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E021',
+        id: 'R421',
         title: 'Drone Interference',
         content: `<p>Surveillance drones are behaving erratically, hovering too low, scanning innocents, and occasionally crashing. The glitch might be random—or a test. Citizens are unnerved, and runners are being flagged as high-priority threats.</p>
         <ul>
@@ -215,7 +215,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E022',
+        id: 'R422',
         title: 'Toxic Leak',
         content: `<p>Alarms blare in the Industrial District. A transport truck jackknifed near a biochem depot, leaking fluorescent vapor. The air burns to breathe, and cleanup crews are late. Residents flee while looters dive in for rare salvage.</p>
         <ul>
@@ -234,7 +234,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E023',
+        id: 'R423',
         title: 'Black Market Raid',
         content: `<p>Word spreads fast: authorities are raiding underground trade hubs. Smugglers ditch crates in alleys, buyers scatter. Some see it as a chance to snatch unclaimed tech—others know it’s a trap with teeth.</p>
         <ul>
@@ -253,7 +253,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E024',
+        id: 'R424',
         title: 'Neural Broadcast Glitch',
         content: `<p>All over town, neural implants start buzzing with strange pulses—random memories, thoughts, or encrypted fragments. It leaves people dizzy or worse. Someone’s testing a signal... or sending a message.</p>
         <ul>
@@ -272,7 +272,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E025',
+        id: 'R425',
         title: 'Rogue Courier',
         content: `<p>A courier bot meant for secure corp deliveries has gone rogue, jetting through alleys and rooftop routes. Rumor says it’s carrying data chips worth a fortune—or an AI with secrets someone didn’t want released.</p>
         <ul>
@@ -291,7 +291,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E026',
+        id: 'R426',
         title: 'Street Prophet',
         content: `<p>A cloaked figure preaches doom at every intersection, warning of firewalls collapsing and AIs waking up. Most ignore him—until his predictions start coming true. Traffic crashes, drones dive, and digital ads flicker to static eyes.</p>
         <ul>
@@ -310,7 +310,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E031',
+        id: 'R431',
         title: 'Night Howlers',
         content: `<p>As dusk falls, an unknown gang launches a blitz through the Underground District. Cyber-hacked beasts and augmented enforcers clash with patrols. Chaos spreads fast—and you're caught in the middle.</p>
         <ul>
@@ -329,7 +329,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E032',
+        id: 'R432',
         title: 'Encrypted Broadcast',
         content: `<p>A rogue signal overrides public screens, displaying cryptic messages and flickering blueprints. Corps rush to shut it down, but it’s spreading like wildfire through backchannels.</p>
         <ul>
@@ -348,7 +348,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E033',
+        id: 'R433',
         title: 'Corporate Parade',
         content: `<p>A major corp rolls through downtown with a flashy security showcase—drones, armored convoys, and neon-clad execs. It’s all PR, but the street is a minefield of surveillance.</p>
         <ul>
@@ -367,7 +367,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E034',
+        id: 'R434',
         title: 'Neon Storm',
         content: `<p>A rare energy storm warps electronics citywide. Neon signs flicker violently, streetlights burst, and vehicles stall. The unstable surge makes neural links flare dangerously.</p>
         <ul>
@@ -386,7 +386,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E035',
+        id: 'R435',
         title: 'Lost Shipment',
         content: `<p>A container marked with a restricted corp seal washed up in the city’s canal. It's half-submerged, blinking, and unguarded—for now. The question is: grab it or walk away?</p>
         <ul>
@@ -405,7 +405,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E036',
+        id: 'R436',
         title: 'Echo in the Wires',
         content: `<p>Old net architecture beneath the city pulses online for the first time in years. Ghost code floods public terminals, and runners whisper of an AI waking from dormancy.</p>
         <ul>
@@ -424,7 +424,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E041',
+        id: 'R441',
         title: 'Synthetic Plague',
         content: `<p>A mutated bio-virus has slipped containment in a nearby lab. Streets are locked down, and drones scan for signs of infection. Runners are being blamed for the breach.</p>
         <ul>
@@ -443,7 +443,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E042',
+        id: 'R442',
         title: 'False Broadcast',
         content: `<p>Someone hijacks a local media node, broadcasting a deepfake of you committing a high-profile crime. Your reputation takes a hit—unless you fix it fast.</p>
         <ul>
@@ -462,7 +462,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E043',
+        id: 'R443',
         title: 'Burning Skies',
         content: `<p>A corp zeppelin crashes into a tenement block in the Industrial District. Fires spread, alarms wail, and panic floods the street. You’re nearby—and you might be able to help.</p>
         <ul>
@@ -481,7 +481,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E044',
+        id: 'R444',
         title: 'Midnight Deal',
         content: `<p>You overhear a fixer negotiating a risky black-market exchange in a back alley. You could step in, assist—or walk away before things get ugly.</p>
         <ul>
@@ -500,7 +500,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E045',
+        id: 'R445',
         title: 'Neural Glitch',
         content: `<p>A new firmware patch pushes to the entire district. Those with implants experience spasms, hallucinations, and memory gaps. If you’re wired, you feel it instantly.</p>
         <ul>
@@ -519,7 +519,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E046',
+        id: 'R446',
         title: 'Encrypted Cache',
         content: `<p>A runner posts a cryptic location drop for an abandoned corp cache. Dozens begin the hunt, but the system guarding it is old—and dangerous.</p>
         <ul>
@@ -538,7 +538,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E051',
+        id: 'R451',
         title: 'Corporate Espionage',
         content: `<p>A rival corporation's espionage team attempts to steal sensitive data from the district. The chaos is unfolding around you. You have to decide how to get involved.</p>
         <ul>
@@ -557,7 +557,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E052',
+        id: 'R452',
         title: 'Hacker Riot',
         content: `<p>A local hacker group starts a riot, disrupting city-wide comms and electronics. The streets are chaotic as they demand greater freedom from corporate control.</p>
         <ul>
@@ -576,7 +576,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E053',
+        id: 'R453',
         title: 'Corruption Unveiled',
         content: `<p>A city councilor is publicly exposed for embezzlement, sparking protests in the streets. You can either fuel the fire or try to put out the flames.</p>
         <ul>
@@ -595,7 +595,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E054',
+        id: 'R454',
         title: 'Underground Duel',
         content: `<p>An underground arena has just announced a high-stakes combat tournament. Crowds are gathering, and the opportunity for a quick payout is tempting. But the risks are high.</p>
         <ul>
@@ -614,7 +614,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E055',
+        id: 'R455',
         title: 'Neon Storm',
         content: `<p>A massive storm has rolled in, causing disruptions to power and communication networks across the district. The neon lights flicker as the city braces for the worst.</p>
         <ul>
@@ -633,7 +633,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E056',
+        id: 'R456',
         title: 'Black Market Deal',
         content: `<p>The black market is buzzing with a high-value deal involving rare weapons tech. It's a perfect opportunity to buy, sell, or steal—if you dare.</p>
         <ul>
@@ -652,7 +652,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E061',
+        id: 'R461',
         title: 'Blackout in the District',
         content: `<p>A sudden power outage plunges the district into darkness. The blackout causes chaos as people scramble to figure out what happened.</p>
         <ul>
@@ -671,7 +671,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E062',
+        id: 'R462',
         title: 'Rogue AI',
         content: `<p>A rogue AI has gained control of a local security system and is attacking citizens. Its influence spreads across nearby electronics, including your personal devices.</p>
         <ul>
@@ -690,7 +690,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E063',
+        id: 'R463',
         title: 'Gang Showdown',
         content: `<p>A gang war breaks out in the heart of the district. Gunfire echoes in the streets as rival factions clash over turf. You need to decide whether to get involved or avoid the chaos.</p>
         <ul>
@@ -709,7 +709,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E064',
+        id: 'R464',
         title: 'Corporate Bribery',
         content: `<p>A high-ranking corporate exec is caught in a bribery scandal. The news spreads quickly, and protests begin to stir. You can either exploit the situation or help calm the tensions.</p>
         <ul>
@@ -728,7 +728,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E065',
+        id: 'R465',
         title: 'Street Race',
         content: `<p>A street race is taking place through the district, and it’s drawing huge crowds. The potential rewards are great, but the risks are just as high. Are you in?</p>
         <ul>
@@ -747,7 +747,7 @@ export const Events = [
         </ul>`,
     },
     {
-        id: 'E066',
+        id: 'R466',
         title: 'Medical Crisis',
         content: `<p>A viral outbreak hits the district, causing widespread panic. Medical facilities are overwhelmed, and only the most desperate are left to fend for themselves.</p>
         <ul>

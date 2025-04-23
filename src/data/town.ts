@@ -71,7 +71,7 @@ export const Town = [
             '<p>Each district is home to various facilities. Upon entering one, you`ll need to roll on an event table to see what unfolds within.</p>' +
             '<p>Every action takes <strong>1 hour</strong>, and once you`re done, you`ll return to the streets. Afterward, roll 1d6 to see if a town event kicks off.</p>' +
             '<p>If the roll exceeds your current hour, the streets stay quiet — no surprises this time.</p>' +
-            '<p>When a town event unfolds, roll on the <strong>Event Matrix</strong> (E001) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>' +
+            '<p>When a town event unfolds, roll on the <strong>Event Matrix</strong> (R401) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>' +
             '<p>As long as no town event pops up, you can pay a visit to <strong>Mr. Johnson</strong> (M001) and line up your next run.</p>' +
             '<p>A day ends either when a town event kicks off or when the runner takes on a job from Mr. Johnson.</p>',
     },
