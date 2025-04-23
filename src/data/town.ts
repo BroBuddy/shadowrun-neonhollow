@@ -87,27 +87,29 @@ export const Town = [
             <p><em>"Order. Control. Perfection."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Retina Scan Error</strong> &#8594; +1 Heat</li>
-                <li><strong>System Loop</strong> &#8594; -1 Health</li>
+                <li><strong>System Loop</strong> &#8594; -1 Intuition Temporary</li>
                 <li><strong>Unauthorized Access</strong> &#8594; -1.000 ¥</li>
                 <li><strong>Overwatched</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Fast Pass</strong> &#8594; +1 Energy</li>
                 <li><strong>Corporate Favor</strong> &#8594; +1.000 ¥</li>
                 <li><strong>Clean Record</strong> &#8594; -1 Heat</li>
-                <li><strong>Silent Support</strong> &#8594; +1 Reputation</li>
+                <li><strong>Silent Support</strong> &#8594; +1 Intuition Temporary</li>
                 <li><strong>Data Whisper</strong> &#8594; +1 Intel</li>
             </ol>
             <p><strong>Hack the Network:</strong></p>
             <ul>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R303</li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Infiltrate the Terrain:</strong></p>
             <ul>
-                <li>Spend <strong>3 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R305</li>
+                <li>Spend <strong>3 Health</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
+                <li>See R305 &#8594; Intel</li>
             </ul>`,
     },
     {
@@ -117,7 +119,7 @@ export const Town = [
             <p><em>"The law's last flicker."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Scanner Malfunction</strong> &#8594; -1 Health</li>
                 <li><strong>Heavy Watch</strong> &#8594; +1 Heat</li>
                 <li><strong>Interrogation Mix-Up</strong> &#8594; -1.000 ¥</li>
@@ -131,13 +133,15 @@ export const Town = [
             </ol>
             <p><strong>Bounty Hunting:</strong></p>
             <ul>
-                <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Agility</strong></li>
-                <li>See R303</li>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Bribe the Officer:</strong></p>
             <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Charisma</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R304</li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Charisma</strong></li>
+                <li>See R304 &#8594; Heat</li>
             </ul>`,
     },
     {
@@ -147,7 +151,7 @@ export const Town = [
             <p><em>"Healing flesh, not souls."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move Out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Security Screening</strong> &#8594; -1 Energy, +1 Heat</li>
                 <li><strong>Suspicious Scan</strong> &#8594; -1 Health</li>
                 <li><strong>Rogue Doc Encounter</strong> &#8594; +1 Heat</li>
@@ -161,14 +165,16 @@ export const Town = [
             </ol>
             <p><strong>Restorative Treatment:</strong></p>
             <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Logic</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R301</li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
+                <li>See R301 &#8594; Health</li>
             </ul>
             <p><strong>Cyberware Enhancement:</strong></p>
             <ul>
-                <li>Select whether to enhance: <strong>Strength</strong> or <strong>Logic</strong></li>
+                <li>Select <strong>Strength</strong> or <strong>Logic</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 6d6 &#8594; See R306</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+                <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
     {
@@ -178,27 +184,29 @@ export const Town = [
             <p><em>"Reality? Optional."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
+                <li><strong>Unwanted Attention</strong> &#8594; +1 Heat</li>
                 <li><strong>Bar Fight Breaks Out</strong> &#8594; -1 Health</li>
                 <li><strong>Data Corruption</strong> &#8594; -1.000 ¥</li>
                 <li><strong>Exotic Drink Offer</strong> &#8594; -1 Energy</li>
-                <li><strong>Unwanted Attention</strong> &#8594; +1 Heat</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Lucky Encounter</strong> &#8594; +1 Energy</li>
-                <li><strong>HoloLounge Jackpot</strong> &#8594; +2.000 ¥</li>
-                <li><strong>HoloShow Surprise</strong> &#8594; +1 Agility Temporary</li>
-                <li><strong>Free Round</strong> &#8594; +1 Intuition Temporary</li>
+                <li><strong>HoloLounge Jackpot</strong> &#8594; +1.000 ¥</li>
+                <li><strong>Free Round</strong> &#8594; +1 Health</li>
+                <li><strong>HoloShow Surprise</strong> &#8594; +1 Intuition Temporary</li>
                 <li><strong>VIP Table Reserved</strong> &#8594; +1 Reputation</li>
             </ol>
             <p><strong>Nutritional Meal:</strong></p>
             <ul>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Intuition</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R301</li>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
+                <li>See R301 &#8594; Health</li>
             </ul>
             <p><strong>High-Stakes Gambling:</strong></p>
             <ul>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Intuition</strong> and <strong>Charisma</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>`,
     },
     {
@@ -208,7 +216,7 @@ export const Town = [
             <p><em>"Where your nightmares become hobbies."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Welcome Drink Fail</strong> &#8594; -1 Health</li>
                 <li><strong>Eyes on You</strong> &#8594; +1 Heat</li>
                 <li><strong>Payment Verification Loop</strong> &#8594; -1.000 ¥</li>
@@ -222,13 +230,15 @@ export const Town = [
             </ol>
             <p><strong>Restorative Sleep:</strong></p>
             <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Intuition</strong></li>
-                <li>Add <strong>1 Success</strong> to your roll &#8594; See R302</li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Reaction</strong> or <strong>Intuition</strong></li>
+                <li>See R302 &#8594; Energy</li>
             </ul>
             <p><strong>Calm Your Mind:</strong></p>
             <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Logic</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R304</li>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
+                <li>See R304 &#8594; Heat</li>
             </ul>`,
     },
     {
@@ -238,7 +248,7 @@ export const Town = [
             <p><em>"The city’s memory grows here."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Scanner Surge</strong> &#8594; -1 Reaction Temporary</li>
                 <li><strong>Toxic Pollen</strong> &#8594; -1 Health</li>
                 <li><strong>Rival Sighting</strong> &#8594; +1 Heat</li>
@@ -252,13 +262,15 @@ export const Town = [
             </ol>
             <p><strong>Meditation Lesson:</strong></p>
             <ul>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Reaction</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R302</li>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
+                <li>See R302 &#8594; Energy</li>
             </ul>
             <p><strong>Pressure the Informant:</strong></p>
             <ul>
-                <li>Pay <strong>1 Energy</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Reaction</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R305</li>
+                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
+                <li>See R305 &#8594; Intel</li>
             </ul>`,
     },
     {
@@ -268,7 +280,7 @@ export const Town = [
             <p><em>"Muscle isn't old-school — it's survival."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>Uneven Barbell</strong> &#8594; -1 Agility Temporary</li>
                 <li><strong>Broken Equipment</strong> &#8594; -1 Energy</li>
                 <li><strong>Overzealous Spotter</strong> &#8594; -1 Health</li>
@@ -282,14 +294,16 @@ export const Town = [
             </ol>
             <p><strong>Recovery Training:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Agility</strong> and <strong>Charisma</strong></li>
-                <li>See R301</li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
+                <li>See R301 &#8594; Health</li>
             </ul>
             <p><strong>Endurance Drill:</strong></p>
             <ul>
                 <li>Select whether to enhance: <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 6d6 &#8594; See R306</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+                <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
     {
@@ -299,7 +313,7 @@ export const Town = [
             <p><em>"Where minds meet machines."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out</li>
+                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
                 <li><strong>System Error</strong> &#8594; +1 Heat</li>
                 <li><strong>Research Malfunction</strong> &#8594; -1 Health</li>
                 <li><strong>Data Breach</strong> &#8594; -1.000 ¥</li>
@@ -313,14 +327,16 @@ export const Town = [
             </ol>
             <p><strong>Memory Mining:</strong></p>
             <ol>
-                <li>Spend <strong>2 Health</strong> &#8594; Roll your <strong>Strength</strong> and <strong>Logic</strong></li>
-                <li>See R302</li>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Strength</strong> or <strong>Logic</strong></li>
+                <li>See R302 &#8594; Energy</li>
             </ol>
             <p><strong>Mind Reinforcement:</strong></p>
             <ol>
                 <li>Select whether to enhance: <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 6d6 &#8594; See R306</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+                <li>See R306 &#8594; Attribute</li>
             </ol>`,
     },
     {
@@ -330,13 +346,15 @@ export const Town = [
             <p><em>"The city's forgotten veins."</em></p>
             <p><strong>Ask for Protection:</strong></p>
             <ol>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll your <strong>Reaction</strong> and <strong>Charisma</strong></li>
-                <li>See R304</li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Reaction</strong> or <strong>Charisma</strong></li>
+                <li>See R304 &#8594; Heat</li>
             </ol>
             <p><strong>Buy Confidential Info:</strong></p>
             <ol>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll your <strong>Logic</strong> and <strong>Charisma</strong></li>
-                <li>See R305</li>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Logic</strong> or <strong>Charisma</strong></li>
+                <li>See R305 &#8594; Intel</li>
             </ol>`,
     },
     {
@@ -352,7 +370,7 @@ export const Town = [
                 <li>Roll on the Runner Matrix (N001)</li>
                 <li>Roll the opponent's <strong>Attributes</strong></li>
                 <li>Substract opponent's successes from yours</li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R303</li>
+                <li>See R303</li>
             </ol>
             <p><strong>Recruit a Runner:</strong></p>
             <ol>
@@ -360,7 +378,7 @@ export const Town = [
                 <li>Roll on the Runner Matrix (N001)</li>
                 <li>Remember the two highest Attributes</li>
                 <li>Roll your <strong>Charisma</strong> and another <strong>Attribute</strong></li>
-                <li>Remove <strong>1 Success</strong> from your roll &#8594; See R307</li>
+                <li>See R307</li>
             </ol>`,
     },
     {
@@ -380,286 +398,292 @@ export const Town = [
     {
         id: 'R301',
         title: 'Outcome: Health',
-        content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        content: `<p>The number determines the outcome of the action.</p>
+        <ul>
             <li>
-                <strong>Critical Failure</strong> – The treatment backfires, causing harm.
+                2-5: <strong>Critical Failure</strong> – The treatment backfires, causing harm.
                 <ul>
                     <li>-2 Health, +1 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Failure</strong> – Healing stalls. You’re patched, but need more time.
+                6-8: <strong>Failure</strong> – Healing stalls. You’re patched, but need more time.
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
+                9-11: <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
                 <ul>
                     <li>+2 Health, +1 Energy</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – Cells respond well, and you feel stronger.
+                12-14: <strong>Good</strong> – Cells respond well, and you feel stronger.
                 <ul>
                     <li>+4 Health, +2 Energy</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
+                15-17: <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
                     <li>+6 Health, +3 Energy, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
+                18+: <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
                     <li>+8 Health, +4 Energy, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R302',
         title: 'Outcome: Energy',
-        content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        content: `<p>The number determines the outcome of the action.</p>
+        <ul>
             <li>
-                <strong>Critical Failure</strong> – The treatment leaves you feeling more drained than before.
+                2-5: <strong>Critical Failure</strong> – The treatment leaves you feeling more drained than before.
                 <ul>
                     <li>-2 Energy, +1 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Failure</strong> – The process does little to restore your energy, but you feel slightly better.
+                6-8: <strong>Failure</strong> – The process does little to restore your energy, but you feel slightly better.
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – You start to regain some energy, though not at full capacity.
+                9-11: <strong>Standard</strong> – You start to regain some energy, though not at full capacity.
                 <ul>
                     <li>+2 Energy, +1 Health</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – The treatment has a noticeable effect, and you feel more refreshed.
+                12-14: <strong>Good</strong> – The treatment has a noticeable effect, and you feel more refreshed.
                 <ul>
                     <li>+4 Energy, +2 Health</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
+                15-17: <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
                 <ul>
                     <li>+6 Energy, +3 Health, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
+                18+: <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
                 <ul>
                     <li>+8 Energy, +4 Health, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R303',
         title: 'Outcome: Nuyen',
         content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        <ul>
             <li>
-                <strong>Critical Failure</strong> – The job backfired or was a setup.
+                2-5: <strong>Critical Failure</strong> – The job backfired or was a setup.
                 <ul>
-                    <li>0 ¥, +1 Heat</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Failure</strong> – You earned something, but it's barely worth the risk.
+                6-8: <strong>Failure</strong> – You earned something, but it's barely worth the risk.
                 <ul>
                     <li>3.000 ¥</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – A modest payout for solid work.
+                9-11: <strong>Standard</strong> – A modest payout for solid work.
                 <ul>
                     <li>6.000 ¥</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – A smooth job and fair compensation.
+                12-14: <strong>Good</strong> – A smooth job and fair compensation.
                 <ul>
                     <li>9.000 ¥</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – The plan worked perfectly and paid well.
+                15-17: <strong>Great</strong> – The plan worked perfectly and paid well.
                 <ul>
                     <li>12.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – Flawless execution, and the money shows it.
+                18+: <strong>Exceptional</strong> – Flawless execution, and the money shows it.
                 <ul>
                     <li>15.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R304',
         title: 'Outcome: Heat',
-        content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        content: `<p>The number determines the outcome of the action.</p>
+        <ul>
             <li>
-                <strong>Critical Failure</strong> – Your actions attract major attention from the authorities.
+                2-5: <strong>Critical Failure</strong> – Your actions attract major attention from the authorities.
                 <ul>
                     <li>+2 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Failure</strong> – You leave behind traces that raise suspicion.
+                6-8: <strong>Failure</strong> – You leave behind traces that raise suspicion.
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – You keep a low profile, but eyes are still on you.
+                9-11: <strong>Standard</strong> – You keep a low profile, but eyes are still on you.
                 <ul>
                     <li>-1 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – You take extra precautions and shake off pursuit.
+                12-14: <strong>Good</strong> – You take extra precautions and shake off pursuit.
                 <ul>
                     <li>-2 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – You reroute your trail and erase your digital footprint.
+                15-17: <strong>Great</strong> – You reroute your trail and erase your digital footprint.
                 <ul>
                     <li>-3 Heat, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – Your actions are so clean, you’re mistaken for a civilian.
+                18+: <strong>Exceptional</strong> – Your actions are so clean, you’re mistaken for a civilian.
                 <ul>
                     <li>-4 Heat, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R305',
         title: 'Outcome: Intel',
-        content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
-            <li><strong>Critical Failure</strong> – Your attempt to gather intel fails miserably
+        content: `<p>The number determines the outcome of the action.</p>
+        <ul>
+            <li>2-5: <strong>Critical Failure</strong> – Your attempt to gather intel fails miserably
                 <ul>
                     <li>+1 Heat</li>
                 </ul>
             </li>
-            <li><strong>Failure</strong> –  You recover minor insight, but it’s not enough
+            <li>6-8: <strong>Failure</strong> – You recover minor insight, but it’s not enough
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
-            <li><strong>Standard</strong> – You gather basic intel that may be useful
+            <li>9-11: <strong>Standard</strong> – You gather basic intel that may be useful
                 <ul>
                     <li>+1 Intel</li>
                 </ul>
             </li>
-            <li><strong>Good</strong> – The intel you collect is solid
+            <li>12-14: <strong>Good</strong> – The intel you collect is solid
                 <ul>
                     <li>+2 Intel</li>
                 </ul>
             </li>
-            <li><strong>Great</strong> – Your intel collection goes exceptionally well
+            <li>15-17: <strong>Great</strong> – Your intel collection goes exceptionally well
                 <ul>
                     <li>+3 Intel, +1 Reputation</li>
                 </ul>
             </li>
-            <li><strong>Exceptional</strong> – You uncover crucial and highly valuable intelligence
+            <li>18+: <strong>Exceptional</strong> – You uncover crucial and highly valuable intelligence
                 <ul>
                     <li>+4 Intel, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R306',
         title: 'Outcome: Attribute',
-        content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        content: `<p>The number determines the outcome of the action.</p>
+        <ul>
             <li>
-                <strong>Failure</strong> – The enhancement doesn’t sync well with your body.
+                2-5: <strong>Critical Failure</strong> – Your system rejects the implant violently.
+                <ul>
+                    <li>+1 Heat</li>
+                </ul>
+            </li>
+            <li>
+                6-8: <strong>Failure</strong> – The enhancement doesn’t sync well with your body.
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – The enhancement settles in properly.
+                9-11: <strong>Standard</strong> – The enhancement settles in properly.
                 <ul>
                     <li>+1 to Attribute Temporary</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – You feel sharp, fast, and focused.
+                12-14: <strong>Good</strong> – You feel sharp, fast, and focused.
                 <ul>
                     <li>+1 to Attribute</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
+                15-17: <strong>Great</strong> – Your body and mind align perfectly with the upgrade.
                 <ul>
                     <li>+1 to Attribute, +1 to Attribute Temporary, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – The upgrade merges seamlessly with your essence.
+                18+: <strong>Exceptional</strong> – The upgrade merges seamlessly with your essence.
                 <ul>
                     <li>+2 to Attribute, +1 Reputation</li>
                 </ul>
             </li>
-        </ol>`,
+        </ul>`,
     },
     {
         id: 'R307',
         title: 'Outcome: Runner',
         content: `<p>The number of successes determines the outcome of the action.</p>
-        <ol start="0">
+        <ul>
             <li>
-                <strong>Critical Failure</strong> – No interest, dismisses the offer.
+                2-5: <strong>Critical Failure</strong> – No interest, dismisses the offer.
                 <ul>
                     <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
-                <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
+                6-8: <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
                 <ul>
                     <li>-8.000 ¥, 1. Attribute Temporary</li>
                 </ul>
             </li>
             <li>
-                <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
+                9-11: <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
                 <ul>
                     <li>-7.000 ¥, 1. Attribute Temporary, 2. Attribute Temporary</li>
                 </ul>
             </li>
             <li>
-                <strong>Good</strong> – The runner's price is what you would expect for their skill level.
+                12-14: <strong>Good</strong> – The runner's price is what you would expect for their skill level.
                 <ul>
                     <li>-6.000 ¥, 1. Attribute</li>
                 </ul>
             </li>
             <li>
-                <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
+                15-17: <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
                 <ul>
                     <li>-5.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
+                18+: <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
                 <ul>
                     <li>-4.000 ¥, 1. Attribute, 2. Attribute, +1 Reputation</li>
                 </ul>
