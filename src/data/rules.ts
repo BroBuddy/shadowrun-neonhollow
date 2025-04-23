@@ -82,8 +82,7 @@ export const Rules = [
     {
         id: 'R009',
         title: 'Heat: Events',
-        content: `<p>You're flagged — expect pursuit. The corp’s next play is unpredictable — roll <strong>1d6</strong> to see how they respond.</p>
-            <p><strong>After a roll of 2 or higher &#8594; -1 Heat</strong></p>
+        content: `<p>You're on the corp's radar &#8594; <strong>-1 Heat</strong> &#8594; Roll <strong>1d6</strong> to see how they respond.</p>
             <ol>
             <li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>
             <li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Energy, -1 Health</li></ul></li>
