@@ -78,7 +78,13 @@ export const Events = [
             <li>Combine the two rolls to form a two-digit number.</li>
             <li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>
             <li>Choose how to handle the event, then roll the number of <strong>1d6</strong> corresponding to the value of your chosen attribute.</li>
-            <li>To achieve success, you always need at least <strong>2 Successes</strong>.</li>
+        </ol>
+        <hr />
+        <p><strong>Success Grade:</strong></p>
+        <ol start="0">
+            <li><strong>Fail</strong> &#8594; Consequence</li>
+            <li><strong>Partial</strong> &#8594; No Effect</li>
+            <li><strong>Success</strong> &#8594; Reward</li>
         </ol>`,
     },
     {
