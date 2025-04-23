@@ -420,11 +420,19 @@ export const Town = [
             <p><em>"No names. No noise. No light."</em></p>
             <p><strong>Stimulant Injection:</strong></p>
             <ul>
-                <li>-2 Health &#8594; +2 Energy</li>
+                <li>-3 Health &#8594; +1d6 Energy</li>
             </ul>
             <p><strong>Quick Reboot:</strong></p>
             <ul>
-                <li>-2 Energy &#8594; +2 Health</li>
+                <li>-3 Energy &#8594; +1d6 Health</li>
+            </ul>
+            <p><strong>Public Appeal:</strong></p>
+            <ul>
+                <li>-3 Reputation &#8594; -1d6 Heat</li>
+            </ul>
+            <p><strong>Blackmail Bargain:</strong></p>
+            <ul>
+                <li>-1 Intel &#8594; +1d6x1.000 ¥</li>
             </ul>`,
     },
     {
