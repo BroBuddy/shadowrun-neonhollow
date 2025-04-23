@@ -79,10 +79,12 @@ section img {
 
 table tr th {
     padding: 4px;
+    font-size: 14px;
 }
 
 table tr td {
     padding: 8px;
+    font-size: 14px;
 }
 
 hr {

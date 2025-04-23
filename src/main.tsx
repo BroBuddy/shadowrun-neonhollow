@@ -1,6 +1,6 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 
 const Tag = React.lazy(() => import('./components/Tag'))
@@ -10,16 +10,16 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                children: [
-                    {
-                        path: '/:tagId',
-                        element: (
-                            <React.Suspense fallback={<>...</>}>
-                                <Tag />
-                            </React.Suspense>
-                        ),
-                    },
-                ],
+                path: '/',
+                element: <Navigate to="/R001" replace />,
+            },
+            {
+                path: '/:tagId',
+                element: (
+                    <React.Suspense fallback={<></>}>
+                        <Tag />
+                    </React.Suspense>
+                ),
             },
         ],
     },

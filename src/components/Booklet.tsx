@@ -44,13 +44,15 @@ const Booklet = () => {
     }, [tagId])
 
     return (
-        <Select
-            value={selectedTag}
-            styles={customStyles}
-            isSearchable={true}
-            onChange={handleChange}
-            options={groupedOptions}
-        />
+        <>
+            <Select
+                value={selectedTag}
+                styles={customStyles}
+                isSearchable={true}
+                onChange={handleChange}
+                options={groupedOptions}
+            />
+        </>
     )
 }
 

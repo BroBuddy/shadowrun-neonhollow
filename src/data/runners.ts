@@ -72,7 +72,7 @@ export const Runners = [
             </tbody>
         </table>
         <hr />
-        <p>To roll on the Runner Matrix:</p>
+        <p><strong>To roll on the Runner Matrix:</strong></p>
         <ol>
             <li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li>
             <li>Combine the two rolls to form a two-digit number.</li>

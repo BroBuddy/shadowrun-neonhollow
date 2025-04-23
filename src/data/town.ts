@@ -58,6 +58,8 @@ export const Town = [
                     R200</p>
                 </div>
                 <div class="flex-1 basis-1/3">
+                    <p>SafeHouse<br />
+                    R210</p>
                 </div>
             </div>
             <hr />
@@ -66,14 +68,11 @@ export const Town = [
     {
         id: 'R102',
         title: 'NeonHollow: Rules',
-        content:
-            '<p>NeonHollow’s split into four districts. Moving between them drains <strong>1 Energy</strong>, a small price to pay for what you might find.</p>' +
-            '<p>Each district is home to various facilities. Upon entering one, you`ll need to roll on an event table to see what unfolds within.</p>' +
-            '<p>Every action takes <strong>1 hour</strong>, and once you`re done, you`ll return to the streets. Afterward, roll 1d6 to see if a town event kicks off.</p>' +
-            '<p>If the roll exceeds your current hour, the streets stay quiet — no surprises this time.</p>' +
-            '<p>When a town event unfolds, roll on the <strong>Event Matrix</strong> (R401) to discover what new twist awaits you in the neon-drenched streets of NeonHollow.</p>' +
-            '<p>As long as no town event pops up, you can pay a visit to <strong>Mr. Johnson</strong> (M001) and line up your next run.</p>' +
-            '<p>A day ends either when a town event kicks off or when the runner takes on a job from Mr. Johnson.</p>',
+        content: `<p>Start each day at your underground <strong>SafeHouse</strong>.</p>
+            <p>Moving between districts costs <strong>1 Energy</strong>. Upon entering a building, roll on the <strong>Entry Table</strong>.</p>
+            <p>Every action consumes <strong>1 hour</strong> of your time. After every action, roll <strong>1d6</strong> to check for a random event. If the roll exceeds your available hours, no event triggers.</p>
+            <p>When a town event unfolds, roll on the <strong>Event Matrix</strong>. If no town event occurs, you may visit <strong>Mr. Johnson</strong>.</p>
+            <p>A day ends when a town event occurs or when you accept a mission from Mr. Johnson.</p>`,
     },
     {
         id: 'R110',
@@ -359,11 +358,22 @@ export const Town = [
             </ol>`,
     },
     {
-        id: 'R800',
+        id: 'R210',
         title: 'NeonHollow: SafeHouse',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>' +
-            '<p><em>"No names. No noise. No light."</em></p>',
+        content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
+            <p><em>"No names. No noise. No light."</em></p>
+            <p><strong>Stimulant Injection:</strong></p>
+            <ul>
+                <li>-2 Health &#8594; +2 Energy</li>
+            </ul>
+            <p><strong>Quick Reboot:</strong></p>
+            <ul>
+                <li>-2 Energy &#8594; +2 Health</li>
+            </ul>
+            <p><strong>Chill and Lay Low:</strong></p>
+            <ul>
+                <li>-2 Energy &#8594; -1 Heat</li>
+            </ul>`,
     },
     {
         id: 'R900',

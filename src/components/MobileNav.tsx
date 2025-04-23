@@ -12,7 +12,7 @@ const MobileNav = () => {
             </Link>
 
             <Link to="/R601">
-                <span className="text-xs">Runs</span>
+                <span className="text-xs">Mission</span>
             </Link>
         </section>
     )

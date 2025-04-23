@@ -4,6 +4,7 @@ export const Runs = [
         title: 'Mr. Johnson',
         content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
             <p><em>"The smile's fake. The creds are real."</em></p>
+            <p>The mysterious figure is a former corporate insider, now seeking to aid you in toppling the megacorp from within.</p>
             <p><strong>Spend <strong>3 Intel</strong> per mission attempt:</strong></p>
             <ol>
                 <li><strong>Leak Sensitive Data</strong> (R610)</li>
@@ -17,20 +18,18 @@ export const Runs = [
         id: 'R602',
         title: 'Run: Rules',
         content: `<ol>
-            <li>Roll 1d6 to determine the mission location.</li>
-            <li>Face three obstacles. Roll 2d6 to determine your skill check for each.
-            <li>DC means Difficulty Class – how many successes you need to clear a challenge.</li>
-            </li>
+            <li>You must tackle the missions in order.</li>
+            <li>Face three obstacles. Roll 2d6 to determine your skill check for each.</li>
+            <li>DC is the number of successes needed to clear a challenge.</li>
             <li>If you succeed at all three, the twist is revealed.</li>
             <li>Each success contributes to your overall Performance score.</li>
-            <li>After the run, report to Mr. Johnson and receive your reward based on Performance (R603).</li>
+            <li>Report to Mr. Johnson after the run to receive your reward based on Performance (R603).</li>
             </ol>`,
     },
     {
         id: 'R603',
         title: 'Run: Performance',
-        content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done.</p>
-            <p>The better your performance, the greater the reward.</p>
+        content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
             <ol>
                 <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.
                     <ul>
@@ -44,17 +43,17 @@ export const Runs = [
                 </li>
                 <li><strong>Partial</strong> – Mission completed, but with setbacks.
                     <ul>
-                        <li>+3.000 ¥</li>
+                        <li>+5.000 ¥</li>
                     </ul>
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
                     <ul>
-                        <li>+6.000 ¥, -1 Corp Influence</li>
+                        <li>+10.000 ¥, next Mission</li>
                     </ul>
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+9.000 ¥, -1 Corp Influence, +1 Reputation</li>
+                        <li>+15.000 ¥, +1 Reputation, next Mission</li>
                     </ul>
                 </li>
             </ol>`,
@@ -64,7 +63,7 @@ export const Runs = [
         title: 'Mission: Leak Sensitive Data',
         content: `
             <p><strong>Client:</strong><br />
-            BioCare</p>
+            Dr. Vexa Arul, BioCare</p>
             <p><strong>Location:</strong><br />
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
@@ -110,7 +109,7 @@ export const Runs = [
         title: 'Mission: Crash Security Systems',
         content: `
             <p><strong>Client:</strong><br />
-            DreamSphere</p>
+            Silas Noor, DreamSphere</p>
             <p><strong>Location:</strong><br />
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
@@ -156,7 +155,7 @@ export const Runs = [
         title: 'Mission: Confront the CEO',
         content: `
             <p><strong>Client:</strong><br />
-            HoloLounge</p>
+            Kael Stride, HoloLounge</p>
             <p><strong>Location:</strong><br />
             CorpTower</p>
             <p><strong>Briefing:</strong><br />
