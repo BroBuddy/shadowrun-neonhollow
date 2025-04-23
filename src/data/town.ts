@@ -6,9 +6,9 @@ export const Town = [
             <p><em>"Where the lights never die — only the people do."</em></p>
             <p><strong>District Lockdowns:</strong></p>
             <ul>
-                <li>Heat 3 &#8594; Security District</li>
-                <li>Heat 4 &#8594; Entertainment District</li>
-                <li>Heat 5 &#8594; Industrial District</li>
+                <li>Heat 2 &#8594; Security District</li>
+                <li>Heat 3 &#8594; Entertainment District</li>
+                <li>Heat 4 &#8594; Industrial District</li>
             </ul>
             <p><strong>Security District:</strong></p>
             <div class="flex gap-8">
@@ -99,16 +99,16 @@ export const Town = [
                 <li><strong>Silent Support</strong> &#8594; +1 Intuition Temporary</li>
                 <li><strong>Data Whisper</strong> &#8594; +1 Intel</li>
             </ol>
-            <p><strong>Hack the Network:</strong></p>
+            <p><strong>Protest Persuasion:</strong></p>
             <ul>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
-                <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Reaction</strong> or <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
-            <p><strong>Infiltrate the Terrain:</strong></p>
+            <p><strong>Espionage Assignment:</strong></p>
             <ul>
-                <li>Spend <strong>3 Health</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ul>`,
     },
@@ -120,28 +120,28 @@ export const Town = [
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
                 <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Scanner Malfunction</strong> &#8594; -1 Health</li>
                 <li><strong>Heavy Watch</strong> &#8594; +1 Heat</li>
+                <li><strong>Scanner Malfunction</strong> &#8594; -1 Health</li>
                 <li><strong>Interrogation Mix-Up</strong> &#8594; -1.000 ¥</li>
                 <li><strong>Paperwork Hell</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Free Escort</strong> &#8594; +1 Energy</li>
-                <li><strong>Case Glitch</strong> &#8594; -1 Heat</li>
-                <li><strong>Confidential Boost</strong> &#8594; +1 Intel</li>
-                <li><strong>Stopping a Desperate Escape</strong> &#8594; +1 Strength Temporary</li>
                 <li><strong>Stopping a Robbery</strong> &#8594; +1 Reputation</li>
+                <li><strong>Case Glitch</strong> &#8594; -1 Heat</li>
+                <li><strong>Stopping a Desperate Escape</strong> &#8594; +1 Strength Temporary</li>
+                <li><strong>Confidential Boost</strong> &#8594; +1 Intel</li>
             </ol>
-            <p><strong>Bounty Hunting:</strong></p>
+            <p><strong>Silence the Badge:</strong></p>
             <ul>
-                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>See R304 &#8594; Heat</li>
+            </ul>
+            <p><strong>Bounty Pursuit:</strong></p>
+            <ul>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
-            </ul>
-            <p><strong>Bribe the Officer:</strong></p>
-            <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
-                <li>Add <strong>Strength</strong> or <strong>Charisma</strong></li>
-                <li>See R304 &#8594; Heat</li>
             </ul>`,
     },
     {
@@ -152,9 +152,9 @@ export const Town = [
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
                 <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Security Screening</strong> &#8594; -1 Energy, +1 Heat</li>
-                <li><strong>Suspicious Scan</strong> &#8594; -1 Health</li>
                 <li><strong>Rogue Doc Encounter</strong> &#8594; +1 Heat</li>
+                <li><strong>Suspicious Scan</strong> &#8594; -1 Agility Temporary</li>
+                <li><strong>Security Screening</strong> &#8594; -1 Health</li>
                 <li><strong>Delayed Appointment</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Quick Service</strong> &#8594; +1 Energy</li>
@@ -163,17 +163,16 @@ export const Town = [
                 <li><strong>Lucky Break</strong> &#8594; +1 Agility Temporary</li>
                 <li><strong>VIP Escort</strong> &#8594; +1 Reputation</li>
             </ol>
-            <p><strong>Restorative Treatment:</strong></p>
+            <p><strong>Nano Restoration:</strong></p>
             <ul>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
-                <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
-            <p><strong>Cyberware Enhancement:</strong></p>
+            <p><strong>Agility Recalibration:</strong></p>
             <ul>
-                <li>Select <strong>Strength</strong> or <strong>Logic</strong></li>
-                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+                <li>Pay <strong>1.000 ¥</strong> per point of Agility</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Agility</li>
                 <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
@@ -196,17 +195,23 @@ export const Town = [
                 <li><strong>HoloShow Surprise</strong> &#8594; +1 Intuition Temporary</li>
                 <li><strong>VIP Table Reserved</strong> &#8594; +1 Reputation</li>
             </ol>
-            <p><strong>Nutritional Meal:</strong></p>
-            <ul>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
-                <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
-                <li>See R301 &#8594; Health</li>
-            </ul>
             <p><strong>High-Stakes Gambling:</strong></p>
             <ul>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
-                <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
+            </ul>
+            <p><strong>Social Recharge:</strong></p>
+            <ul>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
+                <li>See R302 &#8594; Energy</li>
+            </ul>
+            <p><strong>Charisma Negotiation:</strong></p>
+            <ul>
+                <li>Pay <strong>1.000 ¥</strong> per point of Charisma</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Charisma</li>
+                <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
     {
@@ -217,8 +222,8 @@ export const Town = [
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
                 <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Welcome Drink Fail</strong> &#8594; -1 Health</li>
                 <li><strong>Eyes on You</strong> &#8594; +1 Heat</li>
+                <li><strong>Welcome Drink Fail</strong> &#8594; -1 Health</li>
                 <li><strong>Payment Verification Loop</strong> &#8594; -1.000 ¥</li>
                 <li><strong>Security Delay</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
@@ -228,81 +233,86 @@ export const Town = [
                 <li><strong>VIP Recognition</strong> &#8594; +1 Intuition Temporary</li>
                 <li><strong>Lucid Experience Access</strong> &#8594; +1 Reputation</li>
             </ol>
-            <p><strong>Restorative Sleep:</strong></p>
+            <p><strong>Energetic Reboot:</strong></p>
             <ul>
                 <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
                 <li>Add <strong>Reaction</strong> or <strong>Intuition</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ul>
-            <p><strong>Calm Your Mind:</strong></p>
+            <p><strong>Reaction Sharpening:</strong></p>
             <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
-                <li>See R304 &#8594; Heat</li>
+                <li>Pay <strong>1.000 ¥</strong> per point of Reaction</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Reaction</li>
+                <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
     {
         id: 'R160',
-        title: 'NeonHollow: EchoGarden',
+        title: 'EchoGarden',
         content: `<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>
             <p><em>"The city’s memory grows here."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
                 <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
+                <li><strong>Rival Sighting</strong> &#8594; +1 Heat</li>
                 <li><strong>Scanner Surge</strong> &#8594; -1 Reaction Temporary</li>
                 <li><strong>Toxic Pollen</strong> &#8594; -1 Health</li>
-                <li><strong>Rival Sighting</strong> &#8594; +1 Heat</li>
                 <li><strong>Unstable Ground</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Urban Bloom</strong> &#8594; +1 Energy</li>
                 <li><strong>Forgotten Cache</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Street Melody</strong> &#8594; -1 Heat</li>
-                <li><strong>Old Contact</strong> &#8594; +1 Intel</li>
                 <li><strong>Peaceful Enlightenment</strong> &#8594; +1 Reaction Temporary</li>
+                <li><strong>Old Contact</strong> &#8594; +1 Intel</li>
+                <li><strong>Street Melody</strong> &#8594; -1 Heat</li>
             </ol>
-            <p><strong>Meditation Lesson:</strong></p>
+            <p><strong>Vital Rejuvenation:</strong></p>
             <ul>
                 <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
-                <li>See R302 &#8594; Energy</li>
+                <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
+                <li>See R301 &#8594; Health</li>
             </ul>
-            <p><strong>Pressure the Informant:</strong></p>
+            <p><strong>Cooling Meditation:</strong></p>
             <ul>
                 <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
-                <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
-                <li>See R305 &#8594; Intel</li>
+                <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
+                <li>See R304 &#8594; Heat</li>
+            </ul>
+            <p><strong>Intuition Awareness:</strong></p>
+            <ul>
+                <li>Pay <strong>1.000 ¥</strong> per point of Intuition</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Intuition</li>
+                <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
     {
         id: 'R170',
-        title: 'NeonHollow: IronGym',
+        title: 'IronGym',
         content: `<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>
             <p><em>"Muscle isn't old-school — it's survival."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ol start="2">
                 <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Uneven Barbell</strong> &#8594; -1 Agility Temporary</li>
-                <li><strong>Broken Equipment</strong> &#8594; -1 Energy</li>
-                <li><strong>Overzealous Spotter</strong> &#8594; -1 Health</li>
                 <li><strong>Deceptive Contestant</strong> &#8594; +1 Heat</li>
+                <li><strong>Uneven Barbell</strong> &#8594; -1 Agility Temporary</li>
+                <li><strong>Overzealous Spotter</strong> &#8594; -1 Health</li>
+                <li><strong>Broken Equipment</strong> &#8594; -1 Energy</li>
                 <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
                 <li><strong>Endurance Boost</strong> &#8594; +1 Energy</li>
                 <li><strong>Forgotten Protein Shake</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Lucky Break</strong> &#8594; +1 Intel</li>
                 <li><strong>Coaching Session</strong> &#8594; +1 Reputation</li>
                 <li><strong>Post-Workout Rush</strong> &#8594; +1 Agility Temporary</li>
+                <li><strong>Lucky Break</strong> &#8594; +1 Intel</li>
             </ol>
-            <p><strong>Recovery Training:</strong></p>
+            <p><strong>Muscle Recover:</strong></p>
             <ul>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
-            <p><strong>Endurance Drill:</strong></p>
+            <p><strong>Strength Conditioning:</strong></p>
             <ul>
-                <li>Select whether to enhance: <strong>Agility</strong> or <strong>Reaction</strong></li>
-                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+                <li>Pay <strong>1.000 ¥</strong> per point of Strength</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Strength</li>
                 <li>See R306 &#8594; Attribute</li>
             </ul>`,
     },
@@ -325,35 +335,40 @@ export const Town = [
                 <li><strong>Professor's Favor</strong> &#8594; +1 Reputation</li>
                 <li><strong>Study Break</strong> &#8594; +1 Intel</li>
             </ol>
-            <p><strong>Memory Mining:</strong></p>
+            <p><strong>Data Extraction:</strong></p>
             <ol>
-                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Strength</strong> or <strong>Logic</strong></li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
+                <li>See R305 &#8594; Intel</li>
+            </ol>
+            <p><strong>Neural Sync Boost:</strong></p>
+            <ol>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ol>
-            <p><strong>Mind Reinforcement:</strong></p>
-            <ol>
-                <li>Select whether to enhance: <strong>Intuition</strong> or <strong>Charisma</strong></li>
-                <li>Pay <strong>1.000 ¥</strong> per point of the chosen attribute</li>
-                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract chosen attribute</li>
+            <p><strong>Logic Refinement:</strong></p>
+            <ul>
+                <li>Pay <strong>1.000 ¥</strong> per point of Logic</li>
+                <li>Roll 2d6 &#8594; Add 10 &#8594; Subtract Logic</li>
                 <li>See R306 &#8594; Attribute</li>
-            </ol>`,
+            </ul>`,
     },
     {
         id: 'R190',
         title: 'NeonHollow: SmugglerDen',
         content: `<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>
             <p><em>"The city's forgotten veins."</em></p>
-            <p><strong>Ask for Protection:</strong></p>
+            <p><strong>False Credentials:</strong></p>
             <ol>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Reaction</strong> or <strong>Charisma</strong></li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ol>
-            <p><strong>Buy Confidential Info:</strong></p>
+            <p><strong>Corrupted Files:</strong></p>
             <ol>
                 <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Logic</strong> or <strong>Charisma</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Logic</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ol>`,
     },
