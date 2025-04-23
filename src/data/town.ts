@@ -372,13 +372,6 @@ export const Town = [
             </ul>`,
     },
     {
-        id: 'R900',
-        title: 'NeonHollow: CyberBite',
-        content:
-            '<p class="flex items-center justify-center"><img src="/images/CyberBite.jpg" alt="CyberBite" /></p>' +
-            '<p><em>"Food, but wired."</em></p>',
-    },
-    {
         id: 'R301',
         title: 'Outcome: Health',
         content: `<p>The number of successes determines the outcome of the action.</p>

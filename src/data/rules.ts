@@ -111,7 +111,7 @@ export const Rules = [
         content:
             '<p>You’ve got 14 days to take down the corp. The clock’s ticking, and you need to move fast.</p>' +
             '<p>Each day starts at <strong>0 hours</strong>, and every action you take in the town eats up <strong>1 hour</strong> of your time.</p>' +
-            '<p>The day ends either when a town event (E001) occurs or when you take on a job from <strong>Mr. Johnson</strong> (M001).</p>' +
+            '<p>The day ends either when a town event (R401) occurs or when you take on a job from <strong>Mr. Johnson</strong> (R601).</p>' +
             '<p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>',
     },
     {
