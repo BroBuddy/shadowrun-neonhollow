@@ -389,9 +389,9 @@ export const Town = [
                 <li>
                     <strong>Attribute Clash:</strong>
                     <ul>
-                        <li>Roll 2d6 for each selected attribute</li>
-                        <li>Add your Attribute score</li>
-                        <li>Sutract opponent's corresponding attribute</li>
+                        <li>Roll 2d6 for each relevant attribute</li>
+                        <li>Add your attribute score to each roll</li>
+                        <li>Subtract opponent’s corresponding attribute</li>
                     </ul>
                 </li>
                 <li>Add both attribute results to determine outcome.</li>
