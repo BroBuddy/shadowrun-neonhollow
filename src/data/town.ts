@@ -369,10 +369,6 @@ export const Town = [
             <p><strong>Quick Reboot:</strong></p>
             <ul>
                 <li>-2 Energy &#8594; +2 Health</li>
-            </ul>
-            <p><strong>Chill and Lay Low:</strong></p>
-            <ul>
-                <li>-2 Energy &#8594; -1 Heat</li>
             </ul>`,
     },
     {
