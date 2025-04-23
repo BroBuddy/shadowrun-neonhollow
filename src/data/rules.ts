@@ -85,12 +85,12 @@ export const Rules = [
         content: `<p>You're flagged — expect pursuit. The corp’s next play is unpredictable — roll <strong>1d6</strong> to see how they respond.</p>
             <p><strong>After a roll of 2 or higher &#8594; -1 Heat</strong></p>
             <ol>
-            <li><strong>Wrong Target</strong> — The corp grabs someone who almost matches your profile.<ul><li>No Effect</li></ul></li>
-            <li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-2 Energy</li></ul></li>
-            <li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-2 Energy, -2 Health</li></ul></li>
-            <li><strong>Neuroshock Intercept</strong> — A neural disruptor pulse hits you mid-hack.<ul><li>-4 Energy, -2 Health</li></ul></li>
-            <li><strong>Blackout Protocol</strong> — The corp cuts power in your sector to flush you out.<ul><li>-4 Energy, -4 Health</li></ul></li>
-            <li><strong>Tactical Strike Drone</strong> — A silent drone shadows you, then hits with a low-yield concussive blast.<ul><li>-6 Energy, -4 Health</li></ul></li>
+            <li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>
+            <li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Energy, -1 Health</li></ul></li>
+            <li><strong>Neuroshock Intercept</strong> — A neural disruptor pulse hits you mid-hack.<ul><li>-2 Energy, -1 Health</li></ul></li>
+            <li><strong>Blackout Protocol</strong> — The corp cuts power in your sector to flush you out.<ul><li>-2 Energy, -2 Health</li></ul></li>
+            <li><strong>Tactical Strike Drone</strong> — A silent drone shadows you, then hits with a low-yield concussive blast.<ul><li>-3 Energy, -2 Health</li></ul></li>
+            <li><strong>System Purge</strong> — The corp deploys a purge squad with incendiary rounds and area denial gas.<ul><li>-3 Energy, -3 Health</li></ul></li>
             </ol>`,
     },
     {
