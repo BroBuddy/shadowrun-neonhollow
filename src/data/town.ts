@@ -4,6 +4,12 @@ export const Town = [
         title: 'NeonHollow',
         content: `<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>
             <p><em>"Where the lights never die — only the people do."</em></p>
+            <p><strong>District Lockdowns:</strong></p>
+            <ul>
+                <li>Heat 3 &#8594; Security District</li>
+                <li>Heat 4 &#8594; Entertainment District</li>
+                <li>Heat 5 &#8594; Industrial District</li>
+            </ul>
             <p><strong>Security District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
