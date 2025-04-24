@@ -39,27 +39,27 @@ export const Runs = [
             <ol>
                 <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.
                     <ul>
-                        <li>+1 Heat</li>
+                        <li>+2 Heat</li>
                     </ul>
                 </li>
                 <li><strong>Underwhelming</strong> – Setback, but Lessons Learned.
                     <ul>
-                        <li>+1 Intel</li>
+                        <li>+1 Heat, +1 Intel</li>
                     </ul>
                 </li>
                 <li><strong>Partial</strong> – Glitched Out, Grabbed Clues.
                     <ul>
-                        <li>+5.000 ¥, +2 Intel</li>
+                        <li>+5.000 ¥, +1 Heat, +2 Intel</li>
                     </ul>
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
                     <ul>
-                        <li>+10.000 ¥, next Mission</li>
+                        <li>+6.000 ¥, +1 Heat, next Mission available</li>
                     </ul>
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+15.000 ¥, +1 Reputation, next Mission</li>
+                        <li>+9.000 ¥, next Mission available</li>
                     </ul>
                 </li>
             </ol>`,

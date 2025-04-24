@@ -241,12 +241,12 @@ export const Character = [
             '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +
             '<p>For your first journey, I suggest starting with Easy Mode to get a feel for the city`s pulse.</p>' +
             '<p><strong>Easy Mode:</strong></p>' +
-            '<ul><li>10.000 ¥</li><li>10 Health</li><li>10 Energy</li><li>3 Reputation</li></ul>' +
+            '<ul><li>15.000 ¥</li><li>10 Health</li><li>10 Energy</li><li>3 Reputation</li></ul>' +
             '<p><strong>Medium Mode:</strong></p>' +
-            '<ul><li>8.000 ¥</li><li>8 Health</li><li>8 Energy</li><li>2 Reputation</li></ul>' +
+            '<ul><li>10.000 ¥</li><li>8 Health</li><li>8 Energy</li><li>2 Reputation</li></ul>' +
             '<p><strong>Hard Mode:</strong></p>' +
-            '<ul><li>6.000 ¥</li><li>6 Health</li><li>6 Energy</li><li>1 Reputation</li></ul>' +
+            '<ul><li>5.000 ¥</li><li>6 Health</li><li>6 Energy</li><li>1 Reputation</li></ul>' +
             '<p><strong>Insane Mode:</strong></p>' +
-            '<ul><li>4.000 ¥</li><li>4 Health</li><li>4 Energy</li><li>0 Reputation</li></ul>',
+            '<ul><li>4 Health</li><li>4 Energy</li></ul>',
     },
 ]

@@ -64,7 +64,7 @@ export const Rules = [
     {
         id: 'R007',
         title: 'Reputation Mechanic',
-        content: `<p>Reputation ranges from 0 to 5 and cannot exceed these limits.</p>
+        content: `<p>Reputation ranges from 0 to 6 and cannot exceed these limits.</p>
             <p>Once per skill check, you may spend <strong>1 Reputation</strong> to gain an additional roll, which will overwrite any previous failed attempt.</p>
             <p><strong>Main Sources:</strong></p>
             <ol>
@@ -76,7 +76,7 @@ export const Rules = [
     {
         id: 'R008',
         title: 'Heat Mechanic',
-        content: `<p>The scale ranges from 0 to 5.</p>
+        content: `<p>Heat ranges from 0 to 3 and cannot exceed these limits.</p>
             <p>At the end of the day, the corporation will track you down, draining your health and energy by an amount equal to your current heat level.</p>
             <p>The higher the heat level, the more town districts will lock down, restricting access to their services.</p>
             <p><strong>Main Sources:</strong></p>
@@ -89,7 +89,7 @@ export const Rules = [
     {
         id: 'R010',
         title: 'Intel Mechanic',
-        content: `<p>Intel ranges from 0 to 5 and cannot exceed these limits.</p>
+        content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
             <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the CorpTower (R110).</p>
             <p><strong>Main Sources:</strong></p>
             <ol>

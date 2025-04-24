@@ -6,9 +6,9 @@ export const Town = [
             <p><em>"Where the lights never die — only the people do."</em></p>
             <p><strong>District Lockdowns:</strong></p>
             <ul>
-                <li>Heat 2 &#8594; Security District</li>
-                <li>Heat 3 &#8594; Entertainment District</li>
-                <li>Heat 4 &#8594; Industrial District</li>
+                <li>Heat 1 &#8594; Security District</li>
+                <li>Heat 2 &#8594; Entertainment District</li>
+                <li>Heat 3 &#8594; Industrial District</li>
             </ul>
             <hr />
             <p><strong>Security District:</strong></p>
@@ -385,38 +385,19 @@ export const Town = [
             <p><em>"Where the shadows test their own."</em></p>
             <p><strong>Recruit a Runner:</strong></p>
             <ol>
-                <li>You must have at least <strong>10.000 ¥</strong> available</li>
-                <li>Roll on the Runner Matrix (N001)</li>
-                <li>Remember the two highest Attributes</li>
-                <li>Roll your <strong>Charisma</strong> and another <strong>Attribute</strong></li>
+                <li>Roll on the <strong>Runner Matrix</strong> (R501)</li>
+                <li>Remember the two highest attributes</li>
+                <li>Pay <strong>10.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Add your <strong>Charisma</strong></li>
                 <li>See R307 &#8594; Runner</li>
             </ol>
             <p><strong>Challenge a Runner:</strong></p>
             <ol>
-                <li>
-                    <strong>Select Combat Type:</strong>
-                    <ul>
-                        <li><strong>Close-Combat:</strong> Strength, Agility</li>
-                        <li><strong>Hacking Assault: </strong> Reaction, Logic</li>
-                        <li><strong>Psionic Warfare:</strong> Intuition, Charisma</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Opponent Generation:</strong>
-                    <ul>
-                        <li>Roll on the <strong>Runner Matrix</strong> (R501) to identify your opponent.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Attribute Clash:</strong>
-                    <ul>
-                        <li>Roll 2d6 for each applicable attribute</li>
-                        <li>Add your attribute scores</li>
-                        <li>Subtract opponent’s corresponding attributes scores to determine the result</li>
-                    </ul>
-                </li>
-                <li>Add both attribute results to determine outcome.</li>
-                <li>Spend <strong>2 Health</strong> &#8594; See R303 &#8594; Nuyen</li>
+                <li>Combine your two highest attributes</li>
+                <li>Roll on the <strong>Runner Matrix</strong> (R501)</li>
+                <li>Add up the opponent’s corresponding attributes</li>
+                <li>You lost? &#8594; Lose <strong>Health</strong> equal to the gap</li>
+                <li>Add 10 &#8594; See R303 &#8594; Nuyen</li>
             </ol>`,
     },
     {
