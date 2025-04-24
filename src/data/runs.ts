@@ -77,25 +77,25 @@ export const Runs = [
             <ol>
                 <li><strong>Enter the Archives Undetected</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 3)</strong>: Sneak past motion detectors.</li>
-                        <li>6–8: <strong>Intuition (DC 2)</strong>: Time the patrols perfectly.</li>
-                        <li>9–12: <strong>Logic (DC 1)</strong>: Disable surveillance remotely.</li>
+                        <li>2–5: <strong>Agility (DC 12)</strong>: Sneak past motion detectors.</li>
+                        <li>6–8: <strong>Intuition (DC 10)</strong>: Time the patrols perfectly.</li>
+                        <li>9–12: <strong>Logic (DC 8)</strong>: Disable surveillance remotely.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Access the Encrypted Files</strong>
                     <ul>
-                        <li>2–5: <strong>Logic (DC 3)</strong>: Break through the firewall.</li>
-                        <li>6–8: <strong>Charisma (DC 2)</strong>: Social-engineer a bypass code.</li>
-                        <li>9–12: <strong>Strength (DC 1)</strong>: Physically remove the secure drive.</li>
+                        <li>2–5: <strong>Logic (DC 12)</strong>: Break through the firewall.</li>
+                        <li>6–8: <strong>Charisma (DC 10)</strong>: Social-engineer a bypass code.</li>
+                        <li>9–12: <strong>Strength (DC 8)</strong>: Physically remove the secure drive.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Exfiltrate with the Data</strong>
                     <ul>
-                        <li>2–5: <strong>Reaction (DC 3)</strong>: Dodge the incoming corpsec unit.</li>
-                        <li>6–8: <strong>Agility (DC 2)</strong>: Escape via the ventilation shafts.</li>
-                        <li>9–12: <strong>Charisma (DC 1)</strong>: Bluff your way out in plain sight.</li>
+                        <li>2–5: <strong>Reaction (DC 12)</strong>: Dodge the incoming corpsec unit.</li>
+                        <li>6–8: <strong>Agility (DC 10)</strong>: Escape via the ventilation shafts.</li>
+                        <li>9–12: <strong>Charisma (DC 8)</strong>: Bluff your way out in plain sight.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -104,7 +104,7 @@ export const Runs = [
             <p><strong>Twist:</strong><br />
             A corporate agent is already leaking the data to another buyer. Time is limited.</p>
             <ul>
-                <li><strong>Intuition (DC 3)</strong>: Spot the rival agent’s trail and intercept.</li>
+                <li><strong>Intuition (DC 12)</strong>: Spot the rival agent’s trail and intercept.</li>
                 <li><strong>Fail:</strong> Performance 4</li>
                 <li><strong>Success:</strong> Performance 5</li>
             </ul>`,
@@ -123,25 +123,25 @@ export const Runs = [
             <ol>
                 <li><strong>Overload the Firewall</strong>
                     <ul>
-                        <li>2–5: <strong>Logic (DC 3)</strong>: Launch a deep intrusion spike.</li>
-                        <li>6–8: <strong>Charisma (DC 2)</strong>: Con a helpdesk agent into granting deeper access.</li>
-                        <li>9–12: <strong>Intuition (DC 1)</strong>: Exploit a forgotten maintenance port.</li>
+                        <li>2–5: <strong>Logic (DC 12)</strong>: Launch a deep intrusion spike.</li>
+                        <li>6–8: <strong>Charisma (DC 10)</strong>: Con a helpdesk agent into granting deeper access.</li>
+                        <li>9–12: <strong>Intuition (DC 8)</strong>: Exploit a forgotten maintenance port.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Disable Security Bots</strong>
                     <ul>
-                        <li>2–5: <strong>Strength (DC 3)</strong>: Smash the control uplink.</li>
-                        <li>6–8: <strong>Reaction (DC 2)</strong>: Dodge and disrupt their patterning algorithm.</li>
-                        <li>9–12: <strong>Logic (DC 1)</strong>: Inject a shutdown virus.</li>
+                        <li>2–5: <strong>Strength (DC 12)</strong>: Smash the control uplink.</li>
+                        <li>6–8: <strong>Reaction (DC 10)</strong>: Dodge and disrupt their patterning algorithm.</li>
+                        <li>9–12: <strong>Logic (DC 8)</strong>: Inject a shutdown virus.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Take Down the AI Core</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 3)</strong>: Slip past motion sensors into the core chamber.</li>
-                        <li>6–8: <strong>Logic (DC 2)</strong>: Loop its sensory input matrix until collapse.</li>
-                        <li>9–12: <strong>Charisma (DC 1)</strong>: Feed it paradoxes until it freezes.</li>
+                        <li>2–5: <strong>Agility (DC 12)</strong>: Slip past motion sensors into the core chamber.</li>
+                        <li>6–8: <strong>Logic (DC 10)</strong>: Loop its sensory input matrix until collapse.</li>
+                        <li>9–12: <strong>Charisma (DC 8)</strong>: Feed it paradoxes until it freezes.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -150,7 +150,7 @@ export const Runs = [
             <p><strong>Twist:</strong><br />
             A secondary AI activates, attempting a rollback.</p>
             <ul>
-                <li><strong>Intuition (DC 3)</strong>: Trace and crash the fallback node before reboot completes.</li>
+                <li><strong>Intuition (DC 12)</strong>: Trace and crash the fallback node before reboot completes.</li>
                 <li><strong>Fail:</strong> Performance 4</li>
                 <li><strong>Success:</strong> Performance 5</li>
             </ul>`,
@@ -169,25 +169,25 @@ export const Runs = [
             <ol>
                 <li><strong>Reach the Executive Elevator</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 3)</strong>: Dodge through the lobby scanners.</li>
-                        <li>6–8: <strong>Logic (DC 2)</strong>: Hack the elevator’s access panel.</li>
-                        <li>9–12: <strong>Strength (DC 1)</strong>: Force open the maintenance shaft.</li>
+                        <li>2–5: <strong>Agility (DC 12)</strong>: Dodge through the lobby scanners.</li>
+                        <li>6–8: <strong>Logic (DC 10)</strong>: Hack the elevator’s access panel.</li>
+                        <li>9–12: <strong>Strength (DC 8)</strong>: Force open the maintenance shaft.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Bypass CEO’s Personal Guard</strong>
                     <ul>
-                        <li>2–5: <strong>Reaction (DC 3)</strong>: Outmaneuver their formation.</li>
-                        <li>6–8: <strong>Intuition (DC 2)</strong>: Find a distraction window.</li>
-                        <li>9–12: <strong>Charisma (DC 1)</strong>: Pretend you're scheduled for a meeting.</li>
+                        <li>2–5: <strong>Reaction (DC 12)</strong>: Outmaneuver their formation.</li>
+                        <li>6–8: <strong>Intuition (DC 10)</strong>: Find a distraction window.</li>
+                        <li>9–12: <strong>Charisma (DC 8)</strong>: Pretend you're scheduled for a meeting.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Deliver the Threat</strong>
                     <ul>
-                        <li>2–5: <strong>Charisma (DC 3)</strong>: Intimidate with presence and proof.</li>
-                        <li>6–8: <strong>Logic (DC 2)</strong>: Reveal the exploit in their media plan.</li>
-                        <li>9–12: <strong>Strength (DC 1)</strong>: Leave physical evidence of your power.</li>
+                        <li>2–5: <strong>Charisma (DC 12)</strong>: Intimidate with presence and proof.</li>
+                        <li>6–8: <strong>Logic (DC 10)</strong>: Reveal the exploit in their media plan.</li>
+                        <li>9–12: <strong>Strength (DC 8)</strong>: Leave physical evidence of your power.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -196,7 +196,7 @@ export const Runs = [
             <p><strong>Twist:</strong><br />
             The CEO is an advanced AI running a remote body. The real threat lies deeper.</p>
             <ul>
-                <li><strong>Intuition (DC 3)</strong>: Realize it’s a decoy and trace the real core.</li>
+                <li><strong>Intuition (DC 12)</strong>: Realize it’s a decoy and trace the real core.</li>
                 <li><strong>Fail:</strong> See R014</li>
                 <li><strong>Success:</strong> See R015</li>
             </ul>`,
