@@ -21,7 +21,7 @@ export const Runs = [
     },
     {
         id: 'R602',
-        title: 'Run: Rules',
+        title: 'Mission: Rules',
         content: `<ol>
             <li>You must tackle the missions in order.</li>
             <li>Face three obstacles. Roll 2d6 to determine your skill check for each.</li>
@@ -33,7 +33,7 @@ export const Runs = [
     },
     {
         id: 'R603',
-        title: 'Run: Performance',
+        title: 'Mission: Performance',
         content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
             <ol>
                 <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.

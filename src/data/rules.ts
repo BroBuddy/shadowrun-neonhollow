@@ -41,43 +41,50 @@ export const Rules = [
         id: 'R005',
         title: 'Character: Health',
         content: `<p>Health ranges from 0 to 10 and cannot exceed these limits.</p>
-            <p>If Health reaches 0, you're dead – just virtually.</p>
-            <p>Here’s a list of buildings that provide Health:</p>
+            <p>If your Health reaches 0, you're effectively dead – just virtually speaking.</p>
+            <p><strong>Main Sources:</strong></p>
             <ol>
                 <li>BioCare</li>
                 <li>IronGym</li>
-                <li>HoloLounge</li>
+                <li>EchoGarden</li>
             </ol>`,
     },
     {
         id: 'R006',
         title: 'Character: Energy',
         content: `<p>Energy ranges from 0 to 10 and cannot exceed these limits.</p>
-            <p>Each point below 0 costs you 1 Health point instead.</p>
-            <p>Entering a district costs you 1 Energy.</p>
-            <p>Here’s a list of buildings that provide Energy:</p>
+            <p>Each point below 0 will cost you <strong>1 Health</strong> point instead. Entering a district will costs you <strong>1 Energy</strong>.</p>
+            <p><strong>Main Sources:</strong></p>
             <ol>
                 <li>DreamSphere</li>
+                <li>HoloLounge</li>
                 <li>NeuralNexus</li>
-                <li>EchoGarden</li>
             </ol>`,
     },
     {
         id: 'R007',
         title: 'Character: Reputation',
         content: `<p>Reputation ranges from 0 to 5 and cannot exceed these limits.</p>
-            <p>You can gain reputation by achieving great or exceptional outcomes on skill checks.</p>
-            <p>Once per roll, you can spend 1 Reputation to gain 1 bonus success.</p>`,
+            <p>Once per skill check, you may spend <strong>1 Reputation</strong> to gain an additional roll, which will overwrite any previous failed attempt.</p>
+            <p><strong>Main Sources:</strong></p>
+            <ol>
+                <li>Skill Checks</li>
+                <li>Town Events</li>
+                <li>Mr. Johnson</li>
+            </ol>`,
     },
     {
         id: 'R008',
         title: 'Character: Heat',
-        content:
-            '<p>Heat represents your notoriety with the law in NeonHollow. It rises when you engage in illegal activities and decreases when you stick to the straight and narrow.</p>' +
-            '<p>The scale ranges from 0 to 5, at the end of each day, roll 1d6.</p>' +
-            '<p>If the result is equal to or higher than your current Heat, the Corp takes notice — roll on the Heat Events (R009) to see how they respond.</p>' +
-            '<p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>' +
-            '<p>To reduce heat, you can pay off an officer for a quick fix, or you can choose to lay low for a while, allowing time to dull the memory of your face and your criminal activities.</p>',
+        content: `<p>The scale ranges from 0 to 5, at the end of each day, roll 1d6.</p>
+            <p>If the result is equal to or higher than your current Heat, the Corp takes notice — roll on the Heat Events (R009) to see how they respond.</p>
+            <p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>
+            <p><strong>Main Sources:</strong></p>
+            <ol>
+                <li>SmugglerDen</li>
+                <li>PatrolHub</li>
+                <li>EchoGarden</li>
+            </ol>`,
     },
     {
         id: 'R009',
@@ -96,19 +103,19 @@ export const Rules = [
         id: 'R010',
         title: 'Character: Intel',
         content: `<p>Intel ranges from 0 to 5 and cannot exceed these limits.</p>
-            <p>You'll need Intel to fund missions from Mr. Jooshon to bring down the megacorp.</p>
-            <p>Here’s a list of buildings that provide Intel:</p>
+            <p>You'll need Intel to fund missions from Mr. Johnson to bring down the megacorp.</p>
+            <p><strong>Main Sources:</strong></p>
             <ol>
-                <li>CorpTower</li>
+                <li>NeuralNexus</li>
                 <li>SmugglerDen</li>
-                <li>EchoGarden</li>
+                <li>CorpTower</li>
             </ol>`,
     },
     {
         id: 'R011',
         title: 'Character: Time',
         content:
-            '<p>You’ve got 14 days to take down the corp. The clock’s ticking, and you need to move fast.</p>' +
+            '<p>You’ve got <strong>10 days</strong> to take down the corp. The clock’s ticking, and you need to move fast.</p>' +
             '<p>Each day starts at <strong>0 hours</strong>, and every action you take in the town eats up <strong>1 hour</strong> of your time.</p>' +
             '<p>The day ends either when a town event (R401) occurs or when you take on a job from <strong>Mr. Johnson</strong> (R601).</p>' +
             '<p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>',

@@ -82,7 +82,7 @@ export const Town = [
     },
     {
         id: 'R110',
-        title: 'NeonHollow: CorpTower',
+        title: 'CorpTower',
         content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
             <p><em>"Order. Control. Perfection."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -114,7 +114,7 @@ export const Town = [
     },
     {
         id: 'R120',
-        title: 'NeonHollow: PatrolHub',
+        title: 'PatrolHub',
         content: `<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>
             <p><em>"The law's last flicker."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -146,7 +146,7 @@ export const Town = [
     },
     {
         id: 'R130',
-        title: 'NeonHollow: BioCare',
+        title: 'BioCare',
         content: `<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>
             <p><em>"Healing flesh, not souls."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -184,7 +184,7 @@ export const Town = [
     },
     {
         id: 'R140',
-        title: 'NeonHollow: HoloLounge',
+        title: 'HoloLounge',
         content: `<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>
             <p><em>"Reality? Optional."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -222,7 +222,7 @@ export const Town = [
     },
     {
         id: 'R150',
-        title: 'NeonHollow: DreamSphere',
+        title: 'DreamSphere',
         content: `<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>
             <p><em>"Where your nightmares become hobbies."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -330,7 +330,7 @@ export const Town = [
     },
     {
         id: 'R180',
-        title: 'NeonHollow: NeuralNexus',
+        title: 'NeuralNexus',
         content: `<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>
             <p><em>"Where minds meet machines."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
@@ -368,7 +368,7 @@ export const Town = [
     },
     {
         id: 'R190',
-        title: 'NeonHollow: SmugglerDen',
+        title: 'SmugglerDen',
         content: `<p class="flex items-center justify-center"><img src="/images/SmugglerDen.jpg" alt="SmugglerDen" /></p>
             <p><em>"The city's forgotten veins."</em></p>
             <p><strong>False Credentials:</strong></p>
@@ -386,7 +386,7 @@ export const Town = [
     },
     {
         id: 'R200',
-        title: 'NeonHollow: ZeroZone',
+        title: 'ZeroZone',
         content: `<p class="flex items-center justify-center"><img src="/images/ZeroZone.jpg" alt="ZeroZone" /></p>
             <p><em>"Where the shadows test their own."</em></p>
             <p><strong>Recruit a Runner:</strong></p>
@@ -427,7 +427,7 @@ export const Town = [
     },
     {
         id: 'R210',
-        title: 'NeonHollow: SafeHouse',
+        title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
             <p><em>"No names. No noise. No light."</em></p>
             <p><strong>Stimulant Injection:</strong></p>
