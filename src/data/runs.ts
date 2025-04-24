@@ -5,12 +5,13 @@ export const Runs = [
         content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
             <p><em>"The smile's fake. The creds are real."</em></p>
             <p>The mysterious figure is a former corporate insider, now seeking to aid you in toppling the megacorp from within.</p>
-            <p><strong>Before a mission, negotiate for a hazard pay:</strong></p>
-            <ul>
+            <p><strong>Before each mission:</strong></p>
+            <ol>
+                <li>Spend <strong>3 Intel</strong> &#8594; Negotiate for hazard pay</li>
                 <li>Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
-            </ul>
-            <p><strong>Spend <strong>3 Intel</strong> per mission attempt:</strong></p>
+            </ol>
+            <p><strong>Missions:</strong></p>
             <ol>
                 <li><strong>Leak Sensitive Data</strong> (R610)</li>
                 <li><strong>Crash Security Systems</strong> (R620)</li>
