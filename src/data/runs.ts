@@ -7,7 +7,7 @@ export const Runs = [
             <p>The mysterious figure is a former corporate insider, now seeking to aid you in toppling the megacorp from within.</p>
             <p><strong>Before each mission:</strong></p>
             <ol>
-                <li>Spend <strong>4 Intel</strong> &#8594; Negotiate for hazard pay</li>
+                <li>Spend <strong>3 Intel</strong> &#8594; Negotiate for hazard pay</li>
                 <li>Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ol>
