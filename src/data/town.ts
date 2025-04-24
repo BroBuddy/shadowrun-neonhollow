@@ -539,39 +539,39 @@ export const Town = [
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
-                2-5: <strong>Critical Failure</strong> – The job backfired or was a setup.
+                2-5: <strong>Critical Failure</strong> – Things went wrong, and the payout is nonexistent.
                 <ul>
                     <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
-                6-8: <strong>Failure</strong> – You earned something, but it's barely worth the risk.
+                6-8: <strong>Failure</strong> – You earned something, but it's barely worth the effort.
                 <ul>
-                    <li>3.000 ¥</li>
+                    <li>+3.000 ¥</li>
                 </ul>
             </li>
             <li>
-                9-11: <strong>Standard</strong> – A modest payout for solid work.
+                9-11: <strong>Standard</strong> – A modest payout, nothing extravagant.
                 <ul>
-                    <li>6.000 ¥</li>
+                    <li>+6.000 ¥</li>
                 </ul>
             </li>
             <li>
-                12-14: <strong>Good</strong> – A smooth job and fair compensation.
+                12-14: <strong>Good</strong> – A smooth outcome with fair compensation.
                 <ul>
-                    <li>9.000 ¥</li>
+                    <li>+9.000 ¥</li>
                 </ul>
             </li>
             <li>
-                15-17: <strong>Great</strong> – The plan worked perfectly and paid well.
+                15-17: <strong>Great</strong> – Everything went well, and the payout reflects the effort.
                 <ul>
-                    <li>12.000 ¥, +1 Reputation</li>
+                    <li>+12.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
             <li>
-                18+: <strong>Exceptional</strong> – Flawless execution, and the money shows it.
+                18+: <strong>Exceptional</strong> – Flawless execution, and the money is well worth it.
                 <ul>
-                    <li>15.000 ¥, +1 Reputation</li>
+                    <li>+15.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
