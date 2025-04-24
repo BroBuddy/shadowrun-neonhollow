@@ -7,37 +7,37 @@ export const Outcomes = [
             <li>
                 2-5: <strong>Critical Failure</strong> – The treatment backfires, causing harm.
                 <ul>
-                    <li>-2 Health, +1 Heat</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
                 6-8: <strong>Failure</strong> – Healing stalls. You’re patched, but need more time.
                 <ul>
-                    <li>No Effect</li>
+                    <li>+2 Health, +1 Energy</li>
                 </ul>
             </li>
             <li>
                 9-11: <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
                 <ul>
-                    <li>+2 Health, +1 Energy</li>
+                    <li>+4 Health, +2 Energy</li>
                 </ul>
             </li>
             <li>
                 12-14: <strong>Good</strong> – Cells respond well, and you feel stronger.
                 <ul>
-                    <li>+4 Health, +2 Energy</li>
+                    <li>+6 Health, +3 Energy</li>
                 </ul>
             </li>
             <li>
                 15-17: <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
-                    <li>+6 Health, +3 Energy, +1 Reputation</li>
+                    <li>+8 Health, +4 Energy, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
-                    <li>+8 Health, +4 Energy, +1 Reputation</li>
+                    <li>+10 Health, +5 Energy, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
@@ -50,37 +50,37 @@ export const Outcomes = [
             <li>
                 2-5: <strong>Critical Failure</strong> – The treatment leaves you feeling more drained than before.
                 <ul>
-                    <li>-2 Energy, +1 Heat</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
             <li>
                 6-8: <strong>Failure</strong> – The process does little to restore your energy, but you feel slightly better.
                 <ul>
-                    <li>No Effect</li>
+                    <li>+2 Energy, +1 Health</li>
                 </ul>
             </li>
             <li>
                 9-11: <strong>Standard</strong> – You start to regain some energy, though not at full capacity.
                 <ul>
-                    <li>+2 Energy, +1 Health</li>
+                    <li>+4 Energy, +2 Health</li>
                 </ul>
             </li>
             <li>
                 12-14: <strong>Good</strong> – The treatment has a noticeable effect, and you feel more refreshed.
                 <ul>
-                    <li>+4 Energy, +2 Health</li>
+                    <li>+6 Energy, +3 Health</li>
                 </ul>
             </li>
             <li>
                 15-17: <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
                 <ul>
-                    <li>+6 Energy, +3 Health, +1 Reputation</li>
+                    <li>+8 Energy, +4 Health, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
                 <ul>
-                    <li>+8 Energy, +4 Health, +1 Reputation</li>
+                    <li>+10 Energy, +5 Health, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
@@ -105,7 +105,7 @@ export const Outcomes = [
             <li>
                 9-11: <strong>Standard</strong> – A modest payout, nothing extravagant.
                 <ul>
-                    <li>+4.000 ¥</li>
+                    <li>+6.000 ¥</li>
                 </ul>
             </li>
             <li>
@@ -136,7 +136,7 @@ export const Outcomes = [
             <li>
                 2-5: <strong>Critical Failure</strong> – Your actions attract major attention from the authorities.
                 <ul>
-                    <li>+2 Heat</li>
+                    <li>+1 Heat</li>
                 </ul>
             </li>
             <li>

@@ -1,7 +1,7 @@
 export const Character = [
     {
         id: 'R020',
-        title: 'Character: Metatype',
+        title: 'Metatype',
         content:
             '<p>Roll 1d6 to determine your metatype:</p>' +
             '<ol><li>(R021) Human</li><li>(R022) Elf</li><li>(R023) Dwarf</li><li>(R024) Orc</li><li>(R025) Troll</li><li>Roll Again</li></ol>' +
@@ -54,7 +54,7 @@ export const Character = [
     },
     {
         id: 'R030',
-        title: 'Character: Archetype',
+        title: 'Archetype',
         content:
             '<p>Roll 1d6 to determine your archetype:</p>' +
             '<ol><li>(R031) Street Samurai</li><li>(R032) Decker</li><li>(R033) Rigger</li><li>(R034) Mage</li><li>(R035) Face</li><li>(R036) Shaman</li></ol>' +
@@ -110,7 +110,7 @@ export const Character = [
     },
     {
         id: 'R040',
-        title: 'Character: Name',
+        title: 'Name',
         content:
             '<p>Each archetype has its own name pool.</p>' +
             '<ul><li>(R041) Street Samurai</li><li>(R042) Decker</li><li>(R043) Rigger</li><li>(R044) Mage</li><li>(R045) Face</li><li>(R046) Shaman</li></ul>',
@@ -207,36 +207,36 @@ export const Character = [
     },
     {
         id: 'R050',
-        title: 'Character: Gear',
+        title: 'Gear',
         content: `<p>Choose an item that boosts your starting attributes:</p>
-        <p><strong>Power Gauntlets:</strong></p>
-        <ul>
-            <li>+1 Strength</li>
-        </ul>
-        <p><strong>Nano-Tread Boots:</strong></p>
-        <ul>
-            <li>+1 Agility</li>
-        </ul>
-        <p><strong>Reflex Enhancer Implant:</strong></p>
-        <ul>
-            <li>+1 Reaction</li>
-        </ul>
-        <p><strong>Neural Interface Headset:</strong></p>
-        <ul>
-            <li>+1 Logic</li>
-        </ul>
-        <p><strong>Synaptic Amplifier:</strong></p>
-        <ul>
-            <li>+1 Intuition</li>
-        </ul>
-        <p><strong>Holo-Disguise Mask:</strong></p>
-        <ul>
-            <li>+1 Charisma</li>
-        </ul>`,
+            <p><strong>Power Gauntlets:</strong></p>
+            <ul>
+                <li>+1 Strength</li>
+            </ul>
+            <p><strong>Nano-Tread Boots:</strong></p>
+            <ul>
+                <li>+1 Agility</li>
+            </ul>
+            <p><strong>Reflex Enhancer Implant:</strong></p>
+            <ul>
+                <li>+1 Reaction</li>
+            </ul>
+            <p><strong>Neural Interface Headset:</strong></p>
+            <ul>
+                <li>+1 Logic</li>
+            </ul>
+            <p><strong>Synaptic Amplifier:</strong></p>
+            <ul>
+                <li>+1 Intuition</li>
+            </ul>
+            <p><strong>Holo-Disguise Mask:</strong></p>
+            <ul>
+                <li>+1 Charisma</li>
+            </ul>`,
     },
     {
         id: 'R060',
-        title: 'Character: Mode',
+        title: 'Mode',
         content:
             '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +
             '<p>For your first journey, I suggest starting with Easy Mode to get a feel for the city`s pulse.</p>' +

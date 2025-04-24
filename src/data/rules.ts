@@ -1,7 +1,7 @@
 export const Rules = [
     {
         id: 'R001',
-        title: 'Rules: Welcome to NeonHollow',
+        title: 'Welcome to NeonHollow',
         content:
             '<p>You’re inside a full-spectrum neural simulation, created by rogue deckers and ex-corp AIs to test potential shadowrunners in a city twisted by corporate control. Everything you see, every sound, every face, every choice—fabricated to push you to your limits.</p>' +
             '<p>The megacorp dominates this simulation like it does the real world. It watches, it hunts, and it controls every district—just like it will when you jack out of this and hit the actual streets.</p>' +
@@ -11,20 +11,20 @@ export const Rules = [
     },
     {
         id: 'R002',
-        title: 'Rules: Instructions',
+        title: 'Instructions',
         content:
             '<p><strong>Your First Steps into NeonHollow:</strong></p>' +
             '<ol>' +
             '<li><strong>Suit Up</strong> – Grab 2d6, a pen, and something to write on. That’s your loadout.</li>' +
             '<li><strong>Create Your Runner</strong> (R003) – Build the shadow operative who’ll face the city’s dark corners.</li>' +
-            '<li><strong>Know Your Core</strong> – Get familiar with what keeps you alive:' +
-            '<ul><li>Health (R005)</li><li>Energy (R006)</li><li>Reputation (R007)</li><li>Heat (R008)</li><li>Intel (R010)</li><li>Time (R011)</li><li>Dice Rolling (R012)</li></ul></li>' +
+            '<li><strong>Know The Mechanics</strong>' +
+            '<ul><li>Health (R005)</li><li>Energy (R006)</li><li>Reputation (R007)</li><li>Heat (R008)</li><li>Intel (R010)</li><li>Time (R011)</li><li>Dice (R012)</li></ul></li>' +
             '<li><strong>Enter NeonHollow</strong> (R101) – The city’s waiting. Time to make your move.</li>' +
             '</ol>',
     },
     {
         id: 'R003',
-        title: 'Rules: Runner',
+        title: 'Character Creation',
         content:
             '<p>Follow this guide to build your runner before diving into the shadows.</p>' +
             '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R701) Background</li><li>(R040) Name</li><li>(R050) Gear</li><li>(R060) Mode</li></ol>' +
@@ -32,14 +32,14 @@ export const Rules = [
     },
     {
         id: 'R004',
-        title: 'Character: Attributes',
+        title: 'Attributes',
         content:
-            '<p>Roll 1d6 to determine your random attribute:</p>' +
+            '<p>The main characteristics essential for skill checks are as follows:</p>' +
             '<ol><li><strong>Strength</strong> – The Power to Endure</li><li><strong>Agility</strong> – The Speed to Slip Between Shadows</li><li><strong>Reaction</strong> – The Edge That Comes Before Thought</li><li><strong>Logic</strong> – The Key That Unlocks Every Door</li><li><strong>Intuition</strong> – The Sixth Sense of the Streets</li><li><strong>Charisma</strong> – The Power That Doesn’t Need Guns</li></ol>',
     },
     {
         id: 'R005',
-        title: 'Character: Health',
+        title: 'Health Mechanic',
         content: `<p>Health ranges from 0 to 10 and cannot exceed these limits.</p>
             <p>If your Health reaches 0, you're effectively dead – just virtually speaking.</p>
             <p><strong>Main Sources:</strong></p>
@@ -51,7 +51,7 @@ export const Rules = [
     },
     {
         id: 'R006',
-        title: 'Character: Energy',
+        title: 'Energy Mechanic',
         content: `<p>Energy ranges from 0 to 10 and cannot exceed these limits.</p>
             <p>Each point below 0 will cost you <strong>1 Health</strong> point instead. Entering a district will costs you <strong>1 Energy</strong>.</p>
             <p><strong>Main Sources:</strong></p>
@@ -63,7 +63,7 @@ export const Rules = [
     },
     {
         id: 'R007',
-        title: 'Character: Reputation',
+        title: 'Reputation Mechanic',
         content: `<p>Reputation ranges from 0 to 5 and cannot exceed these limits.</p>
             <p>Once per skill check, you may spend <strong>1 Reputation</strong> to gain an additional roll, which will overwrite any previous failed attempt.</p>
             <p><strong>Main Sources:</strong></p>
@@ -75,7 +75,7 @@ export const Rules = [
     },
     {
         id: 'R008',
-        title: 'Character: Heat',
+        title: 'Heat Mechanic',
         content: `<p>The scale ranges from 0 to 5, at the end of each day, roll 1d6.</p>
             <p>If the result is equal to or higher than your current Heat, the Corp takes notice — roll on the Heat Events (R009) to see how they respond.</p>
             <p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>
@@ -88,8 +88,8 @@ export const Rules = [
     },
     {
         id: 'R009',
-        title: 'Heat: Events',
-        content: `<p>You're on the corp's radar &#8594; <strong>-1 Heat</strong> &#8594; Roll <strong>1d6</strong> to see how they respond.</p>
+        title: 'Heat Events',
+        content: `<p>You're on the corp's radar &#8594; Roll <strong>1d6</strong> to see how they respond.</p>
             <ol>
             <li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>
             <li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Energy, -1 Health</li></ul></li>
@@ -101,9 +101,9 @@ export const Rules = [
     },
     {
         id: 'R010',
-        title: 'Character: Intel',
+        title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 5 and cannot exceed these limits.</p>
-            <p>You'll need Intel to fund missions from Mr. Johnson to bring down the megacorp.</p>
+            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the CorpTower (R110).</p>
             <p><strong>Main Sources:</strong></p>
             <ol>
                 <li>NeuralNexus</li>
@@ -113,16 +113,16 @@ export const Rules = [
     },
     {
         id: 'R011',
-        title: 'Character: Time',
-        content:
-            '<p>You’ve got <strong>10 days</strong> to take down the corp. The clock’s ticking, and you need to move fast.</p>' +
-            '<p>Each day starts at <strong>0 hours</strong>, and every action you take in the town eats up <strong>1 hour</strong> of your time.</p>' +
-            '<p>The day ends either when a town event (R401) occurs or when you take on a job from <strong>Mr. Johnson</strong> (R601).</p>' +
-            '<p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>',
+        title: 'Time Mechanic',
+        content: `<p>You’ve got <strong>7 days</strong> to dismantle the system. Each cycle gives you <strong>7 hours</strong> — use them wisely.</p>
+            <p>Each entry into a building or completion of a designated action will incur a time cost of one hour.</p>
+            <p>When the day winds down, <strong>Intel</strong> (R010) in hand means a run with <strong>Mr. Johnson</strong> (R601).</p>
+            <p>If you’re short, the city decides your fate — roll the <strong>Event Matrix</strong> (R401).</p>
+            <p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>`,
     },
     {
         id: 'R012',
-        title: 'Rules: Dice Rolling',
+        title: 'Dice Mechanic',
         content:
             '<p>When prompted to roll <strong>1d6</strong>, it means you must roll a single six-sided die — your fate resting on a number between 1 and 6.</p>' +
             '<p>Rolling <strong>2d6</strong> means tossing two six-sided dice and adding the results together.</p>' +
@@ -132,19 +132,29 @@ export const Rules = [
     },
     {
         id: 'R013',
-        title: 'Rules: Sheet',
-        content:
-            '<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>' +
-            '<ul>' +
-            '<li>Welcome to NeonHollow (R001)</li>' +
-            '<li>Instructions (R002)</li>' +
-            '<li>Rules: Runner (R003)</li>' +
-            '<li>Heat: Events (R009)</li>' +
-            '<li>NeonHollow: Rules (R102)</li>' +
-            '<li>Event Matrix (R401)</li>' +
-            '<li>Runner Matrix (R501)</li>' +
-            '<li>Run: Rules (R602)</li>' +
-            '</ul>',
+        title: 'Sheet',
+        content: `<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>
+            <p><strong>Mechanics:</strong></p>
+            <ul>
+                <li>Instructions (R002)</li>
+                <li>Attributes (R004)</li>
+                <li>Heat Events (R009)</li>
+            </ul>
+            <p><strong>Runner:</strong></p>
+            <ul>
+                <li>Character Creation (R003)</li>
+                <li>Matrix (R501)</li>
+            </ul>
+            <p><strong>Town:</strong></p>
+            <ul>
+                <li>Rules (R102)</li>
+                <li>Events (R401)</li>
+            </ul>
+            <p><strong>Mission:</strong></p>
+            <ul>
+                <li>Rules (R602)</li>
+                <li>Performance (R603)</li>
+            </ul>`,
     },
     {
         id: 'R014',

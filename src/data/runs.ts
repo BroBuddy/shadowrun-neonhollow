@@ -7,7 +7,7 @@ export const Runs = [
             <p>The mysterious figure is a former corporate insider, now seeking to aid you in toppling the megacorp from within.</p>
             <p><strong>Before each mission:</strong></p>
             <ol>
-                <li>Spend <strong>5 Intel</strong> &#8594; Negotiate for hazard pay</li>
+                <li>Spend <strong>4 Intel</strong> &#8594; Negotiate for hazard pay</li>
                 <li>Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ol>
@@ -22,7 +22,7 @@ export const Runs = [
     },
     {
         id: 'R602',
-        title: 'Mission: Rules',
+        title: 'Mission Rules',
         content: `<ol>
             <li>You must tackle the missions in order.</li>
             <li>Face three obstacles. Roll 2d6 to determine your skill check for each.</li>
@@ -34,39 +34,39 @@ export const Runs = [
     },
     {
         id: 'R603',
-        title: 'Mission: Performance',
-        content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
+        title: 'Mission Performance',
+        content: `<p><strong>Mr. Johnson</strong> doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
             <ol>
                 <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.
                     <ul>
                         <li>+1 Heat</li>
                     </ul>
                 </li>
-                <li><strong>Underwhelming</strong> – Barely completed the job, but left a mess.
+                <li><strong>Underwhelming</strong> – Setback, but Lessons Learned.
                     <ul>
-                        <li>No Effect</li>
+                        <li>+1 Intel</li>
                     </ul>
                 </li>
-                <li><strong>Partial</strong> – Mission completed, but with setbacks.
+                <li><strong>Partial</strong> – Glitched Out, Grabbed Clues.
                     <ul>
-                        <li>+3.000 ¥</li>
+                        <li>+5.000 ¥, +2 Intel</li>
                     </ul>
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
                     <ul>
-                        <li>+6.000 ¥, next Mission</li>
+                        <li>+10.000 ¥, next Mission</li>
                     </ul>
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+9.000 ¥, +1 Reputation, next Mission</li>
+                        <li>+15.000 ¥, +1 Reputation, next Mission</li>
                     </ul>
                 </li>
             </ol>`,
     },
     {
         id: 'R610',
-        title: 'Mission: Leak Sensitive Data',
+        title: 'Leak Sensitive Data',
         content: `
             <p><strong>Client:</strong><br />
             Dr. Vexa Arul, BioCare</p>
@@ -112,7 +112,7 @@ export const Runs = [
     },
     {
         id: 'R620',
-        title: 'Mission: Crash Security Systems',
+        title: 'Crash Security Systems',
         content: `
             <p><strong>Client:</strong><br />
             Silas Noor, DreamSphere</p>
@@ -158,7 +158,7 @@ export const Runs = [
     },
     {
         id: 'R630',
-        title: 'Mission: Confront the CEO',
+        title: 'Confront the CEO',
         content: `
             <p><strong>Client:</strong><br />
             Kael Stride, HoloLounge</p>
