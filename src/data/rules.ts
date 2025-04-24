@@ -27,7 +27,7 @@ export const Rules = [
         title: 'Rules: Runner',
         content:
             '<p>Follow this guide to build your runner before diving into the shadows.</p>' +
-            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R040) Name</li><li>(R050) Gear</li><li>(R060) Mode</li></ol>' +
+            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R701) Background</li><li>(R040) Name</li><li>(R050) Gear</li><li>(R060) Mode</li></ol>' +
             '<p>When rolling for a random attribute, refer to the attribute details for guidance (R004).</p>',
     },
     {
@@ -278,62 +278,92 @@ export const Rules = [
     {
         id: 'R041',
         title: 'Name: Street Samurai',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Kaito</li><li>Hana</li><li>Ryo</li><li>Takashi</li><li>Mei</li><li>Kenji</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Blade</li><li>Wraith</li><li>Tiger</li><li>Ghost</li><li>Steel</li><li>Ronin</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Kaito</li><li>Hana</li><li>Ryo</li><li>Takashi</li><li>Mei</li><li>Kenji</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Blade</li><li>Wraith</li><li>Tiger</li><li>Ghost</li><li>Steel</li><li>Ronin</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R042',
         title: 'Name: Decker',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Ray</li><li>Lex</li><li>Nova</li><li>Jax</li><li>Zero</li><li>Kai</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Circuit</li><li>Byte</li><li>Shock</li><li>Pulse</li><li>Code</li><li>Grid</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Ray</li><li>Lex</li><li>Nova</li><li>Jax</li><li>Zero</li><li>Kai</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Circuit</li><li>Byte</li><li>Shock</li><li>Pulse</li><li>Code</li><li>Grid</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R043',
         title: 'Name: Rigger',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Rusty</li><li>Max</li><li>Sasha</li><li>Quinn</li><li>Juno</li><li>Flint</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Gear</li><li>Iron</li><li>Switch</li><li>Drive</li><li>Pilot</li><li>Mechanic</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Rusty</li><li>Max</li><li>Sasha</li><li>Quinn</li><li>Juno</li><li>Flint</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Gear</li><li>Iron</li><li>Switch</li><li>Drive</li><li>Pilot</li><li>Mechanic</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R044',
         title: 'Name: Mage',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Ash</li><li>Vesper</li><li>Nox</li><li>Zephyr</li><li>Luna</li><li>Orion</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Flame</li><li>Star</li><li>Warden</li><li>Spell</li><li>Void</li><li>Arcane</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Ash</li><li>Vesper</li><li>Nox</li><li>Zephyr</li><li>Luna</li><li>Orion</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Flame</li><li>Star</li><li>Warden</li><li>Spell</li><li>Void</li><li>Arcane</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R045',
         title: 'Name: Face',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Rio</li><li>Cole</li><li>Ava</li><li>Zara</li><li>Damon</li><li>Lex</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Charm</li><li>Blare</li><li>Silver</li><li>Blade</li><li>Vibe</li><li>Verve</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Rio</li><li>Cole</li><li>Ava</li><li>Zara</li><li>Damon</li><li>Lex</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Charm</li><li>Blare</li><li>Silver</li><li>Blade</li><li>Vibe</li><li>Verve</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R046',
         title: 'Name: Shaman',
-        content:
-            '<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate table.</p>' +
-            '<p><strong>First Name:</strong></p>' +
-            '<ol><li>Tala</li><li>Soren</li><li>Freya</li><li>Bastian</li><li>Naya</li><li>Zane</li></ol>' +
-            '<p><strong>Last Name:</strong></p>' +
-            '<ol><li>Spirit</li><li>Wolf</li><li>Storm</li><li>Wind</li><li>Sky</li><li>Shadow</li></ol>',
+        content: `<p>Roll 1d6 to get a first name and 1d6 for a second name from the appropriate list.</p>
+            <div class="grid grid-cols-2">
+                <div>
+                    <p><strong>First Name:</strong></p>
+                    <ol><li>Tala</li><li>Soren</li><li>Freya</li><li>Bastian</li><li>Naya</li><li>Zane</li></ol>
+                </div>
+                <div>
+                    <p><strong>Last Name:</strong></p>
+                    <ol><li>Spirit</li><li>Wolf</li><li>Storm</li><li>Wind</li><li>Sky</li><li>Shadow</li></ol>
+                </div>
+            </div>`,
     },
     {
         id: 'R050',
