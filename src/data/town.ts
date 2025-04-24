@@ -412,6 +412,15 @@ export const Town = [
             <p><strong>Quick Reboot:</strong></p>
             <ul>
                 <li>+1 Health</li>
+            </ul>
+            <hr />
+            <p><strong>Incite Rebellion:</strong></p>
+            <ul>
+                <li>Spend <strong>5 Reputation</strong> &#8594; +1 Heat &#8594; Skip Mission</li>
+            </ul>
+            <p><strong>Propaganda Campaign:</strong></p>
+            <ul>
+                <li>Pay <strong>20.000 ¥</strong> &#8594; +1 Heat &#8594; Skip Mission</li>
             </ul>`,
     },
 ]
