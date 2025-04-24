@@ -86,19 +86,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
             <p><em>"Order. Control. Perfection."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Retina Scan Error</strong> &#8594; +1 Heat</li>
-                <li><strong>System Loop</strong> &#8594; -1 Intuition Temporary</li>
-                <li><strong>Unauthorized Access</strong> &#8594; -1.000 ¥</li>
-                <li><strong>Overwatched</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Fast Pass</strong> &#8594; +1 Energy</li>
-                <li><strong>Corporate Favor</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Clean Record</strong> &#8594; -1 Heat</li>
-                <li><strong>Silent Support</strong> &#8594; +1 Intuition Temporary</li>
-                <li><strong>Data Whisper</strong> &#8594; +1 Intel</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Corporate Scrutiny</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Security Delay</strong> &#8594; +1 Hour</li>
+                <li>5-6: <strong>Overexertion from Pressure</strong> &#8594; -1 Energy</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Golden Parachute</strong> &#8594; +2.000 ¥</li>
+                <li>10-11: <strong>Influential Contact</strong> &#8594; +1 Reputation</li>
+                <li>12: <strong>Blackmail Material</strong> &#8594; +1 Intel</li>
+            </ul>
+            <hr />
             <p><strong>Protest Persuasion:</strong></p>
             <ul>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
@@ -118,19 +115,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/PatrolHub.jpg" alt="PatrolHub" /></p>
             <p><em>"The law's last flicker."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Heavy Watch</strong> &#8594; +1 Heat</li>
-                <li><strong>Scanner Malfunction</strong> &#8594; -1 Health</li>
-                <li><strong>Interrogation Mix-Up</strong> &#8594; -1.000 ¥</li>
-                <li><strong>Paperwork Hell</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Free Escort</strong> &#8594; +1 Energy</li>
-                <li><strong>Stopping a Robbery</strong> &#8594; +1 Reputation</li>
-                <li><strong>Case Glitch</strong> &#8594; -1 Heat</li>
-                <li><strong>Stopping a Desperate Escape</strong> &#8594; +1 Strength Temporary</li>
-                <li><strong>Confidential Boost</strong> &#8594; +1 Intel</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Security Breach</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>False Accusation</strong> &#8594; -1 Reputation</li>
+                <li>5-6: <strong>Interrogation Delay</strong> &#8594; +1 Hour</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Backup Support</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Friendly Recognition</strong> &#8594; -1 Heat</li>
+                <li>12: <strong>Security Clearance Boost</strong> &#8594; +1 Reputation</li>
+            </ul>
+            <hr />
             <p><strong>Silence the Badge:</strong></p>
             <ul>
                 <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
@@ -150,19 +144,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/BioCare.jpg" alt="BioCare" /></p>
             <p><em>"Healing flesh, not souls."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Rogue Doc Encounter</strong> &#8594; +1 Heat</li>
-                <li><strong>Suspicious Scan</strong> &#8594; -1 Agility Temporary</li>
-                <li><strong>Security Screening</strong> &#8594; -1 Health</li>
-                <li><strong>Delayed Appointment</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Quick Service</strong> &#8594; +1 Energy</li>
-                <li><strong>Strange Gift</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Relaxed Environment</strong> &#8594; +1 Charisma Temporary</li>
-                <li><strong>Lucky Break</strong> &#8594; +1 Agility Temporary</li>
-                <li><strong>VIP Escort</strong> &#8594; +1 Reputation</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Rogue Doc Encounter</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Uncooperative Patient</strong> &#8594; -1 Reputation</li>
+                <li>5-6: <strong>Unsettling Diagnosis</strong> &#8594; -1 Health</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Energy Boost</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Medical Sponsorship</strong> &#8594; +2.000 ¥</li>
+                <li>12: <strong>VIP Escort</strong> &#8594; +1 Reputation</li>
+            </ul>
+            <hr />
             <p><strong>Nano Restoration:</strong></p>
             <ul>
                 <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
@@ -188,19 +179,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/HoloLounge.jpg" alt="HoloLoungeoCare" /></p>
             <p><em>"Reality? Optional."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Unwanted Attention</strong> &#8594; +1 Heat</li>
-                <li><strong>Bar Fight Breaks Out</strong> &#8594; -1 Health</li>
-                <li><strong>Data Corruption</strong> &#8594; -1.000 ¥</li>
-                <li><strong>Exotic Drink Offer</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Lucky Encounter</strong> &#8594; +1 Energy</li>
-                <li><strong>HoloLounge Jackpot</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Free Round</strong> &#8594; +1 Health</li>
-                <li><strong>HoloShow Surprise</strong> &#8594; +1 Intuition Temporary</li>
-                <li><strong>VIP Table Reserved</strong> &#8594; +1 Reputation</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Rumor Spread</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Crowded Bar</strong> &#8594; +1 Hour</li>
+                <li>5-6: <strong>Bar Fight Breaks Out</strong> &#8594; -1 Health</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Free Round</strong> &#8594; +1 Health</li>
+                <li>10-11: <strong>Winning Bet</strong> &#8594; +2.000 ¥</li>
+                <li>12: <strong>VIP Table Reserved</strong> &#8594; +1 Reputation</li>
+            </ul>
+            <hr />
             <p><strong>High-Stakes Gambling:</strong></p>
             <ul>
                 <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
@@ -226,19 +214,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/DreamSphere.jpg" alt="DreamSphere" /></p>
             <p><em>"Where your nightmares become hobbies."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Eyes on You</strong> &#8594; +1 Heat</li>
-                <li><strong>Welcome Drink Fail</strong> &#8594; -1 Health</li>
-                <li><strong>Payment Verification Loop</strong> &#8594; -1.000 ¥</li>
-                <li><strong>Security Delay</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Complimentary Sleep Enhancer</strong> &#8594; +1 Energy</li>
-                <li><strong>Lucky Find</strong> &#8594; +1.000 ¥</li>
-                <li><strong>DreamBoost Package</strong> &#8594; +1 Health</li>
-                <li><strong>VIP Recognition</strong> &#8594; +1 Intuition Temporary</li>
-                <li><strong>Lucid Experience Access</strong> &#8594; +1 Reputation</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Eyes on You</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Elevator gets stuck</strong> &#8594; +1 Hour</li>
+                <li>5-6: <strong>Service Charge Surge</strong> &#8594; -2.000 ¥</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Luxury Massage Chair</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Social Sync Event</strong> &#8594; +1 Reputation</li>
+                <li>12: <strong>Shared Memory Cache</strong> &#8594; +1 Intel</li>
+            </ul>
+            <hr />
             <p><strong>Energetic Reboot:</strong></p>
             <ul>
                 <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
@@ -264,19 +249,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/EchoGarden.jpg" alt="EchoGarden" /></p>
             <p><em>"The city’s memory grows here."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Rival Sighting</strong> &#8594; +1 Heat</li>
-                <li><strong>Scanner Surge</strong> &#8594; -1 Reaction Temporary</li>
-                <li><strong>Toxic Pollen</strong> &#8594; -1 Health</li>
-                <li><strong>Unstable Ground</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Urban Bloom</strong> &#8594; +1 Energy</li>
-                <li><strong>Forgotten Cache</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Peaceful Enlightenment</strong> &#8594; +1 Reaction Temporary</li>
-                <li><strong>Old Contact</strong> &#8594; +1 Intel</li>
-                <li><strong>Street Melody</strong> &#8594; -1 Heat</li>
+            <ul>
+                <li>2: <strong>Flagged for Loitering</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Pee Wildly</strong> &#8594; -1 Reputation</li>
+                <li>5-6: <strong>Toxic Fungal Patch</strong> &#8594; -1 Health</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Adrenaline Shot</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Solar Soak</strong> &#8594; +1 Health</li>
+                <li>12: <strong>Forgotten Credstick</strong> &#8594; +2.000 ¥</li>
             </ol>
+            <hr />
             <p><strong>Vital Rejuvenation:</strong></p>
             <ul>
                 <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
@@ -302,19 +284,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/IronGym.jpg" alt="IronGym" /></p>
             <p><em>"Muscle isn't old-school — it's survival."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>Deceptive Contestant</strong> &#8594; +1 Heat</li>
-                <li><strong>Uneven Barbell</strong> &#8594; -1 Agility Temporary</li>
-                <li><strong>Overzealous Spotter</strong> &#8594; -1 Health</li>
-                <li><strong>Broken Equipment</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Endurance Boost</strong> &#8594; +1 Energy</li>
-                <li><strong>Forgotten Protein Shake</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Coaching Session</strong> &#8594; +1 Reputation</li>
-                <li><strong>Post-Workout Rush</strong> &#8594; +1 Agility Temporary</li>
-                <li><strong>Lucky Break</strong> &#8594; +1 Intel</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Disturbing Others</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Unpaid Membership</strong> &#8594; -2.000 ¥</li>
+                <li>5-6: <strong>Lost Equipment</strong> &#8594; +1 Hour</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Promo Energy Bar</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Sauna Detox</strong> &#8594; +1 Health</li>
+                <li>12: <strong>Perfect Form</strong> &#8594; +1 Reputation</li>
+            </ul>
+            <hr />
             <p><strong>Muscle Recover:</strong></p>
             <ul>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
@@ -334,19 +313,16 @@ export const Town = [
         content: `<p class="flex items-center justify-center"><img src="/images/NeuralNexus.jpg" alt="NeuralNexus" /></p>
             <p><em>"Where minds meet machines."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
-            <ol start="2">
-                <li><strong>Access Denied</strong> &#8594; Move out &#8594; +1 Hour</li>
-                <li><strong>System Error</strong> &#8594; +1 Heat</li>
-                <li><strong>Research Malfunction</strong> &#8594; -1 Health</li>
-                <li><strong>Data Breach</strong> &#8594; -1.000 ¥</li>
-                <li><strong>Unscheduled Maintenance</strong> &#8594; -1 Energy</li>
-                <li><strong>Standard Procedure</strong> &#8594; No Effect</li>
-                <li><strong>Unexpected Discovery</strong> &#8594; +1 Energy</li>
-                <li><strong>Corporate Funding</strong> &#8594; +1.000 ¥</li>
-                <li><strong>Secret Research</strong> &#8594; -1 Heat</li>
-                <li><strong>Professor's Favor</strong> &#8594; +1 Reputation</li>
-                <li><strong>Study Break</strong> &#8594; +1 Intel</li>
-            </ol>
+            <ul>
+                <li>2: <strong>Data Corruption</strong> &#8594; +1 Heat</li>
+                <li>3-4: <strong>Unscheduled Maintenance</strong> &#8594; +1 Hour</li>
+                <li>5-6: <strong>Research Malfunctions</strong> &#8594; -1 Health</li>
+                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
+                <li>8-9: <strong>Unexpected Discovery</strong> &#8594; +1 Energy</li>
+                <li>10-11: <strong>Laboratory Breakthrough</strong> &#8594; +1 Intel</li>
+                <li>12: <strong>Professor's Favor</strong> &#8594; +1 Reputation</li>
+            </ul>
+            <hr />
             <p><strong>Data Extraction:</strong></p>
             <ol>
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
@@ -547,7 +523,7 @@ export const Town = [
             <li>
                 7-9: <strong>Failure</strong> – You earned something, but it's barely worth the effort.
                 <ul>
-                    <li>+2.000 ¥</li>
+                    <li>+3.000 ¥</li>
                 </ul>
             </li>
             <li>
@@ -559,19 +535,19 @@ export const Town = [
             <li>
                 13-15: <strong>Good</strong> – A smooth outcome with fair compensation.
                 <ul>
-                    <li>+6.000 ¥</li>
+                    <li>+9.000 ¥</li>
                 </ul>
             </li>
             <li>
                 16-18: <strong>Great</strong> – Everything went well, and the payout reflects the effort.
                 <ul>
-                    <li>+8.000 ¥, +1 Reputation</li>
+                    <li>+12.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 19+: <strong>Exceptional</strong> – Flawless execution, and the money is well worth it.
                 <ul>
-                    <li>+10.000 ¥, +1 Reputation</li>
+                    <li>+15.000 ¥, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
@@ -713,31 +689,31 @@ export const Town = [
             <li>
                 7-9: <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
                 <ul>
-                    <li>-10.000 ¥, 1. Attribute Temporary</li>
+                    <li>-10.000 ¥, 1. Attribute</li>
                 </ul>
             </li>
             <li>
                 10-12: <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
                 <ul>
-                    <li>-9.000 ¥, 1. Attribute Temporary, 2. Attribute Temporary</li>
+                    <li>-8.000 ¥, 1. Attribute</li>
                 </ul>
             </li>
             <li>
                 13-15: <strong>Good</strong> – The runner's price is what you would expect for their skill level.
                 <ul>
-                    <li>-8.000 ¥, 1. Attribute</li>
+                    <li>-6.000 ¥, 1. Attribute</li>
                 </ul>
             </li>
             <li>
                 16-18: <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
                 <ul>
-                    <li>-7.000 ¥, 1. Attribute, 2. Attribute Temporary, +1 Reputation</li>
+                    <li>-4.000 ¥, 1. Attribute, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 19+: <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
                 <ul>
-                    <li>-6.000 ¥, 1. Attribute, 2. Attribute, +1 Reputation</li>
+                    <li>-2.000 ¥, 1. Attribute, +1 Reputation</li>
                 </ul>
             </li>
         </ol>`,

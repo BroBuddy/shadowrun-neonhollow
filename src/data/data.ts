@@ -1,11 +1,15 @@
 import { Rules } from './rules'
-import { Events } from './events'
-import { Runners } from './runners'
+import { Character } from './character'
+import { Events } from './matrixEvents'
+import { Runners } from './matrixRunners'
+import { Backgrounds } from './matrixBackgrounds'
 import { Runs } from './runs'
 import { Town } from './town'
-import { Backgrounds } from './backgrounds'
+import { Outcomes } from './outcomes'
 
-const Data = Rules.concat(Town)
+const Data = Rules.concat(Character)
+    .concat(Town)
+    .concat(Outcomes)
     .concat(Events)
     .concat(Runners)
     .concat(Runs)
