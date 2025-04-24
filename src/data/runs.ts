@@ -86,17 +86,17 @@ export const Runs = [
                 </li>
                 <li><strong>Access the Encrypted Files</strong>
                     <ul>
-                        <li>2–5: <strong>Logic (DC 14)</strong>:<br />Break through the firewall.</li>
-                        <li>6–8: <strong>Charisma (DC 12)</strong>:<br />Social-engineer a bypass code.</li>
-                        <li>9–12: <strong>Strength (DC 10)</strong>:<br />Physically remove the secure drive.</li>
+                        <li>3–6: <strong>Logic (DC 14)</strong>:<br />Break through the firewall.</li>
+                        <li>7–9: <strong>Charisma (DC 12)</strong>:<br />Social-engineer a bypass code.</li>
+                        <li>10–12: <strong>Strength (DC 10)</strong>:<br />Physically remove the secure drive.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Exfiltrate with the Data</strong>
                     <ul>
-                        <li>2–5: <strong>Reaction (DC 14)</strong>:<br />Dodge the incoming corpsec unit.</li>
-                        <li>6–8: <strong>Agility (DC 12)</strong>:<br />Escape via the ventilation shafts.</li>
-                        <li>9–12: <strong>Charisma (DC 10)</strong>:<br />Bluff your way out in plain sight.</li>
+                        <li>4–7: <strong>Reaction (DC 14)</strong>:<br />Dodge the incoming corpsec unit.</li>
+                        <li>8-10: <strong>Agility (DC 12)</strong>:<br />Escape via the ventilation shafts.</li>
+                        <li>11–12: <strong>Charisma (DC 10)</strong>:<br />Bluff your way out in plain sight.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -132,17 +132,17 @@ export const Runs = [
                 </li>
                 <li><strong>Disable Security Bots</strong>
                     <ul>
-                        <li>2–5: <strong>Strength (DC 14)</strong>:<br />Smash the control uplink.</li>
-                        <li>6–8: <strong>Reaction (DC 12)</strong>:<br />Dodge and disrupt their patterning algorithm.</li>
-                        <li>9–12: <strong>Logic (DC 10)</strong>:<br />Inject a shutdown virus.</li>
+                        <li>3–6: <strong>Strength (DC 14)</strong>:<br />Smash the control uplink.</li>
+                        <li>7–9: <strong>Reaction (DC 12)</strong>:<br />Dodge and disrupt their patterning algorithm.</li>
+                        <li>10–12: <strong>Logic (DC 10)</strong>:<br />Inject a shutdown virus.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Take Down the AI Core</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 12)</strong>:<br />Slip past motion sensors into the core chamber.</li>
-                        <li>6–8: <strong>Logic (DC 12)</strong>:<br />Loop its sensory input matrix until collapse.</li>
-                        <li>9–12: <strong>Charisma (DC 10)</strong>:<br />Feed it paradoxes until it freezes.</li>
+                        <li>4–7: <strong>Agility (DC 12)</strong>:<br />Slip past motion sensors into the core chamber.</li>
+                        <li>8-10: <strong>Logic (DC 12)</strong>:<br />Loop its sensory input matrix until collapse.</li>
+                        <li>11–12: <strong>Charisma (DC 10)</strong>:<br />Feed it paradoxes until it freezes.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -179,7 +179,7 @@ export const Runs = [
                 <li><strong>Bypass CEO’s Personal Guard</strong>
                     <ul>
                         <li>3–6: <strong>Reaction (DC 14)</strong>:<br />Outmaneuver their formation.</li>
-                        <li>7–8: <strong>Intuition (DC 12)</strong>:<br />Find a distraction window.</li>
+                        <li>7–9: <strong>Intuition (DC 12)</strong>:<br />Find a distraction window.</li>
                         <li>10–12: <strong>Charisma (DC 10)</strong>:<br />Pretend you're scheduled for a meeting.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
