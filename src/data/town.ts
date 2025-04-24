@@ -107,7 +107,7 @@ export const Town = [
             </ul>
             <p><strong>Espionage Assignment:</strong></p>
             <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ul>`,
@@ -139,7 +139,7 @@ export const Town = [
             </ul>
             <p><strong>Bounty Pursuit:</strong></p>
             <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>`,
@@ -165,9 +165,15 @@ export const Town = [
             </ol>
             <p><strong>Nano Restoration:</strong></p>
             <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R301 &#8594; Health</li>
+            </ul>
+            <p><strong>Donate Plasma:</strong></p>
+            <ul>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Agility Recalibration:</strong></p>
             <ul>
@@ -197,13 +203,13 @@ export const Town = [
             </ol>
             <p><strong>High-Stakes Gambling:</strong></p>
             <ul>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Social Recharge:</strong></p>
             <ul>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ul>
@@ -235,9 +241,15 @@ export const Town = [
             </ol>
             <p><strong>Energetic Reboot:</strong></p>
             <ul>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Reaction</strong> or <strong>Intuition</strong></li>
                 <li>See R302 &#8594; Energy</li>
+            </ul>
+            <p><strong>Memory Mining:</strong></p>
+            <ul>
+                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Reaction Sharpening:</strong></p>
             <ul>
@@ -267,13 +279,13 @@ export const Town = [
             </ol>
             <p><strong>Vital Rejuvenation:</strong></p>
             <ul>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
             <p><strong>Cooling Meditation:</strong></p>
             <ul>
-                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ul>
@@ -337,13 +349,13 @@ export const Town = [
             </ol>
             <p><strong>Data Extraction:</strong></p>
             <ol>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ol>
             <p><strong>Neural Sync Boost:</strong></p>
             <ol>
-                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-1</strong></li>
+                <li>Pay <strong>1.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ol>
@@ -361,7 +373,7 @@ export const Town = [
             <p><em>"The city's forgotten veins."</em></p>
             <p><strong>False Credentials:</strong></p>
             <ol>
-                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+1</strong></li>
+                <li>Pay <strong>3.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ol>
