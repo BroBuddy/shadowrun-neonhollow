@@ -76,27 +76,14 @@ export const Rules = [
     {
         id: 'R008',
         title: 'Heat Mechanic',
-        content: `<p>The scale ranges from 0 to 5, at the end of each day, roll 1d6.</p>
-            <p>If the result is equal to or higher than your current Heat, the Corp takes notice — roll on the Heat Events (R009) to see how they respond.</p>
-            <p>But as your heat increases, the law takes more notice, and your rolls begin to suffer as the city becomes more hostile to your presence.</p>
+        content: `<p>The scale ranges from 0 to 5.</p>
+            <p>At the end of the day, the corporation will track you down, draining your health and energy by an amount equal to your current heat level.</p>
+            <p>The higher the heat level, the more town districts will lock down, restricting access to their services.</p>
             <p><strong>Main Sources:</strong></p>
             <ol>
                 <li>SmugglerDen</li>
                 <li>PatrolHub</li>
                 <li>EchoGarden</li>
-            </ol>`,
-    },
-    {
-        id: 'R009',
-        title: 'Heat Events',
-        content: `<p>You're on the corp's radar &#8594; Roll <strong>1d6</strong> to see how they respond.</p>
-            <ol>
-            <li><strong>Street Chase</strong> — A chase through the city streets to avoid an ambush tires you out.<ul><li>-1 Energy</li></ul></li>
-            <li><strong>Bounty Alert</strong> — A hit squad tracks you down.<ul><li>-1 Energy, -1 Health</li></ul></li>
-            <li><strong>Neuroshock Intercept</strong> — A neural disruptor pulse hits you mid-hack.<ul><li>-2 Energy, -1 Health</li></ul></li>
-            <li><strong>Blackout Protocol</strong> — The corp cuts power in your sector to flush you out.<ul><li>-2 Energy, -2 Health</li></ul></li>
-            <li><strong>Tactical Strike Drone</strong> — A silent drone shadows you, then hits with a low-yield concussive blast.<ul><li>-3 Energy, -2 Health</li></ul></li>
-            <li><strong>System Purge</strong> — The corp deploys a purge squad with incendiary rounds and area denial gas.<ul><li>-3 Energy, -3 Health</li></ul></li>
             </ol>`,
     },
     {
@@ -114,10 +101,7 @@ export const Rules = [
     {
         id: 'R011',
         title: 'Time Mechanic',
-        content: `<p>You’ve got <strong>7 days</strong> to dismantle the system. Each cycle gives you <strong>7 hours</strong> — use them wisely.</p>
-            <p>Each entry into a building or completion of a designated action will incur a time cost of one hour.</p>
-            <p>When the day winds down, <strong>Intel</strong> (R010) in hand means a run with <strong>Mr. Johnson</strong> (R601).</p>
-            <p>If you’re short, the city decides your fate — roll the <strong>Event Matrix</strong> (R401).</p>
+        content: `<p>You’ve got <strong>7 Days</strong> to dismantle the system. Each cycle gives you <strong>7 Hours</strong> — use them wisely.</p>
             <p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>`,
     },
     {
@@ -138,7 +122,6 @@ export const Rules = [
             <ul>
                 <li>Instructions (R002)</li>
                 <li>Attributes (R004)</li>
-                <li>Heat Events (R009)</li>
             </ul>
             <p><strong>Runner:</strong></p>
             <ul>

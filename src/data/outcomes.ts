@@ -13,31 +13,31 @@ export const Outcomes = [
             <li>
                 6-8: <strong>Failure</strong> – Healing stalls. You’re patched, but need more time.
                 <ul>
-                    <li>+2 Health, +1 Energy</li>
+                    <li>No Effect</li>
                 </ul>
             </li>
             <li>
                 9-11: <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
                 <ul>
-                    <li>+4 Health, +2 Energy</li>
+                    <li>+2 Health, +1 Energy</li>
                 </ul>
             </li>
             <li>
                 12-14: <strong>Good</strong> – Cells respond well, and you feel stronger.
                 <ul>
-                    <li>+6 Health, +3 Energy</li>
+                    <li>+4 Health, +2 Energy</li>
                 </ul>
             </li>
             <li>
                 15-17: <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
-                    <li>+8 Health, +4 Energy, +1 Reputation</li>
+                    <li>+6 Health, +3 Energy, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
-                    <li>+10 Health, +5 Energy, +1 Reputation</li>
+                    <li>+8 Health, +4 Energy, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
@@ -56,31 +56,31 @@ export const Outcomes = [
             <li>
                 6-8: <strong>Failure</strong> – The process does little to restore your energy, but you feel slightly better.
                 <ul>
-                    <li>+2 Energy, +1 Health</li>
+                    <li>No Effect</li>
                 </ul>
             </li>
             <li>
                 9-11: <strong>Standard</strong> – You start to regain some energy, though not at full capacity.
                 <ul>
-                    <li>+4 Energy, +2 Health</li>
+                    <li>+2 Energy, +1 Health</li>
                 </ul>
             </li>
             <li>
                 12-14: <strong>Good</strong> – The treatment has a noticeable effect, and you feel more refreshed.
                 <ul>
-                    <li>+6 Energy, +3 Health</li>
+                    <li>+4 Energy, +2 Health</li>
                 </ul>
             </li>
             <li>
                 15-17: <strong>Great</strong> – Your energy is fully restored, and you feel recharged.
                 <ul>
-                    <li>+8 Energy, +4 Health, +1 Reputation</li>
+                    <li>+6 Energy, +3 Health, +1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – You feel fully revitalized, bursting with energy and vitality.
                 <ul>
-                    <li>+10 Energy, +5 Health, +1 Reputation</li>
+                    <li>+8 Energy, +4 Health, +1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
@@ -176,32 +176,32 @@ export const Outcomes = [
         title: 'Outcome: Intel',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
-            <li>2-5: <strong>Critical Failure</strong> – Your attempt to gather intel fails miserably
+            <li>2-5: <strong>Critical Failure</strong> – Your attempt to gather intel fails miserably.
                 <ul>
                     <li>+1 Heat</li>
                 </ul>
             </li>
-            <li>6-8: <strong>Failure</strong> – You recover minor insight, but it’s not enough
+            <li>6-8: <strong>Failure</strong> – You recover minor insight, but it’s not enough.
                 <ul>
                     <li>No Effect</li>
                 </ul>
             </li>
-            <li>9-11: <strong>Standard</strong> – You gather basic intel that may be useful
+            <li>9-11: <strong>Standard</strong> – You gather basic intel that may be useful.
                 <ul>
                     <li>+1 Intel</li>
                 </ul>
             </li>
-            <li>12-14: <strong>Good</strong> – The intel you collect is solid
+            <li>12-14: <strong>Good</strong> – The intel you collect is solid.
                 <ul>
                     <li>+2 Intel</li>
                 </ul>
             </li>
-            <li>15-17: <strong>Great</strong> – Your intel collection goes exceptionally well
+            <li>15-17: <strong>Great</strong> – Your intel collection goes exceptionally well.
                 <ul>
                     <li>+3 Intel, +1 Reputation</li>
                 </ul>
             </li>
-            <li>18+: <strong>Exceptional</strong> – You uncover crucial and highly valuable intelligence
+            <li>18+: <strong>Exceptional</strong> – You uncover crucial and highly valuable intelligence.
                 <ul>
                     <li>+4 Intel, +1 Reputation</li>
                 </ul>

@@ -76,10 +76,10 @@ export const Town = [
         id: 'R102',
         title: 'Town Rules',
         content: `<p>Start each day at your underground <strong>SafeHouse</strong>.</p>
-            <p>Moving between districts costs <strong>1 Energy</strong>. Upon entering a building, roll on the <strong>Entry Table</strong>.</p>
-            <p>Every action consumes <strong>1 hour</strong> of your time. After every action, roll <strong>1d6</strong> to check for a random event. If the roll exceeds your available hours, no event triggers.</p>
-            <p>When a town event unfolds, roll on the <strong>Event Matrix</strong>. If no town event occurs, you may visit <strong>Mr. Johnson</strong>.</p>
-            <p>A day ends when a town event occurs or when you accept a mission from Mr. Johnson.</p>`,
+            <p>Each entry into a building or completion of a designated action will incur a time cost of <strong>1 Hour</strong>.</p>
+            <p>You can repeat the same action multiple times.</p>
+            <p>As an action, you can take on a mission from <strong>Mr. Johnson</strong>, but you'll need to gather sufficient information to prove your worth first.</p>
+            <p>At the end of the day, roll on the <strong>Event Matrix</strong> (R401) to uncover the happenings on the streets of <strong>NeonHollow</strong>.</p>`,
     },
     {
         id: 'R110',
@@ -164,7 +164,7 @@ export const Town = [
             <p><strong>Donate Plasma:</strong></p>
             <ul>
                 <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
-                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Agility Recalibration:</strong></p>
@@ -192,13 +192,13 @@ export const Town = [
             <hr />
             <p><strong>High-Stakes Gambling:</strong></p>
             <ul>
-                <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Social Recharge:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ul>
@@ -234,7 +234,7 @@ export const Town = [
             <p><strong>Memory Mining:</strong></p>
             <ul>
                 <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
-                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Reaction Sharpening:</strong></p>
@@ -300,6 +300,12 @@ export const Town = [
                 <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
                 <li>See R301 &#8594; Health</li>
+            </ul>
+            <p><strong>Armwrestling Tournament:</strong></p>
+            <ul>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
             </ul>
             <p><strong>Strength Conditioning:</strong></p>
             <ul>
@@ -417,22 +423,14 @@ export const Town = [
         id: 'R210',
         title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
-            <p><em>"No names. No noise. No light."</em></p>
+            <p><em>"A secret refuge where safety lies."</em></p>
             <p><strong>Stimulant Injection:</strong></p>
             <ul>
-                <li>+2 Energy</li>
+                <li>+1 Energy</li>
             </ul>
             <p><strong>Quick Reboot:</strong></p>
             <ul>
-                <li>+2 Health</li>
-            </ul>
-            <p><strong>Public Appeal:</strong></p>
-            <ul>
-                <li>+1 Reputation</li>
-            </ul>
-            <p><strong>Blackmail Bargain:</strong></p>
-            <ul>
-                <li>+3.000 ¥</li>
+                <li>+1 Health</li>
             </ul>`,
     },
 ]

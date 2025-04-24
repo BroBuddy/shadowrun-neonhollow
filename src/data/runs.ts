@@ -78,25 +78,25 @@ export const Runs = [
             <ol>
                 <li><strong>Enter the Archives Undetected</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 14)</strong>:<br />Sneak past motion detectors.</li>
-                        <li>6–8: <strong>Intuition (DC 12)</strong>:<br />Time the patrols perfectly.</li>
-                        <li>9–12: <strong>Logic (DC 10)</strong>:<br />Disable surveillance remotely.</li>
+                        <li>2–5: <strong>Agility (DC 12)</strong>:<br />Sneak past motion detectors.</li>
+                        <li>6–8: <strong>Intuition (DC 10)</strong>:<br />Time the patrols perfectly.</li>
+                        <li>9–12: <strong>Logic (DC 8)</strong>:<br />Disable surveillance remotely.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Access the Encrypted Files</strong>
                     <ul>
-                        <li>3–6: <strong>Logic (DC 14)</strong>:<br />Break through the firewall.</li>
-                        <li>7–9: <strong>Charisma (DC 12)</strong>:<br />Social-engineer a bypass code.</li>
-                        <li>10–12: <strong>Strength (DC 10)</strong>:<br />Physically remove the secure drive.</li>
+                        <li>3–6: <strong>Logic (DC 12)</strong>:<br />Break through the firewall.</li>
+                        <li>7–9: <strong>Charisma (DC 10)</strong>:<br />Social-engineer a bypass code.</li>
+                        <li>10–12: <strong>Strength (DC 8)</strong>:<br />Physically remove the secure drive.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Exfiltrate with the Data</strong>
                     <ul>
-                        <li>4–7: <strong>Reaction (DC 14)</strong>:<br />Dodge the incoming corpsec unit.</li>
-                        <li>8-10: <strong>Agility (DC 12)</strong>:<br />Escape via the ventilation shafts.</li>
-                        <li>11–12: <strong>Charisma (DC 10)</strong>:<br />Bluff your way out in plain sight.</li>
+                        <li>4–7: <strong>Reaction (DC 12)</strong>:<br />Dodge the incoming corpsec unit.</li>
+                        <li>8-10: <strong>Agility (DC 10)</strong>:<br />Escape via the ventilation shafts.</li>
+                        <li>11–12: <strong>Charisma (DC 8)</strong>:<br />Bluff your way out in plain sight.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -124,25 +124,25 @@ export const Runs = [
             <ol>
                 <li><strong>Overload the Firewall</strong>
                     <ul>
-                        <li>2–5: <strong>Logic (DC 14)</strong>:<br />Launch a deep intrusion spike.</li>
-                        <li>6–8: <strong>Charisma (DC 12)</strong>:<br />Con a helpdesk agent into granting deeper access.</li>
-                        <li>9–12: <strong>Intuition (DC 10)</strong>:<br />Exploit a forgotten maintenance port.</li>
+                        <li>2–5: <strong>Logic (DC 12)</strong>:<br />Launch a deep intrusion spike.</li>
+                        <li>6–8: <strong>Charisma (DC 10)</strong>:<br />Con a helpdesk agent into granting deeper access.</li>
+                        <li>9–12: <strong>Intuition (DC 8)</strong>:<br />Exploit a forgotten maintenance port.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Disable Security Bots</strong>
                     <ul>
-                        <li>3–6: <strong>Strength (DC 14)</strong>:<br />Smash the control uplink.</li>
-                        <li>7–9: <strong>Reaction (DC 12)</strong>:<br />Dodge and disrupt their patterning algorithm.</li>
-                        <li>10–12: <strong>Logic (DC 10)</strong>:<br />Inject a shutdown virus.</li>
+                        <li>3–6: <strong>Strength (DC 12)</strong>:<br />Smash the control uplink.</li>
+                        <li>7–9: <strong>Reaction (DC 10)</strong>:<br />Dodge and disrupt their patterning algorithm.</li>
+                        <li>10–12: <strong>Logic (DC 8)</strong>:<br />Inject a shutdown virus.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Take Down the AI Core</strong>
                     <ul>
                         <li>4–7: <strong>Agility (DC 12)</strong>:<br />Slip past motion sensors into the core chamber.</li>
-                        <li>8-10: <strong>Logic (DC 12)</strong>:<br />Loop its sensory input matrix until collapse.</li>
-                        <li>11–12: <strong>Charisma (DC 10)</strong>:<br />Feed it paradoxes until it freezes.</li>
+                        <li>8-10: <strong>Logic (DC 10)</strong>:<br />Loop its sensory input matrix until collapse.</li>
+                        <li>11–12: <strong>Charisma (DC 8)</strong>:<br />Feed it paradoxes until it freezes.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
@@ -170,25 +170,25 @@ export const Runs = [
             <ol>
                 <li><strong>Reach the Executive Elevator</strong>
                     <ul>
-                        <li>2–5: <strong>Agility (DC 14)</strong>:<br />Dodge through the lobby scanners.</li>
-                        <li>6–8: <strong>Logic (DC 12)</strong>:<br />Hack the elevator’s access panel.</li>
-                        <li>9–12: <strong>Strength (DC 10)</strong>:<br />Force open the maintenance shaft.</li>
+                        <li>2–5: <strong>Agility (DC 12)</strong>:<br />Dodge through the lobby scanners.</li>
+                        <li>6–8: <strong>Logic (DC 10)</strong>:<br />Hack the elevator’s access panel.</li>
+                        <li>9–12: <strong>Strength (DC 8)</strong>:<br />Force open the maintenance shaft.</li>
                         <li><strong>Fail:</strong> Performance 1</li>
                     </ul>
                 </li>
                 <li><strong>Bypass CEO’s Personal Guard</strong>
                     <ul>
-                        <li>3–6: <strong>Reaction (DC 14)</strong>:<br />Outmaneuver their formation.</li>
-                        <li>7–9: <strong>Intuition (DC 12)</strong>:<br />Find a distraction window.</li>
-                        <li>10–12: <strong>Charisma (DC 10)</strong>:<br />Pretend you're scheduled for a meeting.</li>
+                        <li>3–6: <strong>Reaction (DC 12)</strong>:<br />Outmaneuver their formation.</li>
+                        <li>7–9: <strong>Intuition (DC 10)</strong>:<br />Find a distraction window.</li>
+                        <li>10–12: <strong>Charisma (DC 8)</strong>:<br />Pretend you're scheduled for a meeting.</li>
                         <li><strong>Fail:</strong> Performance 2</li>
                     </ul>
                 </li>
                 <li><strong>Deliver the Threat</strong>
                     <ul>
-                        <li>4–7: <strong>Charisma (DC 14)</strong>:<br />Intimidate with presence and proof.</li>
-                        <li>8–10: <strong>Logic (DC 12)</strong>:<br />Reveal the exploit in their media plan.</li>
-                        <li>11–12: <strong>Strength (DC 10)</strong>:<br />Leave physical evidence of your power.</li>
+                        <li>4–7: <strong>Charisma (DC 12)</strong>:<br />Intimidate with presence and proof.</li>
+                        <li>8–10: <strong>Logic (DC 10)</strong>:<br />Reveal the exploit in their media plan.</li>
+                        <li>11–12: <strong>Strength (DC 8)</strong>:<br />Leave physical evidence of your power.</li>
                         <li><strong>Fail:</strong> Performance 3</li>
                     </ul>
                 </li>
