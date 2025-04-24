@@ -6,67 +6,67 @@ export const Town = [
             <p><em>"Where the lights never die — only the people do."</em></p>
             <p><strong>District Lockdowns:</strong></p>
             <ul>
-                <li>Heat 1 &#8594; Security District</li>
-                <li>Heat 2 &#8594; Entertainment District</li>
-                <li>Heat 3 &#8594; Industrial District</li>
+                <li>Heat 1 &#8594; Prime District</li>
+                <li>Heat 2 &#8594; Vitalis District</li>
+                <li>Heat 3 &#8594; Pulse District</li>
             </ul>
             <hr />
-            <p><strong>Security District:</strong></p>
+            <p><strong>Prime District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>CorpTower<br />
                     R110</p>
                 </div>
                 <div class="flex-1 basis-1/3">
+                    <p>NeuralNexus<br />
+                    R180</p>
+                </div>
+                <div class="flex-1 basis-1/3">
                     <p>PatrolHub<br />
                     R120</p>
                 </div>
-                <div class="flex-1 basis-1/3">
-                </div>
             </div>
-            <p><strong>Entertainment District:</strong></p>
+            <p><strong>Vitalis District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>BioCare<br />
                     R130</p>
                 </div>
                 <div class="flex-1 basis-1/3">
-                    <p>HoloLounge<br />
-                    R140</p>
+                    <p>EchoGarden<br />
+                    R160</p>
                 </div>
                 <div class="flex-1 basis-1/3">
                     <p>DreamSphere<br />
                     R150</p>
                 </div>
             </div>
-            <p><strong>Industrial District:</strong></p>
+            <p><strong>Pulse District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
-                    <p>EchoGarden<br />
-                    R160</p>
+                    <p>HoloLounge<br />
+                    R140</p>
                 </div>
                 <div class="flex-1 basis-1/3">
                     <p>IronGym<br />
                     R170</p>
                 </div>
                 <div class="flex-1 basis-1/3">
-                    <p>NeuralNexus<br />
-                    R180</p>
+                    <p>ZeroZone<br />
+                    R200</p>
                 </div>
             </div>
-            <p><strong>Underground District:</strong></p>
+            <p><strong>Noctis District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>SmugglerDen<br />
                     R190</p>
                 </div>
                 <div class="flex-1 basis-1/3">
-                    <p>ZeroZone<br />
-                    R200</p>
-                </div>
-                <div class="flex-1 basis-1/3">
                     <p>SafeHouse<br />
                     R210</p>
+                </div>
+                <div class="flex-1 basis-1/3">
                 </div>
             </div>
             <hr />
