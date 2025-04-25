@@ -116,48 +116,31 @@ export const Character = [
             </table>
             <hr />
             <p><strong>4. Gear:</strong></p>
-            <p>Apply the bonuses to your player sheet.</p>
+            <p>Choose one item for free from the Fixer's Workshop:</p>
             <ul>
                 <li>
-                    <strong>Power Gauntlets:</strong>
-                    <ul>
-                        <li>+1 Strength</li>
-                    </ul>
+                    <strong>Power Gauntlets:</strong> +1 Strength
                 </li>
                 <li>
-                    <strong>Nano-Tread Boots:</strong>
-                    <ul>
-                        <li>+1 Agility</li>
-                    </ul>
+                    <strong>Nano-Tread Boots:</strong> +1 Agility
                 </li>
                 <li>
-                    <strong>Reflex Enhancer Implant:</strong>
-                    <ul>
-                        <li>+1 Reaction</li>
-                    </ul>
+                    <strong>Reflex Enhancer Implant:</strong> +1 Reaction
                 </li>
                 <li>
-                    <strong>Neural Interface Headset:</strong>
-                    <ul>
-                        <li>+1 Logic</li>
-                    </ul>
+                    <strong>Neural Interface Headset:</strong> +1 Logic
                 </li>
                 <li>
-                    <strong>Synaptic Amplifier:</strong>
-                    <ul>
-                        <li>+1 Intuition</li>
-                    </ul>
+                    <strong>Synaptic Amplifier:</strong> +1 Intuition
                 </li>
                 <li>
-                    <strong>Holo-Disguise Mask:</strong>
-                    <ul>
-                        <li>+1 Charisma</li>
-                    </ul>
+                    <strong>Holo-Disguise Mask:</strong> +1 Charisma
                 </li>
             </ul>
+            <p>Apply the bonus to your player sheet.</p>
             <hr />
             <p><strong>5. Name:</strong></p>
-            <p>Each archetype has its own name pool.</p>
+            <p>Each archetype has its own name pool:</p>
             <ul>
                 <li>(R041) Street Samurai</li>
                 <li>(R042) Decker</li>
@@ -168,7 +151,6 @@ export const Character = [
             </ul>
             <hr />
             <p><strong>6. Mode:</strong></p>
-            <p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>
             <p>For your first journey, I suggest starting with Easy Mode to get a feel for the city's pulse.</p>
             <ul>
                 <li>
