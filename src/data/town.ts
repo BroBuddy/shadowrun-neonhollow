@@ -6,12 +6,12 @@ export const Town = [
             <p><em>"Where the lights never die — only the people do."</em></p>
             <p><strong>District Lockdowns:</strong></p>
             <ul>
-                <li>Heat 1 &#8594; Prime District</li>
-                <li>Heat 2 &#8594; Vitalis District</li>
-                <li>Heat 3 &#8594; Pulse District</li>
+                <li>Heat 1 &#8594; Quantum District</li>
+                <li>Heat 2 &#8594; Serenity District</li>
+                <li>Heat 3 &#8594; Vortex District</li>
             </ul>
             <hr />
-            <p><strong>Prime District:</strong></p>
+            <p><strong>Quantum District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>CorpTower<br />
@@ -26,7 +26,7 @@ export const Town = [
                     R120</p>
                 </div>
             </div>
-            <p><strong>Vitalis District:</strong></p>
+            <p><strong>Serenity District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>BioCare<br />
@@ -41,7 +41,7 @@ export const Town = [
                     R150</p>
                 </div>
             </div>
-            <p><strong>Pulse District:</strong></p>
+            <p><strong>Vortex District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>HoloLounge<br />
@@ -56,7 +56,7 @@ export const Town = [
                     R200</p>
                 </div>
             </div>
-            <p><strong>Noctis District:</strong></p>
+            <p><strong>Undercity District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
                     <p>SmugglerDen<br />
