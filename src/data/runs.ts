@@ -23,14 +23,15 @@ export const Runs = [
     {
         id: 'R602',
         title: 'Mission Rules',
-        content: `<ol>
-            <li>You must tackle the missions in order.</li>
-            <li>Face three obstacles. Roll 2d6 to determine your skill check for each.</li>
-            <li>DC is the number of successes needed to clear a challenge.</li>
-            <li>If you succeed at all three, the twist is revealed.</li>
-            <li>Each success contributes to your overall Performance score.</li>
-            <li>Report to Mr. Johnson after the run to receive your reward based on Performance (R603).</li>
-            </ol>`,
+        content: `<p>You must tackle the missions in order and each mission follows a specific structure:
+            </p>
+            <ul>
+                <li>Face three obstacles. Roll 2d6 to determine your skill check for each.</li>
+                <li>DC is the number of successes needed to clear a challenge.</li>
+                <li>If you succeed at all three, the twist is revealed.</li>
+                <li>Each success contributes to your overall Performance score.</li>
+            </ul>
+            <p>Report to <strong>Mr. Johnson</strong> after the run to receive your reward based on Performance (R603).</p>`,
     },
     {
         id: 'R603',
@@ -44,22 +45,25 @@ export const Runs = [
                 </li>
                 <li><strong>Underwhelming</strong> – Setback, but Lessons Learned.
                     <ul>
-                        <li>+1 Heat, +1 Intel</li>
+                        <li>Roll 2d6 &#8594; <strong>+2</strong> &#8594; See R305 &#8594; Gain Intel</li>
                     </ul>
                 </li>
                 <li><strong>Partial</strong> – Glitched Out, Grabbed Clues.
                     <ul>
-                        <li>+5.000 ¥, +1 Heat, +2 Intel</li>
+                        <li>Roll 2d6 &#8594; <strong>+4</strong> &#8594; See R305 &#8594; Gain Intel</li>
+                        <li>Roll 2d6 &#8594; <strong>+2</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
                     </ul>
                 </li>
                 <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
                     <ul>
-                        <li>+6.000 ¥, +1 Heat, next Mission available</li>
+                        <li>Next Mission available</li>
+                        <li>Roll 2d6 &#8594; <strong>+4</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
                     </ul>
                 </li>
                 <li><strong>Exceptional</strong> – Flawless execution, no trace left.
                     <ul>
-                        <li>+9.000 ¥, next Mission available</li>
+                        <li>Next Mission available</li>
+                        <li>Roll 2d6 &#8594; <strong>+6</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
                     </ul>
                 </li>
             </ol>`,
@@ -75,40 +79,41 @@ export const Runs = [
             <p><strong>Briefing:</strong><br />
             BioCare suspects the megacorp of illegally cloning biometric datasets from neural implant users. You’re tasked with infiltrating the Legal Archives in MegaCorp, pulling incriminating files, and leaking them into the open net. Clean, silent, and fast—their reputation depends on it.</p>
             <hr />
-            <ol>
-                <li><strong>Enter the Archives Undetected</strong>
-                    <ul>
-                        <li>2–5: <strong>Agility (DC 12)</strong>:<br />Sneak past motion detectors.</li>
-                        <li>6–8: <strong>Intuition (DC 10)</strong>:<br />Time the patrols perfectly.</li>
-                        <li>9–12: <strong>Logic (DC 8)</strong>:<br />Disable surveillance remotely.</li>
-                        <li><strong>Fail:</strong> Performance 1</li>
-                    </ul>
-                </li>
-                <li><strong>Access the Encrypted Files</strong>
-                    <ul>
-                        <li>3–6: <strong>Logic (DC 12)</strong>:<br />Break through the firewall.</li>
-                        <li>7–9: <strong>Charisma (DC 10)</strong>:<br />Social-engineer a bypass code.</li>
-                        <li>10–12: <strong>Strength (DC 8)</strong>:<br />Physically remove the secure drive.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
-                    </ul>
-                </li>
-                <li><strong>Exfiltrate with the Data</strong>
-                    <ul>
-                        <li>4–7: <strong>Reaction (DC 12)</strong>:<br />Dodge the incoming corpsec unit.</li>
-                        <li>8-10: <strong>Agility (DC 10)</strong>:<br />Escape via the ventilation shafts.</li>
-                        <li>11–12: <strong>Charisma (DC 8)</strong>:<br />Bluff your way out in plain sight.</li>
-                        <li><strong>Fail:</strong> Performance 3</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><strong>1. Enter the Archives Undetected</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>2–5 &#8594; <strong>Agility (DC 12)</strong>:<br />Sneak past motion detectors.</li>
+                <li>6–8 &#8594; <strong>Intuition (DC 10)</strong>:<br />Time the patrols perfectly.</li>
+                <li>9–12 &#8594; <strong>Logic (DC 8)</strong>:<br />Disable surveillance remotely.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <hr />
+            <p><strong>2. Access the Encrypted Files</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>3–6 &#8594; <strong>Logic (DC 12)</strong>:<br />Break through the firewall.</li>
+                <li>7–9 &#8594; <strong>Charisma (DC 10)</strong>:<br />Social-engineer a bypass code.</li>
+                <li>10–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Physically remove the secure drive.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <hr />
+            <p><strong>3. Exfiltrate with the Data</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>4–7 &#8594; <strong>Reaction (DC 12)</strong>:<br />Dodge the incoming corpsec unit.</li>
+                <li>8-10 &#8594; <strong>Agility (DC 10)</strong>:<br />Escape via the ventilation shafts.</li>
+                <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Bluff your way out in plain sight.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Partial</p>
             <hr />
             <p><strong>Twist:</strong><br />
             A corporate agent is already leaking the data to another buyer. Time is limited.</p>
             <ul>
-                <li><strong>Reaction (DC 14)</strong> or <strong>Intuition (DC 14)</strong>:<br />Spot the rival agent’s trail and intercept.</li>
-                <li><strong>Fail:</strong> Performance 4</li>
-                <li><strong>Success:</strong> Performance 5</li>
-            </ul>`,
+                <li><strong>Reaction (DC 14)</strong> or <strong>Intuition (DC 14)</strong>:<br />
+                Spot the rival agent’s trail and intercept.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Impressive</p>
+            <p>Success? &#8594; See R603 &#8594; Exceptional</p>`,
     },
     {
         id: 'R620',
@@ -119,87 +124,88 @@ export const Runs = [
             <p><strong>Location:</strong><br />
             MegaCorp</p>
             <p><strong>Briefing:</strong><br />
-            DreamSphere's immersive sleep technology is under threat — MegaCorp's surveillance AI is intercepting dreamscapes to manipulate user behavior. They want a full blackout of the Corp's security grid. Slip past the eyes, fry the core, and vanish before anyone realizes the dream changed.</p>
+            DreamSphere's immersive sleep tech is being hijacked—MegaCorp’s surveillance AI is tapping into user dreamscapes to manipulate behavior. Your task: breach their digital stronghold, black out the security grid, and ghost out before they realize the dream's turned against them.</p>
             <hr />
-            <ol>
-                <li><strong>Overload the Firewall</strong>
-                    <ul>
-                        <li>2–5: <strong>Logic (DC 12)</strong>:<br />Launch a deep intrusion spike.</li>
-                        <li>6–8: <strong>Charisma (DC 10)</strong>:<br />Con a helpdesk agent into granting deeper access.</li>
-                        <li>9–12: <strong>Intuition (DC 8)</strong>:<br />Exploit a forgotten maintenance port.</li>
-                        <li><strong>Fail:</strong> Performance 1</li>
-                    </ul>
-                </li>
-                <li><strong>Disable Security Bots</strong>
-                    <ul>
-                        <li>3–6: <strong>Strength (DC 12)</strong>:<br />Smash the control uplink.</li>
-                        <li>7–9: <strong>Reaction (DC 10)</strong>:<br />Dodge and disrupt their patterning algorithm.</li>
-                        <li>10–12: <strong>Logic (DC 8)</strong>:<br />Inject a shutdown virus.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
-                    </ul>
-                </li>
-                <li><strong>Take Down the AI Core</strong>
-                    <ul>
-                        <li>4–7: <strong>Agility (DC 12)</strong>:<br />Slip past motion sensors into the core chamber.</li>
-                        <li>8-10: <strong>Logic (DC 10)</strong>:<br />Loop its sensory input matrix until collapse.</li>
-                        <li>11–12: <strong>Charisma (DC 8)</strong>:<br />Feed it paradoxes until it freezes.</li>
-                        <li><strong>Fail:</strong> Performance 3</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><strong>1. Overload the Firewall</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>2–5 &#8594; <strong>Logic (DC 12)</strong>:<br />Launch a deep intrusion spike.</li>
+                <li>6–8 &#8594; <strong>Charisma (DC 10)</strong>:<br />Con a helpdesk agent into granting deeper access.</li>
+                <li>9–12 &#8594; <strong>Intuition (DC 8)</strong>:<br />Exploit a forgotten maintenance port.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <hr />
+            <p><strong>2. Disable Security Bots</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>3–6 &#8594; <strong>Strength (DC 12)</strong>:<br />Smash the control uplink.</li>
+                <li>7–9 &#8594; <strong>Reaction (DC 10)</strong>:<br />Disrupt their patrol pattern.</li>
+                <li>10–12 &#8594; <strong>Logic (DC 8)</strong>:<br />Inject a shutdown virus.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <hr />
+            <p><strong>3. Take Down the AI Core</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>4–7 &#8594; <strong>Agility (DC 12)</strong>:<br />Slip through sensor coverage into the core.</li>
+                <li>8–10 &#8594; <strong>Logic (DC 10)</strong>:<br />Loop the AI’s sensory matrix into feedback.</li>
+                <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Overwhelm it with illogical paradoxes.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Partial</p>
             <hr />
             <p><strong>Twist:</strong><br />
-            A secondary AI activates, attempting a rollback.</p>
+            A backup AI attempts an emergency rollback to restore the network.</p>
             <ul>
-                <li><strong>Strength (DC 14)</strong> or <strong>Agility (DC 14)</strong>:<br />Trace and crash the fallback node before reboot completes.</li>
-                <li><strong>Fail:</strong> Performance 4</li>
-                <li><strong>Success:</strong> Performance 5</li>
-            </ul>`,
+                <li><strong>Strength (DC 14)</strong> or <strong>Agility (DC 14)</strong>:<br />
+                Crash the fallback node before reboot completes.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Impressive</p>
+            <p>Success? &#8594; See R603 &#8594; Exceptional</p>`,
     },
     {
         id: 'R630',
         title: 'Confront the CEO',
-        content: `
-            <p><strong>Client:</strong><br />
+        content: `<p><strong>Client:</strong><br />
             Kael Stride, HoloLounge</p>
             <p><strong>Location:</strong><br />
             MegaCorp</p>
             <p><strong>Briefing:</strong><br />
             The CEO of the megacorp is planning to seize control of HoloLounge’s independent entertainment feeds, pushing brainwash protocols through immersive media. HoloLounge wants you to break into the executive floor, confront the CEO directly, and deliver a message: some minds can’t be bought.</p>
             <hr />
-            <ol>
-                <li><strong>Reach the Executive Elevator</strong>
-                    <ul>
-                        <li>2–5: <strong>Agility (DC 12)</strong>:<br />Dodge through the lobby scanners.</li>
-                        <li>6–8: <strong>Logic (DC 10)</strong>:<br />Hack the elevator’s access panel.</li>
-                        <li>9–12: <strong>Strength (DC 8)</strong>:<br />Force open the maintenance shaft.</li>
-                        <li><strong>Fail:</strong> Performance 1</li>
-                    </ul>
-                </li>
-                <li><strong>Bypass CEO’s Personal Guard</strong>
-                    <ul>
-                        <li>3–6: <strong>Reaction (DC 12)</strong>:<br />Outmaneuver their formation.</li>
-                        <li>7–9: <strong>Intuition (DC 10)</strong>:<br />Find a distraction window.</li>
-                        <li>10–12: <strong>Charisma (DC 8)</strong>:<br />Pretend you're scheduled for a meeting.</li>
-                        <li><strong>Fail:</strong> Performance 2</li>
-                    </ul>
-                </li>
-                <li><strong>Deliver the Threat</strong>
-                    <ul>
-                        <li>4–7: <strong>Charisma (DC 12)</strong>:<br />Intimidate with presence and proof.</li>
-                        <li>8–10: <strong>Logic (DC 10)</strong>:<br />Reveal the exploit in their media plan.</li>
-                        <li>11–12: <strong>Strength (DC 8)</strong>:<br />Leave physical evidence of your power.</li>
-                        <li><strong>Fail:</strong> Performance 3</li>
-                    </ul>
-                </li>
-            </ol>
+            <p><strong>1. Reach the Executive Elevator</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>2–5 &#8594; <strong>Agility (DC 12)</strong>:<br />Dodge through the lobby scanners.</li>
+                <li>6–8 &#8594; <strong>Logic (DC 10)</strong>:<br />Hack the elevator’s access panel.</li>
+                <li>9–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Force open the maintenance shaft.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <hr />
+            <p><strong>2. Bypass CEO’s Personal Guard</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>3–6 &#8594; <strong>Reaction (DC 12)</strong>:<br />Outmaneuver their formation.</li>
+                <li>7–9 &#8594; <strong>Intuition (DC 10)</strong>:<br />Find a distraction window.</li>
+                <li>10–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Pretend you're scheduled for a meeting.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <hr />
+            <p><strong>3. Deliver the Threat</strong></p>
+            <p>Roll 2d6:</p>
+            <ul>
+                <li>4–7 &#8594; <strong>Charisma (DC 12)</strong>:<br />Intimidate with presence and proof.</li>
+                <li>8–10 &#8594; <strong>Logic (DC 10)</strong>:<br />Reveal the exploit in their media plan.</li>
+                <li>11–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Leave physical evidence of your power.</li>
+            </ul>
+            <p>Fail? &#8594; See R603 &#8594; Partial</p>
             <hr />
             <p><strong>Twist:</strong><br />
             The CEO is an advanced AI running a remote body. The real threat lies deeper.</p>
             <ul>
-                <li><strong>Logic (DC 14)</strong> or <strong>Charisma (DC 14)</strong>:<br />Realize it’s a decoy and trace the real core.</li>
-                <li><strong>Fail:</strong> See R014</li>
-                <li><strong>Success:</strong> See R015</li>
-            </ul>`,
+                <li><strong>Logic (DC 14)</strong> or <strong>Charisma (DC 14)</strong>:<br />
+                Realize it’s a decoy and trace the real core.</li>
+            </ul>
+            <p>Fail? &#8594; See R014</p>
+            <p>Success? &#8594; See R015</p>`,
     },
 ]

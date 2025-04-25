@@ -261,38 +261,38 @@ export const Runners = [
     },
     {
         id: 'R561',
-        title: 'Rook “Chimera” Solomon',
+        title: 'Ghost',
         content:
-            '<p>Rook, a 29-year-old male Changeling Street Samurai, stands at 175 cm and weighs 72 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 4</li><li><strong>Agility:</strong> 6</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 4</li><li><strong>Charisma:</strong> 2</li></ul><p><strong>Background:</strong><br />Rook was born in a lab, the product of a corporate experiment aimed at producing enhanced operatives. Now free from corporate control, he uses his shape-shifting abilities and enhanced senses to navigate the shadows as a mercenary. Despite his unusual appearance, he has made a name for himself as a quick and deadly operative.</p>',
+            '<p>Ghost, a 32-year-old male Human Street Samurai, stands at 178 cm and weighs 70 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 5</li><li><strong>Agility:</strong> 6</li><li><strong>Reaction:</strong> 7</li><li><strong>Logic:</strong> 4</li><li><strong>Intuition:</strong> 6</li><li><strong>Charisma:</strong> 3</li></ul><p><strong>Background:</strong><br />Ghost is a skilled and enigmatic street samurai with a deep connection to his Amerindian heritage. Known for his precision and stealth, he operates in the shadows, taking on high-risk missions with unwavering focus.</p>',
     },
     {
         id: 'R562',
-        title: 'Iris “Eclipse” Vasiliev',
+        title: 'FastJack',
         content:
-            '<p>Iris, a 24-year-old female Changeling Decker, stands at 168 cm and weighs 60 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 2</li><li><strong>Agility:</strong> 3</li><li><strong>Reaction:</strong> 4</li><li><strong>Logic:</strong> 6</li><li><strong>Intuition:</strong> 5</li><li><strong>Charisma:</strong> 3</li></ul><p><strong>Background:</strong><br />Iris grew up as an underground celebrity in the changeling community, a figure of mystery and intrigue. With a carefully curated mix of bioware and genetic modification, she blends into various social circles with ease. Iris now serves as a social manipulator, gathering secrets for anyone who can afford her services.</p>',
+            '<p>FastJack, a 76-year-old male Human Decker, stands at 180 cm and weighs 75 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 3</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 7</li><li><strong>Logic:</strong> 8</li><li><strong>Intuition:</strong> 8</li><li><strong>Charisma:</strong> 6</li></ul><p><strong>Background:</strong><br />FastJack started exploring the Matrix at a young age, honing his skills to become the best decker to ever live. A survivor of the second Matrix Crash and founder of the Jackpoint network, he has become a central figure in the shadowrunning community.</p>',
     },
     {
         id: 'R563',
-        title: 'Tobias “Shifter” Hart',
+        title: 'Dodger',
         content:
-            '<p>Tobias, a 32-year-old male Changeling Rigger, stands at 180 cm and weighs 88 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 7</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 4</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 2</li><li><strong>Charisma:</strong> 2</li></ul><p><strong>Background:</strong><br />Tobias`s body is a patchwork of biomechanical enhancements and animalistic traits. Born with a desire to embrace his mutations, he turned to the life of a mercenary. With his enhanced strength and intimidating appearance, Tobias has earned a reputation as a reliable muscle-for-hire.</p>',
+            '<p>Dodger, a 35-year-old male Elf Decker, stands at 175 cm and weighs 68 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 3</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 6</li><li><strong>Logic:</strong> 7</li><li><strong>Intuition:</strong> 6</li><li><strong>Charisma:</strong> 5</li></ul><p><strong>Background:</strong><br />Dodger is a legendary elven decker known for his dramatic flair and romantic connection to the AI Morgan/Megaera. He has been a key figure in the Matrix, battling against Renraku and Deus while striving to restore Megaera.</p>',
     },
     {
         id: 'R564',
-        title: 'Nix “Vapor” Richter',
+        title: 'Captain Chaos',
         content:
-            '<p>Nix, a 27-year-old female Changeling Mage, stands at 165 cm and weighs 55 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 2</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 3</li><li><strong>Logic:</strong> 6</li><li><strong>Intuition:</strong> 5</li><li><strong>Charisma:</strong> 4</li></ul><p><strong>Background:</strong><br />Nix was born with adaptive camouflage as part of an experimental project aimed at creating stealth operatives. She uses her unique abilities to slip in and out of places undetected, gathering intel for various factions and conducting sabotage operations when necessary.</p>',
+            '<p>Captain Chaos, a 70-year-old male Human Decker, stands at 175 cm and weighs 72 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 3</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 6</li><li><strong>Logic:</strong> 7</li><li><strong>Intuition:</strong> 6</li><li><strong>Charisma:</strong> 5</li></ul><p><strong>Background:</strong><br />Captain Chaos was the legendary SysOp of the Shadowland BBS, a vital resource for the shadowrunning community. Known for his neo-anarchist ideals and dedication to the Matrix, he played a pivotal role during the Crash of 2064, sacrificing himself to protect the Shadowland network.</p>',
     },
     {
         id: 'R565',
-        title: 'Kiera “Mirage” Callahan',
+        title: 'Sally Tsung',
         content:
-            '<p>Kiera, a 29-year-old female Changeling Face, stands at 170 cm and weighs 64 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 3</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 4</li><li><strong>Logic:</strong> 7</li><li><strong>Intuition:</strong> 3</li><li><strong>Charisma:</strong> 2</li></ul><p><strong>Background:</strong><br />Kiera was part of a shadow project where her cybernetics allowed her to manipulate illusions. Now, she uses her powers to confuse enemies, escape danger, and gather data. With a quick wit and a keen mind, she is an invaluable asset to any team.</p>',
+            '<p>Sally Tsung, a 30-year-old female Human Mage, stands at 170 cm and weighs 65 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 3</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 6</li><li><strong>Intuition:</strong> 7</li><li><strong>Charisma:</strong> 6</li></ul><p><strong>Background:</strong><br />Sally Tsung is a skilled mage and shadowrunner based in Seattle. Known for her hermetic magical abilities and her involvement in high-stakes missions, she has worked alongside notable runners like Dodger and Ghost-Who-Walks-Inside.</p>',
     },
     {
         id: 'R566',
-        title: 'Felix “Ghost” Walker',
+        title: 'Harlequin',
         content:
-            '<p>Felix, a 30-year-old male Changeling Shaman, stands at 173 cm and weighs 65 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 2</li><li><strong>Agility:</strong> 6</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 4</li><li><strong>Intuition:</strong> 3</li><li><strong>Charisma:</strong> 2</li></ul><p><strong>Background:</strong><br />Felix was once a corporate hacker who became disillusioned with the system. After undergoing genetic enhancements, he gained the ability to shift his physical form into a more agile, elusive state. He now uses his agility and his tech skills to run high-stakes data heists in the shadows of the Sixth World.</p>',
+            '<p>Harlequin, an immortal male Elf Magician, stands at 178 cm and weighs 70 kg.</p><p><strong>Attributes:</strong></p><ul><li><strong>Strength:</strong> 2</li><li><strong>Agility:</strong> 5</li><li><strong>Reaction:</strong> 6</li><li><strong>Logic:</strong> 7</li><li><strong>Intuition:</strong> 8</li><li><strong>Charisma:</strong> 8</li></ul><p><strong>Background:</strong><br />Harlequin, also known as Har’lea’quinn, is one of the most powerful and enigmatic figures in the Sixth World. As an immortal elf, he has fought against the Horrors for centuries, striving to protect metahumanity.</p>',
     },
 ]

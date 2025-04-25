@@ -1,11 +1,189 @@
 export const Character = [
     {
-        id: 'R020',
-        title: 'Metatype',
-        content:
-            '<p>Roll 1d6 to determine your metatype:</p>' +
-            '<ol><li>(R021) Human</li><li>(R022) Elf</li><li>(R023) Dwarf</li><li>(R024) Orc</li><li>(R025) Troll</li><li>Roll Again</li></ol>' +
-            '<p>Apply the bonuses to your attributes.</p>',
+        id: 'R003',
+        title: 'Character Creation',
+        content: `<p>Follow this guide to build your runner before diving into the shadows.</p>
+            <ol>
+                <li>Metatype</li>
+                <li>Archetype</li>
+                <li>Background</li>
+                <li>Gear</li>
+                <li>Name</li>
+                <li>Mode</li>
+            </ol>
+            <hr />
+            <p><strong>1. Metatype:</strong></p>
+            <p>Roll 1d6:</p>
+            <ol>
+                <li>(R021) Human</li>
+                <li>(R022) Elf</li>
+                <li>(R023) Dwarf</li>
+                <li>(R024) Orc</li>
+                <li>(R025) Troll</li>
+                <li>Roll Again</li>
+            </ol>
+            <p>Apply the attributes to your player sheet.</p>
+            <hr />
+            <p><strong>2. Archetype:</strong></p>
+            <p>Roll 1d6:</p>
+            <ol>
+                <li>(R031) Street Samurai</li>
+                <li>(R032) Decker</li>
+                <li>(R033) Rigger</li>
+                <li>(R034) Mage</li>
+                <li>(R035) Face</li>
+                <li>(R036) Shaman</li>
+            </ol>
+            <p>Apply the bonuses to your player sheet.</p>
+            <hr />
+            <p><strong>3. Background:</strong></p>
+            <p>How to roll on the Background Matrix:</p>
+            <ol>
+                <li>Your archtype is the tens digit.</li>
+                <li><strong>Roll 1d6</strong> for the ones digit.</li>
+                <li>Combine the two numbers to form a two-digit number.</li>
+                <li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>
+                <li>Each background provides both a strength and a weakness.</li>
+            </ol>
+            <table>
+                <thead>
+                    <tr>
+                        <th>2d6</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>R711</td>
+                        <td>R712</td>
+                        <td>R713</td>
+                        <td>R714</td>
+                        <td>R715</td>
+                        <td>R716</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>R721</td>
+                        <td>R722</td>
+                        <td>R723</td>
+                        <td>R724</td>
+                        <td>R725</td>
+                        <td>R726</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>R731</td>
+                        <td>R732</td>
+                        <td>R733</td>
+                        <td>R734</td>
+                        <td>R735</td>
+                        <td>R736</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>R741</td>
+                        <td>R742</td>
+                        <td>R743</td>
+                        <td>R744</td>
+                        <td>R745</td>
+                        <td>R746</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>R751</td>
+                        <td>R752</td>
+                        <td>R753</td>
+                        <td>R754</td>
+                        <td>R755</td>
+                        <td>R756</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>R761</td>
+                        <td>R762</td>
+                        <td>R763</td>
+                        <td>R764</td>
+                        <td>R765</td>
+                        <td>R766</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <p><strong>4. Gear:</strong></p>
+            <p>Apply the bonuses to your player sheet.</p>
+            <ul>
+                <li>
+                    <strong>Power Gauntlets:</strong>
+                    <ul>
+                        <li>+1 Strength</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Nano-Tread Boots:</strong>
+                    <ul>
+                        <li>+1 Agility</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Reflex Enhancer Implant:</strong>
+                    <ul>
+                        <li>+1 Reaction</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Neural Interface Headset:</strong>
+                    <ul>
+                        <li>+1 Logic</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Synaptic Amplifier:</strong>
+                    <ul>
+                        <li>+1 Intuition</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Holo-Disguise Mask:</strong>
+                    <ul>
+                        <li>+1 Charisma</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
+            <p><strong>5. Name:</strong></p>
+            <p>Each archetype has its own name pool.</p>
+            <ul>
+                <li>(R041) Street Samurai</li>
+                <li>(R042) Decker</li>
+                <li>(R043) Rigger</li>
+                <li>(R044) Mage</li>
+                <li>(R045) Face</li>
+                <li>(R046) Shaman</li>
+            </ul>
+            <hr />
+            <p><strong>6. Mode:</strong></p>
+            <p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>
+            <p>For your first journey, I suggest starting with Easy Mode to get a feel for the city's pulse.</p>
+            <ul>
+                <li>
+                    <strong>Easy Mode:</strong>
+                    <ul><li>15.000 ¥</li><li>10 Health</li><li>10 Energy</li><li>3 Reputation</li></ul>
+                </li>
+                <li>
+                    <strong>Medium Mode:</strong>
+                    <ul><li>10.000 ¥</li><li>8 Health</li><li>8 Energy</li><li>2 Reputation</li></ul>
+                </li>
+                <li>
+                    <strong>Hard Mode:</strong>
+                    <ul><li>5.000 ¥</li><li>6 Health</li><li>6 Energy</li><li>1 Reputation</li></ul>
+                </li>
+            </ul>`,
     },
     {
         id: 'R021',
@@ -51,14 +229,6 @@ export const Character = [
             '<p>Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.</p>' +
             '<p><strong>Starting Attributes:</strong></p>' +
             '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 4</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>',
-    },
-    {
-        id: 'R030',
-        title: 'Archetype',
-        content:
-            '<p>Roll 1d6 to determine your archetype:</p>' +
-            '<ol><li>(R031) Street Samurai</li><li>(R032) Decker</li><li>(R033) Rigger</li><li>(R034) Mage</li><li>(R035) Face</li><li>(R036) Shaman</li></ol>' +
-            '<p>Each archetype has unique strengths, weaknesses, and a default set of attribute values.</p>',
     },
     {
         id: 'R031',
@@ -107,13 +277,6 @@ export const Character = [
             "<p>A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.</p>" +
             '<p><strong>Bonus Attributes:</strong></p>' +
             '<ul><li>+1 Strength</li><li>+1 Intuition</li></ul>',
-    },
-    {
-        id: 'R040',
-        title: 'Name',
-        content:
-            '<p>Each archetype has its own name pool.</p>' +
-            '<ul><li>(R041) Street Samurai</li><li>(R042) Decker</li><li>(R043) Rigger</li><li>(R044) Mage</li><li>(R045) Face</li><li>(R046) Shaman</li></ul>',
     },
     {
         id: 'R041',
@@ -204,49 +367,5 @@ export const Character = [
                     <ol><li>Spirit</li><li>Wolf</li><li>Storm</li><li>Wind</li><li>Sky</li><li>Shadow</li></ol>
                 </div>
             </div>`,
-    },
-    {
-        id: 'R050',
-        title: 'Gear',
-        content: `<p>Choose an item that boosts your starting attributes:</p>
-            <p><strong>Power Gauntlets:</strong></p>
-            <ul>
-                <li>+1 Strength</li>
-            </ul>
-            <p><strong>Nano-Tread Boots:</strong></p>
-            <ul>
-                <li>+1 Agility</li>
-            </ul>
-            <p><strong>Reflex Enhancer Implant:</strong></p>
-            <ul>
-                <li>+1 Reaction</li>
-            </ul>
-            <p><strong>Neural Interface Headset:</strong></p>
-            <ul>
-                <li>+1 Logic</li>
-            </ul>
-            <p><strong>Synaptic Amplifier:</strong></p>
-            <ul>
-                <li>+1 Intuition</li>
-            </ul>
-            <p><strong>Holo-Disguise Mask:</strong></p>
-            <ul>
-                <li>+1 Charisma</li>
-            </ul>`,
-    },
-    {
-        id: 'R060',
-        title: 'Mode',
-        content:
-            '<p>Select a mode to fade into the shadows and uncover the hidden corners of NeonHollow.</p>' +
-            '<p>For your first journey, I suggest starting with Easy Mode to get a feel for the city`s pulse.</p>' +
-            '<p><strong>Easy Mode:</strong></p>' +
-            '<ul><li>15.000 ¥</li><li>10 Health</li><li>10 Energy</li><li>3 Reputation</li></ul>' +
-            '<p><strong>Medium Mode:</strong></p>' +
-            '<ul><li>10.000 ¥</li><li>8 Health</li><li>8 Energy</li><li>2 Reputation</li></ul>' +
-            '<p><strong>Hard Mode:</strong></p>' +
-            '<ul><li>5.000 ¥</li><li>6 Health</li><li>6 Energy</li><li>1 Reputation</li></ul>' +
-            '<p><strong>Insane Mode:</strong></p>' +
-            '<ul><li>4 Health</li><li>4 Energy</li></ul>',
     },
 ]

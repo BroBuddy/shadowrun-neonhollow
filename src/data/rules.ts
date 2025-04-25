@@ -23,14 +23,6 @@ export const Rules = [
             '</ol>',
     },
     {
-        id: 'R003',
-        title: 'Character Creation',
-        content:
-            '<p>Follow this guide to build your runner before diving into the shadows.</p>' +
-            '<ol><li>(R020) Metatype</li><li>(R030) Archetype</li><li>(R701) Background</li><li>(R040) Name</li><li>(R050) Gear</li><li>(R060) Mode</li></ol>' +
-            '<p>When rolling for a random attribute, refer to the attribute details for guidance (R004).</p>',
-    },
-    {
         id: 'R004',
         title: 'Attributes',
         content:

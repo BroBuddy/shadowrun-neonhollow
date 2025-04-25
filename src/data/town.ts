@@ -75,11 +75,12 @@ export const Town = [
     {
         id: 'R102',
         title: 'Town Rules',
-        content: `<p>Start each day at your underground <strong>SafeHouse</strong>.</p>
+        content: `<p>Start each day at your private SafeHouse.</p>
             <p>Each entry into a building or completion of a designated action will incur a time cost of <strong>1 Hour</strong>.</p>
-            <p>You can repeat the same action multiple times.</p>
-            <p>As an action, you can take on a mission from <strong>Mr. Johnson</strong>, but you'll need to gather sufficient information to prove your worth first.</p>
-            <p>At the end of the day, roll on the <strong>Event Matrix</strong> (R401) to uncover the happenings on the streets of <strong>NeonHollow</strong>.</p>`,
+            <p>You can perform an action only once per day.</p>
+            <p>At the end of the day, roll on the <strong>Event Matrix</strong> (R401) to uncover the happenings on the streets of NeonHollow.</p>
+            <p>Got enough Intel by midnight? Time to visit Mr. Johnson for a mission — just don’t skip the hazard pay negotiations.</p>
+            <p>After each mission, you return to your SafeHouse and a new day begins.</p>`,
     },
     {
         id: 'R110',
@@ -93,7 +94,7 @@ export const Town = [
             </ul>
             <p><strong>Propaganda Campaign:</strong></p>
             <ul>
-                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat</li>
+                <li>Pay <strong>30.000 ¥</strong> &#8594; +2 Heat</li>
             </ul>`,
     },
     {
