@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom'
 import { getResourceByTag } from './resourceData'
 import useResourceStore from './resourceStore'
 import { ResourceRoll } from './ResourceType'
-import { HighlightClass } from '@/lib/HighlightKeywords'
+import { HighlightClass } from '@/lib/Highlight'
 
 function ResourceDetail() {
     const { resourceTag } = useParams()
