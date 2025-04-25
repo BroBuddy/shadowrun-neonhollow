@@ -1,7 +1,7 @@
 export const Outcomes = [
     {
         id: 'R301',
-        title: 'Outcome: Health',
+        title: 'Gain: Health',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
@@ -19,32 +19,38 @@ export const Outcomes = [
             <li>
                 9-11: <strong>Standard</strong> – Treatment kicks in slowly, stabilizing you.
                 <ul>
-                    <li>+2 Health, +1 Energy</li>
+                    <li>+2 Health</li>
+                    <li>+1 Energy</li>
                 </ul>
             </li>
             <li>
                 12-14: <strong>Good</strong> – Cells respond well, and you feel stronger.
                 <ul>
-                    <li>+4 Health, +2 Energy</li>
+                    <li>+4 Health</li>
+                    <li>+2 Energy</li>
                 </ul>
             </li>
             <li>
                 15-17: <strong>Great</strong> – Nanites accelerate healing, and you gain energy.
                 <ul>
-                    <li>+6 Health, +3 Energy, +1 Reputation</li>
+                    <li>+6 Health</li>
+                    <li>+3 Energy</li>
+                    <li>+1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – Perfect recovery. You feel better than ever.
                 <ul>
-                    <li>+8 Health, +4 Energy, +1 Reputation</li>
+                    <li>+8 Health</li>
+                    <li>+4 Energy</li>
+                    <li>+1 Reputation</li>
                 </ul>
             </li>
         </ul>`,
     },
     {
         id: 'R302',
-        title: 'Outcome: Energy',
+        title: 'Gain: Energy',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
@@ -87,7 +93,7 @@ export const Outcomes = [
     },
     {
         id: 'R303',
-        title: 'Outcome: Nuyen',
+        title: 'Gain: Nuyen',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
@@ -130,7 +136,7 @@ export const Outcomes = [
     },
     {
         id: 'R304',
-        title: 'Outcome: Heat',
+        title: 'Reduce: Heat',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
@@ -173,7 +179,7 @@ export const Outcomes = [
     },
     {
         id: 'R305',
-        title: 'Outcome: Intel',
+        title: 'Gain: Intel',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>2-5: <strong>Critical Failure</strong> – Your attempt to gather intel fails miserably.
@@ -210,7 +216,7 @@ export const Outcomes = [
     },
     {
         id: 'R306',
-        title: 'Outcome: Attribute',
+        title: 'Improve: Attribute',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
@@ -253,7 +259,7 @@ export const Outcomes = [
     },
     {
         id: 'R307',
-        title: 'Outcome: Runner',
+        title: 'Hire: Runner',
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
