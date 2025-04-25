@@ -42,11 +42,11 @@ export const Rules = [
         title: 'Health Mechanic',
         content: `<p>Health ranges from 0 to 10 and cannot exceed these limits.</p>
             <p>If your Health reaches 0, you're effectively dead – just virtually speaking.</p>
-            <p><strong>Main Sources:</strong></p>
+            <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>BioCare</li>
                 <li>IronGym</li>
-                <li>EchoGarden</li>
+                <li>SafeHouse</li>
             </ol>`,
     },
     {
@@ -54,11 +54,11 @@ export const Rules = [
         title: 'Energy Mechanic',
         content: `<p>Energy ranges from 0 to 10 and cannot exceed these limits.</p>
             <p>Each point below 0 will cost you <strong>1 Health</strong> point instead. Entering a district will costs you <strong>1 Energy</strong>.</p>
-            <p><strong>Main Sources:</strong></p>
+            <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>DreamSphere</li>
-                <li>HoloLounge</li>
                 <li>NeuralNexus</li>
+                <li>EchoGarden</li>
             </ol>`,
     },
     {
@@ -66,7 +66,7 @@ export const Rules = [
         title: 'Reputation Mechanic',
         content: `<p>Reputation ranges from 0 to 6 and cannot exceed these limits.</p>
             <p>Once per skill check, you may spend <strong>1 Reputation</strong> to gain an additional roll, which will overwrite any previous failed attempt.</p>
-            <p><strong>Main Sources:</strong></p>
+            <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>Skill Checks</li>
                 <li>Town Events</li>
@@ -79,11 +79,11 @@ export const Rules = [
         content: `<p>Heat ranges from 0 to 3 and cannot exceed these limits.</p>
             <p>At the end of the day, the corporation will track you down, draining your health and energy by an amount equal to your current heat level.</p>
             <p>The higher the heat level, the more town districts will lock down, restricting access to their services.</p>
-            <p><strong>Main Sources:</strong></p>
+            <p><strong>Service Providers:</strong></p>
             <ol>
-                <li>SmugglerDen</li>
                 <li>PatrolHub</li>
                 <li>EchoGarden</li>
+                <li>SafeHouse</li>
             </ol>`,
     },
     {
@@ -91,11 +91,11 @@ export const Rules = [
         title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
             <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the MegaCorp (R110).</p>
-            <p><strong>Main Sources:</strong></p>
+            <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>NeuralNexus</li>
+                <li>HoloLounge</li>
                 <li>SmugglerDen</li>
-                <li>MegaCorp</li>
             </ol>`,
     },
     {
