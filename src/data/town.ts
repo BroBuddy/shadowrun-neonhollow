@@ -198,7 +198,7 @@ export const Town = [
             </ul>
             <p><strong>Social Recharge:</strong></p>
             <ul>
-                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ul>
@@ -262,7 +262,7 @@ export const Town = [
             <hr />
             <p><strong>Vital Rejuvenation:</strong></p>
             <ul>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
@@ -295,15 +295,15 @@ export const Town = [
                 <li>12: <strong>Perfect Form</strong> &#8594; +1 Reputation</li>
             </ul>
             <hr />
-            <p><strong>Muscle Recover:</strong></p>
+            <p><strong>Muscle Recovery:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
-            <p><strong>Armwrestling Tournament:</strong></p>
+            <p><strong>Nutritional Experiments:</strong></p>
             <ul>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
@@ -338,7 +338,7 @@ export const Town = [
             </ol>
             <p><strong>Neural Sync Boost:</strong></p>
             <ol>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
                 <li>See R302 &#8594; Energy</li>
             </ol>
@@ -405,22 +405,13 @@ export const Town = [
         title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
             <p><em>"A secret refuge where safety lies."</em></p>
-            <p><strong>Stimulant Injection:</strong></p>
-            <ul>
-                <li>+1 Energy</li>
-            </ul>
-            <p><strong>Quick Reboot:</strong></p>
-            <ul>
-                <li>+1 Health</li>
-            </ul>
-            <hr />
             <p><strong>Incite Rebellion:</strong></p>
             <ul>
-                <li>Spend <strong>5 Reputation</strong> &#8594; +1 Heat &#8594; Skip Mission</li>
+                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat &#8594; Skip Mission</li>
             </ul>
             <p><strong>Propaganda Campaign:</strong></p>
             <ul>
-                <li>Pay <strong>20.000 ¥</strong> &#8594; +1 Heat &#8594; Skip Mission</li>
+                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat &#8594; Skip Mission</li>
             </ul>`,
     },
 ]
