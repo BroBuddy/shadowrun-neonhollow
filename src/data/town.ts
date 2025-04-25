@@ -14,7 +14,7 @@ export const Town = [
             <p><strong>Quantum District:</strong></p>
             <div class="flex gap-8">
                 <div class="flex-1 basis-1/3">
-                    <p>CorpTower<br />
+                    <p>MegaCorp<br />
                     R110</p>
                 </div>
                 <div class="flex-1 basis-1/3">
@@ -83,8 +83,8 @@ export const Town = [
     },
     {
         id: 'R110',
-        title: 'CorpTower',
-        content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
+        title: 'MegaCorp',
+        content: `<p class="flex items-center justify-center"><img src="/images/MegaCorp.jpg" alt="MegaCorp" /></p>
             <p><em>"Order. Control. Perfection."</em></p>
             <p>Use an action below to skip one of the first two missions. Actions are single-use, and the final mission cannot be skipped.</p>
             <p><strong>Incite Rebellion:</strong></p>

@@ -90,12 +90,12 @@ export const Rules = [
         id: 'R010',
         title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
-            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the CorpTower (R110).</p>
+            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the MegaCorp (R110).</p>
             <p><strong>Main Sources:</strong></p>
             <ol>
                 <li>NeuralNexus</li>
                 <li>SmugglerDen</li>
-                <li>CorpTower</li>
+                <li>MegaCorp</li>
             </ol>`,
     },
     {

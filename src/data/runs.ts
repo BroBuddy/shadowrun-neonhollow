@@ -71,9 +71,9 @@ export const Runs = [
             <p><strong>Client:</strong><br />
             Dr. Vexa Arul, BioCare</p>
             <p><strong>Location:</strong><br />
-            CorpTower</p>
+            MegaCorp</p>
             <p><strong>Briefing:</strong><br />
-            BioCare suspects the megacorp of illegally cloning biometric datasets from neural implant users. You’re tasked with infiltrating the Legal Archives in CorpTower, pulling incriminating files, and leaking them into the open net. Clean, silent, and fast—their reputation depends on it.</p>
+            BioCare suspects the megacorp of illegally cloning biometric datasets from neural implant users. You’re tasked with infiltrating the Legal Archives in MegaCorp, pulling incriminating files, and leaking them into the open net. Clean, silent, and fast—their reputation depends on it.</p>
             <hr />
             <ol>
                 <li><strong>Enter the Archives Undetected</strong>
@@ -117,9 +117,9 @@ export const Runs = [
             <p><strong>Client:</strong><br />
             Silas Noor, DreamSphere</p>
             <p><strong>Location:</strong><br />
-            CorpTower</p>
+            MegaCorp</p>
             <p><strong>Briefing:</strong><br />
-            DreamSphere's immersive sleep technology is under threat—CorpTower's surveillance AI is intercepting dreamscapes to manipulate user behavior. They want a full blackout of the Corp's security grid. Slip past the eyes, fry the core, and vanish before anyone realizes the dream changed.</p>
+            DreamSphere's immersive sleep technology is under threat — MegaCorp's surveillance AI is intercepting dreamscapes to manipulate user behavior. They want a full blackout of the Corp's security grid. Slip past the eyes, fry the core, and vanish before anyone realizes the dream changed.</p>
             <hr />
             <ol>
                 <li><strong>Overload the Firewall</strong>
@@ -163,7 +163,7 @@ export const Runs = [
             <p><strong>Client:</strong><br />
             Kael Stride, HoloLounge</p>
             <p><strong>Location:</strong><br />
-            CorpTower</p>
+            MegaCorp</p>
             <p><strong>Briefing:</strong><br />
             The CEO of the megacorp is planning to seize control of HoloLounge’s independent entertainment feeds, pushing brainwash protocols through immersive media. HoloLounge wants you to break into the executive floor, confront the CEO directly, and deliver a message: some minds can’t be bought.</p>
             <hr />
