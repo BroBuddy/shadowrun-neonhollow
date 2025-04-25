@@ -252,9 +252,9 @@ export const Town = [
                 <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
-            <p><strong>Cooling Meditation:</strong></p>
+            <p><strong>Meditative Escape:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Spend <strong>2 Health</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ul>
