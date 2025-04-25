@@ -86,28 +86,14 @@ export const Town = [
         title: 'CorpTower',
         content: `<p class="flex items-center justify-center"><img src="/images/CorpTower.jpg" alt="CorpTower" /></p>
             <p><em>"Order. Control. Perfection."</em></p>
-            <p><strong>Enter &#8594; Roll 2d6:</strong></p>
+            <p>Use an action below to skip one of the first two missions. Actions are single-use, and the final mission cannot be skipped.</p>
+            <p><strong>Incite Rebellion:</strong></p>
             <ul>
-                <li>2: <strong>Security Delay</strong> &#8594; +1 Hour</li>
-                <li>3-4: <strong>Corporate Scrutiny</strong> &#8594; +1 Heat</li>
-                <li>5-6: <strong>Overexertion from Pressure</strong> &#8594; -1 Energy</li>
-                <li>7: <strong>Standard</strong> &#8594; No Effect</li>
-                <li>8-9: <strong>Golden Parachute</strong> &#8594; +2.000 ¥</li>
-                <li>10-11: <strong>Influential Contact</strong> &#8594; +1 Reputation</li>
-                <li>12: <strong>Blackmail Material</strong> &#8594; +1 Intel</li>
+                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat</li>
             </ul>
-            <hr />
-            <p><strong>Protest Persuasion:</strong></p>
+            <p><strong>Propaganda Campaign:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
-                <li>Add <strong>Reaction</strong> or <strong>Charisma</strong></li>
-                <li>See R303 &#8594; Nuyen</li>
-            </ul>
-            <p><strong>Espionage Assignment:</strong></p>
-            <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
-                <li>See R305 &#8594; Intel</li>
+                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat</li>
             </ul>`,
     },
     {
@@ -128,13 +114,13 @@ export const Town = [
             <hr />
             <p><strong>Silence the Badge:</strong></p>
             <ul>
-                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Logic</strong> or <strong>Charisma</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ul>
             <p><strong>Bounty Pursuit:</strong></p>
             <ul>
-                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Spend <strong>3 Health</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Agility</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>`,
@@ -190,17 +176,17 @@ export const Town = [
                 <li>12: <strong>Breaking Up a Fight</strong> &#8594; +1 Reputation</li>
             </ul>
             <hr />
-            <p><strong>High-Stakes Gambling:</strong></p>
+            <p><strong>Gambling Table:</strong></p>
             <ul>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Add <strong>Reaction</strong> or <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ul>
-            <p><strong>Social Recharge:</strong></p>
+            <p><strong>Pay the Insider:</strong></p>
             <ul>
-                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Intuition</strong> or <strong>Charisma</strong></li>
-                <li>See R302 &#8594; Energy</li>
+                <li>See R305 &#8594; Intel</li>
             </ul>
             <p><strong>Charisma Negotiation:</strong></p>
             <ul>
@@ -262,13 +248,13 @@ export const Town = [
             <hr />
             <p><strong>Vital Rejuvenation:</strong></p>
             <ul>
-                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Intuition</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
             <p><strong>Cooling Meditation:</strong></p>
             <ul>
-                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Agility</strong> or <strong>Intuition</strong></li>
                 <li>See R304 &#8594; Heat</li>
             </ul>
@@ -297,7 +283,7 @@ export const Town = [
             <hr />
             <p><strong>Muscle Recovery:</strong></p>
             <ul>
-                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Strength</strong> or <strong>Reaction</strong></li>
                 <li>See R301 &#8594; Health</li>
             </ul>
@@ -332,7 +318,7 @@ export const Town = [
             <hr />
             <p><strong>Data Extraction:</strong></p>
             <ol>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ol>
@@ -364,16 +350,16 @@ export const Town = [
                 <li>10-11: <strong>Thief Caught</strong> &#8594; +1 Reputation</li>
                 <li>12: <strong>Prestigious Contact</strong> &#8594; +1 Intel</li>
             </ul>
+            <p><strong>Fence Hot Goods:</strong></p>
+            <ul>
+                <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Charisma</strong></li>
+                <li>See R303 &#8594; Nuyen</li>
+            </ul>
             <hr />
-            <p><strong>False Credentials:</strong></p>
-            <ol>
-                <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
-                <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
-                <li>See R304 &#8594; Heat</li>
-            </ol>
             <p><strong>Corrupted Files:</strong></p>
             <ol>
-                <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
                 <li>Add <strong>Strength</strong> or <strong>Logic</strong></li>
                 <li>See R305 &#8594; Intel</li>
             </ol>`,
@@ -404,14 +390,18 @@ export const Town = [
         title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
             <p><em>"A secret refuge where safety lies."</em></p>
-            <p>Use an action below to skip one of the first two missions. Actions are single-use, and the final mission cannot be skipped.</p>
-            <p><strong>Incite Rebellion:</strong></p>
+            <p><strong>False Credentials:</strong></p>
+            <ol>
+                <li>Pay <strong>2.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Logic</strong></li>
+                <li>See R304 &#8594; Heat</li>
+            </ol>
+            <p><strong>Stimulant Injection:</strong></p>
             <ul>
-                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat</li>
+                <li>Spend <strong>1 Health</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>
+                <li>Add <strong>Agility</strong> or <strong>Reaction</strong></li>
+                <li>See R302 &#8594; Energy</li>
             </ul>
-            <p><strong>Propaganda Campaign:</strong></p>
-            <ul>
-                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat</li>
-            </ul>`,
+            `,
     },
 ]
