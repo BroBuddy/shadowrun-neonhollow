@@ -387,8 +387,7 @@ export const Town = [
             <ol>
                 <li>Roll on the <strong>Runner Matrix</strong> (R501)</li>
                 <li>Remember the two highest attributes</li>
-                <li>Pay <strong>10.000 ¥</strong> &#8594; Roll 2d6</li>
-                <li>Add your <strong>Charisma</strong></li>
+                <li>Pay <strong>10.000 ¥</strong> &#8594; Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R307 &#8594; Runner</li>
             </ol>
             <p><strong>Challenge a Runner:</strong></p>
@@ -405,13 +404,14 @@ export const Town = [
         title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
             <p><em>"A secret refuge where safety lies."</em></p>
+            <p>Use an action below to skip one of the first two missions. Actions are single-use, and the final mission cannot be skipped.</p>
             <p><strong>Incite Rebellion:</strong></p>
             <ul>
-                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat &#8594; Skip Mission</li>
+                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat</li>
             </ul>
             <p><strong>Propaganda Campaign:</strong></p>
             <ul>
-                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat &#8594; Skip Mission</li>
+                <li>Pay <strong>25.000 ¥</strong> &#8594; +2 Heat</li>
             </ul>`,
     },
 ]

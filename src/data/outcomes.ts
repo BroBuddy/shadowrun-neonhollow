@@ -257,39 +257,32 @@ export const Outcomes = [
         content: `<p>The number determines the outcome of the action.</p>
         <ul>
             <li>
-                2-5: <strong>Critical Failure</strong> – No interest, dismisses the offer.
+                2-7: <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
                 <ul>
-                    <li>+2 Heat, +8.000 ¥</li>
+                    <li>+2 Attributes Temporary</li>
                 </ul>
             </li>
             <li>
-                6-8: <strong>Failure</strong> – You’ve hired a runner, but it’s going to cost you dearly.
+                8-12: <strong>Good</strong> – The runner's price is what you would expect for their skill level.
                 <ul>
-                    <li>+6.000 ¥, +1 Attribute Temporary</li>
+                    <li>+2 Attributes Temporary</li>
+                    <li>+2.000 ¥</li>
                 </ul>
             </li>
             <li>
-                9-11: <strong>Standard</strong> – The runner’s skill set is solid, but they’re not exactly cheap.
+                13-17: <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
                 <ul>
-                    <li>+4.000 ¥, +1 Attribute</li>
-                </ul>
-            </li>
-            <li>
-                12-14: <strong>Good</strong> – The runner's price is what you would expect for their skill level.
-                <ul>
-                    <li>+2.000 ¥, +1 Attribute, +1 Attribute Temporary</li>
-                </ul>
-            </li>
-            <li>
-                15-17: <strong>Great</strong> – You’ve managed to secure a solid deal for this runner.
-                <ul>
-                    <li>+2 Attribute, +1 Reputation</li>
+                    <li>+2 Attributes Temporary</li>
+                    <li>+4.000 ¥</li>
+                    <li>+1 Reputation</li>
                 </ul>
             </li>
             <li>
                 18+: <strong>Exceptional</strong> – You’ve managed to convince the runner to work for less than their usual rate.
                 <ul>
-                    <li>+2 Attribute, +1 Attribute Temporary, +1 Reputation</li>
+                    <li>+2 Attributes Temporary</li>
+                    <li>+6.000 ¥</li>
+                    <li>+1 Reputation</li>
                 </ul>
             </li>
         </ol>`,
