@@ -4,8 +4,7 @@ export const Character = [
         title: 'Metatype',
         content:
             '<p>Roll 1d6 to determine your metatype:</p>' +
-            '<ol><li>(R021) Human</li><li>(R022) Elf</li><li>(R023) Dwarf</li><li>(R024) Orc</li><li>(R025) Troll</li><li>Roll Again</li></ol>' +
-            '<p>Apply the bonuses to your attributes.</p>',
+            '<ol><li>(R021) Human</li><li>(R022) Elf</li><li>(R023) Dwarf</li><li>(R024) Orc</li><li>(R025) Troll</li><li>Roll Again</li></ol>',
     },
     {
         id: 'R021',

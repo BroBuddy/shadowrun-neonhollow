@@ -8,7 +8,7 @@ const MobileNav = () => {
             </Link>
 
             <Link to="/R101">
-                <span className="text-xs">City</span>
+                <span className="text-xs">Town</span>
             </Link>
 
             <Link to="/R601">
