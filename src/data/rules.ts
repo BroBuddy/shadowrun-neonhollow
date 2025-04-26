@@ -45,7 +45,7 @@ export const Rules = [
         id: 'R006',
         title: 'Energy Mechanic',
         content: `<p>Energy ranges from 0 to 10 and cannot exceed these limits.</p>
-            <p>Each point below 0 will cost you <strong>1 Health</strong> point instead. Entering a district will costs you <strong>1 Energy</strong>.</p>
+            <p>Each point below 0 will cost you <strong>1 Health</strong> point instead.</p>
             <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>DreamSphere</li>

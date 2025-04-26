@@ -255,7 +255,7 @@ export const Town = [
             </ul>
             <p><strong>Meditative Escape:</strong></p>
             <ul>
-                <li>Spend <strong>2 Energy</strong> &#8594; Roll 2d6</li>
+                <li>Pay <strong>4.000 ¥</strong> &#8594; Roll 2d6</li>
                 <li>Add <strong>Reaction</strong> or <strong>Logic</strong></li>
                 <li>See R304 &#8594; Reduce Heat</li>
             </ul>
@@ -319,7 +319,7 @@ export const Town = [
             <hr />
             <p><strong>Code Decryption:</strong></p>
             <ol>
-                <li>Spend <strong>3 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
+                <li>Pay <strong>6.000 ¥</strong> &#8594; Roll 2d6 &#8594; <strong>+2</strong></li>
                 <li>Add <strong>Logic</strong> or <strong>Intuition</strong></li>
                 <li>See R305 &#8594; Gain Intel</li>
             </ol>
