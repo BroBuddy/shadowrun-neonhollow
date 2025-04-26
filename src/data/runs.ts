@@ -36,37 +36,30 @@ export const Runs = [
     {
         id: 'R603',
         title: 'Mission Performance',
-        content: `<p><strong>Mr. Johnson</strong> doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
-            <ol>
-                <li><strong>Disastrous</strong> – Mission failed badly. Severe fallout.
-                    <ul>
-                        <li>+2 Heat</li>
-                    </ul>
-                </li>
-                <li><strong>Underwhelming</strong> – Setback, but Lessons Learned.
-                    <ul>
-                        <li>Roll 2d6 &#8594; <strong>+2</strong> &#8594; See R305 &#8594; Gain Intel</li>
-                    </ul>
-                </li>
-                <li><strong>Partial</strong> – Glitched Out, Grabbed Clues.
-                    <ul>
-                        <li>Roll 2d6 &#8594; <strong>+4</strong> &#8594; See R305 &#8594; Gain Intel</li>
-                        <li>Roll 2d6 &#8594; <strong>+2</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
-                    </ul>
-                </li>
-                <li><strong>Impressive</strong> – Handled the mission well, mostly clean.
-                    <ul>
-                        <li>Next Mission available</li>
-                        <li>Roll 2d6 &#8594; <strong>+4</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
-                    </ul>
-                </li>
-                <li><strong>Exceptional</strong> – Flawless execution, no trace left.
-                    <ul>
-                        <li>Next Mission available</li>
-                        <li>Roll 2d6 &#8594; <strong>+6</strong> &#8594; See R303 &#8594; Gain Nuyen</li>
-                    </ul>
-                </li>
-            </ol>`,
+        content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
+            <p>🔴 <strong>Performance 1</strong> &#8594; Disastrous</p>
+            <ul>
+                <li>+2 Heat</li>
+            </ul>
+            <p>🔴 <strong>Performance 2</strong> &#8594; Underwhelming</p>
+            <ul>
+                <li>Roll 2d6 → +2 → See R305 → Gain Intel</li>
+            </ul>
+            <p>🟡 <strong>Performance 3</strong> &#8594; Partial</p>
+            <ul>
+                <li>Roll 2d6 → +4 → See R305 → Gain Intel</li>
+                <li>Roll 2d6 → +2 → See R303 → Gain Nuyen</li>
+            </ul>
+            <p>🟢 <strong>Performance 4</strong> &#8594; Impressive</p>
+            <ul>
+                <li>Next Mission available</li>
+                <li>Roll 2d6 → +4 → See R303 → Gain Nuyen</li>
+            </ul>
+            <p>🟢 <strong>Performance 5</strong> &#8594; Exceptional</p>
+            <ul>
+                <li>Next Mission available</li>
+                <li>Roll 2d6 → +6 → See R303 → Gain Nuyen</li>
+            </ul>`,
     },
     {
         id: 'R610',
@@ -86,7 +79,7 @@ export const Runs = [
                 <li>6–8 &#8594; <strong>Intuition (DC 10)</strong>:<br />Time the patrols perfectly.</li>
                 <li>9–12 &#8594; <strong>Logic (DC 8)</strong>:<br />Disable surveillance remotely.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
             <hr />
             <p><strong>2. Access the Encrypted Files</strong></p>
             <p>Roll 2d6:</p>
@@ -95,7 +88,7 @@ export const Runs = [
                 <li>7–9 &#8594; <strong>Charisma (DC 10)</strong>:<br />Social-engineer a bypass code.</li>
                 <li>10–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Physically remove the secure drive.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
             <hr />
             <p><strong>3. Exfiltrate with the Data</strong></p>
             <p>Roll 2d6:</p>
@@ -104,7 +97,7 @@ export const Runs = [
                 <li>8-10 &#8594; <strong>Agility (DC 10)</strong>:<br />Escape via the ventilation shafts.</li>
                 <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Bluff your way out in plain sight.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Partial</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
             <hr />
             <p><strong>Twist:</strong><br />
             A corporate agent is already leaking the data to another buyer. Time is limited.</p>
@@ -112,8 +105,8 @@ export const Runs = [
                 <li><strong>Reaction (DC 14)</strong> or <strong>Intuition (DC 14)</strong>:<br />
                 Spot the rival agent’s trail and intercept.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Impressive</p>
-            <p>Success? &#8594; See R603 &#8594; Exceptional</p>`,
+            <p>Fail? &#8594; See R603 &#8594; Performance 4</p>
+            <p>Success? &#8594; See R603 &#8594; Performance 5</p>`,
     },
     {
         id: 'R620',
@@ -133,7 +126,7 @@ export const Runs = [
                 <li>6–8 &#8594; <strong>Charisma (DC 10)</strong>:<br />Con a helpdesk agent into granting deeper access.</li>
                 <li>9–12 &#8594; <strong>Intuition (DC 8)</strong>:<br />Exploit a forgotten maintenance port.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
             <hr />
             <p><strong>2. Disable Security Bots</strong></p>
             <p>Roll 2d6:</p>
@@ -142,7 +135,7 @@ export const Runs = [
                 <li>7–9 &#8594; <strong>Reaction (DC 10)</strong>:<br />Disrupt their patrol pattern.</li>
                 <li>10–12 &#8594; <strong>Logic (DC 8)</strong>:<br />Inject a shutdown virus.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
             <hr />
             <p><strong>3. Take Down the AI Core</strong></p>
             <p>Roll 2d6:</p>
@@ -151,7 +144,7 @@ export const Runs = [
                 <li>8–10 &#8594; <strong>Logic (DC 10)</strong>:<br />Loop the AI’s sensory matrix into feedback.</li>
                 <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Overwhelm it with illogical paradoxes.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Partial</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
             <hr />
             <p><strong>Twist:</strong><br />
             A backup AI attempts an emergency rollback to restore the network.</p>
@@ -159,8 +152,8 @@ export const Runs = [
                 <li><strong>Strength (DC 14)</strong> or <strong>Agility (DC 14)</strong>:<br />
                 Crash the fallback node before reboot completes.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Impressive</p>
-            <p>Success? &#8594; See R603 &#8594; Exceptional</p>`,
+            <p>Fail? &#8594; See R603 &#8594; Performance 4</p>
+            <p>Success? &#8594; See R603 &#8594; Performance 5</p>`,
     },
     {
         id: 'R630',
@@ -179,7 +172,7 @@ export const Runs = [
                 <li>6–8 &#8594; <strong>Logic (DC 10)</strong>:<br />Hack the elevator’s access panel.</li>
                 <li>9–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Force open the maintenance shaft.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Disastrous</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
             <hr />
             <p><strong>2. Bypass CEO’s Personal Guard</strong></p>
             <p>Roll 2d6:</p>
@@ -188,7 +181,7 @@ export const Runs = [
                 <li>7–9 &#8594; <strong>Intuition (DC 10)</strong>:<br />Find a distraction window.</li>
                 <li>10–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Pretend you're scheduled for a meeting.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Underwhelming</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
             <hr />
             <p><strong>3. Deliver the Threat</strong></p>
             <p>Roll 2d6:</p>
@@ -197,7 +190,7 @@ export const Runs = [
                 <li>8–10 &#8594; <strong>Logic (DC 10)</strong>:<br />Reveal the exploit in their media plan.</li>
                 <li>11–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Leave physical evidence of your power.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Partial</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
             <hr />
             <p><strong>Twist:</strong><br />
             The CEO is an advanced AI running a remote body. The real threat lies deeper.</p>
