@@ -2,19 +2,27 @@ export const Runs = [
     {
         id: 'R601',
         title: 'Mr. Johnson',
-        content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
-            <p><strong>Before each mission:</strong></p>
-            <ol>
-                <li>Spend <strong>5 Intel</strong> &#8594; Negotiate for hazard pay</li>
-                <li>Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
-                <li>See R303 &#8594; Nuyen</li>
-            </ol>
-            <hr/ >
-            <p> Start with the first mission.</p>
+        content: `<div class="flex gap-4">
+                <div class="flex-1 basis-1/2">
+                    <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
+                </div>
+                <div class="flex-1 basis-1/2">
+                    <p><strong>How to Begin a Mission:</strong></p>
+                    <ol>
+                        <li>Spend <strong>3 Intel</strong></li>
+                        <li>Roll 2d6</li>
+                        <li>Add <strong>Charisma</strong></li>
+                        <li>See R303 &#8594; Nuyen</li>
+                    </ol>
+                </div>
+            </div>
+            <hr />
+            <p><em>"Start with the first mission."</em></p>
             <p><strong>Missions Overview:</strong></p>
-            <p>R610 &#8594; Leak Sensitive Data</p>
+            <p>R610 &#8594; Recon the Facility</p>
             <p>R620 &#8594; Crash Security Systems</p>
             <p>R630 &#8594; Confront the CEO</p>
+            <p>R640 &#8594; Unveil the Truth</p>
             <hr />
             <p>Study Rules R602. Review Performance R603.</p>`,
     },
@@ -63,50 +71,50 @@ export const Runs = [
     },
     {
         id: 'R610',
-        title: 'Leak Sensitive Data',
+        title: 'Recon the Facility',
         content: `
             <p><strong>Client:</strong><br />
-            Dr. Vexa Arul, BioCare</p>
+            Renna Thorne, EchoGarden</p>
             <p><strong>Location:</strong><br />
             MegaCorp</p>
             <p><strong>Briefing:</strong><br />
-            BioCare suspects the megacorp of illegally cloning biometric datasets from neural implant users. You’re tasked with infiltrating the Legal Archives in MegaCorp, pulling incriminating files, and leaking them into the open net. Clean, silent, and fast—their reputation depends on it.</p>
+            Renna Thorne from EchoGarden has gathered intel suggesting that MegaCorp is testing new surveillance equipment in a high-security facility. You are tasked with infiltrating the facility to gather vital information on the security systems and any sensitive data related to these new technologies.</p>
             <hr />
-            <p><strong>1. Enter the Archives Undetected</strong></p>
+            <p><strong>1. Infiltrate the Outer Perimeter</strong></p>
             <p>Roll 2d6:</p>
             <ul>
-                <li>2–5 &#8594; <strong>Agility (DC 12)</strong>:<br />Sneak past motion detectors.</li>
-                <li>6–8 &#8594; <strong>Intuition (DC 10)</strong>:<br />Time the patrols perfectly.</li>
-                <li>9–12 &#8594; <strong>Logic (DC 8)</strong>:<br />Disable surveillance remotely.</li>
+                <li>2–5 &#8594; <strong>Agility (DC 12)</strong>:<br />Sneak through the shadows.</li>
+                <li>6–8 &#8594; <strong>Intuition (DC 10)</strong>:<br />Locate an unguarded entry point.</li>
+                <li>9–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Force entry through a maintenance hatch.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
+            <p>Fail? &#859 → See R603 &#859 → Performance 1</p>
             <hr />
-            <p><strong>2. Access the Encrypted Files</strong></p>
+            <p><strong>2. Gather Intel on Security Systems</strong></p>
             <p>Roll 2d6:</p>
             <ul>
-                <li>3–6 &#8594; <strong>Logic (DC 12)</strong>:<br />Break through the firewall.</li>
-                <li>7–9 &#8594; <strong>Charisma (DC 10)</strong>:<br />Social-engineer a bypass code.</li>
-                <li>10–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Physically remove the secure drive.</li>
+                <li>3–6 &#8594; <strong>Logic (DC 12)</strong>:<br />Hack into the terminal to download floor plans.</li>
+                <li>7–9 &#8594; <strong>Charisma (DC 10)</strong>:<br />Convince a guard to give you access.</li>
+                <li>10–12 &#8594; <strong>Agility (DC 8)</strong>:<br />Sleight of hand to grab access cards.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
+            <p>Fail? &#859 → See R603 &#859 → Performance 2</p>
             <hr />
-            <p><strong>3. Exfiltrate with the Data</strong></p>
+            <p><strong>3. Extract Critical Data from the Server</strong></p>
             <p>Roll 2d6:</p>
             <ul>
-                <li>4–7 &#8594; <strong>Reaction (DC 12)</strong>:<br />Dodge the incoming corpsec unit.</li>
-                <li>8-10 &#8594; <strong>Agility (DC 10)</strong>:<br />Escape via the ventilation shafts.</li>
-                <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Bluff your way out in plain sight.</li>
+                <li>4–7 &#8594; <strong>Reaction (DC 12)</strong>:<br />Dodge incoming guards.</li>
+                <li>8–10 &#8594; <strong>Intuition (DC 10)</strong>:<br />Find a hidden network access port.</li>
+                <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Bluff your way through a security checkpoint.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
+            <p>Fail? &#859 → See R603 &#859 → Performance 3</p>
             <hr />
             <p><strong>Twist:</strong><br />
-            A corporate agent is already leaking the data to another buyer. Time is limited.</p>
+            As you are extracting the data, you stumble upon a hidden compartment within the server room that seems to be connected to a covert research project.</p>
             <ul>
-                <li><strong>Reaction (DC 14)</strong> or <strong>Intuition (DC 14)</strong>:<br />
-                Spot the rival agent’s trail and intercept.</li>
+                <li><strong>Intuition (DC 14)</strong> or <strong>Logic (DC 14)</strong>:<br />
+                Spot hidden surveillance equipment.</li>
             </ul>
-            <p>Fail? &#8594; See R603 &#8594; Performance 4</p>
-            <p>Success? &#8594; See R603 &#8594; Performance 5</p>`,
+            <p>Fail? &#859 → See R603 &#859 → Performance 4</p>
+            <p>Success? &#859 → See R603 &#859 → Performance 5</p>`,
     },
     {
         id: 'R620',
@@ -198,7 +206,52 @@ export const Runs = [
                 <li><strong>Logic (DC 14)</strong> or <strong>Charisma (DC 14)</strong>:<br />
                 Realize it’s a decoy and trace the real core.</li>
             </ul>
-            <p>Fail? &#8594; See R014</p>
-            <p>Success? &#8594; See R015</p>`,
+            <p>Fail? &#8594; See R603 &#8594; Performance 4</p>
+            <p>Success? &#8594; See R603 &#8594; Performance 5</p>`,
+    },
+    {
+        id: 'R640',
+        title: 'Unveil the Truth',
+        content: `<p><strong>Client:</strong><br />
+            Arlo Quinn, EchoGarden</p>
+        <p><strong>Location:</strong><br />
+            MegaCorp</p>
+        <p><strong>Briefing:</strong><br />
+            In this final move to topple the megacorp, you must infiltrate their most secure vault to uncover and leak their darkest secrets. Expose their illegal activities to the public and trigger a full collapse of their influence. The truth is the only weapon left — and you’re the one to wield it.</p>
+        <hr />
+        <p><strong>1. Infiltrate the Vault</strong></p>
+        <p>Roll 2d6:</p>
+        <ul>
+            <li>2–5 &#8594; <strong>Agility (DC 10)</strong>:<br />Sneak past the tight security systems and motion sensors.</li>
+            <li>6–8 &#8594; <strong>Intuition (DC 8)</strong>:<br />Use your senses to spot hidden guards and bypass them.</li>
+            <li>9–12 &#8594; <strong>Strength (DC 12)</strong>:<br />Force open the door or break through barriers that are in your way.</li>
+        </ul>
+        <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
+        <hr />
+        <p><strong>2. Extract the Sensitive Files</strong></p>
+        <p>Roll 2d6:</p>
+        <ul>
+            <li>3–6 &#8594; <strong>Logic (DC 12)</strong>:<br />Hack the encrypted system to retrieve the files without leaving a trace.</li>
+            <li>7–9 &#8594; <strong>Intuition (DC 10)</strong>:<br />Spot the hidden vault chambers with valuable data.</li>
+            <li>10–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Convince an AI assistant to provide you with access to the files.</li>
+        </ul>
+        <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
+        <hr />
+        <p><strong>3. Leak the Files to the Public</strong></p>
+        <p>Roll 2d6:</p>
+        <ul>
+            <li>4–7 &#8594; <strong>Charisma (DC 10)</strong>:<br />Persuade the media outlets to publish the files immediately.</li>
+            <li>8–10 &#8594; <strong>Logic (DC 8)</strong>:<br />Find a way to send the data securely to the right sources.</li>
+            <li>11–12 &#8594; <strong>Strength (DC 12)</strong>:<br />Physically remove any data-destroying countermeasures they’ve set up to erase the files.</li>
+        </ul>
+        <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
+        <hr />
+        <p><strong>Twist:</strong><br />
+            Just as the files are sent out, the megacorp activates a fail-safe protocol, trying to erase all evidence. A corporate hit team is deployed to eliminate you.</p>
+        <ul>
+            <li><strong>Reaction (DC 12)</strong>:<br />Escape the hit team and secure your freedom before they can erase your presence.</li>
+        </ul>
+        <p>Fail? &#8594; See R014</p>
+        <p>Success? &#8594; See R015</p>`,
     },
 ]

@@ -76,16 +76,23 @@ export const Town = [
     {
         id: 'R110',
         title: 'MegaCorp',
-        content: `<p class="flex items-center justify-center"><img src="/images/MegaCorp.jpg" alt="MegaCorp" /></p>
-            <p><em>"Order. Control. Perfection."</em></p>
-            <p>Use an action below to skip one of the first two missions. Actions are single-use, and the final mission cannot be skipped.</p>
+        content: `<div class="flex gap-4">
+                <div class="flex-1 basis-1/2">
+                    <img src="/images/MegaCorp.jpg" alt="MegaCorp" />
+                </div>
+                <div class="flex-1 basis-1/2">
+                    <p><strong>Rules:</strong></p>
+                    <p>Rather than taking on a mission, you can choose one of these actions. Each action can only be used once.</p>
+                </div>
+            </div>
+            <hr />
             <p><strong>Incite Rebellion:</strong></p>
             <ul>
-                <li>Spend <strong>5 Reputation</strong> &#8594; +2 Heat</li>
+                <li>Spend <strong>5 Reputation</strong> &#8594; +3 Heat</li>
             </ul>
             <p><strong>Propaganda Campaign:</strong></p>
             <ul>
-                <li>Pay <strong>30.000 ¥</strong> &#8594; +2 Heat</li>
+                <li>Pay <strong>30.000 ¥</strong> &#8594; +3 Heat</li>
             </ul>`,
     },
     {
