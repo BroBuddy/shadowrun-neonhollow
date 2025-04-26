@@ -138,8 +138,8 @@ export const Town = [
                 <li>5-6: <strong>Unsettling Diagnosis</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Energy Boost</strong> &#8594; +1 Energy</li>
-                <li>10-11: <strong>Medical Sponsorship</strong> &#8594; +2.000 ¥</li>
-                <li>12: <strong>Public Assistance</strong> &#8594; +1 Reputation</li>
+                <li>10-11: <strong>Public Assistance</strong> &#8594; +1 Reputation</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R483</li>
             </ul>
             <hr />
             <p><strong>Nano Restoration:</strong></p>
@@ -174,7 +174,7 @@ export const Town = [
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Nutritious Snack</strong> &#8594; +1 Energy</li>
                 <li>10-11: <strong>Winning Bet</strong> &#8594; +2.000 ¥</li>
-                <li>12: <strong>Breaking Up a Fight</strong> &#8594; +1 Reputation</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R486</li>
             </ul>
             <hr />
             <p><strong>Gambling Table:</strong></p>
@@ -209,7 +209,7 @@ export const Town = [
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Luxury Massage Chair</strong> &#8594; +1 Energy</li>
                 <li>10-11: <strong>Social Sync Event</strong> &#8594; +1 Reputation</li>
-                <li>12: <strong>Shared Memory Cache</strong> &#8594; +1 Intel</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R485</li>
             </ul>
             <hr />
             <p><strong>Energetic Reboot:</strong></p>
@@ -244,7 +244,7 @@ export const Town = [
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Friendly Chat</strong> &#8594; +1 Energy</li>
                 <li>10-11: <strong>Solar Soak</strong> &#8594; +1 Health</li>
-                <li>12: <strong>Forgotten Credstick</strong> &#8594; +2.000 ¥</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R484</li>
             </ul>
             <hr />
             <p><strong>Vital Rejuvenation:</strong></p>
@@ -278,8 +278,8 @@ export const Town = [
                 <li>5-6: <strong>Unpaid Membership</strong> &#8594; -2.000 ¥</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Promo Energy Bar</strong> &#8594; +1 Energy</li>
-                <li>10-11: <strong>Sauna Detox</strong> &#8594; +1 Health</li>
-                <li>12: <strong>Perfect Form</strong> &#8594; +1 Reputation</li>
+                <li>10-11: <strong>Perfect Form</strong> &#8594; +1 Reputation</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R487</li>
             </ul>
             <hr />
             <p><strong>Massage Therapy:</strong></p>
@@ -313,8 +313,8 @@ export const Town = [
                 <li>5-6: <strong>Research Malfunctions</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
                 <li>8-9: <strong>Unexpected Discovery</strong> &#8594; +1 Energy</li>
-                <li>10-11: <strong>Professor's Favor</strong> &#8594; +1 Reputation</li>
-                <li>12: <strong>Laboratory Breakthrough</strong> &#8594; +1 Intel</li>
+                <li>10-11: <strong>Laboratory Breakthrough</strong> &#8594; +1 Intel</li>
+                <li>12: <strong>Mysterious Encounter</strong> &#8594; See R481</li>
             </ul>
             <hr />
             <p><strong>Code Decryption:</strong></p>
