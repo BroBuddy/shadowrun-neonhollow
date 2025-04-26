@@ -13,13 +13,13 @@ function Sheet() {
                 <strong>Rules:</strong>
             </p>
             <p>
-                <Link to="/R001" className="clickable">
+                <Link to="/R001" className="a">
                     R001
                 </Link>{' '}
                 &#8594; Welcome to NeonHollow
             </p>
             <p>
-                <Link to="/R002" className="clickable">
+                <Link to="/R002" className="a">
                     R002
                 </Link>{' '}
                 &#8594; Instructions
@@ -28,13 +28,13 @@ function Sheet() {
                 <strong>Matrix:</strong>
             </p>
             <p>
-                <Link to="/R401" className="clickable">
+                <Link to="/R401" className="a">
                     R401
                 </Link>{' '}
                 &#8594; Event Matrix
             </p>
             <p>
-                <Link to="/R501" className="clickable">
+                <Link to="/R501" className="a">
                     R501
                 </Link>{' '}
                 &#8594; Runner Matrix
@@ -43,13 +43,13 @@ function Sheet() {
                 <strong>Mission:</strong>
             </p>
             <p>
-                <Link to="/R602" className="clickable">
+                <Link to="/R602" className="a">
                     R602
                 </Link>{' '}
                 &#8594; Rules
             </p>
             <p>
-                <Link to="/R603" className="clickable">
+                <Link to="/R603" className="a">
                     R603
                 </Link>{' '}
                 &#8594; Performance

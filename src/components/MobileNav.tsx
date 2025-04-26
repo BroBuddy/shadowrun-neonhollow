@@ -11,12 +11,12 @@ const MobileNav = () => {
                 <span className="text-xs">🏠 City</span>
             </Link>
 
-            <Link to="/R601">
+            <Link to="/mission">
                 <span className="text-xs">🎯 Mission</span>
             </Link>
 
-            <Link to="/R401">
-                <span className="text-xs">🎲 EM</span>
+            <Link to="/matrix">
+                <span className="text-xs">🎲 Matrix</span>
             </Link>
         </section>
     )

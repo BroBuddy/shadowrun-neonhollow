@@ -118,7 +118,7 @@ export const Rules = [
         id: 'R009',
         title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
-            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the MegaCorp (R110).</p>
+            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> to bring down the MegaCorp (R110).</p>
             <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>NeuralNexus</li>
@@ -309,48 +309,6 @@ export const Rules = [
     },
     {
         id: 'R014',
-        title: 'Attributes',
-        content:
-            '<p>The main characteristics essential for skill checks are as follows:</p>' +
-            '<ol><li><strong>Strength</strong> – The Power to Endure</li><li><strong>Agility</strong> – The Speed to Slip Between Shadows</li><li><strong>Reaction</strong> – The Edge That Comes Before Thought</li><li><strong>Logic</strong> – The Key That Unlocks Every Door</li><li><strong>Intuition</strong> – The Sixth Sense of the Streets</li><li><strong>Charisma</strong> – The Power That Doesn’t Need Guns</li></ol>',
-    },
-    {
-        id: 'R015',
-        title: 'Sheet',
-        content: `<p>
-                A fast-access reference sheet featuring the most essential rules
-                and frequently used tables.
-            </p>
-            <p>
-                <strong>Rules:</strong>
-            </p>
-            <p>
-                <Link to="/R001">R001</Link> &#8594; Welcome to NeonHollow
-            </p>
-            <p>
-                <Link to="/R002">R002</Link> &#8594; Instructions
-            </p>
-            <p>
-                <strong>Matrix:</strong>
-            </p>
-            <p>
-                <Link to="/R401">R401</Link> &#8594; Event Matrix
-            </p>
-            <p>
-                <Link to="/R501">R501</Link> &#8594; Runner Matrix
-            </p>
-            <p>
-                <strong>Mission:</strong>
-            </p>
-            <p>
-                <Link to="/R602">R602</Link> &#8594; Rules
-            </p>
-            <p>
-                <Link to="/R603">R603</Link> &#8594; Performance
-            </p>`,
-    },
-    {
-        id: 'R016',
         title: 'Well Done',
         content:
             '<p>The Corp is no more. You’ve dismantled their influence and shattered their operations. <strong>NeonHollow</strong> will breathe easier now, though it will take time for the dust to settle.</p>' +
@@ -360,7 +318,7 @@ export const Rules = [
             '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
     },
     {
-        id: 'R017',
+        id: 'R015',
         title: 'Overwhelmingly Great',
         content:
             '<p>The Corp has crumbled. You’ve not only crushed their empire, you’ve sent shockwaves through the entire city. News of their downfall spreads like wildfire, and for once, it’s the people of <strong>NeonHollow</strong> who are celebrating.</p>' +

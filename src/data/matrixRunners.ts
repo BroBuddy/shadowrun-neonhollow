@@ -2,76 +2,7 @@ export const Runners = [
     {
         id: 'R501',
         title: 'Runner Matrix',
-        content: `<table>
-            <thead>
-                <tr>
-                    <th>2d6</th>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>R511</td>
-                    <td>R512</td>
-                    <td>R513</td>
-                    <td>R514</td>
-                    <td>R515</td>
-                    <td>R516</td>
-                </tr>
-                <tr>
-                    <th>2</th>
-                    <td>R521</td>
-                    <td>R522</td>
-                    <td>R523</td>
-                    <td>R524</td>
-                    <td>R525</td>
-                    <td>R526</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>R531</td>
-                    <td>R532</td>
-                    <td>R533</td>
-                    <td>R534</td>
-                    <td>R535</td>
-                    <td>R536</td>
-                </tr>
-                <tr>
-                    <th>4</th>
-                    <td>R541</td>
-                    <td>R542</td>
-                    <td>R543</td>
-                    <td>R544</td>
-                    <td>R545</td>
-                    <td>R546</td>
-                </tr>
-                <tr>
-                    <th>5</th>
-                    <td>R551</td>
-                    <td>R552</td>
-                    <td>R553</td>
-                    <td>R554</td>
-                    <td>R555</td>
-                    <td>R556</td>
-                </tr>
-                <tr>
-                    <th>6</th>
-                    <td>R561</td>
-                    <td>R562</td>
-                    <td>R563</td>
-                    <td>R564</td>
-                    <td>R565</td>
-                    <td>R566</td>
-                </tr>
-            </tbody>
-        </table>
-        <hr />`,
+        content: ``,
     },
     {
         id: 'R511',

@@ -17,159 +17,170 @@ function City() {
                     <p>🟡 Heat 3 &#8594; Vortex</p>
                 </div>
             </div>
-            <hr />
+            <br />
             <p>
-                <strong>🔴 Quantum District:</strong>
+                <strong>🔴 Quantum</strong>
             </p>
-            <div className="flex gap-8">
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R110">
-                        <p>
-                            MegaCorp
-                            <img
-                                src="/images/MegaCorp.jpg"
-                                alt="MegaCorp"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R180">
-                        <p>
-                            NeuralNexus
-                            <img
-                                src="/images/NeuralNexus.jpg"
-                                alt="NeuralNexus"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R120">
-                        <p>
-                            PatrolHub
-                            <img
-                                src="/images/PatrolHub.jpg"
-                                alt="PatrolHub"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
+            <div className="card">
+                <div className="flex gap-4">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R110">
+                            <p>
+                                MegaCorp
+                                <img
+                                    src="/images/MegaCorp.jpg"
+                                    alt="MegaCorp"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R180">
+                            <p>
+                                NeuralNexus
+                                <img
+                                    src="/images/NeuralNexus.jpg"
+                                    alt="NeuralNexus"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R120">
+                            <p>
+                                PatrolHub
+                                <img
+                                    src="/images/PatrolHub.jpg"
+                                    alt="PatrolHub"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
                 </div>
             </div>
+            <br />
             <p>
-                <strong>🟠 Serenity District:</strong>
+                <strong>🟠 Serenity</strong>
             </p>
-            <div className="flex gap-8">
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R130">
-                        <p>
-                            BioCare
-                            <img
-                                src="/images/BioCare.jpg"
-                                alt="BioCare"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R160">
-                        <p>
-                            EchoGarden
-                            <img
-                                src="/images/EchoGarden.jpg"
-                                alt="EchoGarden"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R150">
-                        <p>
-                            DreamSphere
-                            <img
-                                src="/images/DreamSphere.jpg"
-                                alt="DreamSphere"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
+            <div className="card">
+                <div className="flex gap-4">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R130">
+                            <p>
+                                BioCare
+                                <img
+                                    src="/images/BioCare.jpg"
+                                    alt="BioCare"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R160">
+                            <p>
+                                EchoGarden
+                                <img
+                                    src="/images/EchoGarden.jpg"
+                                    alt="EchoGarden"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R150">
+                            <p>
+                                DreamSphere
+                                <img
+                                    src="/images/DreamSphere.jpg"
+                                    alt="DreamSphere"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
                 </div>
             </div>
+            <br />
             <p>
-                <strong>🟡 Vortex District:</strong>
+                <strong>🟡 Vortex</strong>
             </p>
-            <div className="flex gap-8">
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R140">
-                        <p>
-                            HoloLounge
-                            <img
-                                src="/images/HoloLounge.jpg"
-                                alt="HoloLounge"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R170">
-                        <p>
-                            IronGym
-                            <img
-                                src="/images/IronGym.jpg"
-                                alt="IronGym"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R200">
-                        <p>
-                            ZeroZone
-                            <img
-                                src="/images/ZeroZone.jpg"
-                                alt="ZeroZone"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
+            <div className="card">
+                <div className="flex gap-4">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R140">
+                            <p>
+                                HoloLounge
+                                <img
+                                    src="/images/HoloLounge.jpg"
+                                    alt="HoloLounge"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R170">
+                            <p>
+                                IronGym
+                                <img
+                                    src="/images/IronGym.jpg"
+                                    alt="IronGym"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R200">
+                            <p>
+                                ZeroZone
+                                <img
+                                    src="/images/ZeroZone.jpg"
+                                    alt="ZeroZone"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
                 </div>
             </div>
+            <br />
             <p>
-                <strong>🟢 Undercity District:</strong>
+                <strong>🟢 Undercity</strong>
             </p>
-            <div className="flex gap-8">
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R190">
-                        <p>
-                            SmugglerDen
-                            <img
-                                src="/images/SmugglerDen.jpg"
-                                alt="SmugglerDen"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
+            <div className="card">
+                <div className="flex gap-4">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R190">
+                            <p>
+                                SmugglerDen
+                                <img
+                                    src="/images/SmugglerDen.jpg"
+                                    alt="SmugglerDen"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/R210">
+                            <p>
+                                SafeHouse
+                                <img
+                                    src="/images/SafeHouse.jpg"
+                                    alt="SafeHouse"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center"></div>
                 </div>
-                <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/R210">
-                        <p>
-                            SafeHouse
-                            <img
-                                src="/images/SafeHouse.jpg"
-                                alt="SafeHouse"
-                                className="mx-auto"
-                            />
-                        </p>
-                    </Link>
-                </div>
-                <div className="flex-1 basis-1/3 text-center"></div>
             </div>
         </Card>
     )
