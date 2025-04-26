@@ -39,23 +39,21 @@ export const Runs = [
         content: `<p>Mr. Johnson doesn’t just care that the job’s done — he cares how it’s done. The better your performance, the greater the reward.</p>
             <p>🔴 <strong>Performance 1</strong> &#8594; Disastrous</p>
             <ul>
-                <li>-4 Health</li>
-                <li>+2 Heat</li>
+                <li>+3 Heat</li>
             </ul>
             <p>🔴 <strong>Performance 2</strong> &#8594; Underwhelming</p>
             <ul>
-                <li>-3 Health</li>
+                <li>+2 Heat</li>
                 <li>Roll 2d6 → +2 → See R305 → Gain Intel</li>
             </ul>
             <p>🟡 <strong>Performance 3</strong> &#8594; Partial</p>
             <ul>
-                <li>-2 Health</li>
+                <li>+1 Heat</li>
                 <li>Roll 2d6 → +4 → See R305 → Gain Intel</li>
                 <li>Roll 2d6 → +2 → See R303 → Gain Nuyen</li>
             </ul>
             <p>🟢 <strong>Performance 4</strong> &#8594; Impressive</p>
             <ul>
-                <li>-1 Health</li>
                 <li>Next Mission available</li>
                 <li>Roll 2d6 → +4 → See R303 → Gain Nuyen</li>
             </ul>
