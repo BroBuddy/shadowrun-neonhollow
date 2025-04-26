@@ -514,4 +514,99 @@ export const Events = [
             <p><strong>Charisma (DC 10):</strong><br />Rally the people to stay calm and follow safety procedures.</p>
             <ul><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
     },
+    {
+        id: 'R471',
+        title: 'System Anomaly',
+        content: `<p><strong>Event:</strong><br />
+            The Neural Nexus system experiences a sudden, unexplained anomaly. Screens flicker, wires spark, and the usual hum of the servers is replaced by unsettling silence. An emergency shutdown is imminent, and the whole building could crash if not stabilized quickly.</p>
+            <hr />
+            <p><strong>Logic (DC 12):</strong><br />Analyze the anomaly's source and implement a corrective action to stabilize the system.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Logic</li><li><strong>Fail:</strong> -2 Energy</li></ul>
+            <hr />
+            <p><strong>Intuition (DC 10):</strong><br />Spot the hidden cause of the malfunction and anticipate the next failure point.</p>
+            <ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+    },
+    {
+        id: 'R472',
+        title: 'Patrol Check',
+        content: `<p><strong>Event:</strong><br />
+            As you enter PatrolHub, you're immediately confronted by a pair of security officers. They seem suspicious and are questioning your presence in the area. It's clear they are ready to test your credentials or try to get some extra information from you.</p>
+            <hr />
+            <p><strong>Strength (DC 12):</strong><br />Use your strength to physically assert yourself by intimidating the officers.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Strength</li><li><strong>Fail:</strong> +1 Heat</li></ul>
+            <hr />
+            <p><strong>Charisma (DC 10):</strong><br />Charm or persuade the officers, using your wit and presence to smooth over the situation.</p>
+            <ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+    },
+    {
+        id: 'R473',
+        title: 'Medical Malfunction',
+        content: `<p><strong>Event:</strong><br />
+            A sudden medical malfunction has put several patients in critical condition. The usual staff is overwhelmed, and BioCare’s system is struggling to prioritize the patients in need of emergency care. You’ve been called in to help, but time is running out.</p>
+            <hr />
+            <p><strong>Agility (DC 12):</strong><br />Use your agility to quickly navigate the chaotic environment and assist in moving patients to safety.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <hr />
+            <p><strong>Strength (DC 10):</strong><br />Apply your strength to physically move patients or assist with heavy medical equipment.</p>
+            <ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+    },
+    {
+        id: 'R474',
+        title: 'Lost Data',
+        content: `<p><strong>Event:</strong><br />
+            While enjoying the tranquil atmosphere of EchoGarden, a small portable data storage device is dropped nearby. Upon inspection, you realize it contains highly sensitive data, likely from a corporate leak. There are multiple ways to deal with the device, but time is running out.</p>
+            <hr />
+            <p><strong>Reaction (DC 12):</strong><br />React quickly to either stash the device in a safe spot or maneuver around others who might notice it.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> -2 Energy</li></ul>
+            <hr />
+            <p><strong>Agility (DC 10):</strong><br />Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.</p>
+            <ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+    },
+    {
+        id: 'R475',
+        title: 'Dream State Disturbance',
+        content: `<p><strong>Event:</strong><br />
+            As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.</p>
+            <hr />
+            <p><strong>Intuition (DC 12):</strong><br />Use your instinct and quick thinking to identify the core issue and stabilize the virtual environment.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Intuition</li><li><strong>Fail:</strong> -2 Energy</li></ul>
+            <hr />
+            <p><strong>Reaction (DC 10):</strong><br />Move swiftly to grab a lost runner’s attention and guide them to safety.</p>
+            <ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
+    },
+    {
+        id: 'R476',
+        title: 'The Whisper Network',
+        content: `<p><strong>Event:</strong><br />
+            The atmosphere in HoloLounge is electric tonight. The neon lights flash in sync with the pulsing beats, and people from all walks of life gather here. You spot an influential figure seated at the bar, surrounded by chatter.</p>            <hr />
+            <p><strong>Charisma (DC 12):</strong><br />Charm your way into a conversation with the influential figure.</p>
+            <ul><li><strong>Success:</strong> +1 Charisma Temporary</li><li><strong>Fail:</strong> +1 Heat</li></ul>
+            <hr />
+            <p><strong>Intuition (DC 10):</strong><br />Pay attention to the subtle body language and hidden cues in the conversation</p>
+            <ul><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Energy</li></ul>`,
+    },
+    {
+        id: 'R477',
+        title: 'Unplanned Challenge',
+        content: `<p><strong>Event:</strong><br />
+            As you work out in the IronGym, a loud crash echoes across the room. A massive weight has fallen from the rack, pinning an unconscious individual beneath it. The gym is in chaos as people rush to help, but there's a delay in the emergency response.</p>
+            <hr />
+            <p><strong>Strength (DC 12):</strong><br />Lift the heavy weight off the person with raw strength.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Strength</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <hr />
+            <p><strong>Reaction (DC 10):</strong><br />React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.</p>
+            <ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+    },
+    {
+        id: 'R478',
+        title: 'Smuggler’s Test',
+        content: `<p><strong>Event:</strong><br />
+            As you step into SmugglerDen, you're immediately stopped by a group of shady individuals guarding the entrance. They give you a hard stare and ask if you’ve got the right credentials to be here. It's clear they're not going to let anyone through without proving themselves.</p>
+            <hr />
+            <p><strong>Agility (DC 12):</strong><br />Use your agility to slip past the guards unnoticed or avoid a confrontation with a quick dodge.</p>
+            <ul><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> +1 Heat</li></ul>
+            <hr />
+            <p><strong>Logic (DC 10):</strong><br />Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.</p>
+            <ul><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
+    },
 ]

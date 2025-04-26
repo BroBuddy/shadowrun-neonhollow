@@ -104,7 +104,7 @@ export const Town = [
             <p><em>"The law's last flicker."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Interrogation Delay</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Patrol Check</strong> &#8594; See R472</li>
                 <li>3-4: <strong>Security Breach</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>False Accusation</strong> &#8594; -1 Reputation</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -133,7 +133,7 @@ export const Town = [
             <p><em>"Healing flesh, not souls."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Unexpected Emergency</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Medical Malfunction</strong> &#8594; See R473</li>
                 <li>3-4: <strong>Uncooperative Patient</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Unsettling Diagnosis</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -168,7 +168,7 @@ export const Town = [
             <p><em>"Reality? Optional."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Crowded Bar</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>The Whisper Network</strong> &#8594; See R476</li>
                 <li>3-4: <strong>Drunk and Disorderly</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Toxic Cocktail</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -203,7 +203,7 @@ export const Town = [
             <p><em>"Where your nightmares become hobbies."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Reception Queue</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Dream State Disturbance</strong> &#8594; See R475</li>
                 <li>3-4: <strong>Suspicious Activity</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Service Charge Surge</strong> &#8594; -2.000 ¥</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -238,7 +238,7 @@ export const Town = [
             <p><em>"The city’s memory grows here."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Lost in Thought</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Lost Data</strong> &#8594; See R474</li>
                 <li>3-4: <strong>Suspicious Plant Harvest</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Toxic Fungal Patch</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -273,7 +273,7 @@ export const Town = [
             <p><em>"Muscle isn't old-school — it's survival."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Unscheduled Maintenance</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Unplanned Challenge</strong> &#8594; See R477</li>
                 <li>3-4: <strong>Wrong Locker Room</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Unpaid Membership</strong> &#8594; -2.000 ¥</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -308,7 +308,7 @@ export const Town = [
             <p><em>"Where minds meet machines."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Power Surge</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>System Anomaly</strong> &#8594; See R471</li>
                 <li>3-4: <strong>Unapproved Experiment</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Research Malfunctions</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
@@ -343,7 +343,7 @@ export const Town = [
             <p><em>"The city's forgotten veins."</em></p>
             <p><strong>Enter &#8594; Roll 2d6:</strong></p>
             <ul>
-                <li>2: <strong>Hesitant Buyers</strong> &#8594; +1 Hour</li>
+                <li>2: <strong>Smuggler’s Test</strong> &#8594; See R478</li>
                 <li>3-4: <strong>Police Raid</strong> &#8594; +1 Heat</li>
                 <li>5-6: <strong>Knife Fight</strong> &#8594; -1 Health</li>
                 <li>7: <strong>Standard</strong> &#8594; No Effect</li>
