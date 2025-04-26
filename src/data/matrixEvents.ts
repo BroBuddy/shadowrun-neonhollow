@@ -72,13 +72,10 @@ export const Events = [
             </tbody>
         </table>
         <hr />
-        <p><strong>To roll on the Event Matrix:</strong></p>
+        <p><strong>Event Rules:</strong></p>
         <ol>
-            <li><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</li>
-            <li>Combine the two rolls to form a two-digit number.</li>
-            <li><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</li>
             <li>Choose how to handle the event.</li>
-            <li>Roll 2d6 &#8594; Add choosen attribute</li>
+            <li>Roll <strong>2d6</strong> &#8594; Add choosen attribute</li>
             <li>If you meet or exceed the <strong>Difficulty Check</strong> (DC), you succeed.</li>
         </ol>`,
     },

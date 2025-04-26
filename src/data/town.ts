@@ -68,36 +68,7 @@ export const Town = [
                 </div>
                 <div class="flex-1 basis-1/3">
                 </div>
-            </div>
-            <hr />
-            <p>Dive into the <strong>Town Rules</strong> (R102) to get a taste of how things run.</p>`,
-    },
-    {
-        id: 'R102',
-        title: 'Town Rules',
-        content: `<p>This is how a day unfolds in <strong>NeonHollow</strong>:</p>
-        <ol>
-            <li>Start at your private <strong>SafeHouse</strong>.</li>
-            <li>Entering any building:
-                <ul>
-                    <li>Moving cost <strong>1 Energy</strong> and <strong>1 Hour</strong>.</li>
-                </ul>
-            </li>
-            <li>Perform actions:
-                <ul>
-                    <li>Actions cost <strong>1 Hour</strong>.</li>
-                    <li>Actions can be performed <strong>once per day</strong>.</li>
-                    <li>Actions at the Megacorp are <strong>single-use</strong> only.</li>
-                </ul>
-            </li>
-            <li>End of the Day:
-                <ul>
-                    <li>Roll on the <strong>Event Matrix (R401)</strong>.</li>
-                    <li>Increase <strong>Day Counter</strong> by +1.</li>
-                    <li>Reset <strong>Hours</strong> to 0.</li>
-                </ul>
-            </li>
-        </ol>`,
+            </div>`,
     },
     {
         id: 'R110',

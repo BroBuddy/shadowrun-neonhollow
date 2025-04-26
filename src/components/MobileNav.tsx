@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const MobileNav = () => {
     return (
         <section className="mobile-nav">
-            <Link to="/R013">
+            <Link to="/R015">
                 <span className="text-xs">Sheet</span>
             </Link>
 

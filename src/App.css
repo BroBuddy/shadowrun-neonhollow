@@ -73,6 +73,14 @@ a {
     color: var(--violet-1);
 }
 
+.content a {
+    font-weight: bold;
+    color: var(--white-1);
+    background-color: var(--violet-1);
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
 section img {
     border-radius: 5px;
 }

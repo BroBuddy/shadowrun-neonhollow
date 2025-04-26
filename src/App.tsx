@@ -27,7 +27,7 @@ function App() {
                 </Link>
             </div>
 
-            <div className="z-0">
+            <div className="z-0 content">
                 <Outlet />
             </div>
 

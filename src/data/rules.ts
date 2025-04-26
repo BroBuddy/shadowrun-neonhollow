@@ -7,27 +7,58 @@ export const Rules = [
             '<p>The megacorp dominates this simulation like it does the real world. It watches, it hunts, and it controls every district—just like it will when you jack out of this and hit the actual streets.</p>' +
             '<p>Your task is simple: break the system.</p>' +
             '<p>Take on missions. Build your rep. Uncover secrets. Burn down their influence—district by district.</p>' +
-            '<p>This is your trial. Win it... and wake up. (R002)</p>',
+            '<p>This is your trial. Win it... and wake up. R002</p>',
     },
     {
         id: 'R002',
         title: 'Instructions',
-        content:
-            '<p><strong>Your First Steps into NeonHollow:</strong></p>' +
-            '<ol>' +
-            '<li><strong>Suit Up</strong> – Grab 2d6, a pen, and something to write on. That’s your loadout.</li>' +
-            '<li><strong>Create Your Runner</strong> (R003) – Build the shadow operative who’ll face the city’s dark corners.</li>' +
-            '<li><strong>Know The Mechanics</strong>' +
-            '<ul><li>Health (R005)</li><li>Energy (R006)</li><li>Reputation (R007)</li><li>Heat (R008)</li><li>Intel (R010)</li><li>Time (R011)</li><li>Dice (R012)</li></ul></li>' +
-            '<li><strong>Enter NeonHollow</strong> (R101) – The city’s waiting. Time to make your move.</li>' +
-            '</ol>',
+        content: `<p><strong>Your first Steps:</strong></p>
+            <p>Grab 2d6, a pen, and something to write on.</p>
+            <p><strong>Know the Mechanics:</strong></p>
+            <p>R003 &#8594; Time</p>
+            <p>R004 &#8594; Nuyen</p>
+            <p>R005 &#8594; Health</p>
+            <p>R006 &#8594; Energy</p>
+            <p>R007 &#8594; Reputation</p>
+            <p>R008 &#8594; Heat</p>
+            <p>R009 &#8594; Intel</p>
+            <p>R010 &#8594; Dice</p>
+            <p>R011 &#8594; Matrix</p>
+            <p><strong>Start your adventure:</strong></p>
+            <p>R012 &#8594; Character Creation</p>`,
+    },
+    {
+        id: 'R003',
+        title: 'Time Mechanic',
+        content: `<p>You’ve got <strong>7 Days</strong> to dismantle the system. Each cycle gives you <strong>7 Hours</strong> — use them wisely.</p>
+            <p>This is how a day unfolds in <strong>NeonHollow</strong>:</p>
+            <ol>
+                <li>Start at your private <strong>SafeHouse</strong>.</li>
+                <li>Entering any building:
+                    <ul>
+                        <li>Moving cost <strong>1 Energy</strong> and <strong>1 Hour</strong>.</li>
+                    </ul>
+                </li>
+                <li>Perform actions:
+                    <ul>
+                        <li>Actions cost <strong>1 Hour</strong>.</li>
+                        <li>Actions can be performed <strong>once per day</strong>.</li>
+                        <li>Actions at the Megacorp are <strong>single-use</strong> only.</li>
+                    </ul>
+                </li>
+                <li>End of the Day:
+                    <ul>
+                        <li>Roll on the <strong>Event Matrix</strong> R401</li>
+                        <li>Increase <strong>Day Counter</strong> by +1</li>
+                        <li>Reset <strong>Hours</strong> to 0</li>
+                    </ul>
+                </li>
+            </ol>`,
     },
     {
         id: 'R004',
-        title: 'Attributes',
-        content:
-            '<p>The main characteristics essential for skill checks are as follows:</p>' +
-            '<ol><li><strong>Strength</strong> – The Power to Endure</li><li><strong>Agility</strong> – The Speed to Slip Between Shadows</li><li><strong>Reaction</strong> – The Edge That Comes Before Thought</li><li><strong>Logic</strong> – The Key That Unlocks Every Door</li><li><strong>Intuition</strong> – The Sixth Sense of the Streets</li><li><strong>Charisma</strong> – The Power That Doesn’t Need Guns</li></ol>',
+        title: 'Nuyen Mechanic',
+        content: `<p>.</p>`,
     },
     {
         id: 'R005',
@@ -82,7 +113,7 @@ export const Rules = [
             </ol>`,
     },
     {
-        id: 'R010',
+        id: 'R009',
         title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
             <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> (R601) to bring down the MegaCorp (R110).</p>
@@ -94,48 +125,209 @@ export const Rules = [
             </ol>`,
     },
     {
+        id: 'R010',
+        title: 'Dice Mechanic',
+        content: `<p>When prompted to roll <strong>1d6</strong>, it means you must roll a single six-sided die — your fate resting on a number between 1 and 6.</p>
+            <p>Rolling <strong>2d6</strong> means tossing two six-sided dice and adding the results together.</p>
+            <p>Whenever you roll double ones, it triggers a critical glitch—data corruption, misfire, or worse. You immediately lose <strong>1 Intel</strong>.</p>
+            <p>On the flip side, if you roll double sixes, you strike digital gold: gain <strong>1 Intel</strong> as the shadows reward your precision.</p>`,
+    },
+    {
         id: 'R011',
-        title: 'Time Mechanic',
-        content: `<p>You’ve got <strong>7 Days</strong> to dismantle the system. Each cycle gives you <strong>7 Hours</strong> — use them wisely.</p>
-            <p>For a detailed breakdown of how a day shift works, refer to the <strong>NeonHollow</strong> rules (R102).</p>`,
+        title: 'Matrix Mechanic',
+        content: `<p><strong>Roll 2d6</strong> – one die will be for the tens digit and the other for the ones digit.</p>
+            <p>Combine the two rolls to form a two-digit number.</p>
+            <p><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</p>`,
     },
     {
         id: 'R012',
-        title: 'Dice Mechanic',
-        content:
-            '<p>When prompted to roll <strong>1d6</strong>, it means you must roll a single six-sided die — your fate resting on a number between 1 and 6.</p>' +
-            '<p>Rolling <strong>2d6</strong> means tossing two six-sided dice and adding the results together.</p>' +
-            '<p>For Matrix checks, throw two sixers: the first die gives you the tens, the second the ones.</p>' +
-            '<p>Whenever you roll double ones, it triggers a critical glitch—data corruption, misfire, or worse. You immediately lose <strong>1 Intel</strong>.</p>' +
-            '<p>On the flip side, if you roll double sixes, you strike digital gold: gain <strong>1 Intel</strong> as the shadows reward your precision.</p>',
-    },
-    {
-        id: 'R013',
-        title: 'Sheet',
-        content: `<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>
-            <p><strong>Mechanics:</strong></p>
+        title: 'Character Creation',
+        content: `<p><strong>Metatype:</strong></p>
+            <p>Roll 1d6:</p>
+            <ol>
+                <li>R021 &#8594; Human</li>
+                <li>R022 &#8594; Elf</li>
+                <li>R023 &#8594; Dwarf</li>
+                <li>R024 &#8594; Orc</li>
+                <li>R025 &#8594; Troll</li>
+                <li>Roll Again</li>
+            </ol>
+            <hr />
+            <p><strong>Archetype:</strong></p>
+            <p>Roll 1d6:</p>
+            <ol>
+                <li>R031 &#8594; Street Samurai</li>
+                <li>R032 &#8594; Decker</li>
+                <li>R033 &#8594; Rigger</li>
+                <li>R034 &#8594; Mage</li>
+                <li>R035 &#8594; Face</li>
+                <li>R036 &#8594; Shaman</li>
+            </ol>
+            <hr />
+            <p><strong>Background:</strong></p>
+            <p>Your archetype is the tens digit.</p>
+            <p>Roll 1d6:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>2d6</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>R711</td>
+                        <td>R712</td>
+                        <td>R713</td>
+                        <td>R714</td>
+                        <td>R715</td>
+                        <td>R716</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>R721</td>
+                        <td>R722</td>
+                        <td>R723</td>
+                        <td>R724</td>
+                        <td>R725</td>
+                        <td>R726</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>R731</td>
+                        <td>R732</td>
+                        <td>R733</td>
+                        <td>R734</td>
+                        <td>R735</td>
+                        <td>R736</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>R741</td>
+                        <td>R742</td>
+                        <td>R743</td>
+                        <td>R744</td>
+                        <td>R745</td>
+                        <td>R746</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>R751</td>
+                        <td>R752</td>
+                        <td>R753</td>
+                        <td>R754</td>
+                        <td>R755</td>
+                        <td>R756</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>R761</td>
+                        <td>R762</td>
+                        <td>R763</td>
+                        <td>R764</td>
+                        <td>R765</td>
+                        <td>R766</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <p><strong>Gear:</strong></p>
+            <p>Choose one item for free from the Fixer's Workshop:</p>
             <ul>
-                <li>Instructions (R002)</li>
-                <li>Attributes (R004)</li>
+                <li>
+                    <strong>Power Gauntlets:</strong> +1 Strength
+                </li>
+                <li>
+                    <strong>Nano-Tread Boots:</strong> +1 Agility
+                </li>
+                <li>
+                    <strong>Reflex Enhancer Implant:</strong> +1 Reaction
+                </li>
+                <li>
+                    <strong>Neural Interface Headset:</strong> +1 Logic
+                </li>
+                <li>
+                    <strong>Synaptic Amplifier:</strong> +1 Intuition
+                </li>
+                <li>
+                    <strong>Holo-Disguise Mask:</strong> +1 Charisma
+                </li>
             </ul>
-            <p><strong>Runner:</strong></p>
+            <p>Apply the bonus to your player sheet.</p>
+            <hr />
+            <p><strong>Mode:</strong></p>
+            <p>The mode grants you starting resources such as Health, Energy, Nuyen, and possibly Reputation.</p>
             <ul>
-                <li>Character Creation (R003)</li>
-                <li>Matrix (R501)</li>
+                <li>
+                    <strong>Easy Mode:</strong>
+                    <ul>
+                        <li>15.000 ¥</li>
+                        <li>10 Health</li>
+                        <li>10 Energy</li>
+                        <li>2 Reputation</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Medium Mode:</strong>
+                    <ul>
+                        <li>10.000 ¥</li>
+                        <li>8 Health</li>
+                        <li>8 Energy</li>
+                        <li>1 Reputation</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hard Mode:</strong>
+                    <ul>
+                        <li>5.000 ¥</li>
+                        <li>6 Health</li>
+                        <li>6 Energy</li>
+                    </ul>
+                </li>
             </ul>
-            <p><strong>Town:</strong></p>
+            <hr />
+            <p><strong>(Optional) Name:</strong></p>
+            <p>Each archetype has its own name pool:</p>
             <ul>
-                <li>Rules (R102)</li>
-                <li>Events (R401)</li>
+                <li>R041 &#8594; Street Samurai</li>
+                <li>R042 &#8594; Decker</li>
+                <li>R043 &#8594; Rigger</li>
+                <li>R044 &#8594; Mage</li>
+                <li>R045 &#8594; Face</li>
+                <li>R046 &#8594; Shaman</li>
             </ul>
-            <p><strong>Mission:</strong></p>
-            <ul>
-                <li>Rules (R602)</li>
-                <li>Performance (R603)</li>
-            </ul>`,
+            <hr />
+            <p>Now you're ready — head into <strong>NeonHollow</strong> and begin your adventure. R101</p>`,
     },
     {
         id: 'R014',
+        title: 'Attributes',
+        content:
+            '<p>The main characteristics essential for skill checks are as follows:</p>' +
+            '<ol><li><strong>Strength</strong> – The Power to Endure</li><li><strong>Agility</strong> – The Speed to Slip Between Shadows</li><li><strong>Reaction</strong> – The Edge That Comes Before Thought</li><li><strong>Logic</strong> – The Key That Unlocks Every Door</li><li><strong>Intuition</strong> – The Sixth Sense of the Streets</li><li><strong>Charisma</strong> – The Power That Doesn’t Need Guns</li></ol>',
+    },
+    {
+        id: 'R015',
+        title: 'Sheet',
+        content: `<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>
+            <p><strong>Rules:</strong></p>
+            <p>R002 &#8594; Instructions</p>
+            <p>R014 &#8594; Attributes</p>
+            <p><strong>Matrix:</strong></p>
+            <p>R401 &#8594; Event Matrix</p>
+            <p>R501 &#8594; Runner Matrix</p>
+            <p><strong>Mission:</strong></p>
+            <p>R602 &#8594; Rules</p>
+            <p>R603 &#8594; Performance</p>`,
+    },
+    {
+        id: 'R016',
         title: 'Well Done',
         content:
             '<p>The Corp is no more. You’ve dismantled their influence and shattered their operations. <strong>NeonHollow</strong> will breathe easier now, though it will take time for the dust to settle.</p>' +
@@ -145,7 +337,7 @@ export const Rules = [
             '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
     },
     {
-        id: 'R015',
+        id: 'R017',
         title: 'Overwhelmingly Great',
         content:
             '<p>The Corp has crumbled. You’ve not only crushed their empire, you’ve sent shockwaves through the entire city. News of their downfall spreads like wildfire, and for once, it’s the people of <strong>NeonHollow</strong> who are celebrating.</p>' +
