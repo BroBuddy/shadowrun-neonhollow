@@ -317,16 +317,37 @@ export const Rules = [
     {
         id: 'R015',
         title: 'Sheet',
-        content: `<p>A fast-access reference sheet featuring the most essential rules and frequently used tables.</p>
-            <p><strong>Rules:</strong></p>
-            <p>R002 &#8594; Instructions</p>
-            <p>R014 &#8594; Attributes</p>
-            <p><strong>Matrix:</strong></p>
-            <p>R401 &#8594; Event Matrix</p>
-            <p>R501 &#8594; Runner Matrix</p>
-            <p><strong>Mission:</strong></p>
-            <p>R602 &#8594; Rules</p>
-            <p>R603 &#8594; Performance</p>`,
+        content: `<p>
+                A fast-access reference sheet featuring the most essential rules
+                and frequently used tables.
+            </p>
+            <p>
+                <strong>Rules:</strong>
+            </p>
+            <p>
+                <Link to="/R001">R001</Link> &#8594; Welcome to NeonHollow
+            </p>
+            <p>
+                <Link to="/R002">R002</Link> &#8594; Instructions
+            </p>
+            <p>
+                <strong>Matrix:</strong>
+            </p>
+            <p>
+                <Link to="/R401">R401</Link> &#8594; Event Matrix
+            </p>
+            <p>
+                <Link to="/R501">R501</Link> &#8594; Runner Matrix
+            </p>
+            <p>
+                <strong>Mission:</strong>
+            </p>
+            <p>
+                <Link to="/R602">R602</Link> &#8594; Rules
+            </p>
+            <p>
+                <Link to="/R603">R603</Link> &#8594; Performance
+            </p>`,
     },
     {
         id: 'R016',

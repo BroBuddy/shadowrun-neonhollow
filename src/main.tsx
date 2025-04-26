@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 
+const Sheet = React.lazy(() => import('./components/Sheet'))
+const City = React.lazy(() => import('./components/City'))
 const TagContent = React.lazy(() => import('./components/TagContent'))
 
 const router = createBrowserRouter([
@@ -14,12 +16,16 @@ const router = createBrowserRouter([
                 element: <Navigate to="/R001" replace />,
             },
             {
+                path: '/sheet',
+                element: <Sheet />,
+            },
+            {
+                path: '/city',
+                element: <City />,
+            },
+            {
                 path: '/:tagId',
-                element: (
-                    <React.Suspense fallback={<></>}>
-                        <TagContent />
-                    </React.Suspense>
-                ),
+                element: <TagContent />,
             },
         ],
     },

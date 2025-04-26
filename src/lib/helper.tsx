@@ -16,7 +16,11 @@ const makeUrlsClickable = (html: string) => {
                     <>
                         {parts.map((part, i) =>
                             rulesRegex.test(part) ? (
-                                <Link key={i} to={`/${part}`}>
+                                <Link
+                                    key={i}
+                                    to={`/${part}`}
+                                    className="clickable"
+                                >
                                     {part}
                                 </Link>
                             ) : (

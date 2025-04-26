@@ -87,7 +87,7 @@ export const Runs = [
                 <li>6–8 &#8594; <strong>Intuition (DC 10)</strong>:<br />Locate an unguarded entry point.</li>
                 <li>9–12 &#8594; <strong>Strength (DC 8)</strong>:<br />Force entry through a maintenance hatch.</li>
             </ul>
-            <p>Fail? &#859 → See R603 &#859 → Performance 1</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 1</p>
             <hr />
             <p><strong>2. Gather Intel on Security Systems</strong></p>
             <p>Roll 2d6:</p>
@@ -96,7 +96,7 @@ export const Runs = [
                 <li>7–9 &#8594; <strong>Charisma (DC 10)</strong>:<br />Convince a guard to give you access.</li>
                 <li>10–12 &#8594; <strong>Agility (DC 8)</strong>:<br />Sleight of hand to grab access cards.</li>
             </ul>
-            <p>Fail? &#859 → See R603 &#859 → Performance 2</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 2</p>
             <hr />
             <p><strong>3. Extract Critical Data from the Server</strong></p>
             <p>Roll 2d6:</p>
@@ -105,7 +105,7 @@ export const Runs = [
                 <li>8–10 &#8594; <strong>Intuition (DC 10)</strong>:<br />Find a hidden network access port.</li>
                 <li>11–12 &#8594; <strong>Charisma (DC 8)</strong>:<br />Bluff your way through a security checkpoint.</li>
             </ul>
-            <p>Fail? &#859 → See R603 &#859 → Performance 3</p>
+            <p>Fail? &#8594; See R603 &#8594; Performance 3</p>
             <hr />
             <p><strong>Twist:</strong><br />
             As you are extracting the data, you stumble upon a hidden compartment within the server room that seems to be connected to a covert research project.</p>
@@ -113,8 +113,8 @@ export const Runs = [
                 <li><strong>Intuition (DC 14)</strong> or <strong>Logic (DC 14)</strong>:<br />
                 Spot hidden surveillance equipment.</li>
             </ul>
-            <p>Fail? &#859 → See R603 &#859 → Performance 4</p>
-            <p>Success? &#859 → See R603 &#859 → Performance 5</p>`,
+            <p>Fail? &#8594; See R603 &#8594; Performance 4</p>
+            <p>Success? &#8594; See R603 &#8594; Performance 5</p>`,
     },
     {
         id: 'R620',

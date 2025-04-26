@@ -73,7 +73,7 @@ a {
     color: var(--violet-1);
 }
 
-.content a {
+.clickable {
     font-weight: bold;
     color: var(--white-1);
     background-color: var(--violet-1);

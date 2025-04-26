@@ -370,7 +370,7 @@ export const Town = [
             <p><em>"Where the shadows test their own."</em></p>
             <p><strong>Recruit a Runner:</strong></p>
             <ol>
-                <li>Roll on the <strong>Runner Matrix</strong> (R501)</li>
+                <li>Roll on the <strong>Runner Matrix</strong> R501</li>
                 <li>Remember the two highest attributes</li>
                 <li>Pay <strong>10.000 ¥</strong> &#8594; Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R307 &#8594; Runner</li>
@@ -378,7 +378,7 @@ export const Town = [
             <p><strong>Challenge a Runner:</strong></p>
             <ol>
                 <li>Combine your two highest attributes</li>
-                <li>Roll on the <strong>Runner Matrix</strong> (R501)</li>
+                <li>Roll on the <strong>Runner Matrix</strong> R501</li>
                 <li>Add up the opponent’s corresponding attributes</li>
                 <li>You lost? &#8594; Lose <strong>Health</strong> equal to the gap</li>
                 <li>Add 10 &#8594; See R303 &#8594; Nuyen</li>
