@@ -652,7 +652,7 @@ export const Events = [
         id: 'R485',
         title: 'Mysterious Encounter',
         content: `<p><strong>Event:</strong><br />
-            In the dim corner of the room, you notice a man sitting alone — his head clean-shaven, a long, fiery orange beard cascading down his chest. He silently sketches strange symbols and maps on a battered notepad, lost in his own world.
+            In the dim corner of the lobby, you notice a man sitting alone — his head clean-shaven, a long, fiery orange beard cascading down his chest. He silently sketches strange symbols and maps on a battered notepad, lost in his own world.
             <br /><br />
             A silent understanding forms between you — not of friendship, but of mutual recognition. You part ways, but the encounter sharpens your instincts and leaves you more attuned to the hidden currents of the world.</p>
             <hr />
@@ -680,6 +680,7 @@ export const Events = [
             <br /><br />
             You leave with sore muscles — but also feeling stronger.</p>
             <hr />
-            <ul><li><strong>Bonus:</strong> +1 Strength</li></ul>`,
+            <p><strong>Bonus Attributes:</strong></p>
+            <ul><li>+1 Strength</li></ul>`,
     },
 ]
