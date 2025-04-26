@@ -75,12 +75,29 @@ export const Town = [
     {
         id: 'R102',
         title: 'Town Rules',
-        content: `<p>Start each day at your private SafeHouse.</p>
-            <p>Each entry into a building or completion of a designated action will incur a time cost of <strong>1 Hour</strong>.</p>
-            <p>You can perform an action only once per day.</p>
-            <p>At the end of the day, roll on the <strong>Event Matrix</strong> (R401) to uncover the happenings on the streets of NeonHollow.</p>
-            <p>Got enough Intel by midnight? Time to visit Mr. Johnson for a mission — just don’t skip the hazard pay negotiations.</p>
-            <p>After each mission, you return to your SafeHouse and a new day begins.</p>`,
+        content: `<p>This is how a day unfolds in <strong>NeonHollow</strong>:</p>
+        <ol>
+            <li>Start at your private <strong>SafeHouse</strong>.</li>
+            <li>Entering any building:
+                <ul>
+                    <li>Moving cost <strong>1 Energy</strong> and <strong>1 Hour</strong>.</li>
+                </ul>
+            </li>
+            <li>Perform actions:
+                <ul>
+                    <li>Actions cost <strong>1 Hour</strong>.</li>
+                    <li>Actions can be performed <strong>once per day</strong>.</li>
+                    <li>Actions at the Megacorp are <strong>single-use</strong> only.</li>
+                </ul>
+            </li>
+            <li>End of the Day:
+                <ul>
+                    <li>Roll on the <strong>Event Matrix (R401)</strong>.</li>
+                    <li>Increase <strong>Day Counter</strong> by +1.</li>
+                    <li>Reset <strong>Hours</strong> to 0.</li>
+                </ul>
+            </li>
+        </ol>`,
     },
     {
         id: 'R110',
