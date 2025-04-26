@@ -71,24 +71,24 @@ export const Outcomes = [
             </ul>
             <p>🔴 <strong>Roll 6-8</strong> &#8594; Failure</p>
             <ul>
-                <li>+4.000 ¥</li>
+                <li>+3.000 ¥</li>
             </ul>
             <p>🟡 <strong>Roll 9-11</strong> &#8594; Standard</p>
             <ul>
-                <li>+8.000 ¥</li>
+                <li>+6.000 ¥</li>
             </ul>
             <p>🟡 <strong>Roll 12-14</strong> &#8594; Good</p>
             <ul>
-                <li>+12.000 ¥</li>
+                <li>+9.000 ¥</li>
             </ul>
             <p>🟢 <strong>Roll 15-17</strong> &#8594; Great</p>
             <ul>
-                <li>+16.000 ¥</li>
+                <li>+12.000 ¥</li>
                 <li>+1 Reputation</li>
             </ul>
             <p>🟢 <strong>Roll 18+</strong> &#8594; Exceptional</p>
             <ul>
-                <li>+20.000 ¥</li>
+                <li>+15.000 ¥</li>
                 <li>+1 Reputation</li>
             </ul>`,
     },

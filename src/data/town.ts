@@ -2,14 +2,17 @@ export const Town = [
     {
         id: 'R101',
         title: 'NeonHollow',
-        content: `<p class="flex items-center justify-center"><img src="/images/NeonHollow.jpg" alt="NeonHollow" /></p>
-            <p><em>"Where the lights never die — only the people do."</em></p>
-            <p><strong>District Lockdowns:</strong></p>
-            <ul>
-                <li>Heat 1 &#8594; Quantum District</li>
-                <li>Heat 2 &#8594; Serenity District</li>
-                <li>Heat 3 &#8594; Vortex District</li>
-            </ul>
+        content: `<div class="flex gap-4">
+                <div class="flex-1 basis-1/2">
+                    <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
+                </div>
+                <div class="flex-1 basis-1/2">
+                    <p><strong>District Lockdowns:</strong></p>
+                    <p>🟡 Heat 1 &#8594; Quantum</p>
+                    <p>🟠 Heat 2 &#8594; Serenity</p>
+                    <p>🔴 Heat 3 &#8594; Vortex</p>
+                </div>
+            </div>
             <hr />
             <p><strong>Quantum District:</strong></p>
             <div class="flex gap-8">
@@ -379,6 +382,8 @@ export const Town = [
         title: 'SafeHouse',
         content: `<p class="flex items-center justify-center"><img src="/images/SafeHouse.jpg" alt="SafeHouse" /></p>
             <p><em>"A secret refuge where safety lies."</em></p>
+            <p>Only here, actions can be used multiple times.</p>
+            <hr />
             <p><strong>Stimulant Injection:</strong></p>
             <ul>
                 <li>Spend <strong>1 Energy</strong> &#8594; Roll 2d6 &#8594; <strong>-2</strong></li>

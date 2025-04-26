@@ -4,15 +4,15 @@ const MobileNav = () => {
     return (
         <section className="mobile-nav">
             <Link to="/R015">
-                <span className="text-xs">Sheet</span>
+                <span className="text-xs">📑 Sheet</span>
             </Link>
 
             <Link to="/R101">
-                <span className="text-xs">City</span>
+                <span className="text-xs">🏠 City</span>
             </Link>
 
             <Link to="/R601">
-                <span className="text-xs">Mission</span>
+                <span className="text-xs">🎯 Mission</span>
             </Link>
         </section>
     )

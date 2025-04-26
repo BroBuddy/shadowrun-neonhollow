@@ -3,22 +3,20 @@ export const Runs = [
         id: 'R601',
         title: 'Mr. Johnson',
         content: `<p class="flex items-center justify-center"><img src="/images/MrJohnson.jpg" alt="MrJohnson" /></p>
-            <p><em>"The smile's fake. The creds are real."</em></p>
-            <p>The mysterious figure is a former corporate insider, now seeking to aid you in toppling the megacorp from within.</p>
             <p><strong>Before each mission:</strong></p>
             <ol>
-                <li>Spend <strong>3 Intel</strong> &#8594; Negotiate for hazard pay</li>
+                <li>Spend <strong>5 Intel</strong> &#8594; Negotiate for hazard pay</li>
                 <li>Roll 2d6 &#8594; Add <strong>Charisma</strong></li>
                 <li>See R303 &#8594; Nuyen</li>
             </ol>
-            <p><strong>Missions:</strong></p>
-            <ol>
-                <li><strong>Leak Sensitive Data</strong> (R610)</li>
-                <li><strong>Crash Security Systems</strong> (R620)</li>
-                <li><strong>Confront the CEO</strong> (R630)</li>
-            </ol>
+            <hr/ >
+            <p> Start with the first mission.</p>
+            <p><strong>Missions Overview:</strong></p>
+            <p>R610 &#8594; Leak Sensitive Data</p>
+            <p>R620 &#8594; Crash Security Systems</p>
+            <p>R630 &#8594; Confront the CEO</p>
             <hr />
-            <p>To master the shadows, study the Rules (R602) — and after every run, debrief with the Performance (R603) to assess your impact.</p>`,
+            <p>Study Rules R602. Review Performance R603.</p>`,
     },
     {
         id: 'R602',
@@ -31,7 +29,7 @@ export const Runs = [
                 <li>If you succeed at all three, the twist is revealed.</li>
                 <li>Each success contributes to your overall Performance score.</li>
             </ul>
-            <p>Report to <strong>Mr. Johnson</strong> after the run to receive your reward based on Performance (R603).</p>`,
+            <p>Report to <strong>Mr. Johnson</strong> after the run to receive your reward based on Performance R603.</p>`,
     },
     {
         id: 'R603',

@@ -24,7 +24,7 @@ export const Rules = [
             <p>R009 &#8594; Intel</p>
             <p>R010 &#8594; Dice</p>
             <p>R011 &#8594; Matrix</p>
-            <p><strong>Start your adventure:</strong></p>
+            <p><strong>Start your Adventure:</strong></p>
             <p>R012 &#8594; Character Creation</p>`,
     },
     {
@@ -58,7 +58,9 @@ export const Rules = [
     {
         id: 'R004',
         title: 'Nuyen Mechanic',
-        content: `<p>.</p>`,
+        content: `<p>Nuyen is the currency of the Shadowrun universe, widely recognized as a standard means of payment.</p>
+            <p>Most facility actions require Nuyen, so it’s wise to keep your pockets full.</p>
+            <p>Many facilities offer opportunities to earn Nuyen — take your chances and make it count.</p>`,
     },
     {
         id: 'R005',
