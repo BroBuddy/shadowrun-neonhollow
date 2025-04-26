@@ -69,7 +69,10 @@ export const Rules = [
         id: 'R008',
         title: 'Heat Mechanic',
         content: `<p>Heat ranges from 0 to 3 and cannot exceed these limits.</p>
-            <p>At the end of the day, the corporation will track you down, draining your health and energy by an amount equal to your current heat level.</p>
+            <p>When your Heat level rises, the Corp's special ops start hunting you down. You suffer the following consequences based on your new <strong>Heat</strong> level.</p>
+            <ul>
+                <li>Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current Heat level.</li>
+            </ul>
             <p>The higher the heat level, the more town districts will lock down, restricting access to their services.</p>
             <p><strong>Service Providers:</strong></p>
             <ol>

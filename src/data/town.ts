@@ -70,7 +70,7 @@ export const Town = [
                 </div>
             </div>
             <hr />
-            <p>Dive into the rules (R102) to get a taste of how things run at <strong>NeonHollow</strong>.</p>`,
+            <p>Dive into the <strong>Town Rules</strong> (R102) to get a taste of how things run.</p>`,
     },
     {
         id: 'R102',

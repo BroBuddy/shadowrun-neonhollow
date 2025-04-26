@@ -8,7 +8,6 @@ export const Character = [
                 <li>Archetype</li>
                 <li>Background</li>
                 <li>Gear</li>
-                <li>Name</li>
                 <li>Mode</li>
             </ol>
             <hr />
@@ -139,7 +138,7 @@ export const Character = [
             </ul>
             <p>Apply the bonus to your player sheet.</p>
             <hr />
-            <p><strong>5. Name:</strong></p>
+            <!--<p><strong>5. Name:</strong></p>
             <p>Each archetype has its own name pool:</p>
             <ul>
                 <li>(R041) Street Samurai</li>
@@ -149,8 +148,8 @@ export const Character = [
                 <li>(R045) Face</li>
                 <li>(R046) Shaman</li>
             </ul>
-            <hr />
-            <p><strong>6. Mode:</strong></p>
+            <hr />-->
+            <p><strong>5. Mode:</strong></p>
             <p>For your first journey, I suggest starting with Easy Mode to get a feel for the city's pulse.</p>
             <ul>
                 <li>
