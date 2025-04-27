@@ -6,9 +6,14 @@ import {
 } from '../MissionType'
 import Headline from '@/components/Headline'
 import { getMissionPerformance } from '../performanceData'
+import { useMemo } from 'react'
 
 function MissionPerformance() {
-    const missionPerformance = getMissionPerformance()
+    const missionPerformance = useMemo(() => getMissionPerformance(), [])
+
+    if (!missionPerformance || missionPerformance.length === 0) {
+        return <p>No mission performance data available.</p>
+    }
 
     return (
         <>

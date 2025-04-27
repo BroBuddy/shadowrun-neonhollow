@@ -1,23 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useMemo } from 'react'
+import { useParams } from 'react-router-dom'
 import Card from '@/components/Card'
-import {
-    Mission,
-    MissionOption,
-    MissionOutcome,
-    MissionTask,
-} from '../MissionType'
 import { getMissionById } from '../missionData'
 import Headline from '@/components/Headline'
+import MissionTasks from '../components/MissionTasks'
+import MissionTwist from '../components/MissionTwist'
 
 function MissionDetail() {
     const { missionId } = useParams()
-    const [mission, setMission] = useState<Mission | null>(null)
-
-    useEffect(() => {
-        const missionItem = getMissionById(missionId as string)
-        setMission(missionItem as Mission)
-    }, [missionId])
+    const mission = useMemo(
+        () => getMissionById(missionId as string),
+        [missionId]
+    )
 
     if (!mission) {
         return <></>
@@ -42,71 +36,9 @@ function MissionDetail() {
                 </p>
             </Card>
 
-            <Card>
-                {mission.tasks.map((task: MissionTask, index: number) => (
-                    <React.Fragment key={task.id}>
-                        <p>
-                            <strong className="highlight">
-                                {index + 1}. {task.title}
-                            </strong>
-                        </p>
-                        <p>Roll {task.roll}:</p>
-                        <ul>
-                            {task.outcomes.map(
-                                (outcome: MissionOutcome, index: number) => (
-                                    <li key={index}>
-                                        <strong>
-                                            {outcome.range} &#8594;{' '}
-                                            {outcome.stat} (DC {outcome.dc}):
-                                        </strong>
-                                        <br />
-                                        {outcome.description}
-                                    </li>
-                                )
-                            )}
-                        </ul>
-                        <p>
-                            Fail? &#8594;{' '}
-                            <Link to={`/${task.failure.redirect}`}>
-                                {task.failure.text}
-                            </Link>
-                        </p>
-                    </React.Fragment>
-                ))}
-            </Card>
+            <MissionTasks tasks={mission.tasks} />
 
-            <Card>
-                <p>
-                    <strong className="highlight">Twist:</strong>
-                    <br />
-                    {mission.twist.description}
-                </p>
-                <ul>
-                    {mission.twist.options.map(
-                        (option: MissionOption, index: number) => (
-                            <li key={index}>
-                                <strong>
-                                    {option.stat} (DC {option.dc}):
-                                </strong>
-                                <br />
-                                {option.description}
-                            </li>
-                        )
-                    )}
-                </ul>
-                <p>
-                    Fail? &#8594;{' '}
-                    <Link to={`/${mission.twist.failure.redirect}`}>
-                        {mission.twist.failure.text}
-                    </Link>
-                </p>
-                <p>
-                    Success? &#8594;{' '}
-                    <Link to={`/${mission.twist.success.redirect}`}>
-                        {mission.twist.success.text}
-                    </Link>
-                </p>
-            </Card>
+            <MissionTwist twist={mission.twist} />
         </>
     )
 }
