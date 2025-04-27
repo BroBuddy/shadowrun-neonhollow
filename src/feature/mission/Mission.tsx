@@ -21,11 +21,7 @@ function Mission() {
                             Add <strong>Charisma</strong>
                         </li>
                         <li>
-                            See{' '}
-                            <Link to="/R303" className="a">
-                                R303
-                            </Link>{' '}
-                            &#8594; Nuyen
+                            See <Link to="/R303">R303</Link> &#8594; Nuyen
                         </li>
                     </ol>
                 </div>
@@ -37,40 +33,24 @@ function Mission() {
                 <p>
                     <strong>Missions Overview:</strong>
                 </p>
-                <p>
-                    1.{' '}
-                    <Link to="/mission/R610" className="a">
-                        Recon the Facility
-                    </Link>
-                </p>
-                <p>
-                    2.{' '}
-                    <Link to="/mission/R620" className="a">
-                        Crash Security Systems
-                    </Link>
-                </p>
-                <p>
-                    3.{' '}
-                    <Link to="/mission/R630" className="a">
-                        Confront the CEO
-                    </Link>
-                </p>
-                <p>
-                    4.{' '}
-                    <Link to="/mission/R640" className="a">
-                        Unveil the Truth
-                    </Link>
-                </p>
+                <ol>
+                    <li>
+                        <Link to="/mission/R610">Recon the Facility</Link>
+                    </li>
+                    <li>
+                        <Link to="/mission/R620">Crash Security Systems</Link>
+                    </li>
+                    <li>
+                        <Link to="/mission/R630">Confront the CEO</Link>
+                    </li>
+                    <li>
+                        <Link to="/mission/R640">Unveil the Truth</Link>
+                    </li>
+                </ol>
             </div>
             <p>
-                Focus on mastering both{' '}
-                <Link to="/mission/rules" className="a">
-                    Rules
-                </Link>{' '}
-                and{' '}
-                <Link to="/mission/performance" className="a">
-                    Performance
-                </Link>
+                Focus on mastering both <Link to="/mission/rules">Rules</Link>{' '}
+                and <Link to="/mission/performance">Performance</Link>
             </p>
         </Card>
     )

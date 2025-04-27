@@ -305,7 +305,7 @@ export const Rules = [
                 <li>R046 &#8594; Shaman</li>
             </ul>
             <hr />
-            <p>Now you're ready — head into <strong>NeonHollow</strong> and begin your adventure. R101</p>`,
+            <p>Now you're ready — head into the city <strong>NeonHollow</strong> and begin your adventure.</p>`,
     },
     {
         id: 'R014',

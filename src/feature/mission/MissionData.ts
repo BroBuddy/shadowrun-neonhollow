@@ -3,7 +3,7 @@ import {
     MissionPerformance as MissionPerformancesType,
 } from './MissionType'
 
-const MissionData: Mission[] = [
+const missionData: Mission[] = [
     {
         id: 'R610',
         title: 'Recon the Facility',
@@ -576,7 +576,7 @@ const MissionPerformance: MissionPerformancesType[] = [
 ]
 
 const getMissionById = (missionId: string) => {
-    return MissionData.find((mission: Mission) => mission.id === missionId)
+    return missionData.find((mission: Mission) => mission.id === missionId)
 }
 
 const getMissionPerformance = () => {
