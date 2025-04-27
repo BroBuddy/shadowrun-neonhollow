@@ -481,7 +481,7 @@ export const Events = [
     },
     {
         id: 'R475',
-        title: 'Dream State Disturbance',
+        title: 'Dream Glitch',
         content: `<p><strong class="highlight">Event:</strong><br />
             As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.</p>
             

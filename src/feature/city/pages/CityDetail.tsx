@@ -48,7 +48,7 @@ function CityDetail() {
                         {facility.rollList.map(
                             (item: FacilityRoll, index: number) => (
                                 <li key={index}>
-                                    {item.roll}: &#8594;{' '}
+                                    <strong>Roll {item.roll}</strong> &#8594;{' '}
                                     {item.link ? (
                                         <Link to={`/rule${item.link}`}>
                                             {item.text}
@@ -77,19 +77,40 @@ function CityDetail() {
                                         (
                                             step: ActionStep,
                                             stepIndex: number
-                                        ) => (
-                                            <li key={stepIndex}>
-                                                {step.link ? (
-                                                    <Link
-                                                        to={`/resource${step.link}`}
-                                                    >
-                                                        {step.text}
-                                                    </Link>
-                                                ) : (
-                                                    <>{step.text}</>
-                                                )}
-                                            </li>
-                                        )
+                                        ) => {
+                                            const [
+                                                firstWord,
+                                                ...remainingWords
+                                            ] = step.text.split(' ')
+
+                                            return (
+                                                <li key={stepIndex}>
+                                                    {step.link ? (
+                                                        <>
+                                                            <strong>
+                                                                {firstWord}:
+                                                            </strong>{' '}
+                                                            <Link
+                                                                to={`/resource${step.link}`}
+                                                            >
+                                                                {remainingWords.join(
+                                                                    ' '
+                                                                )}{' '}
+                                                            </Link>
+                                                        </>
+                                                    ) : (
+                                                        <>
+                                                            <strong>
+                                                                {firstWord}:
+                                                            </strong>{' '}
+                                                            {remainingWords.join(
+                                                                ' '
+                                                            )}{' '}
+                                                        </>
+                                                    )}
+                                                </li>
+                                            )
+                                        }
                                     )}
                                 </ul>
                             </div>
