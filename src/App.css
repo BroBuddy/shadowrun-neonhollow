@@ -145,7 +145,7 @@ hr {
     color: var(--black-1);
 }
 
-.mobile-nav {
+nav {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -163,7 +163,7 @@ hr {
     box-shadow: 0 0 15px 10px var(--violet-1);
 }
 
-.mobile-nav > a {
+nav > a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,6 +171,6 @@ hr {
     padding: 5px;
 }
 
-.mobile-nav a:hover {
+nav a:hover {
     color: var(--violet-1);
 }

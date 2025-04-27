@@ -1,11 +1,11 @@
-const Card = ({ title, children }: any) => {
-    return (
-        <div className="card">
-            {title && <h2 className="text-xl px-2 mb-4">{title}</h2>}
+import React from 'react'
 
-            {children}
-        </div>
-    )
+type CardProps = {
+    children: React.ReactNode
+}
+
+const Card = ({ children }: CardProps) => {
+    return <div className="card">{children}</div>
 }
 
 export default Card
