@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import { getResourceByTag } from '../resourceData'
 import { ResourceRoll, Resource as ResourceType } from '../ResourceType'
@@ -8,15 +8,12 @@ import { getIcon } from '@/lib/icon'
 
 function ResourceDetail() {
     const { resourceTag } = useParams()
-    const [resource, setResource] = useState<ResourceType | null>(null)
-
-    useEffect(() => {
-        const resourceItem = getResourceByTag(resourceTag as string)
-        setResource(resourceItem as ResourceType)
+    const resource = useMemo(() => {
+        return getResourceByTag(resourceTag as string) as ResourceType
     }, [resourceTag])
 
-    if (!resource) {
-        return <></>
+    if (!resource || !resource.rollList) {
+        return <p>No resource data available.</p>
     }
 
     return (
@@ -25,29 +22,28 @@ function ResourceDetail() {
             <Card>
                 <p>The number determines the outcome of the action.</p>
                 {resource.rollList &&
-                    resource.rollList.map(
-                        (roll: ResourceRoll, index: number) => (
-                            <div key={index} className="roll-section">
-                                <p>
-                                    {getIcon(roll.range)}{' '}
-                                    <strong className="highlight">
-                                        Roll {roll.range}
-                                    </strong>{' '}
-                                    → {roll.result}
-                                </p>
-                                <ul className="list-margin">
-                                    {roll.effects.map(
-                                        (
-                                            effect: string,
-                                            effectIndex: number
-                                        ) => (
-                                            <li key={effectIndex}>{effect}</li>
-                                        )
-                                    )}
-                                </ul>
-                            </div>
-                        )
-                    )}
+                    resource.rollList.map((roll: ResourceRoll) => (
+                        <div key={roll.range} className="roll-section">
+                            <p>
+                                {getIcon(roll.range)}{' '}
+                                <strong className="highlight">
+                                    Roll {roll.range}
+                                </strong>{' '}
+                                → {roll.result}
+                            </p>
+                            <ul className="list-margin">
+                                {roll.effects.map(
+                                    (effect: string, effectIndex: number) => (
+                                        <li
+                                            key={`${roll.range}-${effectIndex}`}
+                                        >
+                                            {effect}
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+                    ))}
             </Card>
         </>
     )
