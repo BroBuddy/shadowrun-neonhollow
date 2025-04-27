@@ -15,6 +15,7 @@
 
 #root {
     margin: 0 auto;
+    position: relative;
     width: 380px;
 }
 
@@ -32,6 +33,11 @@ body {
     display: flex;
     min-width: 320px;
     min-height: 100vh;
+}
+
+.modal {
+    display: none;
+    z-index: 1;
 }
 
 ul,
@@ -161,6 +167,7 @@ nav {
     -webkit-box-shadow: 0 0 15px 10px var(--violet-1);
     -moz-box-shadow: 0 0 15px 10px var(--violet-1);
     box-shadow: 0 0 15px 10px var(--violet-1);
+    z-index: 10;
 }
 
 nav > a {

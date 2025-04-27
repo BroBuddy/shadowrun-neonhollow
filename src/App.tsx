@@ -1,6 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
+import BurgerMenu from './components/BurgerMenu'
 import './App.css'
 
 function App() {
@@ -12,13 +13,9 @@ function App() {
 
     return (
         <>
-            <div className="z-0 content">
-                <Outlet />
-            </div>
-
-            <div className="z-10">
-                <MobileNav />
-            </div>
+            <BurgerMenu />
+            <Outlet />
+            <MobileNav />
         </>
     )
 }
