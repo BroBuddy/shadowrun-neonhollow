@@ -49,17 +49,13 @@ const router = createBrowserRouter([
     },
 ])
 
-const container = document.getElementById('root') as HTMLElement & {
-    _reactRootContainer?: unknown
-}
+const container = document.getElementById('root') as HTMLElement
+const root = createRoot(container)
 
-if (!container._reactRootContainer) {
-    const root = createRoot(container)
-    root.render(
-        <StrictMode>
-            <RouterProvider router={router} />
-        </StrictMode>
-    )
-}
+root.render(
+    <StrictMode>
+        <RouterProvider router={router} />
+    </StrictMode>
+)
 
 export { Pages, LoadingFallback, ErrorFallback }
