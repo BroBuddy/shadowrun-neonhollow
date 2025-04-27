@@ -1,10 +1,10 @@
 import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
-import { getMissionPerformance } from './missionData'
+import { getMissionPerformance } from '../missionData'
 import {
     MissionEffect,
     MissionPerformance as MissionPerformanceType,
-} from './MissionType'
+} from '../MissionType'
 
 function MissionPerformance() {
     const missionPerformance = getMissionPerformance()

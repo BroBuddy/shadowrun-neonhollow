@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-import Card from '../../components/Card'
-import { getCityData } from './cityData'
-import { CityDistrict, CityFacility } from './CityType'
+import Card from '../../../components/Card'
+import { getCityData } from '../cityData'
+import { CityDistrict, CityFacility } from '../CityType'
 
 function City() {
     const cityData = getCityData()

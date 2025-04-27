@@ -1,7 +1,7 @@
-import City from './City'
-import MegaCorp from './MegaCorp'
-import NeuralNexus from './NeuralNexus'
-import PatrolHub from './PatrolHub'
+import City from './pages/City'
+import MegaCorp from './pages/MegaCorp'
+import NeuralNexus from './pages/NeuralNexus'
+import PatrolHub from './pages/PatrolHub'
 
 const CityRouter = [
     {

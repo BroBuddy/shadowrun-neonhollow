@@ -1,7 +1,7 @@
-import Mission from './Mission'
-import MissionDetail from './MissionDetail'
-import MissionPerformance from './MissionPerformance'
-import MissionRules from './MissionRules'
+import Mission from './pages/Mission'
+import MissionDetail from './pages/MissionDetail'
+import MissionPerformance from './pages/MissionPerformance'
+import MissionRules from './pages/MissionRules'
 
 const MissionRouter = [
     {

@@ -82,7 +82,7 @@ const cityData: CityDistrict[] = [
     },
 ]
 
-const getCityData = () => {
+const getCityData = (): CityDistrict[] => {
     return cityData
 }
 

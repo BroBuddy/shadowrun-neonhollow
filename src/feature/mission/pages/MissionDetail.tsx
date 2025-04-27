@@ -6,8 +6,8 @@ import {
     MissionOption,
     MissionOutcome,
     MissionTask,
-} from './MissionType'
-import { getMissionById } from './missionData'
+} from '../MissionType'
+import { getMissionById } from '../missionData'
 
 function MissionDetail() {
     const { missionId } = useParams()

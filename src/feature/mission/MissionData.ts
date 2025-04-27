@@ -575,11 +575,13 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
 ]
 
-const getMissionById = (missionId: string) => {
-    return missionData.find((mission: Mission) => mission.id === missionId)
+const getMissionById = (missionId: string): Mission => {
+    return missionData.find(
+        (mission: Mission) => mission.id === missionId
+    ) as Mission
 }
 
-const getMissionPerformance = () => {
+const getMissionPerformance = (): MissionPerformancesType[] => {
     return MissionPerformance
 }
 
