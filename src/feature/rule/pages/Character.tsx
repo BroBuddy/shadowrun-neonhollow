@@ -14,26 +14,83 @@ function Character() {
                     <strong className="violet">Metatype:</strong>
                 </p>
                 <p>Roll 1d6:</p>
-                <ol>
-                    <li>
-                        <Link to="/rule/R021">Human</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R021">Human</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R022">Elf</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R023">Dwarf</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R024">Orc</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R025">Troll</Link>
-                    </li>
-                </ol>
+
+                <div className="flex justify-between gap-3">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R021">
+                            <p>
+                                1. Human
+                                <img
+                                    src="/images/Human.jpg"
+                                    alt="Human"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R021">
+                            <p>
+                                2. Human
+                                <img
+                                    src="/images/Human.jpg"
+                                    alt="Human"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R022">
+                            <p>
+                                3. Elf
+                                <img
+                                    src="/images/Elf.jpg"
+                                    alt="Elf"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                </div>
+                <div className="flex justify-between gap-3">
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R023">
+                            <p>
+                                4. Dwarf
+                                <img
+                                    src="/images/Dwarf.jpg"
+                                    alt="Dwarf"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R024">
+                            <p>
+                                5. Orc
+                                <img
+                                    src="/images/Ork.jpg"
+                                    alt="Orc"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                    <div className="flex-1 basis-1/3 text-center">
+                        <Link to="/rule/R025">
+                            <p>
+                                6. Troll
+                                <img
+                                    src="/images/Troll.jpg"
+                                    alt="Troll"
+                                    className="mx-auto"
+                                />
+                            </p>
+                        </Link>
+                    </div>
+                </div>
             </Card>
             <Card>
                 <p>
