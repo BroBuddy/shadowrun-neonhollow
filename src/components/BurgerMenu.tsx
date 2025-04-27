@@ -10,7 +10,7 @@ function BurgerMenu() {
     return (
         <>
             <div
-                className="absolute top-4 right-4 text-xl cursor-pointer"
+                className="absolute text-white top-4 right-4 text-xl cursor-pointer"
                 onClick={() => toggleModal(true)}
             >
                 ☰
@@ -21,7 +21,7 @@ function BurgerMenu() {
                     isOpen ? 'translate-y-0' : '-translate-y-full'
                 }`}
             >
-                <div className="shadow-lg w-2/3 max-w-md mt-5 mx-auto">
+                <div className="shadow-lg w-3/4 max-w-md mt-5 mx-auto">
                     <div className="flex items-center justify-between">
                         <p>
                             <strong>Modal</strong>
