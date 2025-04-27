@@ -19,11 +19,12 @@ function Mission() {
                             Spend <strong>3 Intel</strong>
                         </li>
                         <li>Negotiate hazard pay</li>
+                        <li>Roll 2d6</li>
                         <li>
-                            Roll 2d6 &#8594; <strong>+Charisma</strong>
+                            Add <strong>Charisma</strong>
                         </li>
                         <li>
-                            <Link to="/R303">Gain Nuyen</Link>
+                            <Link to="/resource/R303">Gain Nuyen</Link>
                         </li>
                     </ol>
                 </div>
