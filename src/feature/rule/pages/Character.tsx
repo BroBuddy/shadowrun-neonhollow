@@ -97,7 +97,7 @@ function Character() {
                     <strong className="highlight">Archetype:</strong>
                 </p>
                 <p>Roll 1d6:</p>
-                <ol>
+                <ol className="list-margin">
                     <li>
                         <Link to="/rule/R031">Street Samurai</Link>
                     </li>
@@ -160,7 +160,7 @@ function Character() {
                     <strong className="highlight">Gear:</strong>
                 </p>
                 <p>Choose one item for free from the Fixer's Workshop:</p>
-                <ul>
+                <ul className="list-margin">
                     <li>
                         <strong>Power Gauntlets:</strong> +1 Strength
                     </li>
@@ -168,10 +168,10 @@ function Character() {
                         <strong>Nano-Tread Boots:</strong> +1 Agility
                     </li>
                     <li>
-                        <strong>Reflex Enhancer Implant:</strong> +1 Reaction
+                        <strong>Enhancer Implant:</strong> +1 Reaction
                     </li>
                     <li>
-                        <strong>Neural Interface Headset:</strong> +1 Logic
+                        <strong>Interface Headset:</strong> +1 Logic
                     </li>
                     <li>
                         <strong>Synaptic Amplifier:</strong> +1 Intuition
@@ -186,11 +186,8 @@ function Character() {
                 <p>
                     <strong className="highlight">Mode:</strong>
                 </p>
-                <p>
-                    The mode grants you starting resources such as Health,
-                    Energy, Nuyen, and possibly Reputation.
-                </p>
-                <ul>
+                <p>The mode grants you starting resources:</p>
+                <ul className="list-margin">
                     <li>
                         <strong>Easy Mode:</strong>
                         <ul>

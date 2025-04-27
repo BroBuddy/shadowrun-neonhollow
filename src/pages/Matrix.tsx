@@ -13,7 +13,7 @@ function Matrix() {
                 <p>
                     <strong className="highlight">Event Rules:</strong>
                 </p>
-                <ol>
+                <ol className="list-margin">
                     <li>Choose how to handle the event.</li>
                     <li>
                         Roll <strong>2d6</strong> &#8594; Add choosen attribute

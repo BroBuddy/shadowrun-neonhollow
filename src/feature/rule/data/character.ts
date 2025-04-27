@@ -6,7 +6,7 @@ export const Character = [
             '<p class="flex items-center justify-center"><img src="/images/Human.jpg" alt="Human" /></p>' +
             '<p>The most adaptable and versatile race, humans have the ability to excel in nearly every environment. They may not possess the natural enhancements of the other races, but their drive and determination make them a powerful force in any situation.</p>' +
             '<p><strong class="highlight">Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 3</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>' +
+            '<ul class="list-margin"><li>Strength: 3</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>' +
             '<p>Apply the attributes to your player sheet.</p>',
     },
     {
@@ -16,7 +16,7 @@ export const Character = [
             '<p class="flex items-center justify-center"><img src="/images/Elf.jpg" alt="Elf" /></p>' +
             '<p>"Graceful, elegant, and with a keen intellect, elves are often seen as the aristocrats of the Shadowrun world. Their natural agility and charisma make them invaluable in both social and combat situations.</p>' +
             '<p><strong class="highlight">Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 2</li><li>Agility: 4</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 2</li><li>Charisma: 4</li></ul>' +
+            '<ul class="list-margin"><li>Strength: 2</li><li>Agility: 4</li><li>Reaction: 3</li><li>Logic: 3</li><li>Intuition: 2</li><li>Charisma: 4</li></ul>' +
             '<p>Apply the attributes to your player sheet.</p>',
     },
     {
@@ -26,7 +26,7 @@ export const Character = [
             '<p class="flex items-center justify-center"><img src="/images/Dwarf.jpg" alt="Dwarf" /></p>' +
             '<p>Dwarves are the embodiment of endurance and resilience. Shorter in stature but larger in presence, they are known for their strength, toughness, and unyielding determination. They’re often the reliable backbone of any crew</p>' +
             '<p><strong class="highlight">Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 2</li><li>Logic: 4</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>' +
+            '<ul class="list-margin"><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 2</li><li>Logic: 4</li><li>Intuition: 3</li><li>Charisma: 3</li></ul>' +
             '<p>Apply the attributes to your player sheet.</p>',
     },
     {
@@ -36,7 +36,7 @@ export const Character = [
             '<p class="flex items-center justify-center"><img src="/images/Ork.jpg" alt="Ork" /></p>' +
             '<p>With a natural inclination toward physical power and aggression, orks are often misunderstood as brutish, but they have a strong sense of loyalty and honor. Their towering frames and raw strength make them formidable in any fight.</p>' +
             '<p><strong class="highlight">Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 4</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 2</li><li>Intuition: 4</li><li>Charisma: 2</li></ul>' +
+            '<ul class="list-margin"><li>Strength: 4</li><li>Agility: 3</li><li>Reaction: 3</li><li>Logic: 2</li><li>Intuition: 4</li><li>Charisma: 2</li></ul>' +
             '<p>Apply the attributes to your player sheet.</p>',
     },
     {
@@ -46,7 +46,7 @@ export const Character = [
             '<p class="flex items-center justify-center"><img src="/images/Troll.jpg" alt="Troll" /></p>' +
             '<p>Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.</p>' +
             '<p><strong class="highlight">Starting Attributes:</strong></p>' +
-            '<ul><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 4</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>' +
+            '<ul class="list-margin"><li>Strength: 4</li><li>Agility: 2</li><li>Reaction: 4</li><li>Logic: 3</li><li>Intuition: 3</li><li>Charisma: 2</li></ul>' +
             '<p>Apply the attributes to your player sheet.</p>',
     },
     {
@@ -55,7 +55,7 @@ export const Character = [
         content:
             '<p>A master of combat, both physical and ranged. Often a hired gun or mercenary, the Street Samurai relies on strength and agility to survive in the harsh world of the shadows.</p>' +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Strength</li><li>+1 Agility</li></ul>' +
+            '<ul class="list-margin"><li>+1 Strength</li><li>+1 Agility</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {
@@ -64,7 +64,7 @@ export const Character = [
         content:
             "<p>The digital cowboy. A Decker navigates the Matrix, hacking and controlling systems with a mix of tech skills and speed. They're often the go-to for gathering information or manipulating digital environments.</p>" +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Reaction</li><li>+1 Logic</li></ul>' +
+            '<ul class="list-margin"><li>+1 Reaction</li><li>+1 Logic</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {
@@ -73,7 +73,7 @@ export const Character = [
         content:
             '<p>Riggers specialize in controlling drones, vehicles, and machinery. Their physical prowess allows them to take charge of mechanical and robotic assets, making them versatile in combat and exploration.</p>' +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Agility</li><li>+1 Logic</li></ul>' +
+            '<ul class="list-margin"><li>+1 Agility</li><li>+1 Logic</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {
@@ -82,7 +82,7 @@ export const Character = [
         content:
             '<p>The wielder of magical powers. Mages use their abilities to manipulate the elements, enchant objects, and protect themselves from harm. They rely heavily on their mental attributes to tap into their magical forces.</p>' +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Intuition</li><li>+1 Charisma</li></ul>' +
+            '<ul class="list-margin"><li>+1 Intuition</li><li>+1 Charisma</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {
@@ -91,7 +91,7 @@ export const Character = [
         content:
             '<p>The social expert, often the face of the team. Faces specialize in negotiations, deception, and influence. They rely on charisma to manipulate others and can charm or intimidate their way through various situations.</p>' +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Reaction</li><li>+1 Charisma</li></ul>' +
+            '<ul class="list-margin"><li>+1 Reaction</li><li>+1 Charisma</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {
@@ -100,7 +100,7 @@ export const Character = [
         content:
             "<p>A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.</p>" +
             '<p><strong class="highlight">Bonus Attributes:</strong></p>' +
-            '<ul><li>+1 Strength</li><li>+1 Intuition</li></ul>' +
+            '<ul class="list-margin"><li>+1 Strength</li><li>+1 Intuition</li></ul>' +
             '<p>Apply the bonuses to your player sheet.</p>',
     },
     {

@@ -17,7 +17,7 @@ function App() {
     }, [location.pathname])
 
     return (
-        <div className={isDefaultMode ? 'violet-mode' : 'turquoise-mode'}>
+        <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
             <Settings toggleColorScheme={toggleColorScheme} />
             <Outlet />
             <MobileNav />

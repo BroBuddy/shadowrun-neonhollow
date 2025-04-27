@@ -14,7 +14,7 @@ const Rule = () => {
                 <p>
                     <strong>Know the Mechanics:</strong>
                 </p>
-                <ul>
+                <ul className="list-margin">
                     <li>
                         <Link to="/rule/R003">Time</Link>
                     </li>
@@ -49,7 +49,7 @@ const Rule = () => {
                 <p>
                     <strong>Start your Adventure:</strong>
                 </p>
-                <ul>
+                <ul className="list-margin">
                     <li>
                         <Link to="/rule/character">Character Creation</Link>
                     </li>
