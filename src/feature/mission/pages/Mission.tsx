@@ -31,27 +31,47 @@ function Mission() {
 
             <Card>
                 <p>
+                    Focus on mastering both{' '}
+                    <Link to="/mission/rules">Rules</Link> and{' '}
+                    <Link to="/mission/performance">Performance</Link>.
+                </p>
+                <p>
                     <strong>Missions Overview:</strong>
                 </p>
-                <ol>
+                <ul>
                     <li>
                         <Link to="/mission/R610">Recon the Facility</Link>
+                        <ol>
+                            <li>Infiltrate the Outer Perimeter</li>
+                            <li>Gather Intel on Security Systems</li>
+                            <li>Extract Critical Data from the Server</li>
+                        </ol>
                     </li>
                     <li>
                         <Link to="/mission/R620">Crash Security Systems</Link>
+                        <ol>
+                            <li>Overload the Firewall</li>
+                            <li>Disable Security Bots</li>
+                            <li>Take Down the AI Core</li>
+                        </ol>
                     </li>
                     <li>
                         <Link to="/mission/R630">Confront the CEO</Link>
+                        <ol>
+                            <li>Reach the Executive Elevator</li>
+                            <li>Bypass CEO’s Personal Guard</li>
+                            <li>Deliver the Threat</li>
+                        </ol>
                     </li>
                     <li>
                         <Link to="/mission/R640">Unveil the Truth</Link>
+                        <ol>
+                            <li>Infiltrate the Vault</li>
+                            <li>Extract the Sensitive Files</li>
+                            <li>Leak the Files to the Public</li>
+                        </ol>
                     </li>
-                </ol>
-                <p>
-                    Focus on mastering both{' '}
-                    <Link to="/mission/rules">Rules</Link> and{' '}
-                    <Link to="/mission/performance">Performance</Link>
-                </p>
+                </ul>
             </Card>
         </>
     )

@@ -37,9 +37,12 @@ function City() {
                     </p>
                     <div className="flex justify-between gap-3">
                         {district.facilities.map(
-                            (facility: Record<string, string>) => (
+                            (
+                                facility: Record<string, string>,
+                                facilityIndex: number
+                            ) => (
                                 <div
-                                    key={facility.id}
+                                    key={facilityIndex}
                                     className="flex-1 basis-1/3 text-center"
                                 >
                                     <Link to={facility.link}>

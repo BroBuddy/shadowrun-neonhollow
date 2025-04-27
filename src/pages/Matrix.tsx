@@ -28,6 +28,7 @@ function Matrix() {
                 <p>
                     <strong className="violet">Event Matrix:</strong>
                 </p>
+                <p>Roll 2d6:</p>
                 <table>
                     <thead>
                         <tr>
@@ -64,6 +65,7 @@ function Matrix() {
                 <p>
                     <strong className="violet">Runner Matrix:</strong>
                 </p>
+                <p>Roll 2d6:</p>
                 <table>
                     <thead>
                         <tr>

@@ -2,6 +2,9 @@ import Card from '@/components/Card'
 import Headline from '@/components/Headline'
 import { Link } from 'react-router-dom'
 
+const rows = 6
+const cols = 6
+
 function Character() {
     return (
         <>
@@ -64,127 +67,34 @@ function Character() {
                 </p>
                 <p>Your archetype is the tens digit - Roll 1d6:</p>
                 <table>
+                    <thead>
+                        <tr>
+                            <th>2d6</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr>
-                            <td>
-                                <Link to="/R711">R711</Link>
-                            </td>
-                            <td>
-                                <Link to="/R712">R712</Link>
-                            </td>
-                            <td>
-                                <Link to="/R713">R713</Link>
-                            </td>
-                            <td>
-                                <Link to="/R714">R714</Link>
-                            </td>
-                            <td>
-                                <Link to="/R715">R715</Link>
-                            </td>
-                            <td>
-                                <Link to="/R716">R716</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/R721">R721</Link>
-                            </td>
-                            <td>
-                                <Link to="/R722">R722</Link>
-                            </td>
-                            <td>
-                                <Link to="/R723">R723</Link>
-                            </td>
-                            <td>
-                                <Link to="/R724">R724</Link>
-                            </td>
-                            <td>
-                                <Link to="/R725">R725</Link>
-                            </td>
-                            <td>
-                                <Link to="/R726">R726</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/R731">R731</Link>
-                            </td>
-                            <td>
-                                <Link to="/R732">R732</Link>
-                            </td>
-                            <td>
-                                <Link to="/R733">R733</Link>
-                            </td>
-                            <td>
-                                <Link to="/R734">R734</Link>
-                            </td>
-                            <td>
-                                <Link to="/R735">R735</Link>
-                            </td>
-                            <td>
-                                <Link to="/R736">R736</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/R741">R741</Link>
-                            </td>
-                            <td>
-                                <Link to="/R742">R742</Link>
-                            </td>
-                            <td>
-                                <Link to="/R743">R743</Link>
-                            </td>
-                            <td>
-                                <Link to="/R744">R744</Link>
-                            </td>
-                            <td>
-                                <Link to="/R745">R745</Link>
-                            </td>
-                            <td>
-                                <Link to="/R746">R746</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/R751">R751</Link>
-                            </td>
-                            <td>
-                                <Link to="/R752">R752</Link>
-                            </td>
-                            <td>
-                                <Link to="/R753">R753</Link>
-                            </td>
-                            <td>
-                                <Link to="/R754">R754</Link>
-                            </td>
-                            <td>
-                                <Link to="/R755">R755</Link>
-                            </td>
-                            <td>
-                                <Link to="/R756">R756</Link>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <Link to="/R761">R761</Link>
-                            </td>
-                            <td>
-                                <Link to="/R762">R762</Link>
-                            </td>
-                            <td>
-                                <Link to="/R763">R763</Link>
-                            </td>
-                            <td>
-                                <Link to="/R764">R764</Link>
-                            </td>
-                            <td>
-                                <Link to="/R765">R765</Link>
-                            </td>
-                            <td>
-                                <Link to="/R766">R766</Link>
-                            </td>
-                        </tr>
+                        {Array.from({ length: rows }, (_, rowIndex) => (
+                            <tr key={`row-${rowIndex + 1}`}>
+                                <th>{rowIndex + 1}</th>
+                                {Array.from({ length: cols }, (_, colIndex) => (
+                                    <td
+                                        key={`cell-${rowIndex + 1}-${colIndex + 1}`}
+                                    >
+                                        <Link
+                                            to={`/R7${rowIndex + 1}${colIndex + 1}`}
+                                        >
+                                            {rowIndex + 1}x{colIndex + 1}
+                                        </Link>
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
             </Card>
