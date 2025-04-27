@@ -5,6 +5,7 @@ import App from './App.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter.tsx'
+import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 
 const Welcome = React.lazy(() => import('./pages/Welcome'))
 const Rules = React.lazy(() => import('./pages/Rules'))
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
                 path: '/:tagId',
                 element: <TagContent />,
             },
+            ...ResourceRouter,
             ...CharacterRouter,
             ...CityRouter,
             ...MissionRouter,

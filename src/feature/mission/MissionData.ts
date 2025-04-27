@@ -40,8 +40,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 1',
+                    redirect: 'mission/performance',
+                    text: 'Performance 1',
                 },
             },
             {
@@ -70,8 +70,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 2',
+                    redirect: 'mission/performance',
+                    text: 'Performance 2',
                 },
             },
             {
@@ -100,8 +100,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 3',
+                    redirect: 'mission/performance',
+                    text: 'Performance 3',
                 },
             },
         ],
@@ -121,12 +121,12 @@ const missionData: Mission[] = [
                 },
             ],
             failure: {
-                redirect: 'R603',
-                performance: 'Performance 4',
+                redirect: 'mission/performance',
+                text: 'Performance 4',
             },
             success: {
-                redirect: 'R603',
-                performance: 'Performance 5',
+                redirect: 'mission/performance',
+                text: 'Performance 5',
             },
         },
     },
@@ -167,8 +167,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 1',
+                    redirect: 'mission/performance',
+                    text: 'Performance 1',
                 },
             },
             {
@@ -196,8 +196,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 2',
+                    redirect: 'mission/performance',
+                    text: 'Performance 2',
                 },
             },
             {
@@ -227,8 +227,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 3',
+                    redirect: 'mission/performance',
+                    text: 'Performance 3',
                 },
             },
         ],
@@ -250,12 +250,12 @@ const missionData: Mission[] = [
                 },
             ],
             failure: {
-                redirect: 'R603',
-                performance: 'Performance 4',
+                redirect: 'mission/performance',
+                text: 'Performance 4',
             },
             success: {
-                redirect: 'R603',
-                performance: 'Performance 5',
+                redirect: 'mission/performance',
+                text: 'Performance 5',
             },
         },
     },
@@ -295,8 +295,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 1',
+                    redirect: 'mission/performance',
+                    text: 'Performance 1',
                 },
             },
             {
@@ -324,8 +324,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 2',
+                    redirect: 'mission/performance',
+                    text: 'Performance 2',
                 },
             },
             {
@@ -353,8 +353,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 3',
+                    redirect: 'mission/performance',
+                    text: 'Performance 3',
                 },
             },
         ],
@@ -376,12 +376,12 @@ const missionData: Mission[] = [
                 },
             ],
             failure: {
-                redirect: 'R603',
-                performance: 'Performance 4',
+                redirect: 'mission/performance',
+                text: 'Performance 4',
             },
             success: {
-                redirect: 'R603',
-                performance: 'Performance 5',
+                redirect: 'mission/performance',
+                text: 'Performance 5',
             },
         },
     },
@@ -424,8 +424,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 1',
+                    redirect: 'mission/performance',
+                    text: 'Performance 1',
                 },
             },
             {
@@ -456,8 +456,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 2',
+                    redirect: 'mission/performance',
+                    text: 'Performance 2',
                 },
             },
             {
@@ -488,8 +488,8 @@ const missionData: Mission[] = [
                     },
                 ],
                 failure: {
-                    redirect: 'R603',
-                    performance: 'Performance 3',
+                    redirect: 'mission/performance',
+                    text: 'Performance 3',
                 },
             },
         ],
@@ -506,9 +506,11 @@ const missionData: Mission[] = [
             ],
             failure: {
                 redirect: 'R014',
+                text: 'Well Done',
             },
             success: {
                 redirect: 'R015',
+                text: 'Overwhelmingly Great',
             },
         },
     },

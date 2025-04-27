@@ -68,7 +68,7 @@ function MissionDetail() {
                         <p>
                             Fail? &#8594;{' '}
                             <Link to={`/${task.failure.redirect}`}>
-                                {task.failure.performance}
+                                {task.failure.text}
                             </Link>
                         </p>
                     </React.Fragment>
@@ -97,13 +97,13 @@ function MissionDetail() {
                 <p>
                     Fail? &#8594;{' '}
                     <Link to={`/${mission.twist.failure.redirect}`}>
-                        {mission.twist.failure.performance}
+                        {mission.twist.failure.text}
                     </Link>
                 </p>
                 <p>
                     Success? &#8594;{' '}
                     <Link to={`/${mission.twist.success.redirect}`}>
-                        {mission.twist.success.performance}
+                        {mission.twist.success.text}
                     </Link>
                 </p>
             </Card>

@@ -28,7 +28,7 @@ type MissionOutcome = {
 
 type MissionFailure = {
     redirect: string
-    performance?: string
+    text?: string
 }
 
 type MissionTwist = {
@@ -46,7 +46,7 @@ type MissionOption = {
 
 type MissionSuccess = {
     redirect: string
-    performance?: string
+    text?: string
 }
 
 type MissionPerformance = {

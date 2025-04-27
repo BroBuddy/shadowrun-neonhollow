@@ -42,6 +42,9 @@ const Rules = () => {
                     <li>
                         <Link to="/R011">Matrix</Link>
                     </li>
+                    <li>
+                        <Link to="/resource">Resources</Link>
+                    </li>
                 </ul>
                 <p>
                     <strong>Start your Adventure:</strong>

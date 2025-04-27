@@ -47,7 +47,9 @@ function MissionPerformance() {
                                                         )[1]
                                                     }{' '}
                                                     &#8594;{' '}
-                                                    <Link to={effect.link}>
+                                                    <Link
+                                                        to={`/resource${effect.link}`}
+                                                    >
                                                         {
                                                             effect.description.split(
                                                                 ' → '

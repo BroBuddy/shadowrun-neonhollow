@@ -78,7 +78,9 @@ function CityDetail() {
                                         ) => (
                                             <li key={stepIndex}>
                                                 {step.link ? (
-                                                    <Link to={step.link}>
+                                                    <Link
+                                                        to={`/resource${step.link}`}
+                                                    >
                                                         {step.text}
                                                     </Link>
                                                 ) : (
