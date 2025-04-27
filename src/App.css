@@ -148,14 +148,6 @@ a {
     font-weight: bold;
 }
 
-.a {
-    font-weight: bold;
-    color: var(--white-1);
-    background-color: var(--violet-1);
-    padding: 0 4px;
-    border-radius: 3px;
-}
-
 section img {
     border-radius: 5px;
 }
@@ -168,13 +160,6 @@ table tr th {
 table tr td {
     padding: 6px;
     font-size: 14px;
-}
-
-hr {
-    border: none;
-    height: 2px;
-    background-color: var(--violet-1);
-    margin: 20px 0;
 }
 
 .dice {
@@ -191,7 +176,7 @@ hr {
 }
 
 .active-dice {
-    background-color: var(--violet-1);
+    background-color: var(--white-1);
     color: var(--black-1);
 }
 
