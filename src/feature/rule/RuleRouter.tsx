@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react'
 
 const Rule = React.lazy(() => import('./pages/Rule'))
-const Character = React.lazy(() => import('./pages/Character'))
 const RuleDetail = React.lazy(() => import('./pages/RuleDetail'))
 
 const LoadingFallback = () => <div>Loading...</div>
@@ -15,14 +14,6 @@ const RuleRouter = [
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <Rule />
-                    </Suspense>
-                ),
-            },
-            {
-                path: 'character',
-                element: (
-                    <Suspense fallback={<LoadingFallback />}>
-                        <Character />
                     </Suspense>
                 ),
             },

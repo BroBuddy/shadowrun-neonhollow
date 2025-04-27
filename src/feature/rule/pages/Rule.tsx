@@ -2,6 +2,24 @@ import { Link } from 'react-router-dom'
 import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
 
+type Mechanic = {
+    link: string
+    name: string
+}
+
+const mechanics: Mechanic[] = [
+    { link: '/rule/R003', name: 'Time' },
+    { link: '/rule/R004', name: 'Nuyen' },
+    { link: '/rule/R005', name: 'Health' },
+    { link: '/rule/R006', name: 'Energy' },
+    { link: '/rule/R007', name: 'Reputation' },
+    { link: '/rule/R008', name: 'Heat' },
+    { link: '/rule/R009', name: 'Intel' },
+    { link: '/rule/R010', name: 'Dice' },
+    { link: '/rule/R011', name: 'Matrix' },
+    { link: '/resource', name: 'Resources' },
+]
+
 const Rule = () => {
     return (
         <>
@@ -15,43 +33,18 @@ const Rule = () => {
                     <strong>Know the Mechanics:</strong>
                 </p>
                 <ul className="list-margin">
-                    <li>
-                        <Link to="/rule/R003">Time</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R004">Nuyen</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R005">Health</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R006">Energy</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R007">Reputation</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R008">Heat</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R009">Intel</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R010">Dice</Link>
-                    </li>
-                    <li>
-                        <Link to="/rule/R011">Matrix</Link>
-                    </li>
-                    <li>
-                        <Link to="/resource">Resources</Link>
-                    </li>
+                    {mechanics.map((mechanic: Mechanic, index: number) => (
+                        <li key={index}>
+                            <Link to={mechanic.link}>{mechanic.name}</Link>
+                        </li>
+                    ))}
                 </ul>
                 <p>
                     <strong>Start your Adventure:</strong>
                 </p>
                 <ul className="list-margin">
                     <li>
-                        <Link to="/rule/character">Character Creation</Link>
+                        <Link to="/character">Character Creation</Link>
                     </li>
                 </ul>
             </Card>

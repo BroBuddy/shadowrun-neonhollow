@@ -1,12 +1,13 @@
 import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import App from './App.tsx'
+import { ErrorBoundary } from 'react-error-boundary'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import RuleRouter from './feature/rule/RuleRouter.tsx'
-import { ErrorBoundary } from 'react-error-boundary'
+import CharacterRouter from './feature/character/CharacterRouter.tsx'
+import App from './App.tsx'
 
 const LoadingFallback = () => <p>Loading</p>
 const ErrorFallback = () => <p>Error</p>
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
                 ),
             },
             ...RuleRouter,
+            ...CharacterRouter,
             ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,

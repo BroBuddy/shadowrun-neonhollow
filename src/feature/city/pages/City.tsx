@@ -1,7 +1,7 @@
 import { getCityData } from '../cityData'
 import { District as DistrictType } from '../CityType'
 import Headline from '@/components/Headline'
-import District from './District'
+import District from '../components/District'
 
 function City() {
     const cityData = getCityData()
