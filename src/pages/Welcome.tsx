@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
+import Headline from '@/components/Headline'
 
 function Welcome() {
     return (
-        <Card title="Welcome to NeonHollow">
-            <div className="card">
+        <>
+            <Headline>Welcome to NeonHollow</Headline>
+            <Card>
                 <p>
                     You’re inside a full-spectrum neural simulation, created by
                     rogue deckers and ex-corp AIs to test potential
@@ -27,8 +29,8 @@ function Welcome() {
                     This is your trial. Win it... and wake up.{' '}
                     <Link to="/rules">Rules</Link>
                 </p>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

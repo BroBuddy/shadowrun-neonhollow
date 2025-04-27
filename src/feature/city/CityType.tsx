@@ -1,13 +1,30 @@
-type CityDistrict = {
+type District = {
     name: string
     heat: string
-    facilities: CityFacility[]
+    facilities: Record<string, string>[]
 }
 
-type CityFacility = {
-    name: string
-    link: string
-    image: string
+type Facility = {
+    tag: string
+    title: string
+    rollList: FacilityRoll[]
+    actionList: FacilityAction[]
 }
 
-export type { CityDistrict, CityFacility }
+type FacilityRoll = {
+    roll: string
+    text: string
+    link?: string
+}
+
+type FacilityAction = {
+    title: string
+    steps: ActionStep[]
+}
+
+type ActionStep = {
+    text: string
+    link?: string
+}
+
+export type { District, Facility, FacilityRoll, FacilityAction, ActionStep }

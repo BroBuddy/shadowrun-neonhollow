@@ -1,10 +1,12 @@
 import Card from '@/components/Card'
+import Headline from '@/components/Headline'
 
 function MissionRules() {
     return (
-        <Card title="Mission Rules">
-            <div className="card">
-                {' '}
+        <>
+            <Headline>Mission Rules</Headline>
+
+            <Card>
                 <p>
                     You must tackle the missions in order and each mission
                     follows a specific structure:
@@ -28,8 +30,8 @@ function MissionRules() {
                     Report to <strong>Mr. Johnson</strong> after the run to
                     receive your reward based on Performance.
                 </p>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

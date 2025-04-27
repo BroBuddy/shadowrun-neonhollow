@@ -1,7 +1,6 @@
 import City from './pages/City'
+import CityDetail from './pages/CityDetail'
 import MegaCorp from './pages/MegaCorp'
-import NeuralNexus from './pages/NeuralNexus'
-import PatrolHub from './pages/PatrolHub'
 
 const CityRouter = [
     {
@@ -16,12 +15,8 @@ const CityRouter = [
                 element: <MegaCorp />,
             },
             {
-                path: 'neuralnexus',
-                element: <NeuralNexus />,
-            },
-            {
-                path: 'patrolhub',
-                element: <PatrolHub />,
+                path: ':facilityTag',
+                element: <CityDetail />,
             },
         ],
     },

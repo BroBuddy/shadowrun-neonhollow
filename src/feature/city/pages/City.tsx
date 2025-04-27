@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom'
 import Card from '../../../components/Card'
 import { getCityData } from '../cityData'
-import { CityDistrict, CityFacility } from '../CityType'
+import { District } from '../CityType'
+import Headline from '@/components/Headline'
 
 function City() {
     const cityData = getCityData()
 
     return (
-        <Card title="NeonHollow">
-            <div className="flex gap-4">
+        <>
+            <Headline>NeonHollow</Headline>
+            <div className="flex gap-4 mb-4 mx-5">
                 <div className="flex-1 basis-1/2">
                     <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
                 </div>
@@ -17,7 +19,7 @@ function City() {
                         <strong>District Lockdowns:</strong>
                     </p>
                     {cityData.map(
-                        (district: CityDistrict, index: number) =>
+                        (district: District, index: number) =>
                             index <= 2 && (
                                 <p key={index}>
                                     {district.heat} → {district.name}
@@ -26,12 +28,8 @@ function City() {
                     )}
                 </div>
             </div>
-            <br />
-            {cityData.map((district: CityDistrict, index: number) => (
-                <div
-                    className={`card ${index % 2 === 0 ? 'card-margin' : ''}`}
-                    key={index}
-                >
+            {cityData.map((district: District, index: number) => (
+                <Card key={index}>
                     <p>
                         <strong>
                             {district.heat.split(' ')[0]} {district.name}
@@ -39,9 +37,9 @@ function City() {
                     </p>
                     <div className="flex justify-between gap-3">
                         {district.facilities.map(
-                            (facility: CityFacility, i: number) => (
+                            (facility: Record<string, string>) => (
                                 <div
-                                    key={i}
+                                    key={facility.id}
                                     className="flex-1 basis-1/3 text-center"
                                 >
                                     <Link to={facility.link}>
@@ -58,9 +56,9 @@ function City() {
                             )
                         )}
                     </div>
-                </div>
+                </Card>
             ))}
-        </Card>
+        </>
     )
 }
 

@@ -1,9 +1,11 @@
 import Card from '@/components/Card'
+import Headline from '@/components/Headline'
 
 function MegaCorp() {
     return (
-        <Card title="MegaCorp">
-            <div className="flex gap-4">
+        <>
+            <Headline>MegaCorp</Headline>
+            <div className="flex gap-4 mb-4 mx-5">
                 <div className="flex-1 basis-1/2">
                     <img src="/images/MegaCorp.jpg" alt="MegaCorp" />
                 </div>
@@ -17,7 +19,8 @@ function MegaCorp() {
                     </p>
                 </div>
             </div>
-            <div className="card card-margin">
+
+            <Card>
                 <p>
                     <strong className="violet">🚀 Incite Rebellion:</strong>
                 </p>
@@ -35,8 +38,8 @@ function MegaCorp() {
                         Pay <strong>30.000 ¥</strong> &#8594; +3 Heat
                     </li>
                 </ul>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

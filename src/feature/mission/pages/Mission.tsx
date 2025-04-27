@@ -1,35 +1,35 @@
 import { Link } from 'react-router-dom'
 import Card from '../../../components/Card'
+import Headline from '@/components/Headline'
 
 function Mission() {
     return (
-        <Card title="Mr. Johnson">
-            <div className="flex gap-4">
+        <>
+            <Headline>Mr. Johnson</Headline>
+            <div className="flex gap-4 mb-4 mx-5">
                 <div className="flex-1 basis-1/2">
                     <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
                 </div>
                 <div className="flex-1 basis-1/2">
                     <p>
-                        <strong>How to Begin a Mission:</strong>
+                        <strong>Accept a mission:</strong>
                     </p>
                     <ol>
                         <li>
                             Spend <strong>3 Intel</strong>
                         </li>
-                        <li>Roll 2d6</li>
+                        <li>Negotiate hazard pay</li>
                         <li>
-                            Add <strong>Charisma</strong>
+                            Roll 2d6 &#8594; <strong>+Charisma</strong>
                         </li>
                         <li>
-                            See <Link to="/R303">R303</Link> &#8594; Nuyen
+                            <Link to="/R303">Gain Nuyen</Link>
                         </li>
                     </ol>
                 </div>
             </div>
-            <div className="card card-margin">
-                <p>
-                    <em>"Start with the first mission."</em>
-                </p>
+
+            <Card>
                 <p>
                     <strong>Missions Overview:</strong>
                 </p>
@@ -52,8 +52,8 @@ function Mission() {
                     <Link to="/mission/rules">Rules</Link> and{' '}
                     <Link to="/mission/performance">Performance</Link>
                 </p>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

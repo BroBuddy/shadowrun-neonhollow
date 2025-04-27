@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
+import Headline from '@/components/Headline'
 
 const Rules = () => {
     return (
-        <Card title="Rules">
-            <div className="card">
+        <>
+            <Headline>Rules</Headline>
+            <Card>
                 <p>
                     <strong>Your first Steps:</strong>
                 </p>
@@ -49,8 +51,8 @@ const Rules = () => {
                         <Link to="/character">Character Creation</Link>
                     </li>
                 </ul>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

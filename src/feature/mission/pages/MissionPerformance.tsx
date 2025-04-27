@@ -5,18 +5,20 @@ import {
     MissionEffect,
     MissionPerformance as MissionPerformanceType,
 } from '../MissionType'
+import Headline from '@/components/Headline'
 
 function MissionPerformance() {
     const missionPerformance = getMissionPerformance()
 
     return (
-        <Card title="Mission Performance">
-            <div className="card">
-                {' '}
+        <>
+            <Headline>Mission Performance</Headline>
+
+            <Card>
                 <p>
-                    Mr. Johnson doesn’t just care that the job’s done — he cares
-                    how it’s done. The better your performance, the greater the
-                    reward.
+                    <strong>Mr. Johnson</strong> doesn’t just care that the
+                    job’s done — he cares how it’s done. The better your
+                    performance, the greater the reward.
                 </p>
                 {missionPerformance.map(
                     (performance: MissionPerformanceType) => (
@@ -27,7 +29,7 @@ function MissionPerformance() {
                                 </strong>{' '}
                                 &#8594; {performance.level}
                             </p>
-                            <ul>
+                            <ul className="list-margin">
                                 {performance.effects.map(
                                     (effect: MissionEffect, index: number) => (
                                         <li key={index}>
@@ -63,8 +65,8 @@ function MissionPerformance() {
                         </div>
                     )
                 )}
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

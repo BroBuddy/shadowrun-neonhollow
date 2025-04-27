@@ -8,6 +8,7 @@ import {
     MissionTask,
 } from '../MissionType'
 import { getMissionById } from '../missionData'
+import Headline from '@/components/Headline'
 
 function MissionDetail() {
     const { missionId } = useParams()
@@ -23,8 +24,9 @@ function MissionDetail() {
     }
 
     return (
-        <Card title={mission.title}>
-            <div className="card">
+        <>
+            <Headline>{mission.title}</Headline>
+            <Card>
                 <p>
                     <strong className="violet">Client:</strong>
                     <br />
@@ -38,9 +40,9 @@ function MissionDetail() {
                     <strong className="violet">Briefing:</strong>
                     <br /> {mission.briefing}
                 </p>
-            </div>
+            </Card>
 
-            <div className="card card-margin">
+            <Card>
                 {mission.tasks.map((task: MissionTask, index: number) => (
                     <React.Fragment key={task.id}>
                         <p>
@@ -65,20 +67,15 @@ function MissionDetail() {
                         </ul>
                         <p>
                             Fail? &#8594;{' '}
-                            <Link
-                                to={`/${task.failure.redirect}`}
-                                className="a"
-                            >
-                                {task.failure.redirect}
-                            </Link>{' '}
-                            &#8594; {task.failure.performance}
+                            <Link to={`/${task.failure.redirect}`}>
+                                {task.failure.performance}
+                            </Link>
                         </p>
                     </React.Fragment>
                 ))}
-            </div>
+            </Card>
 
-            <div className="card">
-                {' '}
+            <Card>
                 <p>
                     <strong className="violet">Twist:</strong>
                     <br />
@@ -99,26 +96,18 @@ function MissionDetail() {
                 </ul>
                 <p>
                     Fail? &#8594;{' '}
-                    <Link
-                        to={`/${mission.twist.failure.redirect}`}
-                        className="a"
-                    >
-                        {mission.twist.failure.redirect}
-                    </Link>{' '}
-                    &#8594; {mission.twist.failure.performance}
+                    <Link to={`/${mission.twist.failure.redirect}`}>
+                        {mission.twist.failure.performance}
+                    </Link>
                 </p>
                 <p>
                     Success? &#8594;{' '}
-                    <Link
-                        to={`/${mission.twist.success.redirect}`}
-                        className="a"
-                    >
-                        {mission.twist.success.redirect}
-                    </Link>{' '}
-                    &#8594; {mission.twist.success.performance}
+                    <Link to={`/${mission.twist.success.redirect}`}>
+                        {mission.twist.success.performance}
+                    </Link>
                 </p>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

@@ -4,6 +4,7 @@ import { makeUrlsClickable } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
 import Card from './Card'
 import { Data } from '@/data/data'
+import Headline from './Headline'
 
 const TagContent = () => {
     const { tagId } = useParams()
@@ -22,9 +23,12 @@ const TagContent = () => {
     if (!activeTag) return null
 
     return (
-        <Card title={activeTag.title}>
-            <div>{transformedContent}</div>
-        </Card>
+        <>
+            <Headline>{activeTag.title}</Headline>
+            <Card>
+                <div>{transformedContent}</div>
+            </Card>
+        </>
     )
 }
 

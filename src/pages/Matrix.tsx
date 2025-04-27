@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
+import Headline from '@/components/Headline'
 
 const rows = 6
 const cols = 6
 
 function Matrix() {
     return (
-        <Card title="Matrix">
-            <div className="card">
+        <>
+            <Headline>Matrix</Headline>
+            <Card>
                 <p>
                     <strong className="violet">Event Rules:</strong>
                 </p>
@@ -21,15 +23,27 @@ function Matrix() {
                         <strong>Difficulty Check</strong> (DC), you succeed.
                     </li>
                 </ol>
-            </div>
-            <div className="card card-margin">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Event Matrix:</strong>
                 </p>
                 <table>
+                    <thead>
+                        <tr>
+                            <th>2d6</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {Array.from({ length: rows }, (_, rowIndex) => (
                             <tr key={`row-${rowIndex + 1}`}>
+                                <th>{rowIndex + 1}</th>
                                 {Array.from({ length: cols }, (_, colIndex) => (
                                     <td
                                         key={`cell-${rowIndex + 1}-${colIndex + 1}`}
@@ -37,8 +51,7 @@ function Matrix() {
                                         <Link
                                             to={`/R4${rowIndex + 1}${colIndex + 1}`}
                                         >
-                                            R4{rowIndex + 1}
-                                            {colIndex + 1}
+                                            {rowIndex + 1}x{colIndex + 1}
                                         </Link>
                                     </td>
                                 ))}
@@ -46,15 +59,27 @@ function Matrix() {
                         ))}
                     </tbody>
                 </table>
-            </div>
-            <div className="card">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Runner Matrix:</strong>
                 </p>
                 <table>
+                    <thead>
+                        <tr>
+                            <th>2d6</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {Array.from({ length: rows }, (_, rowIndex) => (
                             <tr key={`row-${rowIndex + 1}`}>
+                                <th>{rowIndex + 1}</th>
                                 {Array.from({ length: cols }, (_, colIndex) => (
                                     <td
                                         key={`cell-${rowIndex + 1}-${colIndex + 1}`}
@@ -62,8 +87,7 @@ function Matrix() {
                                         <Link
                                             to={`/R5${rowIndex + 1}${colIndex + 1}`}
                                         >
-                                            R5{rowIndex + 1}
-                                            {colIndex + 1}
+                                            {rowIndex + 1}x{colIndex + 1}
                                         </Link>
                                     </td>
                                 ))}
@@ -71,8 +95,8 @@ function Matrix() {
                         ))}
                     </tbody>
                 </table>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 

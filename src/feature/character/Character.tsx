@@ -1,10 +1,12 @@
 import Card from '@/components/Card'
+import Headline from '@/components/Headline'
 import { Link } from 'react-router-dom'
 
 function Character() {
     return (
-        <Card title="Character Creation">
-            <div className="card">
+        <>
+            <Headline>Character Creation</Headline>
+            <Card>
                 <p>
                     <strong className="violet">Metatype:</strong>
                 </p>
@@ -29,9 +31,8 @@ function Character() {
                         <Link to="/R025">Troll</Link>
                     </li>
                 </ol>
-            </div>
-
-            <div className="card card-margin">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Archetype:</strong>
                 </p>
@@ -56,9 +57,8 @@ function Character() {
                         <Link to="/R036">Shaman</Link>
                     </li>
                 </ol>
-            </div>
-
-            <div className="card">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Background:</strong>
                 </p>
@@ -187,9 +187,8 @@ function Character() {
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
-            <div className="card card-margin">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Gear:</strong>
                 </p>
@@ -215,9 +214,8 @@ function Character() {
                     </li>
                 </ul>
                 <p>Apply the bonus to your player sheet.</p>
-            </div>
-
-            <div className="card">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">Mode:</strong>
                 </p>
@@ -253,9 +251,8 @@ function Character() {
                         </ul>
                     </li>
                 </ul>
-            </div>
-
-            <div className="card card-margin">
+            </Card>
+            <Card>
                 <p>
                     <strong className="violet">(Optional) Name:</strong>
                 </p>
@@ -280,8 +277,8 @@ function Character() {
                         <Link to="/R046">Shaman</Link>
                     </li>
                 </ul>
-            </div>
-        </Card>
+            </Card>
+        </>
     )
 }
 
