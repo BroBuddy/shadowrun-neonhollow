@@ -1,7 +1,13 @@
-import Mission from './pages/Mission'
-import MissionDetail from './pages/MissionDetail'
-import MissionPerformance from './pages/MissionPerformance'
-import MissionRules from './pages/MissionRules'
+import React, { Suspense } from 'react'
+
+const Mission = React.lazy(() => import('./pages/Mission'))
+const MissionDetail = React.lazy(() => import('./pages/MissionDetail'))
+const MissionPerformance = React.lazy(
+    () => import('./pages/MissionPerformance')
+)
+const MissionRules = React.lazy(() => import('./pages/MissionRules'))
+
+const LoadingFallback = () => <div>Loading...</div>
 
 const MissionRouter = [
     {
@@ -9,19 +15,35 @@ const MissionRouter = [
         children: [
             {
                 index: true,
-                element: <Mission />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Mission />
+                    </Suspense>
+                ),
             },
             {
                 path: 'rules',
-                element: <MissionRules />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <MissionRules />
+                    </Suspense>
+                ),
             },
             {
                 path: 'performance',
-                element: <MissionPerformance />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <MissionPerformance />
+                    </Suspense>
+                ),
             },
             {
                 path: ':missionId',
-                element: <MissionDetail />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <MissionDetail />
+                    </Suspense>
+                ),
             },
         ],
     },

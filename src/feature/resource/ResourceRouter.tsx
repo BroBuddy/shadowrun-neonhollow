@@ -1,5 +1,9 @@
-import Resource from './pages/Resource'
-import ResourceDetail from './pages/ResourceDetail'
+import React, { Suspense } from 'react'
+
+const Resource = React.lazy(() => import('./pages/Resource'))
+const ResourceDetail = React.lazy(() => import('./pages/ResourceDetail'))
+
+const LoadingFallback = () => <div>Loading...</div>
 
 const ResourceRouter = [
     {
@@ -7,11 +11,19 @@ const ResourceRouter = [
         children: [
             {
                 index: true,
-                element: <Resource />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Resource />
+                    </Suspense>
+                ),
             },
             {
                 path: ':resourceTag',
-                element: <ResourceDetail />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <ResourceDetail />
+                    </Suspense>
+                ),
             },
         ],
     },

@@ -1,6 +1,10 @@
-import Character from './pages/Character'
-import Rule from './pages/Rule'
-import RuleDetail from './pages/RuleDetail'
+import React, { Suspense } from 'react'
+
+const Rule = React.lazy(() => import('./pages/Rule'))
+const Character = React.lazy(() => import('./pages/Character'))
+const RuleDetail = React.lazy(() => import('./pages/RuleDetail'))
+
+const LoadingFallback = () => <div>Loading...</div>
 
 const RuleRouter = [
     {
@@ -8,15 +12,27 @@ const RuleRouter = [
         children: [
             {
                 index: true,
-                element: <Rule />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Rule />
+                    </Suspense>
+                ),
             },
             {
                 path: 'character',
-                element: <Character />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Character />
+                    </Suspense>
+                ),
             },
             {
                 path: ':ruleId',
-                element: <RuleDetail />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <RuleDetail />
+                    </Suspense>
+                ),
             },
         ],
     },

@@ -1,5 +1,9 @@
-import City from './pages/City'
-import CityDetail from './pages/CityDetail'
+import React, { Suspense } from 'react'
+
+const City = React.lazy(() => import('./pages/City'))
+const CityDetail = React.lazy(() => import('./pages/CityDetail'))
+
+const LoadingFallback = () => <p>Loading...</p>
 
 const CityRouter = [
     {
@@ -7,11 +11,19 @@ const CityRouter = [
         children: [
             {
                 index: true,
-                element: <City />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <City />
+                    </Suspense>
+                ),
             },
             {
                 path: ':facilityTag',
-                element: <CityDetail />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <CityDetail />
+                    </Suspense>
+                ),
             },
         ],
     },
