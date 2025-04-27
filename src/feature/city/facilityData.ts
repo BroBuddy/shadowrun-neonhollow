@@ -274,7 +274,7 @@ const facilityData: Facility[] = [
             {
                 title: 'Recruit a Runner:',
                 steps: [
-                    { text: 'Roll on the Runner Matrix', link: '/matrix' },
+                    { text: 'Roll on the Runner Matrix' },
                     { text: 'Remember the two highest attributes' },
                     { text: 'Pay 10.000 ¥ → Roll 2d6 → Add Charisma' },
                     { text: 'Hire Runner', link: '/R307' },

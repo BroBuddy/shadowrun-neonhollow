@@ -109,7 +109,7 @@ export const resourceData: Resource[] = [
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Attributes Temporary'],
+                effects: ['+1 Heat', '+1 Attributes Temporary'],
             },
             {
                 range: '9-11',
@@ -119,13 +119,14 @@ export const resourceData: Resource[] = [
             {
                 range: '12-14',
                 result: 'Good',
-                effects: ['+2 Attributes Temporary', '+2.000 ¥'],
+                effects: ['+1 Attributes', '+2.000 ¥'],
             },
             {
                 range: '15-17',
                 result: 'Great',
                 effects: [
-                    '+2 Attributes Temporary',
+                    '+1 Attributes',
+                    '+1 Attributes Temporary',
                     '+4.000 ¥',
                     '+1 Reputation',
                 ],
