@@ -7,42 +7,9 @@ const cols = 6
 function Matrix() {
     return (
         <Card title="Matrix">
-            <p>
-                <strong>Event Matrix:</strong>
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>2d6</th>
-                        {Array.from({ length: cols }, (_, index) => (
-                            <th key={`col-${index + 1}`}>{index + 1}</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {Array.from({ length: rows }, (_, rowIndex) => (
-                        <tr key={`row-${rowIndex + 1}`}>
-                            <th>{rowIndex + 1}</th>
-                            {Array.from({ length: cols }, (_, colIndex) => (
-                                <td
-                                    key={`cell-${rowIndex + 1}-${colIndex + 1}`}
-                                >
-                                    <Link
-                                        to={`/R4${rowIndex + 1}${colIndex + 1}`}
-                                        className="a"
-                                    >
-                                        R4{rowIndex + 1}
-                                        {colIndex + 1}
-                                    </Link>
-                                </td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
-            <div className="card card-margin">
+            <div className="card">
                 <p>
-                    <strong>Event Rules:</strong>
+                    <strong className="violet">Event Rules:</strong>
                 </p>
                 <ol>
                     <li>Choose how to handle the event.</li>
@@ -55,39 +22,58 @@ function Matrix() {
                     </li>
                 </ol>
             </div>
-            <p>
-                <strong>Runner Matrix:</strong>
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>2d6</th>
-                        {Array.from({ length: cols }, (_, index) => (
-                            <th key={`col-${index + 1}`}>{index + 1}</th>
-                        ))}
-                    </tr>
-                </thead>
-                <tbody>
-                    {Array.from({ length: rows }, (_, rowIndex) => (
-                        <tr key={`row-${rowIndex + 1}`}>
-                            <th>{rowIndex + 1}</th>
-                            {Array.from({ length: cols }, (_, colIndex) => (
-                                <td
-                                    key={`cell-${rowIndex + 1}-${colIndex + 1}`}
-                                >
-                                    <Link
-                                        to={`/R5${rowIndex + 1}${colIndex + 1}`}
-                                        className="a"
+            <div className="card card-margin">
+                <p>
+                    <strong className="violet">Event Matrix:</strong>
+                </p>
+                <table>
+                    <tbody>
+                        {Array.from({ length: rows }, (_, rowIndex) => (
+                            <tr key={`row-${rowIndex + 1}`}>
+                                {Array.from({ length: cols }, (_, colIndex) => (
+                                    <td
+                                        key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                     >
-                                        R5{rowIndex + 1}
-                                        {colIndex + 1}
-                                    </Link>
-                                </td>
-                            ))}
-                        </tr>
-                    ))}
-                </tbody>
-            </table>
+                                        <Link
+                                            to={`/R4${rowIndex + 1}${colIndex + 1}`}
+                                            className="a"
+                                        >
+                                            R4{rowIndex + 1}
+                                            {colIndex + 1}
+                                        </Link>
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+            <div className="card">
+                <p>
+                    <strong className="violet">Runner Matrix:</strong>
+                </p>
+                <table>
+                    <tbody>
+                        {Array.from({ length: rows }, (_, rowIndex) => (
+                            <tr key={`row-${rowIndex + 1}`}>
+                                {Array.from({ length: cols }, (_, colIndex) => (
+                                    <td
+                                        key={`cell-${rowIndex + 1}-${colIndex + 1}`}
+                                    >
+                                        <Link
+                                            to={`/R5${rowIndex + 1}${colIndex + 1}`}
+                                            className="a"
+                                        >
+                                            R5{rowIndex + 1}
+                                            {colIndex + 1}
+                                        </Link>
+                                    </td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </Card>
     )
 }

@@ -47,11 +47,12 @@ function Mission() {
                         <Link to="/mission/R640">Unveil the Truth</Link>
                     </li>
                 </ol>
+                <p>
+                    Focus on mastering both{' '}
+                    <Link to="/mission/rules">Rules</Link> and{' '}
+                    <Link to="/mission/performance">Performance</Link>
+                </p>
             </div>
-            <p>
-                Focus on mastering both <Link to="/mission/rules">Rules</Link>{' '}
-                and <Link to="/mission/performance">Performance</Link>
-            </p>
         </Card>
     )
 }

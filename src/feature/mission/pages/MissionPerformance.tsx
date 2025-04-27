@@ -11,48 +11,59 @@ function MissionPerformance() {
 
     return (
         <Card title="Mission Performance">
-            <p>
-                Mr. Johnson doesn’t just care that the job’s done — he cares how
-                it’s done. The better your performance, the greater the reward.
-            </p>
-            {missionPerformance.map((performance: MissionPerformanceType) => (
-                <div key={performance.id}>
-                    <p>
-                        <strong>{performance.title}</strong> &#8594;{' '}
-                        {performance.level}
-                    </p>
-                    <ul>
-                        {performance.effects.map(
-                            (effect: MissionEffect, index: number) => (
-                                <li key={index}>
-                                    {effect.link ? (
-                                        <>
-                                            {effect.description.split(' → ')[0]}{' '}
-                                            &#8594;{' '}
-                                            {effect.description.split(' → ')[1]}{' '}
-                                            &#8594;{' '}
-                                            <Link
-                                                to={effect.link}
-                                                className="a"
-                                            >
-                                                {
-                                                    effect.description.split(
-                                                        ' → '
-                                                    )[2]
-                                                }
-                                            </Link>{' '}
-                                            &#8594;{' '}
-                                            {effect.description.split(' → ')[3]}
-                                        </>
-                                    ) : (
-                                        effect.description
-                                    )}
-                                </li>
-                            )
-                        )}
-                    </ul>
-                </div>
-            ))}
+            <div className="card">
+                {' '}
+                <p>
+                    Mr. Johnson doesn’t just care that the job’s done — he cares
+                    how it’s done. The better your performance, the greater the
+                    reward.
+                </p>
+                {missionPerformance.map(
+                    (performance: MissionPerformanceType) => (
+                        <div key={performance.id}>
+                            <p>
+                                <strong className="violet">
+                                    {performance.title}
+                                </strong>{' '}
+                                &#8594; {performance.level}
+                            </p>
+                            <ul>
+                                {performance.effects.map(
+                                    (effect: MissionEffect, index: number) => (
+                                        <li key={index}>
+                                            {effect.link ? (
+                                                <>
+                                                    {
+                                                        effect.description.split(
+                                                            ' → '
+                                                        )[0]
+                                                    }{' '}
+                                                    &#8594;{' '}
+                                                    {
+                                                        effect.description.split(
+                                                            ' → '
+                                                        )[1]
+                                                    }{' '}
+                                                    &#8594;{' '}
+                                                    <Link to={effect.link}>
+                                                        {
+                                                            effect.description.split(
+                                                                ' → '
+                                                            )[2]
+                                                        }
+                                                    </Link>
+                                                </>
+                                            ) : (
+                                                effect.description
+                                            )}
+                                        </li>
+                                    )
+                                )}
+                            </ul>
+                        </div>
+                    )
+                )}
+            </div>
         </Card>
     )
 }
