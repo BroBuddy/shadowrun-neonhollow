@@ -1,22 +1,19 @@
 import Headline from '@/components/Headline'
 import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import { getFacilityByTag } from '../facilityData'
-import { Facility } from '../FacilityType'
+import { Facility, FacilityRoll } from '../FacilityType'
 import FacilityActions from '../components/FacilityActions'
 import FacilityRolls from '../components/FacilityRolls'
+import { useMemo } from 'react'
 
 function CityDetail() {
     const { facilityTag } = useParams()
-    const [facility, setFacility] = useState<Facility | null>(null)
-
-    useEffect(() => {
-        const missionItem = getFacilityByTag(facilityTag as string)
-        setFacility(missionItem as Facility)
+    const facility = useMemo(() => {
+        return getFacilityByTag(facilityTag as string) as Facility
     }, [facilityTag])
 
     if (!facility) {
-        return <></>
+        return <p>No resource data available.</p>
     }
 
     return (
@@ -27,6 +24,7 @@ function CityDetail() {
                     <img
                         src={`/images/${facility.title}.jpg`}
                         alt={facility.title}
+                        loading="lazy"
                     />
                 </div>
                 <div className="flex-1 basis-1/2">
@@ -37,7 +35,12 @@ function CityDetail() {
             </div>
 
             {facility.rollList.length >= 1 && (
-                <FacilityRolls rollList={facility.rollList} />
+                <FacilityRolls
+                    rollList={facility.rollList.map((item: FacilityRoll) => ({
+                        ...item,
+                        key: item.roll,
+                    }))}
+                />
             )}
 
             <FacilityActions actionList={facility.actionList} />
