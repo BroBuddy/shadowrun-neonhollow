@@ -50,7 +50,9 @@ function CityDetail() {
                                 <li key={index}>
                                     {item.roll}:{' '}
                                     {item.link ? (
-                                        <Link to={item.link}>{item.text}</Link>
+                                        <Link to={`/rule${item.link}`}>
+                                            {item.text}
+                                        </Link>
                                     ) : (
                                         <strong>{item.text}</strong>
                                     )}

@@ -530,26 +530,24 @@ export const Events = [
         id: 'R481',
         title: 'Mysterious Encounter',
         content: `<p><strong class="violet">Event:</strong><br />
-            In the center of NeuralNexus, a man with glasses and a perfect haircut analyzes streams of financial data with ease. Curious, you strike up a conversation. 
+            Seated at NeuralNexus' main console, a mature man with stylish glasses and a touch of silver in his hair works through torrents of financial data. Curious about his methods, you spark up a conversation.
             <br /><br />
-            He explains a groundbreaking method for optimizing corporate finances—complex at first, but he breaks it down until you grasp the full picture. His insights reveal hidden structures you never noticed before.
-            <br /><br />
-            Before you can thank him, he vanishes into the crowd.</p>
+            He explains a groundbreaking method for optimizing corporate finances—complex at first, but he breaks it down until you grasp the full picture. His insights reveal hidden structures you never noticed before.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Logic</li></ul>`,
     },
     {
         id: 'R483',
         title: 'Mysterious Encounter',
         content: `<p><strong class="violet">Event:</strong><br />
-            While in BioCare, you find yourself suffering from intense tooth pain. A beautiful woman with long black hair approaches, sensing your discomfort.
+            Pain flares unexpectedly as you linger in BioCare’s waiting area. A graceful young woman with long black hair approaches, sensing your discomfort.
             <br /><br />
             She calmly explains the process to ease the pain, her hands steady as she demonstrates a quick, effective technique.
             <br /><br />
             Her soothing presence and clear knowledge help you understand the procedure, relieving your pain and giving you a sense of agility in both body and mind.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Agility</li></ul>`,
     },
     {
@@ -562,7 +560,7 @@ export const Events = [
             <br /><br />
             His calm demeanor and deep understanding of the garden's flora put you at ease, helping you feel more composed and in tune with your surroundings.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Reaction</li></ul>`,
     },
     {
@@ -573,7 +571,7 @@ export const Events = [
             <br /><br />
             A silent understanding forms between you — not of friendship, but of mutual recognition. You part ways, but the encounter sharpens your instincts and leaves you more attuned to the hidden currents of the world.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Intuition</li></ul>`,
     },
     {
@@ -584,7 +582,7 @@ export const Events = [
             <br /><br />
             She sits down beside you, speaking softly, encouraging you to look beyond the darkness and embrace the good in life. Her gentle words, coupled with her quiet strength, shift your perspective, offering a newfound sense of clarity and hope.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Charisma</li></ul>`,
     },
     {
@@ -597,7 +595,7 @@ export const Events = [
             <br /><br />
             You leave with sore muscles — but also feeling stronger.</p>
             
-            <p><strong class="violet">Bonus Attributes:</strong></p>
+            <p><strong class="violet">Bonus Attribute:</strong></p>
             <ul class="list-margin"><li>+1 Strength</li></ul>`,
     },
 ]
