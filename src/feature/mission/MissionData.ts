@@ -505,11 +505,11 @@ const missionData: Mission[] = [
                 },
             ],
             failure: {
-                redirect: 'R014',
+                redirect: 'rule/R014',
                 text: 'Well Done',
             },
             success: {
-                redirect: 'R015',
+                redirect: 'rule/R015',
                 text: 'Overwhelmingly Great',
             },
         },

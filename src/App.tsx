@@ -2,7 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect, useState } from 'react'
 import MobileNav from './components/MobileNav'
 import Settings from './components/Settings'
-import './App.css'
+import './App.scss'
 
 function App() {
     const location = useLocation()
