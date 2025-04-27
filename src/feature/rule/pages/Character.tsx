@@ -16,22 +16,22 @@ function Character() {
                 <p>Roll 1d6:</p>
                 <ol>
                     <li>
-                        <Link to="/R021">Human</Link>
+                        <Link to="/rule/R021">Human</Link>
                     </li>
                     <li>
-                        <Link to="/R021">Human</Link>
+                        <Link to="/rule/R021">Human</Link>
                     </li>
                     <li>
-                        <Link to="/R022">Elf</Link>
+                        <Link to="/rule/R022">Elf</Link>
                     </li>
                     <li>
-                        <Link to="/R023">Dwarf</Link>
+                        <Link to="/rule/R023">Dwarf</Link>
                     </li>
                     <li>
-                        <Link to="/R024">Orc</Link>
+                        <Link to="/rule/R024">Orc</Link>
                     </li>
                     <li>
-                        <Link to="/R025">Troll</Link>
+                        <Link to="/rule/R025">Troll</Link>
                     </li>
                 </ol>
             </Card>
@@ -42,22 +42,22 @@ function Character() {
                 <p>Roll 1d6:</p>
                 <ol>
                     <li>
-                        <Link to="/R031">Street Samurai</Link>
+                        <Link to="/rule/R031">Street Samurai</Link>
                     </li>
                     <li>
-                        <Link to="/R032">Decker</Link>
+                        <Link to="/rule/R032">Decker</Link>
                     </li>
                     <li>
-                        <Link to="/R033">Rigger</Link>
+                        <Link to="/rule/R033">Rigger</Link>
                     </li>
                     <li>
-                        <Link to="/R034">Mage</Link>
+                        <Link to="/rule/R034">Mage</Link>
                     </li>
                     <li>
-                        <Link to="/R035">Face</Link>
+                        <Link to="/rule/R035">Face</Link>
                     </li>
                     <li>
-                        <Link to="/R036">Shaman</Link>
+                        <Link to="/rule/R036">Shaman</Link>
                     </li>
                 </ol>
             </Card>
@@ -87,7 +87,7 @@ function Character() {
                                         key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                     >
                                         <Link
-                                            to={`/R7${rowIndex + 1}${colIndex + 1}`}
+                                            to={`/rule/R7${rowIndex + 1}${colIndex + 1}`}
                                         >
                                             {rowIndex + 1}x{colIndex + 1}
                                         </Link>
@@ -169,22 +169,22 @@ function Character() {
                 <p>Each archetype has its own name pool:</p>
                 <ul>
                     <li>
-                        <Link to="/R041">Street Samurai</Link>
+                        <Link to="/rule/R041">Street Samurai</Link>
                     </li>
                     <li>
-                        <Link to="/R042">Decker</Link>
+                        <Link to="/rule/R042">Decker</Link>
                     </li>
                     <li>
-                        <Link to="/R043">Rigger</Link>
+                        <Link to="/rule/R043">Rigger</Link>
                     </li>
                     <li>
-                        <Link to="/R044">Mage</Link>
+                        <Link to="/rule/R044">Mage</Link>
                     </li>
                     <li>
-                        <Link to="/R045">Face</Link>
+                        <Link to="/rule/R045">Face</Link>
                     </li>
                     <li>
-                        <Link to="/R046">Shaman</Link>
+                        <Link to="/rule/R046">Shaman</Link>
                     </li>
                 </ul>
             </Card>

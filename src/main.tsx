@@ -4,13 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
-import CharacterRouter from './feature/character/CharacterRouter.tsx'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
+import RuleRouter from './feature/rule/RuleRouter.tsx'
 
 const Welcome = React.lazy(() => import('./pages/Welcome'))
-const Rules = React.lazy(() => import('./pages/Rules'))
 const Matrix = React.lazy(() => import('./pages/Matrix'))
-const TagContent = React.lazy(() => import('./components/TagContent'))
 
 const router = createBrowserRouter([
     {
@@ -21,19 +19,11 @@ const router = createBrowserRouter([
                 element: <Welcome />,
             },
             {
-                path: '/rules',
-                element: <Rules />,
-            },
-            {
                 path: '/matrix',
                 element: <Matrix />,
             },
-            {
-                path: '/:tagId',
-                element: <TagContent />,
-            },
+            ...RuleRouter,
             ...ResourceRouter,
-            ...CharacterRouter,
             ...CityRouter,
             ...MissionRouter,
         ],

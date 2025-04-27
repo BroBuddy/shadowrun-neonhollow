@@ -20,7 +20,7 @@ export const Rules = [
                 </li>
                 <li>End of the Day:
                     <ul>
-                        <li>Roll on the <strong>Event Matrix</strong> R401</li>
+                        <li>Roll on the <strong>Event Matrix</strong></li>
                         <li>Increase <strong>Day Counter</strong> by +1</li>
                         <li>Reset <strong>Hours</strong> to 0</li>
                     </ul>
@@ -90,7 +90,7 @@ export const Rules = [
         id: 'R009',
         title: 'Intel Mechanic',
         content: `<p>Intel ranges from 0 to 6 and cannot exceed these limits.</p>
-            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> to bring down the MegaCorp (R110).</p>
+            <p>You'll need Intel to fund missions from <strong>Mr. Johnson</strong> to bring down the MegaCorp.</p>
             <p><strong>Service Providers:</strong></p>
             <ol>
                 <li>NeuralNexus</li>

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import Card from '../components/Card'
+import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
 
-const Rules = () => {
+const Rule = () => {
     return (
         <>
             <Headline>Rules</Headline>
@@ -16,31 +16,31 @@ const Rules = () => {
                 </p>
                 <ul>
                     <li>
-                        <Link to="/R003">Time</Link>
+                        <Link to="/rule/R003">Time</Link>
                     </li>
                     <li>
-                        <Link to="/R004">Nuyen</Link>
+                        <Link to="/rule/R004">Nuyen</Link>
                     </li>
                     <li>
-                        <Link to="/R005">Health</Link>
+                        <Link to="/rule/R005">Health</Link>
                     </li>
                     <li>
-                        <Link to="/R006">Energy</Link>
+                        <Link to="/rule/R006">Energy</Link>
                     </li>
                     <li>
-                        <Link to="/R007">Reputation</Link>
+                        <Link to="/rule/R007">Reputation</Link>
                     </li>
                     <li>
-                        <Link to="/R008">Heat</Link>
+                        <Link to="/rule/R008">Heat</Link>
                     </li>
                     <li>
-                        <Link to="/R009">Intel</Link>
+                        <Link to="/rule/R009">Intel</Link>
                     </li>
                     <li>
-                        <Link to="/R010">Dice</Link>
+                        <Link to="/rule/R010">Dice</Link>
                     </li>
                     <li>
-                        <Link to="/R011">Matrix</Link>
+                        <Link to="/rule/R011">Matrix</Link>
                     </li>
                     <li>
                         <Link to="/resource">Resources</Link>
@@ -51,7 +51,7 @@ const Rules = () => {
                 </p>
                 <ul>
                     <li>
-                        <Link to="/character">Character Creation</Link>
+                        <Link to="/rule/character">Character Creation</Link>
                     </li>
                 </ul>
             </Card>
@@ -59,4 +59,4 @@ const Rules = () => {
     )
 }
 
-export default Rules
+export default Rule

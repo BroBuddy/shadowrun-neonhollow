@@ -2,23 +2,23 @@ import { useParams } from 'react-router-dom'
 import { useEffect, useMemo, useState } from 'react'
 import { makeUrlsClickable } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
-import Card from './Card'
 import { Data } from '@/data/data'
-import Headline from './Headline'
+import Card from '@/components/Card'
+import Headline from '@/components/Headline'
 
-const TagContent = () => {
-    const { tagId } = useParams()
+const RuleDetail = () => {
+    const { ruleId } = useParams()
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const transformedContent = useMemo(() => {
         return activeTag?.content ? makeUrlsClickable(activeTag.content) : null
     }, [activeTag?.content])
 
     useEffect(() => {
-        if (!tagId) return
+        if (!ruleId) return
 
-        const findTag = Data.find((item: TagItem) => item.id === tagId)
+        const findTag = Data.find((item: TagItem) => item.id === ruleId)
         setActiveTag((findTag as TagItem) ?? null)
-    }, [tagId])
+    }, [ruleId])
 
     if (!activeTag) return null
 
@@ -32,4 +32,4 @@ const TagContent = () => {
     )
 }
 
-export default TagContent
+export default RuleDetail

@@ -42,20 +42,23 @@ function Matrix() {
                         </tr>
                     </thead>
                     <tbody>
-                        {Array.from({ length: rows }, (_, rowIndex) => (
+                        {Array.from({ length: rows }, (_, rowIndex: number) => (
                             <tr key={`row-${rowIndex + 1}`}>
                                 <th>{rowIndex + 1}</th>
-                                {Array.from({ length: cols }, (_, colIndex) => (
-                                    <td
-                                        key={`cell-${rowIndex + 1}-${colIndex + 1}`}
-                                    >
-                                        <Link
-                                            to={`/R4${rowIndex + 1}${colIndex + 1}`}
+                                {Array.from(
+                                    { length: cols },
+                                    (_, colIndex: number) => (
+                                        <td
+                                            key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                         >
-                                            {rowIndex + 1}x{colIndex + 1}
-                                        </Link>
-                                    </td>
-                                ))}
+                                            <Link
+                                                to={`/rule/R4${rowIndex + 1}${colIndex + 1}`}
+                                            >
+                                                {rowIndex + 1}x{colIndex + 1}
+                                            </Link>
+                                        </td>
+                                    )
+                                )}
                             </tr>
                         ))}
                     </tbody>
@@ -79,20 +82,23 @@ function Matrix() {
                         </tr>
                     </thead>
                     <tbody>
-                        {Array.from({ length: rows }, (_, rowIndex) => (
+                        {Array.from({ length: rows }, (_, rowIndex: number) => (
                             <tr key={`row-${rowIndex + 1}`}>
                                 <th>{rowIndex + 1}</th>
-                                {Array.from({ length: cols }, (_, colIndex) => (
-                                    <td
-                                        key={`cell-${rowIndex + 1}-${colIndex + 1}`}
-                                    >
-                                        <Link
-                                            to={`/R5${rowIndex + 1}${colIndex + 1}`}
+                                {Array.from(
+                                    { length: cols },
+                                    (_, colIndex: number) => (
+                                        <td
+                                            key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                         >
-                                            {rowIndex + 1}x{colIndex + 1}
-                                        </Link>
-                                    </td>
-                                ))}
+                                            <Link
+                                                to={`/rule/R5${rowIndex + 1}${colIndex + 1}`}
+                                            >
+                                                {rowIndex + 1}x{colIndex + 1}
+                                            </Link>
+                                        </td>
+                                    )
+                                )}
                             </tr>
                         ))}
                     </tbody>

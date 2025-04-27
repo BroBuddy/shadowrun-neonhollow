@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const MobileNav = () => {
     return (
         <section className="mobile-nav">
-            <Link to="/rules">
+            <Link to="/rule">
                 <span className="text-xs">📑 Rules</span>
             </Link>
 

@@ -26,8 +26,9 @@ function Welcome() {
                     their influence—district by district.
                 </p>
                 <p>
-                    This is your trial. Win it... and wake up.{' '}
-                    <Link to="/rules">Rules</Link>
+                    <Link to="/rule">
+                        This is your trial. Win it... and wake up.
+                    </Link>
                 </p>
             </Card>
         </>
