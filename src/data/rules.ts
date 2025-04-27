@@ -1,33 +1,5 @@
 export const Rules = [
     {
-        id: 'R001',
-        title: 'Welcome to NeonHollow',
-        content:
-            '<p>You’re inside a full-spectrum neural simulation, created by rogue deckers and ex-corp AIs to test potential shadowrunners in a city twisted by corporate control. Everything you see, every sound, every face, every choice—fabricated to push you to your limits.</p>' +
-            '<p>The megacorp dominates this simulation like it does the real world. It watches, it hunts, and it controls every district—just like it will when you jack out of this and hit the actual streets.</p>' +
-            '<p>Your task is simple: break the system.</p>' +
-            '<p>Take on missions. Build your rep. Uncover secrets. Burn down their influence—district by district.</p>' +
-            '<p>This is your trial. Win it... and wake up. R002</p>',
-    },
-    {
-        id: 'R002',
-        title: 'Instructions',
-        content: `<p><strong>Your first Steps:</strong></p>
-            <p>Grab 2d6, a pen, and something to write on.</p>
-            <p><strong>Know the Mechanics:</strong></p>
-            <p>R003 &#8594; Time</p>
-            <p>R004 &#8594; Nuyen</p>
-            <p>R005 &#8594; Health</p>
-            <p>R006 &#8594; Energy</p>
-            <p>R007 &#8594; Reputation</p>
-            <p>R008 &#8594; Heat</p>
-            <p>R009 &#8594; Intel</p>
-            <p>R010 &#8594; Dice</p>
-            <p>R011 &#8594; Matrix</p>
-            <p><strong>Start your Adventure:</strong></p>
-            <p>R012 &#8594; Character Creation</p>`,
-    },
-    {
         id: 'R003',
         title: 'Time Mechanic',
         content: `<p>You’ve got <strong>7 Days</strong> to dismantle the system. Each cycle gives you <strong>7 Hours</strong> — use them wisely.</p>

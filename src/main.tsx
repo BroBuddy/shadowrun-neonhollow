@@ -1,12 +1,13 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 
-const Sheet = React.lazy(() => import('./components/Sheet'))
-const Matrix = React.lazy(() => import('./components/Matrix'))
+const Welcome = React.lazy(() => import('./pages/Welcome'))
+const Rules = React.lazy(() => import('./pages/Rules'))
+const Matrix = React.lazy(() => import('./pages/Matrix'))
 const TagContent = React.lazy(() => import('./components/TagContent'))
 
 const router = createBrowserRouter([
@@ -15,11 +16,11 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <Navigate to="/R001" replace />,
+                element: <Welcome />,
             },
             {
-                path: '/sheet',
-                element: <Sheet />,
+                path: '/rules',
+                element: <Rules />,
             },
             {
                 path: '/matrix',
