@@ -36,7 +36,6 @@ function Matrix() {
                                     >
                                         <Link
                                             to={`/R4${rowIndex + 1}${colIndex + 1}`}
-                                            className="a"
                                         >
                                             R4{rowIndex + 1}
                                             {colIndex + 1}
@@ -62,7 +61,6 @@ function Matrix() {
                                     >
                                         <Link
                                             to={`/R5${rowIndex + 1}${colIndex + 1}`}
-                                            className="a"
                                         >
                                             R5{rowIndex + 1}
                                             {colIndex + 1}
