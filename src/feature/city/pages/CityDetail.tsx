@@ -1,14 +1,10 @@
-import Card from '@/components/Card'
 import Headline from '@/components/Headline'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { getFacilityByTag } from '../facilityData'
-import {
-    Facility,
-    FacilityRoll,
-    FacilityAction,
-    ActionStep,
-} from '../FacilityType'
+import { Facility } from '../FacilityType'
+import FacilityActions from '../components/FacilityActions'
+import FacilityRolls from '../components/FacilityRolls'
 
 function CityDetail() {
     const { facilityTag } = useParams()
@@ -41,86 +37,10 @@ function CityDetail() {
             </div>
 
             {facility.rollList.length >= 1 && (
-                <Card>
-                    <p>
-                        <strong className="highlight">
-                            🏃 Enter &#8594; Roll 2d6:
-                        </strong>
-                    </p>
-
-                    <ul>
-                        {facility.rollList.map(
-                            (item: FacilityRoll, index: number) => (
-                                <li key={index}>
-                                    <strong>Roll {item.roll}</strong> &#8594;{' '}
-                                    {item.link ? (
-                                        <Link to={`/rule${item.link}`}>
-                                            {item.text}
-                                        </Link>
-                                    ) : (
-                                        <>{item.text}</>
-                                    )}
-                                </li>
-                            )
-                        )}
-                    </ul>
-                </Card>
+                <FacilityRolls rollList={facility.rollList} />
             )}
-            <Card>
-                {facility.actionList &&
-                    facility.actionList.map(
-                        (action: FacilityAction, actionIndex: number) => (
-                            <div key={actionIndex}>
-                                <p>
-                                    <strong className="highlight">
-                                        {action.title}
-                                    </strong>
-                                </p>
-                                <ul className="list-margin">
-                                    {action.steps.map(
-                                        (
-                                            step: ActionStep,
-                                            stepIndex: number
-                                        ) => {
-                                            const [
-                                                firstWord,
-                                                ...remainingWords
-                                            ] = step.text.split(' ')
 
-                                            return (
-                                                <li key={stepIndex}>
-                                                    {step.link ? (
-                                                        <>
-                                                            <strong>
-                                                                {firstWord}:
-                                                            </strong>{' '}
-                                                            <Link
-                                                                to={`/resource${step.link}`}
-                                                            >
-                                                                {remainingWords.join(
-                                                                    ' '
-                                                                )}{' '}
-                                                            </Link>
-                                                        </>
-                                                    ) : (
-                                                        <>
-                                                            <strong>
-                                                                {firstWord}:
-                                                            </strong>{' '}
-                                                            {remainingWords.join(
-                                                                ' '
-                                                            )}{' '}
-                                                        </>
-                                                    )}
-                                                </li>
-                                            )
-                                        }
-                                    )}
-                                </ul>
-                            </div>
-                        )
-                    )}
-            </Card>
+            <FacilityActions actionList={facility.actionList} />
         </>
     )
 }
