@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
+import CharacterRouter from './feature/character/CharacterRouter.tsx'
 
 const Welcome = React.lazy(() => import('./pages/Welcome'))
 const Rules = React.lazy(() => import('./pages/Rules'))
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
                 path: '/:tagId',
                 element: <TagContent />,
             },
+            ...CharacterRouter,
             ...CityRouter,
             ...MissionRouter,
         ],

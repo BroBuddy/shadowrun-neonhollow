@@ -46,7 +46,7 @@ const Rules = () => {
                 </p>
                 <ul>
                     <li>
-                        <Link to="/R012">Character Creation</Link>
+                        <Link to="/character">Character Creation</Link>
                     </li>
                 </ul>
             </div>
