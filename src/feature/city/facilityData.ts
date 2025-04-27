@@ -4,6 +4,8 @@ const facilityData: Facility[] = [
     {
         tag: 'neuralnexus',
         title: 'NeuralNexus',
+        description:
+            'The digital heart of NeonHollow, where minds merge with machines and the future pulses in streams of data.',
         rollList: [
             { roll: '2', text: 'System Anomaly', link: '/R471' },
             { roll: '3-4', text: 'Illegal Trial → +1 Heat' },
@@ -43,6 +45,8 @@ const facilityData: Facility[] = [
     {
         tag: 'patrolhub',
         title: 'PatrolHub',
+        description:
+            'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
         rollList: [
             { roll: '2', text: 'Patrol Check', link: '/R472' },
             { roll: '3-4', text: 'Security Breach → +1 Heat' },
@@ -74,6 +78,8 @@ const facilityData: Facility[] = [
     {
         tag: 'biocare',
         title: 'BioCare',
+        description:
+            'Pioneers of life, healing the city’s wounds and unlocking the secrets of humanity — at a price.',
         rollList: [
             { roll: '2', text: 'Medical Malfunction', link: '/R473' },
             { roll: '3-4', text: 'Defiant Case → +1 Heat' },
@@ -113,6 +119,8 @@ const facilityData: Facility[] = [
     {
         tag: 'echogarden',
         title: 'EchoGarden',
+        description:
+            'A tranquil haven where whispers of the past bloom into vibrant memories, rooted in neon dreams.',
         rollList: [
             { roll: '2', text: 'Lost Data', link: '/R474' },
             { roll: '3-4', text: 'Plant Harvest → +1 Heat' },
@@ -152,6 +160,8 @@ const facilityData: Facility[] = [
     {
         tag: 'dreamsphere',
         title: 'DreamSphere',
+        description:
+            'An immersive realm where fantasies awaken and reality bends under layers of shimmering light.',
         rollList: [
             { roll: '2', text: 'Dream Glitch', link: '/R475' },
             { roll: '3-4', text: 'Shady Moves → +1 Heat' },
@@ -191,6 +201,8 @@ const facilityData: Facility[] = [
     {
         tag: 'hololounge',
         title: 'HoloLounge',
+        description:
+            'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
         rollList: [
             { roll: '2', text: 'The Whisper Network', link: '/R476' },
             { roll: '3-4', text: 'Drunk and Disorderly → +1 Heat' },
@@ -230,6 +242,8 @@ const facilityData: Facility[] = [
     {
         tag: 'irongym',
         title: 'IronGym',
+        description:
+            '"Where sweat forges strength, and every clang of metal echoes the determination to rise above.',
         rollList: [
             { roll: '2', text: 'Unplanned Challenge', link: '/R477' },
             { roll: '3-4', text: 'Wrong Locker Room → +1 Heat' },
@@ -269,6 +283,8 @@ const facilityData: Facility[] = [
     {
         tag: 'zerozone',
         title: 'ZeroZone',
+        description:
+            'The epicenter of icy calm and calculated precision—a space where sharp minds outmatch the chaos.',
         rollList: [],
         actionList: [
             {
@@ -296,6 +312,8 @@ const facilityData: Facility[] = [
     {
         tag: 'smugglerden',
         title: 'SmugglerDen',
+        description:
+            'A shadowy refuge for the bold, where secrets are currency, and fortune favors the daring.',
         rollList: [
             { roll: '2', text: 'Smuggler’s Test', link: '/R478' },
             { roll: '3-4', text: 'Police Raid → +1 Heat' },
@@ -327,6 +345,8 @@ const facilityData: Facility[] = [
     {
         tag: 'safehouse',
         title: 'SafeHouse',
+        description:
+            'An impenetrable sanctuary where the world’s troubles melt away, leaving only peace and security.',
         rollList: [],
         actionList: [
             {
@@ -344,6 +364,23 @@ const facilityData: Facility[] = [
                     { text: 'Add Agility or Charisma' },
                     { text: 'Reduce Heat', link: '/R304' },
                 ],
+            },
+        ],
+    },
+    {
+        tag: 'megacorp',
+        title: 'MegaCorp',
+        description:
+            'A towering empire of ambition, where innovation meets dominance in the pursuit of global influence.',
+        rollList: [],
+        actionList: [
+            {
+                title: '🚀 Incite Rebellion:',
+                steps: [{ text: 'Spend 5 Reputation → +2 Heat' }],
+            },
+            {
+                title: '🚀 Propaganda Campaign:',
+                steps: [{ text: 'Pay 30.000 ¥ → +2 Heat' }],
             },
         ],
     },

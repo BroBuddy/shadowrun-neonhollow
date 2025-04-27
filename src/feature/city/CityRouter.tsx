@@ -1,6 +1,5 @@
 import City from './pages/City'
 import CityDetail from './pages/CityDetail'
-import MegaCorp from './pages/MegaCorp'
 
 const CityRouter = [
     {
@@ -9,10 +8,6 @@ const CityRouter = [
             {
                 index: true,
                 element: <City />,
-            },
-            {
-                path: 'megacorp',
-                element: <MegaCorp />,
             },
             {
                 path: ':facilityTag',

@@ -36,9 +36,14 @@ function ResourceDetail() {
                                     → {roll.result}
                                 </p>
                                 <ul className="list-margin">
-                                    {roll.effects.map((effect, effectIndex) => (
-                                        <li key={effectIndex}>{effect}</li>
-                                    ))}
+                                    {roll.effects.map(
+                                        (
+                                            effect: string,
+                                            effectIndex: number
+                                        ) => (
+                                            <li key={effectIndex}>{effect}</li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
                         )

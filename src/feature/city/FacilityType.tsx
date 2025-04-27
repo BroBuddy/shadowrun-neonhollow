@@ -1,6 +1,7 @@
 type Facility = {
     tag: string
     title: string
+    description: string
     rollList: FacilityRoll[]
     actionList: FacilityAction[]
 }

@@ -33,7 +33,11 @@ function CityDetail() {
                         alt={facility.title}
                     />
                 </div>
-                <div className="flex-1 basis-1/2"></div>
+                <div className="flex-1 basis-1/2">
+                    <p>
+                        <em>"{facility.description}"</em>
+                    </p>
+                </div>
             </div>
 
             {facility.rollList.length >= 1 && (
