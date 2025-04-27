@@ -15,9 +15,9 @@ const facilityData: Facility[] = [
         ],
         actionList: [
             {
-                title: '💡 Code Decryption:',
+                title: '💡 Mind Overdrive:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
+                    { text: 'Spend 3 Health → Roll 2d6 → +2' },
                     { text: 'Add Logic or Intuition' },
                     { text: 'Gain Intel', link: '/R305' },
                 ],
@@ -54,7 +54,7 @@ const facilityData: Facility[] = [
         ],
         actionList: [
             {
-                title: '🔥 Silence the Badge:',
+                title: '🔥 Quiet Bribe:',
                 steps: [
                     { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
                     { text: 'Add Strength or Charisma' },
@@ -126,7 +126,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Gambling Table:',
                 steps: [
-                    { text: 'Spend 2 Energy → Roll 2d6' },
+                    { text: 'Pay 4.000 ¥ → Roll 2d6' },
                     { text: 'Add Reaction or Charisma' },
                     { text: 'Gain Nuyen', link: '/R303' },
                 ],
@@ -134,7 +134,7 @@ const facilityData: Facility[] = [
             {
                 title: '💡 Pay the Insider:',
                 steps: [
-                    { text: 'Pay 4.000 ¥ → Roll 2d6' },
+                    { text: 'Spend 2 Energy → Roll 2d6' },
                     { text: 'Add Intuition or Charisma' },
                     { text: 'Gain Intel', link: '/R305' },
                 ],

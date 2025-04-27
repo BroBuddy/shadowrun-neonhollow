@@ -40,6 +40,10 @@ body {
     z-index: 1;
 }
 
+strong {
+    text-transform: uppercase;
+}
+
 ul,
 ol {
     padding-left: 15px;

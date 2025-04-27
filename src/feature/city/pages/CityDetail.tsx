@@ -48,13 +48,13 @@ function CityDetail() {
                         {facility.rollList.map(
                             (item: FacilityRoll, index: number) => (
                                 <li key={index}>
-                                    {item.roll}:{' '}
+                                    {item.roll}: &#8594;{' '}
                                     {item.link ? (
                                         <Link to={`/rule${item.link}`}>
                                             {item.text}
                                         </Link>
                                     ) : (
-                                        <strong>{item.text}</strong>
+                                        <>{item.text}</>
                                     )}
                                 </li>
                             )
