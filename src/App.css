@@ -138,12 +138,13 @@ hr {
     cursor: pointer;
     border: 2px solid var(--black-1);
     color: var(--violet-1);
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 5px;
     height: 35px;
     width: 35px;
     text-align: center;
     font-size: 14px;
+    font-weight: bold;
 }
 
 .active-dice {

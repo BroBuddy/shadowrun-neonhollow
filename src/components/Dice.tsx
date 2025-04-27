@@ -3,7 +3,7 @@ import { useRef, useState } from 'react'
 type DiceType = { label: string; min: number; max: number }
 
 const Dice = ({ label, min, max }: DiceType) => {
-    const secondsDelay = 2
+    const secondsDelay = 1
     const [content, setContent] = useState<string>(label)
     const [isDisabled, setIsDisabled] = useState<boolean>(false)
     const timeoutRef = useRef<NodeJS.Timeout | null>(null)

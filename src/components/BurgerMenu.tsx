@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Dice from './Dice'
 
 function BurgerMenu() {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -22,17 +23,24 @@ function BurgerMenu() {
                 }`}
             >
                 <div className="shadow-lg w-3/4 max-w-md mt-5 mx-auto">
-                    <div className="flex items-center justify-between">
-                        <p>
-                            <strong>Modal</strong>
-                        </p>
+                    <div>
+                        <div className="flex items-center justify-between">
+                            <p>
+                                <strong>Smash some dice:</strong>
+                            </p>
 
-                        <span
-                            className="text-white cursor-pointer text-xl -mt-3"
-                            onClick={() => toggleModal(false)}
-                        >
-                            ✕
-                        </span>
+                            <span
+                                className="text-white cursor-pointer text-xl -mt-3"
+                                onClick={() => toggleModal(false)}
+                            >
+                                ✕
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <Dice label="1d6" min={1} max={6} />
+                        <Dice label="2d6" min={2} max={11} />
                     </div>
                 </div>
             </div>
