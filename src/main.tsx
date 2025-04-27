@@ -1,26 +1,43 @@
-import React, { StrictMode } from 'react'
+import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
-import MissionRouter from './feature/mission/MissionRouter.tsx'
-import CityRouter from './feature/city/CityRouter.tsx'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
+import CityRouter from './feature/city/CityRouter.tsx'
+import MissionRouter from './feature/mission/MissionRouter.tsx'
 import RuleRouter from './feature/rule/RuleRouter.tsx'
+import { ErrorBoundary } from 'react-error-boundary'
 
-const Welcome = React.lazy(() => import('./pages/Welcome'))
-const Matrix = React.lazy(() => import('./pages/Matrix'))
+const LoadingFallback = () => <p>Loading</p>
+const ErrorFallback = () => <p>Error</p>
+const Pages = {
+    Welcome: React.lazy(() => import('./pages/Welcome')),
+    Matrix: React.lazy(() => import('./pages/Matrix')),
+}
 
 const router = createBrowserRouter([
     {
-        element: <App />,
+        element: (
+            <ErrorBoundary FallbackComponent={ErrorFallback}>
+                <App />
+            </ErrorBoundary>
+        ),
         children: [
             {
                 index: true,
-                element: <Welcome />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Pages.Welcome />
+                    </Suspense>
+                ),
             },
             {
                 path: '/matrix',
-                element: <Matrix />,
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Pages.Matrix />
+                    </Suspense>
+                ),
             },
             ...RuleRouter,
             ...ResourceRouter,
