@@ -30,7 +30,7 @@ function ResourceDetail() {
                             <div key={index} className="roll-section">
                                 <p>
                                     {getIcon(roll.range)}{' '}
-                                    <strong className="violet">
+                                    <strong className="highlight">
                                         Roll {roll.range}
                                     </strong>{' '}
                                     → {roll.result}

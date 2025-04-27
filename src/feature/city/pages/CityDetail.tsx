@@ -39,7 +39,7 @@ function CityDetail() {
             {facility.rollList.length >= 1 && (
                 <Card>
                     <p>
-                        <strong className="violet">
+                        <strong className="highlight">
                             🏃 Enter &#8594; Roll 2d6:
                         </strong>
                     </p>
@@ -68,7 +68,7 @@ function CityDetail() {
                         (action: FacilityAction, actionIndex: number) => (
                             <div key={actionIndex}>
                                 <p>
-                                    <strong className="violet">
+                                    <strong className="highlight">
                                         {action.title}
                                     </strong>
                                 </p>

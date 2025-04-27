@@ -22,7 +22,7 @@ function MegaCorp() {
 
             <Card>
                 <p>
-                    <strong className="violet">🚀 Incite Rebellion:</strong>
+                    <strong className="highlight">🚀 Incite Rebellion:</strong>
                 </p>
                 <ul>
                     <li>
@@ -31,7 +31,9 @@ function MegaCorp() {
                 </ul>
 
                 <p>
-                    <strong className="violet">🚀 Propaganda Campaign:</strong>
+                    <strong className="highlight">
+                        🚀 Propaganda Campaign:
+                    </strong>
                 </p>
                 <ul>
                     <li>

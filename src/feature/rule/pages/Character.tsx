@@ -11,7 +11,7 @@ function Character() {
             <Headline>Character Creation</Headline>
             <Card>
                 <p>
-                    <strong className="violet">Metatype:</strong>
+                    <strong className="highlight">Metatype:</strong>
                 </p>
                 <p>Roll 1d6:</p>
 
@@ -94,7 +94,7 @@ function Character() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Archetype:</strong>
+                    <strong className="highlight">Archetype:</strong>
                 </p>
                 <p>Roll 1d6:</p>
                 <ol>
@@ -120,7 +120,7 @@ function Character() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Background:</strong>
+                    <strong className="highlight">Background:</strong>
                 </p>
                 <p>Your archetype is the tens digit - Roll 1d6:</p>
                 <table>
@@ -157,7 +157,7 @@ function Character() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Gear:</strong>
+                    <strong className="highlight">Gear:</strong>
                 </p>
                 <p>Choose one item for free from the Fixer's Workshop:</p>
                 <ul>
@@ -184,7 +184,7 @@ function Character() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Mode:</strong>
+                    <strong className="highlight">Mode:</strong>
                 </p>
                 <p>
                     The mode grants you starting resources such as Health,
@@ -221,7 +221,7 @@ function Character() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">(Optional) Name:</strong>
+                    <strong className="highlight">(Optional) Name:</strong>
                 </p>
                 <p>Each archetype has its own name pool:</p>
                 <ul>

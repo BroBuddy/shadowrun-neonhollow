@@ -28,16 +28,16 @@ function MissionDetail() {
             <Headline>{mission.title}</Headline>
             <Card>
                 <p>
-                    <strong className="violet">Client:</strong>
+                    <strong className="highlight">Client:</strong>
                     <br />
                     {mission.client.name}, {mission.client.location}
                 </p>
                 <p>
-                    <strong className="violet">Location:</strong>
+                    <strong className="highlight">Location:</strong>
                     <br /> {mission.mission_location}
                 </p>
                 <p>
-                    <strong className="violet">Briefing:</strong>
+                    <strong className="highlight">Briefing:</strong>
                     <br /> {mission.briefing}
                 </p>
             </Card>
@@ -46,7 +46,7 @@ function MissionDetail() {
                 {mission.tasks.map((task: MissionTask, index: number) => (
                     <React.Fragment key={task.id}>
                         <p>
-                            <strong className="violet">
+                            <strong className="highlight">
                                 {index + 1}. {task.title}
                             </strong>
                         </p>
@@ -77,7 +77,7 @@ function MissionDetail() {
 
             <Card>
                 <p>
-                    <strong className="violet">Twist:</strong>
+                    <strong className="highlight">Twist:</strong>
                     <br />
                     {mission.twist.description}
                 </p>

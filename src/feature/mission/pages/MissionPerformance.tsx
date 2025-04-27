@@ -24,7 +24,7 @@ function MissionPerformance() {
                     (performance: MissionPerformanceType) => (
                         <div key={performance.id}>
                             <p>
-                                <strong className="violet">
+                                <strong className="highlight">
                                     {performance.title}
                                 </strong>{' '}
                                 &#8594; {performance.level}

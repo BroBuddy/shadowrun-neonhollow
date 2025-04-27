@@ -7,8 +7,8 @@
     --black-2: #000;
     --white-1: #fff;
     --white-2: #ddd;
-    --violet-1: #09eae1;
-    --violet-2: #00c1cb;
+    --turquoise-1: #09eae1;
+    --turquoise-1-rgba: 9, 234, 225;
     --violet-1: #c09;
     --violet-1-rgba: 204, 0, 153;
 }
@@ -33,6 +33,52 @@ body {
     display: flex;
     min-width: 320px;
     min-height: 100vh;
+}
+
+.violet-mode h2 {
+    border-color: var(--violet-1);
+    color: var(--violet-1);
+}
+
+.violet-mode a,
+.violet-mode nav a,
+.violet-mode .highlight {
+    color: var(--violet-1);
+}
+
+.violet-mode nav {
+    border-top: 3px solid var(--violet-1);
+    -webkit-box-shadow: 0 0 15px 10px var(--violet-1);
+    -moz-box-shadow: 0 0 15px 10px var(--violet-1);
+    box-shadow: 0 0 15px 10px var(--violet-1);
+}
+
+.violet-mode .card {
+    border-color: var(--violet-1);
+    box-shadow: inset 0 10px 20px rgba(var(--violet-1-rgba), 0.5);
+}
+
+.turquoise-mode h2 {
+    border-color: var(--turquoise-1);
+    color: var(--turquoise-1);
+}
+
+.turquoise-mode a,
+.turquoise-mode nav a,
+.turquoise-mode .highlight {
+    color: var(--turquoise-1);
+}
+
+.turquoise-mode nav {
+    border-top: 3px solid var(--turquoise-1);
+    -webkit-box-shadow: 0 0 15px 10px var(--turquoise-1);
+    -moz-box-shadow: 0 0 15px 10px var(--turquoise-1);
+    box-shadow: 0 0 15px 10px var(--turquoise-1);
+}
+
+.turquoise-mode .card {
+    border-color: var(--turquoise-1);
+    box-shadow: inset 0 10px 20px rgba(var(--turquoise-1-rgba), 0.5);
 }
 
 .modal {
@@ -65,19 +111,14 @@ ol {
 }
 
 h2 {
-    border-left: 3px solid var(--violet-1);
-    color: var(--violet-1);
-    padding-bottom: 0;
+    border-left: 3px solid;
     margin: 0;
+    padding-bottom: 0;
 }
 
 p {
     margin-bottom: 15px;
     line-height: 1.2rem;
-}
-
-.violet {
-    color: var(--violet-1);
 }
 
 img {
@@ -87,10 +128,9 @@ img {
 
 .card {
     background-color: var(--black-1);
-    border: 3px solid var(--violet-1);
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
-    box-shadow: inset 0 10px 20px rgba(var(--violet-1-rgba), 0.5);
+    border: 3px solid;
     padding: 20px 15px;
     margin: 0 20px 20px;
 }
@@ -106,7 +146,6 @@ span {
 
 a {
     font-weight: bold;
-    color: var(--violet-1);
 }
 
 .a {
@@ -168,10 +207,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 20px;
-    border-top: 3px solid var(--violet-1);
-    -webkit-box-shadow: 0 0 15px 10px var(--violet-1);
-    -moz-box-shadow: 0 0 15px 10px var(--violet-1);
-    box-shadow: 0 0 15px 10px var(--violet-1);
     z-index: 10;
 }
 
@@ -179,10 +214,5 @@ nav > a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #ddd;
     padding: 5px;
-}
-
-nav a:hover {
-    color: var(--violet-1);
 }

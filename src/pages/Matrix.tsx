@@ -11,7 +11,7 @@ function Matrix() {
             <Headline>Matrix</Headline>
             <Card>
                 <p>
-                    <strong className="violet">Event Rules:</strong>
+                    <strong className="highlight">Event Rules:</strong>
                 </p>
                 <ol>
                     <li>Choose how to handle the event.</li>
@@ -26,7 +26,7 @@ function Matrix() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Event Matrix:</strong>
+                    <strong className="highlight">Event Matrix:</strong>
                 </p>
                 <p>Roll 2d6:</p>
                 <table>
@@ -66,7 +66,7 @@ function Matrix() {
             </Card>
             <Card>
                 <p>
-                    <strong className="violet">Runner Matrix:</strong>
+                    <strong className="highlight">Runner Matrix:</strong>
                 </p>
                 <p>Roll 2d6:</p>
                 <table>
