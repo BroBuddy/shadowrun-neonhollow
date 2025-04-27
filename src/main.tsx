@@ -61,3 +61,5 @@ if (!container._reactRootContainer) {
         </StrictMode>
     )
 }
+
+export { Pages, LoadingFallback, ErrorFallback }
