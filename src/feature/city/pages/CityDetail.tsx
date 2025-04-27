@@ -1,9 +1,14 @@
 import Card from '@/components/Card'
 import Headline from '@/components/Headline'
 import { Link, useParams } from 'react-router-dom'
-import { ActionStep, Facility, FacilityAction, FacilityRoll } from '../CityType'
-import { getFacilityByTag } from '../cityData'
 import { useEffect, useState } from 'react'
+import { getFacilityByTag } from '../facilityData'
+import {
+    Facility,
+    FacilityRoll,
+    FacilityAction,
+    ActionStep,
+} from '../FacilityType'
 
 function CityDetail() {
     const { facilityTag } = useParams()
@@ -31,28 +36,30 @@ function CityDetail() {
                 <div className="flex-1 basis-1/2"></div>
             </div>
 
-            <Card>
-                <p>
-                    <strong className="violet">
-                        🏃 Enter &#8594; Roll 2d6:
-                    </strong>
-                </p>
+            {facility.rollList.length >= 1 && (
+                <Card>
+                    <p>
+                        <strong className="violet">
+                            🏃 Enter &#8594; Roll 2d6:
+                        </strong>
+                    </p>
 
-                <ul>
-                    {facility.rollList.map(
-                        (item: FacilityRoll, index: number) => (
-                            <li key={index}>
-                                {item.roll}:{' '}
-                                {item.link ? (
-                                    <Link to={item.link}>{item.text}</Link>
-                                ) : (
-                                    <strong>{item.text}</strong>
-                                )}
-                            </li>
-                        )
-                    )}
-                </ul>
-            </Card>
+                    <ul>
+                        {facility.rollList.map(
+                            (item: FacilityRoll, index: number) => (
+                                <li key={index}>
+                                    {item.roll}:{' '}
+                                    {item.link ? (
+                                        <Link to={item.link}>{item.text}</Link>
+                                    ) : (
+                                        <strong>{item.text}</strong>
+                                    )}
+                                </li>
+                            )
+                        )}
+                    </ul>
+                </Card>
+            )}
             <Card>
                 {facility.actionList &&
                     facility.actionList.map(
