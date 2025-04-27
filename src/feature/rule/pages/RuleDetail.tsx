@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useMemo, useState } from 'react'
-import { makeUrlsClickable } from '@/lib/helper'
 import { TagItem } from '@/lib/types'
 import { Data } from '@/feature/rule/data/data'
 import Card from '@/components/Card'
 import Headline from '@/components/Headline'
+import { makeUrlsClickable } from '@/lib/helper'
 
 const RuleDetail = () => {
     const { ruleId } = useParams()
