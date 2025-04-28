@@ -2,6 +2,23 @@ import { Facility } from './FacilityType'
 
 const facilityData: Facility[] = [
     {
+        tag: 'megacorp',
+        title: 'MegaCorp',
+        description:
+            'A towering empire of ambition, where innovation meets dominance in the pursuit of global influence.',
+        rollList: [],
+        actionList: [
+            {
+                title: '🚀 Incite Rebellion:',
+                steps: [{ text: 'Spend 5 Edge → +2 Heat' }],
+            },
+            {
+                title: '🚀 Propaganda Campaign:',
+                steps: [{ text: 'Pay 30.000 ¥ → +2 Heat' }],
+            },
+        ],
+    },
+    {
         tag: 'cyberlab',
         title: 'CyberLab',
         description:
@@ -285,7 +302,15 @@ const facilityData: Facility[] = [
         title: 'ZeroZone',
         description:
             'The epicenter of icy calm and calculated precision—a space where sharp minds outmatch the chaos.',
-        rollList: [],
+        rollList: [
+            { roll: '2', text: 'Old Rival Spotted', link: '/R480' },
+            { roll: '3-4', text: 'Corrupt Runner → +1 Heat' },
+            { roll: '5-6', text: 'Rough Night → -1 Energy' },
+            { roll: '7', text: 'No Effect' },
+            { roll: '8-9', text: 'Elixir Boost → +1 Health' },
+            { roll: '10-11', text: 'Secret Deal → +2.000 ¥' },
+            { roll: '12', text: 'Hidden Message → +1 Intel' },
+        ],
         actionList: [
             {
                 title: '🤝 Recruit a Runner:',
@@ -364,23 +389,6 @@ const facilityData: Facility[] = [
                     { text: 'Add Agility or Charisma' },
                     { text: 'Reduce Heat', link: '/heat' },
                 ],
-            },
-        ],
-    },
-    {
-        tag: 'megacorp',
-        title: 'MegaCorp',
-        description:
-            'A towering empire of ambition, where innovation meets dominance in the pursuit of global influence.',
-        rollList: [],
-        actionList: [
-            {
-                title: '🚀 Incite Rebellion:',
-                steps: [{ text: 'Spend 5 Edge → +2 Heat' }],
-            },
-            {
-                title: '🚀 Propaganda Campaign:',
-                steps: [{ text: 'Pay 30.000 ¥ → +2 Heat' }],
             },
         ],
     },

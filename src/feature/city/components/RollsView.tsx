@@ -11,7 +11,7 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
         <Card>
             <p>
                 <strong className="highlight">
-                    Enter &#8594; 🎲 Roll 2d6:
+                    Enter &#8594; -1 Energy &#8594; 🎲 Roll 2d6:
                 </strong>
             </p>
             <ul className="list-margin">
