@@ -7,22 +7,22 @@ import Headline from '@/components/Headline'
 import { getIcon } from '@/lib/icon'
 
 function ResourceDetail() {
-    const { resourceTag } = useParams()
-    const resource = useMemo(() => {
-        return getResourceByTag(resourceTag as string) as ResourceType
-    }, [resourceTag])
+    const { tag } = useParams()
+    const data = useMemo(() => {
+        return getResourceByTag(tag as string) as ResourceType
+    }, [tag])
 
-    if (!resource || !resource.rollList) {
+    if (!data || !data.rollList) {
         return <p>No resource data available.</p>
     }
 
     return (
         <>
-            <Headline>{resource.title}</Headline>
+            <Headline>{data.title}</Headline>
             <Card>
                 <p>The number determines the outcome of the action.</p>
-                {resource.rollList &&
-                    resource.rollList.map((roll: ResourceRoll) => (
+                {data.rollList &&
+                    data.rollList.map((roll: ResourceRoll) => (
                         <div key={roll.range} className="roll-section">
                             <p>
                                 {getIcon(roll.range)}{' '}

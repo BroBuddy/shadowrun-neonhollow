@@ -1,17 +1,19 @@
 import { Link } from 'react-router-dom'
 import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
-
-type MissionType = { title: string; link: string }
-
-const missions: MissionType[] = [
-    { title: 'Recon the Facility', link: '/mission/R610' },
-    { title: 'Crash Security Systems', link: '/mission/R620' },
-    { title: 'Confront the CEO', link: '/mission/R630' },
-    { title: 'Unveil the Truth', link: '/mission/R640' },
-]
+import { getMissionData } from '../missionData'
+import { useMemo } from 'react'
+import { Mission as MissionType } from '../MissionType'
 
 function Mission() {
+    const data = useMemo(() => {
+        return getMissionData() as MissionType[]
+    }, [])
+
+    if (!data) {
+        return <></>
+    }
+
     return (
         <>
             <Headline>Mr. Johnson</Headline>
@@ -50,7 +52,7 @@ function Mission() {
                     </li>
                     <li>
                         <strong>Gain:</strong>{' '}
-                        <Link to="/resource/R303">Nuyen</Link>
+                        <Link to="/resource/nuyen">Nuyen</Link>
                     </li>
                 </ol>
             </Card>
@@ -60,9 +62,11 @@ function Mission() {
                     <strong>Missions Overview:</strong>
                 </p>
                 <ol className="list-margin">
-                    {missions.map((mission: MissionType, index: number) => (
+                    {data.map((mission: MissionType, index: number) => (
                         <li key={index}>
-                            <Link to={mission.link}>{mission.title}</Link>
+                            <Link to={`/mission/${mission.id}`}>
+                                {mission.title}
+                            </Link>
                         </li>
                     ))}
                 </ol>

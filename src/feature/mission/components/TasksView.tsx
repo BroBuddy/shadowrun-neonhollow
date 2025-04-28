@@ -7,7 +7,7 @@ type MissionTasksProps = {
     tasks: MissionTask[]
 }
 
-const MissionTasks = ({ tasks }: MissionTasksProps) => {
+const TasksView = ({ tasks }: MissionTasksProps) => {
     return (
         <Card>
             {tasks.map((task) => (
@@ -40,4 +40,4 @@ const MissionTasks = ({ tasks }: MissionTasksProps) => {
     )
 }
 
-export default MissionTasks
+export default TasksView

@@ -1,10 +1,11 @@
 import { getCityData } from '../cityData'
 import { District as DistrictType } from '../CityType'
 import Headline from '@/components/Headline'
-import District from '../components/District'
+import DistrictView from '../components/DistrictView'
+import { useMemo } from 'react'
 
 function City() {
-    const cityData = getCityData()
+    const cityData = useMemo(() => getCityData(), [])
 
     return (
         <>
@@ -28,7 +29,7 @@ function City() {
                 </div>
             </div>
             {cityData.map((district: DistrictType, index: number) => (
-                <District key={index} district={district} />
+                <DistrictView key={index} district={district} />
             ))}
         </>
     )

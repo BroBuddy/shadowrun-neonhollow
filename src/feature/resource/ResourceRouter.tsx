@@ -18,7 +18,7 @@ const ResourceRouter = [
                 ),
             },
             {
-                path: ':resourceTag',
+                path: ':tag',
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <ResourceDetail />

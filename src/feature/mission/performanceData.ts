@@ -15,7 +15,7 @@ const MissionPerformance: MissionPerformancesType[] = [
             { description: '+1 Heat' },
             {
                 description: 'Roll 2d6 → +2 → Gain Intel',
-                link: '/R305',
+                link: '/intel',
             },
         ],
     },
@@ -26,11 +26,11 @@ const MissionPerformance: MissionPerformancesType[] = [
         effects: [
             {
                 description: 'Roll 2d6 → +4 → Gain Intel',
-                link: '/R305',
+                link: '/intel',
             },
             {
                 description: 'Roll 2d6 → +2 → Gain Nuyen',
-                link: '/R303',
+                link: '/nuyen',
             },
         ],
     },
@@ -42,7 +42,7 @@ const MissionPerformance: MissionPerformancesType[] = [
             { description: 'Next Mission available' },
             {
                 description: 'Roll 2d6 → +4 → Gain Nuyen',
-                link: '/R303',
+                link: '/nuyen',
             },
         ],
     },
@@ -54,7 +54,7 @@ const MissionPerformance: MissionPerformancesType[] = [
             { description: 'Next Mission available' },
             {
                 description: 'Roll 2d6 → +6 → Gain Nuyen',
-                link: '/R303',
+                link: '/nuyen',
             },
         ],
     },

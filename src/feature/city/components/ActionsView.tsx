@@ -6,7 +6,7 @@ type FacilityActionsProps = {
     actionList: FacilityAction[]
 }
 
-const FacilityActions = ({ actionList }: FacilityActionsProps) => {
+const ActionsView = ({ actionList }: FacilityActionsProps) => {
     return (
         <Card>
             {actionList.map((action, actionIndex) => (
@@ -48,4 +48,4 @@ const FacilityActions = ({ actionList }: FacilityActionsProps) => {
     )
 }
 
-export default FacilityActions
+export default ActionsView

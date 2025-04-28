@@ -4,7 +4,7 @@ import NameView from '../../name/components/NameView'
 import GearView from '../components/GearView'
 import BackgroundView from '../components/BackgroundView'
 import ArchetypeView from '../../archetype/components/ArchetypeView'
-import MetatypeView from '../components/MetatypeView'
+import MetatypeView from '../../metatype/components/MetatypeView'
 
 function Character() {
     return (

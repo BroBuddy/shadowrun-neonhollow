@@ -11,7 +11,7 @@ function MetatypeView() {
 
             <div className="flex justify-between gap-3">
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R021">
+                    <Link to="/metatype/human">
                         <p>
                             1. Human
                             <img
@@ -23,7 +23,7 @@ function MetatypeView() {
                     </Link>
                 </div>
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R021">
+                    <Link to="/metatype/human">
                         <p>
                             2. Human
                             <img
@@ -35,7 +35,7 @@ function MetatypeView() {
                     </Link>
                 </div>
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R022">
+                    <Link to="/metatype/elf">
                         <p>
                             3. Elf
                             <img
@@ -49,7 +49,7 @@ function MetatypeView() {
             </div>
             <div className="flex justify-between gap-3">
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R023">
+                    <Link to="/metatype/dwarf">
                         <p>
                             4. Dwarf
                             <img
@@ -61,19 +61,19 @@ function MetatypeView() {
                     </Link>
                 </div>
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R024">
+                    <Link to="/metatype/ork">
                         <p>
-                            5. Orc
+                            5. Ork
                             <img
                                 src="/images/Ork.jpg"
-                                alt="Orc"
+                                alt="Ork"
                                 className="mx-auto"
                             />
                         </p>
                     </Link>
                 </div>
                 <div className="flex-1 basis-1/3 text-center">
-                    <Link to="/rule/R025">
+                    <Link to="/metatype/troll">
                         <p>
                             6. Troll
                             <img

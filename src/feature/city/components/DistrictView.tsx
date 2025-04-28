@@ -6,7 +6,7 @@ type DistrictProps = {
     district: DistrictType
 }
 
-function District({ district }: DistrictProps) {
+function DistrictView({ district }: DistrictProps) {
     return (
         <Card>
             <p>
@@ -42,4 +42,4 @@ function District({ district }: DistrictProps) {
     )
 }
 
-export default District
+export default DistrictView

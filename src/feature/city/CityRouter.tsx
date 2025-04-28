@@ -18,7 +18,7 @@ const CityRouter = [
                 ),
             },
             {
-                path: ':facilityTag',
+                path: ':tag',
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <CityDetail />

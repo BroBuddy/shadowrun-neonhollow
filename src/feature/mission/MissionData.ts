@@ -2,7 +2,7 @@ import { Mission } from './MissionType'
 
 const missionData: Mission[] = [
     {
-        id: 'R610',
+        id: '1',
         title: 'Recon the Facility',
         client: {
             name: 'Renna Thorne',
@@ -128,7 +128,7 @@ const missionData: Mission[] = [
         },
     },
     {
-        id: 'R620',
+        id: '2',
         title: 'Crash Security Systems',
         client: {
             name: 'Silas Noor',
@@ -257,7 +257,7 @@ const missionData: Mission[] = [
         },
     },
     {
-        id: 'R630',
+        id: '3',
         title: 'Confront the CEO',
         client: {
             name: 'Kael Stride',
@@ -383,7 +383,7 @@ const missionData: Mission[] = [
         },
     },
     {
-        id: 'R640',
+        id: '4',
         title: 'Unveil the Truth',
         client: {
             name: 'Arlo Quinn',
@@ -513,10 +513,12 @@ const missionData: Mission[] = [
     },
 ]
 
-const getMissionById = (missionId: string): Mission => {
-    return missionData.find(
-        (mission: Mission) => mission.id === missionId
-    ) as Mission
+const getMissionData = (): Pick<Mission, 'id' | 'title'>[] => {
+    return missionData.map(({ id, title }) => ({ id, title }))
 }
 
-export { getMissionById }
+const getMissionById = (id: string): Mission => {
+    return missionData.find((mission: Mission) => mission.id === id) as Mission
+}
+
+export { getMissionData, getMissionById }

@@ -6,7 +6,7 @@ type MissionTwistProps = {
     twist: MissionTwistType
 }
 
-const MissionTwist = ({ twist }: MissionTwistProps) => {
+const TwistView = ({ twist }: MissionTwistProps) => {
     return (
         <Card>
             <p>
@@ -41,4 +41,4 @@ const MissionTwist = ({ twist }: MissionTwistProps) => {
     )
 }
 
-export default MissionTwist
+export default TwistView

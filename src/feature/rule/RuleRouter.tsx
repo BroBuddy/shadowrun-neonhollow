@@ -18,7 +18,7 @@ const RuleRouter = [
                 ),
             },
             {
-                path: ':ruleId',
+                path: ':tag',
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <RuleDetail />

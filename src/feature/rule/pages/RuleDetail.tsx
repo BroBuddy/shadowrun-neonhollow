@@ -7,18 +7,18 @@ import Headline from '@/components/Headline'
 import { makeUrlsClickable } from '@/lib/helper'
 
 const RuleDetail = () => {
-    const { ruleId } = useParams()
+    const { tag } = useParams()
     const [activeTag, setActiveTag] = useState<TagItem | null>(null)
     const transformedContent = useMemo(() => {
         return activeTag?.content ? makeUrlsClickable(activeTag.content) : null
     }, [activeTag?.content])
 
     useEffect(() => {
-        if (!ruleId) return
+        if (!tag) return
 
-        const findTag = Data.find((item: TagItem) => item.id === ruleId)
+        const findTag = Data.find((item: TagItem) => item.id === tag)
         setActiveTag((findTag as TagItem) ?? null)
-    }, [ruleId])
+    }, [tag])
 
     if (!activeTag) return null
 

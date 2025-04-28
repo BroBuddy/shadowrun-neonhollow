@@ -38,7 +38,7 @@ const MissionRouter = [
                 ),
             },
             {
-                path: ':missionId',
+                path: ':id',
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <MissionDetail />

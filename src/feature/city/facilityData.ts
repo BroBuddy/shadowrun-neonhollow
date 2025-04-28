@@ -21,7 +21,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
                     { text: 'Add Logic or Intuition' },
-                    { text: 'Gain Intel', link: '/R305' },
+                    { text: 'Gain Intel', link: '/intel' },
                 ],
             },
             {
@@ -29,7 +29,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 4.000 ¥ → Roll 2d6' },
                     { text: 'Add Logic or Charisma' },
-                    { text: 'Gain Energy', link: '/R302' },
+                    { text: 'Gain Energy', link: '/energy' },
                 ],
             },
             {
@@ -37,7 +37,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Logic' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Logic' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -62,7 +62,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Charisma' },
-                    { text: 'Reduce Heat', link: '/R304' },
+                    { text: 'Reduce Heat', link: '/heat' },
                 ],
             },
             {
@@ -70,7 +70,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Intuition' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
         ],
@@ -95,7 +95,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Agility' },
-                    { text: 'Gain Health', link: '/R301' },
+                    { text: 'Gain Health', link: '/health' },
                 ],
             },
             {
@@ -103,7 +103,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 2 Health → Roll 2d6' },
                     { text: 'Add Agility or Reaction' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
             {
@@ -111,7 +111,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Agility' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Agility' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -136,7 +136,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Reaction' },
-                    { text: 'Gain Energy', link: '/R302' },
+                    { text: 'Gain Energy', link: '/energy' },
                 ],
             },
             {
@@ -144,7 +144,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 4.000 ¥ → Roll 2d6' },
                     { text: 'Add Reaction or Logic' },
-                    { text: 'Reduce Heat', link: '/R304' },
+                    { text: 'Reduce Heat', link: '/heat' },
                 ],
             },
             {
@@ -152,7 +152,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Reaction' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Reaction' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -177,7 +177,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Reaction or Intuition' },
-                    { text: 'Gain Energy', link: '/R302' },
+                    { text: 'Gain Energy', link: '/energy' },
                 ],
             },
             {
@@ -185,7 +185,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 2 Energy → Roll 2d6' },
                     { text: 'Add Logic or Intuition' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
             {
@@ -193,7 +193,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Intuition' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Intuition' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -218,7 +218,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 4.000 ¥ → Roll 2d6' },
                     { text: 'Add Reaction or Charisma' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
             {
@@ -226,7 +226,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 2 Energy → Roll 2d6' },
                     { text: 'Add Intuition or Charisma' },
-                    { text: 'Gain Intel', link: '/R305' },
+                    { text: 'Gain Intel', link: '/intel' },
                 ],
             },
             {
@@ -234,7 +234,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Charisma' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Charisma' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -259,7 +259,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 4.000 ¥ → Roll 2d6' },
                     { text: 'Add Strength or Reaction' },
-                    { text: 'Gain Health', link: '/R301' },
+                    { text: 'Gain Health', link: '/health' },
                 ],
             },
             {
@@ -267,7 +267,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 2 Health → Roll 2d6' },
                     { text: 'Add Strength or Agility' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
             {
@@ -275,7 +275,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Strength' },
                     { text: 'Roll 2d6 → Add 10 → Subtract Strength' },
-                    { text: 'Improve Attribute', link: '/R306' },
+                    { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
         ],
@@ -293,7 +293,7 @@ const facilityData: Facility[] = [
                     { text: 'Roll On the Runner Matrix' },
                     { text: 'Remember The two highest attributes' },
                     { text: 'Pay 10.000 ¥ → Roll 2d6 → Add Charisma' },
-                    { text: 'Hire Runner', link: '/R307' },
+                    { text: 'Hire Runner', link: '/runner' },
                 ],
             },
             {
@@ -304,7 +304,7 @@ const facilityData: Facility[] = [
                     { text: 'Add Opponent’s corresponding values' },
                     { text: 'You lost? → Lose Health equal to the gap' },
                     { text: 'Add 10 to the gap' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
         ],
@@ -329,7 +329,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Logic' },
-                    { text: 'Gain Nuyen', link: '/R303' },
+                    { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
             },
             {
@@ -337,7 +337,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Intuition' },
-                    { text: 'Gain Intel', link: '/R305' },
+                    { text: 'Gain Intel', link: '/intel' },
                 ],
             },
         ],
@@ -354,7 +354,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Spend 1 Energy → Roll 2d6 → Subtract 2' },
                     { text: 'Add Strength or Logic' },
-                    { text: 'Gain Health', link: '/R301' },
+                    { text: 'Gain Health', link: '/health' },
                 ],
             },
             {
@@ -362,7 +362,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Charisma' },
-                    { text: 'Reduce Heat', link: '/R304' },
+                    { text: 'Reduce Heat', link: '/heat' },
                 ],
             },
         ],
@@ -386,10 +386,8 @@ const facilityData: Facility[] = [
     },
 ]
 
-const getFacilityByTag = (tagId: string): Facility => {
-    return facilityData.find(
-        (facility: Facility) => facility.tag === tagId
-    ) as Facility
+const getFacilityByTag = (tag: string): Facility => {
+    return facilityData.find((item: Facility) => item.tag === tag) as Facility
 }
 
 export { getFacilityByTag }

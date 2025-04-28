@@ -6,7 +6,7 @@ type FacilityRollsProps = {
     rollList: FacilityRoll[]
 }
 
-const FacilityRolls = ({ rollList }: FacilityRollsProps) => {
+const RollsView = ({ rollList }: FacilityRollsProps) => {
     return (
         <Card>
             <p>
@@ -30,4 +30,4 @@ const FacilityRolls = ({ rollList }: FacilityRollsProps) => {
     )
 }
 
-export default FacilityRolls
+export default RollsView

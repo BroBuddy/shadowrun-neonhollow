@@ -2,7 +2,7 @@ import { Resource } from './ResourceType'
 
 export const resourceData: Resource[] = [
     {
-        tag: 'R301',
+        tag: 'health',
         title: 'Gain Health',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+1 Heat'] },
@@ -22,7 +22,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R302',
+        tag: 'energy',
         title: 'Gain Energy',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+1 Heat'] },
@@ -42,7 +42,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R303',
+        tag: 'nuyen',
         title: 'Gain Nuyen',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+1 Heat'] },
@@ -62,7 +62,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R305',
+        tag: 'intel',
         title: 'Gain Intel',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
@@ -82,7 +82,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R304',
+        tag: 'heat',
         title: 'Reduce Heat',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
@@ -102,7 +102,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R307',
+        tag: 'runner',
         title: 'Hire Runner',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
@@ -143,7 +143,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'R306',
+        tag: 'attribute',
         title: 'Improve Attribute',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
@@ -176,10 +176,8 @@ const getResourceData = (): Resource[] => {
     return resourceData.map(({ tag, title }) => ({ tag, title }))
 }
 
-const getResourceByTag = (tagId: string): Resource => {
-    return resourceData.find(
-        (resource: Resource) => resource.tag === tagId
-    ) as Resource
+const getResourceByTag = (tag: string): Resource => {
+    return resourceData.find((item: Resource) => item.tag === tag) as Resource
 }
 
 export { getResourceData, getResourceByTag }

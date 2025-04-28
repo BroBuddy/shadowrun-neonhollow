@@ -3,42 +3,39 @@ import { useParams } from 'react-router-dom'
 import Card from '@/components/Card'
 import { getMissionById } from '../missionData'
 import Headline from '@/components/Headline'
-import MissionTasks from '../components/MissionTasks'
-import MissionTwist from '../components/MissionTwist'
+import TasksView from '../components/TasksView'
+import TwistView from '../components/TwistView'
 
 function MissionDetail() {
-    const { missionId } = useParams()
-    const mission = useMemo(
-        () => getMissionById(missionId as string),
-        [missionId]
-    )
+    const { id } = useParams()
+    const data = useMemo(() => getMissionById(id as string), [id])
 
-    if (!mission) {
+    if (!data) {
         return <></>
     }
 
     return (
         <>
-            <Headline>{mission.title}</Headline>
+            <Headline>{data.title}</Headline>
             <Card>
                 <p>
                     <strong className="highlight">Client:</strong>
                     <br />
-                    {mission.client.name}, {mission.client.location}
+                    {data.client.name}, {data.client.location}
                 </p>
                 <p>
                     <strong className="highlight">Location:</strong>
-                    <br /> {mission.mission_location}
+                    <br /> {data.mission_location}
                 </p>
                 <p>
                     <strong className="highlight">Briefing:</strong>
-                    <br /> {mission.briefing}
+                    <br /> {data.briefing}
                 </p>
             </Card>
 
-            <MissionTasks tasks={mission.tasks} />
+            <TasksView tasks={data.tasks} />
 
-            <MissionTwist twist={mission.twist} />
+            <TwistView twist={data.twist} />
         </>
     )
 }
