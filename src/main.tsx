@@ -17,6 +17,10 @@ const ErrorFallback = () => <p>Error</p>
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
     Matrix: React.lazy(() => import('./pages/Matrix')),
+    WellDone: React.lazy(() => import('./pages/WellDone')),
+    OverwhelminglyGreat: React.lazy(
+        () => import('./pages/OverwhelminglyGreat')
+    ),
 }
 
 const router = createBrowserRouter([
@@ -40,6 +44,22 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<LoadingFallback />}>
                         <Pages.Matrix />
+                    </Suspense>
+                ),
+            },
+            {
+                path: '/welldone',
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Pages.WellDone />
+                    </Suspense>
+                ),
+            },
+            {
+                path: '/overwhelminglygreat',
+                element: (
+                    <Suspense fallback={<LoadingFallback />}>
+                        <Pages.OverwhelminglyGreat />
                     </Suspense>
                 ),
             },

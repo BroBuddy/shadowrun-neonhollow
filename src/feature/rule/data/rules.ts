@@ -113,24 +113,4 @@ export const Rules = [
             <p>Combine the two rolls to form a two-digit number.</p>
             <p><strong>Find the ID</strong> – Use the number rolled to locate the ID on the matrix.</p>`,
     },
-    {
-        id: 'R014',
-        title: 'Well Done',
-        content:
-            '<p>The Corp is no more. You’ve dismantled their influence and shattered their operations. <strong>NeonHollow</strong> will breathe easier now, though it will take time for the dust to settle.</p>' +
-            '<p>You’ve done well — this victory may be only the beginning of something bigger. Still, tonight, you’ve earned your place among the shadows.</p>' +
-            '<p>You notice the lights dimming, gradually fading until everything is engulfed in complete darkness.</p>' +
-            '<p>From afar, a familiar sound echoes...</p>' +
-            '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
-    },
-    {
-        id: 'R015',
-        title: 'Overwhelmingly Great',
-        content:
-            '<p>The Corp has crumbled. You’ve not only crushed their empire, you’ve sent shockwaves through the entire city. News of their downfall spreads like wildfire, and for once, it’s the people of <strong>NeonHollow</strong> who are celebrating.</p>' +
-            '<p>The city is yours, and you’ve rewritten its future in a single, devastating blow. Your name will be whispered in awe across the streets for years to come.</p>' +
-            '<p>You notice the lights dimming, gradually fading until everything is engulfed in complete darkness.</p>' +
-            '<p>From afar, a familiar sound echoes...</p>' +
-            '<p><em>"Wake up, Shadowrunner. You are worthy."</em></p>',
-    },
 ]
