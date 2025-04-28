@@ -24,7 +24,7 @@ const cityData: District[] = [
     },
     {
         name: 'Serenity',
-        heat: '🟠 Heat 2',
+        heat: '🟠 Heat 3',
         facilities: [
             {
                 name: 'BioCare',
@@ -45,7 +45,7 @@ const cityData: District[] = [
     },
     {
         name: 'Vortex',
-        heat: '🟡 Heat 3',
+        heat: '🟡 Heat 5',
         facilities: [
             {
                 name: 'HoloLounge',

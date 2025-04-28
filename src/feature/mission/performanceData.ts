@@ -39,11 +39,12 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 Performance 4',
         level: 'Impressive',
         effects: [
-            { description: 'Next Mission available' },
+            { description: '+1 Edge' },
             {
                 description: 'Roll 2d6 → +4 → Gain Nuyen',
                 link: '/nuyen',
             },
+            { description: 'Next Mission available' },
         ],
     },
     {
@@ -51,11 +52,12 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 Performance 5',
         level: 'Exceptional',
         effects: [
-            { description: 'Next Mission available' },
+            { description: '+2 Edge' },
             {
                 description: 'Roll 2d6 → +6 → Gain Nuyen',
                 link: '/nuyen',
             },
+            { description: 'Next Mission available' },
         ],
     },
 ]

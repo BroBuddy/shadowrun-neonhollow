@@ -12,11 +12,11 @@ const characterEquipments: Equipment[] = [
 const characterModes: Mode[] = [
     {
         name: 'Easy Mode',
-        attributes: ['15.000 ¥', '10 Health', '10 Energy', '2 Reputation'],
+        attributes: ['15.000 ¥', '10 Health', '10 Energy', '2 Edge'],
     },
     {
         name: 'Medium Mode',
-        attributes: ['10.000 ¥', '8 Health', '8 Energy', '1 Reputation'],
+        attributes: ['10.000 ¥', '8 Health', '8 Energy', '1 Edge'],
     },
     {
         name: 'Hard Mode',

@@ -10,12 +10,12 @@ type MissionTasksProps = {
 const TasksView = ({ tasks }: MissionTasksProps) => {
     return (
         <Card>
-            {tasks.map((item: MissionTask) => (
+            {tasks.map((item: MissionTask, index: number) => (
                 <React.Fragment key={item.id}>
                     <p>
                         <strong className="highlight">{item.title}</strong>
                     </p>
-                    <p>Roll {item.roll}:</p>
+                    <p>🎲 Roll {item.roll}:</p>
                     <ul className="list-margin">
                         {item.outcomes.map((outcome: MissionOutcome) => (
                             <li key={outcome.range}>
@@ -34,6 +34,11 @@ const TasksView = ({ tasks }: MissionTasksProps) => {
                             {item.failure.text}
                         </Link>
                     </p>
+                    {index <= 1 && (
+                        <p className="text-2xl mb-5 flex justify-center items-center">
+                            &#8595;
+                        </p>
+                    )}
                 </React.Fragment>
             ))}
         </Card>

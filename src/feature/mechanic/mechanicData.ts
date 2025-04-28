@@ -2,15 +2,38 @@ import { Mechanic } from './MechanicType'
 
 const mechanicData: Mechanic[] = [
     {
+        tag: 'dice',
+        title: 'Dice Mechanic',
+        description:
+            'Roll 🎲 Dice to determine outcomes and navigate chance-based scenarios.',
+        list: [
+            'Roll 1d6 for a result between 1 and 6.',
+            'Roll 2d6 to add results together.',
+            'Rolling double ones escalate the heat level by one.',
+            'Rolling double sixes rewards you with 1 Intel.',
+        ],
+    },
+    {
+        tag: 'attribute',
+        title: 'Attribute Mechanic',
+        description:
+            'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
+        list: [
+            'Physical Attributes: Strength, Agility, Reaction',
+            'Mental Attributes: Logic, Intuition, Charisma',
+            'Each attribute is limited to a maximum of six, excluding temporary boosts.',
+            'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
+        ],
+    },
+    {
         tag: 'time',
         title: 'Time Mechanic',
         description:
             'Manage your 🕒 Time wisely to achieve objectives within a limited framework.',
         list: [
-            '7 Days to dismantle the system, with 7 Hours per cycle.',
-            'Start at your private SafeHouse.',
-            'Moving costs 1 Energy and 1 Hour.',
-            'Actions cost 1 Hour and can only be performed once per day.',
+            '6 days to dismantle the system, with 6 hours per cycle.',
+            'In total, only thirty-six actions to be allocated thoughtfully.',
+            'Actions cost 1 Energy and 1 Hour and can only be performed once per day.',
             'Roll on the Event Matrix at the end of the day.',
         ],
     },
@@ -48,13 +71,13 @@ const mechanicData: Mechanic[] = [
         ],
     },
     {
-        tag: 'reputation',
-        title: 'Reputation Mechanic',
+        tag: 'Edge',
+        title: 'Edge Mechanic',
         description:
-            'Use ⭐ Reputation to gain advantages and influence outcomes in skill checks.',
+            'Use ⭐ Edge to gain advantages and influence outcomes in skill checks.',
         list: [
-            'Reputation ranges from 0 to 6 and cannot exceed these limits.',
-            'Spend 1 Reputation during a skill check to gain an additional roll.',
+            'Edge ranges from 0 to 6 and cannot exceed these limits.',
+            'Spend 1 Edge during a skill check to gain an additional roll.',
             'Service Providers: Skill Checks, Town Events, Mr. Johnson.',
         ],
     },
@@ -80,18 +103,6 @@ const mechanicData: Mechanic[] = [
             'Intel ranges from 0 to 6 and cannot exceed these limits.',
             "You'll need Intel to fund missions from Mr. Johnson.",
             'Service Providers: NeuralNexus, HoloLounge, SmugglerDen.',
-        ],
-    },
-    {
-        tag: 'dice',
-        title: 'Dice Mechanic',
-        description:
-            'Roll 🎲 Dice to determine outcomes and navigate chance-based scenarios.',
-        list: [
-            'Roll 1d6 for a result between 1 and 6.',
-            'Roll 2d6 to add results together.',
-            'Rolling double ones triggers a critical glitch.',
-            'Rolling double sixes rewards you with 1 Intel.',
         ],
     },
     {

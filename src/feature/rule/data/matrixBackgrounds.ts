@@ -27,7 +27,7 @@ export const Backgrounds = [
         id: 'R715',
         title: "Bounty Hunter's Legacy",
         content:
-            '<p>Following in the footsteps of a legendary bounty hunter, you were trained in the art of tracking and eliminating targets. Now, you carry the weight of that legacy, striving to live up to the reputation your mentor left behind. Your focused nature often leads you to overlook more subtle aspects of situations.</p><p><strong class="highlight">Attribute Adjustments:</strong></p><ul class="list-margin"><li>+1 Strength</li><li>-1 Intuition</li></ul><p>Apply the bonuses to your player sheet.</p>',
+            '<p>Following in the footsteps of a legendary bounty hunter, you were trained in the art of tracking and eliminating targets. Now, you carry the weight of that legacy, striving to live up to the Edge your mentor left behind. Your focused nature often leads you to overlook more subtle aspects of situations.</p><p><strong class="highlight">Attribute Adjustments:</strong></p><ul class="list-margin"><li>+1 Strength</li><li>-1 Intuition</li></ul><p>Apply the bonuses to your player sheet.</p>',
     },
     {
         id: 'R716',
@@ -93,7 +93,7 @@ export const Backgrounds = [
         id: 'R734',
         title: 'Street Mechanic',
         content:
-            '<p>Working on vehicles and drones in the streets, you have a reputation for fixing anything that`s broken. Your hands-on knowledge makes you an invaluable asset when things go wrong. While you`re a genius with machines, your lack of formal training means you sometimes miss the finer details of more complicated systems.</p><p><strong class="highlight">Attribute Adjustments:</strong></p><ul class="list-margin"><li>+1 Agility</li><li>-1 Logic</li></ul><p>Apply the bonuses to your player sheet.</p>',
+            '<p>Working on vehicles and drones in the streets, you have a Edge for fixing anything that`s broken. Your hands-on knowledge makes you an invaluable asset when things go wrong. While you`re a genius with machines, your lack of formal training means you sometimes miss the finer details of more complicated systems.</p><p><strong class="highlight">Attribute Adjustments:</strong></p><ul class="list-margin"><li>+1 Agility</li><li>-1 Logic</li></ul><p>Apply the bonuses to your player sheet.</p>',
     },
     {
         id: 'R735',

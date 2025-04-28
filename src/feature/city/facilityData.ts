@@ -50,11 +50,11 @@ const facilityData: Facility[] = [
         rollList: [
             { roll: '2', text: 'Patrol Check', link: '/R472' },
             { roll: '3-4', text: 'Security Breach → +1 Heat' },
-            { roll: '5-6', text: 'Blamed → -1 Reputation' },
+            { roll: '5-6', text: 'Blamed → -1 Edge' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Backup Support → +1 Energy' },
             { roll: '10-11', text: 'Familiar Face → -1 Heat' },
-            { roll: '12', text: 'Access Granted → +1 Reputation' },
+            { roll: '12', text: 'Access Granted → +1 Edge' },
         ],
         actionList: [
             {
@@ -86,7 +86,7 @@ const facilityData: Facility[] = [
             { roll: '5-6', text: 'Grim Report → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Energy Boost → +1 Energy' },
-            { roll: '10-11', text: 'Civic Aid → +1 Reputation' },
+            { roll: '10-11', text: 'Civic Aid → +1 Edge' },
             { roll: '12', text: 'Mysterious Encounter', link: '/R483' },
         ],
         actionList: [
@@ -168,7 +168,7 @@ const facilityData: Facility[] = [
             { roll: '5-6', text: 'Price Jump → -2.000 ¥' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Massage Chair → +1 Energy' },
-            { roll: '10-11', text: 'Social Pulse → +1 Reputation' },
+            { roll: '10-11', text: 'Social Pulse → +1 Edge' },
             { roll: '12', text: 'Mysterious Encounter', link: '/R485' },
         ],
         actionList: [
@@ -243,14 +243,14 @@ const facilityData: Facility[] = [
         tag: 'irongym',
         title: 'IronGym',
         description:
-            '"Where sweat forges strength, and every clang of metal echoes the determination to rise above.',
+            'Where sweat forges strength, and every clang of metal echoes the determination to rise above.',
         rollList: [
             { roll: '2', text: 'Unplanned Challenge', link: '/R477' },
             { roll: '3-4', text: 'Wrong Locker Room → +1 Heat' },
             { roll: '5-6', text: 'Unpaid Membership → -2.000 ¥' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Promo Energy Bar → +1 Energy' },
-            { roll: '10-11', text: 'Perfect Form → +1 Reputation' },
+            { roll: '10-11', text: 'Perfect Form → +1 Edge' },
             { roll: '12', text: 'Mysterious Encounter', link: '/R487' },
         ],
         actionList: [
@@ -320,7 +320,7 @@ const facilityData: Facility[] = [
             { roll: '5-6', text: 'Knife Fight → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Discount Promotion → +2.000 ¥' },
-            { roll: '10-11', text: 'Thief Caught → +1 Reputation' },
+            { roll: '10-11', text: 'Thief Caught → +1 Edge' },
             { roll: '12', text: 'Prestigious Contact → +1 Intel' },
         ],
         actionList: [
@@ -376,7 +376,7 @@ const facilityData: Facility[] = [
         actionList: [
             {
                 title: '🚀 Incite Rebellion:',
-                steps: [{ text: 'Spend 5 Reputation → +2 Heat' }],
+                steps: [{ text: 'Spend 5 Edge → +2 Heat' }],
             },
             {
                 title: '🚀 Propaganda Campaign:',

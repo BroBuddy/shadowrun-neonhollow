@@ -18,7 +18,7 @@ export const Events = [
             The distant sound of gunfire quickly becomes a brutal street clash as rival gangs bring their turf war into the open. Civilians run for cover as drones scan for threats and trigger-happy thugs shoot first, ask never. You’re in the middle—like it or not.</p>
             
             <p><strong class="highlight">Strength (DC 12):</strong><br />Push through the brawl and shield others from crossfire.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Agility (DC 10):</strong><br />Dodge debris and gunfire while escaping the scene.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +2 Energy</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -33,7 +33,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Logic (DC 12):</strong><br />Forge clean credentials on the fly.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Reputation</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Edge</li></ul>`,
     },
     {
         id: 'R414',
@@ -57,7 +57,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Strength (DC 12):</strong><br />Hold the line or break through violent crowds.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
     },
     {
         id: 'R416',
@@ -69,7 +69,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Charisma (DC 8):</strong><br />Sell false leads to rival fixers.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Reputation</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Edge</li></ul>`,
     },
     {
         id: 'R421',
@@ -90,7 +90,7 @@ export const Events = [
             Alarms blare in the Industrial District. A transport truck jackknifed near a biochem depot, leaking fluorescent vapor. The air burns to breathe, and cleanup crews are late. Residents flee while looters dive in for rare salvage.</p>
             
             <p><strong class="highlight">Strength (DC 12):</strong><br />Help seal the rupture using brute force and gear.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Intuition (DC 10):</strong><br />Find a clean exit before the toxin spreads.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +2 Energy</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
@@ -105,7 +105,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Charisma (DC 8):</strong><br />Convince raiders you’re part of the cleanup crew.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Reputation</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Edge</li></ul>`,
     },
     {
         id: 'R424',
@@ -138,7 +138,7 @@ export const Events = [
             A cloaked figure preaches doom at every intersection, warning of firewalls collapsing and AIs waking up. Most ignore him—until his predictions start coming true. Traffic crashes, drones dive, and digital ads flicker to static eyes.</p>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Calm the crowd and rally them away from chaos.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 8):</strong><br />Piece together what the prophet truly knows.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -150,7 +150,7 @@ export const Events = [
             As dusk falls, an unknown gang launches a blitz through the Underground District. Cyber-hacked beasts and augmented enforcers clash with patrols. Chaos spreads fast—and you're caught in the middle.</p>
             
             <p><strong class="highlight">Strength (DC 10):</strong><br />Fight off an aggressive ganger blocking your escape.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Agility (DC 8):</strong><br />Slip between crossfire and vanish into the shadows.</p>
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
@@ -174,7 +174,7 @@ export const Events = [
             A major corp rolls through downtown with a flashy security showcase—drones, armored convoys, and neon-clad execs. It’s all PR, but the street is a minefield of surveillance.</p>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Blend in with the crowd and fake a corp ID.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Reaction (DC 12):</strong><br />Duck through blind spots before the scanners catch you.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +2 Energy</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
@@ -189,7 +189,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Strength (DC 8):</strong><br />Drag civilians out of a crashed tram's danger zone.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
     },
     {
         id: 'R435',
@@ -213,7 +213,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Convince a rival crew to share their decrypted fragment.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> -1 Reputation</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> -1 Edge</li></ul>`,
     },
     {
         id: 'R441',
@@ -231,10 +231,10 @@ export const Events = [
         id: 'R442',
         title: 'False Broadcast',
         content: `<p><strong class="highlight">Event:</strong><br />
-            Someone hijacks a local media node, broadcasting a deepfake of you committing a high-profile crime. Your reputation takes a hit—unless you fix it fast.</p>
+            Someone hijacks a local media node, broadcasting a deepfake of you committing a high-profile crime. Your Edge takes a hit—unless you fix it fast.</p>
             
             <p><strong class="highlight">Charisma (DC 8):</strong><br />Convince a trusted informant to discredit the footage.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 12):</strong><br />Track the origin of the false feed.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -246,7 +246,7 @@ export const Events = [
             A corp zeppelin crashes into a tenement block in the Industrial District. Fires spread, alarms wail, and panic floods the street. You’re nearby—and you might be able to help.</p>
             
             <p><strong class="highlight">Strength (DC 10):</strong><br />Pull survivors from debris before the fire spreads.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Reaction (DC 8):</strong><br />Dodge falling wreckage and reach the scene first.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
@@ -258,7 +258,7 @@ export const Events = [
             You overhear a fixer negotiating a risky black-market exchange in a back alley. You could step in, assist—or walk away before things get ugly.</p>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Mediate the deal and win both sides' trust.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 12):</strong><br />Notice the hidden ambush and slip out early.</p>
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -294,7 +294,7 @@ export const Events = [
             A rival corporation's espionage team attempts to steal sensitive data from the district. The chaos is unfolding around you. You have to decide how to get involved.</p>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Convince a bystander to leak crucial information.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 12):</strong><br />Track the espionage team's movements and sabotage their plan.</p>
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -318,7 +318,7 @@ export const Events = [
             A city councilor is publicly exposed for embezzlement, sparking protests in the streets. You can either fuel the fire or try to put out the flames.</p>
             
             <p><strong class="highlight">Charisma (DC 10):</strong><br />Use your influence to calm the crowds.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 10):</strong><br />Investigate the situation to gather intelligence on the corrupt official.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
@@ -354,10 +354,10 @@ export const Events = [
             The black market is buzzing with a high-value deal involving rare weapons tech. It's a perfect opportunity to buy, sell, or steal—if you dare.</p>
             
             <p><strong class="highlight">Charisma (DC 8):</strong><br />Negotiate a better deal with the black market vendors.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Strength (DC 10):</strong><br />Use force to take the weapons tech by intimidation.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
     },
     {
         id: 'R461',
@@ -378,7 +378,7 @@ export const Events = [
             A rogue AI has gained control of a local security system and is attacking citizens. Its influence spreads across nearby electronics, including your personal devices.</p>
             
             <p><strong class="highlight">Reaction (DC 10):</strong><br />React quickly to avoid the AI's detection systems.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Logic (DC 12):</strong><br />Hack the AI to shut it down before it causes more damage.</p>
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
@@ -390,7 +390,7 @@ export const Events = [
             A gang war breaks out in the heart of the district. Gunfire echoes in the streets as rival factions clash over turf. You need to decide whether to get involved or avoid the chaos.</p>
             
             <p><strong class="highlight">Strength (DC 10):</strong><br />Charge in and confront one of the gangs directly.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Charisma (DC 8):</strong><br />Use diplomacy to try and calm the gangs and stop the violence.</p>
             <ul class="list-margin"><li><strong>Success:</strong> -1 Heat</li><li><strong>Fail:</strong> +2 Heat</li></ul>`,
@@ -402,7 +402,7 @@ export const Events = [
             A high-ranking corporate exec is caught in a bribery scandal. The news spreads quickly, and protests begin to stir. You can either exploit the situation or help calm the tensions.</p>
             
             <p><strong class="highlight">Charisma (DC 12):</strong><br />Use your social influence to sway the public opinion and calm the protesters.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -1 Reputation</li></ul>
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -1 Edge</li></ul>
             
             <p><strong class="highlight">Intuition (DC 10):</strong><br />Investigate the scandal and uncover hidden details that could be used for leverage.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Intel</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
@@ -417,7 +417,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +3.000 ¥</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Strength (DC 8):</strong><br />Help a racer with their vehicle to ensure they win the race.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Energy</li></ul>`,
     },
     {
         id: 'R466',
@@ -465,7 +465,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Strength (DC 10):</strong><br />Apply your strength to physically move patients or assist with heavy medical equipment.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
     },
     {
         id: 'R474',
@@ -477,7 +477,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> -2 Energy</li></ul>
             
             <p><strong class="highlight">Agility (DC 10):</strong><br />Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
     },
     {
         id: 'R475',
@@ -489,7 +489,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Intuition</li><li><strong>Fail:</strong> -2 Energy</li></ul>
             
             <p><strong class="highlight">Reaction (DC 10):</strong><br />Move swiftly to grab a lost runner’s attention and guide them to safety.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
     },
     {
         id: 'R476',
@@ -512,7 +512,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Strength</li><li><strong>Fail:</strong> -2 Health</li></ul>
             
             <p><strong class="highlight">Reaction (DC 10):</strong><br />React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> +1 Heat</li></ul>`,
     },
     {
         id: 'R478',
@@ -524,7 +524,7 @@ export const Events = [
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
             <p><strong class="highlight">Logic (DC 10):</strong><br />Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.</p>
-            <ul class="list-margin"><li><strong>Success:</strong> +1 Reputation</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
+            <ul class="list-margin"><li><strong>Success:</strong> +1 Edge</li><li><strong>Fail:</strong> -2 Health</li></ul>`,
     },
     {
         id: 'R481',

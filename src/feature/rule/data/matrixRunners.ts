@@ -20,7 +20,7 @@ export const Runners = [
         id: 'R513',
         title: 'Ryder “Torque” Quinn',
         content:
-            '<p>Ryder, a 35-year-old male Rigger, stands at 178 cm and weighs 85 kg.</p><p><strong class="highlight">Attributes:</strong></p><ul class="list-margin"><li><strong>Strength:</strong> 4</li><li><strong>Agility:</strong> 6</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 4</li><li><strong>Charisma:</strong> 2</li></ul><p><strong class="highlight">Background:</strong><br />Ryder has spent years behind the wheel of various vehicles, both land and air, using his skills to transport cargo and carry out missions. His reputation for precision and cool-headedness in a crisis makes him a valuable asset.</p>',
+            '<p>Ryder, a 35-year-old male Rigger, stands at 178 cm and weighs 85 kg.</p><p><strong class="highlight">Attributes:</strong></p><ul class="list-margin"><li><strong>Strength:</strong> 4</li><li><strong>Agility:</strong> 6</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 4</li><li><strong>Charisma:</strong> 2</li></ul><p><strong class="highlight">Background:</strong><br />Ryder has spent years behind the wheel of various vehicles, both land and air, using his skills to transport cargo and carry out missions. His Edge for precision and cool-headedness in a crisis makes him a valuable asset.</p>',
     },
     {
         id: 'R514',
@@ -176,7 +176,7 @@ export const Runners = [
         id: 'R555',
         title: 'Gruk “Ironclad” Krog',
         content:
-            '<p>Gruk, a 36-year-old male Troll Face, stands at 250 cm and weighs 240 kg.</p><p><strong class="highlight">Attributes:</strong></p><ul class="list-margin"><li><strong>Strength:</strong> 6</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 4</li><li><strong>Charisma:</strong> 8</li></ul><p><strong class="highlight">Background:</strong><br />Gruk is a smooth talker with a reputation for closing deals, no matter how tough the negotiations. His immense size and presence only add to his power as a Face, often intimidating others into agreement. Whether in the corporate or criminal worlds, he can manipulate situations with his size and charm.</p>',
+            '<p>Gruk, a 36-year-old male Troll Face, stands at 250 cm and weighs 240 kg.</p><p><strong class="highlight">Attributes:</strong></p><ul class="list-margin"><li><strong>Strength:</strong> 6</li><li><strong>Agility:</strong> 4</li><li><strong>Reaction:</strong> 5</li><li><strong>Logic:</strong> 3</li><li><strong>Intuition:</strong> 4</li><li><strong>Charisma:</strong> 8</li></ul><p><strong class="highlight">Background:</strong><br />Gruk is a smooth talker with a Edge for closing deals, no matter how tough the negotiations. His immense size and presence only add to his power as a Face, often intimidating others into agreement. Whether in the corporate or criminal worlds, he can manipulate situations with his size and charm.</p>',
     },
     {
         id: 'R556',
