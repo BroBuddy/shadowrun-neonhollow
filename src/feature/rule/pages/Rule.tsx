@@ -11,7 +11,9 @@ const Rule = () => {
                 <p>
                     <strong>Your first Steps:</strong>
                 </p>
-                <p>Grab 2d6, a pen, and something to write on.</p>
+                <p>
+                    Grab <strong>2d6</strong>, a pen, and something to write on.
+                </p>
                 <MechanicView />
                 <p>
                     <strong>Start your Adventure:</strong>

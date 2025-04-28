@@ -7,7 +7,7 @@ function MetatypeView() {
             <p>
                 <strong className="highlight">Metatype:</strong>
             </p>
-            <p>Roll 1d6:</p>
+            <p>🎲 Roll 1d6:</p>
 
             <div className="flex justify-between gap-3">
                 <div className="flex-1 basis-1/3 text-center">

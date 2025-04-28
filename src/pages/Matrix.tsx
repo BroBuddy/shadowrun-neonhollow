@@ -28,7 +28,7 @@ function Matrix() {
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
                 </p>
-                <p>Roll 2d6:</p>
+                <p>🎲 Roll 2d6:</p>
                 <table>
                     <thead>
                         <tr>
@@ -68,7 +68,7 @@ function Matrix() {
                 <p>
                     <strong className="highlight">Runner Matrix:</strong>
                 </p>
-                <p>Roll 2d6:</p>
+                <p>🎲 Roll 2d6:</p>
                 <table>
                     <thead>
                         <tr>

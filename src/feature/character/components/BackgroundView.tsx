@@ -10,7 +10,7 @@ function BackgroundView() {
             <p>
                 <strong className="highlight">Background:</strong>
             </p>
-            <p>Your archetype is the tens digit - Roll 1d6:</p>
+            <p>Your archetype is the tens digit - 🎲 Roll 1d6:</p>
             <table>
                 <thead>
                     <tr>

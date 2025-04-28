@@ -20,8 +20,9 @@ function NameDetail() {
             <Headline>{data.title}</Headline>
             <Card>
                 <p>
-                    Roll 1d6 to get a first name and 1d6 for a second name from
-                    the appropriate list.
+                    🎲 Roll <strong>1d6</strong> to get a first name and{' '}
+                    <strong>1d6</strong> for a second name from the appropriate
+                    list.
                 </p>
                 <div className="grid grid-cols-2">
                     <div>

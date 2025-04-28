@@ -20,7 +20,7 @@ function MechanicDetail() {
             <Headline>{data.title}</Headline>
             <Card>
                 <p>{data.description}</p>
-                <ul>
+                <ul className="list-margin">
                     {data.list.map((item: string, index: number) => (
                         <li key={index}>{item}</li>
                     ))}

@@ -18,7 +18,7 @@ function ArchetypeView() {
             <p>
                 <strong className="highlight">Archetype:</strong>
             </p>
-            <p>Roll 1d6:</p>
+            <p>🎲 Roll 1d6:</p>
             <ol className="list-margin">
                 {archetypes.map((item: Archetype, index: number) => (
                     <li key={index}>

@@ -5,7 +5,7 @@ const mechanicData: Mechanic[] = [
         tag: 'time',
         title: 'Time Mechanic',
         description:
-            'Manage your time wisely to achieve objectives within a limited framework.',
+            'Manage your 🕒 Time wisely to achieve objectives within a limited framework.',
         list: [
             '7 Days to dismantle the system, with 7 Hours per cycle.',
             'Start at your private SafeHouse.',
@@ -18,7 +18,7 @@ const mechanicData: Mechanic[] = [
         tag: 'nuyen',
         title: 'Nuyen Mechanic',
         description:
-            'Earn, save, and spend Nuyen to progress through various challenges.',
+            'Earn, save, and spend 💰 Nuyen to progress through various challenges.',
         list: [
             'Nuyen is the currency of the Shadowrun universe.',
             'Most facility actions require Nuyen.',
@@ -29,7 +29,7 @@ const mechanicData: Mechanic[] = [
         tag: 'health',
         title: 'Health Mechanic',
         description:
-            'Maintain your health to survive in the harsh environments of the game.',
+            'Maintain your ❤️ Health to survive in the harsh environments of the game.',
         list: [
             'Health ranges from 0 to 10 and cannot exceed these limits.',
             "If Health reaches 0, you're effectively dead.",
@@ -40,7 +40,7 @@ const mechanicData: Mechanic[] = [
         tag: 'energy',
         title: 'Energy Mechanic',
         description:
-            'Balance energy levels to avoid consequences and keep moving forward.',
+            'Balance 🔋 Energy to avoid consequences and keep moving forward.',
         list: [
             'Energy ranges from 0 to 10 and cannot exceed these limits.',
             'Each point below 0 costs 1 Health point.',
@@ -51,7 +51,7 @@ const mechanicData: Mechanic[] = [
         tag: 'reputation',
         title: 'Reputation Mechanic',
         description:
-            'Use reputation to gain advantages and influence outcomes in skill checks.',
+            'Use ⭐ Reputation to gain advantages and influence outcomes in skill checks.',
         list: [
             'Reputation ranges from 0 to 6 and cannot exceed these limits.',
             'Spend 1 Reputation during a skill check to gain an additional roll.',
@@ -62,7 +62,7 @@ const mechanicData: Mechanic[] = [
         tag: 'heat',
         title: 'Heat Mechanic',
         description:
-            'Manage heat levels to avoid being hunted and losing access to services.',
+            'Manage 🔥 Heat to avoid being hunted and losing access to services.',
         list: [
             'Heat ranges from 0 to 3 and cannot exceed these limits.',
             "Higher Heat levels cause the Corp's special ops to hunt you down.",
@@ -75,7 +75,7 @@ const mechanicData: Mechanic[] = [
         tag: 'intel',
         title: 'Intel Mechanic',
         description:
-            'Gather Intel to unlock missions and bring down adversaries strategically.',
+            'Gather 💡 Intel to unlock missions and bring down adversaries strategically.',
         list: [
             'Intel ranges from 0 to 6 and cannot exceed these limits.',
             "You'll need Intel to fund missions from Mr. Johnson.",
@@ -86,7 +86,7 @@ const mechanicData: Mechanic[] = [
         tag: 'dice',
         title: 'Dice Mechanic',
         description:
-            'Roll dice to determine outcomes and navigate chance-based scenarios.',
+            'Roll 🎲 Dice to determine outcomes and navigate chance-based scenarios.',
         list: [
             'Roll 1d6 for a result between 1 and 6.',
             'Roll 2d6 to add results together.',

@@ -288,7 +288,7 @@ const facilityData: Facility[] = [
         rollList: [],
         actionList: [
             {
-                title: 'Recruit a Runner:',
+                title: '🤝 Recruit a Runner:',
                 steps: [
                     { text: 'Roll On the Runner Matrix' },
                     { text: 'Remember The two highest attributes' },
@@ -297,7 +297,7 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: 'Challenge a Runner:',
+                title: '⚔️ Challenge a Runner:',
                 steps: [
                     { text: 'Combine Your two highest attributes' },
                     { text: 'Roll On the Runner Matrix' },
