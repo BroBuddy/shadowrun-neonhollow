@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
-import MechanicView from '../components/MechanicView'
+import MechanicView from '../../mechanic/components/MechanicView'
 
 const Rule = () => {
     return (

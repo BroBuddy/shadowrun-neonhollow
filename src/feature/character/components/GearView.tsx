@@ -14,9 +14,9 @@ function GearView() {
             <p>Choose one item for free from the Fixer's Workshop:</p>
             <ul className="list-margin">
                 {equipments.length > 0 ? (
-                    equipments.map((equipment: Equipment, index: number) => (
+                    equipments.map((item: Equipment, index: number) => (
                         <li key={index}>
-                            <strong>{equipment.name}:</strong> {equipment.bonus}
+                            <strong>{item.name}:</strong> {item.bonus}
                         </li>
                     ))
                 ) : (

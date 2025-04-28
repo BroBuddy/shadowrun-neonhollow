@@ -11,6 +11,7 @@ import App from './App.tsx'
 import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import NameRouter from './feature/name/NameRouter.tsx'
 import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
+import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 
 const LoadingFallback = () => <p>Loading</p>
 const ErrorFallback = () => <p>Error</p>
@@ -64,6 +65,7 @@ const router = createBrowserRouter([
                 ),
             },
             ...RuleRouter,
+            ...MechanicRouter,
             ...CharacterRouter,
             ...MetatypeRouter,
             ...ArchetypeRouter,

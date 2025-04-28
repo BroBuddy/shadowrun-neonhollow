@@ -20,11 +20,9 @@ function ArchetypeView() {
             </p>
             <p>Roll 1d6:</p>
             <ol className="list-margin">
-                {archetypes.map((archetype: Archetype, index: number) => (
+                {archetypes.map((item: Archetype, index: number) => (
                     <li key={index}>
-                        <Link to={`/archetype/${archetype.tag}`}>
-                            {archetype.title}
-                        </Link>
+                        <Link to={`/archetype/${item.tag}`}>{item.title}</Link>
                     </li>
                 ))}
             </ol>

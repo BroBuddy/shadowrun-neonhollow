@@ -9,13 +9,13 @@ type FacilityActionsProps = {
 const ActionsView = ({ actionList }: FacilityActionsProps) => {
     return (
         <Card>
-            {actionList.map((action, actionIndex) => (
+            {actionList.map((item: FacilityAction, actionIndex: number) => (
                 <div key={actionIndex}>
                     <p>
-                        <strong className="highlight">{action.title}</strong>
+                        <strong className="highlight">{item.title}</strong>
                     </p>
                     <ul className="list-margin">
-                        {action.steps.map(
+                        {item.steps.map(
                             (step: ActionStep, stepIndex: number) => {
                                 const [firstWord, ...remainingWords] =
                                     step.text.split(' ')

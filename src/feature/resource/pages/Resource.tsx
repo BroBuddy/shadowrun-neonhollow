@@ -15,10 +15,10 @@ function Resource() {
             <Card>
                 <p>Here are the resources featured in this game:</p>
                 <ul>
-                    {resourceData.map((resource: ResourceType) => (
-                        <li key={resource.tag}>
-                            <Link to={`/resource/${resource.tag}`}>
-                                {resource.title}
+                    {resourceData.map((item: ResourceType) => (
+                        <li key={item.tag}>
+                            <Link to={`/resource/${item.tag}`}>
+                                {item.title}
                             </Link>
                         </li>
                     ))}

@@ -22,20 +22,20 @@ function ResourceDetail() {
             <Card>
                 <p>The number determines the outcome of the action.</p>
                 {data.rollList &&
-                    data.rollList.map((roll: ResourceRoll) => (
-                        <div key={roll.range} className="roll-section">
+                    data.rollList.map((item: ResourceRoll) => (
+                        <div key={item.range} className="roll-section">
                             <p>
-                                {getIcon(roll.range)}{' '}
+                                {getIcon(item.range)}{' '}
                                 <strong className="highlight">
-                                    Roll {roll.range}
+                                    Roll {item.range}
                                 </strong>{' '}
-                                → {roll.result}
+                                → {item.result}
                             </p>
                             <ul className="list-margin">
-                                {roll.effects.map(
+                                {item.effects.map(
                                     (effect: string, effectIndex: number) => (
                                         <li
-                                            key={`${roll.range}-${effectIndex}`}
+                                            key={`${item.range}-${effectIndex}`}
                                         >
                                             {effect}
                                         </li>

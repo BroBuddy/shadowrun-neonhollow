@@ -14,13 +14,13 @@ const makeUrlsClickable = (html: string) => {
 
                 return (
                     <>
-                        {parts.map((part, i) =>
-                            rulesRegex.test(part) ? (
-                                <Link key={i} to={`/rule/${part}`}>
-                                    {part}
+                        {parts.map((item: string, index: number) =>
+                            rulesRegex.test(item) ? (
+                                <Link key={index} to={`/rule/${item}`}>
+                                    {item}
                                 </Link>
                             ) : (
-                                <span key={i}>{part}</span>
+                                <span key={index}>{item}</span>
                             )
                         )}
                     </>

@@ -20,9 +20,9 @@ function NameView() {
             </p>
             <p>Each archetype has its own name pool:</p>
             <ul className="list-margin">
-                {names.map((name: Name, index: number) => (
+                {names.map((item: Name, index: number) => (
                     <li key={index}>
-                        <Link to={`/name/${name.tag}`}>{name.title}</Link>
+                        <Link to={`/name/${item.tag}`}>{item.title}</Link>
                     </li>
                 ))}
             </ul>

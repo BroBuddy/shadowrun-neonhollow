@@ -62,11 +62,9 @@ function Mission() {
                     <strong>Missions Overview:</strong>
                 </p>
                 <ol className="list-margin">
-                    {data.map((mission: MissionType, index: number) => (
+                    {data.map((item: MissionType, index: number) => (
                         <li key={index}>
-                            <Link to={`/mission/${mission.id}`}>
-                                {mission.title}
-                            </Link>
+                            <Link to={`/mission/${item.id}`}>{item.title}</Link>
                         </li>
                     ))}
                 </ol>

@@ -15,13 +15,13 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                 {twist.description}
             </p>
             <ul>
-                {twist.options.map((option: MissionOption, index: number) => (
+                {twist.options.map((item: MissionOption, index: number) => (
                     <li key={index}>
                         <strong>
-                            {option.stat} (DC {option.dc}):
+                            {item.stat} (DC {item.dc}):
                         </strong>
                         <br />
-                        {option.description}
+                        {item.description}
                     </li>
                 ))}
             </ul>
