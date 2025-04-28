@@ -445,9 +445,9 @@ export const Events = [
     },
     {
         id: 'R472',
-        title: 'Patrol Check',
+        title: 'Security Check',
         content: `<p><strong class="highlight">Event:</strong><br />
-            As you enter PatrolHub, you're immediately confronted by a pair of security officers. They seem suspicious and are questioning your presence in the area. It's clear they are ready to test your credentials or try to get some extra information from you.</p>
+            As you enter SecurityHub, you're immediately confronted by a pair of security officers. They seem suspicious and are questioning your presence in the area. It's clear they are ready to test your credentials or try to get some extra information from you.</p>
             
             <p><strong class="highlight">Strength (DC 12):</strong><br />Use your strength to physically assert yourself by intimidating the officers.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Strength</li><li><strong>Fail:</strong> +1 Heat</li></ul>
@@ -459,7 +459,7 @@ export const Events = [
         id: 'R473',
         title: 'Medical Malfunction',
         content: `<p><strong class="highlight">Event:</strong><br />
-            A sudden medical malfunction has put several patients in critical condition. The usual staff is overwhelmed, and BioCare’s system is struggling to prioritize the patients in need of emergency care. You’ve been called in to help, but time is running out.</p>
+            A sudden medical malfunction has put several patients in critical condition. The usual staff is overwhelmed, and VitalClinic’s system is struggling to prioritize the patients in need of emergency care. You’ve been called in to help, but time is running out.</p>
             
             <p><strong class="highlight">Agility (DC 12):</strong><br />Use your agility to quickly navigate the chaotic environment and assist in moving patients to safety.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Agility</li><li><strong>Fail:</strong> -2 Health</li></ul>
@@ -483,7 +483,7 @@ export const Events = [
         id: 'R475',
         title: 'Dream Glitch',
         content: `<p><strong class="highlight">Event:</strong><br />
-            As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.</p>
+            As you enter DreamHaven, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.</p>
             
             <p><strong class="highlight">Intuition (DC 12):</strong><br />Use your instinct and quick thinking to identify the core issue and stabilize the virtual environment.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Temporary Intuition</li><li><strong>Fail:</strong> -2 Energy</li></ul>
@@ -495,7 +495,7 @@ export const Events = [
         id: 'R476',
         title: 'The Whisper Network',
         content: `<p><strong class="highlight">Event:</strong><br />
-            The atmosphere in HoloLounge is electric tonight. The neon lights flash in sync with the pulsing beats, and people from all walks of life gather here. You spot an influential figure seated at the bar, surrounded by chatter.</p>            
+            The atmosphere in PulseBar is electric tonight. The neon lights flash in sync with the pulsing beats, and people from all walks of life gather here. You spot an influential figure seated at the bar, surrounded by chatter.</p>            
             <p><strong class="highlight">Charisma (DC 12):</strong><br />Charm your way into a conversation with the influential figure.</p>
             <ul class="list-margin"><li><strong>Success:</strong> +1 Charisma Temporary</li><li><strong>Fail:</strong> +1 Heat</li></ul>
             
@@ -530,7 +530,7 @@ export const Events = [
         id: 'R481',
         title: 'Mysterious Encounter',
         content: `<p><strong class="highlight">Event:</strong><br />
-            Seated at NeuralNexus' main console, a mature man with stylish glasses and a touch of silver in his hair works through torrents of financial data. Curious about his methods, you spark up a conversation.
+            Seated at CyberLab' main console, a mature man with stylish glasses and a touch of silver in his hair works through torrents of financial data. Curious about his methods, you spark up a conversation.
             <br /><br />
             He explains a groundbreaking method for optimizing corporate finances—complex at first, but he breaks it down until you grasp the full picture. His insights reveal hidden structures you never noticed before.</p>
             
@@ -541,7 +541,7 @@ export const Events = [
         id: 'R483',
         title: 'Mysterious Encounter',
         content: `<p><strong class="highlight">Event:</strong><br />
-            Pain flares unexpectedly as you linger in BioCare’s waiting area. A graceful young woman with long black hair approaches, sensing your discomfort.
+            Pain flares unexpectedly as you linger in VitalClinic’s waiting area. A graceful young woman with long black hair approaches, sensing your discomfort.
             <br /><br />
             She calmly explains the process to ease the pain, her hands steady as she demonstrates a quick, effective technique.
             <br /><br />
@@ -578,7 +578,7 @@ export const Events = [
         id: 'R486',
         title: 'Mysterious Encounter',
         content: `<p><strong class="highlight">Event:</strong><br />
-            Lost in thought, you sit alone in a corner of the HoloLounge. An older woman with grey hair and a slight limp approaches, offering a warm smile.
+            Lost in thought, you sit alone in a corner of the PulseBar. An older woman with grey hair and a slight limp approaches, offering a warm smile.
             <br /><br />
             She sits down beside you, speaking softly, encouraging you to look beyond the darkness and embrace the good in life. Her gentle words, coupled with her quiet strength, shift your perspective, offering a newfound sense of clarity and hope.</p>
             

@@ -56,7 +56,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Health ranges from 0 to 10 and cannot exceed these limits.',
             "If Health reaches 0, you're effectively dead.",
-            'Service Providers: BioCare, IronGym, SafeHouse.',
+            'Service Providers: VitalClinic, IronGym, SafeHouse.',
         ],
     },
     {
@@ -67,7 +67,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Energy ranges from 0 to 10 and cannot exceed these limits.',
             'Each point below 0 costs 1 Health point.',
-            'Service Providers: DreamSphere, NeuralNexus, EchoGarden.',
+            'Service Providers: DreamHaven, CyberLab, EchoGarden.',
         ],
     },
     {
@@ -91,7 +91,7 @@ const mechanicData: Mechanic[] = [
             "Higher Heat levels cause the Corp's special ops to hunt you down.",
             'Lose Health and Energy equal to your current Heat level.',
             'More Heat locks down town districts and restricts services.',
-            'Service Providers: PatrolHub, EchoGarden, SafeHouse.',
+            'Service Providers: SecurityHub, EchoGarden, SafeHouse.',
         ],
     },
     {
@@ -102,7 +102,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Intel ranges from 0 to 6 and cannot exceed these limits.',
             "You'll need Intel to fund missions from Mr. Johnson.",
-            'Service Providers: NeuralNexus, HoloLounge, SmugglerDen.',
+            'Service Providers: CyberLab, PulseBar, SmugglerDen.',
         ],
     },
     {

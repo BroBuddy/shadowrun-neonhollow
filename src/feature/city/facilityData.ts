@@ -2,8 +2,8 @@ import { Facility } from './FacilityType'
 
 const facilityData: Facility[] = [
     {
-        tag: 'neuralnexus',
-        title: 'NeuralNexus',
+        tag: 'cyberlab',
+        title: 'CyberLab',
         description:
             'The digital heart of NeonHollow, where minds merge with machines and the future pulses in streams of data.',
         rollList: [
@@ -43,12 +43,12 @@ const facilityData: Facility[] = [
         ],
     },
     {
-        tag: 'patrolhub',
-        title: 'PatrolHub',
+        tag: 'securityhub',
+        title: 'SecurityHub',
         description:
             'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
         rollList: [
-            { roll: '2', text: 'Patrol Check', link: '/R472' },
+            { roll: '2', text: 'Security Check', link: '/R472' },
             { roll: '3-4', text: 'Security Breach → +1 Heat' },
             { roll: '5-6', text: 'Blamed → -1 Edge' },
             { roll: '7', text: 'No Effect' },
@@ -76,8 +76,8 @@ const facilityData: Facility[] = [
         ],
     },
     {
-        tag: 'biocare',
-        title: 'BioCare',
+        tag: 'vitalclinic',
+        title: 'VitalClinic',
         description:
             'Pioneers of life, healing the city’s wounds and unlocking the secrets of humanity — at a price.',
         rollList: [
@@ -158,8 +158,8 @@ const facilityData: Facility[] = [
         ],
     },
     {
-        tag: 'dreamsphere',
-        title: 'DreamSphere',
+        tag: 'dreamhaven',
+        title: 'DreamHaven',
         description:
             'An immersive realm where fantasies awaken and reality bends under layers of shimmering light.',
         rollList: [
@@ -199,8 +199,8 @@ const facilityData: Facility[] = [
         ],
     },
     {
-        tag: 'hololounge',
-        title: 'HoloLounge',
+        tag: 'pulsebar',
+        title: 'PulseBar',
         description:
             'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
         rollList: [

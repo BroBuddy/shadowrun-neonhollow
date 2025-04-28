@@ -11,25 +11,25 @@ const cityData: District[] = [
                 image: '/images/MegaCorp.jpg',
             },
             {
-                name: 'NeuralNexus',
-                link: '/city/neuralnexus',
-                image: '/images/NeuralNexus.jpg',
+                name: 'CyberLab',
+                link: '/city/cyberlab',
+                image: '/images/CyberLab.jpg',
             },
             {
-                name: 'PatrolHub',
-                link: '/city/patrolhub',
-                image: '/images/PatrolHub.jpg',
+                name: 'SecurityHub',
+                link: '/city/securityhub',
+                image: '/images/SecurityHub.jpg',
             },
         ],
     },
     {
         name: 'Serenity',
-        heat: '🟠 Heat 3',
+        heat: '🟠 Heat 2',
         facilities: [
             {
-                name: 'BioCare',
-                link: '/city/biocare',
-                image: '/images/BioCare.jpg',
+                name: 'VitalClinic',
+                link: '/city/vitalclinic',
+                image: '/images/VitalClinic.jpg',
             },
             {
                 name: 'EchoGarden',
@@ -37,20 +37,20 @@ const cityData: District[] = [
                 image: '/images/EchoGarden.jpg',
             },
             {
-                name: 'DreamSphere',
-                link: '/city/dreamsphere',
-                image: '/images/DreamSphere.jpg',
+                name: 'DreamHaven',
+                link: '/city/dreamhaven',
+                image: '/images/DreamHaven.jpg',
             },
         ],
     },
     {
         name: 'Vortex',
-        heat: '🟡 Heat 5',
+        heat: '🟡 Heat 3',
         facilities: [
             {
-                name: 'HoloLounge',
-                link: '/city/hololounge',
-                image: '/images/HoloLounge.jpg',
+                name: 'PulseBar',
+                link: '/city/pulsebar',
+                image: '/images/PulseBar.jpg',
             },
             {
                 name: 'IronGym',

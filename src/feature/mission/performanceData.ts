@@ -25,12 +25,11 @@ const MissionPerformance: MissionPerformancesType[] = [
         level: 'Partial',
         effects: [
             {
-                description: 'Roll 2d6 → +4 → Gain Intel',
-                link: '/intel',
+                description: '+4.000 ¥',
             },
             {
-                description: 'Roll 2d6 → +2 → Gain Nuyen',
-                link: '/nuyen',
+                description: 'Roll 2d6 → +4 → Gain Intel',
+                link: '/intel',
             },
         ],
     },
@@ -41,8 +40,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         effects: [
             { description: '+1 Edge' },
             {
-                description: 'Roll 2d6 → +4 → Gain Nuyen',
-                link: '/nuyen',
+                description: '+8.000 ¥',
             },
             { description: 'Next Mission available' },
         ],
@@ -54,8 +52,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         effects: [
             { description: '+2 Edge' },
             {
-                description: 'Roll 2d6 → +6 → Gain Nuyen',
-                link: '/nuyen',
+                description: '+12.000 ¥',
             },
             { description: 'Next Mission available' },
         ],
