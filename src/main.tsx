@@ -8,6 +8,8 @@ import MissionRouter from './feature/mission/MissionRouter.tsx'
 import RuleRouter from './feature/rule/RuleRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter.tsx'
 import App from './App.tsx'
+import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
+import NameRouter from './feature/name/NameRouter.tsx'
 
 const LoadingFallback = () => <p>Loading</p>
 const ErrorFallback = () => <p>Error</p>
@@ -42,6 +44,8 @@ const router = createBrowserRouter([
             },
             ...RuleRouter,
             ...CharacterRouter,
+            ...ArchetypeRouter,
+            ...NameRouter,
             ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,

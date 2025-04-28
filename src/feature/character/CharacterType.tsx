@@ -1,5 +1,3 @@
-type Archetype = { name: string; link: string }
-
 type Equipment = {
     name: string
     bonus: string
@@ -10,4 +8,4 @@ type Mode = {
     attributes: string[]
 }
 
-export type { Archetype, Equipment, Mode }
+export type { Equipment, Mode }

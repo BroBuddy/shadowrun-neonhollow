@@ -1,9 +1,9 @@
 import Headline from '@/components/Headline'
 import ModeView from '../components/ModeView'
-import NameView from '../components/NameView'
+import NameView from '../../name/components/NameView'
 import GearView from '../components/GearView'
 import BackgroundView from '../components/BackgroundView'
-import ArchetypeView from '../components/ArchetypeView'
+import ArchetypeView from '../../archetype/components/ArchetypeView'
 import MetatypeView from '../components/MetatypeView'
 
 function Character() {
