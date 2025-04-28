@@ -34,7 +34,7 @@ function BackgroundView() {
                                         key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                     >
                                         <Link
-                                            to={`/rule/R7${rowIndex + 1}${colIndex + 1}`}
+                                            to={`/background/R7${rowIndex + 1}${colIndex + 1}`}
                                         >
                                             {rowIndex + 1}x{colIndex + 1}
                                         </Link>

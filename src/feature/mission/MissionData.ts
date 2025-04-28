@@ -132,11 +132,11 @@ const missionData: Mission[] = [
         title: 'Crash Security Systems',
         client: {
             name: 'Silas Noor',
-            location: 'DreamSphere',
+            location: 'DreamHaven',
         },
         mission_location: 'MegaCorp',
         briefing:
-            "DreamSphere's immersive sleep tech is being hijacked—MegaCorp’s surveillance AI is tapping into user dreamscapes to manipulate behavior. Your task: breach their digital stronghold, black out the security grid, and ghost out before they realize the dream's turned against them.",
+            "DreamHaven`s immersive sleep tech is being hijacked—MegaCorp’s surveillance AI is tapping into user dreamscapes to manipulate behavior. Your task: breach their digital stronghold, black out the security grid, and ghost out before they realize the dream's turned against them.",
         tasks: [
             {
                 id: 1,
@@ -261,11 +261,11 @@ const missionData: Mission[] = [
         title: 'Confront the CEO',
         client: {
             name: 'Kael Stride',
-            location: 'HoloLounge',
+            location: 'PulseBar',
         },
         mission_location: 'MegaCorp',
         briefing:
-            'The CEO of the megacorp is planning to seize control of HoloLounge’s independent entertainment feeds, pushing brainwash protocols through immersive media. HoloLounge wants you to break into the executive floor, confront the CEO directly, and deliver a message: some minds can’t be bought.',
+            'The CEO of the megacorp is planning to seize control of PulseBar’s independent entertainment feeds, pushing brainwash protocols through immersive media. PulseBar wants you to break into the executive floor, confront the CEO directly, and deliver a message: some minds can’t be bought.',
         tasks: [
             {
                 id: 1,
@@ -518,7 +518,7 @@ const getMissionData = (): Pick<Mission, 'id' | 'title'>[] => {
 }
 
 const getMissionById = (id: string): Mission => {
-    return missionData.find((mission: Mission) => mission.id === id) as Mission
+    return missionData.find((item: Mission) => item.id === id) as Mission
 }
 
 export { getMissionData, getMissionById }

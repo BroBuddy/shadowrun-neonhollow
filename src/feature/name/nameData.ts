@@ -44,7 +44,7 @@ const getNameData = (): Pick<Name, 'tag' | 'title'>[] => {
 }
 
 const getNameByTag = (tagId: string): Name => {
-    return nameData.find((name: Name) => name.tag === tagId) as Name
+    return nameData.find((item: Name) => item.tag === tagId) as Name
 }
 
 export { getNameData, getNameByTag }

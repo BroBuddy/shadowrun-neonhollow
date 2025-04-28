@@ -51,7 +51,7 @@ const getArchetypeData = (): Pick<Archetype, 'tag' | 'title'>[] => {
 
 const getArchetypeByTag = (tagId: string): Archetype => {
     return archetypeData.find(
-        (archetype: Archetype) => archetype.tag === tagId
+        (item: Archetype) => item.tag === tagId
     ) as Archetype
 }
 
