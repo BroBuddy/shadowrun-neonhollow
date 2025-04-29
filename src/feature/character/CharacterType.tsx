@@ -5,7 +5,7 @@ type Equipment = {
 
 type Mode = {
     name: string
-    attributes: string[]
+    resources: string[]
 }
 
 export type { Equipment, Mode }

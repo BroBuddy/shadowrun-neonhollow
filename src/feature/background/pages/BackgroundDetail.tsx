@@ -2,14 +2,21 @@ import Card from '@/components/Card'
 import Headline from '@/components/Headline'
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
-import { getBackgroundById } from '../backgroundData'
+import { getBackgroundById, isValidBackground } from '../backgroundData'
 
 function BackgroundDetail() {
     const { id } = useParams()
     const data = useMemo(() => getBackgroundById(id as string), [id])
 
-    if (!data) {
-        return <></>
+    if (!data || !isValidBackground(id as string)) {
+        return (
+            <>
+                <Headline>Invalid Background</Headline>
+                <Card>
+                    <p>The tag you provided is invalid.</p>
+                </Card>
+            </>
+        )
     }
 
     return (

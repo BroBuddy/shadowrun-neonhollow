@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
-import { getNameByTag } from '../nameData'
+import { getNameByTag, isValidName } from '../nameData'
 import { Name } from '../NameType'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
@@ -11,8 +11,15 @@ function NameDetail() {
         return getNameByTag(tag as string) as Name
     }, [tag])
 
-    if (!data) {
-        return <></>
+    if (!data || !isValidName(tag as string)) {
+        return (
+            <>
+                <Headline>Invalid Name</Headline>
+                <Card>
+                    <p>The tag you provided is invalid.</p>
+                </Card>
+            </>
+        )
     }
 
     return (

@@ -1,6 +1,6 @@
 import { Background } from './BackgroundType'
 
-const backgroundStreetSamurai: Background[] = [
+const backgroundStreetSamurai: readonly Background[] = [
     {
         id: 'R711',
         title: 'Ex-Corp Mercenary',
@@ -45,7 +45,7 @@ const backgroundStreetSamurai: Background[] = [
     },
 ]
 
-const backgroundDecker: Background[] = [
+const backgroundDecker: readonly Background[] = [
     {
         id: 'R721',
         title: 'Corporate Insider',
@@ -90,7 +90,7 @@ const backgroundDecker: Background[] = [
     },
 ]
 
-const backgroundRigger: Background[] = [
+const backgroundRigger: readonly Background[] = [
     {
         id: 'R731',
         title: 'Mechanic Prodigy',
@@ -135,7 +135,7 @@ const backgroundRigger: Background[] = [
     },
 ]
 
-const backgroundMage: Background[] = [
+const backgroundMage: readonly Background[] = [
     {
         id: 'R741',
         title: 'Arcane Scholar',
@@ -180,7 +180,7 @@ const backgroundMage: Background[] = [
     },
 ]
 
-const backgroundFace: Background[] = [
+const backgroundFace: readonly Background[] = [
     {
         id: 'R751',
         title: 'Corporate Negotiator',
@@ -225,7 +225,7 @@ const backgroundFace: Background[] = [
     },
 ]
 
-const backgroundShaman: Background[] = [
+const backgroundShaman: readonly Background[] = [
     {
         id: 'R761',
         title: 'Urban Spirit Whisperer',
@@ -270,7 +270,7 @@ const backgroundShaman: Background[] = [
     },
 ]
 
-const backgroundData: Background[] = [
+const backgroundData: readonly Background[] = [
     ...backgroundStreetSamurai,
     ...backgroundDecker,
     ...backgroundRigger,
@@ -278,6 +278,9 @@ const backgroundData: Background[] = [
     ...backgroundFace,
     ...backgroundShaman,
 ]
+
+const validTags = backgroundData.map(({ id }) => id)
+const isValidBackground = (id: string): boolean => validTags.includes(id)
 
 const backgroundMap = new Map(
     backgroundData.map((background: Background) => [background.id, background])
@@ -287,4 +290,4 @@ const getBackgroundById = (id: string): Background | undefined => {
     return backgroundMap.get(id)
 }
 
-export { getBackgroundById }
+export { getBackgroundById, isValidBackground }

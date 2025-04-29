@@ -9,7 +9,7 @@ const ATTRIBUTES: Record<string, string> = {
     CHARISMA: '+1 Charisma',
 }
 
-const archetypeData: Archetype[] = [
+const archetypeData: readonly Archetype[] = [
     {
         tag: 'streetsamurai',
         title: 'Street Samurai',
@@ -55,17 +55,14 @@ const archetypeData: Archetype[] = [
 ]
 
 const validTags = archetypeData.map(({ tag }) => tag)
-const isTagValid = (tagId: string): boolean => validTags.includes(tagId)
+const isValidArchetype = (tagId: string): boolean => validTags.includes(tagId)
 
 const getArchetypeData = (): Pick<Archetype, 'tag' | 'title'>[] => {
     return archetypeData.map(({ tag, title }) => ({ tag, title }))
 }
 
 const getArchetypeByTag = (tag: string): Archetype | undefined => {
-    if (!isTagValid(tag)) {
-        throw new Error(`Invalid tag: ${tag}`)
-    }
     return archetypeData.find((item: Archetype) => item.tag === tag)
 }
 
-export { getArchetypeData, getArchetypeByTag }
+export { getArchetypeData, getArchetypeByTag, isValidArchetype }

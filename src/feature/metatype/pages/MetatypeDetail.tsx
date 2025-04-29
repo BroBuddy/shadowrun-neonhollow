@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
-import { getMetatypeByTag } from '../metatypeData'
+import { getMetatypeByTag, isValidMetatype } from '../metatypeData'
 import { Metatype } from '../MetatypeType'
 
 function MetatypeDetail() {
@@ -11,8 +11,15 @@ function MetatypeDetail() {
         return getMetatypeByTag(tag as string) as Metatype
     }, [tag])
 
-    if (!data) {
-        return <></>
+    if (!data || !isValidMetatype(tag as string)) {
+        return (
+            <>
+                <Headline>Invalid Metatype</Headline>
+                <Card>
+                    <p>The tag you provided is invalid.</p>
+                </Card>
+            </>
+        )
     }
 
     return (

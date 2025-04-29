@@ -17,9 +17,9 @@ function ModeView() {
                     <li key={index}>
                         <strong>{item.name}:</strong>
                         <ul>
-                            {item.attributes.map(
-                                (attribute: string, attrIndex: number) => (
-                                    <li key={attrIndex}>{attribute}</li>
+                            {item.resources.map(
+                                (resource: string, attrIndex: number) => (
+                                    <li key={attrIndex}>{resource}</li>
                                 )
                             )}
                         </ul>

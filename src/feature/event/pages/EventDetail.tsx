@@ -5,9 +5,19 @@ import { useParams } from 'react-router-dom'
 import { getEventById } from '../eventData'
 import { Event, SkillCheck } from '../EventType'
 
+const defaultEvent: Event = {
+    id: '',
+    title: '',
+    description: '',
+    skillChecks: [],
+}
+
 function EventDetail() {
     const { id } = useParams()
-    const data: Event = useMemo(() => getEventById(id as string), [id])
+    const data: Event = useMemo(
+        () => getEventById(id as string) ?? defaultEvent,
+        [id]
+    )
 
     if (!data) {
         return <></>

@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
-import { getArchetypeByTag } from '../archtypeData'
+import { getArchetypeByTag, isValidArchetype } from '../archtypeData'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { Archetype } from '../ArchetypeType'
@@ -11,8 +11,15 @@ function ArchetypeDetail() {
         return getArchetypeByTag(tag as string) as Archetype
     }, [tag])
 
-    if (!data) {
-        return <></>
+    if (!data || !isValidArchetype(tag as string)) {
+        return (
+            <>
+                <Headline>Invalid Archetype</Headline>
+                <Card>
+                    <p>The tag you provided is invalid.</p>
+                </Card>
+            </>
+        )
     }
 
     return (
