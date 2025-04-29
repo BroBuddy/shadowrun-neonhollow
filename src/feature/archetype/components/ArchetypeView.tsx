@@ -16,16 +16,14 @@ function ArchetypeView() {
 
     return (
         <Card>
-            <div className="flex justify-between items-center">
-                <p>
-                    <strong className="highlight">Archetype:</strong>
-                </p>
-                <div className="flex gap-2">
-                    <Dice label="1d6" min={1} max={6} />
-                </div>
-            </div>
+            <p>
+                <strong className="highlight">Archetype:</strong>
+            </p>
 
-            <p>🎲 Roll 1d6:</p>
+            <p className="flex items-center space-x-1">
+                <span>Roll 1d6:</span>
+                <Dice min={1} max={6} />
+            </p>
             <ol className="list-margin">
                 {archetypes.map((item: Archetype, index: number) => (
                     <li key={index}>

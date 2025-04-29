@@ -41,7 +41,6 @@ body {
     }
 
     .active-dice {
-        background-color: var(--violet);
         color: var(--white);
     }
 
@@ -70,7 +69,6 @@ body {
     }
 
     .active-dice {
-        background-color: var(--turquoise);
         color: var(--black);
     }
 
@@ -173,14 +171,10 @@ table {
 
 .dice {
     cursor: pointer;
-    border: 2px solid;
-    border-radius: 7px;
-    padding: 5px;
-    height: 35px;
-    width: 35px;
-    text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
+    text-align: center;
+    width: 20px;
 }
 
 nav {
@@ -206,8 +200,8 @@ nav {
     animation: spinner 2s linear infinite;
 }
 
-.empty-dice {
-    animation: spinner 500ms linear infinite;
+.active-dice {
+    animation: spinner 250ms linear infinite;
 }
 
 @keyframes spinner {

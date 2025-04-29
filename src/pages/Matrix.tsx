@@ -1,3 +1,4 @@
+import Dice from '@/components/Dice'
 import Card from '../components/Card'
 import Headline from '@/components/Headline'
 import MatrixTable from '@/components/MatrixTable'
@@ -26,7 +27,11 @@ function Matrix() {
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
                 </p>
-                <p>🎲 Roll 2d6:</p>
+                <p className="flex items-center space-x-1">
+                    <span>Roll 2d6:</span>
+                    <Dice min={1} max={6} />
+                    <Dice min={1} max={6} />
+                </p>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
 
@@ -34,7 +39,11 @@ function Matrix() {
                 <p>
                     <strong className="highlight">Runner Matrix:</strong>
                 </p>
-                <p>🎲 Roll 2d6:</p>
+                <p className="flex items-center space-x-1">
+                    <span>Roll 2d6:</span>
+                    <Dice min={1} max={6} />
+                    <Dice min={1} max={6} />
+                </p>
                 <MatrixTable linkPrefix="/rule/R5" />
             </Card>
         </>
