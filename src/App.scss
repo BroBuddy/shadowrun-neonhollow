@@ -34,9 +34,15 @@ body {
 }
 
 .violet-mode {
-    h2 {
+    h2,
+    .dice {
         border-color: var(--violet);
         color: var(--violet);
+    }
+
+    .active-dice {
+        background-color: var(--violet);
+        color: var(--white);
     }
 
     a,
@@ -57,9 +63,15 @@ body {
 }
 
 .turquoise-mode {
-    h2 {
+    h2,
+    .dice {
         border-color: var(--turquoise);
         color: var(--turquoise);
+    }
+
+    .active-dice {
+        background-color: var(--turquoise);
+        color: var(--black);
     }
 
     a,
@@ -81,7 +93,7 @@ body {
 
 .modal {
     display: none;
-    z-index: 1;
+    z-index: 100;
 }
 
 strong {
@@ -124,18 +136,6 @@ img {
     border-bottom-left-radius: 30px;
 }
 
-.card {
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border: 3px solid;
-    padding: 20px 15px;
-    margin: 0 20px 20px;
-
-    &.card-margin {
-        margin: 20px 0;
-    }
-}
-
 p,
 span {
     font-size: 14px;
@@ -159,10 +159,21 @@ table {
     }
 }
 
+.card {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 3px solid;
+    padding: 20px 15px;
+    margin: 0 20px 20px;
+
+    &.card-margin {
+        margin: 20px 0;
+    }
+}
+
 .dice {
     cursor: pointer;
-    border: 2px solid var(--black);
-    color: var(--violet);
+    border: 2px solid;
     border-radius: 7px;
     padding: 5px;
     height: 35px;
@@ -170,11 +181,6 @@ table {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-
-    &.active-dice {
-        background-color: var(--white);
-        color: var(--black);
-    }
 }
 
 nav {
@@ -198,6 +204,10 @@ nav {
 
 .preloader {
     animation: spinner 2s linear infinite;
+}
+
+.empty-dice {
+    animation: spinner 500ms linear infinite;
 }
 
 @keyframes spinner {

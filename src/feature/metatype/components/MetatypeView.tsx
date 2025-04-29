@@ -1,12 +1,18 @@
 import Card from '@/components/Card'
+import Dice from '@/components/Dice'
 import { Link } from 'react-router-dom'
 
 function MetatypeView() {
     return (
         <Card>
-            <p>
-                <strong className="highlight">Metatype:</strong>
-            </p>
+            <div className="flex justify-between items-center">
+                <p>
+                    <strong className="highlight">Metatype:</strong>
+                </p>
+                <div className="flex gap-2">
+                    <Dice label="1d6" min={1} max={6} />
+                </div>
+            </div>
             <p>🎲 Roll 1d6:</p>
 
             <div className="flex justify-between gap-3">

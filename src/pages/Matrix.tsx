@@ -21,6 +21,7 @@ function Matrix() {
                     </li>
                 </ol>
             </Card>
+
             <Card>
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
@@ -28,6 +29,7 @@ function Matrix() {
                 <p>🎲 Roll 2d6:</p>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
+
             <Card>
                 <p>
                     <strong className="highlight">Runner Matrix:</strong>
