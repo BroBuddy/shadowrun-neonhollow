@@ -52,7 +52,7 @@ function Matrix() {
                                             key={`cell-${rowIndex + 1}-${colIndex + 1}`}
                                         >
                                             <Link
-                                                to={`/rule/R4${rowIndex + 1}${colIndex + 1}`}
+                                                to={`/event/R4${rowIndex + 1}${colIndex + 1}`}
                                             >
                                                 {rowIndex + 1}x{colIndex + 1}
                                             </Link>

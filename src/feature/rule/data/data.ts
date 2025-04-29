@@ -1,6 +1,5 @@
-import { Events } from './matrixEvents'
 import { Runners } from './matrixRunners'
 
-const Data = Events.concat(Runners)
+const Data = Runners
 
 export { Data }
