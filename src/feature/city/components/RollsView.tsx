@@ -19,7 +19,7 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
                     <li key={index}>
                         <strong>Roll {item.roll}</strong> &#8594;{' '}
                         {item.link ? (
-                            <Link to={`/rule${item.link}`}>{item.text}</Link>
+                            <Link to={`/event${item.link}`}>{item.text}</Link>
                         ) : (
                             <>{item.text}</>
                         )}

@@ -2,7 +2,8 @@ type Event = {
     id: string
     title: string
     description: string
-    skillChecks: SkillCheck[]
+    skillChecks?: SkillCheck[]
+    bonus?: string
 }
 
 type SkillCheck = {

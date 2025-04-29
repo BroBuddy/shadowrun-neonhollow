@@ -29,25 +29,37 @@ function EventDetail() {
             <Card>
                 <p>{data.description}</p>
 
-                {data.skillChecks.map((item: SkillCheck, index: number) => (
-                    <div key={index}>
+                {data.bonus && (
+                    <>
                         <p>
-                            <strong className="highlight">
-                                {item.attribute} (DC {item.dc}):
-                            </strong>
-                            <br />
-                            {item.description}
+                            <strong>Bonus Attribute:</strong>
                         </p>
                         <ul className="list-margin">
-                            <li>
-                                <strong>Success:</strong> {item.success}
-                            </li>
-                            <li>
-                                <strong>Fail:</strong> {item.fail}
-                            </li>
+                            <li>{data.bonus}</li>
                         </ul>
-                    </div>
-                ))}
+                    </>
+                )}
+
+                {data.skillChecks &&
+                    data.skillChecks.map((item: SkillCheck, index: number) => (
+                        <div key={index}>
+                            <p>
+                                <strong className="highlight">
+                                    {item.attribute} (DC {item.dc}):
+                                </strong>
+                                <br />
+                                {item.description}
+                            </p>
+                            <ul className="list-margin">
+                                <li>
+                                    <strong>Success:</strong> {item.success}
+                                </li>
+                                <li>
+                                    <strong>Fail:</strong> {item.fail}
+                                </li>
+                            </ul>
+                        </div>
+                    ))}
             </Card>
         </>
     )

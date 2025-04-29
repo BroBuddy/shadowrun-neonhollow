@@ -853,6 +853,51 @@ const eventSixes: Event[] = [
     },
 ]
 
+const eventEncounter: Event[] = [
+    {
+        id: 'R481',
+        title: 'Mysterious Encounter',
+        description:
+            'In the center of NeuralNexus, a man with glasses and a perfect haircut analyzes streams of financial data with ease. Curious, you strike up a conversation. He explains a groundbreaking method for optimizing corporate finances—complex at first, but he breaks it down until you grasp the full picture. His insights reveal hidden structures you never noticed before. Before you can thank him, he vanishes into the crowd.',
+        bonus: '+1 Logic',
+    },
+    {
+        id: 'R483',
+        title: 'Mysterious Encounter',
+        description:
+            'While in BioCare, you find yourself suffering from intense tooth pain. A beautiful woman with long black hair approaches, sensing your discomfort. She calmly explains the process to ease the pain, her hands steady as she demonstrates a quick, effective technique. Her soothing presence and clear knowledge help you understand the procedure, relieving your pain and giving you a sense of agility in both body and mind.',
+        bonus: '+1 Agility',
+    },
+    {
+        id: 'R484',
+        title: 'Mysterious Encounter',
+        description:
+            "While strolling through the peaceful EchoGarden, you meet a tall man standing near a cluster of vibrant flowers. He seems to be in deep thought, admiring their beauty. He shares advice on how to better attune yourself to your surroundings and tap into its energy. His calm demeanor and deep understanding of the garden's flora put you at ease, helping you feel more composed and in tune with your surroundings.",
+        bonus: '+1 Reaction',
+    },
+    {
+        id: 'R485',
+        title: 'Mysterious Encounter',
+        description:
+            'In the dim corner of the room, you notice a man sitting alone — his head clean-shaven, a long, fiery orange beard cascading down his chest. He silently sketches strange symbols and maps on a battered notepad, lost in his own world. A silent understanding forms between you — not of friendship, but of mutual recognition. You part ways, but the encounter sharpens your instincts and leaves you more attuned to the hidden currents of the world.',
+        bonus: '+1 Intuition',
+    },
+    {
+        id: 'R486',
+        title: 'Mysterious Encounter',
+        description:
+            'Lost in thought, you sit alone in a corner of the HoloLounge. An older woman with grey hair and a slight limp approaches, offering a warm smile. She sits down beside you, speaking softly, encouraging you to look beyond the darkness and embrace the good in life. Her gentle words, coupled with her quiet strength, shift your perspective, offering a newfound sense of clarity and hope.',
+        bonus: '+1 Charisma',
+    },
+    {
+        id: 'R487',
+        title: 'Mysterious Encounter',
+        description:
+            'The clang of metal fills IronGym, but one figure stands out — an older man, nearly bald with a thick grey beard and arms like forged steel. He lifts in silence, focused, almost meditative. You strike up a conversation. At first, he’s distant, but soon shares his philosophy on strength, resilience, and growth through pain. You leave with sore muscles — but also feeling stronger.',
+        bonus: '+1 Strength',
+    },
+]
+
 const eventData: Event[] = [
     ...eventOnes,
     ...eventTwos,
@@ -860,6 +905,7 @@ const eventData: Event[] = [
     ...eventFours,
     ...eventFives,
     ...eventSixes,
+    ...eventEncounter,
 ]
 
 const eventMap = new Map(eventData.map((event: Event) => [event.id, event]))
