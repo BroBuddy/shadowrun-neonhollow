@@ -15,7 +15,6 @@ const missionData: Mission[] = [
             {
                 id: 1,
                 title: 'Infiltrate the Outer Perimeter',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '2–5',
@@ -44,7 +43,6 @@ const missionData: Mission[] = [
             {
                 id: 2,
                 title: 'Gather Intel on Security Systems',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '3–6',
@@ -74,7 +72,6 @@ const missionData: Mission[] = [
             {
                 id: 3,
                 title: 'Extract Critical Data from the Server',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '4–7',
@@ -141,7 +138,6 @@ const missionData: Mission[] = [
             {
                 id: 1,
                 title: 'Overload the Firewall',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '2–5',
@@ -171,7 +167,6 @@ const missionData: Mission[] = [
             {
                 id: 2,
                 title: 'Disable Security Bots',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '3–6',
@@ -200,7 +195,6 @@ const missionData: Mission[] = [
             {
                 id: 3,
                 title: 'Take Down the AI Core',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '4–7',
@@ -270,7 +264,6 @@ const missionData: Mission[] = [
             {
                 id: 1,
                 title: 'Reach the Executive Elevator',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '2–5',
@@ -299,7 +292,6 @@ const missionData: Mission[] = [
             {
                 id: 2,
                 title: 'Bypass CEO’s Personal Guard',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '3–6',
@@ -328,7 +320,6 @@ const missionData: Mission[] = [
             {
                 id: 3,
                 title: 'Deliver the Threat',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '4–7',
@@ -396,7 +387,6 @@ const missionData: Mission[] = [
             {
                 id: 1,
                 title: 'Infiltrate the Vault',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '2–5',
@@ -428,7 +418,6 @@ const missionData: Mission[] = [
             {
                 id: 2,
                 title: 'Extract the Sensitive Files',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '3–6',
@@ -460,7 +449,6 @@ const missionData: Mission[] = [
             {
                 id: 3,
                 title: 'Leak the Files to the Public',
-                roll: '2d6',
                 outcomes: [
                     {
                         range: '4–7',

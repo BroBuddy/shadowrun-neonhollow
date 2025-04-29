@@ -2,6 +2,7 @@ import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ErrorBoundary } from 'react-error-boundary'
+import { register } from './serviceWorkerRegistration'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
@@ -82,5 +83,7 @@ root.render(
         <RouterProvider router={router} />
     </StrictMode>
 )
+
+register()
 
 export { Pages, Preloader, ErrorFallback }
