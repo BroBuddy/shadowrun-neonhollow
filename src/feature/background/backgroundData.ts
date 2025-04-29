@@ -1,6 +1,6 @@
 import { Background } from './BackgroundType'
 
-const backgroundData: Background[] = [
+const backgroundStreetSamurai: Background[] = [
     {
         id: 'R711',
         title: 'Ex-Corp Mercenary',
@@ -43,6 +43,9 @@ const backgroundData: Background[] = [
             "Your cybernetic enhancements were once part of a corporate experimentation project. Now, you're a product of their greed and manipulation. Though you're a formidable fighter, your distrust of corporations and technology runs deep, leaving you isolated from others.",
         attributes: ['+1 Reaction', '-1 Logic'],
     },
+]
+
+const backgroundDecker: Background[] = [
     {
         id: 'R721',
         title: 'Corporate Insider',
@@ -85,6 +88,9 @@ const backgroundData: Background[] = [
             'Once a private investigator, you now solve cases by delving deep into the digital world. With a sharp eye for detail and a mastery of investigative software, you dig into the dark corners of the internet, finding information others would never dream of.',
         attributes: ['+1 Intuition', '-1 Strength'],
     },
+]
+
+const backgroundRigger: Background[] = [
     {
         id: 'R731',
         title: 'Mechanic Prodigy',
@@ -127,6 +133,9 @@ const backgroundData: Background[] = [
             'You`ve spent years scavenging for parts, taking what you can from abandoned tech and making it your own. This DIY approach to Rigger work means you`re always improvising, sometimes putting together drones from mismatched parts. Your unconventional methods make you unpredictable, but also highly resourceful.',
         attributes: ['+1 Agility', '-1 Intuition'],
     },
+]
+
+const backgroundMage: Background[] = [
     {
         id: 'R741',
         title: 'Arcane Scholar',
@@ -169,6 +178,9 @@ const backgroundData: Background[] = [
             'Focused on using your magical abilities to heal and protect others, you’ve developed a deep empathy for those in need. You’ve used your powers to mend the sick and wounded, but sometimes your compassion leads you to put others before yourself, putting you at a disadvantage.',
         attributes: ['+1 Logic', '-1 Strength'],
     },
+]
+
+const backgroundFace: Background[] = [
     {
         id: 'R751',
         title: 'Corporate Negotiator',
@@ -211,6 +223,9 @@ const backgroundData: Background[] = [
             'Your past in the media industry has given you a deep understanding of how to control public perception. You can make people believe almost anything, but your focus on shaping reality through words sometimes causes you to overlook the raw, unvarnished truth.',
         attributes: ['+1 Charisma', '-1 Intuition'],
     },
+]
+
+const backgroundShaman: Background[] = [
     {
         id: 'R761',
         title: 'Urban Spirit Whisperer',
@@ -255,10 +270,21 @@ const backgroundData: Background[] = [
     },
 ]
 
-const getBackgroundById = (id: string): Background => {
-    return backgroundData.find(
-        (item: Background) => item.id === id
-    ) as Background
+const backgroundData: Background[] = [
+    ...backgroundStreetSamurai,
+    ...backgroundDecker,
+    ...backgroundRigger,
+    ...backgroundMage,
+    ...backgroundFace,
+    ...backgroundShaman,
+]
+
+const backgroundMap = new Map(
+    backgroundData.map((background: Background) => [background.id, background])
+)
+
+const getBackgroundById = (id: string): Background | undefined => {
+    return backgroundMap.get(id)
 }
 
 export { getBackgroundById }
