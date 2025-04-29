@@ -87,7 +87,7 @@ const mechanicData: Mechanic[] = [
         description:
             'Manage 🔥 Heat to avoid being hunted and losing access to services.',
         list: [
-            'Heat ranges from 0 to 3 and cannot exceed these limits.',
+            'Heat ranges from 0 to 6 and cannot exceed these limits.',
             "Higher Heat levels cause the Corp's special ops to hunt you down.",
             'Lose Health and Energy equal to your current Heat level.',
             'More Heat locks down town districts and restricts services.',

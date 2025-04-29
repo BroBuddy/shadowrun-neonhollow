@@ -2,8 +2,8 @@ import { District } from './CityType'
 
 const cityData: District[] = [
     {
-        name: 'Quantum',
-        heat: '🔴 Heat 1',
+        name: 'Skyline',
+        heat: '🔴 Heat 2',
         facilities: [
             {
                 name: 'MegaCorp',
@@ -16,25 +16,25 @@ const cityData: District[] = [
                 image: '/images/CyberLab.jpg',
             },
             {
-                name: 'SecurityHub',
-                link: '/city/securityhub',
-                image: '/images/SecurityHub.jpg',
-            },
-        ],
-    },
-    {
-        name: 'Serenity',
-        heat: '🟠 Heat 2',
-        facilities: [
-            {
                 name: 'VitalClinic',
                 link: '/city/vitalclinic',
                 image: '/images/VitalClinic.jpg',
             },
+        ],
+    },
+    {
+        name: 'Central',
+        heat: '🟠 Heat 4',
+        facilities: [
             {
-                name: 'EchoGarden',
-                link: '/city/echogarden',
-                image: '/images/EchoGarden.jpg',
+                name: 'SecurityHub',
+                link: '/city/securityhub',
+                image: '/images/SecurityHub.jpg',
+            },
+            {
+                name: 'PulseBar',
+                link: '/city/pulsebar',
+                image: '/images/PulseBar.jpg',
             },
             {
                 name: 'DreamHaven',
@@ -44,13 +44,13 @@ const cityData: District[] = [
         ],
     },
     {
-        name: 'Vortex',
-        heat: '🟡 Heat 3',
+        name: 'Quarter',
+        heat: '🟡 Heat 6',
         facilities: [
             {
-                name: 'PulseBar',
-                link: '/city/pulsebar',
-                image: '/images/PulseBar.jpg',
+                name: 'EchoGarden',
+                link: '/city/echogarden',
+                image: '/images/EchoGarden.jpg',
             },
             {
                 name: 'IronGym',
@@ -65,7 +65,7 @@ const cityData: District[] = [
         ],
     },
     {
-        name: 'Undercity',
+        name: 'Depths',
         heat: '🟢 Heat 4',
         facilities: [
             {
