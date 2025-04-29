@@ -13,16 +13,16 @@ function MatrixTable({ linkPrefix }: MatrixTableProps) {
             <thead>
                 <tr>
                     <th>2d6</th>
-                    {[...Array(cols)].map((_, colIndex) => (
+                    {[...Array(cols)].map((_, colIndex: number) => (
                         <th key={`header-${colIndex + 1}`}>{colIndex + 1}</th>
                     ))}
                 </tr>
             </thead>
             <tbody>
-                {[...Array(rows)].map((_, rowIndex) => (
+                {[...Array(rows)].map((_, rowIndex: number) => (
                     <tr key={`row-${rowIndex + 1}`}>
                         <th>{rowIndex + 1}</th>
-                        {[...Array(cols)].map((_, colIndex) => (
+                        {[...Array(cols)].map((_, colIndex: number) => (
                             <td key={`cell-${rowIndex + 1}-${colIndex + 1}`}>
                                 <Link
                                     to={`${linkPrefix}${rowIndex + 1}${colIndex + 1}`}
