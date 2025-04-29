@@ -34,7 +34,6 @@ body {
 }
 
 .violet-mode {
-    h2,
     .dice {
         border-color: var(--violet);
         color: var(--violet);
@@ -45,6 +44,7 @@ body {
     }
 
     a,
+    h2,
     nav a,
     .highlight {
         color: var(--violet);
@@ -62,7 +62,6 @@ body {
 }
 
 .turquoise-mode {
-    h2,
     .dice {
         border-color: var(--turquoise);
         color: var(--turquoise);
@@ -73,6 +72,7 @@ body {
     }
 
     a,
+    h2,
     nav a,
     .highlight {
         color: var(--turquoise);
@@ -116,12 +116,6 @@ ul {
 
 ol {
     list-style-type: decimal;
-}
-
-h2 {
-    border-left: 3px solid;
-    margin: 0;
-    padding-bottom: 0;
 }
 
 p {

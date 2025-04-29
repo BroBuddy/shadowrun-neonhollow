@@ -3,10 +3,10 @@ import Card from '../components/Card'
 import Headline from '@/components/Headline'
 import MatrixTable from '@/components/MatrixTable'
 
-function Matrix() {
+function Event() {
     return (
         <>
-            <Headline>Matrix</Headline>
+            <Headline>Event</Headline>
             <Card>
                 <p>
                     <strong className="highlight">Event Rules:</strong>
@@ -34,20 +34,8 @@ function Matrix() {
                 </p>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
-
-            <Card>
-                <p>
-                    <strong className="highlight">Runner Matrix:</strong>
-                </p>
-                <p className="flex items-center space-x-1">
-                    <span>Roll 2d6:</span>
-                    <Dice min={1} max={6} />
-                    <Dice min={1} max={6} />
-                </p>
-                <MatrixTable linkPrefix="/rule/R5" />
-            </Card>
         </>
     )
 }
 
-export default Matrix
+export default Event

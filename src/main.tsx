@@ -16,10 +16,10 @@ import BackgroundRouter from './feature/background/BackgroundRouter.tsx'
 import EventRouter from './feature/event/EventRouter.tsx'
 import Preloader from './components/Preloader.tsx'
 
-const ErrorFallback = () => <p>Error</p>
+const ErrorFallback = () => <p>Error: Please reload the App.</p>
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
-    Matrix: React.lazy(() => import('./pages/Matrix')),
+    Event: React.lazy(() => import('./pages/Event.tsx')),
     WellDone: React.lazy(() => import('./pages/WellDone')),
     OverwhelminglyGreat: React.lazy(
         () => import('./pages/OverwhelminglyGreat')
@@ -43,10 +43,10 @@ const router = createBrowserRouter([
                 ),
             },
             {
-                path: '/matrix',
+                path: '/event',
                 element: (
                     <Suspense fallback={<Preloader />}>
-                        <Pages.Matrix />
+                        <Pages.Event />
                     </Suspense>
                 ),
             },

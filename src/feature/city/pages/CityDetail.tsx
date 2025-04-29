@@ -5,12 +5,16 @@ import { Facility, FacilityRoll } from '../FacilityType'
 import ActionsView from '../components/ActionsView'
 import RollsView from '../components/RollsView'
 import { useMemo } from 'react'
+import Card from '@/components/Card'
+import MatrixTable from '@/components/MatrixTable'
+import Dice from '@/components/Dice'
 
 function CityDetail() {
     const { tag } = useParams()
     const data = useMemo(() => {
         return getFacilityByTag(tag as string) as Facility
     }, [tag])
+    const inZeroZone = tag === 'zerozone'
 
     if (!data) {
         return <p>No resource data available.</p>
@@ -44,6 +48,20 @@ function CityDetail() {
             )}
 
             <ActionsView actionList={data.actionList} />
+
+            {inZeroZone && (
+                <Card>
+                    <p>
+                        <strong className="highlight">Runner Matrix:</strong>
+                    </p>
+                    <p className="flex items-center space-x-1">
+                        <span>Roll 2d6:</span>
+                        <Dice min={1} max={6} />
+                        <Dice min={1} max={6} />
+                    </p>
+                    <MatrixTable linkPrefix="/rule/R5" />
+                </Card>
+            )}
         </>
     )
 }

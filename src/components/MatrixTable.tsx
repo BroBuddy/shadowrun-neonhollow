@@ -27,7 +27,8 @@ function MatrixTable({ linkPrefix }: MatrixTableProps) {
                                 <Link
                                     to={`${linkPrefix}${rowIndex + 1}${colIndex + 1}`}
                                 >
-                                    {rowIndex + 1}x{colIndex + 1}
+                                    {rowIndex + 1}
+                                    {colIndex + 1}
                                 </Link>
                             </td>
                         ))}
