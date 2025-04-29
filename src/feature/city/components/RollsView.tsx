@@ -8,7 +8,7 @@ type FacilityRollsProps = {
 
 const RollsView = ({ rollList }: FacilityRollsProps) => {
     return (
-        <Card dice={1}>
+        <Card dice={2}>
             <p>
                 <strong className="highlight">
                     Enter &#8594; -1 Energy &#8594; Roll 2d6:

@@ -17,7 +17,7 @@ function Settings({ toggleColorScheme }: { toggleColorScheme: () => void }) {
             </div>
 
             <div
-                className={`fixed bg-black inset-0 bg-opacity-90 flex transition-transform z-20 duration-500 ${
+                className={`fixed bg-black inset-0 bg-opacity-90 flex transition-transform z-50 duration-500 ${
                     isOpen ? 'translate-y-0' : '-translate-y-full'
                 }`}
             >

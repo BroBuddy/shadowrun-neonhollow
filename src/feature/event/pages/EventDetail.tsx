@@ -26,7 +26,7 @@ function EventDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card>
+            <Card dice={2}>
                 <p>{data.description}</p>
 
                 {data.bonus && (

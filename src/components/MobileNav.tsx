@@ -15,7 +15,7 @@ const links: LinkType[] = [
 
 const MobileNav = () => {
     return (
-        <nav>
+        <nav className="z-40">
             {links.map((item: LinkType, index: number) => (
                 <Link key={index} to={item.path}>
                     <span className="text-xs">

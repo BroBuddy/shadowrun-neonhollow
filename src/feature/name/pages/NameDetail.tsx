@@ -25,9 +25,9 @@ function NameDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card>
+            <Card dice={1}>
                 <p>
-                    🎲 Roll <strong>1d6</strong> to get a first name and{' '}
+                    Roll <strong>1d6</strong> to get a first name and{' '}
                     <strong>1d6</strong> for a second name from the appropriate
                     list.
                 </p>

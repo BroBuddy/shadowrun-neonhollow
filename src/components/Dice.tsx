@@ -1,16 +1,19 @@
 import { useRef, useState } from 'react'
 
-const min = 1
-const max = 6
+type DiceProps = {
+    dice?: number
+}
 
-const Dice = () => {
-    const [content, setContent] = useState<string>('🎲')
+const Dice = ({ dice }: DiceProps) => {
+    const defaultDice: string = '🎲'
+    const [content, setContent] = useState<string>(defaultDice)
     const [isRolling, setIsRolling] = useState<boolean>(false)
     const timeoutRef = useRef<NodeJS.Timeout | null>(null)
+    const min = dice === 1 ? 1 : 2
+    const max = dice === 1 ? 6 : 11
 
     const handleDiceClick = () => {
         if (isRolling) return
-
         runningDice()
 
         timeoutRef.current = setTimeout(() => {
@@ -18,27 +21,30 @@ const Dice = () => {
             setContent(number.toString())
             setIsRolling(false)
 
-            if (timeoutRef.current) clearTimeout(timeoutRef.current)
-
             timeoutRef.current = setTimeout(() => {
                 resetDice()
-            }, 1000)
-        }, 500)
+            }, 1500)
+        }, 300)
     }
 
     const runningDice = () => {
+        setContent(defaultDice)
         setIsRolling(true)
     }
 
     const resetDice = () => {
+        setContent(defaultDice)
         setIsRolling(false)
-        setContent('🎲')
+
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+        }
     }
 
     return (
         <div
-            className={`z-30 dice ${isRolling ? 'active-dice' : ''}`}
-            onClick={handleDiceClick}
+            className={`dice z-30 cursor-pointer ${isRolling ? 'active-dice' : ''}`}
+            onClick={!isRolling ? handleDiceClick : undefined}
         >
             {content}
         </div>

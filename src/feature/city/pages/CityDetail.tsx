@@ -7,7 +7,6 @@ import RollsView from '../components/RollsView'
 import { useMemo } from 'react'
 import Card from '@/components/Card'
 import MatrixTable from '@/components/MatrixTable'
-import Dice from '@/components/Dice'
 
 function CityDetail() {
     const { tag } = useParams()
@@ -50,11 +49,11 @@ function CityDetail() {
             <ActionsView actionList={data.actionList} />
 
             {inZeroZone && (
-                <Card>
+                <Card dice={1}>
                     <p>
                         <strong className="highlight">Runner Matrix:</strong>
                     </p>
-                    <p>Roll 2d6:</p>
+                    <p>Roll 1d6 twice:</p>
                     <MatrixTable linkPrefix="/rule/R5" />
                 </Card>
             )}

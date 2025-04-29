@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { MissionOption, MissionTwist as MissionTwistType } from '../MissionType'
 import Card from '@/components/Card'
+import FadeIn from '@/components/FadeIn'
 
 type MissionTwistProps = {
     twist: MissionTwistType
@@ -8,8 +9,8 @@ type MissionTwistProps = {
 
 const TwistView = ({ twist }: MissionTwistProps) => {
     return (
-        <Card>
-            <div className="mission-task">
+        <Card dice={2}>
+            <FadeIn>
                 <p>
                     <strong className="highlight">Twist:</strong>
                     <br />
@@ -38,7 +39,7 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                         {twist.success.text}
                     </Link>
                 </p>
-            </div>
+            </FadeIn>
         </Card>
     )
 }

@@ -5,11 +5,11 @@ import { getArchetypeData } from '../archtypeData'
 import { Archetype } from '../ArchetypeType'
 
 function ArchetypeView() {
-    const archetypes = useMemo(() => {
+    const data = useMemo(() => {
         return getArchetypeData() as Archetype[]
     }, [])
 
-    if (!archetypes) {
+    if (!data) {
         return <></>
     }
 
@@ -21,7 +21,7 @@ function ArchetypeView() {
 
             <p>Roll 1d6:</p>
             <ol className="list-margin">
-                {archetypes.map((item: Archetype, index: number) => (
+                {data.map((item: Archetype, index: number) => (
                     <li key={index}>
                         <Link to={`/archetype/${item.tag}`}>{item.title}</Link>
                     </li>

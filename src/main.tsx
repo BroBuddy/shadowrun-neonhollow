@@ -7,7 +7,6 @@ import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import RuleRouter from './feature/rule/RuleRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter.tsx'
-import App from './App.tsx'
 import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import NameRouter from './feature/name/NameRouter.tsx'
 import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
@@ -15,11 +14,13 @@ import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 import BackgroundRouter from './feature/background/BackgroundRouter.tsx'
 import EventRouter from './feature/event/EventRouter.tsx'
 import Preloader from './components/Preloader.tsx'
+import Error from './pages/Error.tsx'
+import App from './App.tsx'
 
-const ErrorFallback = () => <p>Error: Please reload the App.</p>
+const ErrorFallback = () => <Error />
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
-    Event: React.lazy(() => import('./pages/Event.tsx')),
+    Event: React.lazy(() => import('./feature/event/pages/Event.tsx')),
     WellDone: React.lazy(() => import('./pages/WellDone')),
     OverwhelminglyGreat: React.lazy(
         () => import('./pages/OverwhelminglyGreat')
@@ -39,14 +40,6 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <Pages.Welcome />
-                    </Suspense>
-                ),
-            },
-            {
-                path: '/event',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Pages.Event />
                     </Suspense>
                 ),
             },

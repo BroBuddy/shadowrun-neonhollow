@@ -1,4 +1,4 @@
-import Card from '../components/Card'
+import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
 import MatrixTable from '@/components/MatrixTable'
 
@@ -26,7 +26,7 @@ function Event() {
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
                 </p>
-                <p>Roll 2d6:</p>
+                <p>Roll 1d6 twice:</p>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
         </>

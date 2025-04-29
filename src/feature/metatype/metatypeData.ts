@@ -76,8 +76,12 @@ const metatypeData: Metatype[] = [
 const validTags = metatypeData.map(({ tag }) => tag)
 const isValidMetatype = (tag: string): boolean => validTags.includes(tag)
 
+const getMetatypeData = (): Pick<Metatype, 'tag' | 'title'>[] => {
+    return metatypeData.map(({ tag, title }) => ({ tag, title }))
+}
+
 const getMetatypeByTag = (tag: string): Metatype | undefined => {
     return metatypeData.find((item: Metatype) => item.tag === tag) as Metatype
 }
 
-export { getMetatypeByTag, isValidMetatype }
+export { getMetatypeData, getMetatypeByTag, isValidMetatype }
