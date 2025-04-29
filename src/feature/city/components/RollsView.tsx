@@ -12,9 +12,8 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
         <Card dice={2}>
             <FadeIn>
                 <p>
-                    <strong className="highlight">
-                        Enter &#8594; -1 Energy &#8594; Roll 2d6:
-                    </strong>
+                    <strong className="highlight">Enter</strong> &#8594;{' '}
+                    <strong>SPEND:</strong> 1 Energy &#8594; Roll 2d6:
                 </p>
                 <ul className="list-margin">
                     {rollList.map((item: FacilityRoll, index: number) => (

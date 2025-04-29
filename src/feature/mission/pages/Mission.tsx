@@ -38,9 +38,11 @@ function Mission() {
             <Card dice={2}>
                 <FadeIn>
                     <p>
-                        Focus on mastering both{' '}
-                        <Link to="/mission/rules">Rules</Link> and{' '}
-                        <Link to="/mission/performance">Performance</Link>.
+                        Know the rules{' '}
+                        <Link to="/mission/rules">Mission Rules</Link> before
+                        your
+                        <br />
+                        run begins.
                     </p>
                     <p>
                         <strong className="highlight">Accept a mission:</strong>

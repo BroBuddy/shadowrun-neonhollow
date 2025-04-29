@@ -42,29 +42,33 @@ function EventDetail() {
                         </>
                     )}
 
-                    {data.skillChecks &&
-                        data.skillChecks.map(
-                            (item: SkillCheck, index: number) => (
-                                <div key={index}>
-                                    <p>
-                                        <strong className="highlight">
-                                            {item.attribute} (DC {item.dc}):
-                                        </strong>
-                                        <br />
-                                        {item.description}
-                                    </p>
-                                    <ul className="list-margin">
-                                        <li>
-                                            <strong>Success:</strong>{' '}
-                                            {item.success}
-                                        </li>
-                                        <li>
-                                            <strong>Fail:</strong> {item.fail}
-                                        </li>
-                                    </ul>
-                                </div>
-                            )
-                        )}
+                    {data.skillChecks && (
+                        <>
+                            {data.skillChecks.map(
+                                (item: SkillCheck, index: number) => (
+                                    <div key={index}>
+                                        <p>
+                                            <strong className="highlight">
+                                                {item.attribute} (DC {item.dc}):
+                                                <br />
+                                            </strong>{' '}
+                                            {item.description}
+                                        </p>
+                                        <ul className="list-margin">
+                                            <li>
+                                                Roll 2d6 &#8594; Add{' '}
+                                                {item.attribute}
+                                            </li>
+                                            <li>
+                                                Success? &#8594; {item.success}
+                                            </li>
+                                            <li>Fail? &#8594; {item.fail}</li>
+                                        </ul>
+                                    </div>
+                                )
+                            )}
+                        </>
+                    )}
                 </FadeIn>
             </Card>
         </>
