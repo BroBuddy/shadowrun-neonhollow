@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const Character = React.lazy(() => import('../character/pages/Character'))
 
 const CharacterRouter = [
@@ -11,7 +10,7 @@ const CharacterRouter = [
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Character />
                     </Suspense>
                 ),

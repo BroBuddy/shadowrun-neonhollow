@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const Rule = React.lazy(() => import('./pages/Rule'))
 const RuleDetail = React.lazy(() => import('./pages/RuleDetail'))
 
@@ -12,7 +11,7 @@ const RuleRouter = [
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Rule />
                     </Suspense>
                 ),
@@ -20,7 +19,7 @@ const RuleRouter = [
             {
                 path: ':tag',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <RuleDetail />
                     </Suspense>
                 ),

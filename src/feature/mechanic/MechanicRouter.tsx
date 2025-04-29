@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const MechanicDetail = React.lazy(
     () => import('../mechanic/pages/MechanicDetail')
 )
@@ -13,7 +12,7 @@ const MechanicRouter = [
             {
                 path: ':tag',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <MechanicDetail />
                     </Suspense>
                 ),

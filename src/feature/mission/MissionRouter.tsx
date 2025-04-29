@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const Mission = React.lazy(() => import('./pages/Mission'))
 const MissionDetail = React.lazy(() => import('./pages/MissionDetail'))
 const MissionPerformance = React.lazy(
@@ -16,7 +15,7 @@ const MissionRouter = [
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Mission />
                     </Suspense>
                 ),
@@ -24,7 +23,7 @@ const MissionRouter = [
             {
                 path: 'rules',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <MissionRules />
                     </Suspense>
                 ),
@@ -32,7 +31,7 @@ const MissionRouter = [
             {
                 path: 'performance',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <MissionPerformance />
                     </Suspense>
                 ),
@@ -40,7 +39,7 @@ const MissionRouter = [
             {
                 path: ':id',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <MissionDetail />
                     </Suspense>
                 ),

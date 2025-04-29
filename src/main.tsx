@@ -16,7 +16,6 @@ import BackgroundRouter from './feature/background/BackgroundRouter.tsx'
 import EventRouter from './feature/event/EventRouter.tsx'
 import Preloader from './components/Preloader.tsx'
 
-const LoadingFallback = () => <Preloader />
 const ErrorFallback = () => <p>Error</p>
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
@@ -38,7 +37,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Pages.Welcome />
                     </Suspense>
                 ),
@@ -46,7 +45,7 @@ const router = createBrowserRouter([
             {
                 path: '/matrix',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Pages.Matrix />
                     </Suspense>
                 ),
@@ -54,7 +53,7 @@ const router = createBrowserRouter([
             {
                 path: '/welldone',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Pages.WellDone />
                     </Suspense>
                 ),
@@ -62,7 +61,7 @@ const router = createBrowserRouter([
             {
                 path: '/overwhelminglygreat',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <Pages.OverwhelminglyGreat />
                     </Suspense>
                 ),
@@ -91,4 +90,4 @@ root.render(
     </StrictMode>
 )
 
-export { Pages, LoadingFallback, ErrorFallback }
+export { Pages, Preloader, ErrorFallback }

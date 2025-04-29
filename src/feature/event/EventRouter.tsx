@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const EventDetail = React.lazy(() => import('../event/pages/EventDetail'))
 
 const EventRouter = [
@@ -11,7 +10,7 @@ const EventRouter = [
             {
                 path: ':id',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <EventDetail />
                     </Suspense>
                 ),

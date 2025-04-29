@@ -1,7 +1,6 @@
 import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
-const LoadingFallback = () => <Preloader />
 const City = React.lazy(() => import('./pages/City'))
 const CityDetail = React.lazy(() => import('./pages/CityDetail'))
 
@@ -12,7 +11,7 @@ const CityRouter = [
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <City />
                     </Suspense>
                 ),
@@ -20,7 +19,7 @@ const CityRouter = [
             {
                 path: ':tag',
                 element: (
-                    <Suspense fallback={<LoadingFallback />}>
+                    <Suspense fallback={<Preloader />}>
                         <CityDetail />
                     </Suspense>
                 ),
