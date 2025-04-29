@@ -1,4 +1,3 @@
-import Dice from '@/components/Dice'
 import Card from '../components/Card'
 import Headline from '@/components/Headline'
 import MatrixTable from '@/components/MatrixTable'
@@ -23,15 +22,11 @@ function Event() {
                 </ol>
             </Card>
 
-            <Card>
+            <Card dice={1}>
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
                 </p>
-                <div className="flex items-center mb-3 space-x-1">
-                    <span>Roll 2d6:</span>
-                    <Dice min={1} max={6} />
-                    <Dice min={1} max={6} />
-                </div>
+                <p>Roll 2d6:</p>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
         </>

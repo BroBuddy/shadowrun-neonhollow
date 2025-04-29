@@ -8,7 +8,7 @@ type FacilityActionsProps = {
 
 const ActionsView = ({ actionList }: FacilityActionsProps) => {
     return (
-        <Card>
+        <Card dice={1}>
             {actionList.map((item: FacilityAction, actionIndex: number) => (
                 <div key={actionIndex}>
                     <p>

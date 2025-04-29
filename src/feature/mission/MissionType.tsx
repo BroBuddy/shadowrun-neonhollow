@@ -14,7 +14,6 @@ type Mission = {
 type MissionTask = {
     id: number
     title: string
-    roll: string
     outcomes: MissionOutcome[]
     failure: MissionFailure
 }

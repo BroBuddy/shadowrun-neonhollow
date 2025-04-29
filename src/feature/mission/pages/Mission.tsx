@@ -32,7 +32,7 @@ function Mission() {
                 </div>
             </div>
 
-            <Card>
+            <Card dice={1}>
                 <p>
                     Focus on mastering both{' '}
                     <Link to="/mission/rules">Rules</Link> and{' '}

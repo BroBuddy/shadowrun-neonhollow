@@ -13,15 +13,29 @@ const TasksView = ({
     missionProgress,
     onProgress,
 }: MissionTasksProps) => {
+    const onHandleProgress = (currentProgress: number) => {
+        handleScrollToBottom()
+        onProgress(currentProgress)
+    }
+
+    const handleScrollToBottom = () => {
+        setTimeout(() => {
+            window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: 'smooth',
+            })
+        }, 0)
+    }
+
     return (
-        <Card>
+        <Card dice={1}>
             {tasks.map((item: MissionTask, index: number) =>
                 missionProgress >= index ? (
                     <div className="mission-task" key={item.id}>
                         <p>
                             <strong className="highlight">{item.title}</strong>
                         </p>
-                        <p>🎲 Roll {item.roll}:</p>
+                        <p>Roll 2d6:</p>
                         <ul className="list-margin">
                             {item.outcomes.map((outcome: MissionOutcome) => (
                                 <li key={outcome.range}>
@@ -40,12 +54,17 @@ const TasksView = ({
                                 {item.failure.text}
                             </Link>
                         </p>
-                        <p
-                            className="text-2xl mb-5 flex justify-center items-center cursor-pointer"
-                            onClick={() => onProgress(index + 1)}
-                        >
-                            &#8595;
-                        </p>
+                        {missionProgress === index && (
+                            <div
+                                className="mb-5 flex justify-center items-center cursor-pointer"
+                                onClick={() => onHandleProgress(index + 1)}
+                            >
+                                <span className="text-2xl mr-2">&#8595;</span>
+                                <span className="mt-1">
+                                    {index < 2 ? 'Next Task' : 'Reveal Twist'}
+                                </span>
+                            </div>
+                        )}
                     </div>
                 ) : null
             )}

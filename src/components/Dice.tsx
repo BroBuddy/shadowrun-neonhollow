@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 
-type DiceType = { min: number; max: number }
+const min = 1
+const max = 6
 
-const Dice = ({ min, max }: DiceType) => {
+const Dice = () => {
     const [content, setContent] = useState<string>('🎲')
     const [isRolling, setIsRolling] = useState<boolean>(false)
     const timeoutRef = useRef<NodeJS.Timeout | null>(null)
@@ -36,7 +37,7 @@ const Dice = ({ min, max }: DiceType) => {
 
     return (
         <div
-            className={`dice ${isRolling ? 'active-dice' : ''}`}
+            className={`z-30 dice ${isRolling ? 'active-dice' : ''}`}
             onClick={handleDiceClick}
         >
             {content}

@@ -1,17 +1,15 @@
 import Card from '@/components/Card'
-import Dice from '@/components/Dice'
 import { Link } from 'react-router-dom'
 
 function MetatypeView() {
     return (
-        <Card>
+        <Card dice={1}>
             <p>
                 <strong className="highlight">Metatype:</strong>
             </p>
-            <div className="flex items-center space-x-1">
+            <p>
                 <span>Roll 1d6:</span>
-                <Dice min={1} max={6} />
-            </div>
+            </p>
             <div className="flex justify-between gap-3">
                 <div className="flex-1 basis-1/3 text-center">
                     <Link to="/metatype/human">

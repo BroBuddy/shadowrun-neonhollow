@@ -1,7 +1,6 @@
 import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
 import { FacilityRoll } from '../FacilityType'
-import Dice from '@/components/Dice'
 
 type FacilityRollsProps = {
     rollList: FacilityRoll[]
@@ -9,14 +8,12 @@ type FacilityRollsProps = {
 
 const RollsView = ({ rollList }: FacilityRollsProps) => {
     return (
-        <Card>
-            <div className="flex items-center space-x-1">
+        <Card dice={1}>
+            <p>
                 <strong className="highlight">
                     Enter &#8594; -1 Energy &#8594; Roll 2d6:
                 </strong>
-                <Dice min={1} max={6} />
-                <Dice min={1} max={6} />
-            </div>
+            </p>
             <ul className="list-margin">
                 {rollList.map((item: FacilityRoll, index: number) => (
                     <li key={index}>

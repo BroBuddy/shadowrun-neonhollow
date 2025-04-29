@@ -54,11 +54,7 @@ function CityDetail() {
                     <p>
                         <strong className="highlight">Runner Matrix:</strong>
                     </p>
-                    <p className="flex items-center space-x-1">
-                        <span>Roll 2d6:</span>
-                        <Dice min={1} max={6} />
-                        <Dice min={1} max={6} />
-                    </p>
+                    <p>Roll 2d6:</p>
                     <MatrixTable linkPrefix="/rule/R5" />
                 </Card>
             )}
