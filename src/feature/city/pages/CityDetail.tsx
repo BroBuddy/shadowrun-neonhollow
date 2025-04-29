@@ -7,6 +7,7 @@ import RollsView from '../components/RollsView'
 import { useMemo } from 'react'
 import Card from '@/components/Card'
 import MatrixTable from '@/components/MatrixTable'
+import FadeIn from '@/components/FadeIn'
 
 function CityDetail() {
     const { tag } = useParams()
@@ -31,9 +32,11 @@ function CityDetail() {
                     />
                 </div>
                 <div className="flex-1 basis-1/2">
-                    <p>
-                        <em>"{data.description}"</em>
-                    </p>
+                    <FadeIn>
+                        <p>
+                            <em>"{data.description}"</em>
+                        </p>
+                    </FadeIn>
                 </div>
             </div>
 

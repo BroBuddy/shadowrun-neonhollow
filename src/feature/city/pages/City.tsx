@@ -3,6 +3,7 @@ import { District as DistrictType } from '../CityType'
 import Headline from '@/components/Headline'
 import DistrictView from '../components/DistrictView'
 import { useMemo } from 'react'
+import FadeIn from '@/components/FadeIn'
 
 function City() {
     const cityData = useMemo(() => getCityData(), [])
@@ -15,17 +16,19 @@ function City() {
                     <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
                 </div>
                 <div className="flex-1 basis-1/2">
-                    <p>
-                        <strong>District Lockdowns:</strong>
-                    </p>
-                    {cityData.map(
-                        (district: DistrictType, index: number) =>
-                            index <= 2 && (
-                                <p key={index}>
-                                    {district.heat} → {district.name}
-                                </p>
-                            )
-                    )}
+                    <FadeIn>
+                        <p>
+                            <strong>District Lockdowns:</strong>
+                        </p>
+                        {cityData.map(
+                            (district: DistrictType, index: number) =>
+                                index <= 2 && (
+                                    <p key={index}>
+                                        {district.heat} → {district.name}
+                                    </p>
+                                )
+                        )}
+                    </FadeIn>
                 </div>
             </div>
             {cityData.map((district: DistrictType, index: number) => (

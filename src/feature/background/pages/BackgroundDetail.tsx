@@ -3,6 +3,7 @@ import Headline from '@/components/Headline'
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBackgroundById, isValidBackground } from '../backgroundData'
+import FadeIn from '@/components/FadeIn'
 
 function BackgroundDetail() {
     const { id } = useParams()
@@ -23,18 +24,22 @@ function BackgroundDetail() {
         <>
             <Headline>{data.title}</Headline>
             <Card>
-                <p>{data.description}</p>
-                <p>
-                    <strong className="highlight">
-                        Attribute Adjustments:
-                    </strong>
-                </p>
-                <ul className="list-margin">
-                    {data.attributes.map((attribute: string, index: number) => (
-                        <li key={index}>{attribute}</li>
-                    ))}
-                </ul>
-                <p>Apply the bonuses to your player sheet.</p>
+                <FadeIn>
+                    <p>{data.description}</p>
+                    <p>
+                        <strong className="highlight">
+                            Attribute Adjustments:
+                        </strong>
+                    </p>
+                    <ul className="list-margin">
+                        {data.attributes.map(
+                            (attribute: string, index: number) => (
+                                <li key={index}>{attribute}</li>
+                            )
+                        )}
+                    </ul>
+                    <p>Apply the bonuses to your player sheet.</p>
+                </FadeIn>
             </Card>
         </>
     )

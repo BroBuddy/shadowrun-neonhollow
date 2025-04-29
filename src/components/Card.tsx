@@ -3,7 +3,7 @@ import Dice from './Dice'
 
 type CardProps = {
     children: React.ReactNode
-    dice?: number
+    dice?: number | undefined
 }
 
 const Card = ({ children, dice }: CardProps) => {

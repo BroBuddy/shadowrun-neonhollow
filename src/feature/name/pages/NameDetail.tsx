@@ -4,6 +4,7 @@ import { getNameByTag, isValidName } from '../nameData'
 import { Name } from '../NameType'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
+import FadeIn from '@/components/FadeIn'
 
 function NameDetail() {
     const { tag } = useParams()
@@ -26,37 +27,43 @@ function NameDetail() {
         <>
             <Headline>{data.title}</Headline>
             <Card dice={1}>
-                <p>
-                    Roll <strong>1d6</strong> to get a first name and{' '}
-                    <strong>1d6</strong> for a second name from the appropriate
-                    list.
-                </p>
-                <div className="grid grid-cols-2">
-                    <div>
-                        <p>
-                            <strong className="highlight">First Name:</strong>
-                        </p>
-                        <ol>
-                            {data.firstNames.map(
-                                (name: string, index: number) => (
-                                    <li key={index}>{name}</li>
-                                )
-                            )}
-                        </ol>
+                <FadeIn>
+                    <p>
+                        Roll <strong>1d6</strong> to get a first name and{' '}
+                        <strong>1d6</strong> for a second name from the
+                        appropriate list.
+                    </p>
+                    <div className="grid grid-cols-2">
+                        <div>
+                            <p>
+                                <strong className="highlight">
+                                    First Name:
+                                </strong>
+                            </p>
+                            <ol>
+                                {data.firstNames.map(
+                                    (name: string, index: number) => (
+                                        <li key={index}>{name}</li>
+                                    )
+                                )}
+                            </ol>
+                        </div>
+                        <div>
+                            <p>
+                                <strong className="highlight">
+                                    Last Name:
+                                </strong>
+                            </p>
+                            <ol>
+                                {data.lastNames.map(
+                                    (name: string, index: number) => (
+                                        <li key={index}>{name}</li>
+                                    )
+                                )}
+                            </ol>
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            <strong className="highlight">Last Name:</strong>
-                        </p>
-                        <ol>
-                            {data.lastNames.map(
-                                (name: string, index: number) => (
-                                    <li key={index}>{name}</li>
-                                )
-                            )}
-                        </ol>
-                    </div>
-                </div>
+                </FadeIn>
             </Card>
         </>
     )

@@ -1,5 +1,5 @@
 import Card from '@/components/Card'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { ActionStep, FacilityAction } from '../FacilityType'
 
 type FacilityActionsProps = {
@@ -7,8 +7,11 @@ type FacilityActionsProps = {
 }
 
 const ActionsView = ({ actionList }: FacilityActionsProps) => {
+    const { tag } = useParams()
+    const inMegaCorp = tag === 'megacorp'
+
     return (
-        <Card dice={2}>
+        <Card dice={inMegaCorp ? undefined : 2}>
             {actionList.map((item: FacilityAction, actionIndex: number) => (
                 <div key={actionIndex}>
                     <p>

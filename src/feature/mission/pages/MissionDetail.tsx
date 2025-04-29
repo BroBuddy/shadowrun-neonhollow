@@ -5,6 +5,7 @@ import { getMissionById } from '../missionData'
 import Headline from '@/components/Headline'
 import TasksView from '../components/TasksView'
 import TwistView from '../components/TwistView'
+import FadeIn from '@/components/FadeIn'
 
 function MissionDetail() {
     const { id } = useParams()
@@ -23,19 +24,21 @@ function MissionDetail() {
         <>
             <Headline>{data.title}</Headline>
             <Card>
-                <p>
-                    <strong className="highlight">Client:</strong>
-                    <br />
-                    {data.client.name}, {data.client.location}
-                </p>
-                <p>
-                    <strong className="highlight">Location:</strong>
-                    <br /> {data.mission_location}
-                </p>
-                <p>
-                    <strong className="highlight">Briefing:</strong>
-                    <br /> {data.briefing}
-                </p>
+                <FadeIn>
+                    <p>
+                        <strong className="highlight">Client:</strong>
+                        <br />
+                        {data.client.name}, {data.client.location}
+                    </p>
+                    <p>
+                        <strong className="highlight">Location:</strong>
+                        <br /> {data.mission_location}
+                    </p>
+                    <p>
+                        <strong className="highlight">Briefing:</strong>
+                        <br /> {data.briefing}
+                    </p>
+                </FadeIn>
             </Card>
 
             <TasksView
