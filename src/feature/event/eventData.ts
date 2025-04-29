@@ -1,6 +1,6 @@
 import { Event } from './EventType'
 
-const eventOnes: Event[] = [
+const eventOnes: readonly Event[] = [
     {
         id: 'R411',
         title: 'Power Surge',
@@ -140,7 +140,7 @@ const eventOnes: Event[] = [
     },
 ]
 
-const eventTwos: Event[] = [
+const eventTwos: readonly Event[] = [
     {
         id: 'R421',
         title: 'Drone Interference',
@@ -279,7 +279,7 @@ const eventTwos: Event[] = [
     },
 ]
 
-const eventThrees: Event[] = [
+const eventThrees: readonly Event[] = [
     {
         id: 'R431',
         title: 'Night Howlers',
@@ -422,7 +422,7 @@ const eventThrees: Event[] = [
     },
 ]
 
-const eventFours: Event[] = [
+const eventFours: readonly Event[] = [
     {
         id: 'R441',
         title: 'Synthetic Plague',
@@ -562,7 +562,7 @@ const eventFours: Event[] = [
     },
 ]
 
-const eventFives: Event[] = [
+const eventFives: readonly Event[] = [
     {
         id: 'R451',
         title: 'Corporate Espionage',
@@ -707,7 +707,7 @@ const eventFives: Event[] = [
     },
 ]
 
-const eventSixes: Event[] = [
+const eventSixes: readonly Event[] = [
     {
         id: 'R461',
         title: 'Blackout in the District',
@@ -853,7 +853,202 @@ const eventSixes: Event[] = [
     },
 ]
 
-const eventEncounter: Event[] = [
+const eventFacility: readonly Event[] = [
+    {
+        id: 'R471',
+        title: 'System Anomaly',
+        description:
+            'The Neural Nexus system experiences a sudden, unexplained anomaly. Screens flicker, wires spark, and the usual hum of the servers is replaced by unsettling silence. An emergency shutdown is imminent, and the whole building could crash if not stabilized quickly.',
+        skillChecks: [
+            {
+                attribute: 'Logic',
+                dc: 12,
+                description:
+                    "Analyze the anomaly's source and implement a corrective action to stabilize the system.",
+                success: '+1 Temporary Logic',
+                fail: '-2 Energy',
+            },
+            {
+                attribute: 'Intuition',
+                dc: 10,
+                description:
+                    'Spot the hidden cause of the malfunction and anticipate the next failure point.',
+                success: '+1 Intel',
+                fail: '+1 Heat',
+            },
+        ],
+    },
+    {
+        id: 'R472',
+        title: 'Patrol Check',
+        description:
+            "As you enter PatrolHub, you're immediately confronted by a pair of security officers. They seem suspicious and are questioning your presence in the area. It's clear they are ready to test your credentials or try to get some extra information from you.",
+        skillChecks: [
+            {
+                attribute: 'Strength',
+                dc: 12,
+                description:
+                    'Use your strength to physically assert yourself by intimidating the officers.',
+                success: '+1 Temporary Strength',
+                fail: '+1 Heat',
+            },
+            {
+                attribute: 'Charisma',
+                dc: 10,
+                description:
+                    'Charm or persuade the officers, using your wit and presence to smooth over the situation.',
+                success: '+1 Intel',
+                fail: '+1 Heat',
+            },
+        ],
+    },
+    {
+        id: 'R473',
+        title: 'Medical Malfunction',
+        description:
+            'A sudden medical malfunction has put several patients in critical condition. The usual staff is overwhelmed, and BioCare’s system is struggling to prioritize the patients in need of emergency care. You’ve been called in to help, but time is running out.',
+        skillChecks: [
+            {
+                attribute: 'Agility',
+                dc: 12,
+                description:
+                    'Use your agility to quickly navigate the chaotic environment and assist in moving patients to safety.',
+                success: '+1 Temporary Agility',
+                fail: '-2 Health',
+            },
+            {
+                attribute: 'Strength',
+                dc: 10,
+                description:
+                    'Apply your strength to physically move patients or assist with heavy medical equipment.',
+                success: '+1 Reputation',
+                fail: '+1 Heat',
+            },
+        ],
+    },
+    {
+        id: 'R474',
+        title: 'Lost Data',
+        description:
+            'While enjoying the tranquil atmosphere of EchoGarden, a small portable data storage device is dropped nearby. Upon inspection, you realize it contains highly sensitive data, likely from a corporate leak. There are multiple ways to deal with the device, but time is running out.',
+        skillChecks: [
+            {
+                attribute: 'Reaction',
+                dc: 12,
+                description:
+                    'React quickly to either stash the device in a safe spot or maneuver around others who might notice it.',
+                success: '+1 Temporary Agility',
+                fail: '-2 Energy',
+            },
+            {
+                attribute: 'Agility',
+                dc: 10,
+                description:
+                    'Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.',
+                success: '+1 Reputation',
+                fail: '+1 Heat',
+            },
+        ],
+    },
+    {
+        id: 'R475',
+        title: 'Dream State Disturbance',
+        description:
+            'As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.',
+        skillChecks: [
+            {
+                attribute: 'Intuition',
+                dc: 12,
+                description:
+                    'Use your instinct and quick thinking to identify the core issue and stabilize the virtual environment.',
+                success: '+1 Temporary Intuition',
+                fail: '-2 Energy',
+            },
+            {
+                attribute: 'Reaction',
+                dc: 10,
+                description:
+                    'Move swiftly to grab a lost runner’s attention and guide them to safety.',
+                success: '+1 Reputation',
+                fail: '-2 Health',
+            },
+        ],
+    },
+    {
+        id: 'R476',
+        title: 'The Whisper Network',
+        description:
+            'The atmosphere in HoloLounge is electric tonight. The neon lights flash in sync with the pulsing beats, and people from all walks of life gather here. You spot an influential figure seated at the bar, surrounded by chatter.',
+        skillChecks: [
+            {
+                attribute: 'Charisma',
+                dc: 12,
+                description:
+                    'Charm your way into a conversation with the influential figure.',
+                success: '+1 Temporary Charisma',
+                fail: '+1 Heat',
+            },
+            {
+                attribute: 'Intuition',
+                dc: 10,
+                description:
+                    'Pay attention to the subtle body language and hidden cues in the conversation.',
+                success: '+1 Intel',
+                fail: '-1 Energy',
+            },
+        ],
+    },
+    {
+        id: 'R477',
+        title: 'Unplanned Challenge',
+        description:
+            "As you work out in the IronGym, a loud crash echoes across the room. A massive weight has fallen from the rack, pinning an unconscious individual beneath it. The gym is in chaos as people rush to help, but there's a delay in the emergency response.",
+        skillChecks: [
+            {
+                attribute: 'Strength',
+                dc: 12,
+                description:
+                    'Lift the heavy weight off the person with raw strength.',
+                success: '+1 Temporary Strength',
+                fail: '-2 Health',
+            },
+            {
+                attribute: 'Reaction',
+                dc: 10,
+                description:
+                    'React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.',
+                success: '+1 Reputation',
+                fail: '+1 Heat',
+            },
+        ],
+    },
+    {
+        id: 'R478',
+        title: 'Smuggler’s Test',
+        description:
+            "As you step into SmugglerDen, you're immediately stopped by a group of shady individuals guarding the entrance. They give you a hard stare and ask if you’ve got the right credentials to be here. It's clear they're not going to let anyone through without proving themselves.",
+        skillChecks: [
+            {
+                attribute: 'Agility',
+                dc: 12,
+                description:
+                    'Use your agility to slip past the guards unnoticed or avoid a confrontation with a quick dodge.',
+                success: '+1 Temporary Agility',
+                fail: '+1 Heat',
+            },
+            {
+                attribute: 'Logic',
+                dc: 10,
+                description:
+                    'Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.',
+                success: '+1 Reputation',
+                fail: '-2 Health',
+            },
+        ],
+    },
+]
+
+const eventEncounter: readonly Event[] = [
     {
         id: 'R481',
         title: 'Mysterious Encounter',
@@ -898,13 +1093,14 @@ const eventEncounter: Event[] = [
     },
 ]
 
-const eventData: Event[] = [
+const eventData: readonly Event[] = [
     ...eventOnes,
     ...eventTwos,
     ...eventThrees,
     ...eventFours,
     ...eventFives,
     ...eventSixes,
+    ...eventFacility,
     ...eventEncounter,
 ]
 

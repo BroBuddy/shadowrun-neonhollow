@@ -33,7 +33,7 @@ const mechanicData: Mechanic[] = [
         list: [
             '6 days to dismantle the system, with 6 hours per cycle.',
             'In total, only thirty-six actions to be allocated thoughtfully.',
-            'Actions cost 1 Energy and 1 Hour and can only be performed once per day.',
+            'Each action consumes 1 hour and may only be performed once daily, except when at a SafeHouse.',
             'Roll on the Event Matrix at the end of the day.',
         ],
     },
