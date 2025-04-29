@@ -9,34 +9,36 @@ type MissionTwistProps = {
 const TwistView = ({ twist }: MissionTwistProps) => {
     return (
         <Card>
-            <p>
-                <strong className="highlight">Twist:</strong>
-                <br />
-                {twist.description}
-            </p>
-            <ul>
-                {twist.options.map((item: MissionOption, index: number) => (
-                    <li key={index}>
-                        <strong>
-                            {item.stat} (DC {item.dc}):
-                        </strong>
-                        <br />
-                        {item.description}
-                    </li>
-                ))}
-            </ul>
-            <p>
-                Fail? &#8594;{' '}
-                <Link to={`/${twist.failure.redirect}`}>
-                    {twist.failure.text}
-                </Link>
-            </p>
-            <p>
-                Success? &#8594;{' '}
-                <Link to={`/${twist.success.redirect}`}>
-                    {twist.success.text}
-                </Link>
-            </p>
+            <div className="mission-task">
+                <p>
+                    <strong className="highlight">Twist:</strong>
+                    <br />
+                    {twist.description}
+                </p>
+                <ul>
+                    {twist.options.map((item: MissionOption, index: number) => (
+                        <li key={index}>
+                            <strong>
+                                {item.stat} (DC {item.dc}):
+                            </strong>
+                            <br />
+                            {item.description}
+                        </li>
+                    ))}
+                </ul>
+                <p>
+                    Fail? &#8594;{' '}
+                    <Link to={`/${twist.failure.redirect}`}>
+                        {twist.failure.text}
+                    </Link>
+                </p>
+                <p>
+                    Success? &#8594;{' '}
+                    <Link to={`/${twist.success.redirect}`}>
+                        {twist.success.text}
+                    </Link>
+                </p>
+            </div>
         </Card>
     )
 }

@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '@/components/Card'
 import { getMissionById } from '../missionData'
@@ -9,6 +9,11 @@ import TwistView from '../components/TwistView'
 function MissionDetail() {
     const { id } = useParams()
     const data = useMemo(() => getMissionById(id as string), [id])
+    const [missionProgress, setMissionProgress] = useState<number>(0)
+
+    const handleMissionProgress = (currentProgress: number) => {
+        setMissionProgress(currentProgress)
+    }
 
     if (!data) {
         return <></>
@@ -33,9 +38,13 @@ function MissionDetail() {
                 </p>
             </Card>
 
-            <TasksView tasks={data.tasks} />
+            <TasksView
+                tasks={data.tasks}
+                missionProgress={missionProgress}
+                onProgress={handleMissionProgress}
+            />
 
-            <TwistView twist={data.twist} />
+            {missionProgress === 3 && <TwistView twist={data.twist} />}
         </>
     )
 }

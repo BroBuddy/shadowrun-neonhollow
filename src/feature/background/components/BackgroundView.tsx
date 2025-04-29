@@ -9,10 +9,10 @@ function BackgroundView() {
                 <strong className="highlight">Background:</strong>
             </p>
             <p>Your archetype is the tens digit.</p>
-            <p className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1">
                 <span>Roll 1d6:</span>
                 <Dice min={1} max={6} />
-            </p>
+            </div>
             <MatrixTable linkPrefix="/background/R7" />
         </Card>
     )

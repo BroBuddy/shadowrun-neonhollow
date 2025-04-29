@@ -24,7 +24,7 @@ body {
     background-attachment: fixed;
     padding: 0;
     font-family: 'Exo 2', Verdana, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--white);
     padding-bottom: 50px;
     margin: 0;
@@ -190,12 +190,26 @@ nav {
     }
 }
 
+.mission-task {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
 .preloader {
     animation: spinner 2s linear infinite;
 }
 
 .active-dice {
     animation: spinner 250ms linear infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes spinner {

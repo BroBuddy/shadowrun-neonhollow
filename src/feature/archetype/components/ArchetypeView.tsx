@@ -20,10 +20,10 @@ function ArchetypeView() {
                 <strong className="highlight">Archetype:</strong>
             </p>
 
-            <p className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1">
                 <span>Roll 1d6:</span>
                 <Dice min={1} max={6} />
-            </p>
+            </div>
             <ol className="list-margin">
                 {archetypes.map((item: Archetype, index: number) => (
                     <li key={index}>

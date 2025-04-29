@@ -10,13 +10,13 @@ type FacilityRollsProps = {
 const RollsView = ({ rollList }: FacilityRollsProps) => {
     return (
         <Card>
-            <p className="flex items-center space-x-1">
+            <div className="flex items-center space-x-1">
                 <strong className="highlight">
                     Enter &#8594; -1 Energy &#8594; Roll 2d6:
                 </strong>
                 <Dice min={1} max={6} />
                 <Dice min={1} max={6} />
-            </p>
+            </div>
             <ul className="list-margin">
                 {rollList.map((item: FacilityRoll, index: number) => (
                     <li key={index}>

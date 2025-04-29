@@ -27,11 +27,11 @@ function Event() {
                 <p>
                     <strong className="highlight">Event Matrix:</strong>
                 </p>
-                <p className="flex items-center space-x-1">
+                <div className="flex items-center mb-3 space-x-1">
                     <span>Roll 2d6:</span>
                     <Dice min={1} max={6} />
                     <Dice min={1} max={6} />
-                </p>
+                </div>
                 <MatrixTable linkPrefix="/event/R4" />
             </Card>
         </>
