@@ -1,6 +1,6 @@
 import { Event } from './EventType'
 
-const eventData: Event[] = [
+const eventOnes: Event[] = [
     {
         id: 'R411',
         title: 'Power Surge',
@@ -138,6 +138,9 @@ const eventData: Event[] = [
             },
         ],
     },
+]
+
+const eventTwos: Event[] = [
     {
         id: 'R421',
         title: 'Drone Interference',
@@ -274,6 +277,9 @@ const eventData: Event[] = [
             },
         ],
     },
+]
+
+const eventThrees: Event[] = [
     {
         id: 'R431',
         title: 'Night Howlers',
@@ -414,6 +420,9 @@ const eventData: Event[] = [
             },
         ],
     },
+]
+
+const eventFours: Event[] = [
     {
         id: 'R441',
         title: 'Synthetic Plague',
@@ -551,6 +560,9 @@ const eventData: Event[] = [
             },
         ],
     },
+]
+
+const eventFives: Event[] = [
     {
         id: 'R451',
         title: 'Corporate Espionage',
@@ -693,6 +705,9 @@ const eventData: Event[] = [
             },
         ],
     },
+]
+
+const eventSixes: Event[] = [
     {
         id: 'R461',
         title: 'Blackout in the District',
@@ -838,8 +853,19 @@ const eventData: Event[] = [
     },
 ]
 
-const getEventById = (id: string): Event => {
-    return eventData.find((item: Event) => item.id === id) as Event
+const eventData: Event[] = [
+    ...eventOnes,
+    ...eventTwos,
+    ...eventThrees,
+    ...eventFours,
+    ...eventFives,
+    ...eventSixes,
+]
+
+const eventMap = new Map(eventData.map((event: Event) => [event.id, event]))
+
+const getEventById = (id: string): Event | undefined => {
+    return eventMap.get(id)
 }
 
 export { getEventById }
