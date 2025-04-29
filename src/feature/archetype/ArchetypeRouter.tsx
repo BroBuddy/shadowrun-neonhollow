@@ -1,9 +1,10 @@
+import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
+
+const LoadingFallback = () => <Preloader />
 const ArchetypeDetail = React.lazy(
     () => import('../archetype/pages/ArchetypeDetail')
 )
-
-const LoadingFallback = () => <div>Loading...</div>
 
 const ArchetypeRouter = [
     {

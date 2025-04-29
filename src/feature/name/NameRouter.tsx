@@ -1,7 +1,8 @@
+import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
-const NameDetail = React.lazy(() => import('../name/pages/NameDetail'))
 
-const LoadingFallback = () => <div>Loading...</div>
+const LoadingFallback = () => <Preloader />
+const NameDetail = React.lazy(() => import('../name/pages/NameDetail'))
 
 const NameRouter = [
     {

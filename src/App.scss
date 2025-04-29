@@ -195,3 +195,13 @@ nav {
         padding: 5px;
     }
 }
+
+.preloader {
+    animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

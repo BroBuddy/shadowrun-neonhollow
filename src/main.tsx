@@ -14,8 +14,9 @@ import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
 import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 import BackgroundRouter from './feature/background/BackgroundRouter.tsx'
 import EventRouter from './feature/event/EventRouter.tsx'
+import Preloader from './components/Preloader.tsx'
 
-const LoadingFallback = () => <p>Loading</p>
+const LoadingFallback = () => <Preloader />
 const ErrorFallback = () => <p>Error</p>
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),

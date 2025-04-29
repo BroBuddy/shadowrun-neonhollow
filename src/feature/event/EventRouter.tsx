@@ -1,7 +1,8 @@
+import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
-const EventDetail = React.lazy(() => import('../event/pages/EventDetail'))
 
-const LoadingFallback = () => <div>Loading...</div>
+const LoadingFallback = () => <Preloader />
+const EventDetail = React.lazy(() => import('../event/pages/EventDetail'))
 
 const EventRouter = [
     {

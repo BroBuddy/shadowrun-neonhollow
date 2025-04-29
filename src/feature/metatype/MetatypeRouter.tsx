@@ -1,9 +1,10 @@
+import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
+
+const LoadingFallback = () => <Preloader />
 const MetatypeDetail = React.lazy(
     () => import('../metatype/pages/MetatypeDetail')
 )
-
-const LoadingFallback = () => <div>Loading...</div>
 
 const MetatypeRouter = [
     {

@@ -1,9 +1,10 @@
+import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
+
+const LoadingFallback = () => <Preloader />
 const MechanicDetail = React.lazy(
     () => import('../mechanic/pages/MechanicDetail')
 )
-
-const LoadingFallback = () => <div>Loading...</div>
 
 const MechanicRouter = [
     {
