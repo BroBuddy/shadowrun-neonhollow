@@ -4,7 +4,7 @@ import { getArchetypeByTag, isValidArchetype } from '../archtypeData'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { Archetype } from '../ArchetypeType'
-import useAttributeStore from '@/store/attributeStore'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { formatValue } from '@/lib/helper'
 
 function ArchetypeDetail() {

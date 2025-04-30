@@ -1,0 +1,57 @@
+import InRow from '../../../components/InRow'
+
+const AttributeRow = ({
+    attribute,
+    main,
+    temp,
+    onModify,
+}: {
+    attribute: string
+    main: number
+    temp: number
+    onModify: (attribute: string, value: number, isTemporary: boolean) => void
+}) => {
+    return (
+        <tr>
+            <td>
+                <strong>{attribute}</strong>
+            </td>
+            <td>
+                <InRow>
+                    <button
+                        onClick={() => onModify(attribute, -1, false)}
+                        className="highlight text-xl"
+                    >
+                        [-]
+                    </button>
+                    <span>{main}</span>
+                    <button
+                        onClick={() => onModify(attribute, 1, false)}
+                        className="highlight text-xl"
+                    >
+                        [+]
+                    </button>
+                </InRow>
+            </td>
+            <td>
+                <InRow>
+                    <button
+                        onClick={() => onModify(attribute, -1, true)}
+                        className="highlight text-xl"
+                    >
+                        [-]
+                    </button>
+                    <span>{temp}</span>
+                    <button
+                        onClick={() => onModify(attribute, 1, true)}
+                        className="highlight text-xl"
+                    >
+                        [+]
+                    </button>
+                </InRow>
+            </td>
+        </tr>
+    )
+}
+
+export default AttributeRow

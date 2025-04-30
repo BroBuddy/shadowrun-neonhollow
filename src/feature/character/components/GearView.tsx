@@ -3,7 +3,7 @@ import { getCharacterEquipments } from '../characterData'
 import { Equipment } from '../CharacterType'
 import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
-import useAttributeStore from '@/store/attributeStore'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { Attributes } from '@/feature/metatype/MetatypeType'
 import { formatValue } from '@/lib/helper'
 

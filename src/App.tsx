@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect, useState } from 'react'
 import MobileNav from './components/MobileNav'
-import AttributeManager from './components/AttributeManager'
+import AttributeManager from './feature/attribute/components/AttributeManager'
 import './App.scss'
 
 function App() {

@@ -20,9 +20,9 @@ const MobileNav = () => {
                 <Link
                     key={index}
                     to={item.path}
-                    className="flex flex-col items-center justify-center text-center"
+                    className="flex flex-row text-center"
                 >
-                    <span className="text-md">{item.icon}</span>
+                    <span className="text-md mr-1">{item.icon}</span>
                     <span className="text-xs">{item.text}</span>
                 </Link>
             ))}

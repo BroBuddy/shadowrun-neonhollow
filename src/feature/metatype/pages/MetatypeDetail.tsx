@@ -4,7 +4,7 @@ import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { getMetatypeByTag, isValidMetatype } from '../metatypeData'
 import { Metatype } from '../MetatypeType'
-import useAttributeStore from '@/store/attributeStore'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import FadeIn from '@/components/FadeIn'
 
 function MetatypeDetail() {

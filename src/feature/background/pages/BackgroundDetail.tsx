@@ -4,7 +4,7 @@ import { useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBackgroundById, isValidBackground } from '../backgroundData'
 import FadeIn from '@/components/FadeIn'
-import useAttributeStore from '@/store/attributeStore'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { formatValue } from '@/lib/helper'
 
 function BackgroundDetail() {
