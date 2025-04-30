@@ -9,7 +9,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 2,
-        title: '🔴 Performance 2',
+        title: '🔴 Performance 3',
         level: 'Underwhelming',
         effects: [
             {
@@ -20,7 +20,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 3,
-        title: '🟡 Performance 3',
+        title: '🟡 Performance 5',
         level: 'Partial',
         effects: [
             {
@@ -34,7 +34,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 4,
-        title: '🟢 Performance 4',
+        title: '🟢 Performance 7',
         level: 'Impressive',
         effects: [
             { description: '+1 Edge' },
@@ -46,7 +46,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 5,
-        title: '🟢 Performance 5',
+        title: '🟢 Performance 9',
         level: 'Exceptional',
         effects: [
             { description: '+2 Edge' },

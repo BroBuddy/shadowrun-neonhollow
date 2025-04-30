@@ -15,7 +15,6 @@ type MissionTask = {
     id: number
     title: string
     outcomes: MissionOutcome[]
-    failure: MissionFailure
 }
 
 type MissionOutcome = {
@@ -25,27 +24,15 @@ type MissionOutcome = {
     description: string
 }
 
-type MissionFailure = {
-    redirect: string
-    text?: string
-}
-
 type MissionTwist = {
     description: string
     options: MissionOption[]
-    failure: MissionFailure
-    success: MissionSuccess
 }
 
 type MissionOption = {
     stat: string
     dc: number
     description: string
-}
-
-type MissionSuccess = {
-    redirect: string
-    text?: string
 }
 
 type MissionPerformance = {
@@ -64,10 +51,8 @@ export type {
     Mission,
     MissionTask,
     MissionOutcome,
-    MissionFailure,
     MissionTwist,
     MissionOption,
-    MissionSuccess,
     MissionPerformance,
     MissionEffect,
 }

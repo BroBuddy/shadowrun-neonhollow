@@ -19,7 +19,7 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                 <ul>
                     {twist.options.map((item: MissionOption, index: number) => (
                         <li key={index}>
-                            <strong>
+                            <strong className="highlight">
                                 {item.stat} (DC {item.dc}):
                             </strong>
                             <br />
@@ -28,16 +28,21 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                     ))}
                 </ul>
                 <p>
-                    Fail? &#8594;{' '}
-                    <Link to={`/${twist.failure.redirect}`}>
-                        {twist.failure.text}
-                    </Link>
+                    <strong>Fail?</strong> &#8594; -1 Performance
+                    <br />
+                    <strong>Success?</strong> &#8594; +1 Performance
+                </p>
+                <div className="mb-5 flex justify-center items-center">
+                    <span className="text-2xl mr-2">&#8595;</span>
+                    <span className="mt-1">Reward</span>
+                </div>
+                <p>
+                    Claim your rewards from Mr. Johnson — what you earn depends
+                    on your mission success.
                 </p>
                 <p>
-                    Success? &#8594;{' '}
-                    <Link to={`/${twist.success.redirect}`}>
-                        {twist.success.text}
-                    </Link>
+                    &#8594;{' '}
+                    <Link to="/mission/performance">Mission Reward</Link>
                 </p>
             </FadeIn>
         </Card>

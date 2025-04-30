@@ -10,13 +10,17 @@ function MissionRules() {
             <Card>
                 <FadeIn>
                     <p>
+                        At the start of each mission, your Performance begins at
+                        5 and can shift between 1 and 9 based on your success.
+                    </p>
+                    <p>
                         You must tackle the missions in order and each mission
                         follows a specific structure:
                     </p>
                     <ul>
                         <li>
-                            Face three obstacles. Roll 2d6 to determine your
-                            skill check for each.
+                            Face three tasks. Roll 2d6 to determine your skill
+                            check for each.
                         </li>
                         <li>
                             DC is the number of successes needed to clear a
@@ -30,10 +34,6 @@ function MissionRules() {
                             score.
                         </li>
                     </ul>
-                    <p>
-                        Report to <strong>Mr. Johnson</strong> after the run to
-                        receive your reward based on Performance.
-                    </p>
                 </FadeIn>
             </Card>
         </>

@@ -1,5 +1,4 @@
 import { MissionTask, MissionOutcome } from '../MissionType'
-import { Link } from 'react-router-dom'
 import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
 import React from 'react'
@@ -48,9 +47,11 @@ const TasksView = ({
                                             <li key={outcome.range}>
                                                 <strong>
                                                     Roll {outcome.range} &#8594;{' '}
-                                                    {outcome.stat} (DC{' '}
-                                                    {outcome.dc}
-                                                    ):
+                                                    <span className="highlight">
+                                                        {outcome.stat} (DC{' '}
+                                                        {outcome.dc}
+                                                        ):
+                                                    </span>
                                                 </strong>
                                                 <br />
                                                 {outcome.description}
@@ -59,10 +60,11 @@ const TasksView = ({
                                     )}
                                 </ul>
                                 <p>
-                                    Fail? &#8594;{' '}
-                                    <Link to={`/${item.failure.redirect}`}>
-                                        {item.failure.text}
-                                    </Link>
+                                    <strong>Fail?</strong> &#8594; -1
+                                    Performance
+                                    <br />
+                                    <strong>Success?</strong> &#8594; +1
+                                    Performance
                                 </p>
                                 {missionProgress === index && (
                                     <div
