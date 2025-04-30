@@ -39,6 +39,13 @@ const formatValue = (value: number): string => {
     return `${prefix}${value}`
 }
 
+const rollDice = (dice = 1): number => {
+    const min = dice === 1 ? 1 : 2
+    const max = dice === 1 ? 6 : 11
+
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+
 const renderRoll2d6 = (text: string) => {
     if (!text.includes('Roll 2d6')) return text
 
@@ -54,4 +61,4 @@ const renderRoll2d6 = (text: string) => {
     )
 }
 
-export { renderRoll2d6, formatValue, makeUrlsClickable, rulesRegex }
+export { renderRoll2d6, formatValue, rollDice, makeUrlsClickable, rulesRegex }

@@ -17,10 +17,12 @@ function ArchetypeView() {
     }
 
     return (
-        <Card>
-            <FadeIn>
+        <FadeIn>
+            <Card>
                 <p>
-                    <strong className="highlight">Archetype:</strong>
+                    <strong className="highlight">
+                        Archetype &amp; Background:
+                    </strong>
                 </p>
 
                 <InRow>
@@ -31,14 +33,14 @@ function ArchetypeView() {
                 <ol className="list-margin">
                     {data.map((item: Archetype, index: number) => (
                         <li key={index}>
-                            <Link to={`/archetype/${item.tag}`}>
+                            <Link to={`/archetype/${item.id}`}>
                                 {item.title}
                             </Link>
                         </li>
                     ))}
                 </ol>
-            </FadeIn>
-        </Card>
+            </Card>
+        </FadeIn>
     )
 }
 

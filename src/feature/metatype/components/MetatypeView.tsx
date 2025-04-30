@@ -31,7 +31,7 @@ function MetatypeView() {
                 <ol className="list-margin">
                     {data.map((item: Metatype, index: number) => (
                         <li key={index}>
-                            <Link to={`/metatype/${item.tag}`}>
+                            <Link to={`/metatype/${item.id}`}>
                                 {item.title}
                             </Link>
                         </li>

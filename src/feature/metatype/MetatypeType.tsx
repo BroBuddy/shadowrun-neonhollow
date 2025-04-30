@@ -1,5 +1,5 @@
 type Metatype = {
-    tag: string
+    id: number
     title: string
     description: string
     attributes: Attributes

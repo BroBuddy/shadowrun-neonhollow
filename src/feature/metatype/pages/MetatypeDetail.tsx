@@ -1,20 +1,26 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
-import { getMetatypeByTag, isValidMetatype } from '../metatypeData'
+import { getMetatypeById, isValidMetatype } from '../metatypeData'
 import { Metatype } from '../MetatypeType'
 import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import FadeIn from '@/components/FadeIn'
 
 function MetatypeDetail() {
-    const { tag } = useParams()
+    const { id } = useParams()
     const setAttributes = useAttributeStore((state) => state.setAttributes)
     const data = useMemo(() => {
-        return getMetatypeByTag(tag as string) as Metatype
-    }, [tag])
+        return getMetatypeById(Number(id)) as Metatype
+    }, [id])
 
-    if (!data || !isValidMetatype(tag as string)) {
+    useEffect(() => {
+        if (data && isValidMetatype(Number(id))) {
+            setAttributes(data.attributes)
+        }
+    }, [data, id, setAttributes])
+
+    if (!data || !isValidMetatype(Number(id))) {
         return (
             <>
                 <Headline>Invalid Metatype</Headline>
@@ -23,10 +29,6 @@ function MetatypeDetail() {
                 </Card>
             </>
         )
-    }
-
-    const handleSetAttributes = () => {
-        setAttributes(data.attributes)
     }
 
     return (
@@ -62,15 +64,6 @@ function MetatypeDetail() {
                         )
                     )}
                 </ul>
-                <p>
-                    &#8594;{' '}
-                    <span
-                        className="cursor-pointer highlight"
-                        onClick={handleSetAttributes}
-                    >
-                        Initialize Attributes
-                    </span>
-                </p>
             </Card>
         </>
     )

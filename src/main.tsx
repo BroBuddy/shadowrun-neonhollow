@@ -13,7 +13,6 @@ import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import NameRouter from './feature/name/NameRouter.tsx'
 import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
 import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
-import BackgroundRouter from './feature/background/BackgroundRouter.tsx'
 import EventRouter from './feature/event/EventRouter.tsx'
 import Preloader from './components/Preloader.tsx'
 import Error from './pages/Error.tsx'
@@ -68,7 +67,6 @@ const router = createBrowserRouter([
             ...CharacterRouter,
             ...MetatypeRouter,
             ...ArchetypeRouter,
-            ...BackgroundRouter,
             ...NameRouter,
             ...ResourceRouter,
             ...CityRouter,

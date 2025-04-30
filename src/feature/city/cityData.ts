@@ -82,11 +82,6 @@ const cityData: District[] = [
                 link: '/city/safehouse',
                 image: '/images/SafeHouse.jpg',
             },
-            {
-                name: '',
-                link: '',
-                image: '',
-            },
         ],
     },
 ]

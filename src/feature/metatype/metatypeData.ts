@@ -2,7 +2,7 @@ import { Metatype } from './MetatypeType'
 
 const metatypeData: Metatype[] = [
     {
-        tag: 'human',
+        id: 1,
         title: 'Human',
         description:
             'Adaptable and versatile, humans excel in any environment through drive and determination.',
@@ -16,7 +16,7 @@ const metatypeData: Metatype[] = [
         },
     },
     {
-        tag: 'elf',
+        id: 2,
         title: 'Elf',
         description:
             'Elegant and intellectual, elves shine with natural agility and charisma in social and combat settings.',
@@ -30,7 +30,7 @@ const metatypeData: Metatype[] = [
         },
     },
     {
-        tag: 'dwarf',
+        id: 3,
         title: 'Dwarf',
         description:
             'Resilient and tough, dwarves boast strength and determination, making them reliable allies.',
@@ -44,7 +44,7 @@ const metatypeData: Metatype[] = [
         },
     },
     {
-        tag: 'ork',
+        id: 4,
         title: 'Ork',
         description:
             'Powerful and loyal, orks bring raw strength and honor despite being often misunderstood.',
@@ -58,7 +58,7 @@ const metatypeData: Metatype[] = [
         },
     },
     {
-        tag: 'troll',
+        id: 5,
         title: 'Troll',
         description:
             'Physically mighty, trolls combine toughness with fierce loyalty and protective instincts.',
@@ -73,15 +73,15 @@ const metatypeData: Metatype[] = [
     },
 ]
 
-const validTags = metatypeData.map(({ tag }) => tag)
-const isValidMetatype = (tag: string): boolean => validTags.includes(tag)
+const validIds = metatypeData.map(({ id }) => id)
+const isValidMetatype = (id: number): boolean => validIds.includes(id)
 
-const getMetatypeData = (): Pick<Metatype, 'tag' | 'title'>[] => {
-    return metatypeData.map(({ tag, title }) => ({ tag, title }))
+const getMetatypeData = (): Pick<Metatype, 'id' | 'title'>[] => {
+    return metatypeData.map(({ id, title }) => ({ id, title }))
 }
 
-const getMetatypeByTag = (tag: string): Metatype | undefined => {
-    return metatypeData.find((item: Metatype) => item.tag === tag) as Metatype
+const getMetatypeById = (id: number): Metatype | undefined => {
+    return metatypeData.find((item: Metatype) => item.id === id) as Metatype
 }
 
-export { getMetatypeData, getMetatypeByTag, isValidMetatype }
+export { getMetatypeData, getMetatypeById, isValidMetatype }

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, ReactNode } from 'react'
+import { createContext, ReactNode, useState } from 'react'
 
 const ColorSchemeContext = createContext<{
     isDefaultMode: boolean
@@ -24,4 +24,4 @@ export const ColorSchemeProvider = ({ children }: { children: ReactNode }) => {
     )
 }
 
-export const useColorScheme = () => useContext(ColorSchemeContext)
+export default ColorSchemeContext

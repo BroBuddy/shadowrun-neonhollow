@@ -1,31 +1,40 @@
-import { useEffect, useRef } from 'react'
-import { useParams } from 'react-router-dom'
-import Headline from '@/components/Headline'
 import Card from '@/components/Card'
-import useAttributeStore from '@/feature/attribute/store/attributeStore'
-import { formatValue } from '@/lib/helper'
+import Headline from '@/components/Headline'
+import { useEffect, useMemo, useRef } from 'react'
+import { useParams } from 'react-router-dom'
+import { getBackgroundById, isValidBackground } from '../backgroundData'
 import FadeIn from '@/components/FadeIn'
-import ArchetypeBackground from '../components/ArchetypeBackground'
-import { useArchetypeData } from '../hooks/useArchetypeData'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
+import { formatValue, rollDice } from '@/lib/helper'
 
-function ArchetypeDetail() {
+const ArchetypeBackground = () => {
     const { id } = useParams()
     const hasModified = useRef<boolean>(false)
-    const { data, isValidData } = useArchetypeData(id)
+    const backgroundId = useMemo(() => String(id) + rollDice(), [id])
     const modifyAttributes = useAttributeStore(
         (state) => state.modifyAttributes
     )
+    const data = useMemo(
+        () => getBackgroundById(backgroundId as string),
+        [backgroundId]
+    )
+    const isValidData = data && isValidBackground(backgroundId as string)
 
     useEffect(() => {
-        if (!data || !isValidData || hasModified.current) return
-        modifyAttributes(data.attributes)
-        hasModified.current = true
-    }, [data, isValidData, id, modifyAttributes])
+        if (
+            data &&
+            isValidBackground(backgroundId as string) &&
+            !hasModified.current
+        ) {
+            modifyAttributes(data.attributes)
+            hasModified.current = true
+        }
+    }, [data, backgroundId, modifyAttributes])
 
-    if (!data || isValidData) {
+    if (!isValidData) {
         return (
             <>
-                <Headline>Invalid Archetype</Headline>
+                <Headline>Invalid Background</Headline>
                 <Card>
                     <p>The tag you provided is invalid.</p>
                 </Card>
@@ -35,8 +44,7 @@ function ArchetypeDetail() {
 
     return (
         <>
-            <Headline>Archetype &amp; Background</Headline>
-            <FadeIn>
+            <FadeIn delay={500}>
                 <Card>
                     <p>
                         <strong className="highlight">{data.title}:</strong>
@@ -49,17 +57,15 @@ function ArchetypeDetail() {
                         {Object.entries(data.attributes).map(
                             ([attribute, value]) => (
                                 <li key={attribute}>
-                                    {attribute}: {formatValue(value)}
+                                    {attribute}: {formatValue(value as number)}
                                 </li>
                             )
                         )}
                     </ul>
                 </Card>
             </FadeIn>
-
-            <ArchetypeBackground />
         </>
     )
 }
 
-export default ArchetypeDetail
+export default ArchetypeBackground

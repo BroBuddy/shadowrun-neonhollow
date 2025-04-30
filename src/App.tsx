@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
-import { useColorScheme } from './context/ColorSchemeProvider'
+import { useColorScheme } from './context/useColorScheme'
 import AttributeManager from './feature/attribute/components/AttributeManager'
 import './App.scss'
 

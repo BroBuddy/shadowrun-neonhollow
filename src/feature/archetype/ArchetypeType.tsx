@@ -1,10 +1,17 @@
 import { Attributes } from '../metatype/MetatypeType'
 
 type Archetype = {
-    tag: string
+    id: number
     title: string
     description: string
     attributes: Attributes
 }
 
-export type { Archetype }
+type Background = {
+    id: string
+    title: string
+    description: string
+    attributes: Attributes
+}
+
+export type { Archetype, Background }

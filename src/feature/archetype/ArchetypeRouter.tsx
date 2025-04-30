@@ -10,7 +10,7 @@ const ArchetypeRouter = [
         path: '/archetype',
         children: [
             {
-                path: ':tag',
+                path: ':id',
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <ArchetypeDetail />

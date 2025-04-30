@@ -10,7 +10,7 @@ const MetatypeRouter = [
         path: '/metatype',
         children: [
             {
-                path: ':tag',
+                path: ':id',
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <MetatypeDetail />
