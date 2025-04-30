@@ -44,7 +44,7 @@ const ArchetypeBackground = () => {
 
     return (
         <>
-            <FadeIn delay={500}>
+            <FadeIn delay={2000}>
                 <Card>
                     <p>
                         <strong className="highlight">{data.title}:</strong>

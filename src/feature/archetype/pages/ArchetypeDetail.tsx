@@ -36,7 +36,7 @@ function ArchetypeDetail() {
     return (
         <>
             <Headline>Archetype &amp; Background</Headline>
-            <FadeIn>
+            <FadeIn delay={1000}>
                 <Card>
                     <p>
                         <strong className="highlight">{data.title}:</strong>
