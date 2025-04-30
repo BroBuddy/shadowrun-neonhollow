@@ -17,10 +17,13 @@ const MobileNav = () => {
     return (
         <nav className="z-40">
             {links.map((item: LinkType, index: number) => (
-                <Link key={index} to={item.path}>
-                    <span className="text-xs">
-                        {item.icon} {item.text}
-                    </span>
+                <Link
+                    key={index}
+                    to={item.path}
+                    className="flex flex-col items-center justify-center text-center"
+                >
+                    <span className="text-lg">{item.icon}</span>
+                    <span className="text-xs">{item.text}</span>
                 </Link>
             ))}
         </nav>
