@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 import Headline from '@/components/Headline'
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBackgroundById, isValidBackground } from '../backgroundData'
 import FadeIn from '@/components/FadeIn'
@@ -12,6 +12,7 @@ function BackgroundDetail() {
     const modifyAttributes = useAttributeStore(
         (state) => state.modifyAttributes
     )
+    const [isApplied, setIsApplied] = useState<boolean>(false)
     const data = useMemo(() => getBackgroundById(id as string), [id])
 
     if (!data || !isValidBackground(id as string)) {
@@ -26,7 +27,10 @@ function BackgroundDetail() {
     }
 
     const handleModifyAttributes = () => {
-        modifyAttributes(data.attributes)
+        if (!isApplied) {
+            modifyAttributes(data.attributes)
+            setIsApplied(true)
+        }
     }
 
     return (
@@ -52,10 +56,14 @@ function BackgroundDetail() {
                     <p>
                         &#8594;{' '}
                         <span
-                            className="cursor-pointer highlight"
+                            className={`cursor-pointer highlight ${
+                                isApplied
+                                    ? 'text-gray-500 cursor-not-allowed'
+                                    : ''
+                            }`}
                             onClick={handleModifyAttributes}
                         >
-                            Apply Attributes
+                            {isApplied ? 'Applied' : 'Apply Attributes'}
                         </span>
                     </p>
                 </FadeIn>

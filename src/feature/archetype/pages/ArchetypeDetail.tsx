@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { getArchetypeByTag, isValidArchetype } from '../archtypeData'
 import Headline from '@/components/Headline'
@@ -12,6 +12,7 @@ function ArchetypeDetail() {
     const modifyAttributes = useAttributeStore(
         (state) => state.modifyAttributes
     )
+    const [isApplied, setIsApplied] = useState<boolean>(false)
     const data = useMemo(() => {
         return getArchetypeByTag(tag as string) as Archetype
     }, [tag])
@@ -28,7 +29,10 @@ function ArchetypeDetail() {
     }
 
     const handleModifyAttributes = () => {
-        modifyAttributes(data.attributes)
+        if (!isApplied) {
+            modifyAttributes(data.attributes)
+            setIsApplied(true)
+        }
     }
 
     return (
@@ -51,10 +55,12 @@ function ArchetypeDetail() {
                 <p>
                     &#8594;{' '}
                     <span
-                        className="cursor-pointer highlight"
+                        className={`cursor-pointer highlight ${
+                            isApplied ? 'text-gray-500 cursor-not-allowed' : ''
+                        }`}
                         onClick={handleModifyAttributes}
                     >
-                        Apply Attributes
+                        {isApplied ? 'Applied' : 'Apply Attributes'}
                     </span>
                 </p>
             </Card>

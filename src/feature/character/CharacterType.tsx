@@ -1,6 +1,8 @@
+import { Attributes } from '../metatype/MetatypeType'
+
 type Equipment = {
     name: string
-    bonus: string
+    attributes: Attributes
 }
 
 type Mode = {
