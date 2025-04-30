@@ -2,53 +2,17 @@ import { Resource } from './ResourceType'
 
 export const resourceData: Resource[] = [
     {
-        tag: 'health',
-        title: 'Gain Health',
-        rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+1 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
-            { range: '9-11', result: 'Standard', effects: ['+5 Health'] },
-            { range: '12-14', result: 'Good', effects: ['+6 Health'] },
-            {
-                range: '15-17',
-                result: 'Great',
-                effects: ['+7 Health', '+1 Edge'],
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                effects: ['+8 Health', '+2 Edge'],
-            },
-        ],
-    },
-    {
-        tag: 'energy',
-        title: 'Gain Energy',
-        rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+1 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
-            { range: '9-11', result: 'Standard', effects: ['+5 Energy'] },
-            { range: '12-14', result: 'Good', effects: ['+6 Energy'] },
-            {
-                range: '15-17',
-                result: 'Great',
-                effects: ['+7 Energy', '+1 Edge'],
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                effects: ['+8 Energy', '+2 Edge'],
-            },
-        ],
-    },
-    {
         tag: 'nuyen',
         title: 'Gain Nuyen',
         rollList: [
             { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
-            { range: '9-11', result: 'Standard', effects: ['+4.000 ¥'] },
-            { range: '12-14', result: 'Good', effects: ['+8.000 ¥'] },
+            {
+                range: '6-8',
+                result: 'Failure',
+                effects: ['+1 Heat', '+3.000 ¥'],
+            },
+            { range: '9-11', result: 'Standard', effects: ['+6.000 ¥'] },
+            { range: '12-14', result: 'Good', effects: ['+9.000 ¥'] },
             {
                 range: '15-17',
                 result: 'Great',
@@ -57,7 +21,55 @@ export const resourceData: Resource[] = [
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+16.000 ¥', '+2 Edge'],
+                effects: ['+15.000 ¥', '+2 Edge'],
+            },
+        ],
+    },
+    {
+        tag: 'health',
+        title: 'Gain Health',
+        rollList: [
+            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '6-8',
+                result: 'Failure',
+                effects: ['+1 Heat', '+2 Health'],
+            },
+            { range: '9-11', result: 'Standard', effects: ['+4 Health'] },
+            { range: '12-14', result: 'Good', effects: ['+6 Health'] },
+            {
+                range: '15-17',
+                result: 'Great',
+                effects: ['+8 Health', '+1 Edge'],
+            },
+            {
+                range: '18+',
+                result: 'Exceptional',
+                effects: ['+10 Health', '+2 Edge'],
+            },
+        ],
+    },
+    {
+        tag: 'energy',
+        title: 'Gain Energy',
+        rollList: [
+            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '6-8',
+                result: 'Failure',
+                effects: ['+1 Heat', '+2 Health'],
+            },
+            { range: '9-11', result: 'Standard', effects: ['+4 Energy'] },
+            { range: '12-14', result: 'Good', effects: ['+6 Energy'] },
+            {
+                range: '15-17',
+                result: 'Great',
+                effects: ['+8 Energy', '+1 Edge'],
+            },
+            {
+                range: '18+',
+                result: 'Exceptional',
+                effects: ['+10 Energy', '+2 Edge'],
             },
         ],
     },
@@ -72,12 +84,12 @@ export const resourceData: Resource[] = [
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+3 Intel', '+1 Edge'],
+                effects: ['+2 Intel', '+1 Edge'],
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+4 Intel', '+2 Edge'],
+                effects: ['+3 Intel', '+2 Edge'],
             },
         ],
     },
@@ -109,32 +121,27 @@ export const resourceData: Resource[] = [
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Heat'],
+                effects: ['+1 Heat', '+1 Attribute Temporary'],
             },
             {
                 range: '9-11',
                 result: 'Standard',
-                effects: ['+2 Attributes Temporary'],
+                effects: ['+1 Attribute'],
             },
             {
                 range: '12-14',
                 result: 'Good',
-                effects: ['+1 Attributes', '+2.000 ¥'],
+                effects: ['+1 Attribute', '+1 Attribute Temporary', '+2.000 ¥'],
             },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: [
-                    '+1 Attributes',
-                    '+1 Attributes Temporary',
-                    '+4.000 ¥',
-                    '+1 Edge',
-                ],
+                effects: ['+2 Attributes', '+4.000 ¥', '+1 Edge'],
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+2 Attributes Temporary', '+6.000 ¥', '+2 Edge'],
+                effects: ['+2 Attributes', '+6.000 ¥', '+2 Edge'],
             },
         ],
     },
