@@ -196,6 +196,7 @@ nav {
 
 .preloader {
     animation: spinner 2s linear infinite;
+    z-index: 100;
 }
 
 .active-dice {
