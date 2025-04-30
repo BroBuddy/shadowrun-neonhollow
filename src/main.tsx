@@ -1,6 +1,7 @@
 import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { ColorSchemeProvider } from './context/ColorSchemeProvider.tsx'
 import { ErrorBoundary } from 'react-error-boundary'
 import { register } from './serviceWorkerRegistration'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
@@ -32,7 +33,9 @@ const router = createBrowserRouter([
     {
         element: (
             <ErrorBoundary FallbackComponent={ErrorFallback}>
-                <App />
+                <ColorSchemeProvider>
+                    <App />
+                </ColorSchemeProvider>
             </ErrorBoundary>
         ),
         children: [

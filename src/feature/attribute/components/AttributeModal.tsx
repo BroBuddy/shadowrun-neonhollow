@@ -2,11 +2,9 @@ import AttributeEditor from './AttributeEditor'
 
 const AttributeModal = ({
     isOpen,
-    toggleColorScheme,
 }: {
     isOpen: boolean
     toggleModal: (state: boolean) => void
-    toggleColorScheme: () => void
 }) => {
     return (
         <div
@@ -14,18 +12,7 @@ const AttributeModal = ({
                 isOpen ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
-            <div className="shadow-lg w-3/4 max-w-md mt-5 mx-auto">
-                <div>
-                    <div className="flex items-center justify-between">
-                        <span
-                            className="highlight p-2 text-md cursor-pointer"
-                            onClick={toggleColorScheme}
-                        >
-                            <strong>Toggle Color Scheme</strong>
-                        </span>
-                    </div>
-                </div>
-
+            <div className="shadow-lg w-3/4 max-w-md pt-7 mt-7 mx-auto">
                 <div className="flex">
                     <AttributeEditor />
                 </div>

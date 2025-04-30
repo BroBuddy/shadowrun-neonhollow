@@ -2,11 +2,7 @@ import { useState } from 'react'
 import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import AttributeModal from './AttributeModal'
 
-const AttributeManager = ({
-    toggleColorScheme,
-}: {
-    toggleColorScheme: () => void
-}) => {
+const AttributeManager = () => {
     const attributes = useAttributeStore((state) => state.attributes)
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -35,11 +31,7 @@ const AttributeManager = ({
                 ))}
             </div>
 
-            <AttributeModal
-                isOpen={isOpen}
-                toggleModal={toggleModal}
-                toggleColorScheme={toggleColorScheme}
-            />
+            <AttributeModal isOpen={isOpen} toggleModal={toggleModal} />
         </>
     )
 }

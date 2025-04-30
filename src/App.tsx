@@ -1,16 +1,13 @@
 import { Outlet, useLocation } from 'react-router-dom'
-import { useLayoutEffect, useState } from 'react'
+import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
+import { useColorScheme } from './context/ColorSchemeProvider'
 import AttributeManager from './feature/attribute/components/AttributeManager'
 import './App.scss'
 
 function App() {
     const location = useLocation()
-    const [isDefaultMode, setIsDefaultMode] = useState<boolean>(true)
-
-    const toggleColorScheme = () => {
-        setIsDefaultMode((prev) => !prev)
-    }
+    const { isDefaultMode } = useColorScheme()
 
     useLayoutEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
@@ -18,7 +15,7 @@ function App() {
 
     return (
         <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
-            <AttributeManager toggleColorScheme={toggleColorScheme} />
+            <AttributeManager />
             <Outlet />
             <MobileNav />
         </div>
