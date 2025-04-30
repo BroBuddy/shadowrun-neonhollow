@@ -3,8 +3,9 @@ import Headline from '@/components/Headline'
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import { getEventById } from '../eventData'
-import { Event, SkillCheck } from '../EventType'
+import { Event, SkillCheck as SkillCheckType } from '../EventType'
 import FadeIn from '@/components/FadeIn'
+import SkillCheck from '../components/SkillCheck'
 
 const defaultEvent: Event = {
     id: '',
@@ -44,27 +45,18 @@ function EventDetail() {
 
                     {data.skillChecks && (
                         <>
+                            <div className="mb-5 flex justify-center items-center">
+                                <span className="text-2xl mr-2">&#8595;</span>
+                                <span className="mt-1">Choose</span>
+                            </div>
+
                             {data.skillChecks.map(
-                                (item: SkillCheck, index: number) => (
-                                    <div key={index}>
-                                        <p>
-                                            <strong className="highlight">
-                                                {item.attribute} (DC {item.dc}):
-                                                <br />
-                                            </strong>{' '}
-                                            {item.description}
-                                        </p>
-                                        <ul className="list-margin">
-                                            <li>
-                                                Roll 2d6 &#8594; Add{' '}
-                                                {item.attribute}
-                                            </li>
-                                            <li>
-                                                Success? &#8594; {item.success}
-                                            </li>
-                                            <li>Fail? &#8594; {item.fail}</li>
-                                        </ul>
-                                    </div>
+                                (item: SkillCheckType, index: number) => (
+                                    <SkillCheck
+                                        key={index}
+                                        skillCheck={item}
+                                        isAlternative={index === 0}
+                                    />
                                 )
                             )}
                         </>

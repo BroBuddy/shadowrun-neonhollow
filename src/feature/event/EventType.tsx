@@ -8,6 +8,7 @@ type Event = {
 
 type SkillCheck = {
     attribute: string
+    icon: '💪' | '🧠'
     dc: number
     description: string
     success: string

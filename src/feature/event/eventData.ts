@@ -9,6 +9,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Diagnose grid failures and reroute energy manually.',
@@ -17,6 +18,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Navigate the chaos and avoid hazards in the dark.',
@@ -33,6 +35,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Push through the brawl and shield others from crossfire.',
@@ -41,6 +44,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Dodge debris and gunfire while escaping the scene.',
@@ -57,6 +61,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Convince officials you’re just a harmless citizen.',
@@ -65,6 +70,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description: 'Forge clean credentials on the fly.',
                 success: '+1 Intel',
@@ -80,6 +86,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description: 'Identify a safe route through the visual chaos.',
                 success: '+1 Intel',
@@ -87,6 +94,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 10,
                 description: 'React quickly to avoid running into danger.',
                 success: '+2 Energy',
@@ -102,6 +110,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description: 'Slip through the crowds unnoticed and unharmed.',
                 success: '-1 Heat',
@@ -109,6 +118,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 12,
                 description: 'Hold the line or break through violent crowds.',
                 success: '+1 Edge',
@@ -124,6 +134,7 @@ const eventOnes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description: 'Locate the source and capture valuable files.',
                 success: '+1 Intel',
@@ -131,6 +142,7 @@ const eventOnes: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 8,
                 description: 'Sell false leads to rival fixers.',
                 success: '+3.000 ¥',
@@ -149,6 +161,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 8,
                 description:
                     "Evade malfunctioning drones before you're tagged.",
@@ -157,6 +170,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description: 'Override a drone’s routine and redirect it.',
                 success: '+1 Intel',
@@ -172,6 +186,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Help seal the rupture using brute force and gear.',
@@ -180,6 +195,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description: 'Find a clean exit before the toxin spreads.',
                 success: '+2 Energy',
@@ -195,6 +211,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Dash in, grab goods, and escape before backup arrives.',
@@ -203,6 +220,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Convince raiders you’re part of the cleanup crew.',
@@ -219,6 +237,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description: 'Decode the pulse and stabilize your implant.',
                 success: '+1 Intel',
@@ -226,6 +245,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description: 'Resist the mental assault and clear your head.',
                 success: '+2 Health',
@@ -241,6 +261,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 8,
                 description: 'Track and intercept the bot mid-run.',
                 success: '+3.000 ¥',
@@ -248,6 +269,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description: 'Predict the courier’s next location.',
                 success: '+1 Intel',
@@ -263,6 +285,7 @@ const eventTwos: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description: 'Calm the crowd and rally them away from chaos.',
                 success: '+1 Edge',
@@ -270,6 +293,7 @@ const eventTwos: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 8,
                 description: 'Piece together what the prophet truly knows.',
                 success: '+1 Intel',
@@ -288,6 +312,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Fight off an aggressive ganger blocking your escape.',
@@ -296,6 +321,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 8,
                 description:
                     'Slip between crossfire and vanish into the shadows.',
@@ -312,6 +338,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description: 'Decode the stream before it gets scrubbed.',
                 success: '+1 Intel',
@@ -319,6 +346,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 8,
                 description: 'Follow the hidden markers to the source.',
                 success: '+3.000 ¥',
@@ -334,6 +362,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description: 'Blend in with the crowd and fake a corp ID.',
                 success: '+1 Edge',
@@ -341,6 +370,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Duck through blind spots before the scanners catch you.',
@@ -357,6 +387,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Ground your system and save your gear from frying.',
@@ -365,6 +396,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 8,
                 description:
                     "Drag civilians out of a crashed tram's danger zone.",
@@ -381,6 +413,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Quickly recover the container before corp drones arrive.',
@@ -389,6 +422,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description: 'Scan for traps and avoid potential setup.',
                 success: '+1 Intel',
@@ -404,6 +438,7 @@ const eventThrees: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Interface with the terminal and pull data before it fades.',
@@ -412,6 +447,7 @@ const eventThrees: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Convince a fellow runner to share the hidden cache.',
@@ -431,6 +467,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description: 'Reprogram a med-drone to scan and clear you.',
                 success: '-1 Heat',
@@ -438,6 +475,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 8,
                 description: 'Escape quarantine patrols before they close in.',
                 success: '+2 Energy',
@@ -453,6 +491,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Convince a trusted informant to discredit the footage.',
@@ -461,6 +500,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description: 'Track the origin of the false feed.',
                 success: '+1 Intel',
@@ -476,6 +516,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Pull survivors from debris before the fire spreads.',
@@ -484,6 +525,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 8,
                 description:
                     'Dodge falling wreckage and reach the scene first.',
@@ -500,6 +542,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description: "Mediate the deal and win both sides' trust.",
                 success: '+3.000 ¥',
@@ -507,6 +550,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description: 'Notice the hidden ambush and slip out early.',
                 success: '-1 Heat',
@@ -522,6 +566,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Patch the code manually before your implants fry.',
@@ -530,6 +575,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description: 'Hold steady and ride out the seizures.',
                 success: '+2 Health',
@@ -545,6 +591,7 @@ const eventFours: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Crack the encryption before rival runners catch on.',
@@ -553,6 +600,7 @@ const eventFours: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 10,
                 description: 'Outrun competitors and reach the cache first.',
                 success: '+3.000 ¥',
@@ -571,6 +619,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Convince a bystander to leak crucial information.',
@@ -579,6 +628,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description:
                     "Track the espionage team's movements and sabotage their plan.",
@@ -595,6 +645,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 8,
                 description: 'Navigate the riot safely and avoid danger.',
                 success: '+2 Energy',
@@ -602,6 +653,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description:
                     "Hack into the group's system and disable their riot control equipment.",
@@ -618,6 +670,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description: 'Use your influence to calm the crowds.',
                 success: '+1 Edge',
@@ -625,6 +678,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Investigate the situation to gather intelligence on the corrupt official.',
@@ -641,6 +695,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Enter the tournament and fight for the prize money.',
@@ -649,6 +704,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 8,
                 description:
                     'Bet on another fighter and avoid the fight yourself.',
@@ -665,6 +721,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description:
                     "Analyze the storm's pattern to find the safest route out of the area.",
@@ -673,6 +730,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Dodge falling debris and move swiftly through the chaos.',
@@ -689,6 +747,7 @@ const eventFives: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Negotiate a better deal with the black market vendors.',
@@ -697,6 +756,7 @@ const eventFives: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Use force to take the weapons tech by intimidation.',
@@ -716,6 +776,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Investigate the cause of the blackout by accessing nearby systems.',
@@ -724,6 +785,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Navigate through the dark streets, avoiding dangers like looters.',
@@ -740,6 +802,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 10,
                 description:
                     "React quickly to avoid the AI's detection systems.",
@@ -748,6 +811,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Hack the AI to shut it down before it causes more damage.',
@@ -764,6 +828,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Charge in and confront one of the gangs directly.',
@@ -772,6 +837,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 8,
                 description:
                     'Use diplomacy to try and calm the gangs and stop the violence.',
@@ -788,6 +854,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Use your social influence to sway the public opinion and calm the protesters.',
@@ -796,6 +863,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Investigate the scandal and uncover hidden details that could be used for leverage.',
@@ -812,6 +880,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description: 'Join the race and prove your driving skills.',
                 success: '+3.000 ¥',
@@ -819,6 +888,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 8,
                 description:
                     'Help a racer with their vehicle to ensure they win the race.',
@@ -835,6 +905,7 @@ const eventSixes: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Analyze the virus and help create a makeshift cure.',
@@ -843,6 +914,7 @@ const eventSixes: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Rally the people to stay calm and follow safety procedures.',
@@ -862,6 +934,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 12,
                 description:
                     "Analyze the anomaly's source and implement a corrective action to stabilize the system.",
@@ -870,6 +943,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Spot the hidden cause of the malfunction and anticipate the next failure point.',
@@ -886,6 +960,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Use your strength to physically assert yourself by intimidating the officers.',
@@ -894,6 +969,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Charm or persuade the officers, using your wit and presence to smooth over the situation.',
@@ -910,6 +986,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Use your agility to quickly navigate the chaotic environment and assist in moving patients to safety.',
@@ -918,6 +995,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Apply your strength to physically move patients or assist with heavy medical equipment.',
@@ -934,6 +1012,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 12,
                 description:
                     'React quickly to either stash the device in a safe spot or maneuver around others who might notice it.',
@@ -942,6 +1021,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.',
@@ -958,6 +1038,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Use your instinct and quick thinking to identify the core issue and stabilize the virtual environment.',
@@ -966,6 +1047,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 10,
                 description:
                     'Move swiftly to grab a lost runner’s attention and guide them to safety.',
@@ -982,6 +1064,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Charisma',
+                icon: '🧠',
                 dc: 12,
                 description:
                     'Charm your way into a conversation with the influential figure.',
@@ -990,6 +1073,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Intuition',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Pay attention to the subtle body language and hidden cues in the conversation.',
@@ -1006,6 +1090,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Strength',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Lift the heavy weight off the person with raw strength.',
@@ -1014,6 +1099,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Reaction',
+                icon: '💪',
                 dc: 10,
                 description:
                     'React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.',
@@ -1030,6 +1116,7 @@ const eventFacility: readonly Event[] = [
         skillChecks: [
             {
                 attribute: 'Agility',
+                icon: '💪',
                 dc: 12,
                 description:
                     'Use your agility to slip past the guards unnoticed or avoid a confrontation with a quick dodge.',
@@ -1038,6 +1125,7 @@ const eventFacility: readonly Event[] = [
             },
             {
                 attribute: 'Logic',
+                icon: '🧠',
                 dc: 10,
                 description:
                     'Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.',
