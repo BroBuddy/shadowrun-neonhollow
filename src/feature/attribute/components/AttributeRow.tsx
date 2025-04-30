@@ -14,24 +14,24 @@ const AttributeRow = ({
     return (
         <tr>
             <td>
-                <strong>{attribute}</strong>
-            </td>
-            <td>
                 <InRow>
                     <button
                         onClick={() => onModify(attribute, -1, false)}
                         className="highlight text-xl"
                     >
-                        [-]
+                        ⊖
                     </button>
-                    <span>{main}</span>
+                    <span className="w-4 text-center">{main}</span>
                     <button
                         onClick={() => onModify(attribute, 1, false)}
                         className="highlight text-xl"
                     >
-                        [+]
+                        ⊕
                     </button>
                 </InRow>
+            </td>
+            <td className="w-40 text-center">
+                <strong>{attribute}</strong>
             </td>
             <td>
                 <InRow>
@@ -39,14 +39,14 @@ const AttributeRow = ({
                         onClick={() => onModify(attribute, -1, true)}
                         className="highlight text-xl"
                     >
-                        [-]
+                        ⊖
                     </button>
-                    <span>{temp}</span>
+                    <span className="w-4 text-center">{temp}</span>
                     <button
                         onClick={() => onModify(attribute, 1, true)}
                         className="highlight text-xl"
                     >
-                        [+]
+                        ⊕
                     </button>
                 </InRow>
             </td>

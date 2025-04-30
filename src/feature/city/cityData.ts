@@ -3,7 +3,8 @@ import { District } from './CityType'
 const cityData: District[] = [
     {
         name: 'Skyline',
-        heat: '🔴 Heat 2',
+        heat: 'Heat 2',
+        icon: '🔴',
         facilities: [
             {
                 name: 'MegaCorp',
@@ -24,7 +25,8 @@ const cityData: District[] = [
     },
     {
         name: 'Central',
-        heat: '🟠 Heat 4',
+        heat: 'Heat 4',
+        icon: '🟠',
         facilities: [
             {
                 name: 'SecurityHub',
@@ -45,7 +47,8 @@ const cityData: District[] = [
     },
     {
         name: 'Quarter',
-        heat: '🟡 Heat 6',
+        heat: 'Heat 6',
+        icon: '🟡',
         facilities: [
             {
                 name: 'EchoGarden',
@@ -66,7 +69,8 @@ const cityData: District[] = [
     },
     {
         name: 'Depths',
-        heat: '🟢 Heat 4',
+        heat: 'Heat 8',
+        icon: '🟢',
         facilities: [
             {
                 name: 'SmugglerDen',
@@ -77,6 +81,11 @@ const cityData: District[] = [
                 name: 'SafeHouse',
                 link: '/city/safehouse',
                 image: '/images/SafeHouse.jpg',
+            },
+            {
+                name: '',
+                link: '',
+                image: '',
             },
         ],
     },

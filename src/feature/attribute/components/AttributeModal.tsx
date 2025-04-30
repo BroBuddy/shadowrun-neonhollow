@@ -2,7 +2,6 @@ import AttributeEditor from './AttributeEditor'
 
 const AttributeModal = ({
     isOpen,
-    toggleModal,
     toggleColorScheme,
 }: {
     isOpen: boolean
@@ -11,7 +10,7 @@ const AttributeModal = ({
 }) => {
     return (
         <div
-            className={`fixed bg-black inset-0 bg-opacity-90 flex transition-transform z-50 duration-500 ${
+            className={`fixed bg-black inset-0 bg-opacity-90 flex transition-transform z-40 duration-500 ${
                 isOpen ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
@@ -24,15 +23,9 @@ const AttributeModal = ({
                         >
                             <strong>Toggle Color Scheme</strong>
                         </span>
-
-                        <span
-                            className="text-white cursor-pointer text-xl -mt-3"
-                            onClick={() => toggleModal(false)}
-                        >
-                            ✕
-                        </span>
                     </div>
                 </div>
+
                 <div className="flex">
                     <AttributeEditor />
                 </div>

@@ -4,6 +4,7 @@ import Headline from '@/components/Headline'
 import DistrictView from '../components/DistrictView'
 import { useMemo } from 'react'
 import FadeIn from '@/components/FadeIn'
+import Card from '@/components/Card'
 
 function City() {
     const cityData = useMemo(() => getCityData(), [])
@@ -24,16 +25,22 @@ function City() {
                             (district: DistrictType, index: number) =>
                                 index <= 2 && (
                                     <p key={index}>
-                                        {district.heat} → {district.name}
+                                        {district.icon} {district.heat} →{' '}
+                                        {district.name}
                                     </p>
                                 )
                         )}
                     </FadeIn>
                 </div>
             </div>
-            {cityData.map((district: DistrictType, index: number) => (
-                <DistrictView key={index} district={district} />
-            ))}
+
+            <Card>
+                <FadeIn>
+                    {cityData.map((district: DistrictType, index: number) => (
+                        <DistrictView key={index} district={district} />
+                    ))}
+                </FadeIn>
+            </Card>
         </>
     )
 }

@@ -10,15 +10,15 @@ const AttributeManager = ({
     const attributes = useAttributeStore((state) => state.attributes)
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
-    const toggleModal = (state: boolean) => {
-        setIsOpen(state)
+    const toggleModal = () => {
+        setIsOpen((prev) => !prev)
     }
 
     return (
         <>
             <div
-                className="fixed cursor-pointer left-0 top-0 w-full bg-black shadow-md z-40 flex w-full"
-                onClick={() => toggleModal(true)}
+                className="fixed cursor-pointer left-0 top-0 w-full bg-black shadow-md z-50 flex w-full"
+                onClick={() => toggleModal()}
             >
                 {Object.entries(attributes).map(([key, [main, temp]]) => (
                     <div key={key} className="w-1/6 text-center p-1">
