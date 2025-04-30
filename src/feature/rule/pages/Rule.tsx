@@ -28,13 +28,21 @@ const Rule = () => {
                             </li>
                         </ul>
                     </section>
+                </FadeIn>
+            </Card>
 
+            <Card>
+                <FadeIn>
                     {MechanicView ? (
                         <MechanicView />
                     ) : (
                         <p>Mechanic view is unavailable.</p>
                     )}
+                </FadeIn>
+            </Card>
 
+            <Card>
+                <FadeIn>
                     <section>
                         <p>
                             <strong>Start your Adventure:</strong>
@@ -50,6 +58,15 @@ const Rule = () => {
                                 </Link>
                             </li>
                         </ul>
+                        <p>
+                            <strong>Player Sheet:</strong>
+                        </p>
+                        <p>
+                            <img
+                                src="/images/PlayerSheet.png"
+                                alt="Player Sheet"
+                            />
+                        </p>
                     </section>
                 </FadeIn>
             </Card>

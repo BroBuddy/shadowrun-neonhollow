@@ -15,7 +15,7 @@ function MechanicView() {
     return (
         <>
             <p>
-                <strong>Know the Mechanics:</strong>
+                <strong>Know the Basics:</strong>
             </p>
             <ul className="list-margin">
                 {data.map((item: Mechanic, index: number) => (

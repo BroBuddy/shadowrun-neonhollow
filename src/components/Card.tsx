@@ -6,9 +6,7 @@ type CardProps = {
 
 const Card = ({ children }: CardProps) => {
     return (
-        <div className="relative card bg-black/80 shadow-md z-30">
-            {children}
-        </div>
+        <div className="relative card bg-black shadow-md z-30">{children}</div>
     )
 }
 

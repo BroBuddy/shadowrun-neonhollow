@@ -3,7 +3,7 @@ import { Mechanic } from './MechanicType'
 const mechanicData: Mechanic[] = [
     {
         tag: 'dice',
-        title: 'Dice Mechanic',
+        title: 'Dice Rolling',
         description:
             'Roll 🎲 Dice to determine outcomes and navigate chance-based scenarios.',
         list: [
@@ -14,8 +14,8 @@ const mechanicData: Mechanic[] = [
         ],
     },
     {
-        tag: 'attribute',
-        title: 'Attribute Mechanic',
+        tag: 'attributes',
+        title: 'Attributes',
         description:
             'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
         list: [
@@ -23,6 +23,7 @@ const mechanicData: Mechanic[] = [
             'Mental Attributes: Logic, Intuition, Charisma',
             'Each attribute is limited to a maximum of six, excluding temporary boosts.',
             'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
+            'No need to track your attributes — they’re fully implemented in the header.',
         ],
     },
     {
@@ -107,14 +108,14 @@ const mechanicData: Mechanic[] = [
         ],
     },
     {
-        tag: 'matrix',
-        title: 'Matrix Mechanic',
-        description:
-            'Decode matrix IDs to progress through challenges and unlock possibilities.',
+        tag: 'sheet',
+        title: 'Player Sheet',
+        description: 'Which values do you need to track? Check the list below:',
         list: [
-            'Roll 2d6 – one die for tens, the other for ones.',
-            'Combine the two rolls to form a two-digit number.',
-            'Use the number rolled to locate the ID on the matrix.',
+            'Time: Track days (0–6) and hours (0–6)',
+            'Health & Energy: Each ranges from 0 to 10',
+            'Edge & Intel : Each ranges from 0 to 6',
+            'Heat: Ranges from 0 to 6',
         ],
     },
 ]
