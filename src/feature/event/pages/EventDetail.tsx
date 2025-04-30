@@ -27,9 +27,12 @@ function EventDetail() {
 
     return (
         <>
-            <Headline>{data.title}</Headline>
+            <Headline>Event</Headline>
             <Card>
                 <FadeIn>
+                    <p>
+                        <strong className="highlight">{data.title}:</strong>
+                    </p>
                     <p>{data.description}</p>
 
                     {data.bonus && (
@@ -42,23 +45,22 @@ function EventDetail() {
                             </ul>
                         </>
                     )}
+                </FadeIn>
+            </Card>
 
-                    {data.skillChecks && (
+            {data.skillChecks && (
+                <Card>
+                    <FadeIn>
                         <>
-                            <div className="mb-5 flex justify-center items-center">
-                                <span className="text-2xl mr-2">&#8595;</span>
-                                <span className="mt-1">Choose</span>
-                            </div>
-
                             {data.skillChecks.map(
                                 (item: SkillCheckType, index: number) => (
                                     <SkillCheck key={index} skillCheck={item} />
                                 )
                             )}
                         </>
-                    )}
-                </FadeIn>
-            </Card>
+                    </FadeIn>
+                </Card>
+            )}
         </>
     )
 }

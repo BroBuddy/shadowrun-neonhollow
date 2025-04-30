@@ -1,49 +1,23 @@
-import FadeIn from '@/components/FadeIn'
-import Card from '../../../components/Card'
-import Headline from '@/components/Headline'
-import MatrixTable from '@/components/MatrixTable'
-import InRow from '@/components/InRow'
-import Dice from '@/components/Dice'
+import { useLayoutEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function Event() {
-    return (
-        <>
-            <Headline>Event</Headline>
-            <Card>
-                <FadeIn>
-                    <p>
-                        <strong className="highlight">Event Rules:</strong>
-                    </p>
-                    <ol className="list-margin">
-                        <li>Choose how to handle the event.</li>
-                        <li>
-                            Roll <strong>2d6</strong> &#8594; Add choosen
-                            attribute
-                        </li>
-                        <li>
-                            If you meet or exceed the{' '}
-                            <strong>Difficulty Check</strong> (DC), you succeed.
-                        </li>
-                    </ol>
-                </FadeIn>
-            </Card>
+    const navigate = useNavigate()
 
-            <Card>
-                <FadeIn>
-                    <p>
-                        <strong className="highlight">Event Matrix:</strong>
-                    </p>
+    const rollCube = (): number => {
+        return Math.floor(Math.random() * 6) + 1
+    }
 
-                    <InRow>
-                        <span>Roll 1d6 twice:</span>
-                        <Dice dice={1} />
-                    </InRow>
+    const randomEvent = () => {
+        const result = `${rollCube()}${rollCube()}`
+        navigate(`/event/${result}`)
+    }
 
-                    <MatrixTable linkPrefix="/event/R4" />
-                </FadeIn>
-            </Card>
-        </>
-    )
+    useLayoutEffect(() => {
+        randomEvent()
+    }, [])
+
+    return null
 }
 
 export default Event

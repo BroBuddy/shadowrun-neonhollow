@@ -10,13 +10,6 @@ const Rule = () => {
             <Headline>Rules</Headline>
             <Card>
                 <FadeIn>
-                    <p>
-                        <strong>Your first Steps:</strong>
-                    </p>
-                    <p>
-                        Grab <strong>2d6</strong>, a pen, and something to write
-                        on.
-                    </p>
                     <MechanicView />
                     <p>
                         <strong>Start your Adventure:</strong>
