@@ -4,9 +4,14 @@ import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import { getBackgroundById, isValidBackground } from '../backgroundData'
 import FadeIn from '@/components/FadeIn'
+import useAttributeStore from '@/store/attributeStore'
+import { formatValue } from '@/lib/helper'
 
 function BackgroundDetail() {
     const { id } = useParams()
+    const modifyAttributes = useAttributeStore(
+        (state) => state.modifyAttributes
+    )
     const data = useMemo(() => getBackgroundById(id as string), [id])
 
     if (!data || !isValidBackground(id as string)) {
@@ -18,6 +23,10 @@ function BackgroundDetail() {
                 </Card>
             </>
         )
+    }
+
+    const handleModifyAttributes = () => {
+        modifyAttributes(data.attributes)
     }
 
     return (
@@ -32,13 +41,23 @@ function BackgroundDetail() {
                         </strong>
                     </p>
                     <ul className="list-margin">
-                        {data.attributes.map(
-                            (attribute: string, index: number) => (
-                                <li key={index}>{attribute}</li>
+                        {Object.entries(data.attributes).map(
+                            ([attribute, value]) => (
+                                <li key={attribute}>
+                                    {attribute}: {formatValue(value)}
+                                </li>
                             )
                         )}
                     </ul>
-                    <p>Apply the bonuses to your player sheet.</p>
+                    <p>
+                        &#8594;{' '}
+                        <span
+                            className="cursor-pointer highlight"
+                            onClick={handleModifyAttributes}
+                        >
+                            Apply Attributes
+                        </span>
+                    </p>
                 </FadeIn>
             </Card>
         </>

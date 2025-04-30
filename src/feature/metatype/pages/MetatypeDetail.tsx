@@ -4,9 +4,11 @@ import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { getMetatypeByTag, isValidMetatype } from '../metatypeData'
 import { Metatype } from '../MetatypeType'
+import useAttributeStore from '@/store/attributeStore'
 
 function MetatypeDetail() {
     const { tag } = useParams()
+    const setAttributes = useAttributeStore((state) => state.setAttributes)
     const data = useMemo(() => {
         return getMetatypeByTag(tag as string) as Metatype
     }, [tag])
@@ -22,6 +24,10 @@ function MetatypeDetail() {
         )
     }
 
+    const handleSetAttributes = () => {
+        setAttributes(data.attributes)
+    }
+
     return (
         <>
             <Headline>{data.title}</Headline>
@@ -34,15 +40,24 @@ function MetatypeDetail() {
                     <strong className="highlight">Starting Attributes:</strong>
                 </p>
                 <ul className="list-margin">
-                    {Object.entries(data.startingAttributes).map(
+                    {Object.entries(data.attributes).map(
                         ([attribute, value]) => (
                             <li key={attribute}>
-                                {attribute}: {value}
+                                {attribute}:{' '}
+                                {Array.isArray(value) ? value[0] : value}
                             </li>
                         )
                     )}
                 </ul>
-                <p>Apply the bonuses to your player sheet.</p>
+                <p>
+                    &#8594;{' '}
+                    <span
+                        className="cursor-pointer highlight"
+                        onClick={handleSetAttributes}
+                    >
+                        Initialize Attributes
+                    </span>
+                </p>
             </Card>
         </>
     )

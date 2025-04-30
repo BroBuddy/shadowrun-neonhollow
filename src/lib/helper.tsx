@@ -34,6 +34,11 @@ const makeUrlsClickable = (html: string) => {
     })
 }
 
+const formatValue = (value: number): string => {
+    const prefix = value < 0 ? '' : '+'
+    return `${prefix}${value}`
+}
+
 const renderRoll2d6 = (text: string) => {
     if (!text.includes('Roll 2d6')) return text
 
@@ -49,4 +54,4 @@ const renderRoll2d6 = (text: string) => {
     )
 }
 
-export { renderRoll2d6, makeUrlsClickable, rulesRegex }
+export { renderRoll2d6, formatValue, makeUrlsClickable, rulesRegex }

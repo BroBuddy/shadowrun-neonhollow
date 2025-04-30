@@ -6,7 +6,7 @@ const metatypeData: Metatype[] = [
         title: 'Human',
         description:
             'The most adaptable and versatile race, humans have the ability to excel in nearly every environment. They may not possess the natural enhancements of the other races, but their drive and determination make them a powerful force in any situation.',
-        startingAttributes: {
+        attributes: {
             Strength: 3,
             Agility: 3,
             Reaction: 3,
@@ -20,7 +20,7 @@ const metatypeData: Metatype[] = [
         title: 'Elf',
         description:
             'Graceful, elegant, and with a keen intellect, elves are often seen as the aristocrats of the Shadowrun world. Their natural agility and charisma make them invaluable in both social and combat situations.',
-        startingAttributes: {
+        attributes: {
             Strength: 2,
             Agility: 4,
             Reaction: 3,
@@ -34,7 +34,7 @@ const metatypeData: Metatype[] = [
         title: 'Dwarf',
         description:
             'Dwarves are the embodiment of endurance and resilience. Shorter in stature but larger in presence, they are known for their strength, toughness, and unyielding determination. They’re often the reliable backbone of any crew.',
-        startingAttributes: {
+        attributes: {
             Strength: 4,
             Agility: 2,
             Reaction: 2,
@@ -48,7 +48,7 @@ const metatypeData: Metatype[] = [
         title: 'Ork',
         description:
             'With a natural inclination toward physical power and aggression, orks are often misunderstood as brutish, but they have a strong sense of loyalty and honor. Their towering frames and raw strength make them formidable in any fight.',
-        startingAttributes: {
+        attributes: {
             Strength: 4,
             Agility: 3,
             Reaction: 3,
@@ -62,7 +62,7 @@ const metatypeData: Metatype[] = [
         title: 'Troll',
         description:
             'Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.',
-        startingAttributes: {
+        attributes: {
             Strength: 4,
             Agility: 2,
             Reaction: 4,

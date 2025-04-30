@@ -1,56 +1,65 @@
 import { Archetype } from './ArchetypeType'
 
-const ATTRIBUTES: Record<string, string> = {
-    STRENGTH: '+1 Strength',
-    AGILITY: '+1 Agility',
-    REACTION: '+1 Reaction',
-    LOGIC: '+1 Logic',
-    INTUITION: '+1 Intuition',
-    CHARISMA: '+1 Charisma',
-}
-
 const archetypeData: readonly Archetype[] = [
     {
         tag: 'streetsamurai',
         title: 'Street Samurai',
         description:
             'A master of combat, both physical and ranged. Often a hired gun or mercenary, the Street Samurai relies on strength and agility to survive in the harsh world of the shadows.',
-        bonusAttributes: [ATTRIBUTES.STRENGTH, ATTRIBUTES.AGILITY],
+        attributes: {
+            Strength: 1,
+            Agility: 1,
+        },
     },
     {
         tag: 'decker',
         title: 'Decker',
         description:
             "The digital cowboy. A Decker navigates the Matrix, hacking and controlling systems with a mix of tech skills and speed. They're often the go-to for gathering information or manipulating digital environments.",
-        bonusAttributes: [ATTRIBUTES.REACTION, ATTRIBUTES.LOGIC],
+        attributes: {
+            Reaction: 1,
+            Logic: 1,
+        },
     },
     {
         tag: 'rigger',
         title: 'Rigger',
         description:
             'Riggers specialize in controlling drones, vehicles, and machinery. Their physical prowess allows them to take charge of mechanical and robotic assets, making them versatile in combat and exploration.',
-        bonusAttributes: [ATTRIBUTES.AGILITY, ATTRIBUTES.LOGIC],
+        attributes: {
+            Agility: 1,
+            Logic: 1,
+        },
     },
     {
         tag: 'mage',
         title: 'Mage',
         description:
             'The wielder of magical powers. Mages use their abilities to manipulate the elements, enchant objects, and protect themselves from harm. They rely heavily on their mental attributes to tap into their magical forces.',
-        bonusAttributes: [ATTRIBUTES.INTUITION, ATTRIBUTES.CHARISMA],
+        attributes: {
+            Intuition: 1,
+            Charisma: 1,
+        },
     },
     {
         tag: 'face',
         title: 'Face',
         description:
             'The social expert, often the face of the team. Faces specialize in negotiations, deception, and influence. They rely on charisma to manipulate others and can charm or intimidate their way through various situations.',
-        bonusAttributes: [ATTRIBUTES.REACTION, ATTRIBUTES.CHARISMA],
+        attributes: {
+            Reaction: 1,
+            Charisma: 1,
+        },
     },
     {
         tag: 'shaman',
         title: 'Shaman',
         description:
             "A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.",
-        bonusAttributes: [ATTRIBUTES.STRENGTH, ATTRIBUTES.INTUITION],
+        attributes: {
+            Strength: 1,
+            Intuition: 1,
+        },
     },
 ]
 

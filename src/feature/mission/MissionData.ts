@@ -35,10 +35,6 @@ const missionData: Mission[] = [
                         description: 'Force entry through a maintenance hatch.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 1',
-                },
             },
             {
                 id: 2,
@@ -64,10 +60,6 @@ const missionData: Mission[] = [
                         description: 'Sleight of hand to grab access cards.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 2',
-                },
             },
             {
                 id: 3,
@@ -93,10 +85,6 @@ const missionData: Mission[] = [
                             'Bluff your way through a security checkpoint.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 3',
-                },
             },
         ],
         twist: {
@@ -114,14 +102,6 @@ const missionData: Mission[] = [
                     description: 'Spot hidden surveillance equipment.',
                 },
             ],
-            failure: {
-                redirect: 'mission/performance',
-                text: 'Performance 4',
-            },
-            success: {
-                redirect: 'mission/performance',
-                text: 'Performance 5',
-            },
         },
     },
     {
@@ -159,10 +139,6 @@ const missionData: Mission[] = [
                         description: 'Exploit a forgotten maintenance port.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 1',
-                },
             },
             {
                 id: 2,
@@ -187,10 +163,6 @@ const missionData: Mission[] = [
                         description: 'Inject a shutdown virus.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 2',
-                },
             },
             {
                 id: 3,
@@ -217,10 +189,6 @@ const missionData: Mission[] = [
                         description: 'Overwhelm it with illogical paradoxes.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 3',
-                },
             },
         ],
         twist: {
@@ -240,14 +208,6 @@ const missionData: Mission[] = [
                         'Crash the fallback node before reboot completes.',
                 },
             ],
-            failure: {
-                redirect: 'mission/performance',
-                text: 'Performance 4',
-            },
-            success: {
-                redirect: 'mission/performance',
-                text: 'Performance 5',
-            },
         },
     },
     {
@@ -284,10 +244,6 @@ const missionData: Mission[] = [
                         description: 'Force open the maintenance shaft.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 1',
-                },
             },
             {
                 id: 2,
@@ -312,10 +268,6 @@ const missionData: Mission[] = [
                         description: 'Pretend you’re scheduled for a meeting.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 2',
-                },
             },
             {
                 id: 3,
@@ -340,10 +292,6 @@ const missionData: Mission[] = [
                         description: 'Leave physical evidence of your power.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 3',
-                },
             },
         ],
         twist: {
@@ -363,14 +311,6 @@ const missionData: Mission[] = [
                         'Realize it’s a decoy and trace the real core.',
                 },
             ],
-            failure: {
-                redirect: 'mission/performance',
-                text: 'Performance 4',
-            },
-            success: {
-                redirect: 'mission/performance',
-                text: 'Performance 5',
-            },
         },
     },
     {
@@ -410,10 +350,6 @@ const missionData: Mission[] = [
                             'Force open the door or break through barriers that are in your way.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 1',
-                },
             },
             {
                 id: 2,
@@ -441,10 +377,6 @@ const missionData: Mission[] = [
                             'Convince an AI assistant to provide you with access to the files.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 2',
-                },
             },
             {
                 id: 3,
@@ -472,10 +404,6 @@ const missionData: Mission[] = [
                             'Physically remove any data-destroying countermeasures they’ve set up to erase the files.',
                     },
                 ],
-                failure: {
-                    redirect: 'mission/performance',
-                    text: 'Performance 3',
-                },
             },
         ],
         twist: {
@@ -489,14 +417,6 @@ const missionData: Mission[] = [
                         'Escape the hit team and secure your freedom before they can erase your presence.',
                 },
             ],
-            failure: {
-                redirect: 'welldone',
-                text: 'Well Done',
-            },
-            success: {
-                redirect: 'overwhelminglygreat',
-                text: 'Overwhelmingly Great',
-            },
         },
     },
 ]
