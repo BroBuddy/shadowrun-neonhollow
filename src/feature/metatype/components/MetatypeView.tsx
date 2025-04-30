@@ -15,7 +15,7 @@ function MetatypeView() {
     }
 
     return (
-        <Card dice={1}>
+        <Card>
             <FadeIn>
                 <p>
                     <strong className="highlight">Metatype:</strong>

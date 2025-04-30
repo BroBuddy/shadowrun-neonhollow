@@ -27,7 +27,7 @@ function EventDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card dice={2}>
+            <Card>
                 <FadeIn>
                     <p>{data.description}</p>
 

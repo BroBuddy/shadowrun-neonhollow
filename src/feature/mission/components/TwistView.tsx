@@ -9,7 +9,7 @@ type MissionTwistProps = {
 
 const TwistView = ({ twist }: MissionTwistProps) => {
     return (
-        <Card dice={2}>
+        <Card>
             <FadeIn>
                 <p>
                     <strong className="highlight">Twist:</strong>

@@ -9,7 +9,7 @@ type FacilityRollsProps = {
 
 const RollsView = ({ rollList }: FacilityRollsProps) => {
     return (
-        <Card dice={2}>
+        <Card>
             <FadeIn>
                 <p>
                     <strong className="highlight">Enter</strong> &#8594;{' '}

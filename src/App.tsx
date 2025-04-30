@@ -2,6 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect, useState } from 'react'
 import MobileNav from './components/MobileNav'
 import Settings from './components/Settings'
+import FixedHeader from './components/FixedHeader'
 import './App.scss'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
     return (
         <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
             <Settings toggleColorScheme={toggleColorScheme} />
+            <FixedHeader />
             <Outlet />
             <MobileNav />
         </div>

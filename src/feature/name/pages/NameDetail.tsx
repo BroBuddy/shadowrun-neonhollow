@@ -26,7 +26,7 @@ function NameDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card dice={1}>
+            <Card>
                 <FadeIn>
                     <p>
                         Roll <strong>1d6</strong> to get a first name and{' '}

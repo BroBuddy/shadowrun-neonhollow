@@ -4,7 +4,7 @@ import MatrixTable from '@/components/MatrixTable'
 
 function BackgroundView() {
     return (
-        <Card dice={1}>
+        <Card>
             <FadeIn>
                 <p>
                     <strong className="highlight">Background:</strong>

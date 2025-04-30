@@ -1,10 +1,10 @@
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type DiceProps = {
     dice?: number
 }
 
-const Dice = ({ dice }: DiceProps) => {
+const Dice = ({ dice = 1 }: DiceProps) => {
     const defaultDice: string = '🎲'
     const [content, setContent] = useState<string>(defaultDice)
     const [isRolling, setIsRolling] = useState<boolean>(false)
@@ -12,34 +12,44 @@ const Dice = ({ dice }: DiceProps) => {
     const min = dice === 1 ? 1 : 2
     const max = dice === 1 ? 6 : 11
 
+    const rollDice = (min: number, max: number): number => {
+        return Math.floor(Math.random() * (max - min + 1)) + min
+    }
+
     const handleDiceClick = () => {
         if (isRolling) return
-        runningDice()
+
+        setIsRolling(true)
+        setContent(defaultDice)
 
         timeoutRef.current = setTimeout(() => {
-            const number = Math.floor(Math.random() * max) + min
+            const number = rollDice(min, max)
             setContent(number.toString())
             setIsRolling(false)
 
             timeoutRef.current = setTimeout(() => {
                 resetDice()
-            }, 1500)
+            }, 1000)
         }, 300)
-    }
-
-    const runningDice = () => {
-        setContent(defaultDice)
-        setIsRolling(true)
     }
 
     const resetDice = () => {
         setContent(defaultDice)
         setIsRolling(false)
+        clearTimeRef()
+    }
 
+    const clearTimeRef = () => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current)
         }
     }
+
+    useEffect(() => {
+        return () => {
+            clearTimeRef()
+        }
+    }, [])
 
     return (
         <div

@@ -15,7 +15,7 @@ function ArchetypeView() {
     }
 
     return (
-        <Card dice={1}>
+        <Card>
             <FadeIn>
                 <p>
                     <strong className="highlight">Archetype:</strong>

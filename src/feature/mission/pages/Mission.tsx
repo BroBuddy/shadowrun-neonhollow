@@ -35,7 +35,7 @@ function Mission() {
                 </div>
             </div>
 
-            <Card dice={2}>
+            <Card>
                 <FadeIn>
                     <p>
                         Know the rules{' '}

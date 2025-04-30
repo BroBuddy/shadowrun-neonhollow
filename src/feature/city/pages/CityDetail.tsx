@@ -52,7 +52,7 @@ function CityDetail() {
             <ActionsView actionList={data.actionList} />
 
             {inZeroZone && (
-                <Card dice={1}>
+                <Card>
                     <p>
                         <strong className="highlight">Runner Matrix:</strong>
                     </p>

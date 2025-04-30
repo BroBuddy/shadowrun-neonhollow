@@ -26,7 +26,7 @@ function Event() {
                 </FadeIn>
             </Card>
 
-            <Card dice={1}>
+            <Card>
                 <FadeIn>
                     <p>
                         <strong className="highlight">Event Matrix:</strong>

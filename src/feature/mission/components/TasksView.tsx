@@ -34,7 +34,7 @@ const TasksView = ({
             {tasks.map((item: MissionTask, index: number) =>
                 missionProgress >= index ? (
                     <React.Fragment key={item.id}>
-                        <Card dice={2}>
+                        <Card>
                             <FadeIn>
                                 <p>
                                     <strong className="highlight">
