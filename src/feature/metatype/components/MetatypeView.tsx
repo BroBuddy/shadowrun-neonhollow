@@ -4,6 +4,8 @@ import { Metatype } from '../MetatypeType'
 import { useMemo } from 'react'
 import { getMetatypeData } from '../metatypeData'
 import FadeIn from '@/components/FadeIn'
+import InRow from '@/components/InRow'
+import Dice from '@/components/Dice'
 
 function MetatypeView() {
     const data = useMemo(() => {
@@ -20,9 +22,12 @@ function MetatypeView() {
                 <p>
                     <strong className="highlight">Metatype:</strong>
                 </p>
-                <p>
-                    <span>Roll 1d6:</span>
-                </p>
+
+                <InRow>
+                    <span>Roll:</span>
+                    <Dice dice={1} />
+                </InRow>
+
                 <ol className="list-margin">
                     {data.map((item: Metatype, index: number) => (
                         <li key={index}>

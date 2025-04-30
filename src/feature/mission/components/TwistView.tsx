@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import { MissionOption, MissionTwist as MissionTwistType } from '../MissionType'
 import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 type MissionTwistProps = {
     twist: MissionTwistType
@@ -16,7 +18,12 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                     <br />
                     {twist.description}
                 </p>
-                <ul>
+
+                <InRow>
+                    <span>Roll:</span>
+                    <Dice dice={2} />
+                </InRow>
+                <ul className="list-margin">
                     {twist.options.map((item: MissionOption, index: number) => (
                         <li key={index}>
                             <strong className="highlight">
@@ -33,17 +40,11 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                     <strong>Success?</strong> &#8594; +1 Performance
                 </p>
                 <div className="mb-5 flex justify-center items-center">
-                    <span className="text-2xl mr-2">&#8595;</span>
-                    <span className="mt-1">Reward</span>
+                    <Link to="/mission/performance">
+                        <span className="text-2xl mr-2">&#8595;</span>
+                        <strong className="mt-1">Reward</strong>
+                    </Link>
                 </div>
-                <p>
-                    Claim your rewards from Mr. Johnson — what you earn depends
-                    on your mission success.
-                </p>
-                <p>
-                    &#8594;{' '}
-                    <Link to="/mission/performance">Mission Reward</Link>
-                </p>
             </FadeIn>
         </Card>
     )

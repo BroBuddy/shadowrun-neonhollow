@@ -1,11 +1,12 @@
+import InRow from '@/components/InRow'
 import { SkillCheck as SkillCheckType } from '../EventType'
+import Dice from '@/components/Dice'
 
 type SkillCheckProps = {
     skillCheck: SkillCheckType
-    isAlternative?: boolean
 }
 
-const SkillCheck = ({ skillCheck, isAlternative }: SkillCheckProps) => {
+const SkillCheck = ({ skillCheck }: SkillCheckProps) => {
     return (
         <div>
             <p>
@@ -17,17 +18,19 @@ const SkillCheck = ({ skillCheck, isAlternative }: SkillCheckProps) => {
 
             <p>{skillCheck.description}</p>
             <ul className="list-margin">
-                <li>Roll 2d6 &#8594; Add {skillCheck.attribute}</li>
-                <li>Success? &#8594; {skillCheck.success}</li>
-                <li>Fail? &#8594; {skillCheck.fail}</li>
+                <li>
+                    <InRow>
+                        <span>Roll</span> <Dice dice={2} /> <span>&#8594;</span>{' '}
+                        <span>Add {skillCheck.attribute}</span>
+                    </InRow>
+                </li>
+                <li>
+                    <strong>Success?</strong> &#8594; {skillCheck.success}
+                </li>
+                <li>
+                    <strong>Fail?</strong> &#8594; {skillCheck.fail}
+                </li>
             </ul>
-
-            {isAlternative && (
-                <div className="mb-5 flex justify-center items-center">
-                    <span className="text-2xl mr-2">&#8595;</span>
-                    <span className="mt-1">Alternative</span>
-                </div>
-            )}
         </div>
     )
 }

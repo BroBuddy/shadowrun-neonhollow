@@ -52,11 +52,7 @@ function EventDetail() {
 
                             {data.skillChecks.map(
                                 (item: SkillCheckType, index: number) => (
-                                    <SkillCheck
-                                        key={index}
-                                        skillCheck={item}
-                                        isAlternative={index === 0}
-                                    />
+                                    <SkillCheck key={index} skillCheck={item} />
                                 )
                             )}
                         </>

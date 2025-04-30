@@ -5,6 +5,8 @@ import { Name } from '../NameType'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 function NameDetail() {
     const { tag } = useParams()
@@ -33,7 +35,13 @@ function NameDetail() {
                         <strong>1d6</strong> for a second name from the
                         appropriate list.
                     </p>
-                    <div className="grid grid-cols-2">
+
+                    <InRow>
+                        <span>Roll:</span>
+                        <Dice dice={1} />
+                    </InRow>
+
+                    <div className="grid mt-4 grid-cols-2">
                         <div>
                             <p>
                                 <strong className="highlight">

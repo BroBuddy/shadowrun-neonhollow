@@ -14,8 +14,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         effects: [
             { description: '+1 Heat' },
             {
-                description: 'Roll 2d6 → +2 → Gain Intel',
-                link: '/intel',
+                description: '+1 Intel',
             },
         ],
     },
@@ -28,8 +27,7 @@ const MissionPerformance: MissionPerformancesType[] = [
                 description: '+4.000 ¥',
             },
             {
-                description: 'Roll 2d6 → +4 → Gain Intel',
-                link: '/intel',
+                description: '+2 Intel',
             },
         ],
     },
@@ -38,10 +36,10 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 Performance 7',
         level: 'Impressive',
         effects: [
-            { description: '+1 Edge' },
             {
                 description: '+8.000 ¥',
             },
+            { description: '+1 Edge' },
             { description: 'Next Mission available' },
         ],
     },
@@ -50,10 +48,10 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 Performance 9',
         level: 'Exceptional',
         effects: [
-            { description: '+2 Edge' },
             {
                 description: '+12.000 ¥',
             },
+            { description: '+2 Edge' },
             { description: 'Next Mission available' },
         ],
     },

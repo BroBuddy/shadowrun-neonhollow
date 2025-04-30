@@ -4,6 +4,8 @@ import { useMemo } from 'react'
 import { getArchetypeData } from '../archtypeData'
 import { Archetype } from '../ArchetypeType'
 import FadeIn from '@/components/FadeIn'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 function ArchetypeView() {
     const data = useMemo(() => {
@@ -21,7 +23,11 @@ function ArchetypeView() {
                     <strong className="highlight">Archetype:</strong>
                 </p>
 
-                <p>Roll 1d6:</p>
+                <InRow>
+                    <span>Roll:</span>
+                    <Dice dice={1} />
+                </InRow>
+
                 <ol className="list-margin">
                     {data.map((item: Archetype, index: number) => (
                         <li key={index}>

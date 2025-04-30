@@ -5,6 +5,8 @@ import { getMissionData } from '../missionData'
 import { useMemo } from 'react'
 import { Mission as MissionType } from '../MissionType'
 import FadeIn from '@/components/FadeIn'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 function Mission() {
     const data = useMemo(() => {
@@ -53,8 +55,12 @@ function Mission() {
                             hazard pay
                         </li>
                         <li>
-                            <strong>Roll:</strong> 2d6 &#8594; Add{' '}
-                            <strong>Charisma</strong>
+                            <InRow>
+                                <strong>Roll:</strong>
+                                <Dice dice={2} />
+                                <span>&#8594;</span>
+                                <span>Add Charisma</span>
+                            </InRow>
                         </li>
                         <li>
                             <strong>Gain:</strong>{' '}

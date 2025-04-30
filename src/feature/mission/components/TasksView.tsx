@@ -1,6 +1,8 @@
 import { MissionTask, MissionOutcome } from '../MissionType'
 import Card from '@/components/Card'
+import Dice from '@/components/Dice'
 import FadeIn from '@/components/FadeIn'
+import InRow from '@/components/InRow'
 import React from 'react'
 
 type MissionTasksProps = {
@@ -40,7 +42,12 @@ const TasksView = ({
                                         {item.title}
                                     </strong>
                                 </p>
-                                <p>Roll 2d6:</p>
+
+                                <InRow>
+                                    <span>Roll:</span>
+                                    <Dice dice={2} />
+                                </InRow>
+
                                 <ul className="list-margin">
                                     {item.outcomes.map(
                                         (outcome: MissionOutcome) => (
@@ -68,7 +75,7 @@ const TasksView = ({
                                 </p>
                                 {missionProgress === index && (
                                     <div
-                                        className="mb-5 flex justify-center items-center cursor-pointer"
+                                        className="mb-5 flex justify-center items-center cursor-pointer highlight"
                                         onClick={() =>
                                             onHandleProgress(index + 1)
                                         }
@@ -76,11 +83,9 @@ const TasksView = ({
                                         <span className="text-2xl mr-2">
                                             &#8595;
                                         </span>
-                                        <span className="mt-1">
-                                            {index < 2
-                                                ? 'Next Task'
-                                                : 'Reveal Twist'}
-                                        </span>
+                                        <strong className="mt-1">
+                                            {index < 2 ? 'Next' : 'Twist'}
+                                        </strong>
                                     </div>
                                 )}
                             </FadeIn>

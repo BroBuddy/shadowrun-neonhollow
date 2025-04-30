@@ -8,6 +8,8 @@ import { useMemo } from 'react'
 import Card from '@/components/Card'
 import MatrixTable from '@/components/MatrixTable'
 import FadeIn from '@/components/FadeIn'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 function CityDetail() {
     const { tag } = useParams()
@@ -56,7 +58,11 @@ function CityDetail() {
                     <p>
                         <strong className="highlight">Runner Matrix:</strong>
                     </p>
-                    <p>Roll 1d6 twice:</p>
+
+                    <InRow>
+                        <span>Roll 1d6 twice:</span>
+                        <Dice dice={1} />
+                    </InRow>
                     <MatrixTable linkPrefix="/rule/R5" />
                 </Card>
             )}

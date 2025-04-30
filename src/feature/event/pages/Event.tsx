@@ -2,6 +2,8 @@ import FadeIn from '@/components/FadeIn'
 import Card from '../../../components/Card'
 import Headline from '@/components/Headline'
 import MatrixTable from '@/components/MatrixTable'
+import InRow from '@/components/InRow'
+import Dice from '@/components/Dice'
 
 function Event() {
     return (
@@ -31,7 +33,12 @@ function Event() {
                     <p>
                         <strong className="highlight">Event Matrix:</strong>
                     </p>
-                    <p>Roll 1d6 twice:</p>
+
+                    <InRow>
+                        <span>Roll 1d6 twice:</span>
+                        <Dice dice={1} />
+                    </InRow>
+
                     <MatrixTable linkPrefix="/event/R4" />
                 </FadeIn>
             </Card>

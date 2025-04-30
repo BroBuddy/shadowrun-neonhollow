@@ -36,7 +36,7 @@ const facilityData: Facility[] = [
             {
                 title: '💡 Mind Overdrive:',
                 steps: [
-                    { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
+                    { text: 'Spend 3 Health → Roll 2d6 → +2' },
                     { text: 'Add Logic or Intuition' },
                     { text: 'Gain Intel', link: '/intel' },
                 ],
@@ -53,7 +53,7 @@ const facilityData: Facility[] = [
                 title: '🧠 Logic Refinement:',
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Logic' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Logic' },
+                    { text: 'Roll 2d6 → Add 10 → -Logic' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -77,7 +77,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔥 Quiet Bribe:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
                     { text: 'Add Strength or Charisma' },
                     { text: 'Reduce Heat', link: '/heat' },
                 ],
@@ -85,7 +85,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Bounty Pursuit:',
                 steps: [
-                    { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
+                    { text: 'Spend 3 Health → Roll 2d6 → +2' },
                     { text: 'Add Strength or Intuition' },
                     { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
@@ -110,7 +110,7 @@ const facilityData: Facility[] = [
             {
                 title: '❤️ Nano Restoration:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
                     { text: 'Add Strength or Agility' },
                     { text: 'Gain Health', link: '/health' },
                 ],
@@ -127,7 +127,7 @@ const facilityData: Facility[] = [
                 title: '💪 Agility Recalibration:',
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Agility' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Agility' },
+                    { text: 'Roll 2d6 → Add 10 → -Agility' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -151,7 +151,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔋 Vital Rejuvenation:',
                 steps: [
-                    { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
+                    { text: 'Spend 1 Health → Roll 2d6 → -2' },
                     { text: 'Add Agility or Reaction' },
                     { text: 'Gain Energy', link: '/energy' },
                 ],
@@ -168,7 +168,7 @@ const facilityData: Facility[] = [
                 title: '💪 Reaction Sharpening:',
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Reaction' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Reaction' },
+                    { text: 'Roll 2d6 → Add 10 → -Reaction' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -192,7 +192,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔋 Energetic Reboot:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
                     { text: 'Add Reaction or Intuition' },
                     { text: 'Gain Energy', link: '/energy' },
                 ],
@@ -209,7 +209,7 @@ const facilityData: Facility[] = [
                 title: '🧠 Intuition Awareness:',
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Intuition' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Intuition' },
+                    { text: 'Roll 2d6 → Add 10 → -Intuition' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -250,7 +250,7 @@ const facilityData: Facility[] = [
                 title: '🧠 Charisma Negotiation:',
                 steps: [
                     { text: 'Pay 2.000 ¥ per point of Charisma' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Charisma' },
+                    { text: 'Roll 2d6 → Add 10 → -Charisma' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -291,7 +291,7 @@ const facilityData: Facility[] = [
                 title: '💪 Strength Conditioning:',
                 steps: [
                     { text: 'Pay 1.000 ¥ per point of Strength' },
-                    { text: 'Roll 2d6 → Add 10 → Subtract Strength' },
+                    { text: 'Roll 2d6 → Add 10 → -Strength' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
             },
@@ -315,7 +315,7 @@ const facilityData: Facility[] = [
             {
                 title: '🤝 Recruit a Runner:',
                 steps: [
-                    { text: 'Roll Runner Matrix → See Runner' },
+                    { text: 'Roll on Runner Matrix → See Runner' },
                     { text: 'Remember The two highest attributes' },
                     { text: 'Pay 10.000 ¥ → Roll 2d6 → Add Charisma' },
                     { text: 'Hire Runner', link: '/runner' },
@@ -325,7 +325,7 @@ const facilityData: Facility[] = [
                 title: '⚔️ Challenge a Runner:',
                 steps: [
                     { text: 'Combine Your two highest attributes' },
-                    { text: 'Roll Runner Matrix → See Runner' },
+                    { text: 'Roll on Runner Matrix → See Runner' },
                     { text: 'Add Opponent’s corresponding values' },
                     { text: 'You lost? → Lose Health equal to the gap' },
                     { text: 'Add 10 to the gap' },
@@ -352,7 +352,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Fence Hot Goods:',
                 steps: [
-                    { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
+                    { text: 'Spend 1 Health → Roll 2d6 → -2' },
                     { text: 'Add Agility or Logic' },
                     { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
@@ -360,7 +360,7 @@ const facilityData: Facility[] = [
             {
                 title: '💡 Corrupted Files:',
                 steps: [
-                    { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
+                    { text: 'Pay 2.000 ¥ → Roll 2d6 → -2' },
                     { text: 'Add Agility or Intuition' },
                     { text: 'Gain Intel', link: '/intel' },
                 ],
@@ -377,7 +377,7 @@ const facilityData: Facility[] = [
             {
                 title: '❤️ Stimulant Injection:',
                 steps: [
-                    { text: 'Spend 1 Energy → Roll 2d6 → Subtract 2' },
+                    { text: 'Spend 1 Energy → Roll 2d6 → -2' },
                     { text: 'Add Strength or Logic' },
                     { text: 'Gain Health', link: '/health' },
                 ],
@@ -385,7 +385,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔥 False Credentials:',
                 steps: [
-                    { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
+                    { text: 'Pay 2.000 ¥ → Roll 2d6 → -2' },
                     { text: 'Add Agility or Charisma' },
                     { text: 'Reduce Heat', link: '/heat' },
                 ],

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ActionStep as ActionStepType } from '../FacilityType'
+import { renderRoll2d6 } from '@/lib/helper'
 
 type ActionStepProps = {
     step: ActionStepType
@@ -18,9 +19,7 @@ const ActionStep = ({ step }: ActionStepProps) => {
                     </Link>
                 </>
             ) : (
-                <>
-                    <strong>{firstWord}:</strong> {remainingWords.join(' ')}
-                </>
+                renderRoll2d6(step.text)
             )}
         </li>
     )

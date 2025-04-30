@@ -9,7 +9,7 @@ type MatrixTableProps = {
 
 function MatrixTable({ linkPrefix }: MatrixTableProps) {
     return (
-        <table>
+        <table className="my-2">
             <thead>
                 <tr>
                     <th>2d6</th>
