@@ -78,6 +78,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Edge ranges from 0 to 6 and cannot exceed these limits.',
             'Spend 1 Edge during a skill check to gain an additional roll.',
+            'Spend 1 Edge before a roll to add your current Edge level as a bonus to that check.',
             'Service Providers: Skill Checks, Town Events, Mr. Johnson.',
         ],
     },

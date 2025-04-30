@@ -1,7 +1,7 @@
 import Card from '@/components/Card'
-import { Link } from 'react-router-dom'
-import { ActionStep, FacilityAction } from '../FacilityType'
+import { FacilityAction } from '../FacilityType'
 import FadeIn from '@/components/FadeIn'
+import ActionStep from './ActionStep'
 
 type FacilityActionsProps = {
     actionList: FacilityAction[]
@@ -17,38 +17,9 @@ const ActionsView = ({ actionList }: FacilityActionsProps) => {
                             <strong className="highlight">{item.title}</strong>
                         </p>
                         <ul className="list-margin">
-                            {item.steps.map(
-                                (step: ActionStep, stepIndex: number) => {
-                                    const [firstWord, ...remainingWords] =
-                                        step.text.split(' ')
-
-                                    return (
-                                        <li key={stepIndex}>
-                                            {step.link ? (
-                                                <>
-                                                    <strong>
-                                                        {firstWord}:
-                                                    </strong>{' '}
-                                                    <Link
-                                                        to={`/resource${step.link}`}
-                                                    >
-                                                        {remainingWords.join(
-                                                            ' '
-                                                        )}
-                                                    </Link>
-                                                </>
-                                            ) : (
-                                                <>
-                                                    <strong>
-                                                        {firstWord}:
-                                                    </strong>{' '}
-                                                    {remainingWords.join(' ')}
-                                                </>
-                                            )}
-                                        </li>
-                                    )
-                                }
-                            )}
+                            {item.steps.map((step, stepIndex) => (
+                                <ActionStep key={stepIndex} step={step} />
+                            ))}
                         </ul>
                     </div>
                 ))}
