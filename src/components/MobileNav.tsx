@@ -22,7 +22,7 @@ const MobileNav = () => {
                     to={item.path}
                     className="flex flex-col items-center justify-center text-center"
                 >
-                    <span className="text-lg">{item.icon}</span>
+                    <span className="text-md">{item.icon}</span>
                     <span className="text-xs">{item.text}</span>
                 </Link>
             ))}
