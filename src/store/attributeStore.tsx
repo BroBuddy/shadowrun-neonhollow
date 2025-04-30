@@ -8,6 +8,7 @@ type AttributeState = {
         modAttributes: Record<string, number>,
         isTemporary?: boolean
     ) => void
+    resetTemporaryAttributes: () => void
 }
 
 const useAttributeStore = create<AttributeState>((set) => ({
@@ -34,7 +35,6 @@ const useAttributeStore = create<AttributeState>((set) => ({
             return { attributes: updated }
         })
     },
-
     modifyAttributes: (modAttributes, isTemporary = false) => {
         set((state) => {
             const updated = { ...state.attributes }
@@ -49,6 +49,18 @@ const useAttributeStore = create<AttributeState>((set) => ({
             })
 
             return { attributes: updated }
+        })
+    },
+    resetTemporaryAttributes: () => {
+        set((state) => {
+            const updatedAttributes: Record<string, [number, number]> =
+                Object.fromEntries(
+                    Object.entries(state.attributes).map(([key, [main]]) => [
+                        key,
+                        [main, 0],
+                    ])
+                )
+            return { attributes: updatedAttributes }
         })
     },
 }))

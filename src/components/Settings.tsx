@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AttributeEditor from './AttributeEditor'
 
 function Settings({ toggleColorScheme }: { toggleColorScheme: () => void }) {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -38,6 +39,9 @@ function Settings({ toggleColorScheme }: { toggleColorScheme: () => void }) {
                                 ✕
                             </span>
                         </div>
+                    </div>
+                    <div className="flex">
+                        <AttributeEditor />
                     </div>
                 </div>
             </div>
