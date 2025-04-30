@@ -5,13 +5,14 @@ const MissionPerformance: MissionPerformancesType[] = [
         id: 1,
         title: '🔴 Performance 1',
         level: 'Disastrous',
-        effects: [{ description: 'No Effect' }],
+        effects: [{ description: '+2 Heat' }],
     },
     {
         id: 2,
         title: '🔴 Performance 3',
         level: 'Underwhelming',
         effects: [
+            { description: '+1 Heat' },
             {
                 description: 'Roll 2d6 → +2 → Gain Intel',
                 link: '/intel',
