@@ -20,8 +20,8 @@ const AttributeEditor = () => {
             <table>
                 <thead>
                     <tr>
-                        <th>Attribute</th>
                         <th>Main</th>
+                        <th>Attribute</th>
                         <th>Temporary</th>
                     </tr>
                 </thead>
