@@ -5,7 +5,7 @@ const metatypeData: Metatype[] = [
         tag: 'human',
         title: 'Human',
         description:
-            'The most adaptable and versatile race, humans have the ability to excel in nearly every environment. They may not possess the natural enhancements of the other races, but their drive and determination make them a powerful force in any situation.',
+            'Adaptable and versatile, humans excel in any environment through drive and determination.',
         attributes: {
             Strength: 3,
             Agility: 3,
@@ -19,7 +19,7 @@ const metatypeData: Metatype[] = [
         tag: 'elf',
         title: 'Elf',
         description:
-            'Graceful, elegant, and with a keen intellect, elves are often seen as the aristocrats of the Shadowrun world. Their natural agility and charisma make them invaluable in both social and combat situations.',
+            'Elegant and intellectual, elves shine with natural agility and charisma in social and combat settings.',
         attributes: {
             Strength: 2,
             Agility: 4,
@@ -33,7 +33,7 @@ const metatypeData: Metatype[] = [
         tag: 'dwarf',
         title: 'Dwarf',
         description:
-            'Dwarves are the embodiment of endurance and resilience. Shorter in stature but larger in presence, they are known for their strength, toughness, and unyielding determination. They’re often the reliable backbone of any crew.',
+            'Resilient and tough, dwarves boast strength and determination, making them reliable allies.',
         attributes: {
             Strength: 4,
             Agility: 2,
@@ -47,7 +47,7 @@ const metatypeData: Metatype[] = [
         tag: 'ork',
         title: 'Ork',
         description:
-            'With a natural inclination toward physical power and aggression, orks are often misunderstood as brutish, but they have a strong sense of loyalty and honor. Their towering frames and raw strength make them formidable in any fight.',
+            'Powerful and loyal, orks bring raw strength and honor despite being often misunderstood.',
         attributes: {
             Strength: 4,
             Agility: 3,
@@ -61,7 +61,7 @@ const metatypeData: Metatype[] = [
         tag: 'troll',
         title: 'Troll',
         description:
-            'Trolls are intimidating giants, known for their immense physical strength and natural toughness. While their appearance often causes fear, trolls are also capable of deep loyalty and fierce protection for those they care about.',
+            'Physically mighty, trolls combine toughness with fierce loyalty and protective instincts.',
         attributes: {
             Strength: 4,
             Agility: 2,

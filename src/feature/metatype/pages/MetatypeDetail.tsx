@@ -5,6 +5,7 @@ import Card from '@/components/Card'
 import { getMetatypeByTag, isValidMetatype } from '../metatypeData'
 import { Metatype } from '../MetatypeType'
 import useAttributeStore from '@/store/attributeStore'
+import FadeIn from '@/components/FadeIn'
 
 function MetatypeDetail() {
     const { tag } = useParams()
@@ -31,11 +32,23 @@ function MetatypeDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
+            <div className="flex gap-4 mb-4 mx-5">
+                <div className="flex-1 basis-1/2">
+                    <img
+                        src={`/images/${data.title}.jpg`}
+                        alt={data.title}
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-1 basis-1/2">
+                    <FadeIn>
+                        <p>
+                            <em>"{data.description}"</em>
+                        </p>
+                    </FadeIn>
+                </div>
+            </div>
             <Card>
-                <p className="flex items-center justify-center">
-                    <img src={`/images/${data.title}.jpg`} alt={data.title} />
-                </p>
-                <p>{data.description}</p>
                 <p>
                     <strong className="highlight">Starting Attributes:</strong>
                 </p>
