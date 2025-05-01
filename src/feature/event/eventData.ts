@@ -949,7 +949,7 @@ const eventFacility: readonly Event[] = [
         title: 'Security Check',
         location: 'SecurityHub',
         description:
-            'Security officers confront you at PatrolHub, suspicious of your presence. Smooth the encounter or stand your ground.',
+            'Security officers confront you at SecurityHub, suspicious of your presence. Smooth the encounter or stand your ground.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -975,7 +975,7 @@ const eventFacility: readonly Event[] = [
         title: 'Medical Malfunction',
         location: 'VitalClinic',
         description:
-            'Critical patients overwhelm BioCare systems. Time is running out to assist in the chaotic environment.',
+            'Critical patients overwhelm VitalClinic systems. Time is running out to assist in the chaotic environment.',
         skillChecks: [
             {
                 attribute: 'Agility',
