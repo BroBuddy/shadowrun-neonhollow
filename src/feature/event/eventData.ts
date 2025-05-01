@@ -1032,7 +1032,7 @@ const eventFacility: readonly Event[] = [
     },
     {
         id: '75',
-        title: 'Dream State Disturbance',
+        title: 'Dream Glitch',
         description:
             'As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.',
         skillChecks: [

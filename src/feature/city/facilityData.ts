@@ -167,7 +167,7 @@ const facilityData: Facility[] = [
             {
                 title: '💪 Reaction Sharpening:',
                 steps: [
-                    { text: 'Pay 1.000 ¥ per point of Reaction' },
+                    { text: 'Pay 2.000 ¥ per point of Reaction' },
                     { text: 'Roll 2d6 → Add 10 → -Reaction' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
@@ -208,7 +208,7 @@ const facilityData: Facility[] = [
             {
                 title: '🧠 Intuition Awareness:',
                 steps: [
-                    { text: 'Pay 1.000 ¥ per point of Intuition' },
+                    { text: 'Pay 2.000 ¥ per point of Intuition' },
                     { text: 'Roll 2d6 → Add 10 → -Intuition' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
@@ -290,7 +290,7 @@ const facilityData: Facility[] = [
             {
                 title: '💪 Strength Conditioning:',
                 steps: [
-                    { text: 'Pay 1.000 ¥ per point of Strength' },
+                    { text: 'Pay 2.000 ¥ per point of Strength' },
                     { text: 'Roll 2d6 → Add 10 → -Strength' },
                     { text: 'Improve Attribute', link: '/attribute' },
                 ],
