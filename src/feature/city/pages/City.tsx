@@ -20,7 +20,9 @@ function City() {
                     <div className="flex-1 basis-3/5">
                         <FadeIn>
                             <p>
-                                <strong>District Lockdowns:</strong>
+                                <strong className="highlight">
+                                    District Lockdowns:
+                                </strong>
                             </p>
                             {cityData.map(
                                 (district: DistrictType, index: number) =>
