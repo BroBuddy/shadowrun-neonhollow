@@ -24,7 +24,7 @@ const PopUp: React.FC<PopUpProps> = ({ title, children }) => {
             {isPopUpOpen && (
                 <div
                     onClick={handleClose}
-                    className="flex fixed inset-0 bg-black/80 justify-center items-center z-60 transition-opacity duration-300 cursor-pointer"
+                    className="flex fixed inset-0 bg-black/80 justify-center items-center p-5 z-60 transition-opacity duration-300 cursor-pointer"
                 >
                     <div
                         className="cursor-default"
