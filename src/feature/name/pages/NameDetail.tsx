@@ -4,7 +4,6 @@ import { getNameByTag, isValidName } from '../nameData'
 import { Name } from '../NameType'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
-import FadeIn from '@/components/FadeIn'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 
@@ -29,49 +28,43 @@ function NameDetail() {
         <>
             <Headline>{data.title}</Headline>
             <Card>
-                <FadeIn>
-                    <p>
-                        Roll <strong>1d6</strong> to get a first name and{' '}
-                        <strong>1d6</strong> for a second name from the
-                        appropriate list.
-                    </p>
+                <p>
+                    Roll <strong>1d6</strong> to get a first name and{' '}
+                    <strong>1d6</strong> for a second name from the appropriate
+                    list.
+                </p>
 
-                    <InRow>
-                        <span>Roll:</span>
-                        <Dice dice={1} />
-                    </InRow>
+                <InRow>
+                    <span>Roll:</span>
+                    <Dice dice={1} />
+                </InRow>
 
-                    <div className="grid mt-4 grid-cols-2">
-                        <div>
-                            <p>
-                                <strong className="highlight">
-                                    First Name:
-                                </strong>
-                            </p>
-                            <ol>
-                                {data.firstNames.map(
-                                    (name: string, index: number) => (
-                                        <li key={index}>{name}</li>
-                                    )
-                                )}
-                            </ol>
-                        </div>
-                        <div>
-                            <p>
-                                <strong className="highlight">
-                                    Last Name:
-                                </strong>
-                            </p>
-                            <ol>
-                                {data.lastNames.map(
-                                    (name: string, index: number) => (
-                                        <li key={index}>{name}</li>
-                                    )
-                                )}
-                            </ol>
-                        </div>
+                <div className="grid mt-4 grid-cols-2">
+                    <div>
+                        <p>
+                            <strong className="highlight">First Name:</strong>
+                        </p>
+                        <ol>
+                            {data.firstNames.map(
+                                (name: string, index: number) => (
+                                    <li key={index}>{name}</li>
+                                )
+                            )}
+                        </ol>
                     </div>
-                </FadeIn>
+                    <div>
+                        <p>
+                            <strong className="highlight">Last Name:</strong>
+                        </p>
+                        <ol>
+                            {data.lastNames.map(
+                                (name: string, index: number) => (
+                                    <li key={index}>{name}</li>
+                                )
+                            )}
+                        </ol>
+                    </div>
+                </div>
             </Card>
         </>
     )

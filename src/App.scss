@@ -12,13 +12,12 @@
 }
 
 #root {
-    margin: 15px auto 0;
     position: relative;
+    margin: 20px auto 25px;
     width: 380px;
 }
 
 body {
-    background-image: url('/images/Background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -26,61 +25,42 @@ body {
     font-family: 'Exo 2', Verdana, Arial, sans-serif;
     font-size: 14px;
     color: var(--white);
-    padding-bottom: 50px;
     margin: 0;
     display: flex;
     min-width: 320px;
     min-height: 100vh;
 }
 
+h2 {
+    color: var(--black);
+}
+
+.turquoise-mode,
 .violet-mode {
-    .dice {
-        border-color: var(--violet);
-        color: var(--violet);
-    }
-
-    .active-dice {
-        color: var(--white);
-    }
-
-    a,
-    h2,
-    nav a,
-    .highlight {
-        color: var(--violet);
-    }
-
-    nav {
-        border-top: 3px solid var(--violet);
-        box-shadow: 0 0 15px 10px var(--violet);
-    }
-
-    .card {
-        border-color: var(--violet);
-        box-shadow: inset 0 10px 20px rgba(var(--violet-rgba), 0.5);
-    }
+    height: 100%;
 }
 
 .turquoise-mode {
-    .dice {
-        border-color: var(--turquoise);
-        color: var(--turquoise);
-    }
+    background-color: var(--turquoise);
 
-    .active-dice {
-        color: var(--black);
+    .dice {
+        color: var(--turquoise);
     }
 
     a,
-    h2,
     nav a,
     .highlight {
         color: var(--turquoise);
+    }
+
+    header {
+        border-bottom: 3px solid var(--turquoise);
+        box-shadow: 0 0 10px 5px var(--turquoise);
     }
 
     nav {
         border-top: 3px solid var(--turquoise);
-        box-shadow: 0 0 15px 10px var(--turquoise);
+        box-shadow: 0 10px 10px 15px var(--turquoise);
     }
 
     .card {
@@ -89,8 +69,33 @@ body {
     }
 }
 
-.modal {
-    display: none;
+.violet-mode {
+    background-color: var(--violet);
+
+    .dice {
+        color: var(--violet);
+    }
+
+    a,
+    nav a,
+    .highlight {
+        color: var(--violet);
+    }
+
+    header {
+        border-bottom: 3px solid var(--violet);
+        box-shadow: 0 0 10px 5px var(--violet);
+    }
+
+    nav {
+        border-top: 3px solid var(--violet);
+        box-shadow: 0 10px 10px 15px var(--violet);
+    }
+
+    .card {
+        border-color: var(--violet);
+        box-shadow: inset 0 10px 20px rgba(var(--violet-rgba), 0.5);
+    }
 }
 
 strong {
@@ -122,11 +127,6 @@ p {
     line-height: 1.2rem;
 }
 
-img {
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
 p,
 span {
     font-size: 14px;
@@ -151,11 +151,13 @@ table {
 }
 
 .card {
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
     border: 3px solid;
-    padding: 20px 15px;
-    margin: 0 20px 20px;
+    padding: 15px;
+    z-index: 40;
+
+    + .card {
+        border-top: none;
+    }
 
     &.card-margin {
         margin: 20px 0;
@@ -168,6 +170,16 @@ table {
     font-weight: bold;
     text-align: center;
     width: 20px;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 31px;
+    width: 100%;
+    background-color: var(--black);
+    z-index: 10;
 }
 
 nav {

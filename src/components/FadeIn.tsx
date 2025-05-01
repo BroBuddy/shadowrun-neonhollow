@@ -18,7 +18,7 @@ function FadeIn({ children, delay = 0 }: FadeInProps) {
 
     return (
         <div
-            className={`fade-in z-20 transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+            className={`fade-in z-20 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
         >
             {children}
         </div>

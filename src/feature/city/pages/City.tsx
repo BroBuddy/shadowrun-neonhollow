@@ -12,34 +12,34 @@ function City() {
     return (
         <>
             <Headline>NeonHollow</Headline>
-            <div className="flex gap-4 mb-4 mx-5">
-                <div className="flex-1 basis-1/2">
-                    <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
+            <Card>
+                <div className="flex gap-5">
+                    <div className="flex-1 basis-2/5">
+                        <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
+                    </div>
+                    <div className="flex-1 basis-3/5">
+                        <FadeIn>
+                            <p>
+                                <strong>District Lockdowns:</strong>
+                            </p>
+                            {cityData.map(
+                                (district: DistrictType, index: number) =>
+                                    index <= 2 && (
+                                        <p key={index}>
+                                            {district.icon} {district.heat} →{' '}
+                                            {district.name}
+                                        </p>
+                                    )
+                            )}
+                        </FadeIn>
+                    </div>
                 </div>
-                <div className="flex-1 basis-1/2">
-                    <FadeIn>
-                        <p>
-                            <strong>District Lockdowns:</strong>
-                        </p>
-                        {cityData.map(
-                            (district: DistrictType, index: number) =>
-                                index <= 2 && (
-                                    <p key={index}>
-                                        {district.icon} {district.heat} →{' '}
-                                        {district.name}
-                                    </p>
-                                )
-                        )}
-                    </FadeIn>
-                </div>
-            </div>
+            </Card>
 
             <Card>
-                <FadeIn>
-                    {cityData.map((district: DistrictType, index: number) => (
-                        <DistrictView key={index} district={district} />
-                    ))}
-                </FadeIn>
+                {cityData.map((district: DistrictType, index: number) => (
+                    <DistrictView key={index} district={district} />
+                ))}
             </Card>
         </>
     )

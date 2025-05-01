@@ -25,22 +25,24 @@ function CityDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <div className="flex gap-4 mb-4 mx-5">
-                <div className="flex-1 basis-1/2">
-                    <img
-                        src={`/images/${data.title}.jpg`}
-                        alt={data.title}
-                        loading="lazy"
-                    />
+            <Card>
+                <div className="flex gap-5">
+                    <div className="flex-1 basis-2/5">
+                        <img
+                            src={`/images/${data.title}.jpg`}
+                            alt={data.title}
+                            loading="lazy"
+                        />
+                    </div>
+                    <div className="flex-1 basis-3/5">
+                        <FadeIn>
+                            <p>
+                                <em>"{data.description}"</em>
+                            </p>
+                        </FadeIn>
+                    </div>
                 </div>
-                <div className="flex-1 basis-1/2">
-                    <FadeIn>
-                        <p>
-                            <em>"{data.description}"</em>
-                        </p>
-                    </FadeIn>
-                </div>
-            </div>
+            </Card>
 
             {data.rollList.length >= 1 && (
                 <RollsView

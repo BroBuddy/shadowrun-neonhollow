@@ -14,7 +14,7 @@ function DistrictView({ district }: DistrictProps) {
                 </strong>
             </p>
 
-            <div className="flex justify-between gap-3">
+            <div className="flex justify-between gap-10">
                 {district.facilities.map(
                     (
                         facility: Record<string, string>,

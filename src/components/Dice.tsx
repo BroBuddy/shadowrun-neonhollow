@@ -53,7 +53,7 @@ const Dice = ({ dice = 1 }: DiceProps) => {
 
     return (
         <div
-            className={`dice z-30 cursor-pointer ${isRolling ? 'active-dice' : ''}`}
+            className={`dice z-20 cursor-pointer ${isRolling ? 'active-dice' : ''}`}
             onClick={!isRolling ? handleDiceClick : undefined}
         >
             {content}

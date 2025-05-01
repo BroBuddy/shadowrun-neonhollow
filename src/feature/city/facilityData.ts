@@ -24,19 +24,19 @@ const facilityData: Facility[] = [
         description:
             'The digital heart of NeonHollow, where minds merge with machines and the future pulses in streams of data.',
         rollList: [
-            { roll: '2', text: 'System Anomaly', link: '/R471' },
+            { roll: '2', text: 'System Anomaly', link: '/71' },
             { roll: '3-4', text: 'Illegal Trial → +1 Heat' },
             { roll: '5-6', text: 'Test Failure → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Unplanned Find → +1 Energy' },
             { roll: '10-11', text: 'Major Break → +1 Intel' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R481' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/81' },
         ],
         actionList: [
             {
                 title: '💡 Mind Overdrive:',
                 steps: [
-                    { text: 'Spend 3 Health → Roll 2d6 → +2' },
+                    { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
                     { text: 'Add Logic or Intuition' },
                     { text: 'Gain Intel', link: '/intel' },
                 ],
@@ -65,7 +65,7 @@ const facilityData: Facility[] = [
         description:
             'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
         rollList: [
-            { roll: '2', text: 'Security Check', link: '/R472' },
+            { roll: '2', text: 'Security Check', link: '/72' },
             { roll: '3-4', text: 'Security Breach → +1 Heat' },
             { roll: '5-6', text: 'Blamed → -1 Edge' },
             { roll: '7', text: 'No Effect' },
@@ -77,7 +77,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔥 Quiet Bribe:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Charisma' },
                     { text: 'Reduce Heat', link: '/heat' },
                 ],
@@ -85,7 +85,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Bounty Pursuit:',
                 steps: [
-                    { text: 'Spend 3 Health → Roll 2d6 → +2' },
+                    { text: 'Spend 3 Health → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Intuition' },
                     { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
@@ -98,19 +98,19 @@ const facilityData: Facility[] = [
         description:
             'Pioneers of life, healing the city’s wounds and unlocking the secrets of humanity — at a price.',
         rollList: [
-            { roll: '2', text: 'Medical Malfunction', link: '/R473' },
+            { roll: '2', text: 'Medical Malfunction', link: '/73' },
             { roll: '3-4', text: 'Defiant Case → +1 Heat' },
             { roll: '5-6', text: 'Grim Report → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Energy Boost → +1 Energy' },
             { roll: '10-11', text: 'Civic Aid → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R483' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/83' },
         ],
         actionList: [
             {
                 title: '❤️ Nano Restoration:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Strength or Agility' },
                     { text: 'Gain Health', link: '/health' },
                 ],
@@ -139,19 +139,19 @@ const facilityData: Facility[] = [
         description:
             'A tranquil haven where whispers of the past bloom into vibrant memories, rooted in neon dreams.',
         rollList: [
-            { roll: '2', text: 'Lost Data', link: '/R474' },
+            { roll: '2', text: 'Lost Data', link: '/74' },
             { roll: '3-4', text: 'Plant Harvest → +1 Heat' },
             { roll: '5-6', text: 'Toxic Fungal → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Friendly Chat → +1 Energy' },
             { roll: '10-11', text: 'Solar Soak → +1 Health' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R484' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/84' },
         ],
         actionList: [
             {
                 title: '🔋 Vital Rejuvenation:',
                 steps: [
-                    { text: 'Spend 1 Health → Roll 2d6 → -2' },
+                    { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Reaction' },
                     { text: 'Gain Energy', link: '/energy' },
                 ],
@@ -180,19 +180,19 @@ const facilityData: Facility[] = [
         description:
             'An immersive realm where fantasies awaken and reality bends under layers of shimmering light.',
         rollList: [
-            { roll: '2', text: 'Dream Glitch', link: '/R475' },
+            { roll: '2', text: 'Dream Glitch', link: '/75' },
             { roll: '3-4', text: 'Shady Moves → +1 Heat' },
             { roll: '5-6', text: 'Price Jump → -2.000 ¥' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Massage Chair → +1 Energy' },
             { roll: '10-11', text: 'Social Pulse → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R485' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/85' },
         ],
         actionList: [
             {
                 title: '🔋 Energetic Reboot:',
                 steps: [
-                    { text: 'Pay 6.000 ¥ → Roll 2d6 → +2' },
+                    { text: 'Pay 6.000 ¥ → Roll 2d6 → Add 2' },
                     { text: 'Add Reaction or Intuition' },
                     { text: 'Gain Energy', link: '/energy' },
                 ],
@@ -221,13 +221,13 @@ const facilityData: Facility[] = [
         description:
             'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
         rollList: [
-            { roll: '2', text: 'The Whisper Network', link: '/R476' },
+            { roll: '2', text: 'The Whisper Network', link: '/76' },
             { roll: '3-4', text: 'Drunk and Disorderly → +1 Heat' },
             { roll: '5-6', text: 'Toxic Cocktail → -1 Health' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Nutritious Snack → +1 Energy' },
             { roll: '10-11', text: 'Winning Bet → +2.000 ¥' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R486' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/86' },
         ],
         actionList: [
             {
@@ -262,13 +262,13 @@ const facilityData: Facility[] = [
         description:
             'Where sweat forges strength, and every clang of metal echoes the determination to rise above.',
         rollList: [
-            { roll: '2', text: 'Unplanned Challenge', link: '/R477' },
+            { roll: '2', text: 'Unplanned Challenge', link: '/77' },
             { roll: '3-4', text: 'Wrong Locker Room → +1 Heat' },
             { roll: '5-6', text: 'Unpaid Membership → -2.000 ¥' },
             { roll: '7', text: 'No Effect' },
             { roll: '8-9', text: 'Promo Energy Bar → +1 Energy' },
             { roll: '10-11', text: 'Perfect Form → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', link: '/R487' },
+            { roll: '12', text: 'Mysterious Encounter', link: '/87' },
         ],
         actionList: [
             {
@@ -303,7 +303,7 @@ const facilityData: Facility[] = [
         description:
             'The epicenter of icy calm and calculated precision—a space where sharp minds outmatch the chaos.',
         rollList: [
-            { roll: '2', text: 'Old Rival Spotted', link: '/R480' },
+            { roll: '2', text: 'Old Rival Spotted', link: '/80' },
             { roll: '3-4', text: 'Corrupt Runner → +1 Heat' },
             { roll: '5-6', text: 'Rough Night → -1 Energy' },
             { roll: '7', text: 'No Effect' },
@@ -340,7 +340,7 @@ const facilityData: Facility[] = [
         description:
             'A shadowy refuge for the bold, where secrets are currency, and fortune favors the daring.',
         rollList: [
-            { roll: '2', text: 'Smuggler’s Test', link: '/R478' },
+            { roll: '2', text: 'Smuggler’s Test', link: '/78' },
             { roll: '3-4', text: 'Police Raid → +1 Heat' },
             { roll: '5-6', text: 'Knife Fight → -1 Health' },
             { roll: '7', text: 'No Effect' },
@@ -352,7 +352,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Fence Hot Goods:',
                 steps: [
-                    { text: 'Spend 1 Health → Roll 2d6 → -2' },
+                    { text: 'Spend 1 Health → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Logic' },
                     { text: 'Gain Nuyen', link: '/nuyen' },
                 ],
@@ -360,7 +360,7 @@ const facilityData: Facility[] = [
             {
                 title: '💡 Corrupted Files:',
                 steps: [
-                    { text: 'Pay 2.000 ¥ → Roll 2d6 → -2' },
+                    { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Intuition' },
                     { text: 'Gain Intel', link: '/intel' },
                 ],
@@ -377,7 +377,7 @@ const facilityData: Facility[] = [
             {
                 title: '❤️ Stimulant Injection:',
                 steps: [
-                    { text: 'Spend 1 Energy → Roll 2d6 → -2' },
+                    { text: 'Spend 1 Energy → Roll 2d6 → Subtract 2' },
                     { text: 'Add Strength or Logic' },
                     { text: 'Gain Health', link: '/health' },
                 ],
@@ -385,7 +385,7 @@ const facilityData: Facility[] = [
             {
                 title: '🔥 False Credentials:',
                 steps: [
-                    { text: 'Pay 2.000 ¥ → Roll 2d6 → -2' },
+                    { text: 'Pay 2.000 ¥ → Roll 2d6 → Subtract 2' },
                     { text: 'Add Agility or Charisma' },
                     { text: 'Reduce Heat', link: '/heat' },
                 ],

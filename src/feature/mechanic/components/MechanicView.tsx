@@ -13,7 +13,7 @@ function MechanicView() {
     }
 
     return (
-        <>
+        <section>
             <p>
                 <strong>Know the Basics:</strong>
             </p>
@@ -24,7 +24,7 @@ function MechanicView() {
                     </li>
                 ))}
             </ul>
-        </>
+        </section>
     )
 }
 

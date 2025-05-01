@@ -1,4 +1,5 @@
 import React from 'react'
+import FadeIn from './FadeIn'
 
 type CardProps = {
     children: React.ReactNode
@@ -6,7 +7,9 @@ type CardProps = {
 
 const Card = ({ children }: CardProps) => {
     return (
-        <div className="relative card bg-black shadow-md z-30">{children}</div>
+        <div className="card bg-black z-0">
+            <FadeIn>{children}</FadeIn>
+        </div>
     )
 }
 
