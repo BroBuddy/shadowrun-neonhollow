@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
-import { Link } from 'react-router-dom'
 import { getMechanicData } from '../mechanicData'
 import { Mechanic } from '../MechanicType'
+import PopUp from '@/components/Popup'
+import MechanicDetail from '../pages/MechanicDetail'
 
 function MechanicView() {
     const data = useMemo(() => {
@@ -20,7 +21,9 @@ function MechanicView() {
             <ul className="list-margin">
                 {data.map((item: Mechanic, index: number) => (
                     <li key={index}>
-                        <Link to={`/mechanic/${item.tag}`}>{item.title}</Link>
+                        <PopUp title={item.title}>
+                            <MechanicDetail tag={item.tag} />
+                        </PopUp>
                     </li>
                 ))}
             </ul>
