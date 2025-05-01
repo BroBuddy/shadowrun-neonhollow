@@ -5,7 +5,7 @@ const eventOnes: readonly Event[] = [
         id: '11',
         title: 'Power Surge',
         description:
-            'In the blink of an eye, lights across the district flicker out. Emergency backups hum weakly, but critical systems are down. Doors won’t open, elevators stall, and neon signs die, leaving the streets eerily dark. People panic while others see opportunity in the shadows.',
+            'Lights across the district flicker out, leaving critical systems down and streets in eerie darkness. Panic spreads, while some exploit the chaos.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -31,7 +31,7 @@ const eventOnes: readonly Event[] = [
         id: '12',
         title: 'Gang Skirmish',
         description:
-            'The distant sound of gunfire quickly becomes a brutal street clash as rival gangs bring their turf war into the open. Civilians run for cover as drones scan for threats and trigger-happy thugs shoot first, ask never. You’re in the middle—like it or not.',
+            'Gunfire turns into a turf war between gangs, spilling into the streets. Civilians scatter for cover, but you’re caught in the fray.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -57,7 +57,7 @@ const eventOnes: readonly Event[] = [
         id: '13',
         title: 'System Audit',
         description:
-            'Unmarked corp vans roll in with men in suits and mirrored shades. It’s a spontaneous citywide audit—identity checks, data sweeps, and silence. Those with clean records walk. The rest... vanish. It’s a bad time to look suspicious.',
+            'Men in suits roll out citywide audits with identity checks and data sweeps. Clean records walk free; others vanish into the system.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -82,7 +82,7 @@ const eventOnes: readonly Event[] = [
         id: '14',
         title: 'HoloMalfunction',
         description:
-            'Suddenly, reality bends. Public holograms glitch, flicker, and merge with corrupted ads and rogue sensory loops. People stumble, stunned by the overload. Some go into panic, others collapse. The city turns into a dizzying circus of synthetic hallucinations.',
+            'Public holograms glitch and overload senses, causing chaos. Panic and hallucinations leave the city in a surreal, dangerous state.',
         skillChecks: [
             {
                 attribute: 'Intuition',
@@ -106,7 +106,7 @@ const eventOnes: readonly Event[] = [
         id: '15',
         title: 'Riot Response',
         description:
-            "What started as a peaceful protest explodes into full-scale unrest. Flames flicker in the distance. Armed patrols clash with rioters. Barricades rise. Drones buzz overhead. You're either part of the cleanup—or collateral.",
+            'A peaceful protest becomes full-blown unrest. Armed patrols clash with rioters, barricades rise, and drones monitor the chaos.',
         skillChecks: [
             {
                 attribute: 'Agility',
@@ -130,7 +130,7 @@ const eventOnes: readonly Event[] = [
         id: '16',
         title: 'Data Leak',
         description:
-            'Confidential data floods the net—blacklists, corp secrets, even underground aliases. Everyone wants a piece of it. Fixers, runners, and enforcers scramble to secure or erase traces before they’re burned by the fallout.',
+            'Confidential data floods the net. Fixers and runners scramble to secure valuable intel before it’s lost—or weaponized.',
         skillChecks: [
             {
                 attribute: 'Intuition',
@@ -157,7 +157,7 @@ const eventTwos: readonly Event[] = [
         id: '21',
         title: 'Drone Interference',
         description:
-            'Surveillance drones are behaving erratically, hovering too low, scanning innocents, and occasionally crashing. The glitch might be random—or a test. Citizens are unnerved, and runners are being flagged as high-priority threats.',
+            'Surveillance drones act erratically, scanning innocents and crashing. Citizens are on edge, and runners face high-priority flags.',
         skillChecks: [
             {
                 attribute: 'Reaction',
@@ -182,7 +182,7 @@ const eventTwos: readonly Event[] = [
         id: '22',
         title: 'Toxic Leak',
         description:
-            'Alarms blare in the Industrial District. A transport truck jackknifed near a biochem depot, leaking fluorescent vapor. The air burns to breathe, and cleanup crews are late. Residents flee while looters dive in for rare salvage.',
+            'A transport truck near a biochem depot leaks vapor, burning the air. Residents flee, but looters dive in for salvage.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -207,7 +207,7 @@ const eventTwos: readonly Event[] = [
         id: '23',
         title: 'Black Market Raid',
         description:
-            'Word spreads fast: authorities are raiding underground trade hubs. Smugglers ditch crates in alleys, buyers scatter. Some see it as a chance to snatch unclaimed tech—others know it’s a trap with teeth.',
+            'Authorities raid underground trade hubs. Smugglers scatter while some take the chance to grab tech amidst the chaos.',
         skillChecks: [
             {
                 attribute: 'Agility',
@@ -233,7 +233,7 @@ const eventTwos: readonly Event[] = [
         id: '24',
         title: 'Neural Broadcast Glitch',
         description:
-            'All over town, neural implants start buzzing with strange pulses—random memories, thoughts, or encrypted fragments. It leaves people dizzy or worse. Someone’s testing a signal... or sending a message.',
+            'Neural implants buzz with strange pulses, triggering random thoughts and leaving people dizzy or worse.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -257,7 +257,7 @@ const eventTwos: readonly Event[] = [
         id: '25',
         title: 'Rogue Courier',
         description:
-            'A courier bot meant for secure corp deliveries has gone rogue, jetting through alleys and rooftop routes. Rumor says it’s carrying data chips worth a fortune—or an AI with secrets someone didn’t want released.',
+            'A rogue courier bot jets through alleys, rumored to carry valuable data chips or secret AI intel.',
         skillChecks: [
             {
                 attribute: 'Reaction',
@@ -281,7 +281,7 @@ const eventTwos: readonly Event[] = [
         id: '26',
         title: 'Street Prophet',
         description:
-            'A cloaked figure preaches doom at every intersection, warning of firewalls collapsing and AIs waking up. Most ignore him—until his predictions start coming true. Traffic crashes, drones dive, and digital ads flicker to static eyes.',
+            'A cloaked figure warns of AI doom and collapsing systems. His predictions start causing chaos throughout the streets.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -308,7 +308,7 @@ const eventThrees: readonly Event[] = [
         id: '31',
         title: 'Night Howlers',
         description:
-            "As dusk falls, an unknown gang launches a blitz through the Underground District. Cyber-hacked beasts and augmented enforcers clash with patrols. Chaos spreads fast—and you're caught in the middle.",
+            'An unknown gang launches a blitz with hacked beasts and enforcers. Chaos spreads fast, and you’re caught in the middle.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -334,7 +334,7 @@ const eventThrees: readonly Event[] = [
         id: '32',
         title: 'Encrypted Broadcast',
         description:
-            'A rogue signal overrides public screens, displaying cryptic messages and flickering blueprints. Corps rush to shut it down, but it’s spreading like wildfire through backchannels.',
+            'A rogue signal displays cryptic messages and blueprints, spreading through backchannels. Corps scramble to shut it down.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -358,7 +358,7 @@ const eventThrees: readonly Event[] = [
         id: '33',
         title: 'Corporate Parade',
         description:
-            'A major corp rolls through downtown with a flashy security showcase—drones, armored convoys, and neon-clad execs. It’s all PR, but the street is a minefield of surveillance.',
+            'A corp showcases drones, convoys, and execs downtown. Surveillance fills the area, making it dangerous to move unnoticed.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -383,7 +383,7 @@ const eventThrees: readonly Event[] = [
         id: '34',
         title: 'Neon Storm',
         description:
-            'A rare energy storm warps electronics citywide. Neon signs flicker violently, streetlights burst, and vehicles stall. The unstable surge makes neural links flare dangerously.',
+            'A rare energy storm warps electronics. Neon lights flicker, vehicles stall, and neural links spark dangerously.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -409,7 +409,7 @@ const eventThrees: readonly Event[] = [
         id: '35',
         title: 'Lost Shipment',
         description:
-            "A container marked with a restricted corp seal washed up in the city’s canal. It's half-submerged, blinking, and unguarded—for now. The question is: grab it or walk away?",
+            'A corp-marked container washes up in the city canal, half-submerged and blinking. Grab it or walk away?',
         skillChecks: [
             {
                 attribute: 'Reaction',
@@ -434,7 +434,7 @@ const eventThrees: readonly Event[] = [
         id: '36',
         title: 'Echo in the Wires',
         description:
-            'Old net architecture beneath the city pulses online for the first time in years. Ghost code floods public terminals, and runners whisper of an AI waking from dormancy.',
+            'Old net architecture awakens, flooding terminals with ghost code. Runners suspect an AI stirring from dormancy.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -463,7 +463,7 @@ const eventFours: readonly Event[] = [
         id: '41',
         title: 'Synthetic Plague',
         description:
-            'A mutated bio-virus has slipped containment in a nearby lab. Streets are locked down, and drones scan for signs of infection. Runners are being blamed for the breach.',
+            'A mutated bio-virus escapes containment. Streets are locked down, with drones scanning for infection as runners are blamed.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -487,7 +487,7 @@ const eventFours: readonly Event[] = [
         id: '42',
         title: 'False Broadcast',
         description:
-            'Someone hijacks a local media node, broadcasting a deepfake of you committing a high-profile crime. Your Edge takes a hit—unless you fix it fast.',
+            'A media node broadcasts a deepfake of you committing a crime. Fix it before your reputation takes a hit.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -512,7 +512,7 @@ const eventFours: readonly Event[] = [
         id: '43',
         title: 'Burning Skies',
         description:
-            'A corp zeppelin crashes into a tenement block in the Industrial District. Fires spread, alarms wail, and panic floods the street. You’re nearby—and you might be able to help.',
+            'A corp zeppelin crashes into a block. Fires spread, alarms wail, and panic ensues. You’re nearby and might be able to help.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -538,7 +538,7 @@ const eventFours: readonly Event[] = [
         id: '44',
         title: 'Midnight Deal',
         description:
-            'You overhear a fixer negotiating a risky black-market exchange in a back alley. You could step in, assist—or walk away before things get ugly.',
+            'A fixer negotiates a risky black-market deal in an alley. Step in to help or leave before things get ugly.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -562,7 +562,7 @@ const eventFours: readonly Event[] = [
         id: '45',
         title: 'Neural Glitch',
         description:
-            'A new firmware patch pushes to the entire district. Those with implants experience spasms, hallucinations, and memory gaps. If you’re wired, you feel it instantly.',
+            'A firmware patch leaves implant users with spasms, hallucinations, and memory gaps. Wired individuals feel it instantly.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -587,7 +587,7 @@ const eventFours: readonly Event[] = [
         id: '46',
         title: 'Encrypted Cache',
         description:
-            'A runner posts a cryptic location drop for an abandoned corp cache. Dozens begin the hunt, but the system guarding it is old—and dangerous.',
+            'A cryptic drop hints at an abandoned corp cache. Rival runners begin hunting, but the system guarding it is dangerous.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -615,7 +615,7 @@ const eventFives: readonly Event[] = [
         id: '51',
         title: 'Corporate Espionage',
         description:
-            "A rival corporation's espionage team attempts to steal sensitive data from the district. The chaos is unfolding around you. You have to decide how to get involved.",
+            "A rival corp's team tries to steal data, creating chaos. Decide how you'll get involved.",
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -631,7 +631,7 @@ const eventFives: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description:
-                    "Track the espionage team's movements and sabotage their plan.",
+                    "Track the team's movements and sabotage their plan.",
                 success: '-1 Heat',
                 fail: '+1 Heat',
             },
@@ -641,7 +641,7 @@ const eventFives: readonly Event[] = [
         id: '52',
         title: 'Hacker Riot',
         description:
-            'A local hacker group starts a riot, disrupting city-wide comms and electronics. The streets are chaotic as they demand greater freedom from corporate control.',
+            'A hacker group disrupts comms and electronics, creating chaos in the streets.',
         skillChecks: [
             {
                 attribute: 'Agility',
@@ -656,7 +656,7 @@ const eventFives: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    "Hack into the group's system and disable their riot control equipment.",
+                    'Hack into their systems and disable riot controls.',
                 success: '-1 Heat',
                 fail: '+1 Heat',
             },
@@ -666,7 +666,7 @@ const eventFives: readonly Event[] = [
         id: '53',
         title: 'Corruption Unveiled',
         description:
-            'A city councilor is publicly exposed for embezzlement, sparking protests in the streets. You can either fuel the fire or try to put out the flames.',
+            'A councilor’s corruption is exposed, sparking protests. You can calm or stoke the flames.',
         skillChecks: [
             {
                 attribute: 'Charisma',
@@ -681,7 +681,7 @@ const eventFives: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    'Investigate the situation to gather intelligence on the corrupt official.',
+                    'Investigate for more intelligence on the official.',
                 success: '+1 Intel',
                 fail: '-2 Health',
             },
@@ -691,14 +691,13 @@ const eventFives: readonly Event[] = [
         id: '54',
         title: 'Underground Duel',
         description:
-            'An underground arena has just announced a high-stakes combat tournament. Crowds are gathering, and the opportunity for a quick payout is tempting. But the risks are high.',
+            'A high-stakes combat tournament offers a tempting payday, but it’s not without risk.',
         skillChecks: [
             {
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 10,
-                description:
-                    'Enter the tournament and fight for the prize money.',
+                description: 'Enter the tournament and fight for the prize.',
                 success: '+3.000 ¥',
                 fail: '-2 Health',
             },
@@ -706,8 +705,7 @@ const eventFives: readonly Event[] = [
                 attribute: 'Reaction',
                 icon: '💪',
                 dc: 8,
-                description:
-                    'Bet on another fighter and avoid the fight yourself.',
+                description: 'Bet on another fighter and avoid the fight.',
                 success: '+3.000 ¥',
                 fail: '-2 Energy',
             },
@@ -717,14 +715,13 @@ const eventFives: readonly Event[] = [
         id: '55',
         title: 'Neon Storm',
         description:
-            'A massive storm has rolled in, causing disruptions to power and communication networks across the district. The neon lights flicker as the city braces for the worst.',
+            'A massive storm disrupts power and comms, as neon lights flicker and chaos ensues.',
         skillChecks: [
             {
                 attribute: 'Logic',
                 icon: '🧠',
                 dc: 10,
-                description:
-                    "Analyze the storm's pattern to find the safest route out of the area.",
+                description: 'Analyze the storm to find the safest route out.',
                 success: '+2 Energy',
                 fail: '-2 Health',
             },
@@ -732,8 +729,7 @@ const eventFives: readonly Event[] = [
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 12,
-                description:
-                    'Dodge falling debris and move swiftly through the chaos.',
+                description: 'Dodge debris and move swiftly through the chaos.',
                 success: '+1 Intel',
                 fail: '-2 Energy',
             },
@@ -743,14 +739,13 @@ const eventFives: readonly Event[] = [
         id: '56',
         title: 'Black Market Deal',
         description:
-            "The black market is buzzing with a high-value deal involving rare weapons tech. It's a perfect opportunity to buy, sell, or steal—if you dare.",
+            'The black market buzzes with a high-value trade involving rare weapons tech.',
         skillChecks: [
             {
                 attribute: 'Charisma',
                 icon: '🧠',
                 dc: 8,
-                description:
-                    'Negotiate a better deal with the black market vendors.',
+                description: 'Negotiate a better deal with vendors.',
                 success: '+3.000 ¥',
                 fail: '-1 Edge',
             },
@@ -758,8 +753,7 @@ const eventFives: readonly Event[] = [
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 10,
-                description:
-                    'Use force to take the weapons tech by intimidation.',
+                description: 'Take the weapons by intimidation.',
                 success: '+1 Edge',
                 fail: '-2 Health',
             },
@@ -772,7 +766,7 @@ const eventSixes: readonly Event[] = [
         id: '61',
         title: 'Blackout in the District',
         description:
-            'A sudden power outage plunges the district into darkness. The blackout causes chaos as people scramble to figure out what happened.',
+            'A sudden outage plunges the district into darkness, causing chaos as people scramble for answers.',
         skillChecks: [
             {
                 attribute: 'Logic',
@@ -788,7 +782,7 @@ const eventSixes: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description:
-                    'Navigate through the dark streets, avoiding dangers like looters.',
+                    'Navigate dark streets, avoiding looters and hazards.',
                 success: '+2 Energy',
                 fail: '-2 Energy',
             },
@@ -798,7 +792,7 @@ const eventSixes: readonly Event[] = [
         id: '62',
         title: 'Rogue AI',
         description:
-            'A rogue AI has gained control of a local security system and is attacking citizens. Its influence spreads across nearby electronics, including your personal devices.',
+            'A rogue AI attacks citizens, spreading its control across nearby electronics, including your devices.',
         skillChecks: [
             {
                 attribute: 'Reaction',
@@ -824,7 +818,7 @@ const eventSixes: readonly Event[] = [
         id: '63',
         title: 'Gang Showdown',
         description:
-            'A gang war breaks out in the heart of the district. Gunfire echoes in the streets as rival factions clash over turf. You need to decide whether to get involved or avoid the chaos.',
+            'A gang war breaks out, with gunfire echoing as rival factions clash. You must choose to engage or escape.',
         skillChecks: [
             {
                 attribute: 'Strength',
@@ -840,7 +834,7 @@ const eventSixes: readonly Event[] = [
                 icon: '🧠',
                 dc: 8,
                 description:
-                    'Use diplomacy to try and calm the gangs and stop the violence.',
+                    'Use diplomacy to calm the gangs and stop the violence.',
                 success: '-1 Heat',
                 fail: '+2 Heat',
             },
@@ -850,14 +844,13 @@ const eventSixes: readonly Event[] = [
         id: '64',
         title: 'Corporate Bribery',
         description:
-            'A high-ranking corporate exec is caught in a bribery scandal. The news spreads quickly, and protests begin to stir. You can either exploit the situation or help calm the tensions.',
+            'A corporate exec is caught in a bribery scandal, sparking protests. Exploit or calm the situation.',
         skillChecks: [
             {
                 attribute: 'Charisma',
                 icon: '🧠',
                 dc: 12,
-                description:
-                    'Use your social influence to sway the public opinion and calm the protesters.',
+                description: 'Sway public opinion and calm the protesters.',
                 success: '+1 Edge',
                 fail: '-1 Edge',
             },
@@ -865,8 +858,7 @@ const eventSixes: readonly Event[] = [
                 attribute: 'Intuition',
                 icon: '🧠',
                 dc: 10,
-                description:
-                    'Investigate the scandal and uncover hidden details that could be used for leverage.',
+                description: 'Investigate the scandal for leverage.',
                 success: '+1 Intel',
                 fail: '-2 Health',
             },
@@ -876,7 +868,7 @@ const eventSixes: readonly Event[] = [
         id: '65',
         title: 'Street Race',
         description:
-            'A street race is taking place through the district, and it’s drawing huge crowds. The potential rewards are great, but the risks are just as high. Are you in?',
+            'A high-stakes street race draws huge crowds. The rewards are tempting, but the risks are high.',
         skillChecks: [
             {
                 attribute: 'Agility',
@@ -891,7 +883,7 @@ const eventSixes: readonly Event[] = [
                 icon: '💪',
                 dc: 8,
                 description:
-                    'Help a racer with their vehicle to ensure they win the race.',
+                    'Help a racer with their vehicle to ensure they win.',
                 success: '+1 Edge',
                 fail: '-2 Energy',
             },
@@ -901,14 +893,13 @@ const eventSixes: readonly Event[] = [
         id: '66',
         title: 'Medical Crisis',
         description:
-            'A viral outbreak hits the district, causing widespread panic. Medical facilities are overwhelmed, and only the most desperate are left to fend for themselves.',
+            'A viral outbreak overwhelms medical facilities. Panic spreads as people fend for themselves.',
         skillChecks: [
             {
                 attribute: 'Logic',
                 icon: '🧠',
                 dc: 12,
-                description:
-                    'Analyze the virus and help create a makeshift cure.',
+                description: 'Analyze the virus and create a makeshift cure.',
                 success: '+1 Intel',
                 fail: '-2 Energy',
             },
@@ -917,7 +908,7 @@ const eventSixes: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    'Rally the people to stay calm and follow safety procedures.',
+                    'Rally people to stay calm and follow safety procedures.',
                 success: '-1 Heat',
                 fail: '+1 Heat',
             },
@@ -929,15 +920,16 @@ const eventFacility: readonly Event[] = [
     {
         id: '71',
         title: 'System Anomaly',
+        location: 'CyberLab',
         description:
-            'The Neural Nexus system experiences a sudden, unexplained anomaly. Screens flicker, wires spark, and the usual hum of the servers is replaced by unsettling silence. An emergency shutdown is imminent, and the whole building could crash if not stabilized quickly.',
+            'The CyberLab system glitches, sparking wires and eerie silence. Emergency shutdown looms unless stabilized quickly.',
         skillChecks: [
             {
                 attribute: 'Logic',
                 icon: '🧠',
                 dc: 12,
                 description:
-                    "Analyze the anomaly's source and implement a corrective action to stabilize the system.",
+                    'Analyze the source of the anomaly and implement corrective actions.',
                 success: '+1 Temporary Logic',
                 fail: '-2 Energy',
             },
@@ -946,7 +938,7 @@ const eventFacility: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    'Spot the hidden cause of the malfunction and anticipate the next failure point.',
+                    'Spot the hidden cause and anticipate the next failure point.',
                 success: '+1 Intel',
                 fail: '+1 Heat',
             },
@@ -954,16 +946,16 @@ const eventFacility: readonly Event[] = [
     },
     {
         id: '72',
-        title: 'Patrol Check',
+        title: 'Security Check',
+        location: 'SecurityHub',
         description:
-            "As you enter PatrolHub, you're immediately confronted by a pair of security officers. They seem suspicious and are questioning your presence in the area. It's clear they are ready to test your credentials or try to get some extra information from you.",
+            'Security officers confront you at PatrolHub, suspicious of your presence. Smooth the encounter or stand your ground.',
         skillChecks: [
             {
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 12,
-                description:
-                    'Use your strength to physically assert yourself by intimidating the officers.',
+                description: 'Use strength to intimidate the officers.',
                 success: '+1 Temporary Strength',
                 fail: '+1 Heat',
             },
@@ -972,7 +964,7 @@ const eventFacility: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    'Charm or persuade the officers, using your wit and presence to smooth over the situation.',
+                    'Charm or persuade the officers to smooth over the situation.',
                 success: '+1 Intel',
                 fail: '+1 Heat',
             },
@@ -981,15 +973,16 @@ const eventFacility: readonly Event[] = [
     {
         id: '73',
         title: 'Medical Malfunction',
+        location: 'VitalClinic',
         description:
-            'A sudden medical malfunction has put several patients in critical condition. The usual staff is overwhelmed, and BioCare’s system is struggling to prioritize the patients in need of emergency care. You’ve been called in to help, but time is running out.',
+            'Critical patients overwhelm BioCare systems. Time is running out to assist in the chaotic environment.',
         skillChecks: [
             {
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 12,
                 description:
-                    'Use your agility to quickly navigate the chaotic environment and assist in moving patients to safety.',
+                    'Quickly navigate the chaos and assist patients to safety.',
                 success: '+1 Temporary Agility',
                 fail: '-2 Health',
             },
@@ -998,7 +991,7 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description:
-                    'Apply your strength to physically move patients or assist with heavy medical equipment.',
+                    'Move patients or assist with heavy equipment using strength.',
                 success: '+1 Edge',
                 fail: '+1 Heat',
             },
@@ -1007,15 +1000,16 @@ const eventFacility: readonly Event[] = [
     {
         id: '74',
         title: 'Lost Data',
+        location: 'EchoGarden',
         description:
-            'While enjoying the tranquil atmosphere of EchoGarden, a small portable data storage device is dropped nearby. Upon inspection, you realize it contains highly sensitive data, likely from a corporate leak. There are multiple ways to deal with the device, but time is running out.',
+            'A portable device with sensitive data is found at EchoGarden. How you handle it could have consequences.',
         skillChecks: [
             {
                 attribute: 'Reaction',
                 icon: '💪',
                 dc: 12,
                 description:
-                    'React quickly to either stash the device in a safe spot or maneuver around others who might notice it.',
+                    'React quickly to stash or maneuver around others.',
                 success: '+1 Temporary Agility',
                 fail: '-2 Energy',
             },
@@ -1023,8 +1017,7 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 10,
-                description:
-                    'Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.',
+                description: 'Keep the device hidden or avoid suspicion.',
                 success: '+1 Edge',
                 fail: '+1 Heat',
             },
@@ -1033,15 +1026,16 @@ const eventFacility: readonly Event[] = [
     {
         id: '75',
         title: 'Dream Glitch',
+        location: 'DreamHaven',
         description:
-            'As you enter DreamSphere, you’re immediately submerged into a vivid, immersive virtual experience. However, something seems off. The system glitches, causing the virtual environment to destabilize.',
+            'Entering DreamHaven, you’re submerged into a virtual reality glitch that destabilizes the environment.',
         skillChecks: [
             {
                 attribute: 'Intuition',
                 icon: '🧠',
                 dc: 12,
                 description:
-                    'Use your instinct and quick thinking to identify the core issue and stabilize the virtual environment.',
+                    'Identify the core issue and stabilize the virtual environment.',
                 success: '+1 Temporary Intuition',
                 fail: '-2 Energy',
             },
@@ -1049,8 +1043,7 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Reaction',
                 icon: '💪',
                 dc: 10,
-                description:
-                    'Move swiftly to grab a lost runner’s attention and guide them to safety.',
+                description: 'Guide a lost runner to safety during the chaos.',
                 success: '+1 Edge',
                 fail: '-2 Health',
             },
@@ -1059,15 +1052,16 @@ const eventFacility: readonly Event[] = [
     {
         id: '76',
         title: 'The Whisper Network',
+        location: 'PulseBar',
         description:
-            'The atmosphere in HoloLounge is electric tonight. The neon lights flash in sync with the pulsing beats, and people from all walks of life gather here. You spot an influential figure seated at the bar, surrounded by chatter.',
+            'PulseBar is electric, and a powerful figure sits at the bar surrounded by chatter. Make your move.',
         skillChecks: [
             {
                 attribute: 'Charisma',
                 icon: '🧠',
                 dc: 12,
                 description:
-                    'Charm your way into a conversation with the influential figure.',
+                    'Charm your way into conversation with the figure.',
                 success: '+1 Temporary Charisma',
                 fail: '+1 Heat',
             },
@@ -1075,8 +1069,7 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Intuition',
                 icon: '🧠',
                 dc: 10,
-                description:
-                    'Pay attention to the subtle body language and hidden cues in the conversation.',
+                description: 'Spot subtle cues in the conversation.',
                 success: '+1 Intel',
                 fail: '-1 Energy',
             },
@@ -1085,15 +1078,15 @@ const eventFacility: readonly Event[] = [
     {
         id: '77',
         title: 'Unplanned Challenge',
+        location: 'IronGym',
         description:
-            "As you work out in the IronGym, a loud crash echoes across the room. A massive weight has fallen from the rack, pinning an unconscious individual beneath it. The gym is in chaos as people rush to help, but there's a delay in the emergency response.",
+            'A fallen weight traps someone at IronGym. Chaos erupts as the emergency response is delayed.',
         skillChecks: [
             {
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 12,
-                description:
-                    'Lift the heavy weight off the person with raw strength.',
+                description: 'Lift the heavy weight off the person.',
                 success: '+1 Temporary Strength',
                 fail: '-2 Health',
             },
@@ -1102,7 +1095,7 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description:
-                    'React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.',
+                    'Assist in freeing the person or avoid further danger.',
                 success: '+1 Edge',
                 fail: '+1 Heat',
             },
@@ -1111,15 +1104,15 @@ const eventFacility: readonly Event[] = [
     {
         id: '78',
         title: 'Smuggler’s Test',
+        location: 'SmugglerDen',
         description:
-            "As you step into SmugglerDen, you're immediately stopped by a group of shady individuals guarding the entrance. They give you a hard stare and ask if you’ve got the right credentials to be here. It's clear they're not going to let anyone through without proving themselves.",
+            'At SmugglerDen, shady guards test your credentials. Prove yourself or slip through unnoticed.',
         skillChecks: [
             {
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 12,
-                description:
-                    'Use your agility to slip past the guards unnoticed or avoid a confrontation with a quick dodge.',
+                description: 'Slip past the guards or dodge confrontation.',
                 success: '+1 Temporary Agility',
                 fail: '+1 Heat',
             },
@@ -1127,8 +1120,7 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Logic',
                 icon: '🧠',
                 dc: 10,
-                description:
-                    'Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.',
+                description: 'Convince the guards that you belong.',
                 success: '+1 Edge',
                 fail: '-2 Health',
             },
@@ -1137,15 +1129,15 @@ const eventFacility: readonly Event[] = [
     {
         id: '80',
         title: 'Old Rival Spotted',
+        location: 'ZeroZone',
         description:
-            'Walking through the ruins of the Zerozone, you catch sight of an all-too-familiar figure: your old rival, a hardened individual with whom you share a bitter history. They notice you too, and their expression says it all—they’re not here for pleasantries. It’s time to settle the score.',
+            'In the Zerozone ruins, your old rival surfaces. The confrontation is inevitable—how will you handle it?',
         skillChecks: [
             {
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 15,
-                description:
-                    'Attempt to overpower your rival in a physical showdown, using sheer force to gain the upper hand.',
+                description: 'Overpower your rival in a physical showdown.',
                 success: '+1 Temporary Strength',
                 fail: '-2 Health',
             },
@@ -1153,8 +1145,7 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Charisma',
                 icon: '🧠',
                 dc: 12,
-                description:
-                    'Use your charm or wit to defuse the tension and gain the rival’s reluctant respect, avoiding violence.',
+                description: 'Defuse tension and earn reluctant respect.',
                 success: '+1 Edge',
                 fail: '+1 Heat',
             },
@@ -1166,43 +1157,49 @@ const eventEncounter: readonly Event[] = [
     {
         id: '81',
         title: 'Mysterious Encounter',
+        location: 'CyberLab',
         description:
-            'In the center of NeuralNexus, a man with glasses and a perfect haircut analyzes streams of financial data with ease. Curious, you strike up a conversation. He explains a groundbreaking method for optimizing corporate finances—complex at first, but he breaks it down until you grasp the full picture. His insights reveal hidden structures you never noticed before. Before you can thank him, he vanishes into the crowd.',
+            'At CyberLab, a man explains groundbreaking methods for optimizing finances, revealing hidden structures. Before you thank him, he vanishes.',
         bonus: '+1 Logic',
     },
     {
         id: '83',
         title: 'Mysterious Encounter',
+        location: 'VitalClinic',
         description:
-            'While in BioCare, you find yourself suffering from intense tooth pain. A beautiful woman with long black hair approaches, sensing your discomfort. She calmly explains the process to ease the pain, her hands steady as she demonstrates a quick, effective technique. Her soothing presence and clear knowledge help you understand the procedure, relieving your pain and giving you a sense of agility in both body and mind.',
+            'At VitalClinic, a woman helps ease your tooth pain with calm expertise, leaving you feeling agile in both body and mind.',
         bonus: '+1 Agility',
     },
     {
         id: '84',
         title: 'Mysterious Encounter',
+        location: 'EchoGarden',
         description:
-            "While strolling through the peaceful EchoGarden, you meet a tall man standing near a cluster of vibrant flowers. He seems to be in deep thought, admiring their beauty. He shares advice on how to better attune yourself to your surroundings and tap into its energy. His calm demeanor and deep understanding of the garden's flora put you at ease, helping you feel more composed and in tune with your surroundings.",
+            'In EchoGarden, a man shares advice on attuning to your surroundings, leaving you composed and in sync with the world.',
         bonus: '+1 Reaction',
     },
     {
         id: '85',
         title: 'Mysterious Encounter',
+        location: 'DreamHaven',
         description:
-            'In the dim corner of the room, you notice a man sitting alone — his head clean-shaven, a long, fiery orange beard cascading down his chest. He silently sketches strange symbols and maps on a battered notepad, lost in his own world. A silent understanding forms between you — not of friendship, but of mutual recognition. You part ways, but the encounter sharpens your instincts and leaves you more attuned to the hidden currents of the world.',
+            'A man with a fiery orange beard sketches symbols in a corner. The encounter sharpens your instincts and attunes you to hidden currents.',
         bonus: '+1 Intuition',
     },
     {
         id: '86',
         title: 'Mysterious Encounter',
+        location: 'PulseBar',
         description:
-            'Lost in thought, you sit alone in a corner of the HoloLounge. An older woman with grey hair and a slight limp approaches, offering a warm smile. She sits down beside you, speaking softly, encouraging you to look beyond the darkness and embrace the good in life. Her gentle words, coupled with her quiet strength, shift your perspective, offering a newfound sense of clarity and hope.',
+            'At PulseBar, a gentle older woman shifts your perspective, offering clarity and hope with her quiet strength.',
         bonus: '+1 Charisma',
     },
     {
         id: '87',
         title: 'Mysterious Encounter',
+        location: 'IronGym',
         description:
-            'The clang of metal fills IronGym, but one figure stands out — an older man, nearly bald with a thick grey beard and arms like forged steel. He lifts in silence, focused, almost meditative. You strike up a conversation. At first, he’s distant, but soon shares his philosophy on strength, resilience, and growth through pain. You leave with sore muscles — but also feeling stronger.',
+            'At IronGym, an older man shares a philosophy of growth through pain. You leave sore but stronger.',
         bonus: '+1 Strength',
     },
 ]

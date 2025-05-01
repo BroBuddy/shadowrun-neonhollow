@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { getEventById } from '../eventData'
 import { Event, SkillCheck as SkillCheckType } from '../EventType'
 import SkillCheck from '../components/SkillCheck'
+import FadeIn from '@/components/FadeIn'
 
 const defaultEvent: Event = {
     id: '',
@@ -26,16 +27,31 @@ function EventDetail() {
 
     return (
         <>
-            <Headline>Event</Headline>
+            <Headline>{data.title}</Headline>
             <Card>
-                <p>
-                    <strong className="highlight">{data.title}:</strong>
-                </p>
-                <p>{data.description}</p>
+                <div className="flex gap-5">
+                    <div className="flex-1 basis-2/5">
+                        <img
+                            src={
+                                data.location
+                                    ? `/images/${data.location}.jpg`
+                                    : '/images/NeonHollow.jpg'
+                            }
+                            alt={data.location ? data.location : 'NeonHollow'}
+                        />
+                    </div>
+                    <div className="flex-1 basis-3/5">
+                        <FadeIn>
+                            <p>
+                                <em>"{data.description}"</em>
+                            </p>
+                        </FadeIn>
+                    </div>
+                </div>
 
                 {data.bonus && (
                     <>
-                        <p>
+                        <p className="mt-5">
                             <strong className="highlight">
                                 Bonus Attribute:
                             </strong>
