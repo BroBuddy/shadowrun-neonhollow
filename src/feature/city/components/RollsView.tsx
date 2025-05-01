@@ -1,13 +1,15 @@
 import Card from '@/components/Card'
-import { Link } from 'react-router-dom'
 import { FacilityRoll } from '../FacilityType'
 import Dice from '@/components/Dice'
+import EventDetail from '@/feature/event/pages/EventDetail'
+import PopUp from '@/components/Popup'
 
 type FacilityRollsProps = {
     rollList: FacilityRoll[]
 }
 
 const RollsView = ({ rollList }: FacilityRollsProps) => {
+    console.log(rollList)
     return (
         <Card>
             <div className="flex items-center space-x-1">
@@ -23,8 +25,10 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
                 {rollList.map((item: FacilityRoll, index: number) => (
                     <li key={index}>
                         <strong>Roll {item.roll}</strong> &#8594;{' '}
-                        {item.link ? (
-                            <Link to={`/event${item.link}`}>{item.text}</Link>
+                        {item.id ? (
+                            <PopUp title={item.text}>
+                                <EventDetail id={item.id} />
+                            </PopUp>
                         ) : (
                             <>{item.text}</>
                         )}

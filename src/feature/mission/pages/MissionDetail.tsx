@@ -6,6 +6,7 @@ import Headline from '@/components/Headline'
 import TasksView from '../components/TasksView'
 import TwistView from '../components/TwistView'
 import FadeIn from '@/components/FadeIn'
+import { scrollToBottom } from '@/lib/helper'
 
 function MissionDetail() {
     const { id } = useParams()
@@ -14,6 +15,7 @@ function MissionDetail() {
 
     const handleMissionProgress = (currentProgress: number) => {
         setMissionProgress(currentProgress)
+        scrollToBottom()
     }
 
     if (!data) {
@@ -47,10 +49,13 @@ function MissionDetail() {
                     </div>
                 </div>
 
-                <p className="mt-5">
-                    <strong className="highlight">Briefing:</strong>
-                    <br /> {data.briefing}
-                </p>
+                <FadeIn>
+                    <p className="mt-5">
+                        <strong className="highlight">Briefing:</strong>
+                        <br /> {data.briefing}
+                    </p>
+                </FadeIn>
+
                 {missionProgress === -1 && (
                     <div
                         className="mb-5 flex justify-center items-center cursor-pointer highlight"

@@ -920,7 +920,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '71',
         title: 'System Anomaly',
-        location: 'CyberLab',
         description:
             'The CyberLab system glitches, sparking wires and eerie silence. Emergency shutdown looms unless stabilized quickly.',
         skillChecks: [
@@ -947,7 +946,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '72',
         title: 'Security Check',
-        location: 'SecurityHub',
         description:
             'Security officers confront you at SecurityHub, suspicious of your presence. Smooth the encounter or stand your ground.',
         skillChecks: [
@@ -973,7 +971,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '73',
         title: 'Medical Malfunction',
-        location: 'VitalClinic',
         description:
             'Critical patients overwhelm VitalClinic systems. Time is running out to assist in the chaotic environment.',
         skillChecks: [
@@ -1000,7 +997,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '74',
         title: 'Lost Data',
-        location: 'EchoGarden',
         description:
             'A portable device with sensitive data is found at EchoGarden. How you handle it could have consequences.',
         skillChecks: [
@@ -1026,7 +1022,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '75',
         title: 'Dream Glitch',
-        location: 'DreamHaven',
         description:
             'Entering DreamHaven, you’re submerged into a virtual reality glitch that destabilizes the environment.',
         skillChecks: [
@@ -1052,7 +1047,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '76',
         title: 'The Whisper Network',
-        location: 'PulseBar',
         description:
             'PulseBar is electric, and a powerful figure sits at the bar surrounded by chatter. Make your move.',
         skillChecks: [
@@ -1078,7 +1072,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '77',
         title: 'Unplanned Challenge',
-        location: 'IronGym',
         description:
             'A fallen weight traps someone at IronGym. Chaos erupts as the emergency response is delayed.',
         skillChecks: [
@@ -1104,7 +1097,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '78',
         title: 'Smuggler’s Test',
-        location: 'SmugglerDen',
         description:
             'At SmugglerDen, shady guards test your credentials. Prove yourself or slip through unnoticed.',
         skillChecks: [
@@ -1129,7 +1121,6 @@ const eventFacility: readonly Event[] = [
     {
         id: '80',
         title: 'Old Rival Spotted',
-        location: 'ZeroZone',
         description:
             'In the Zerozone ruins, your old rival surfaces. The confrontation is inevitable—how will you handle it?',
         skillChecks: [
@@ -1157,7 +1148,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '81',
         title: 'Mysterious Encounter',
-        location: 'CyberLab',
         description:
             'At CyberLab, a man explains groundbreaking methods for optimizing finances, revealing hidden structures. Before you thank him, he vanishes.',
         bonus: '+1 Logic',
@@ -1165,7 +1155,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '83',
         title: 'Mysterious Encounter',
-        location: 'VitalClinic',
         description:
             'At VitalClinic, a woman helps ease your tooth pain with calm expertise, leaving you feeling agile in both body and mind.',
         bonus: '+1 Agility',
@@ -1173,7 +1162,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '84',
         title: 'Mysterious Encounter',
-        location: 'EchoGarden',
         description:
             'In EchoGarden, a man shares advice on attuning to your surroundings, leaving you composed and in sync with the world.',
         bonus: '+1 Reaction',
@@ -1181,7 +1169,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '85',
         title: 'Mysterious Encounter',
-        location: 'DreamHaven',
         description:
             'A man with a fiery orange beard sketches symbols in a corner. The encounter sharpens your instincts and attunes you to hidden currents.',
         bonus: '+1 Intuition',
@@ -1189,7 +1176,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '86',
         title: 'Mysterious Encounter',
-        location: 'PulseBar',
         description:
             'At PulseBar, a gentle older woman shifts your perspective, offering clarity and hope with her quiet strength.',
         bonus: '+1 Charisma',
@@ -1197,7 +1183,6 @@ const eventEncounter: readonly Event[] = [
     {
         id: '87',
         title: 'Mysterious Encounter',
-        location: 'IronGym',
         description:
             'At IronGym, an older man shares a philosophy of growth through pain. You leave sore but stronger.',
         bonus: '+1 Strength',

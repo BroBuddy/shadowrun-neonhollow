@@ -21,7 +21,7 @@ import App from './App.tsx'
 const ErrorFallback = () => <Error />
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
-    Event: React.lazy(() => import('./feature/event/pages/Event.tsx')),
+    Midnight: React.lazy(() => import('./pages/Midnight')),
     WellDone: React.lazy(() => import('./pages/WellDone')),
     OverwhelminglyGreat: React.lazy(
         () => import('./pages/OverwhelminglyGreat')
@@ -43,6 +43,14 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <Pages.Welcome />
+                    </Suspense>
+                ),
+            },
+            {
+                path: '/midnight',
+                element: (
+                    <Suspense fallback={<Preloader />}>
+                        <Pages.Midnight />
                     </Suspense>
                 ),
             },

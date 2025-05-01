@@ -4,7 +4,6 @@ import Headline from '@/components/Headline'
 import { getMissionData } from '../missionData'
 import { useMemo } from 'react'
 import { Mission as MissionType } from '../MissionType'
-import FadeIn from '@/components/FadeIn'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 
@@ -26,16 +25,13 @@ function Mission() {
                         <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
                     </div>
                     <div className="flex-1 basis-3/5">
-                        <FadeIn>
-                            <p>
-                                <em>
-                                    "Mr. Johnson—the polished voice of the
-                                    shadows. Deals are made, trust is tested,
-                                    and the job always pays… for those who
-                                    survive."
-                                </em>
-                            </p>
-                        </FadeIn>
+                        <p>
+                            <em>
+                                "Mr. Johnson—the polished voice of the shadows.
+                                Deals are made, trust is tested, and the job
+                                always pays… for those who survive."
+                            </em>
+                        </p>
                     </div>
                 </div>
             </Card>

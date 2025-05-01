@@ -3,9 +3,7 @@ import AttributeRow from './AttributeRow'
 
 const AttributeEditor = () => {
     const attributes = useAttributeStore((state) => state.attributes)
-    const resetTemporaryAttributes = useAttributeStore(
-        (state) => state.resetTemporaryAttributes
-    )
+
     const modifyAttributes = useAttributeStore(
         (state) => state.modifyAttributes
     )
@@ -42,13 +40,6 @@ const AttributeEditor = () => {
                     )}
                 </tbody>
             </table>
-
-            <button
-                className="mt-5 px-4 py-2 highlight"
-                onClick={resetTemporaryAttributes}
-            >
-                Reset Temporary Attributes
-            </button>
         </div>
     )
 }

@@ -34,6 +34,15 @@ const makeUrlsClickable = (html: string) => {
     })
 }
 
+const scrollToBottom = () => {
+    setTimeout(() => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth',
+        })
+    }, 0)
+}
+
 const formatValue = (value: number): string => {
     const prefix = value < 0 ? '' : '+'
     return `${prefix}${value}`
@@ -61,4 +70,11 @@ const renderRoll2d6 = (text: string) => {
     )
 }
 
-export { renderRoll2d6, formatValue, rollDice, makeUrlsClickable, rulesRegex }
+export {
+    renderRoll2d6,
+    formatValue,
+    rollDice,
+    scrollToBottom,
+    makeUrlsClickable,
+    rulesRegex,
+}

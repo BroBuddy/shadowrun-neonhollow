@@ -10,7 +10,7 @@ const links: LinkType[] = [
     { path: '/rule', icon: '📑', text: 'Rules' },
     { path: '/city', icon: '🏠', text: 'City' },
     { path: '/mission', icon: '🎯', text: 'Mission' },
-    { path: '/event', icon: '⚠️', text: 'Event' },
+    { path: '/midnight', icon: '🌙', text: 'Midnight' },
 ]
 
 const MobileNav = () => {

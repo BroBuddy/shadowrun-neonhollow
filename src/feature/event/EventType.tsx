@@ -1,7 +1,6 @@
 type Event = {
     id: string
     title: string
-    location?: string
     description: string
     skillChecks?: SkillCheck[]
     bonus?: string

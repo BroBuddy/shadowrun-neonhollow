@@ -2,6 +2,7 @@ import { MissionTask, MissionOutcome } from '../MissionType'
 import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
+import { scrollToBottom } from '@/lib/helper'
 import React from 'react'
 
 type MissionTasksProps = {
@@ -21,12 +22,7 @@ const TasksView = ({
     }
 
     const handleScrollToBottom = () => {
-        setTimeout(() => {
-            window.scrollTo({
-                top: document.documentElement.scrollHeight,
-                behavior: 'smooth',
-            })
-        }, 0)
+        scrollToBottom()
     }
 
     return (

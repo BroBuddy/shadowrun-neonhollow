@@ -9,7 +9,7 @@ type Facility = {
 type FacilityRoll = {
     roll: string
     text: string
-    link?: string
+    id?: string
 }
 
 type FacilityAction = {
