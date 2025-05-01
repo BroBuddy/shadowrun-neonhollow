@@ -40,7 +40,7 @@ const TwistView = ({ twist }: MissionTwistProps) => {
             <div className="mb-5 flex justify-center items-center">
                 <Link to="/mission/performance">
                     <span className="text-2xl mr-2">&#8595;</span>
-                    <span className="mt-1 text-md">REWARD</span>
+                    <span className="mt-1 text-md">FINSIH</span>
                 </Link>
             </div>
         </Card>

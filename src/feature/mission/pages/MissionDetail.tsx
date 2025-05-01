@@ -10,7 +10,7 @@ import FadeIn from '@/components/FadeIn'
 function MissionDetail() {
     const { id } = useParams()
     const data = useMemo(() => getMissionById(id as string), [id])
-    const [missionProgress, setMissionProgress] = useState<number>(0)
+    const [missionProgress, setMissionProgress] = useState<number>(-1)
 
     const handleMissionProgress = (currentProgress: number) => {
         setMissionProgress(currentProgress)
@@ -51,6 +51,15 @@ function MissionDetail() {
                     <strong className="highlight">Briefing:</strong>
                     <br /> {data.briefing}
                 </p>
+                {missionProgress === -1 && (
+                    <div
+                        className="mb-5 flex justify-center items-center cursor-pointer highlight"
+                        onClick={() => handleMissionProgress(0)}
+                    >
+                        <span className="text-2xl mr-2">&#8595;</span>
+                        <strong className="mt-1">Start</strong>
+                    </div>
+                )}
             </Card>
 
             <TasksView
