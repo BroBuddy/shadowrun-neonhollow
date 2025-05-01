@@ -999,7 +999,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Apply your strength to physically move patients or assist with heavy medical equipment.',
-                success: '+1 Reputation',
+                success: '+1 Edge',
                 fail: '+1 Heat',
             },
         ],
@@ -1025,7 +1025,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Use your agility to keep the device hidden or avoid suspicion, gaining favor from the right people.',
-                success: '+1 Reputation',
+                success: '+1 Edge',
                 fail: '+1 Heat',
             },
         ],
@@ -1051,7 +1051,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Move swiftly to grab a lost runner’s attention and guide them to safety.',
-                success: '+1 Reputation',
+                success: '+1 Edge',
                 fail: '-2 Health',
             },
         ],
@@ -1103,7 +1103,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'React fast to avoid getting caught under the wreckage or assist others in getting the person out safely.',
-                success: '+1 Reputation',
+                success: '+1 Edge',
                 fail: '+1 Heat',
             },
         ],
@@ -1129,8 +1129,34 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Use your wit to convince the guards that you belong, citing information or reasoning that gains their trust.',
-                success: '+1 Reputation',
+                success: '+1 Edge',
                 fail: '-2 Health',
+            },
+        ],
+    },
+    {
+        id: '80',
+        title: 'Old Rival Spotted',
+        description:
+            'Walking through the ruins of the Zerozone, you catch sight of an all-too-familiar figure: your old rival, a hardened individual with whom you share a bitter history. They notice you too, and their expression says it all—they’re not here for pleasantries. It’s time to settle the score.',
+        skillChecks: [
+            {
+                attribute: 'Strength',
+                icon: '💪',
+                dc: 15,
+                description:
+                    'Attempt to overpower your rival in a physical showdown, using sheer force to gain the upper hand.',
+                success: '+1 Temporary Strength',
+                fail: '-2 Health',
+            },
+            {
+                attribute: 'Charisma',
+                icon: '🧠',
+                dc: 12,
+                description:
+                    'Use your charm or wit to defuse the tension and gain the rival’s reluctant respect, avoiding violence.',
+                success: '+1 Edge',
+                fail: '+1 Heat',
             },
         ],
     },
