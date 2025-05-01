@@ -1,4 +1,3 @@
-import Card from '@/components/Card'
 import { useMemo } from 'react'
 import { getEventById } from '../eventData'
 import { Event, SkillCheck as SkillCheckType } from '../EventType'
