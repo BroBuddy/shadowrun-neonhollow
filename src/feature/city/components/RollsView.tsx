@@ -9,7 +9,6 @@ type FacilityRollsProps = {
 }
 
 const RollsView = ({ rollList }: FacilityRollsProps) => {
-    console.log(rollList)
     return (
         <Card>
             <div className="flex items-center space-x-1">

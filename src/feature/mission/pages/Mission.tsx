@@ -6,6 +6,8 @@ import { useMemo } from 'react'
 import { Mission as MissionType } from '../MissionType'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
+import PopUp from '@/components/Popup'
+import MissionRules from './MissionRules'
 
 function Mission() {
     const data = useMemo(() => {
@@ -37,12 +39,13 @@ function Mission() {
             </Card>
 
             <Card>
-                <p>
-                    Know the rules{' '}
-                    <Link to="/mission/rules">Mission Rules</Link> before your
-                    <br />
-                    run begins.
-                </p>
+                <div className="mb-4">
+                    Before your run begins
+                    <span className="mx-1">&#8594;</span>
+                    <PopUp title="Mission Rules">
+                        <MissionRules />
+                    </PopUp>
+                </div>
                 <p>
                     <strong className="highlight">Accept a mission:</strong>
                 </p>

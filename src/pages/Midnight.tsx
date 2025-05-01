@@ -33,12 +33,18 @@ function Midnight() {
             <Card>
                 <ol className="list-margin">
                     <li>
-                        <a className="cursor-pointer" onClick={onRandomEvent}>
-                            Get random Event
-                        </a>
+                        {!randomEvent && (
+                            <a
+                                className="cursor-pointer"
+                                onClick={onRandomEvent}
+                            >
+                                Random Event
+                            </a>
+                        )}
 
                         {randomEvent && (
                             <>
+                                Random Event
                                 <span className="mx-1">&#8594;</span>
                                 <PopUp title={randomEvent.title}>
                                     <EventDetail id={randomEvent.id} />
@@ -47,18 +53,23 @@ function Midnight() {
                         )}
                     </li>
                     <li>
+                        Reset
+                        <span className="mx-1">&#8594;</span>
                         <a
                             className="cursor-pointer"
                             onClick={resetTemporaryAttributes}
                         >
-                            Reset Temporary Attributes
+                            Temporary Attributes
                         </a>
                     </li>
                     <li>
-                        Advance the 🕒 day counter by 1 — unless it's the final
-                        day.
+                        Increase
+                        <span className="mx-1">&#8594;</span> Day counter by 1
                     </li>
-                    <li>Reset hours to 0, marking the start of a fresh day.</li>
+                    <li>
+                        Reset
+                        <span className="mx-1">&#8594;</span>Hours back to 0
+                    </li>
                 </ol>
             </Card>
         </>
