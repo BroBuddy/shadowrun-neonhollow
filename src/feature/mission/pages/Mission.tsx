@@ -8,6 +8,7 @@ import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import PopUp from '@/components/Popup'
 import MissionRules from './MissionRules'
+import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
 
 function Mission() {
     const data = useMemo(() => {
@@ -63,8 +64,9 @@ function Mission() {
                         </InRow>
                     </li>
                     <li>
-                        <strong>Gain:</strong>{' '}
-                        <Link to="/resource/nuyen">Nuyen</Link>
+                        <PopUp title="Gain Nuyen">
+                            <ResourceDetail tag="nuyen" />
+                        </PopUp>
                     </li>
                 </ol>
             </Card>

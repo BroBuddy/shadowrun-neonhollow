@@ -131,17 +131,17 @@ export const resourceData: Resource[] = [
             {
                 range: '12-14',
                 result: 'Good',
-                effects: ['+1 Attribute', '+1 Attribute Temporary', '+2.000 ¥'],
+                effects: ['+1 Attribute', '+1 Attribute Temporary'],
             },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+2 Attributes', '+4.000 ¥', '+1 Edge'],
+                effects: ['+2 Attributes', '+1 Edge'],
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+2 Attributes', '+6.000 ¥', '+2 Edge'],
+                effects: ['+2 Attributes', '+2 Edge'],
             },
         ],
     },

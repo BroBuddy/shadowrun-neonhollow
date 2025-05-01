@@ -1,22 +1,20 @@
-import { Link } from 'react-router-dom'
 import { ActionStep as ActionStepType } from '../FacilityType'
 import { renderRoll2d6 } from '@/lib/helper'
+import PopUp from '@/components/Popup'
+import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
 
 type ActionStepProps = {
     step: ActionStepType
 }
 
 const ActionStep = ({ step }: ActionStepProps) => {
-    const [firstWord, ...remainingWords] = step.text.split(' ')
-
     return (
         <li>
-            {step.link ? (
+            {step.tag ? (
                 <>
-                    <strong>{firstWord}:</strong>{' '}
-                    <Link to={`/resource${step.link}`}>
-                        {remainingWords.join(' ')}
-                    </Link>
+                    <PopUp title={step.text}>
+                        <ResourceDetail tag={step.tag} />
+                    </PopUp>
                 </>
             ) : (
                 renderRoll2d6(step.text)

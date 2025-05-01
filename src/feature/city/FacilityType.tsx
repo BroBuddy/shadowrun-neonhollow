@@ -19,7 +19,7 @@ type FacilityAction = {
 
 type ActionStep = {
     text: string
-    link?: string
+    tag?: string
 }
 
 export type { Facility, FacilityRoll, FacilityAction, ActionStep }

@@ -1,5 +1,5 @@
 import Card from '@/components/Card'
-import { FacilityAction } from '../FacilityType'
+import { ActionStep as ActionStepType, FacilityAction } from '../FacilityType'
 import ActionStep from './ActionStep'
 
 type FacilityActionsProps = {
@@ -15,9 +15,11 @@ const ActionsView = ({ actionList }: FacilityActionsProps) => {
                         <strong className="highlight">{item.title}</strong>
                     </p>
                     <ul className="list-margin">
-                        {item.steps.map((step, stepIndex) => (
-                            <ActionStep key={stepIndex} step={step} />
-                        ))}
+                        {item.steps.map(
+                            (step: ActionStepType, stepIndex: number) => (
+                                <ActionStep key={stepIndex} step={step} />
+                            )
+                        )}
                     </ul>
                 </div>
             ))}
