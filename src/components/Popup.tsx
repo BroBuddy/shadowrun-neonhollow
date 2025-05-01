@@ -14,9 +14,12 @@ const PopUp: React.FC<PopUpProps> = ({ title, children }) => {
 
     return (
         <div>
-            <button onClick={handleOpen} className="text-bold highlight">
+            <a
+                onClick={handleOpen}
+                className="text-bold highlight cursor-pointer"
+            >
                 {title}
-            </button>
+            </a>
 
             {isPopUpOpen && (
                 <div
