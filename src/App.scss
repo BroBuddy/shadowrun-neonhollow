@@ -6,25 +6,27 @@
     --black: #000;
     --white: #ddd;
     --turquoise: #09eae1;
-    --turquoise-rgba: 9, 234, 225;
     --violet: #c09;
-    --violet-rgba: 204, 0, 153;
+    --turquoise-light: rgba(9, 234, 225, 0.5);
+    --violet-light: rgba(204, 0, 153, 0.5);
 }
 
 #root {
     position: relative;
-    margin: 20px auto;
-    width: 380px;
+    margin: 1.25em auto;
+    width: 100%;
+    max-width: 380px;
 }
 
 body {
     background-color: var(--black);
     padding: 0;
     font-family: 'Exo 2', Verdana, Arial, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: var(--white);
     margin: 0;
     display: flex;
+    flex-direction: column;
     min-width: 320px;
     min-height: 100vh;
 }
@@ -33,9 +35,9 @@ body {
     color: var(--black);
     width: 100%;
     text-align: center;
-    margin-top: 10px;
-    padding: 40px auto 10px;
-    font-size: 20px;
+    margin-top: 0.625em;
+    padding: 2.5em auto 0.625em;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -44,66 +46,43 @@ body {
     height: 100%;
 }
 
-.turquoise-mode {
+@mixin color-mode($primary, $light) {
     .headline {
-        background-color: var(--turquoise);
+        background-color: $primary;
     }
 
     .dice {
-        color: var(--turquoise);
+        color: $primary;
     }
 
     a,
     nav a,
     .highlight {
-        color: var(--turquoise);
+        color: $primary;
     }
 
     header {
-        border-bottom: 3px solid var(--turquoise);
-        box-shadow: 0 0 10px 5px var(--turquoise);
+        border-bottom: 0.1875em solid $primary;
+        box-shadow: 0 0 0.625em 0.3125em $primary;
     }
 
     nav {
-        border-top: 3px solid var(--turquoise);
-        box-shadow: 0 10px 10px 15px var(--turquoise);
+        border-top: 0.1875em solid $primary;
+        box-shadow: 0 0.625em 0.625em 0.9375em $primary;
     }
 
     .card {
-        border-color: var(--turquoise);
-        box-shadow: inset 0 10px 20px rgba(var(--turquoise-rgba), 0.5);
+        border-color: $primary;
+        box-shadow: inset 0 0.625em 1.25em $light;
     }
 }
 
+.turquoise-mode {
+    @include color-mode(var(--turquoise), var(--turquoise-light));
+}
+
 .violet-mode {
-    .headline {
-        background-color: var(--violet);
-    }
-
-    .dice {
-        color: var(--violet);
-    }
-
-    a,
-    nav a,
-    .highlight {
-        color: var(--violet);
-    }
-
-    header {
-        border-bottom: 3px solid var(--violet);
-        box-shadow: 0 0 10px 5px var(--violet);
-    }
-
-    nav {
-        border-top: 3px solid var(--violet);
-        box-shadow: 0 10px 10px 15px var(--violet);
-    }
-
-    .card {
-        border-color: var(--violet);
-        box-shadow: inset 0 10px 20px rgba(var(--violet-rgba), 0.5);
-    }
+    @include color-mode(var(--violet), var(--violet-light));
 }
 
 strong {
@@ -112,13 +91,13 @@ strong {
 
 ul,
 ol {
-    padding-left: 15px;
-    font-size: 14px;
+    padding-left: 0.9375em;
+    font-size: 0.875rem;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 
     &.list-margin {
-        margin: 10px;
+        margin: 0.625em;
     }
 }
 
@@ -131,13 +110,13 @@ ol {
 }
 
 p {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375em;
     line-height: 1.2rem;
 }
 
 p,
 span {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 a {
@@ -147,20 +126,20 @@ a {
 table {
     tr {
         th {
-            padding: 4px;
-            font-size: 14px;
+            padding: 0.25em;
+            font-size: 0.875rem;
         }
 
         td {
-            padding: 6px;
-            font-size: 14px;
+            padding: 0.375em;
+            font-size: 0.875rem;
         }
     }
 }
 
 .card {
-    border: 3px solid;
-    padding: 15px;
+    border: 0.1875em solid;
+    padding: 0.9375em;
     width: 100%;
     z-index: 40;
 
@@ -169,23 +148,24 @@ table {
     }
 
     &.card-margin {
-        margin: 20px 0;
+        margin: 1.25em 0;
     }
 }
 
 .dice {
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    width: 20px;
+    width: 1.25rem;
+    z-index: 20;
 }
 
 header {
     position: fixed;
     left: 0;
     top: 0;
-    height: 31px;
+    height: 1.9375em;
     width: 100%;
     background-color: var(--black);
     z-index: 10;
@@ -199,14 +179,14 @@ nav {
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
-    padding: 2px 20px;
+    padding: 0.125em 1.25em;
     z-index: 10;
 
     > a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 5px;
+        padding: 0.3125em;
     }
 }
 
@@ -221,7 +201,7 @@ nav {
 }
 
 .active-dice {
-    animation: spinner 250ms linear infinite;
+    animation: spinner 0.25s linear infinite;
 }
 
 @keyframes fadeIn {

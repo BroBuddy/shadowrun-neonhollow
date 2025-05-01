@@ -13,7 +13,8 @@ const AttributeManager = () => {
     return (
         <header>
             <div
-                className="fixed z-30 cursor-pointer left-0 top-0 w-full bg-black shadow-md flex w-full"
+                style={{ zIndex: 99999 }}
+                className="fixed cursor-pointer left-0 top-0 w-full bg-black flex"
                 onClick={() => toggleModal()}
             >
                 {Object.entries(attributes).map(([key, [main, temp]]) => (
