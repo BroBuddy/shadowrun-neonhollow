@@ -54,6 +54,7 @@ function MetatypeDetail() {
             </Card>
 
             <Card>
+                <p>Attributes have been stored automatically.</p>
                 <p>
                     <strong className="highlight">Starting Attributes:</strong>
                 </p>

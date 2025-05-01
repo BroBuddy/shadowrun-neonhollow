@@ -48,20 +48,18 @@ function EventDetail() {
                         </FadeIn>
                     </div>
                 </div>
-
-                {data.bonus && (
-                    <>
-                        <p className="mt-5">
-                            <strong className="highlight">
-                                Bonus Attribute:
-                            </strong>
-                        </p>
-                        <ul className="list-margin">
-                            <li>{data.bonus}</li>
-                        </ul>
-                    </>
-                )}
             </Card>
+
+            {data.bonus && (
+                <Card>
+                    <p>
+                        <strong className="highlight">Bonus Attribute:</strong>
+                    </p>
+                    <ul className="list-margin">
+                        <li>{data.bonus}</li>
+                    </ul>
+                </Card>
+            )}
 
             {data.skillChecks && (
                 <Card>
