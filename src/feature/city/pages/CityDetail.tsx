@@ -6,14 +6,12 @@ import ActionsView from '../components/ActionsView'
 import RollsView from '../components/RollsView'
 import { useMemo } from 'react'
 import Card from '@/components/Card'
-import RunnerView from '@/feature/runner/components/RunnerView'
 
 function CityDetail() {
     const { tag } = useParams()
     const data = useMemo(() => {
         return getFacilityByTag(tag as string) as Facility
     }, [tag])
-    const inZeroZone = tag === 'zerozone'
 
     if (!data) {
         return <p>No resource data available.</p>
@@ -49,12 +47,6 @@ function CityDetail() {
             )}
 
             <ActionsView actionList={data.actionList} />
-
-            {inZeroZone && (
-                <Card>
-                    <RunnerView />
-                </Card>
-            )}
         </>
     )
 }

@@ -44,8 +44,6 @@ function Midnight() {
 
                         {randomEvent && (
                             <>
-                                Random Event
-                                <span className="mx-1">&#8594;</span>
                                 <PopUp title={randomEvent.title}>
                                     <EventDetail id={randomEvent.id} />
                                 </PopUp>

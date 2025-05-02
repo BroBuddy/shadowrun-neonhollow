@@ -27,8 +27,6 @@ function EncounterView() {
 
             {randomEncounter && (
                 <>
-                    Encounter
-                    <span className="mx-1">&#8594;</span>
                     <PopUp title={randomEncounter.title}>
                         <EncounterDetail tag={randomEncounter.tag} />
                     </PopUp>

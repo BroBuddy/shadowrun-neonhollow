@@ -17,28 +17,19 @@ function RunnerView() {
 
     return (
         <>
-            <p>
-                <strong>Runner Matrix:</strong>
-            </p>
-            <ul className="list-margin">
-                <li>
-                    {!randomRunner && (
-                        <a className="cursor-pointer" onClick={onRandomRunner}>
-                            Random Runner
-                        </a>
-                    )}
+            {!randomRunner && (
+                <a className="cursor-pointer" onClick={onRandomRunner}>
+                    Random Runner
+                </a>
+            )}
 
-                    {randomRunner && (
-                        <>
-                            Random Runner
-                            <span className="mx-1">&#8594;</span>
-                            <PopUp title={randomRunner.title}>
-                                <RunnerDetail id={randomRunner.id} />
-                            </PopUp>
-                        </>
-                    )}
-                </li>
-            </ul>
+            {randomRunner && (
+                <>
+                    <PopUp title={randomRunner.title}>
+                        <RunnerDetail id={randomRunner.id} />
+                    </PopUp>
+                </>
+            )}
         </>
     )
 }
