@@ -29,6 +29,14 @@ const Pages = {
 
 const router = createBrowserRouter([
     {
+        index: true,
+        element: (
+            <Suspense fallback={<Preloader />}>
+                <Pages.Welcome />
+            </Suspense>
+        ),
+    },
+    {
         element: (
             <ErrorBoundary FallbackComponent={ErrorFallback}>
                 <ColorSchemeProvider>
@@ -37,14 +45,6 @@ const router = createBrowserRouter([
             </ErrorBoundary>
         ),
         children: [
-            {
-                index: true,
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Pages.Welcome />
-                    </Suspense>
-                ),
-            },
             {
                 path: '/rules',
                 element: (
