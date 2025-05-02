@@ -623,7 +623,7 @@ const encounterIronGym: readonly Encounter[] = [
             },
             {
                 title: 'Take the challenge and sharpen your reflexes.',
-                reward: ['+1 Temporary Agility', '-1 Heat'],
+                reward: ['+1 Temporary Agility', '-2 Health'],
             },
         ],
     },
@@ -635,7 +635,7 @@ const encounterIronGym: readonly Encounter[] = [
         options: [
             {
                 title: 'Step into the ring and test your reaction speed.',
-                reward: ['+1 Temporary Reaction', '-1 Heat'],
+                reward: ['+1 Temporary Reaction', '-2 Health'],
             },
             {
                 title: 'Coach someone from the sidelines with strategic advice.',
