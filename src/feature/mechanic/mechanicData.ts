@@ -56,7 +56,7 @@ const mechanicData: Mechanic[] = [
             'Maintain your ❤️ Health to survive in the harsh environments of the game.',
         list: [
             'Health ranges from 0 to 10 and cannot exceed these limits.',
-            "If Health reaches 0, you're effectively dead.",
+            'If Health reaches 0, the game is over. 💀',
             'Service Providers: VitalClinic, IronGym, SafeHouse.',
         ],
     },

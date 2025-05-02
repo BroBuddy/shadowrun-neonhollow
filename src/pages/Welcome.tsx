@@ -1,37 +1,61 @@
 import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Headline from '@/components/Headline'
+import FadeIn from '@/components/FadeIn'
 
 function Welcome() {
     return (
         <>
             <Headline>Welcome to NeonHollow</Headline>
             <Card>
-                <p>
-                    You’re inside a full-spectrum neural simulation, created by
-                    rogue deckers and ex-corp AIs to test potential
-                    shadowrunners in a city twisted by corporate control.
-                    Everything you see, every sound, every face, every
-                    choice—fabricated to push you to your limits.
-                </p>
-                <p>
-                    The megacorp dominates this simulation like it does the real
-                    world. It watches, it hunts, and it controls every
-                    district—just like it will when you jack out of this and hit
-                    the actual streets.
-                </p>
-                <p>Your task is simple: break the system.</p>
-                <p>
-                    Take on missions. Build your rep. Uncover secrets. Burn down
-                    their influence—district by district.
-                </p>
-                <p>This is your trial. Win it... and wake up.</p>
-                <p>
-                    &#8594;{' '}
-                    <Link to="/rules" className="ml-1">
-                        Rules
-                    </Link>
-                </p>
+                <FadeIn>
+                    <p className="highlight">[SYSTEM BOOTING…]</p>
+                </FadeIn>
+                <FadeIn delay={1500}>
+                    <p className="highlight">[SIGNAL TRACE INITIATED…]</p>
+                </FadeIn>
+                <FadeIn delay={3000}>
+                    <p className="highlight">[CONNECTION ATTEMPT: FAILED]</p>
+                </FadeIn>
+                <FadeIn delay={4500}>
+                    <p className="highlight">[RETRYING…]</p>
+                </FadeIn>
+                <FadeIn delay={6000}>
+                    <p>
+                        <em>
+                            "You are inside a controlled simulation. A
+                            test—crafted by rogue deckers and ex-corp AIs. Every
+                            sight, every sound, every action—engineered to
+                            measure your limits."
+                        </em>
+                    </p>
+                </FadeIn>
+                <FadeIn delay={7500}>
+                    <p>
+                        <em>
+                            "The megacorp watches. It controls. It hunts. The
+                            same way it does beyond this simulation. Every
+                            district, every choice—monitored."
+                        </em>
+                    </p>
+                </FadeIn>
+                <FadeIn delay={9000}>
+                    <p>
+                        <em>
+                            "Your mission is simple: break their grip. Take
+                            jobs. Gain influence. Uncover secrets. Burn their
+                            hold on this world. Win the trial… and wake up."
+                        </em>
+                    </p>
+                </FadeIn>
+                <FadeIn delay={10500}>
+                    <p>
+                        Start here &#8594;{' '}
+                        <Link to="/rules" className="ml-1">
+                            Rules
+                        </Link>
+                    </p>
+                </FadeIn>
             </Card>
         </>
     )

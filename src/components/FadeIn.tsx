@@ -11,17 +11,22 @@ function FadeIn({ children, delay = 0 }: FadeInProps) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true)
+            console.log('true')
         }, delay)
 
         return () => clearTimeout(timer)
     }, [delay])
 
     return (
-        <div
-            className={`fade-in z-20 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-        >
-            {children}
-        </div>
+        <>
+            {isVisible && (
+                <div
+                    className={`fade-in z-20 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+                >
+                    {children}
+                </div>
+            )}
+        </>
     )
 }
 
