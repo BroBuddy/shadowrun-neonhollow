@@ -1147,42 +1147,42 @@ const eventFacility: readonly Event[] = [
 const eventEncounter: readonly Event[] = [
     {
         id: '81',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'At CyberLab, a man explains groundbreaking methods for optimizing finances, revealing hidden structures. Before you thank him, he vanishes.',
         bonus: '+1 Logic',
     },
     {
         id: '83',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'At VitalClinic, a woman helps ease your tooth pain with calm expertise, leaving you feeling agile in both body and mind.',
         bonus: '+1 Agility',
     },
     {
         id: '84',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'In EchoGarden, a man shares advice on attuning to your surroundings, leaving you composed and in sync with the world.',
         bonus: '+1 Reaction',
     },
     {
         id: '85',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'A man with a fiery orange beard sketches symbols in a corner. The encounter sharpens your instincts and attunes you to hidden currents.',
         bonus: '+1 Intuition',
     },
     {
         id: '86',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'At PulseBar, a gentle older woman shifts your perspective, offering clarity and hope with her quiet strength.',
         bonus: '+1 Charisma',
     },
     {
         id: '87',
-        title: 'Mysterious Encounter',
+        title: 'Mysterious Runner',
         description:
             'At IronGym, an older man shares a philosophy of growth through pain. You leave sore but stronger.',
         bonus: '+1 Strength',

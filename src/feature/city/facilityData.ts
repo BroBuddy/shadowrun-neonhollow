@@ -27,10 +27,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'System Anomaly', id: '71' },
             { roll: '3-4', text: 'Illegal Trial → +1 Heat' },
             { roll: '5-6', text: 'Test Failure → -1 Health' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Unplanned Find → +1 Energy' },
             { roll: '10-11', text: 'Major Break → +1 Intel' },
-            { roll: '12', text: 'Mysterious Encounter', id: '81' },
+            { roll: '12', text: 'Mysterious Runner', id: '81' },
         ],
         actionList: [
             {
@@ -68,7 +68,7 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Security Check', id: '72' },
             { roll: '3-4', text: 'Security Breach → +1 Heat' },
             { roll: '5-6', text: 'Blamed → -1 Edge' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Backup Support → +1 Energy' },
             { roll: '10-11', text: 'Familiar Face → -1 Heat' },
             { roll: '12', text: 'Access Granted → +1 Edge' },
@@ -101,10 +101,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Medical Malfunction', id: '73' },
             { roll: '3-4', text: 'Defiant Case → +1 Heat' },
             { roll: '5-6', text: 'Grim Report → -1 Health' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Energy Boost → +1 Energy' },
             { roll: '10-11', text: 'Civic Aid → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', id: '83' },
+            { roll: '12', text: 'Mysterious Runner', id: '83' },
         ],
         actionList: [
             {
@@ -142,10 +142,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Lost Data', id: '74' },
             { roll: '3-4', text: 'Plant Harvest → +1 Heat' },
             { roll: '5-6', text: 'Toxic Fungal → -1 Health' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Friendly Chat → +1 Energy' },
             { roll: '10-11', text: 'Solar Soak → +1 Health' },
-            { roll: '12', text: 'Mysterious Encounter', id: '84' },
+            { roll: '12', text: 'Mysterious Runner', id: '84' },
         ],
         actionList: [
             {
@@ -183,10 +183,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Dream Glitch', id: '75' },
             { roll: '3-4', text: 'Shady Moves → +1 Heat' },
             { roll: '5-6', text: 'Price Jump → -2.000 ¥' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Massage Chair → +1 Energy' },
             { roll: '10-11', text: 'Social Pulse → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', id: '85' },
+            { roll: '12', text: 'Mysterious Runner', id: '85' },
         ],
         actionList: [
             {
@@ -224,10 +224,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'The Whisper Network', id: '76' },
             { roll: '3-4', text: 'Drunk and Disorderly → +1 Heat' },
             { roll: '5-6', text: 'Toxic Cocktail → -1 Health' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Nutritious Snack → +1 Energy' },
             { roll: '10-11', text: 'Winning Bet → +2.000 ¥' },
-            { roll: '12', text: 'Mysterious Encounter', id: '86' },
+            { roll: '12', text: 'Mysterious Runner', id: '86' },
         ],
         actionList: [
             {
@@ -265,10 +265,10 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Unplanned Challenge', id: '77' },
             { roll: '3-4', text: 'Wrong Locker Room → +1 Heat' },
             { roll: '5-6', text: 'Unpaid Membership → -2.000 ¥' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Promo Energy Bar → +1 Energy' },
             { roll: '10-11', text: 'Perfect Form → +1 Edge' },
-            { roll: '12', text: 'Mysterious Encounter', id: '87' },
+            { roll: '12', text: 'Mysterious Runner', id: '87' },
         ],
         actionList: [
             {
@@ -306,7 +306,7 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Old Rival Spotted', id: '80' },
             { roll: '3-4', text: 'Corrupt Runner → +1 Heat' },
             { roll: '5-6', text: 'Rough Night → -1 Energy' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Elixir Boost → +1 Health' },
             { roll: '10-11', text: 'Secret Deal → +2.000 ¥' },
             { roll: '12', text: 'Hidden Message → +1 Intel' },
@@ -343,7 +343,7 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Smuggler’s Test', id: '78' },
             { roll: '3-4', text: 'Police Raid → +1 Heat' },
             { roll: '5-6', text: 'Knife Fight → -1 Health' },
-            { roll: '7', text: 'No Effect' },
+            { roll: '7', text: 'Random Encounter' },
             { roll: '8-9', text: 'Discount Promotion → +2.000 ¥' },
             { roll: '10-11', text: 'Thief Caught → +1 Edge' },
             { roll: '12', text: 'Prestigious Contact → +1 Intel' },

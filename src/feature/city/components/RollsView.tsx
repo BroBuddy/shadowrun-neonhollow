@@ -3,6 +3,7 @@ import { FacilityRoll } from '../FacilityType'
 import Dice from '@/components/Dice'
 import EventDetail from '@/feature/event/pages/EventDetail'
 import PopUp from '@/components/Popup'
+import EncounterView from '@/feature/encounter/components/EncounterView'
 
 type FacilityRollsProps = {
     rollList: FacilityRoll[]
@@ -24,7 +25,9 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
                 {rollList.map((item: FacilityRoll, index: number) => (
                     <li key={index}>
                         <strong>Roll {item.roll}</strong> &#8594;{' '}
-                        {item.id ? (
+                        {item.roll === '7' ? (
+                            <EncounterView />
+                        ) : item.id ? (
                             <PopUp title={item.text}>
                                 <EventDetail id={item.id} />
                             </PopUp>
