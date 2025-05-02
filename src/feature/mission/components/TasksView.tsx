@@ -61,9 +61,8 @@ const TasksView = ({
                                 )}
                             </ul>
                             <p>
-                                <strong>Fail?</strong> &#8594; -1 Performance
-                                <br />
-                                <strong>Success?</strong> &#8594; +1 Performance
+                                ✅ +1 Performance
+                                <br />❌ -1 Performance
                             </p>
                             {missionProgress === index && (
                                 <div

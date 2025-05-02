@@ -47,9 +47,11 @@ function EncounterDetail({ tag }: EncounterDetailProps) {
 
                         {selectedOption === index && (
                             <ul className="list-margin">
-                                {option.reward.map((reward, i) => (
-                                    <li key={i}>{reward}</li>
-                                ))}
+                                {option.reward.map(
+                                    (reward: string, rewardIndex: number) => (
+                                        <li key={rewardIndex}>{reward}</li>
+                                    )
+                                )}
                             </ul>
                         )}
                     </li>
