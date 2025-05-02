@@ -25,7 +25,7 @@ function Welcome() {
                     </em>
                 </p>
             </FadeIn>
-            <FadeIn delay={7500}>
+            <FadeIn delay={8500}>
                 <p>
                     <em>
                         "The megacorp watches. It controls. It hunts. The same
@@ -34,7 +34,7 @@ function Welcome() {
                     </em>
                 </p>
             </FadeIn>
-            <FadeIn delay={9000}>
+            <FadeIn delay={11000}>
                 <p>
                     <em>
                         "Your mission is simple: break their grip. Take jobs.
@@ -43,9 +43,9 @@ function Welcome() {
                     </em>
                 </p>
             </FadeIn>
-            <FadeIn delay={10500}>
+            <FadeIn delay={13500}>
                 <p>
-                    Start here &#8594;{' '}
+                    Start here &#8594;
                     <Link to="/rules" className="ml-1">
                         Rules
                     </Link>
