@@ -315,7 +315,7 @@ const facilityData: Facility[] = [
             {
                 title: '🤝 Recruit a Runner:',
                 steps: [
-                    { text: 'Roll on Runner Matrix → See Runner' },
+                    { text: 'Random Runner' },
                     { text: 'Remember The two highest attributes' },
                     { text: 'Pay 10.000 ¥ → Roll 2d6 → Add Charisma' },
                     { text: 'Hire Runner', tag: 'runner' },
@@ -325,7 +325,7 @@ const facilityData: Facility[] = [
                 title: '⚔️ Challenge a Runner:',
                 steps: [
                     { text: 'Combine Your two highest attributes' },
-                    { text: 'Roll on Runner Matrix → See Runner' },
+                    { text: 'Random Runner' },
                     { text: 'Add Opponent’s corresponding values' },
                     { text: 'You lost? → Lose Health equal to the gap' },
                     { text: 'Add 10 to the gap' },

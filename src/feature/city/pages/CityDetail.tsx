@@ -6,9 +6,7 @@ import ActionsView from '../components/ActionsView'
 import RollsView from '../components/RollsView'
 import { useMemo } from 'react'
 import Card from '@/components/Card'
-import MatrixTable from '@/components/MatrixTable'
-import Dice from '@/components/Dice'
-import InRow from '@/components/InRow'
+import RunnerView from '@/feature/runner/components/RunnerView'
 
 function CityDetail() {
     const { tag } = useParams()
@@ -54,15 +52,7 @@ function CityDetail() {
 
             {inZeroZone && (
                 <Card>
-                    <p>
-                        <strong className="highlight">Runner Matrix:</strong>
-                    </p>
-
-                    <InRow>
-                        <span>Roll 1d6 twice:</span>
-                        <Dice dice={1} />
-                    </InRow>
-                    <MatrixTable linkPrefix="/rule/R5" />
+                    <RunnerView />
                 </Card>
             )}
         </>
