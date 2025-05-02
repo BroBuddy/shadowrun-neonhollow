@@ -28,7 +28,7 @@ function Welcome() {
                 <p>This is your trial. Win it... and wake up.</p>
                 <p>
                     &#8594;{' '}
-                    <Link to="/rule" className="ml-1">
+                    <Link to="/rules" className="ml-1">
                         Rules
                     </Link>
                 </p>

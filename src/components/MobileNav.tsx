@@ -7,7 +7,7 @@ type LinkType = {
 }
 
 const links: LinkType[] = [
-    { path: '/rule', icon: '📑', text: 'Rules' },
+    { path: '/rules', icon: '📑', text: 'Rules' },
     { path: '/city', icon: '🏠', text: 'City' },
     { path: '/mission', icon: '🎯', text: 'Mission' },
     { path: '/midnight', icon: '🌙', text: 'Midnight' },

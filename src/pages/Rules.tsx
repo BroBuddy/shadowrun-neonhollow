@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
-import Card from '../../../components/Card'
+import Card from '../components/Card'
 import Headline from '@/components/Headline'
-import MechanicView from '../../mechanic/components/MechanicView'
+import MechanicView from '../feature/mechanic/components/MechanicView'
 import { useColorScheme } from '@/context/useColorScheme'
 
-const Rule = () => {
+const Rules = () => {
     const { toggleColorScheme } = useColorScheme()
 
     return (
@@ -54,4 +54,4 @@ const Rule = () => {
     )
 }
 
-export default Rule
+export default Rules

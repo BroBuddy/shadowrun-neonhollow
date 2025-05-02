@@ -1,37 +1,14 @@
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
-import parse, { DOMNode, Text } from 'html-react-parser'
-import { Link } from 'react-router-dom'
 
-const rulesRegex = /([A-Z]\d{3}[A-Z]?)/g
-
-const makeUrlsClickable = (html: string) => {
-    return parse(html, {
-        replace: (domNode: DOMNode) => {
-            if (domNode.type === 'text') {
-                const text = (domNode as Text).data
-                const parts = text.split(rulesRegex)
-
-                if (parts.length === 1) return
-
-                return (
-                    <>
-                        {parts.map((item: string, index: number) =>
-                            rulesRegex.test(item) ? (
-                                <Link key={index} to={`/rule/${item}`}>
-                                    {item}
-                                </Link>
-                            ) : (
-                                <span key={index}>{item}</span>
-                            )
-                        )}
-                    </>
-                )
-            }
-
-            return undefined
-        },
-    })
+const getIcon = (range: string) => {
+    if (range.includes('2-5')) return '🔴'
+    if (range.includes('6-8')) return '🔴'
+    if (range.includes('9-11')) return '🟡'
+    if (range.includes('12-14')) return '🟡'
+    if (range.includes('15-17')) return '🟢'
+    if (range.includes('18+')) return '🟢'
+    return '⚪'
 }
 
 const scrollToBottom = () => {
@@ -70,11 +47,4 @@ const renderRoll2d6 = (text: string) => {
     )
 }
 
-export {
-    renderRoll2d6,
-    formatValue,
-    rollDice,
-    scrollToBottom,
-    makeUrlsClickable,
-    rulesRegex,
-}
+export { getIcon, renderRoll2d6, formatValue, rollDice, scrollToBottom }

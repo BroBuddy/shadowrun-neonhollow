@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import { getResourceByTag } from '../resourceData'
 import { ResourceRoll, Resource as ResourceType } from '../ResourceType'
-import { getIcon } from '@/lib/icon'
+import { getIcon } from '@/lib/helper'
 
 type ResourceDetailProps = {
     tag?: string

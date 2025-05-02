@@ -7,7 +7,6 @@ import { register } from './serviceWorkerRegistration.ts'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
-import RuleRouter from './feature/rule/RuleRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter.tsx'
 import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import NameRouter from './feature/name/NameRouter.tsx'
@@ -20,6 +19,7 @@ import App from './App.tsx'
 const ErrorFallback = () => <Error />
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
+    Rules: React.lazy(() => import('./pages/Rules')),
     Midnight: React.lazy(() => import('./pages/Midnight')),
     WellDone: React.lazy(() => import('./pages/WellDone')),
     OverwhelminglyGreat: React.lazy(
@@ -42,6 +42,14 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <Pages.Welcome />
+                    </Suspense>
+                ),
+            },
+            {
+                path: '/rules',
+                element: (
+                    <Suspense fallback={<Preloader />}>
+                        <Pages.Rules />
                     </Suspense>
                 ),
             },
@@ -69,7 +77,6 @@ const router = createBrowserRouter([
                     </Suspense>
                 ),
             },
-            ...RuleRouter,
             ...MechanicRouter,
             ...CharacterRouter,
             ...MetatypeRouter,
