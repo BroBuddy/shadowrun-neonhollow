@@ -1,56 +1,74 @@
 import { Link } from 'react-router-dom'
 import FadeIn from '@/components/FadeIn'
 
+type Text = {
+    text: string
+    delay: number
+    italic?: boolean
+    link?: string
+}
+
+const fadeTextData: Text[] = [
+    { text: '[SYSTEM BOOTING…]', delay: 0 },
+    { text: '[SIGNAL TRACE INITIATED…]', delay: 1500 },
+    { text: '[CONNECTION ATTEMPT: FAILED]', delay: 3000 },
+    { text: '"We need more power, chummer."', delay: 4500, italic: true },
+    { text: '[RETRYING…]', delay: 6500 },
+    { text: '"Here we go. Welcome to NeonHollow."', delay: 8000, italic: true },
+    {
+        text: '"You are inside a controlled simulation. A test—crafted by rogue deckers and ex-corp AIs. Every sight, every sound, every action—engineered to measure your limits."',
+        delay: 10000,
+        italic: true,
+    },
+    {
+        text: '"The megacorp thinks it owns you. The simulation says otherwise. Prove you belong. Survive the trials. Make your mark."',
+        delay: 13000,
+        italic: true,
+    },
+    {
+        text: '"NeonHollow waits. Step in. Rewrite the script."',
+        delay: 16000,
+        italic: true,
+    },
+    { text: '[SYSTEM SYNC COMPLETE]', delay: 17500 },
+    { text: '[BEGIN SIMULATION]', delay: 19000, link: '/rules' },
+]
+
 function Welcome() {
     return (
         <div className="px-5">
-            <FadeIn>
-                <p>[SYSTEM BOOTING…]</p>
-            </FadeIn>
-            <FadeIn delay={1500}>
-                <p>[SIGNAL TRACE INITIATED…]</p>
-            </FadeIn>
-            <FadeIn delay={3000}>
-                <p>[CONNECTION ATTEMPT: FAILED]</p>
-            </FadeIn>
-            <FadeIn delay={4500}>
-                <p>[RETRYING…]</p>
-            </FadeIn>
-            <FadeIn delay={6000}>
-                <p>
-                    <em>
-                        "You are inside a controlled simulation. A test—crafted
-                        by rogue deckers and ex-corp AIs. Every sight, every
-                        sound, every action—engineered to measure your limits."
-                    </em>
-                </p>
-            </FadeIn>
-            <FadeIn delay={8500}>
-                <p>
-                    <em>
-                        "The megacorp watches. It controls. It hunts. The same
-                        way it does beyond this simulation. Every district,
-                        every choice—monitored."
-                    </em>
-                </p>
-            </FadeIn>
-            <FadeIn delay={11000}>
-                <p>
-                    <em>
-                        "Your mission is simple: break their grip. Take jobs.
-                        Gain influence. Uncover secrets. Burn their hold on this
-                        world. Win the trial… and wake up."
-                    </em>
-                </p>
-            </FadeIn>
-            <FadeIn delay={13500}>
-                <p>
-                    Start here &#8594;
-                    <Link to="/rules" className="ml-1">
-                        Rules
-                    </Link>
-                </p>
-            </FadeIn>
+            {fadeTextData.map(
+                ({ text, delay, italic, link }, index: number) => (
+                    <FadeIn key={index} delay={delay}>
+                        <p>
+                            {link ? (
+                                <Link
+                                    to={link}
+                                    style={{
+                                        color: '#09eae1',
+                                        textDecoration: 'none',
+                                        textAlign: 'right',
+                                        display: 'block',
+                                    }}
+                                >
+                                    {text}
+                                </Link>
+                            ) : italic ? (
+                                <em>{text}</em>
+                            ) : (
+                                <strong
+                                    style={{
+                                        textAlign: 'right',
+                                        display: 'block',
+                                    }}
+                                >
+                                    {text}
+                                </strong>
+                            )}
+                        </p>
+                    </FadeIn>
+                )
+            )}
         </div>
     )
 }
