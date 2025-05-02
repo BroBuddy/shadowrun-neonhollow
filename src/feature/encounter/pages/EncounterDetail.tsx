@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { getEncounterByTag } from '../encounterData'
-import { Encounter } from '../EncounterType'
+import { Encounter, EncounterOption } from '../EncounterType'
 
 type EncounterDetailProps = {
     tag?: string
@@ -23,10 +23,10 @@ function EncounterDetail({ tag }: EncounterDetailProps) {
                 <strong>Choose one:</strong>
             </p>
             <ol className="list-margin">
-                {data.options.map((option, index) => (
+                {data.options.map((option: EncounterOption, index: number) => (
                     <li
                         key={index}
-                        onMouseDown={() => {
+                        onClick={() => {
                             if (selectedOption === null) {
                                 setSelectedOption(index)
                             }
