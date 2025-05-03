@@ -1,15 +1,15 @@
-import useStatStore from '@/feature/stat/store/statStore'
-import StatRow from './StatRow'
+import ResourceRow from './ResourceRow'
+import useResourceStore from '@/feature/resource/store/resourceStore'
 
-const StatEditor = () => {
-    const stats = useStatStore((state) => state.stats)
-    const modifyStats = useStatStore((state) => state.modifyStats)
-    const statEntries = Object.entries(stats)
-    const leftStats = statEntries.slice(0, 3)
-    const rightStats = statEntries.slice(3, 6)
+const ResourceEditor = () => {
+    const resources = useResourceStore((state) => state.resources)
+    const modifyResources = useResourceStore((state) => state.modifyResources)
+    const resourceEntries = Object.entries(resources)
+    const leftResources = resourceEntries.slice(0, 3)
+    const rightResources = resourceEntries.slice(3, 6)
 
-    const handleModify = (stat: string, value: number) => {
-        modifyStats({ [stat]: value })
+    const handleModify = (resource: string, value: number) => {
+        modifyResources({ [resource]: value })
     }
 
     return (
@@ -18,15 +18,15 @@ const StatEditor = () => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th>Stat</th>
+                            <th>Resource</th>
                             <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {leftStats.map(([stat, value]) => (
-                            <StatRow
-                                key={stat}
-                                stat={stat}
+                        {leftResources.map(([resource, value]) => (
+                            <ResourceRow
+                                key={resource}
+                                resource={resource}
                                 value={value}
                                 onModify={handleModify}
                             />
@@ -39,15 +39,15 @@ const StatEditor = () => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th>Stat</th>
+                            <th>Resource</th>
                             <th>Value</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {rightStats.map(([stat, value]) => (
-                            <StatRow
-                                key={stat}
-                                stat={stat}
+                        {rightResources.map(([resource, value]) => (
+                            <ResourceRow
+                                key={resource}
+                                resource={resource}
                                 value={value}
                                 onModify={handleModify}
                             />
@@ -59,4 +59,4 @@ const StatEditor = () => {
     )
 }
 
-export default StatEditor
+export default ResourceEditor

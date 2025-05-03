@@ -2,7 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
 import MobileNav from './components/MobileNav'
 import { useColorScheme } from './context/useColorScheme'
-import AttributeManager from './feature/attribute/components/AttributeManager'
+import Header from './components/Header'
 import './App.scss'
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
     return (
         <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
-            <AttributeManager />
+            <Header />
             <Outlet />
             <MobileNav />
         </div>

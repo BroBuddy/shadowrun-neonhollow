@@ -1,6 +1,6 @@
-import useStatStore from '@/feature/stat/store/statStore'
+import useResourceStore from '@/feature/resource/store/resourceStore'
 
-const statIcons: Record<string, string> = {
+const resourceIcons: Record<string, string> = {
     Nuyen: '💰',
     Health: '❤️',
     Energy: '🔋',
@@ -9,16 +9,16 @@ const statIcons: Record<string, string> = {
     Heat: '🔥',
 }
 
-const StatManager = () => {
-    const stats = useStatStore((state) => state.stats)
+const ResourceManager = () => {
+    const resources = useResourceStore((state) => state.resources)
 
     return (
         <>
-            {Object.entries(stats).map(([key, value]) => (
+            {Object.entries(resources).map(([key, value]) => (
                 <div key={key} className="w-1/6 text-center p-1">
                     <div className="mb-1 text-xs">
                         <strong className="highlight mr-1">
-                            {statIcons[key]}
+                            {resourceIcons[key]}
                         </strong>
                         <span>{key === 'Nuyen' ? `${value}k` : value}</span>
                     </div>
@@ -28,4 +28,4 @@ const StatManager = () => {
     )
 }
 
-export default StatManager
+export default ResourceManager

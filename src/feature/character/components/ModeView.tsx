@@ -2,11 +2,11 @@ import Card from '@/components/Card'
 import { Mode as ModeType } from '../CharacterType'
 import { getCharacterModes } from '../characterData'
 import { useMemo } from 'react'
-import useStatStore from '@/feature/stat/store/statStore'
+import useResourceStore from '@/feature/resource/store/resourceStore'
 
 function ModeView() {
     const modes = useMemo(() => getCharacterModes(), [])
-    const setStats = useStatStore((state) => state.setStats)
+    const setStats = useResourceStore((state) => state.setResources)
 
     const handleModeSelect = (stats: Record<string, number>) => {
         setStats(stats)

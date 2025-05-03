@@ -1,31 +1,31 @@
 import InRow from '@/components/InRow'
 
-type StatRowProps = {
-    stat: string
+type ResourceRowProps = {
+    resource: string
     value: number
-    onModify: (stat: string, value: number) => void
+    onModify: (resource: string, value: number) => void
 }
 
-const StatRow = ({ stat, value, onModify }: StatRowProps) => {
+const ResourceRow = ({ resource, value, onModify }: ResourceRowProps) => {
     return (
-        <tr key={stat}>
+        <tr key={resource}>
             <td>
-                <strong>{stat}</strong>
+                <strong>{resource}</strong>
             </td>
             <td>
                 <InRow>
                     <button
                         className="highlight text-xl"
-                        onClick={() => onModify(stat, -1)}
+                        onClick={() => onModify(resource, -1)}
                     >
                         ⊖
                     </button>
                     <span className="w-6 text-center">
-                        {stat === 'Nuyen' ? `${value}k` : value}
+                        {resource === 'Nuyen' ? `${value}k` : value}
                     </span>
                     <button
                         className="highlight text-xl"
-                        onClick={() => onModify(stat, 1)}
+                        onClick={() => onModify(resource, 1)}
                     >
                         ⊕
                     </button>
@@ -35,4 +35,4 @@ const StatRow = ({ stat, value, onModify }: StatRowProps) => {
     )
 }
 
-export default StatRow
+export default ResourceRow

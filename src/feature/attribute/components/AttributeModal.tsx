@@ -1,4 +1,4 @@
-import StatEditor from '@/feature/stat/components/StatEditor'
+import ResourceEditor from '@/feature/resource/components/ResourceEditor'
 import AttributeEditor from './AttributeEditor'
 
 const AttributeModal = ({
@@ -16,7 +16,7 @@ const AttributeModal = ({
         >
             <div className="shadow-lg w-3/4 max-w-md pt-5 mt-5 mx-auto">
                 <div className="flex">
-                    <StatEditor />
+                    <ResourceEditor />
                 </div>
                 <div className="flex">
                     <AttributeEditor />
