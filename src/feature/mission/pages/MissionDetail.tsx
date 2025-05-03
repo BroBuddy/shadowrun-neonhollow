@@ -41,11 +41,11 @@ function MissionDetail() {
                             <p>
                                 <strong className="highlight">Client:</strong>
                                 <br />
-                                {data.client.name}, {data.client.location}
+                                {data.client}
                             </p>
                             <p>
                                 <strong className="highlight">Location:</strong>
-                                <br /> {data.mission_location}
+                                <br /> MegaCorp
                             </p>
                         </FadeIn>
                     </div>

@@ -1,13 +1,9 @@
 type Mission = {
     id: string
     title: string
-    client: {
-        name: string
-        location: string
-    }
-    mission_location: string
+    attributes?: string
+    client: string
     briefing: string
-    tasks: MissionTask[]
     twist: MissionTwist
 }
 
@@ -26,11 +22,11 @@ type MissionOutcome = {
 
 type MissionTwist = {
     description: string
-    options: MissionOption[]
+    skillChecks: MissionSkillCheck[]
 }
 
-type MissionOption = {
-    stat: string
+type MissionSkillCheck = {
+    attribute: string
     dc: number
     description: string
 }
@@ -52,7 +48,7 @@ export type {
     MissionTask,
     MissionOutcome,
     MissionTwist,
-    MissionOption,
+    MissionSkillCheck,
     MissionPerformance,
     MissionEffect,
 }

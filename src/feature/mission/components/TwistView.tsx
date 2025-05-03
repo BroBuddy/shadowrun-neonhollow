@@ -1,4 +1,7 @@
-import { MissionOption, MissionTwist as MissionTwistType } from '../MissionType'
+import {
+    MissionSkillCheck,
+    MissionTwist as MissionTwistType,
+} from '../MissionType'
 import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
@@ -23,15 +26,17 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                 <Dice dice={2} />
             </InRow>
             <ul className="list-margin">
-                {twist.options.map((item: MissionOption, index: number) => (
-                    <li key={index}>
-                        <strong className="highlight">
-                            {item.stat} (DC {item.dc}):
-                        </strong>
-                        <br />
-                        {item.description}
-                    </li>
-                ))}
+                {twist.skillChecks.map(
+                    (item: MissionSkillCheck, index: number) => (
+                        <li key={index}>
+                            <strong className="highlight">
+                                {item.attribute} (DC {item.dc}):
+                            </strong>
+                            <br />
+                            {item.description}
+                        </li>
+                    )
+                )}
             </ul>
             <p>
                 ✅ &#8594; +1 Performance
