@@ -2,10 +2,15 @@ import Card from '@/components/Card'
 import { Mode as ModeType } from '../CharacterType'
 import { getCharacterModes } from '../characterData'
 import { useMemo } from 'react'
+import useStatStore from '@/feature/stat/store/statStore'
 
 function ModeView() {
     const modes = useMemo(() => getCharacterModes(), [])
+    const setStats = useStatStore((state) => state.setStats)
 
+    const handleModeSelect = (stats: Record<string, number>) => {
+        setStats(stats)
+    }
     return (
         <Card>
             <p>
@@ -15,11 +20,21 @@ function ModeView() {
             <ul className="list-margin">
                 {modes.map((item: ModeType, index: number) => (
                     <li key={index}>
-                        <strong>{item.name}:</strong>
+                        <strong
+                            className="cursor-pointer highlight"
+                            onClick={() => handleModeSelect(item.stats)}
+                        >
+                            {item.name}:
+                        </strong>
                         <ul>
-                            {item.resources.map(
-                                (resource: string, attrIndex: number) => (
-                                    <li key={attrIndex}>{resource}</li>
+                            {Object.entries(item.stats).map(
+                                ([statName, statValue], attrIndex) => (
+                                    <li key={attrIndex}>
+                                        {statName}:{' '}
+                                        {statName === 'Nuyen'
+                                            ? `${statValue}k`
+                                            : statValue}
+                                    </li>
                                 )
                             )}
                         </ul>

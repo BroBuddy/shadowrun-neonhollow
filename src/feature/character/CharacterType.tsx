@@ -7,7 +7,16 @@ type Equipment = {
 
 type Mode = {
     name: string
-    resources: string[]
+    stats: Stats
+}
+
+type Stats = {
+    Nuyen?: number
+    Health?: number
+    Energy?: number
+    Edge?: number
+    Intel?: number
+    Heat?: number
 }
 
 export type { Equipment, Mode }
