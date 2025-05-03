@@ -1,50 +1,31 @@
-import InRow from '../../../components/InRow'
+import InRow from '@/components/InRow'
 
-const StatRow = ({
-    stat,
-    main,
-    temp,
-    onModify,
-}: {
+type StatRowProps = {
     stat: string
-    main: number
-    temp: number
-    onModify: (attribute: string, value: number, isTemporary: boolean) => void
-}) => {
+    value: number
+    onModify: (stat: string, value: number) => void
+}
+
+const StatRow = ({ stat, value, onModify }: StatRowProps) => {
     return (
-        <tr>
+        <tr key={stat}>
             <td>
-                <InRow>
-                    <button
-                        onClick={() => onModify(attribute, -1, false)}
-                        className="highlight text-xl"
-                    >
-                        ⊖
-                    </button>
-                    <span className="w-4 text-center">{main}</span>
-                    <button
-                        onClick={() => onModify(attribute, 1, false)}
-                        className="highlight text-xl"
-                    >
-                        ⊕
-                    </button>
-                </InRow>
-            </td>
-            <td className="w-40 text-center">
-                <strong>{attribute}</strong>
+                <strong>{stat}</strong>
             </td>
             <td>
                 <InRow>
                     <button
-                        onClick={() => onModify(attribute, -1, true)}
                         className="highlight text-xl"
+                        onClick={() => onModify(stat, -1)}
                     >
                         ⊖
                     </button>
-                    <span className="w-4 text-center">{temp}</span>
+                    <span className="w-6 text-center">
+                        {stat === 'Nuyen' ? `${value}k` : value}
+                    </span>
                     <button
-                        onClick={() => onModify(attribute, 1, true)}
                         className="highlight text-xl"
+                        onClick={() => onModify(stat, 1)}
                     >
                         ⊕
                     </button>

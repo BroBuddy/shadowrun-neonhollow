@@ -1,5 +1,5 @@
-import InRow from '@/components/InRow'
 import useStatStore from '@/feature/stat/store/statStore'
+import StatRow from './StatRow'
 
 const StatEditor = () => {
     const stats = useStatStore((state) => state.stats)
@@ -20,30 +20,12 @@ const StatEditor = () => {
                 </thead>
                 <tbody>
                     {Object.entries(stats).map(([stat, value]) => (
-                        <tr key={stat}>
-                            <td>
-                                <strong>{stat}</strong>
-                            </td>
-                            <td>
-                                <InRow>
-                                    <button
-                                        className="highlight text-xl"
-                                        onClick={() => handleModify(stat, -1)}
-                                    >
-                                        ⊖
-                                    </button>
-                                    <span className="w-6 text-center">
-                                        {stat === 'Nuyen' ? `${value}k` : value}
-                                    </span>
-                                    <button
-                                        className="highlight text-xl"
-                                        onClick={() => handleModify(stat, 1)}
-                                    >
-                                        ⊕
-                                    </button>
-                                </InRow>
-                            </td>
-                        </tr>
+                        <StatRow
+                            key={stat}
+                            stat={stat}
+                            value={value}
+                            onModify={handleModify}
+                        />
                     ))}
                 </tbody>
             </table>
