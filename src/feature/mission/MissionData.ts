@@ -3,426 +3,155 @@ import { Mission } from './MissionType'
 const missionData: Mission[] = [
     {
         id: '1',
-        title: 'Recon the Facility',
-        client: {
-            name: 'Renna Thorne',
-            location: 'EchoGarden',
-        },
-        mission_location: 'MegaCorp',
+        title: 'Extraction',
+        attributes: 'Strength, Agility',
+        client: 'Dax Mercer',
         briefing:
-            'Renna Thorne from EchoGarden has gathered intel suggesting that MegaCorp is testing new surveillance equipment in a high-security facility. You are tasked with infiltrating the facility to gather vital information on the security systems and any sensitive data related to these new technologies.',
-        tasks: [
-            {
-                id: 1,
-                title: 'Infiltrate the Outer Perimeter',
-                outcomes: [
-                    {
-                        range: '2–5',
-                        stat: 'Agility',
-                        dc: 12,
-                        description: 'Sneak through the shadows.',
-                    },
-                    {
-                        range: '6–8',
-                        stat: 'Intuition',
-                        dc: 10,
-                        description: 'Locate an unguarded entry point.',
-                    },
-                    {
-                        range: '9–12',
-                        stat: 'Strength',
-                        dc: 8,
-                        description: 'Force entry through a maintenance hatch.',
-                    },
-                ],
-            },
-            {
-                id: 2,
-                title: 'Gather Intel on Security Systems',
-                outcomes: [
-                    {
-                        range: '3–6',
-                        stat: 'Logic',
-                        dc: 12,
-                        description:
-                            'Hack into the terminal to download floor plans.',
-                    },
-                    {
-                        range: '7–9',
-                        stat: 'Charisma',
-                        dc: 10,
-                        description: 'Convince a guard to give you access.',
-                    },
-                    {
-                        range: '10–12',
-                        stat: 'Agility',
-                        dc: 8,
-                        description: 'Sleight of hand to grab access cards.',
-                    },
-                ],
-            },
-            {
-                id: 3,
-                title: 'Extract Critical Data from the Server',
-                outcomes: [
-                    {
-                        range: '4–7',
-                        stat: 'Reaction',
-                        dc: 12,
-                        description: 'Dodge incoming guards.',
-                    },
-                    {
-                        range: '8–10',
-                        stat: 'Intuition',
-                        dc: 10,
-                        description: 'Find a hidden network access port.',
-                    },
-                    {
-                        range: '11–12',
-                        stat: 'Charisma',
-                        dc: 8,
-                        description:
-                            'Bluff your way through a security checkpoint.',
-                    },
-                ],
-            },
-        ],
+            'MegaCorp is hiding advanced surveillance tech. Break in, extract data, and vanish before alarms go off.',
         twist: {
             description:
-                'As you are extracting the data, you stumble upon a hidden compartment within the server room that seems to be connected to a covert research project.',
-            options: [
+                'You find encrypted blueprints for cybernetic enhancements.',
+            skillChecks: [
                 {
-                    stat: 'Intuition',
+                    attribute: 'Strength',
                     dc: 14,
-                    description: 'Spot hidden surveillance equipment.',
+                    description: 'Break open reinforced access panels.',
                 },
                 {
-                    stat: 'Logic',
+                    attribute: 'Agility',
                     dc: 14,
-                    description: 'Spot hidden surveillance equipment.',
+                    description: 'Navigate through laser grids undetected.',
                 },
             ],
         },
     },
     {
         id: '2',
-        title: 'Crash Security Systems',
-        client: {
-            name: 'Silas Noor',
-            location: 'DreamHaven',
-        },
-        mission_location: 'MegaCorp',
+        title: 'Assassination',
+        attributes: 'Agility, Reaction',
+        client: 'Nyx Holloway',
         briefing:
-            "DreamHaven`s immersive sleep tech is being hijacked—MegaCorp’s surveillance AI is tapping into user dreamscapes to manipulate behavior. Your task: breach their digital stronghold, black out the security grid, and ghost out before they realize the dream's turned against them.",
-        tasks: [
-            {
-                id: 1,
-                title: 'Overload the Firewall',
-                outcomes: [
-                    {
-                        range: '2–5',
-                        stat: 'Logic',
-                        dc: 12,
-                        description: 'Launch a deep intrusion spike.',
-                    },
-                    {
-                        range: '6–8',
-                        stat: 'Charisma',
-                        dc: 10,
-                        description:
-                            'Con a helpdesk agent into granting deeper access.',
-                    },
-                    {
-                        range: '9–12',
-                        stat: 'Intuition',
-                        dc: 8,
-                        description: 'Exploit a forgotten maintenance port.',
-                    },
-                ],
-            },
-            {
-                id: 2,
-                title: 'Disable Security Bots',
-                outcomes: [
-                    {
-                        range: '3–6',
-                        stat: 'Strength',
-                        dc: 12,
-                        description: 'Smash the control uplink.',
-                    },
-                    {
-                        range: '7–9',
-                        stat: 'Reaction',
-                        dc: 10,
-                        description: 'Disrupt their patrol pattern.',
-                    },
-                    {
-                        range: '10–12',
-                        stat: 'Logic',
-                        dc: 8,
-                        description: 'Inject a shutdown virus.',
-                    },
-                ],
-            },
-            {
-                id: 3,
-                title: 'Take Down the AI Core',
-                outcomes: [
-                    {
-                        range: '4–7',
-                        stat: 'Agility',
-                        dc: 12,
-                        description:
-                            'Slip through sensor coverage into the core.',
-                    },
-                    {
-                        range: '8–10',
-                        stat: 'Logic',
-                        dc: 10,
-                        description:
-                            'Loop the AI’s sensory matrix into feedback.',
-                    },
-                    {
-                        range: '11–12',
-                        stat: 'Charisma',
-                        dc: 8,
-                        description: 'Overwhelm it with illogical paradoxes.',
-                    },
-                ],
-            },
-        ],
+            "MegaCorp's AI manipulates dreams. You must slip in, delete its core, and disappear before alarms sound.",
         twist: {
-            description:
-                'A backup AI attempts an emergency rollback to restore the network.',
-            options: [
+            description: 'A backup AI starts a full-system lockdown.',
+            skillChecks: [
                 {
-                    stat: 'Strength',
+                    attribute: 'Agility',
                     dc: 14,
-                    description:
-                        'Crash the fallback node before reboot completes.',
+                    description: 'Evade security drones patrolling the halls.',
                 },
                 {
-                    stat: 'Agility',
+                    attribute: 'Reaction',
                     dc: 14,
-                    description:
-                        'Crash the fallback node before reboot completes.',
+                    description: "Counter the AI's rapid system shutdown.",
                 },
             ],
         },
     },
     {
         id: '3',
-        title: 'Confront the CEO',
-        client: {
-            name: 'Kael Stride',
-            location: 'PulseBar',
-        },
-        mission_location: 'MegaCorp',
+        title: 'Smuggling',
+        attributes: 'Reaction, Strength',
+        client: 'Juno Voss',
         briefing:
-            'The CEO of the megacorp is planning to seize control of PulseBar’s independent entertainment feeds, pushing brainwash protocols through immersive media. PulseBar wants you to break into the executive floor, confront the CEO directly, and deliver a message: some minds can’t be bought.',
-        tasks: [
-            {
-                id: 1,
-                title: 'Reach the Executive Elevator',
-                outcomes: [
-                    {
-                        range: '2–5',
-                        stat: 'Agility',
-                        dc: 12,
-                        description: 'Dodge through the lobby scanners.',
-                    },
-                    {
-                        range: '6–8',
-                        stat: 'Logic',
-                        dc: 10,
-                        description: 'Hack the elevator’s access panel.',
-                    },
-                    {
-                        range: '9–12',
-                        stat: 'Strength',
-                        dc: 8,
-                        description: 'Force open the maintenance shaft.',
-                    },
-                ],
-            },
-            {
-                id: 2,
-                title: 'Bypass CEO’s Personal Guard',
-                outcomes: [
-                    {
-                        range: '3–6',
-                        stat: 'Reaction',
-                        dc: 12,
-                        description: 'Outmaneuver their formation.',
-                    },
-                    {
-                        range: '7–9',
-                        stat: 'Intuition',
-                        dc: 10,
-                        description: 'Find a distraction window.',
-                    },
-                    {
-                        range: '10–12',
-                        stat: 'Charisma',
-                        dc: 8,
-                        description: 'Pretend you’re scheduled for a meeting.',
-                    },
-                ],
-            },
-            {
-                id: 3,
-                title: 'Deliver the Threat',
-                outcomes: [
-                    {
-                        range: '4–7',
-                        stat: 'Charisma',
-                        dc: 12,
-                        description: 'Intimidate with presence and proof.',
-                    },
-                    {
-                        range: '8–10',
-                        stat: 'Logic',
-                        dc: 10,
-                        description: 'Reveal the exploit in their media plan.',
-                    },
-                    {
-                        range: '11–12',
-                        stat: 'Strength',
-                        dc: 8,
-                        description: 'Leave physical evidence of your power.',
-                    },
-                ],
-            },
-        ],
+            'A black-market shipment must reach its buyer. Avoid corporate roadblocks and rivals hunting for your cargo.',
         twist: {
             description:
-                'The CEO is an advanced AI running a remote body. The real threat lies deeper.',
-            options: [
+                'The shipment contains hidden tech more valuable than expected.',
+            skillChecks: [
                 {
-                    stat: 'Logic',
+                    attribute: 'Reaction',
                     dc: 14,
                     description:
-                        'Realize it’s a decoy and trace the real core.',
+                        'Quickly reroute when chased by rival smugglers.',
                 },
                 {
-                    stat: 'Charisma',
+                    attribute: 'Strength',
                     dc: 14,
                     description:
-                        'Realize it’s a decoy and trace the real core.',
+                        'Physically secure the cargo in unstable terrain.',
                 },
             ],
         },
     },
     {
         id: '4',
-        title: 'Unveil the Truth',
-        client: {
-            name: 'Arlo Quinn',
-            location: 'EchoGarden',
-        },
-        mission_location: 'MegaCorp',
+        title: 'Sabotage',
+        attributes: 'Logic, Intuition',
+        client: 'Rook Everhart',
         briefing:
-            'In this final move to topple the megacorp, you must infiltrate their most secure vault to uncover and leak their darkest secrets. Expose their illegal activities to the public and trigger a full collapse of their influence. The truth is the only weapon left — and you’re the one to wield it.',
-        tasks: [
-            {
-                id: 1,
-                title: 'Infiltrate the Vault',
-                outcomes: [
-                    {
-                        range: '2–5',
-                        stat: 'Agility',
-                        dc: 10,
-                        description:
-                            'Sneak past the tight security systems and motion sensors.',
-                    },
-                    {
-                        range: '6–8',
-                        stat: 'Intuition',
-                        dc: 8,
-                        description:
-                            'Use your senses to spot hidden guards and bypass them.',
-                    },
-                    {
-                        range: '9–12',
-                        stat: 'Strength',
-                        dc: 12,
-                        description:
-                            'Force open the door or break through barriers that are in your way.',
-                    },
-                ],
-            },
-            {
-                id: 2,
-                title: 'Extract the Sensitive Files',
-                outcomes: [
-                    {
-                        range: '3–6',
-                        stat: 'Logic',
-                        dc: 12,
-                        description:
-                            'Hack the encrypted system to retrieve the files without leaving a trace.',
-                    },
-                    {
-                        range: '7–9',
-                        stat: 'Intuition',
-                        dc: 10,
-                        description:
-                            'Spot the hidden vault chambers with valuable data.',
-                    },
-                    {
-                        range: '10–12',
-                        stat: 'Charisma',
-                        dc: 8,
-                        description:
-                            'Convince an AI assistant to provide you with access to the files.',
-                    },
-                ],
-            },
-            {
-                id: 3,
-                title: 'Leak the Files to the Public',
-                outcomes: [
-                    {
-                        range: '4–7',
-                        stat: 'Charisma',
-                        dc: 10,
-                        description:
-                            'Persuade the media outlets to publish the files immediately.',
-                    },
-                    {
-                        range: '8–10',
-                        stat: 'Logic',
-                        dc: 8,
-                        description:
-                            'Find a way to send the data securely to the right sources.',
-                    },
-                    {
-                        range: '11–12',
-                        stat: 'Strength',
-                        dc: 12,
-                        description:
-                            'Physically remove any data-destroying countermeasures they’ve set up to erase the files.',
-                    },
-                ],
-            },
-        ],
+            "MegaCorp's deepest secrets are stored offline. Break in, leak their crimes, and collapse their network.",
         twist: {
-            description:
-                'Just as the files are sent out, the megacorp activates a fail-safe protocol, trying to erase all evidence. A corporate hit team is deployed to eliminate you.',
-            options: [
+            description: 'The vault is rigged with a timed security wipe.',
+            skillChecks: [
                 {
-                    stat: 'Reaction',
-                    dc: 12,
+                    attribute: 'Logic',
+                    dc: 14,
+                    description: 'Bypass the encryption wipe sequence.',
+                },
+                {
+                    attribute: 'Intuition',
+                    dc: 14,
+                    description: 'Anticipate security patrol shifts.',
+                },
+            ],
+        },
+    },
+    {
+        id: '5',
+        title: 'Espionage',
+        attributes: 'Intuition, Charisma',
+        client: 'Liora Black',
+        briefing:
+            'Infiltrate a high-society gala. Gather intel, avoid exposure, and manipulate power plays to your advantage.',
+        twist: {
+            description: 'A rival spy recognizes you mid-operation.',
+            skillChecks: [
+                {
+                    attribute: 'Intuition',
+                    dc: 14,
                     description:
-                        'Escape the hit team and secure your freedom before they can erase your presence.',
+                        'Sense the rival spy’s intentions before acting.',
+                },
+                {
+                    attribute: 'Charisma',
+                    dc: 14,
+                    description: 'Convince them that you’re an invited guest.',
+                },
+            ],
+        },
+    },
+    {
+        id: '6',
+        title: 'Infiltration',
+        attributes: 'Charisma, Logic',
+        client: 'Veyna Strix',
+        briefing:
+            'Pose as a corporate insider. Enter deep into enemy territory and feed false data while remaining undetected.',
+        twist: {
+            description: 'Your cover identity is flagged as suspicious.',
+            skillChecks: [
+                {
+                    attribute: 'Charisma',
+                    dc: 14,
+                    description: 'Persuade the security lead that you belong.',
+                },
+                {
+                    attribute: 'Logic',
+                    dc: 14,
+                    description: 'Forge clearance documents before they check.',
                 },
             ],
         },
     },
 ]
 
-const getMissionData = (): Pick<Mission, 'id' | 'title'>[] => {
-    return missionData.map(({ id, title }) => ({ id, title }))
+const getMissionData = (): Pick<Mission, 'id' | 'title' | 'attributes'>[] => {
+    return missionData.map(({ id, title, attributes }) => ({
+        id,
+        title,
+        attributes,
+    }))
 }
 
 const getMissionById = (id: string): Mission => {
