@@ -12,7 +12,7 @@ const ActionsView = ({ actionList }: FacilityActionsProps) => {
             {actionList.map((item: FacilityAction, actionIndex: number) => (
                 <div key={actionIndex}>
                     <p>
-                        <strong className="highlight">{item.title}</strong>
+                        <strong>{item.title}</strong>
                     </p>
                     <ul className="list-margin">
                         {item.steps.map(

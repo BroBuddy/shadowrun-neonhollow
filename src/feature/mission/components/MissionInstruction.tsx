@@ -4,8 +4,16 @@ import Dice from '@/components/Dice'
 import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
 import MissionRules from '../pages/MissionRules'
 import Card from '@/components/Card'
+import useResourceStore from '@/feature/resource/store/resourceStore'
 
 const MissionInstruction = () => {
+    const modifyResources = useResourceStore((state) => state.modifyResources)
+
+    const handleStepClick = (resourceChange?: Record<string, number>) => {
+        if (resourceChange) {
+            modifyResources(resourceChange)
+        }
+    }
     return (
         <Card>
             <div className="mb-4">
@@ -16,11 +24,17 @@ const MissionInstruction = () => {
                 </PopUp>
             </div>
             <p>
-                <strong className="highlight">Accept a mission:</strong>
+                <strong>Accept a mission:</strong>
             </p>
             <ol className="list-margin">
                 <li>
-                    <strong>Spend:</strong> 3 Intel &#8594; Negotiate hazard pay
+                    <a
+                        className="cursor-pointer"
+                        onClick={() => handleStepClick({ Intel: -3 })}
+                    >
+                        Spend 3 Intel
+                    </a>{' '}
+                    &#8594; Negotiate hazard pay
                 </li>
                 <li>
                     <InRow>

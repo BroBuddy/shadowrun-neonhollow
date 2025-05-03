@@ -1,3 +1,5 @@
+import { Resources } from '../character/CharacterType'
+
 type Facility = {
     tag: string
     title: string
@@ -7,9 +9,10 @@ type Facility = {
 }
 
 type FacilityRoll = {
+    id?: string
     roll: string
     text: string
-    id?: string
+    resource?: Resources
 }
 
 type FacilityAction = {
@@ -20,6 +23,7 @@ type FacilityAction = {
 type ActionStep = {
     text: string
     tag?: string
+    resource?: Resources
 }
 
 export type { Facility, FacilityRoll, FacilityAction, ActionStep }
