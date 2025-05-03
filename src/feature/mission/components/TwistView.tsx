@@ -33,9 +33,8 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                 ))}
             </ul>
             <p>
-                <strong>Fail?</strong> &#8594; -1 Performance
-                <br />
-                <strong>Success?</strong> &#8594; +1 Performance
+                ✅ &#8594; +1 Performance
+                <br />❌ &#8594; -1 Performance
             </p>
             <div className="mb-5 flex justify-center items-center">
                 <Link to="/mission/performance">

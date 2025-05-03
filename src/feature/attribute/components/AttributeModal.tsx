@@ -8,7 +8,8 @@ const AttributeModal = ({
 }) => {
     return (
         <div
-            className={`fixed z-60 bg-black inset-0 flex transition-transform duration-500 ${
+            style={{ zIndex: 999 }}
+            className={`fixed bg-black inset-0 flex transition-transform duration-500 ${
                 isOpen ? 'translate-y-0' : '-translate-y-full'
             } top-[28px]`}
         >

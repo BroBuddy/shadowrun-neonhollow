@@ -13,7 +13,7 @@ const AttributeManager = () => {
     return (
         <header>
             <div
-                style={{ zIndex: 99999 }}
+                style={{ zIndex: 9999 }}
                 className="fixed cursor-pointer left-0 top-0 w-full bg-black flex"
                 onClick={() => toggleModal()}
             >

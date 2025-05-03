@@ -11,7 +11,6 @@ function FadeIn({ children, delay = 0 }: FadeInProps) {
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsVisible(true)
-            console.log('true')
         }, delay)
 
         return () => clearTimeout(timer)
