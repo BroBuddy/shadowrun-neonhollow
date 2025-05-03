@@ -14,7 +14,7 @@ const AttributeModal = ({
                 isOpen ? 'translate-y-0' : '-translate-y-full'
             } top-[28px]`}
         >
-            <div className="shadow-lg w-3/4 max-w-md pt-5 mt-5 mx-auto">
+            <div className="shadow-lg w-3/4 max-w-md pt-5 mt-5 mx-auto text-center">
                 <div className="flex">
                     <ResourceEditor />
                 </div>

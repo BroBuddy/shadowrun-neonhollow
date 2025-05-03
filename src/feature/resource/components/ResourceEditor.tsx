@@ -13,7 +13,7 @@ const ResourceEditor = () => {
     }
 
     return (
-        <div className="flex justify-center w-screen gap-5 my-5">
+        <div className="flex justify-center w-full gap-5 my-5">
             <div className="w-1/2">
                 <table className="w-full">
                     <thead>
