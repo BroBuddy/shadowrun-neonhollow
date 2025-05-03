@@ -17,7 +17,7 @@ const AttributeEditor = () => {
     }
 
     return (
-        <div className="flex flex-col items-center w-screen">
+        <div className="flex flex-col items-center w-screen my-5">
             <table>
                 <thead>
                     <tr>

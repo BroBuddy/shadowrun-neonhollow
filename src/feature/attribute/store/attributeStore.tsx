@@ -35,11 +35,11 @@ const useAttributeStore = create<AttributeState>((set) => ({
             return { attributes: updated }
         })
     },
-    modifyAttributes: (modAttributes, isTemporary = false) => {
+    modifyAttributes: (modAttribute, isTemporary = false) => {
         set((state) => {
             const updated = { ...state.attributes }
 
-            Object.entries(modAttributes).forEach(([key, value]) => {
+            Object.entries(modAttribute).forEach(([key, value]) => {
                 if (updated[key]) {
                     updated[key][isTemporary ? 1 : 0] = Math.max(
                         0,

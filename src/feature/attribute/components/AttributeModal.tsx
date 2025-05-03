@@ -1,3 +1,4 @@
+import StatEditor from '@/feature/stat/components/StatEditor'
 import AttributeEditor from './AttributeEditor'
 
 const AttributeModal = ({
@@ -14,6 +15,9 @@ const AttributeModal = ({
             } top-[28px]`}
         >
             <div className="shadow-lg w-3/4 max-w-md pt-5 mt-5 mx-auto">
+                <div className="flex">
+                    <StatEditor />
+                </div>
                 <div className="flex">
                     <AttributeEditor />
                 </div>
