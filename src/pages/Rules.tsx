@@ -21,7 +21,7 @@ const Rules = () => {
                                 className="cursor-pointer"
                                 onClick={toggleColorScheme}
                             >
-                                Toggle Schema
+                                🎨 Toggle Schema
                             </a>
                         </li>
                     </ul>
@@ -44,7 +44,7 @@ const Rules = () => {
                                 aria-label="Character Creation"
                                 title="Character Creation"
                             >
-                                Character Creation
+                                ✏️ Character Creation
                             </Link>
                         </li>
                     </ul>
