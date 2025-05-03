@@ -30,7 +30,7 @@ const characterEquipments: readonly Equipment[] = [
 const characterModes: readonly Mode[] = [
     {
         name: 'Easy Mode',
-        stats: {
+        resources: {
             Nuyen: 15,
             Health: 10,
             Energy: 10,
@@ -39,7 +39,7 @@ const characterModes: readonly Mode[] = [
     },
     {
         name: 'Medium Mode',
-        stats: {
+        resources: {
             Nuyen: 10,
             Health: 8,
             Energy: 8,
@@ -48,7 +48,7 @@ const characterModes: readonly Mode[] = [
     },
     {
         name: 'Hard Mode',
-        stats: {
+        resources: {
             Nuyen: 5,
             Health: 6,
             Energy: 6,
