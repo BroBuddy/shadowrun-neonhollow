@@ -3,6 +3,8 @@ import { MissionOption, MissionTwist as MissionTwistType } from '../MissionType'
 import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
+import PopUp from '@/components/Popup'
+import MissionPerformance from '../pages/MissionPerformance'
 
 type MissionTwistProps = {
     twist: MissionTwistType
@@ -36,11 +38,13 @@ const TwistView = ({ twist }: MissionTwistProps) => {
                 ✅ &#8594; +1 Performance
                 <br />❌ &#8594; -1 Performance
             </p>
-            <div className="mb-5 flex justify-center items-center">
-                <Link to="/mission/performance">
-                    <span className="text-2xl mr-2">&#8595;</span>
-                    <span className="mt-1 text-md">FINSIH</span>
-                </Link>
+            <div className="pb-4">
+                <InRow>
+                    <span className="mr-1">&#8594;</span>
+                    <PopUp title="Mission Performance">
+                        <MissionPerformance />
+                    </PopUp>
+                </InRow>
             </div>
         </Card>
     )

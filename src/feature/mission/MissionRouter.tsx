@@ -3,9 +3,6 @@ import React, { Suspense } from 'react'
 
 const Mission = React.lazy(() => import('./pages/Mission'))
 const MissionDetail = React.lazy(() => import('./pages/MissionDetail'))
-const MissionPerformance = React.lazy(
-    () => import('./pages/MissionPerformance')
-)
 const MissionRules = React.lazy(() => import('./pages/MissionRules'))
 
 const MissionRouter = [
@@ -25,14 +22,6 @@ const MissionRouter = [
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <MissionRules />
-                    </Suspense>
-                ),
-            },
-            {
-                path: 'performance',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <MissionPerformance />
                     </Suspense>
                 ),
             },
