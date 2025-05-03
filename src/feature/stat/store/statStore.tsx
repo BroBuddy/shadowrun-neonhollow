@@ -1,5 +1,13 @@
 import { create } from 'zustand'
 
+const MAX_VALUES: Record<string, number> = {
+    Health: 10,
+    Energy: 10,
+    Edge: 6,
+    Intel: 6,
+    Heat: 6,
+}
+
 type StatState = {
     stats: Record<string, number>
     setStats: (newStats: Record<string, number>) => void
@@ -21,7 +29,7 @@ const useStatStore = create<StatState>((set) => ({
 
             Object.entries(newStats).forEach(([key, value]) => {
                 if (updatedStats[key] !== undefined) {
-                    updatedStats[key] = value
+                    updatedStats[key] = Math.max(0, value)
                 }
             })
 
@@ -34,7 +42,12 @@ const useStatStore = create<StatState>((set) => ({
 
             Object.entries(modStats).forEach(([key, value]) => {
                 if (updatedStats[key] !== undefined) {
-                    updatedStats[key] = Math.max(0, updatedStats[key] + value)
+                    const newValue = updatedStats[key] + value
+
+                    updatedStats[key] = Math.max(
+                        0,
+                        Math.min(MAX_VALUES[key] || Infinity, newValue)
+                    )
                 }
             })
 
