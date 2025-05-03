@@ -5,23 +5,32 @@ export const resourceData: Resource[] = [
         tag: 'nuyen',
         title: 'Gain Nuyen',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Heat', '+3.000 ¥'],
+                resources: {
+                    Heat: +1,
+                    Nuyen: +3,
+                },
             },
-            { range: '9-11', result: 'Standard', effects: ['+6.000 ¥'] },
-            { range: '12-14', result: 'Good', effects: ['+9.000 ¥'] },
+            { range: '9-11', result: 'Standard', resources: { Nuyen: +6 } },
+            { range: '12-14', result: 'Good', resources: { Nuyen: +9 } },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+12.000 ¥', '+1 Edge'],
+                resources: { Nuyen: +12, Edge: +1 },
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+15.000 ¥', '+2 Edge'],
+                resources: { Nuyen: +15, Edge: +2 },
             },
         ],
     },
@@ -29,23 +38,50 @@ export const resourceData: Resource[] = [
         tag: 'health',
         title: 'Gain Health',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Heat', '+2 Health'],
+                resources: {
+                    Heat: +1,
+                    Health: +2,
+                },
             },
-            { range: '9-11', result: 'Standard', effects: ['+4 Health'] },
-            { range: '12-14', result: 'Good', effects: ['+6 Health'] },
+            {
+                range: '9-11',
+                result: 'Standard',
+                resources: {
+                    Health: +4,
+                },
+            },
+            {
+                range: '12-14',
+                result: 'Good',
+                resources: {
+                    Health: +6,
+                },
+            },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+8 Health', '+1 Edge'],
+                resources: {
+                    Health: +8,
+                    Edge: +1,
+                },
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+10 Health', '+2 Edge'],
+                resources: {
+                    Health: +10,
+                    Edge: +2,
+                },
             },
         ],
     },
@@ -53,23 +89,50 @@ export const resourceData: Resource[] = [
         tag: 'energy',
         title: 'Gain Energy',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Heat', '+2 Health'],
+                resources: {
+                    Heat: +1,
+                    Energy: +2,
+                },
             },
-            { range: '9-11', result: 'Standard', effects: ['+4 Energy'] },
-            { range: '12-14', result: 'Good', effects: ['+6 Energy'] },
+            {
+                range: '9-11',
+                result: 'Standard',
+                resources: {
+                    Energy: +4,
+                },
+            },
+            {
+                range: '12-14',
+                result: 'Good',
+                resources: {
+                    Energy: +6,
+                },
+            },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+8 Energy', '+1 Edge'],
+                resources: {
+                    Energy: +8,
+                    Edge: +1,
+                },
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+10 Energy', '+2 Edge'],
+                resources: {
+                    Energy: +10,
+                    Edge: +2,
+                },
             },
         ],
     },
@@ -77,19 +140,49 @@ export const resourceData: Resource[] = [
         tag: 'intel',
         title: 'Gain Intel',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
-            { range: '9-11', result: 'Standard', effects: ['+1 Intel'] },
-            { range: '12-14', result: 'Good', effects: ['+2 Intel'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
+            {
+                range: '6-8',
+                result: 'Failure',
+                resources: {
+                    Heat: +1,
+                },
+            },
+            {
+                range: '9-11',
+                result: 'Standard',
+                resources: {
+                    Intel: +1,
+                },
+            },
+            {
+                range: '12-14',
+                result: 'Good',
+                resources: {
+                    Intel: +2,
+                },
+            },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+2 Intel', '+1 Edge'],
+                resources: {
+                    Intel: +2,
+                    Edge: +1,
+                },
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+3 Intel', '+2 Edge'],
+                resources: {
+                    Intel: +3,
+                    Edge: +2,
+                },
             },
         ],
     },
@@ -97,19 +190,49 @@ export const resourceData: Resource[] = [
         tag: 'heat',
         title: 'Reduce Heat',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
-            { range: '9-11', result: 'Standard', effects: ['-1 Heat'] },
-            { range: '12-14', result: 'Good', effects: ['-2 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
+            {
+                range: '6-8',
+                result: 'Failure',
+                resources: {
+                    Heat: +1,
+                },
+            },
+            {
+                range: '9-11',
+                result: 'Standard',
+                resources: {
+                    Heat: -1,
+                },
+            },
+            {
+                range: '12-14',
+                result: 'Good',
+                resources: {
+                    Heat: -2,
+                },
+            },
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['-2 Heat', '+1 Edge'],
+                resources: {
+                    Heat: -2,
+                    Edge: +1,
+                },
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['-3 Heat', '+2 Edge'],
+                resources: {
+                    Heat: -3,
+                    Edge: +2,
+                },
             },
         ],
     },
@@ -117,11 +240,20 @@ export const resourceData: Resource[] = [
         tag: 'runner',
         title: 'Hire Runner',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
             {
                 range: '6-8',
                 result: 'Failure',
-                effects: ['+1 Heat', '+1 Attribute Temporary'],
+                resources: {
+                    Heat: +1,
+                },
+                effects: ['+1 Attribute Temporary'],
             },
             {
                 range: '9-11',
@@ -136,12 +268,18 @@ export const resourceData: Resource[] = [
             {
                 range: '15-17',
                 result: 'Great',
-                effects: ['+2 Attributes', '+1 Edge'],
+                resources: {
+                    Edge: +1,
+                },
+                effects: ['+2 Attributes'],
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+2 Attributes', '+2 Edge'],
+                resources: {
+                    Edge: +2,
+                },
+                effects: ['+2 Attributes'],
             },
         ],
     },
@@ -149,8 +287,20 @@ export const resourceData: Resource[] = [
         tag: 'attribute',
         title: 'Improve Attribute',
         rollList: [
-            { range: '2-5', result: 'Critical Failure', effects: ['+2 Heat'] },
-            { range: '6-8', result: 'Failure', effects: ['+1 Heat'] },
+            {
+                range: '2-5',
+                result: 'Critical Failure',
+                resources: {
+                    Heat: +2,
+                },
+            },
+            {
+                range: '6-8',
+                result: 'Failure',
+                resources: {
+                    Heat: +1,
+                },
+            },
             {
                 range: '9-11',
                 result: 'Standard',
@@ -160,16 +310,18 @@ export const resourceData: Resource[] = [
             {
                 range: '15-17',
                 result: 'Great',
-                effects: [
-                    '+1 to Attribute',
-                    '+1 to Attribute Temporary',
-                    '+1 Edge',
-                ],
+                resources: {
+                    Edge: +1,
+                },
+                effects: ['+1 to Attribute', '+1 to Attribute Temporary'],
             },
             {
                 range: '18+',
                 result: 'Exceptional',
-                effects: ['+2 to Attribute', '+2 Edge'],
+                resources: {
+                    Edge: +2,
+                },
+                effects: ['+2 to Attribute'],
             },
         ],
     },

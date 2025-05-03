@@ -5,55 +5,47 @@ const MissionPerformance: MissionPerformancesType[] = [
         id: 1,
         title: '🔴 Performance 1',
         level: 'Disastrous',
-        effects: [{ description: '+2 Heat' }],
+        resources: {
+            Heat: +2,
+        },
     },
     {
         id: 2,
         title: '🟠 Performance 3',
         level: 'Underwhelming',
-        effects: [
-            { description: '+1 Heat' },
-            {
-                description: '+1 Intel',
-            },
-        ],
+        resources: {
+            Heat: +1,
+            Intel: +1,
+        },
     },
     {
         id: 3,
         title: '🟡 Performance 5',
         level: 'Partial',
-        effects: [
-            {
-                description: '+4.000 ¥',
-            },
-            {
-                description: '+2 Intel',
-            },
-        ],
+        resources: {
+            Nuyen: +4,
+            Intel: +2,
+        },
     },
     {
         id: 4,
         title: '🟢 Performance 7',
         level: 'Impressive',
-        effects: [
-            {
-                description: '+8.000 ¥',
-            },
-            { description: '+1 Edge' },
-            { description: 'Next Mission available' },
-        ],
+        resources: {
+            Nuyen: +8,
+            Edge: +1,
+        },
+        effects: [{ description: 'Next Mission available' }],
     },
     {
         id: 5,
         title: '🔵 Performance 9',
         level: 'Exceptional',
-        effects: [
-            {
-                description: '+12.000 ¥',
-            },
-            { description: '+2 Edge' },
-            { description: 'Next Mission available' },
-        ],
+        resources: {
+            Nuyen: +12,
+            Edge: +2,
+        },
+        effects: [{ description: 'Next Mission available' }],
     },
 ]
 

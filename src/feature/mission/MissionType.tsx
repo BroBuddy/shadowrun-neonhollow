@@ -1,3 +1,5 @@
+import { Resources } from '../character/CharacterType'
+
 type Mission = {
     id: string
     title: string
@@ -35,7 +37,8 @@ type MissionPerformance = {
     id: number
     title: string
     level: string
-    effects: MissionEffect[]
+    resources?: Resources
+    effects?: MissionEffect[]
 }
 
 type MissionEffect = {

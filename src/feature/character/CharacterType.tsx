@@ -7,10 +7,10 @@ type Equipment = {
 
 type Mode = {
     name: string
-    stats: Stats
+    resources: Resources
 }
 
-type Stats = {
+type Resources = {
     Nuyen?: number
     Health?: number
     Energy?: number
@@ -19,4 +19,4 @@ type Stats = {
     Heat?: number
 }
 
-export type { Equipment, Mode }
+export type { Equipment, Mode, Resources }

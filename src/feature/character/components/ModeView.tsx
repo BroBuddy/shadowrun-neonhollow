@@ -22,18 +22,18 @@ function ModeView() {
                     <li key={index}>
                         <strong
                             className="cursor-pointer highlight"
-                            onClick={() => handleModeSelect(item.stats)}
+                            onClick={() => handleModeSelect(item.resources)}
                         >
                             {item.name}:
                         </strong>
                         <ul>
-                            {Object.entries(item.stats).map(
-                                ([statName, statValue], attrIndex) => (
-                                    <li key={attrIndex}>
-                                        {statName}:{' '}
-                                        {statName === 'Nuyen'
-                                            ? `${statValue}k`
-                                            : statValue}
+                            {Object.entries(item.resources).map(
+                                ([resource, value], resourceIndex) => (
+                                    <li key={resourceIndex}>
+                                        {resource}:{' '}
+                                        {resource === 'Nuyen'
+                                            ? `${value}k`
+                                            : value}
                                     </li>
                                 )
                             )}

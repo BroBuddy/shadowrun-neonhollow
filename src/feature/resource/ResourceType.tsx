@@ -1,3 +1,5 @@
+import { Resources } from '../character/CharacterType'
+
 type Resource = {
     tag: string
     title: string
@@ -7,7 +9,8 @@ type Resource = {
 type ResourceRoll = {
     range: string
     result: string
-    effects: string[]
+    effects?: string[]
+    resources?: Resources
 }
 
 export type { Resource, ResourceRoll }
