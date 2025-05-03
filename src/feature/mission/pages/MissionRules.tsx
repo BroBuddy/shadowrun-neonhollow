@@ -6,18 +6,19 @@ function MissionRules() {
                 can shift between 1 and 9 based on your success.
             </p>
             <p>
-                You must tackle the missions in order and each mission follows a
-                specific structure:
+                Choose one mission to undertake — each can only be completed
+                once.
             </p>
             <ul className="list-margin">
                 <li>
-                    Face three tasks. Roll 2d6 to determine your skill check for
-                    each.
+                    Face three random obstacles. Roll 2d6 for each to determine
+                    the difficulty check.
                 </li>
                 <li>
-                    DC is the number of successes needed to clear a challenge.
+                    DC is the number of successes required to overcome an
+                    obstacle.
                 </li>
-                <li>If you succeed at all three, the twist is revealed.</li>
+                <li>After the obstacles, a final twist will be revealed.</li>
                 <li>
                     Each success contributes to your overall Performance score.
                 </li>

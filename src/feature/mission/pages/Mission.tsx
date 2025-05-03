@@ -76,11 +76,7 @@ function Mission() {
                     <strong className="highlight">Mission Types:</strong>
                 </p>
 
-                <InRow>
-                    Roll:
-                    <Dice dice={1} />
-                </InRow>
-                <ol className="list-margin">
+                <ul className="list-margin">
                     {data.map((item: MissionType, index: number) => (
                         <li key={index}>
                             <Link to={`/mission/${item.id}`}>{item.title}</Link>
@@ -88,7 +84,7 @@ function Mission() {
                             {item.attributes})
                         </li>
                     ))}
-                </ol>
+                </ul>
             </Card>
         </>
     )
