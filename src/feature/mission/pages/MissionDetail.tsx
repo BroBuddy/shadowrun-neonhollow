@@ -3,14 +3,16 @@ import { useParams } from 'react-router-dom'
 import Card from '@/components/Card'
 import { getMissionById } from '../missionData'
 import Headline from '@/components/Headline'
-import TasksView from '../components/TasksView'
 import TwistView from '../components/TwistView'
 import FadeIn from '@/components/FadeIn'
 import { scrollToBottom } from '@/lib/helper'
+import { getRandomObstacles } from '@/feature/obstacle/obstacleData'
+import ObstacleView from '@/feature/obstacle/components/ObstacleView'
 
 function MissionDetail() {
     const { id } = useParams()
     const data = useMemo(() => getMissionById(id as string), [id])
+    const obstacles = useMemo(() => getRandomObstacles(), [id])
     const [missionProgress, setMissionProgress] = useState<number>(-1)
 
     const handleMissionProgress = (currentProgress: number) => {
@@ -67,11 +69,13 @@ function MissionDetail() {
                 )}
             </Card>
 
-            <TasksView
-                tasks={data.tasks}
-                missionProgress={missionProgress}
-                onProgress={handleMissionProgress}
-            />
+            {obstacles && (
+                <ObstacleView
+                    obstacles={obstacles}
+                    missionProgress={missionProgress}
+                    onProgress={handleMissionProgress}
+                />
+            )}
 
             {missionProgress === 3 && <TwistView twist={data.twist} />}
         </>
