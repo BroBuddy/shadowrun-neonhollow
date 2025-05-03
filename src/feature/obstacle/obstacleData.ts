@@ -42,7 +42,7 @@ const obstacleData: Obstacle[] = [
         title: 'Security Camera',
         description: 'Time movements to avoid detection.',
         skillChecks: [
-            { attribute: 'Agility', icon: '💪' },
+            { attribute: 'Reaction', icon: '💪' },
             { attribute: 'Charisma', icon: '🧠' },
         ],
     },
@@ -52,7 +52,7 @@ const obstacleData: Obstacle[] = [
         description: 'Break through reinforced entrance.',
         skillChecks: [
             { attribute: 'Strength', icon: '💪' },
-            { attribute: 'Reaction', icon: '💪' },
+            { attribute: 'Agility', icon: '💪' },
         ],
     },
     {
@@ -96,7 +96,7 @@ const obstacleData: Obstacle[] = [
         title: 'Muddy Terrain',
         description: 'Move carefully to avoid slipping.',
         skillChecks: [
-            { attribute: 'Agility', icon: '💪' },
+            { attribute: 'Reaction', icon: '💪' },
             { attribute: 'Strength', icon: '💪' },
         ],
     },
@@ -106,7 +106,7 @@ const obstacleData: Obstacle[] = [
         description: 'Disable lock without alarms.',
         skillChecks: [
             { attribute: 'Logic', icon: '🧠' },
-            { attribute: 'Reaction', icon: '💪' },
+            { attribute: 'Agility', icon: '💪' },
         ],
     },
     {
@@ -123,7 +123,7 @@ const obstacleData: Obstacle[] = [
         title: 'Overloaded Circuit',
         description: 'Reroute power before system crashes.',
         skillChecks: [
-            { attribute: 'Logic', icon: '🧠' },
+            { attribute: 'Reaction', icon: '💪' },
             { attribute: 'Intuition', icon: '🧠' },
         ],
     },
@@ -133,7 +133,7 @@ const obstacleData: Obstacle[] = [
         description: 'Stop the data leak before it spreads.',
         skillChecks: [
             { attribute: 'Strength', icon: '💪' },
-            { attribute: 'Reaction', icon: '💪' },
+            { attribute: 'Logic', icon: '🧠' },
         ],
     },
 ]
