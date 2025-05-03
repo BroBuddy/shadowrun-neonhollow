@@ -12,7 +12,7 @@ import ObstacleView from '@/feature/obstacle/components/ObstacleView'
 function MissionDetail() {
     const { id } = useParams()
     const data = useMemo(() => getMissionById(id as string), [id])
-    const obstacles = useMemo(() => getRandomObstacles(), [id])
+    const obstacles = useMemo(() => getRandomObstacles(), [])
     const [missionProgress, setMissionProgress] = useState<number>(-1)
 
     const handleMissionProgress = (currentProgress: number) => {

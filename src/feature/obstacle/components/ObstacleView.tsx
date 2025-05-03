@@ -4,7 +4,6 @@ import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import React from 'react'
-import { spawn } from 'child_process'
 
 type ObstacleViewProps = {
     obstacles: Obstacle[]
