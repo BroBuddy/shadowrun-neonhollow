@@ -4,6 +4,7 @@ import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import React from 'react'
+import ObstacleProgress from './ObstacleProgress'
 
 type ObstacleViewProps = {
     obstacles: Obstacle[]
@@ -46,13 +47,22 @@ const ObstacleView = ({
                             </InRow>
                             <ul className="list-margin">
                                 <li>
-                                    <strong>Roll: 2-5:</strong> &#8594; DC 12
+                                    <strong className="highlight">
+                                        Roll: 2-5:
+                                    </strong>{' '}
+                                    &#8594; DC 12
                                 </li>
                                 <li>
-                                    <strong>Roll 6-8:</strong> &#8594; DC 10
+                                    <strong className="highlight">
+                                        Roll 6-8:
+                                    </strong>{' '}
+                                    &#8594; DC 10
                                 </li>
                                 <li>
-                                    <strong>Roll 9-12:</strong> &#8594; DC 8
+                                    <strong className="highlight">
+                                        Roll 9-12:
+                                    </strong>{' '}
+                                    &#8594; DC 8
                                 </li>
                             </ul>
 
@@ -83,24 +93,11 @@ const ObstacleView = ({
                                 </span>
                             </InRow>
 
-                            <p className="mt-3">
-                                ✅ &#8594; +1 Performance
-                                <br />❌ &#8594; -1 Performance
-                            </p>
-
-                            {missionProgress === index && (
-                                <div
-                                    className="mb-5 flex justify-center items-center cursor-pointer highlight"
-                                    onClick={() => onHandleProgress(index + 1)}
-                                >
-                                    <span className="text-2xl mr-2">
-                                        &#8595;
-                                    </span>
-                                    <strong className="mt-1">
-                                        {index < 2 ? 'Next' : 'Twist'}
-                                    </strong>
-                                </div>
-                            )}
+                            <ObstacleProgress
+                                missionProgress={missionProgress}
+                                index={index}
+                                onHandleProgress={onHandleProgress}
+                            />
                         </Card>
                     </React.Fragment>
                 ) : null
