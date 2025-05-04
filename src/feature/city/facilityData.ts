@@ -11,11 +11,23 @@ const facilityData: Facility[] = [
         actionList: [
             {
                 title: '🚀 Incite Rebellion:',
-                steps: [{ text: 'Spend 5 Edge → +2 Heat' }],
+                steps: [
+                    { text: 'Spend 5 Edge', resource: { Edge: -5 } },
+                    { text: '+3 Heat', resource: { Heat: +3 } },
+                ],
             },
             {
                 title: '🚀 Propaganda Campaign:',
-                steps: [{ text: 'Pay 30.000 ¥ → +2 Heat' }],
+                steps: [
+                    {
+                        text: 'Pay 30.000 ¥',
+                        resource: { Nuyen: -30 },
+                    },
+                    {
+                        text: '+3 Heat',
+                        resource: { Heat: +3 },
+                    },
+                ],
             },
         ],
     },
