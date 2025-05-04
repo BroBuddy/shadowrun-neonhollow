@@ -2,6 +2,8 @@ import { useMemo } from 'react'
 import { getEventById } from '../eventData'
 import { Event, SkillCheck as SkillCheckType } from '../EventType'
 import SkillCheck from '../components/SkillCheck'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
 
 const defaultEvent: Event = {
     id: '',
@@ -14,30 +16,47 @@ type EventDetailProps = {
     id?: string
 }
 
+const BonusAttributes = ({ bonus }: { bonus: string }) => (
+    <>
+        <p>
+            <strong className="highlight">Bonus Attribute:</strong>
+        </p>
+        <ul className="list-margin">
+            <li>{bonus}</li>
+        </ul>
+    </>
+)
+
 function EventDetail({ id }: EventDetailProps) {
-    const data: Event = useMemo(
-        () => getEventById(id as string) ?? defaultEvent,
-        [id]
-    )
+    const data: Event = useMemo(() => {
+        try {
+            return getEventById(id as string) ?? defaultEvent
+        } catch (error) {
+            console.error('Error fetching event data:', error)
+            return defaultEvent
+        }
+    }, [id])
+
+    if (!id) {
+        return <p>No event ID provided.</p>
+    }
 
     if (!data) {
-        return <></>
+        return <p>No event data available.</p>
     }
 
     return (
         <>
             <p>{data.description}</p>
 
-            {data.bonus && (
-                <>
-                    <p>
-                        <strong className="highlight">Bonus Attribute:</strong>
-                    </p>
-                    <ul className="list-margin">
-                        <li>{data.bonus}</li>
-                    </ul>
-                </>
-            )}
+            {data.bonus && <BonusAttributes bonus={data.bonus} />}
+
+            <div className="mb-3">
+                <InRow>
+                    <span>Roll:</span>
+                    <Dice dice={2} />
+                </InRow>
+            </div>
 
             {data.skillChecks && (
                 <>

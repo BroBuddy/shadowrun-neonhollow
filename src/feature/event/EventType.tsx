@@ -11,8 +11,13 @@ type SkillCheck = {
     icon: '💪' | '🧠'
     dc: number
     description: string
-    success: string
-    fail: string
+    success: SkillCheckResult
+    fail: SkillCheckResult
 }
 
-export type { Event, SkillCheck }
+type SkillCheckResult = {
+    text: string
+    resource: { [key: string]: number }
+}
+
+export type { Event, SkillCheck, SkillCheckResult }
