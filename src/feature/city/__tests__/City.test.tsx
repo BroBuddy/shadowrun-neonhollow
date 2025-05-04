@@ -2,6 +2,7 @@ import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
 import City from '../pages/City'
 import { getCityData } from '../cityData'
+import { District } from '../CityType'
 
 // Mock the `getCityData` function
 jest.mock('../cityData', () => ({
@@ -12,14 +13,14 @@ jest.mock('../components/CityHeader', () => () => <div>Mocked CityHeader</div>)
 jest.mock(
     '../components/DistrictView',
     () =>
-        ({ district }: { district: any }) => (
+        ({ district }: { district: District }) => (
             <div>Mocked DistrictView: {district.name}</div>
         )
 )
 
 describe('City Component', () => {
     it('renders the component with valid city data', () => {
-        const mockCityData = [
+        const mockCityData: District[] = [
             { id: 1, name: 'Skyline', heat: '2', icon: '🔴', facilities: [] },
             { id: 2, name: 'Central', heat: '4', icon: '🟠', facilities: [] },
         ]
