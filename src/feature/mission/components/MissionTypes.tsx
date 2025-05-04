@@ -15,8 +15,8 @@ const MissionTypes = ({ data }: MissionTypesProps) => {
             <ul className="list-margin">
                 {data.map((item: MissionType, index: number) => (
                     <li key={index}>
-                        <Link to={`/mission/${item.id}`}>{item.title}</Link>
-                        <span className="mx-1">&#8594;</span>({item.attributes})
+                        <Link to={`/mission/${item.id}`}>{item.title}:</Link>
+                        <span className="mx-1">(Focus: {item.attributes})</span>
                     </li>
                 ))}
             </ul>

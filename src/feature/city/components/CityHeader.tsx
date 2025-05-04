@@ -1,5 +1,6 @@
 import Card from '@/components/Card'
 import { District as DistrictType } from '../CityType'
+import FadeIn from '@/components/FadeIn'
 
 type CityHeaderProps = {
     cityData: DistrictType[]
@@ -12,15 +13,15 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
         }
 
         return cityData.slice(0, 3).map((district: DistrictType) => (
-            <p key={district.id || district.name}>
+            <p key={district.id || district.name} className="mb-2">
                 {district.icon} Heat {district.heat} → {district.name}
             </p>
         ))
     }
 
     return (
-        <Card>
-            <div className="flex gap-5">
+        <FadeIn>
+            <div className="flex gap-5 p-4">
                 <div className="flex-1 basis-2/5">
                     <img
                         src="/images/city/NeonHollow.jpg"
@@ -37,7 +38,7 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
                     {renderDistricts()}
                 </div>
             </div>
-        </Card>
+        </FadeIn>
     )
 }
 

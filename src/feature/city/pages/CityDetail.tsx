@@ -4,7 +4,7 @@ import { getFacilityByTag } from '../facilityData'
 import { Facility } from '../FacilityType'
 import ActionView from '../components/ActionView'
 import RollView from '../components/RollView'
-import Card from '@/components/Card'
+import FadeIn from '@/components/FadeIn'
 
 function CityDetail() {
     const { tag } = useParams()
@@ -17,8 +17,8 @@ function CityDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card>
-                <div className="flex gap-5">
+            <FadeIn>
+                <div className="flex gap-5 p-4">
                     <div className="flex-1 basis-2/5">
                         <img
                             src={`/images/city/${data.title}.jpg`}
@@ -32,7 +32,7 @@ function CityDetail() {
                         </p>
                     </div>
                 </div>
-            </Card>
+            </FadeIn>
 
             {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
 

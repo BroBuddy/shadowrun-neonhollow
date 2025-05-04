@@ -1,9 +1,9 @@
-import Card from '@/components/Card'
+import FadeIn from '@/components/FadeIn'
 
 const MissionHeader = () => {
     return (
-        <Card>
-            <div className="flex gap-5">
+        <FadeIn>
+            <div className="flex gap-5 p-4">
                 <div className="flex-1 basis-2/5">
                     <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
                 </div>
@@ -17,7 +17,7 @@ const MissionHeader = () => {
                     </p>
                 </div>
             </div>
-        </Card>
+        </FadeIn>
     )
 }
 

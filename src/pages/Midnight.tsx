@@ -1,4 +1,5 @@
 import Card from '@/components/Card'
+import FadeIn from '@/components/FadeIn'
 import Headline from '@/components/Headline'
 import PopUp from '@/components/Popup'
 import useAttributeStore from '@/feature/attribute/store/attributeStore'
@@ -24,8 +25,8 @@ function Midnight() {
     return (
         <>
             <Headline>Midnight</Headline>
-            <Card>
-                <div className="flex gap-5">
+            <FadeIn>
+                <div className="flex gap-5 p-4">
                     <div className="flex-1 basis-2/5">
                         <img
                             src="/images/city/Midnight.png"
@@ -36,13 +37,19 @@ function Midnight() {
                     <div className="flex-1 basis-3/5">
                         <p>
                             <em>
-                                "When midnight strikes, a new day begins—but
-                                first, several steps must be completed."
+                                "When midnight strikes, a new day begins — but
+                                first, several steps must be completed.
+                            </em>
+                        </p>
+                        <p>
+                            <em>
+                                Also, any temporary bonuses will expire as the
+                                clock resets."
                             </em>
                         </p>
                     </div>
                 </div>
-            </Card>
+            </FadeIn>
 
             <Card>
                 <ol className="list-margin">
