@@ -51,13 +51,13 @@ function EventDetail({ id }: EventDetailProps) {
 
             {data.bonus && <BonusAttributes bonus={data.bonus} />}
 
-            <InRow>
-                <span>Roll:</span>
-                <Dice dice={2} />
-            </InRow>
-
             {data.skillChecks && (
                 <>
+                    <InRow>
+                        <span>Roll:</span>
+                        <Dice dice={2} />
+                    </InRow>
+
                     {data.skillChecks.map(
                         (item: SkillCheckType, index: number) => (
                             <SkillCheck key={index} skillCheck={item} />
