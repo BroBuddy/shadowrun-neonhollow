@@ -25,11 +25,25 @@ function Midnight() {
         <>
             <Headline>Midnight</Headline>
             <Card>
-                <p>
-                    When midnight strikes, a new day begins—but first, several
-                    steps must be completed:
-                </p>
+                <div className="flex gap-5">
+                    <div className="flex-1 basis-2/5">
+                        <img
+                            src="/images/city/Midnight.png"
+                            alt="Midnight"
+                            loading="lazy"
+                        />
+                    </div>
+                    <div className="flex-1 basis-3/5">
+                        <p>
+                            <em>
+                                "When midnight strikes, a new day begins—but
+                                first, several steps must be completed."
+                            </em>
+                        </p>
+                    </div>
+                </div>
             </Card>
+
             <Card>
                 <ol className="list-margin">
                     <li>

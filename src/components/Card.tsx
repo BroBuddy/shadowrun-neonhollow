@@ -8,7 +8,7 @@ type CardProps = {
 const Card = ({ children, className = '', role, ariaLabel }: CardProps) => {
     return (
         <div
-            className={`card bg-black z-0 ${className}`}
+            className={`card bg-black/70 z-0 ${className}`}
             role={role}
             aria-label={ariaLabel}
         >

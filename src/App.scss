@@ -20,6 +20,10 @@
 
 body {
     background-color: var(--black);
+    background-image: url('/images/Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 0;
     font-family: 'Exo 2', Verdana, Arial, sans-serif;
     font-size: 0.875rem;
@@ -31,24 +35,9 @@ body {
     min-height: 100vh;
 }
 
-.headline {
-    color: var(--black);
-    width: 100%;
-    text-align: center;
-    margin-top: 0.625em;
-    padding: 2.5em auto 0.625em;
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.turquoise-mode,
-.violet-mode {
-    height: 100%;
-}
-
 @mixin color-mode($primary, $light) {
     .headline {
-        background-color: $primary;
+        color: $primary;
     }
 
     .dice {
@@ -83,6 +72,18 @@ body {
 
 .violet-mode {
     @include color-mode(var(--violet), var(--violet-light));
+}
+
+.headline {
+    color: var(--black);
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    padding: 2.5em auto 0.625em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 strong {
@@ -137,15 +138,18 @@ table {
     }
 }
 
+img,
 .card {
-    border: 0.1875em solid;
-    padding: 0.9375em;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card {
+    border: 3px solid;
+    margin: 10px auto;
+    padding: 15px;
     width: 100%;
     z-index: 40;
-
-    + .card {
-        border-top: none;
-    }
 
     &.card-margin {
         margin: 1.25em 0;
@@ -200,6 +204,7 @@ nav {
 }
 
 .preloader {
+    margin-top: 10px;
     animation: spinner 2s linear infinite;
     z-index: 100;
 }
