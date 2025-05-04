@@ -18,7 +18,7 @@ const RollItem = ({ item, handleStepClick }: RollItemProps) => (
                 <span>{item.text.split(' → ')[0]}</span>
                 <span className="mx-1">→</span>
                 <button
-                    className="cursor-pointer"
+                    className="cursor-pointer font-bold highlight"
                     onClick={() => handleStepClick(item.resource)}
                 >
                     {item.text.split(' → ')[1]}

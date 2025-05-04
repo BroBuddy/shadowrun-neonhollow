@@ -26,7 +26,7 @@ const ActionStep = ({ step }: ActionStepProps) => {
         if (step.resource) {
             return (
                 <button
-                    className="cursor-pointer"
+                    className="cursor-pointer font-bold highlight"
                     onClick={() => handleStepClick(step.resource)}
                 >
                     {step.text}

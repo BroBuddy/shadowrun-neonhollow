@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useCallback, useMemo } from 'react'
 import { getResourceByTag } from '../resourceData'
 import { ResourceRoll, Resource as ResourceType } from '../ResourceType'
 import { getIcon } from '@/lib/helper'
@@ -12,59 +12,71 @@ type ResourceDetailProps = {
 function ResourceDetail({ tag }: ResourceDetailProps) {
     const modifyResources = useResourceStore((state) => state.modifyResources)
     const data = useMemo(() => {
-        return getResourceByTag(tag as string) as ResourceType
+        try {
+            return getResourceByTag(tag as string) as ResourceType
+        } catch (error) {
+            console.error('Error fetching resource data:', error)
+            return null
+        }
     }, [tag])
 
-    const handleModifyResources = (resources?: Resources) => {
-        if (resources) {
-            modifyResources(resources)
-        }
-    }
+    const handleModifyResources = useCallback(
+        (resources?: Resources) => {
+            if (resources) {
+                modifyResources(resources)
+            }
+        },
+        [modifyResources]
+    )
 
-    if (!data || !data.rollList) {
+    if (!tag || !data || !data.rollList) {
         return <p>No resource data available.</p>
     }
 
     return (
-        <div>
-            <p>The roll determines the outcome of the action.</p>
+        <div className="min-w-[300px]">
             {data.rollList &&
                 data.rollList.map((item: ResourceRoll) => (
                     <div key={item.range}>
-                        <p
-                            className="cursor-pointer"
-                            onClick={() =>
-                                handleModifyResources(item.resources)
-                            }
-                        >
+                        <>
                             {getIcon(item.range)}{' '}
-                            <strong className="highlight">
+                            <strong
+                                className="cursor-pointer highlight"
+                                onClick={() =>
+                                    handleModifyResources(item.resources)
+                                }
+                                role="button"
+                                aria-label={`Modify resources for roll ${item.range}`}
+                            >
                                 Roll {item.range}
                             </strong>{' '}
                             → {item.result}
-                        </p>
-                        <ul className="list-margin">
-                            {item.resources &&
-                                Object.entries(item.resources).map(
-                                    ([key, value], resourceIndex: number) => (
-                                        <li key={resourceIndex}>
-                                            {key === 'Nuyen'
-                                                ? `+${value}.000`
-                                                : `${value > 0 ? `+${value}` : value}`}{' '}
-                                            {key}
-                                        </li>
-                                    )
-                                )}
+                            <ul className="list-margin">
+                                {item.resources &&
+                                    Object.entries(item.resources).map(
+                                        (
+                                            [key, value],
+                                            resourceIndex: number
+                                        ) => (
+                                            <li key={resourceIndex}>
+                                                {key === 'Nuyen'
+                                                    ? `+${value}.000`
+                                                    : `${value > 0 ? `+${value}` : value}`}{' '}
+                                                {key}
+                                            </li>
+                                        )
+                                    )}
 
-                            {item.effects &&
-                                item.effects.map((effect, effectIndex) => (
-                                    <li
-                                        key={`${item.range}-effect-${effectIndex}`}
-                                    >
-                                        {effect}
-                                    </li>
-                                ))}
-                        </ul>
+                                {item.effects &&
+                                    item.effects.map((effect, effectIndex) => (
+                                        <li
+                                            key={`${item.range}-effect-${effectIndex}`}
+                                        >
+                                            {effect}
+                                        </li>
+                                    ))}
+                            </ul>
+                        </>
                     </div>
                 ))}
         </div>

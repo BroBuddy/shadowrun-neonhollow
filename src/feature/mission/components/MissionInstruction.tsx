@@ -38,7 +38,7 @@ const MissionInstruction = () => {
                 </li>
                 <li>
                     <InRow>
-                        <strong>Roll:</strong>
+                        <span>Roll:</span>
                         <Dice dice={2} />
                         <span>&#8594;</span>
                         <span>Add Charisma</span>
