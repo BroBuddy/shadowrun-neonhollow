@@ -145,7 +145,7 @@ const eventOnes: readonly Event[] = [
                 icon: '🧠',
                 dc: 8,
                 description: 'Sell false leads to rival fixers.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
         ],
@@ -215,7 +215,7 @@ const eventTwos: readonly Event[] = [
                 dc: 10,
                 description:
                     'Dash in, grab goods, and escape before backup arrives.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '+1 Heat', resource: { Heat: +1 } },
             },
             {
@@ -264,7 +264,7 @@ const eventTwos: readonly Event[] = [
                 icon: '💪',
                 dc: 8,
                 description: 'Track and intercept the bot mid-run.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -349,7 +349,7 @@ const eventThrees: readonly Event[] = [
                 icon: '🧠',
                 dc: 8,
                 description: 'Follow the hidden markers to the source.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -417,7 +417,7 @@ const eventThrees: readonly Event[] = [
                 dc: 12,
                 description:
                     'Quickly recover the container before corp drones arrive.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '+1 Heat', resource: { Heat: +1 } },
             },
             {
@@ -451,7 +451,7 @@ const eventThrees: readonly Event[] = [
                 dc: 10,
                 description:
                     'Convince a fellow runner to share the hidden cache.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -545,7 +545,7 @@ const eventFours: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: "Mediate the deal and win both sides' trust.",
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
             {
@@ -603,7 +603,7 @@ const eventFours: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description: 'Outrun competitors and reach the cache first.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '+1 Heat', resource: { Heat: +1 } },
             },
         ],
@@ -698,7 +698,7 @@ const eventFives: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description: 'Enter the tournament and fight for the prize.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -706,7 +706,7 @@ const eventFives: readonly Event[] = [
                 icon: '💪',
                 dc: 8,
                 description: 'Bet on another fighter and avoid the fight.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -746,7 +746,7 @@ const eventFives: readonly Event[] = [
                 icon: '🧠',
                 dc: 8,
                 description: 'Negotiate a better deal with vendors.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
             {
@@ -875,7 +875,7 @@ const eventSixes: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description: 'Join the race and prove your driving skills.',
-                success: { text: '+3.000 ¥', resource: { Nuyen: 3000 } },
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
