@@ -1,8 +1,14 @@
 type District = {
+    id: number
     name: string
     heat: string
     icon: string
-    facilities: Record<string, string>[]
+    facilities: FacilityType[]
 }
 
-export type { District }
+type FacilityType = {
+    name: string
+    link: string
+}
+
+export type { District, FacilityType }

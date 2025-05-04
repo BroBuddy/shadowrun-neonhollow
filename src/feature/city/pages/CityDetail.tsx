@@ -2,8 +2,8 @@ import Headline from '@/components/Headline'
 import { useParams } from 'react-router-dom'
 import { getFacilityByTag } from '../facilityData'
 import { Facility } from '../FacilityType'
-import ActionsView from '../components/ActionsView'
-import RollsView from '../components/RollsView'
+import ActionView from '../components/ActionView'
+import RollView from '../components/RollView'
 import Card from '@/components/Card'
 
 function CityDetail() {
@@ -21,7 +21,7 @@ function CityDetail() {
                 <div className="flex gap-5">
                     <div className="flex-1 basis-2/5">
                         <img
-                            src={`/images/${data.title}.jpg`}
+                            src={`/images/city/${data.title}.jpg`}
                             alt={data.title}
                             loading="lazy"
                         />
@@ -34,10 +34,10 @@ function CityDetail() {
                 </div>
             </Card>
 
-            {data.rollList.length > 0 && <RollsView rollList={data.rollList} />}
+            {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
 
             {data.actionList?.length > 0 && (
-                <ActionsView actionList={data.actionList} />
+                <ActionView actionList={data.actionList} />
             )}
         </>
     )

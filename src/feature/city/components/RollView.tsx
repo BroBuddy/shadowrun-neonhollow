@@ -8,7 +8,7 @@ type FacilityRollsProps = {
     rollList: FacilityRoll[]
 }
 
-const RollsView = ({ rollList }: FacilityRollsProps) => {
+const RollView = ({ rollList }: FacilityRollsProps) => {
     const modifyResources = useResourceStore((state) => state.modifyResources)
 
     const handleStepClick = (resourceChange?: Record<string, number>) => {
@@ -47,4 +47,4 @@ const RollsView = ({ rollList }: FacilityRollsProps) => {
     )
 }
 
-export default RollsView
+export default RollView

@@ -7,16 +7,15 @@ import { register } from './serviceWorkerRegistration.ts'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
-import CharacterRouter from './feature/character/CharacterRouter.tsx'
 import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import NameRouter from './feature/name/NameRouter.tsx'
 import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
 import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
+import CharacterRouter from './feature/character/CharacterRouter'
 import Preloader from './components/Preloader.tsx'
 import Error from './pages/Error.tsx'
 import App from './App.tsx'
 
-const ErrorFallback = () => <Error />
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
     Rules: React.lazy(() => import('./pages/Rules')),
@@ -26,6 +25,12 @@ const Pages = {
         () => import('./pages/OverwhelminglyGreat')
     ),
 }
+
+import('./pages/Welcome')
+import('./pages/Rules')
+import('./pages/Midnight')
+import('./pages/WellDone')
+import('./pages/OverwhelminglyGreat')
 
 const router = createBrowserRouter([
     {
@@ -38,7 +43,7 @@ const router = createBrowserRouter([
     },
     {
         element: (
-            <ErrorBoundary FallbackComponent={ErrorFallback}>
+            <ErrorBoundary fallback={<Error />}>
                 <ColorSchemeProvider>
                     <App />
                 </ColorSchemeProvider>
@@ -100,4 +105,4 @@ root.render(
 
 register()
 
-export { Pages, Preloader, ErrorFallback }
+export { Preloader }

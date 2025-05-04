@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
-import { District as DistrictType } from '../CityType'
-
-type FacilityType = Record<string, string>
+import { District as DistrictType, FacilityType } from '../CityType'
 
 type DistrictProps = {
     district: DistrictType
@@ -28,12 +26,13 @@ function DistrictView({ district }: DistrictProps) {
                     >
                         <Link to={facility.link}>
                             <figure>
+                                <figcaption>{facility.name}</figcaption>
                                 <img
-                                    src={facility.image}
-                                    alt={`Image of ${facility.name}`}
+                                    src={`/images/city/${facility.name}.jpg`}
+                                    alt={`${facility.name}`}
+                                    loading="lazy"
                                     className="mx-auto"
                                 />
-                                <figcaption>{facility.name}</figcaption>
                             </figure>
                         </Link>
                     </div>

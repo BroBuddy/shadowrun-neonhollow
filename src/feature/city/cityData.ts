@@ -2,85 +2,78 @@ import { District } from './CityType'
 
 const cityData: District[] = [
     {
+        id: 1,
         name: 'Skyline',
-        heat: 'Heat 2',
+        heat: '2',
         icon: '🔴',
         facilities: [
             {
                 name: 'MegaCorp',
                 link: '/city/megacorp',
-                image: '/images/MegaCorp.jpg',
             },
             {
                 name: 'CyberLab',
                 link: '/city/cyberlab',
-                image: '/images/CyberLab.jpg',
             },
             {
                 name: 'VitalClinic',
                 link: '/city/vitalclinic',
-                image: '/images/VitalClinic.jpg',
             },
         ],
     },
     {
+        id: 2,
         name: 'Central',
-        heat: 'Heat 4',
+        heat: '4',
         icon: '🟠',
         facilities: [
             {
                 name: 'SecurityHub',
                 link: '/city/securityhub',
-                image: '/images/SecurityHub.jpg',
             },
             {
                 name: 'PulseBar',
                 link: '/city/pulsebar',
-                image: '/images/PulseBar.jpg',
             },
             {
                 name: 'DreamHaven',
                 link: '/city/dreamhaven',
-                image: '/images/DreamHaven.jpg',
             },
         ],
     },
     {
+        id: 3,
         name: 'Quarter',
-        heat: 'Heat 6',
+        heat: '6',
         icon: '🟡',
         facilities: [
             {
                 name: 'EchoGarden',
                 link: '/city/echogarden',
-                image: '/images/EchoGarden.jpg',
             },
             {
                 name: 'IronGym',
                 link: '/city/irongym',
-                image: '/images/IronGym.jpg',
             },
             {
                 name: 'ZeroZone',
                 link: '/city/zerozone',
-                image: '/images/ZeroZone.jpg',
             },
         ],
     },
     {
+        id: 4,
         name: 'Depths',
-        heat: 'Heat 8',
+        heat: '8',
         icon: '🟢',
         facilities: [
             {
                 name: 'SmugglerDen',
                 link: '/city/smugglerden',
-                image: '/images/SmugglerDen.jpg',
             },
             {
                 name: 'SafeHouse',
                 link: '/city/safehouse',
-                image: '/images/SafeHouse.jpg',
             },
         ],
     },

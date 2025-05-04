@@ -13,7 +13,7 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
 
         return cityData.slice(0, 3).map((district: DistrictType) => (
             <p key={district.name}>
-                {district.icon} {district.heat} → {district.name}
+                {district.icon} Heat {district.heat} → {district.name}
             </p>
         ))
     }
@@ -22,7 +22,7 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
         <Card>
             <div className="flex gap-5">
                 <div className="flex-1 basis-2/5">
-                    <img src="/images/NeonHollow.jpg" alt="NeonHollow" />
+                    <img src="/images/city/NeonHollow.jpg" alt="NeonHollow" />
                 </div>
                 <div className="flex-1 basis-3/5">
                     <p>

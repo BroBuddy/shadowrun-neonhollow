@@ -19,7 +19,7 @@ function City() {
 
             <Card>
                 {cityData.map((district: DistrictType) => (
-                    <DistrictView key={district.name} district={district} />
+                    <DistrictView key={district.id} district={district} />
                 ))}
             </Card>
         </>

@@ -38,7 +38,7 @@ function MetatypeDetail() {
                 <div className="flex gap-5">
                     <div className="flex-1 basis-2/5">
                         <img
-                            src={`/images/${data.title}.jpg`}
+                            src={`/images/metatype/${data.title}.jpg`}
                             alt={data.title}
                             loading="lazy"
                         />
