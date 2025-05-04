@@ -31,7 +31,7 @@ function MissionDetail() {
                 <div className="flex gap-5">
                     <div className="flex-1 basis-2/5">
                         <img
-                            src="/images/MegaCorp.jpg"
+                            src="/images/city/MegaCorp.jpg"
                             alt="MegaCorp"
                             loading="lazy"
                         />
