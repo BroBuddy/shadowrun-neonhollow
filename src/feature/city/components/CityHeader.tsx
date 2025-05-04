@@ -1,4 +1,3 @@
-import Card from '@/components/Card'
 import { District as DistrictType } from '../CityType'
 import FadeIn from '@/components/FadeIn'
 
