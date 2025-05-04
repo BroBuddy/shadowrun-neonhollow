@@ -1,19 +1,16 @@
 import Headline from '@/components/Headline'
 import { useParams } from 'react-router-dom'
 import { getFacilityByTag } from '../facilityData'
-import { Facility, FacilityRoll } from '../FacilityType'
+import { Facility } from '../FacilityType'
 import ActionsView from '../components/ActionsView'
 import RollsView from '../components/RollsView'
-import { useMemo } from 'react'
 import Card from '@/components/Card'
 
 function CityDetail() {
     const { tag } = useParams()
-    const data = useMemo(() => {
-        return getFacilityByTag(tag as string) as Facility
-    }, [tag])
+    const data = getFacilityByTag(tag as string) as Facility
 
-    if (!data) {
+    if (!tag || !data) {
         return <p>No resource data available.</p>
     }
 
@@ -37,16 +34,11 @@ function CityDetail() {
                 </div>
             </Card>
 
-            {data.rollList.length >= 1 && (
-                <RollsView
-                    rollList={data.rollList.map((item: FacilityRoll) => ({
-                        ...item,
-                        key: item.roll,
-                    }))}
-                />
-            )}
+            {data.rollList.length > 0 && <RollsView rollList={data.rollList} />}
 
-            <ActionsView actionList={data.actionList} />
+            {data.actionList?.length > 0 && (
+                <ActionsView actionList={data.actionList} />
+            )}
         </>
     )
 }

@@ -18,34 +18,34 @@ const ActionStep = ({ step }: ActionStepProps) => {
         }
     }
 
-    return (
-        <li>
-            {step.text === 'Random Runner' ? (
-                <RunnerView />
-            ) : step.resource ? (
-                <>
-                    <a
-                        className={step.resource ? 'cursor-pointer' : ''}
-                        onClick={
-                            step.resource
-                                ? () => handleStepClick(step.resource)
-                                : undefined
-                        }
-                    >
-                        {step.text}
-                    </a>
-                </>
-            ) : step.tag ? (
-                <>
-                    <PopUp title={step.text}>
-                        <ResourceDetail tag={step.tag} />
-                    </PopUp>
-                </>
-            ) : (
-                renderRoll2d6(step.text)
-            )}
-        </li>
-    )
+    const renderStepContent = () => {
+        if (step.text === 'Random Runner') {
+            return <RunnerView />
+        }
+
+        if (step.resource) {
+            return (
+                <button
+                    className="cursor-pointer"
+                    onClick={() => handleStepClick(step.resource)}
+                >
+                    {step.text}
+                </button>
+            )
+        }
+
+        if (step.tag) {
+            return (
+                <PopUp title={step.text}>
+                    <ResourceDetail tag={step.tag} />
+                </PopUp>
+            )
+        }
+
+        return renderRoll2d6(step.text)
+    }
+
+    return <li>{renderStepContent()}</li>
 }
 
 export default ActionStep

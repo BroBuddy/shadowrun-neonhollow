@@ -6,6 +6,18 @@ type CityHeaderProps = {
 }
 
 const CityHeader = ({ cityData }: CityHeaderProps) => {
+    const renderDistricts = () => {
+        if (!cityData || cityData.length === 0) {
+            return <p>No districts available.</p>
+        }
+
+        return cityData.slice(0, 3).map((district: DistrictType) => (
+            <p key={district.name}>
+                {district.icon} {district.heat} → {district.name}
+            </p>
+        ))
+    }
+
     return (
         <Card>
             <div className="flex gap-5">
@@ -18,15 +30,7 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
                             District Lockdowns:
                         </strong>
                     </p>
-                    {cityData.map(
-                        (district: DistrictType, index: number) =>
-                            index <= 2 && (
-                                <p key={index}>
-                                    {district.icon} {district.heat} →{' '}
-                                    {district.name}
-                                </p>
-                            )
-                    )}
+                    {renderDistricts()}
                 </div>
             </div>
         </Card>
