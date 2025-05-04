@@ -16,7 +16,7 @@ const SkillCheckResult = ({
     resource: { [key: string]: number }
     onClick: (resource: { [key: string]: number }) => void
 }) => (
-    <div className="mb-3">
+    <div className="my-1">
         <span className="mx-1">{icon}</span>
         <button
             className="cursor-pointer font-bold highlight"
@@ -37,7 +37,7 @@ const SkillCheck = ({ skillCheck }: SkillCheckProps) => {
     }
 
     return (
-        <>
+        <div className="mt-4">
             <p>
                 <strong>
                     {skillCheck.icon}
@@ -63,7 +63,7 @@ const SkillCheck = ({ skillCheck }: SkillCheckProps) => {
                 resource={skillCheck.fail.resource}
                 onClick={handleResultClick}
             />
-        </>
+        </div>
     )
 }
 

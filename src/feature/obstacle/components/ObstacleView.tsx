@@ -12,6 +12,22 @@ type ObstacleViewProps = {
     onProgress: (currentProgress: number) => void
 }
 
+const ObstacleRoll = () => {
+    return (
+        <ul className="list-margin">
+            <li>
+                <strong className="highlight">Roll: 2-5:</strong> &#8594; DC 12
+            </li>
+            <li>
+                <strong className="highlight">Roll 6-8:</strong> &#8594; DC 10
+            </li>
+            <li>
+                <strong className="highlight">Roll 9-12:</strong> &#8594; DC 8
+            </li>
+        </ul>
+    )
+}
+
 const ObstacleView = ({
     obstacles,
     missionProgress,
@@ -40,31 +56,10 @@ const ObstacleView = ({
                                 {item.description}
                             </p>
                             <InRow>
-                                <span>DC</span>
-                                <span>&#8594;</span>
                                 <span>Roll:</span>
                                 <Dice dice={2} />
                             </InRow>
-                            <ul className="list-margin">
-                                <li>
-                                    <strong className="highlight">
-                                        Roll: 2-5:
-                                    </strong>{' '}
-                                    &#8594; DC 12
-                                </li>
-                                <li>
-                                    <strong className="highlight">
-                                        Roll 6-8:
-                                    </strong>{' '}
-                                    &#8594; DC 10
-                                </li>
-                                <li>
-                                    <strong className="highlight">
-                                        Roll 9-12:
-                                    </strong>{' '}
-                                    &#8594; DC 8
-                                </li>
-                            </ul>
+                            {ObstacleRoll()}
 
                             <InRow>
                                 <span>Roll:</span>
@@ -80,7 +75,6 @@ const ObstacleView = ({
                                             <React.Fragment
                                                 key={skillCheckIndex}
                                             >
-                                                {skillCheck.icon}{' '}
                                                 {skillCheck.attribute}
                                                 {skillCheckIndex === 0 && (
                                                     <span className="mx-1">

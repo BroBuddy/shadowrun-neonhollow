@@ -51,12 +51,10 @@ function EventDetail({ id }: EventDetailProps) {
 
             {data.bonus && <BonusAttributes bonus={data.bonus} />}
 
-            <div className="mb-3">
-                <InRow>
-                    <span>Roll:</span>
-                    <Dice dice={2} />
-                </InRow>
-            </div>
+            <InRow>
+                <span>Roll:</span>
+                <Dice dice={2} />
+            </InRow>
 
             {data.skillChecks && (
                 <>

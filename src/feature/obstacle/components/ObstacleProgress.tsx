@@ -11,9 +11,13 @@ const ObstacleProgress = ({
 }: ObstacleProgressProps) => {
     return (
         <>
-            <p className="mt-3">
-                ✅ &#8594; +1 Performance
-                <br />❌ &#8594; -1 Performance
+            <p className="mt-3 mb-1">
+                <span className="mx-1">✅</span>
+                <span className="highlight font-bold">+1 Performance</span>
+            </p>
+            <p>
+                <span className="mx-1">❌</span>
+                <span className="highlight font-bold">-1 Performance</span>
             </p>
 
             {missionProgress === index && (
