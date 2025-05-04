@@ -1,9 +1,9 @@
 type District = {
-    id: number
+    id?: number
     name: string
     heat: string
     icon: string
-    facilities: FacilityType[]
+    facilities?: FacilityType[]
 }
 
 type FacilityType = {
