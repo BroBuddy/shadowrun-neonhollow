@@ -2,6 +2,7 @@ import { Facility } from './FacilityType'
 
 const facilityData: Facility[] = [
     {
+        id: 1,
         tag: 'megacorp',
         title: 'MegaCorp',
         description:
@@ -19,6 +20,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 2,
         tag: 'cyberlab',
         title: 'CyberLab',
         description:
@@ -82,6 +84,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 3,
         tag: 'vitalclinic',
         title: 'VitalClinic',
         description:
@@ -142,6 +145,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 4,
         tag: 'securityhub',
         title: 'SecurityHub',
         description:
@@ -187,6 +191,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 5,
         tag: 'pulsebar',
         title: 'PulseBar',
         description:
@@ -247,6 +252,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 6,
         tag: 'dreamhaven',
         title: 'DreamHaven',
         description:
@@ -307,6 +313,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 7,
         tag: 'echogarden',
         title: 'EchoGarden',
         description:
@@ -367,6 +374,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 8,
         tag: 'irongym',
         title: 'IronGym',
         description:
@@ -427,6 +435,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 9,
         tag: 'zerozone',
         title: 'ZeroZone',
         description:
@@ -481,6 +490,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 10,
         tag: 'smugglerden',
         title: 'SmugglerDen',
         description:
@@ -532,6 +542,7 @@ const facilityData: Facility[] = [
         ],
     },
     {
+        id: 11,
         tag: 'safehouse',
         title: 'SafeHouse',
         description:
@@ -562,4 +573,4 @@ const getFacilityByTag = (tag: string): Facility => {
     return facilityData.find((item: Facility) => item.tag === tag) as Facility
 }
 
-export { getFacilityByTag }
+export { facilityData, getFacilityByTag }

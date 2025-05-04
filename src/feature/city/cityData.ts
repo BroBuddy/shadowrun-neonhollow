@@ -83,4 +83,4 @@ const getCityData = (): District[] => {
     return cityData
 }
 
-export { getCityData }
+export { cityData, getCityData }

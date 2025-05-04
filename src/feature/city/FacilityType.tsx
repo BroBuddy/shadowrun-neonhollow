@@ -1,6 +1,7 @@
 import { Resources } from '../character/CharacterType'
 
 type Facility = {
+    id: number
     tag: string
     title: string
     description: string
