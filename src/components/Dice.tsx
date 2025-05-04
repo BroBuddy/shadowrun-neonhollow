@@ -56,6 +56,9 @@ const Dice = ({ dice = 1 }: DiceProps) => {
             style={{ zIndex: 9 }}
             className={`dice cursor-pointer ${isRolling ? 'active-dice' : ''}`}
             onClick={!isRolling ? handleDiceClick : undefined}
+            role="button"
+            aria-label="Roll the dice"
+            aria-disabled={isRolling}
         >
             {content}
         </div>

@@ -159,6 +159,10 @@ table {
     text-align: center;
     width: 1.25rem;
     z-index: 20;
+
+    &.active-dice {
+        animation: shake 200ms ease infinite;
+    }
 }
 
 header {
@@ -200,16 +204,25 @@ nav {
     z-index: 100;
 }
 
-.active-dice {
-    animation: spinner 0.25s linear infinite;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(-45deg);
     }
 }
 

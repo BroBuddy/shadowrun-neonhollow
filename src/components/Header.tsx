@@ -15,6 +15,8 @@ const Header = () => {
             <div
                 style={{ zIndex: 9999 }}
                 className="fixed cursor-pointer left-0 top-0 w-full bg-black flex flex-col"
+                aria-expanded={isOpen}
+                aria-controls="attribute-modal"
                 onClick={() => toggleModal()}
             >
                 <div className="w-full flex justify-center">

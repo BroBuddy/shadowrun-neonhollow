@@ -4,7 +4,7 @@ type HeadlineProps = {
     children: React.ReactNode
 }
 
-const Headline = ({ children }: HeadlineProps) => {
+const Headline: React.FC<HeadlineProps> = ({ children }) => {
     return <div className="headline">{children && <h1>{children}</h1>}</div>
 }
 
