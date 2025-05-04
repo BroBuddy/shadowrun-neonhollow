@@ -1,4 +1,3 @@
-import Card from '@/components/Card'
 import { Mode as ModeType } from '../CharacterType'
 import { getCharacterModes } from '../characterData'
 import { useMemo } from 'react'
@@ -12,36 +11,29 @@ function ModeView() {
         setStats(stats)
     }
     return (
-        <Card>
-            <p>
-                <strong className="highlight">Mode:</strong>
-            </p>
-            <p>The mode grants you starting resources:</p>
-            <ul className="list-margin">
-                {modes.map((item: ModeType, index: number) => (
-                    <li key={index}>
-                        <strong
-                            className="cursor-pointer highlight"
-                            onClick={() => handleModeSelect(item.resources)}
-                        >
-                            {item.name}:
-                        </strong>
-                        <ul>
-                            {Object.entries(item.resources).map(
-                                ([resource, value], resourceIndex) => (
-                                    <li key={resourceIndex}>
-                                        {resource}:{' '}
-                                        {resource === 'Nuyen'
-                                            ? `${value}k`
-                                            : value}
-                                    </li>
-                                )
-                            )}
-                        </ul>
-                    </li>
-                ))}
-            </ul>
-        </Card>
+        <>
+            <p>The mode grants you starting resources.</p>
+            {modes.map((item: ModeType, index: number) => (
+                <p key={index}>
+                    <strong
+                        className="cursor-pointer highlight"
+                        onClick={() => handleModeSelect(item.resources)}
+                    >
+                        {item.icon} {item.name}:
+                    </strong>
+                    <ul className="list-margin">
+                        {Object.entries(item.resources).map(
+                            ([resource, value], resourceIndex) => (
+                                <li key={resourceIndex}>
+                                    {resource}:{' '}
+                                    {resource === 'Nuyen' ? `${value}k` : value}
+                                </li>
+                            )
+                        )}
+                    </ul>
+                </p>
+            ))}
+        </>
     )
 }
 

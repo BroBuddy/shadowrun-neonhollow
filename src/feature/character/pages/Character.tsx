@@ -12,7 +12,6 @@ function Character() {
             <MetatypeView />
             <ArchetypeView />
             <GearView />
-            <ModeView />
             <NameView />
         </>
     )

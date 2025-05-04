@@ -7,6 +7,7 @@ type Equipment = {
 
 type Mode = {
     name: string
+    icon: string
     resources: Resources
 }
 

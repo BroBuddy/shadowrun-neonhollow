@@ -3,6 +3,8 @@ import Card from '../components/Card'
 import Headline from '@/components/Headline'
 import MechanicView from '../feature/mechanic/components/MechanicView'
 import { useColorScheme } from '@/context/useColorScheme'
+import ModeView from '@/feature/character/components/ModeView'
+import PopUp from '@/components/Popup'
 
 const Rules = () => {
     const { toggleColorScheme } = useColorScheme()
@@ -46,6 +48,11 @@ const Rules = () => {
                             >
                                 ✏️ Character Creation
                             </Link>
+                        </li>
+                        <li>
+                            <PopUp title="⚔️ Mode Selection">
+                                <ModeView />
+                            </PopUp>
                         </li>
                     </ul>
                 </section>

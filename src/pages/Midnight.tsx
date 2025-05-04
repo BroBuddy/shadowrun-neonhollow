@@ -37,14 +37,8 @@ function Midnight() {
                     <div className="flex-1 basis-3/5">
                         <p>
                             <em>
-                                "When midnight strikes, a new day begins — but
-                                first, several steps must be completed.
-                            </em>
-                        </p>
-                        <p>
-                            <em>
-                                Also, any temporary bonuses will expire as the
-                                clock resets."
+                                "At midnight, the cycle resets — steps are
+                                completed, and temporary bonuses fade away."
                             </em>
                         </p>
                     </div>
