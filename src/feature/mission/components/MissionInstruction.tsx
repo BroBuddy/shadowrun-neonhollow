@@ -24,7 +24,7 @@ const MissionInstruction = () => {
                 </PopUp>
             </div>
             <p>
-                <strong>Accept a mission:</strong>
+                <strong>Negotiate hazard pay:</strong>
             </p>
             <ol className="list-margin">
                 <li>
@@ -33,15 +33,13 @@ const MissionInstruction = () => {
                         onClick={() => handleStepClick({ Intel: -3 })}
                     >
                         Spend 3 Intel
-                    </a>{' '}
-                    &#8594; Negotiate hazard pay
+                    </a>
                 </li>
                 <li>
                     <InRow>
                         <span>Roll</span>
                         <Dice dice={2} />
-                        <span>&#8594;</span>
-                        <span>Add Charisma</span>
+                        <span>+ Charisma</span>
                     </InRow>
                 </li>
                 <li>
@@ -49,6 +47,7 @@ const MissionInstruction = () => {
                         <ResourceDetail tag="nuyen" />
                     </PopUp>
                 </li>
+                <li>Run the Shadows</li>
             </ol>
         </Card>
     )

@@ -10,7 +10,7 @@ const MissionTypes = ({ data }: MissionTypesProps) => {
     return (
         <Card>
             <p>
-                <strong>Mission Types:</strong>
+                <strong>Select a Run:</strong>
             </p>
             <ul className="list-margin">
                 {data.map((item: MissionType, index: number) => (
