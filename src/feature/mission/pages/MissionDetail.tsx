@@ -27,32 +27,32 @@ function MissionDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <Card>
-                <div className="flex gap-5">
-                    <div className="flex-1 basis-2/5">
-                        <img
-                            src="/images/city/MegaCorp.jpg"
-                            alt="MegaCorp"
-                            loading="lazy"
-                        />
-                    </div>
-                    <div className="flex-1 basis-3/5">
-                        <FadeIn>
-                            <p>
-                                <strong className="highlight">Client:</strong>
-                                <br />
-                                {data.client}
-                            </p>
-                            <p>
-                                <strong className="highlight">Location:</strong>
-                                <br /> MegaCorp
-                            </p>
-                        </FadeIn>
-                    </div>
-                </div>
 
+            <div className="flex gap-5 p-4">
+                <div className="flex-1 basis-2/5">
+                    <img
+                        src="/images/city/MegaCorp.jpg"
+                        alt="MegaCorp"
+                        loading="lazy"
+                    />
+                </div>
+                <div className="flex-1 basis-3/5">
+                    <FadeIn>
+                        <p>
+                            <strong className="highlight">Client:</strong>
+                            <br />
+                            {data.client}
+                        </p>
+                        <p>
+                            <strong className="highlight">Location:</strong>
+                            <br /> MegaCorp
+                        </p>
+                    </FadeIn>
+                </div>
+            </div>
+            <Card>
                 <FadeIn>
-                    <p className="mt-5">
+                    <p>
                         <strong className="highlight">Briefing:</strong>
                         <br /> {data.briefing}
                     </p>

@@ -23,11 +23,7 @@ function MissionPerformance() {
     }
 
     return (
-        <div>
-            <p>
-                <strong>Mr. Johnson</strong> doesn’t just care that the job’s
-                done — he cares how it’s done.
-            </p>
+        <>
             {missionPerformance.map((item: MissionPerformanceType) => (
                 <div key={item.id}>
                     <p
@@ -59,7 +55,7 @@ function MissionPerformance() {
                     </ul>
                 </div>
             ))}
-        </div>
+        </>
     )
 }
 

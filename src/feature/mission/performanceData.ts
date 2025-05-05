@@ -3,7 +3,7 @@ import { MissionPerformance as MissionPerformancesType } from './MissionType'
 const MissionPerformance: MissionPerformancesType[] = [
     {
         id: 1,
-        title: '🔴 Performance 1',
+        title: '🔴 Performance -2',
         level: 'Disastrous',
         resources: {
             Heat: +2,
@@ -11,7 +11,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 2,
-        title: '🟠 Performance 3',
+        title: '🟠 Performance -1',
         level: 'Underwhelming',
         resources: {
             Heat: +1,
@@ -20,7 +20,7 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 3,
-        title: '🟡 Performance 5',
+        title: '🟡 Performance 0',
         level: 'Partial',
         resources: {
             Nuyen: +4,
@@ -29,23 +29,21 @@ const MissionPerformance: MissionPerformancesType[] = [
     },
     {
         id: 4,
-        title: '🟢 Performance 7',
+        title: '🟢 Performance +1',
         level: 'Impressive',
         resources: {
             Nuyen: +8,
             Edge: +1,
         },
-        effects: [{ description: 'Next Mission available' }],
     },
     {
         id: 5,
-        title: '🔵 Performance 9',
+        title: '🔵 Performance +2',
         level: 'Exceptional',
         resources: {
             Nuyen: +12,
             Edge: +2,
         },
-        effects: [{ description: 'Next Mission available' }],
     },
 ]
 

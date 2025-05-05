@@ -2,10 +2,6 @@ function MissionRules() {
     return (
         <>
             <p>
-                At the start of each mission, your Performance begins at 5 and
-                can shift between 1 and 9 based on your success.
-            </p>
-            <p>
                 Choose one mission to undertake — each can only be completed
                 once.
             </p>

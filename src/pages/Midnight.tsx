@@ -46,6 +46,9 @@ function Midnight() {
             </FadeIn>
 
             <Card>
+                <p>
+                    <strong>Midnight Steps:</strong>
+                </p>
                 <ol className="list-margin">
                     <li>
                         {!randomEvent && (
