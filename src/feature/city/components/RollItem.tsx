@@ -1,5 +1,4 @@
 import PopUp from '@/components/Popup'
-import EncounterView from '@/feature/encounter/components/EncounterView'
 import EventDetail from '@/feature/event/pages/EventDetail'
 import { FacilityRoll } from '../FacilityType'
 
@@ -12,7 +11,7 @@ const RollItem = ({ item, handleStepClick }: RollItemProps) => (
     <li>
         <strong>Roll {item.roll}</strong> &#8594;{' '}
         {item.roll === '7' ? (
-            <EncounterView />
+            <>No Effect</>
         ) : item.resource ? (
             <>
                 <span>{item.text.split(' → ')[0]}</span>
