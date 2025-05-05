@@ -12,9 +12,10 @@ type ResourceState = {
     resources: Record<string, number>
     setResources: (newResources: Record<string, number>) => void
     modifyResources: (modResources: Record<string, number>) => void
+    isEmptyStore: () => boolean
 }
 
-const useResourceStore = create<ResourceState>((set) => ({
+const useResourceStore = create<ResourceState>((set, get) => ({
     resources: {
         Nuyen: 0,
         Health: 0,
@@ -53,6 +54,14 @@ const useResourceStore = create<ResourceState>((set) => ({
 
             return { resources: updatedResources }
         })
+    },
+    isEmptyStore: () => {
+        const resources = get().resources
+        const total = Object.values(resources).reduce(
+            (sum, value) => sum + value,
+            0
+        )
+        return total === 0
     },
 }))
 

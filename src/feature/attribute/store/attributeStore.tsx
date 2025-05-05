@@ -9,9 +9,10 @@ type AttributeState = {
         isTemporary?: boolean
     ) => void
     resetTemporaryAttributes: () => void
+    isEmptyStore: () => boolean
 }
 
-const useAttributeStore = create<AttributeState>((set) => ({
+const useAttributeStore = create<AttributeState>((set, get) => ({
     attributes: {
         Strength: [0, 0],
         Agility: [0, 0],
@@ -62,6 +63,14 @@ const useAttributeStore = create<AttributeState>((set) => ({
                 )
             return { attributes: updatedAttributes }
         })
+    },
+    isEmptyStore: () => {
+        const attributes = get().attributes
+        const total = Object.values(attributes).reduce(
+            (sum, [main, temporary]) => sum + main + temporary,
+            0
+        )
+        return total === 0
     },
 }))
 

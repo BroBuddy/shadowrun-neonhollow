@@ -11,6 +11,11 @@ const resourceIcons: Record<string, string> = {
 
 const ResourceManager = () => {
     const resources = useResourceStore((state) => state.resources)
+    const isStoreEmpty = useResourceStore.getState().isEmptyStore()
+
+    if (isStoreEmpty) {
+        return <></>
+    }
 
     return (
         <>

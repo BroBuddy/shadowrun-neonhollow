@@ -14,7 +14,7 @@ function ModeView() {
         <>
             <p>The mode grants you starting resources.</p>
             {modes.map((item: ModeType, index: number) => (
-                <p key={index}>
+                <div key={index}>
                     <strong
                         className="cursor-pointer highlight"
                         onClick={() => handleModeSelect(item.resources)}
@@ -31,7 +31,7 @@ function ModeView() {
                             )
                         )}
                     </ul>
-                </p>
+                </div>
             ))}
         </>
     )
