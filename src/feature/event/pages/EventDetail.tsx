@@ -54,7 +54,7 @@ function EventDetail({ id }: EventDetailProps) {
             {data.skillChecks && (
                 <>
                     <InRow>
-                        <span>Roll:</span>
+                        <span>Roll</span>
                         <Dice dice={2} />
                     </InRow>
 

@@ -22,7 +22,7 @@ const TwistView = ({ twist }: MissionTwistProps) => {
             </p>
 
             <InRow>
-                <span>Roll:</span>
+                <span>Roll</span>
                 <Dice dice={2} />
             </InRow>
             <ul className="list-margin">

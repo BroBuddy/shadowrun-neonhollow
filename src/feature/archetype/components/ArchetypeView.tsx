@@ -24,7 +24,7 @@ function ArchetypeView() {
             </p>
 
             <InRow>
-                <span>Roll:</span>
+                <span>Roll</span>
                 <Dice dice={1} />
             </InRow>
 

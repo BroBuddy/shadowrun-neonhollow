@@ -16,13 +16,13 @@ const ObstacleRoll = () => {
     return (
         <ul className="list-margin">
             <li>
-                <strong className="highlight">Roll: 2-5:</strong> &#8594; DC 12
+                <strong className="highlight">Roll 2-5</strong> &#8594; DC 12
             </li>
             <li>
-                <strong className="highlight">Roll 6-8:</strong> &#8594; DC 10
+                <strong className="highlight">Roll 6-8</strong> &#8594; DC 10
             </li>
             <li>
-                <strong className="highlight">Roll 9-12:</strong> &#8594; DC 8
+                <strong className="highlight">Roll 9-12</strong> &#8594; DC 8
             </li>
         </ul>
     )
@@ -56,13 +56,13 @@ const ObstacleView = ({
                                 {item.description}
                             </p>
                             <InRow>
-                                <span>Roll:</span>
+                                <span>Roll</span>
                                 <Dice dice={2} />
                             </InRow>
                             {ObstacleRoll()}
 
                             <InRow>
-                                <span>Roll:</span>
+                                <span>Roll</span>
                                 <Dice dice={2} />
                                 <span>&#8594;</span>
                                 <span>Add</span>

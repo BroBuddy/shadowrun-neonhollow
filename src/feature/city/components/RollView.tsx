@@ -30,7 +30,7 @@ const RollView = ({ rollList }: FacilityRollsProps) => {
                     Spend 1 Energy
                 </button>
                 <span>&#8594;</span>
-                <span>Roll:</span>
+                <span>Roll</span>
                 <Dice dice={2} />
             </div>
 

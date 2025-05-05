@@ -40,7 +40,7 @@ const renderRoll2d6 = (text: string) => {
     return (
         <InRow>
             {beforeDice && <span>{beforeDice}</span>}
-            <span>Roll:</span>
+            <span>Roll</span>
             <Dice dice={2} />
             {afterDice && <span>{afterDice}</span>}
         </InRow>
