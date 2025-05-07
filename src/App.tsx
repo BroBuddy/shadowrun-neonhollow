@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useLayoutEffect } from 'react'
-import MobileNav from './components/MobileNav'
 import { useColorScheme } from './context/useColorScheme'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import './App.scss'
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
             <Header />
             <Outlet />
-            <MobileNav />
+            <Footer />
         </div>
     )
 }

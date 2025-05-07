@@ -15,12 +15,13 @@ const missionData: Mission[] = [
                 {
                     attribute: 'Strength',
                     dc: 14,
-                    description: 'Break open reinforced access panels.',
+                    description:
+                        'Carry the secured data out while evading resistance.',
                 },
                 {
                     attribute: 'Agility',
                     dc: 14,
-                    description: 'Navigate through laser grids undetected.',
+                    description: 'Slip past defenses and make a clean getaway.',
                 },
             ],
         },
@@ -38,12 +39,13 @@ const missionData: Mission[] = [
                 {
                     attribute: 'Agility',
                     dc: 14,
-                    description: 'Evade security drones patrolling the halls.',
+                    description: 'Break into the vault, securing the data.',
                 },
                 {
                     attribute: 'Reaction',
                     dc: 14,
-                    description: "Counter the AI's rapid system shutdown.",
+                    description:
+                        'Counter its rapid defense protocols, ensuring the kill is final.',
                 },
             ],
         },
@@ -105,7 +107,7 @@ const missionData: Mission[] = [
         briefing:
             'Infiltrate a high-society gala. Gather intel, avoid exposure, and manipulate power plays to your advantage.',
         twist: {
-            description: 'A rival spy recognizes you mid-operation.',
+            description: 'A rival spy recognizes you at the operation.',
             skillChecks: [
                 {
                     attribute: 'Intuition',

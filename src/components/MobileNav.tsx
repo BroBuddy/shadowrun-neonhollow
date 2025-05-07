@@ -15,7 +15,7 @@ const links: Array<LinkType> = [
 
 const MobileNav = () => {
     return (
-        <nav className="z-40" role="navigation" aria-label="Mobile Navigation">
+        <nav role="navigation" aria-label="Mobile Navigation">
             {links.map((item: LinkType) => (
                 <Link
                     key={item.path}

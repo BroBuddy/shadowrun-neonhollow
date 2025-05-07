@@ -1,5 +1,4 @@
 import Card from '@/components/Card'
-import Headline from '@/components/Headline'
 import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -16,9 +15,11 @@ function Error() {
 
     return (
         <>
-            <Headline>Critial Glitch</Headline>
             <Card>
-                <p>You will be sent to your SafeHouse automatically.</p>
+                <p>
+                    <strong className="highlight">Critial Glitch</strong>
+                </p>
+                <p>Reload the app to wake up in your secured hideout.</p>
             </Card>
         </>
     )
