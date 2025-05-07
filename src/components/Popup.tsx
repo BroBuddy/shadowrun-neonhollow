@@ -41,8 +41,8 @@ const PopUp: React.FC<PopUpProps> = ({ title, children }) => {
             {isPopUpOpen && (
                 <div
                     onClick={handleClose}
-                    style={{ zIndex: 999 }}
-                    className="flex fixed inset-0 bg-black/90 justify-center items-center mt-14 p-5 transition-opacity duration-300 cursor-pointer"
+                    style={{ zIndex: 999, marginLeft: 0 }}
+                    className="flex fixed inset-0 bg-black/90 justify-center items-center p-5 transition-opacity duration-300 cursor-pointer"
                     role="dialog"
                     aria-labelledby="popup-title"
                     aria-modal="true"
