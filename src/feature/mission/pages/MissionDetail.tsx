@@ -77,7 +77,9 @@ function MissionDetail() {
                 />
             )}
 
-            {missionProgress === 3 && <TwistView twist={data.twist} />}
+            {missionProgress === 3 && data.twist && (
+                <TwistView twist={data.twist} />
+            )}
         </>
     )
 }
