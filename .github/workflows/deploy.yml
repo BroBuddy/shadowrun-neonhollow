@@ -1,4 +1,4 @@
-name: CI/CD - Vite + TypeScript + Firebase
+name: Deploy to Firebase
 
 on:
     push:
@@ -11,12 +11,20 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3.1.0
+              uses: actions/checkout@v3
 
             - name: Set up Node.js
-              uses: actions/setup-node@v3.5.1
+              uses: actions/setup-node@v3
               with:
-                  node-version: 18
+                  node-version: 'lts/*'
+
+            - name: Cache Node.js modules
+              uses: actions/cache@v3
+              with:
+                  path: ~/.npm
+                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
 
             - name: Install dependencies
               run: npm ci
@@ -31,7 +39,7 @@ jobs:
               run: npm run build
 
             - name: Upload build artifacts
-              uses: actions/upload-artifact@v3.1.2
+              uses: actions/upload-artifact@v3
               with:
                   name: production-dist
                   path: dist/
@@ -43,10 +51,10 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3.1.0
+              uses: actions/checkout@v3
 
             - name: Download build artifacts
-              uses: actions/download-artifact@v3.1.1
+              uses: actions/download-artifact@v3
               with:
                   name: production-dist
                   path: dist/
