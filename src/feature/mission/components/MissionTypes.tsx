@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { Mission as MissionType } from '../MissionType.tsx'
+import { Mission as MissionType } from '../MissionType'
 import Card from '@/components/Card'
-import { getMissionData } from '../missionData.ts'
+import { getMissionData } from '../missionData'
 
 const MissionTypes = () => {
     const data = useMemo(() => {
