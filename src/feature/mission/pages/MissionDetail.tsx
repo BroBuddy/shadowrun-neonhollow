@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Card from '@/components/Card'
-import { getMissionById } from '../missionData'
+import { getMissionById } from '../missionData.ts'
 import Headline from '@/components/Headline'
 import TwistView from '../components/TwistView'
 import FadeIn from '@/components/FadeIn'
