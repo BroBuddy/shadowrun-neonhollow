@@ -1,12 +1,18 @@
 import { Link } from 'react-router-dom'
 import { Mission as MissionType } from '../MissionType'
 import Card from '@/components/Card'
+import { useMemo } from 'react'
+import { getMissionData } from '../missionData'
 
-type MissionTypesProps = {
-    data: MissionType[]
-}
+const MissionTypes = () => {
+    const data = useMemo(() => {
+        return getMissionData() as MissionType[]
+    }, [])
 
-const MissionTypes = ({ data }: MissionTypesProps) => {
+    if (!data) {
+        return <></>
+    }
+
     return (
         <Card>
             <p>
