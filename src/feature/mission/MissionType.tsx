@@ -4,9 +4,9 @@ type Mission = {
     id: string
     title: string
     attributes?: string
-    client: string
-    briefing: string
-    twist: MissionTwist
+    client?: string
+    briefing?: string
+    twist?: MissionTwist
 }
 
 type MissionTask = {
