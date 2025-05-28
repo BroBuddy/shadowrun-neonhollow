@@ -6,16 +6,8 @@ type CityHeaderProps = {
 }
 
 const CityHeader = ({ cityData }: CityHeaderProps) => {
-    const renderDistricts = () => {
-        if (!cityData || cityData.length === 0) {
-            return <p>No districts available.</p>
-        }
-
-        return cityData.slice(0, 3).map((district: DistrictType) => (
-            <p key={district.id || district.name} className="mb-2">
-                {district.icon} Heat {district.heat} → {district.name}
-            </p>
-        ))
+    if (!cityData || cityData.length === 0) {
+        return <div>No districts available.</div>
     }
 
     return (
@@ -30,11 +22,16 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
                 </div>
                 <div className="flex-1 basis-3/5">
                     <p>
-                        <strong className="highlight">
+                        <strong className="highlight" role="heading">
                             District Lockdowns:
                         </strong>
                     </p>
-                    {renderDistricts()}
+                    {cityData.slice(0, 3).map((district) => (
+                        <div key={district.name}>
+                            {district.icon} Heat {district.heat} →{' '}
+                            {district.name}
+                        </div>
+                    ))}
                 </div>
             </div>
         </FadeIn>

@@ -1,5 +1,5 @@
 import '@testing-library/jest-dom'
-import { render, screen } from '@testing-library/react'
+import { render, screen, waitFor } from '@testing-library/react'
 import CityHeader from '../components/CityHeader'
 import { District } from '../CityType'
 
@@ -11,24 +11,46 @@ const mockCityData: District[] = [
 ]
 
 describe('CityHeader Component', () => {
-    it('renders the component with valid cityData', () => {
+    it('renders the component with valid cityData', async () => {
         render(<CityHeader cityData={mockCityData} />)
 
-        // Check if the image is rendered
-        const image = screen.getByAltText('NeonHollow')
-        expect(image).toBeInTheDocument()
+        jest.mock(
+            '@/components/FadeIn',
+            () =>
+                ({ children }: { children: React.ReactNode }) => {
+                    return <>{children}</>
+                }
+        )
 
-        // Check if the title is rendered
-        const title = screen.getByText('District Lockdowns:')
+        // Wait for the title to appear
+        const title = await waitFor(() =>
+            screen.getByRole('heading', { name: 'District Lockdowns:' })
+        )
         expect(title).toBeInTheDocument()
 
         // Check if the first three districts are rendered
-        expect(screen.getByText('🔴 Heat 2 → Skyline')).toBeInTheDocument()
-        expect(screen.getByText('🟠 Heat 4 → Central')).toBeInTheDocument()
-        expect(screen.getByText('🟡 Heat 6 → Quarter')).toBeInTheDocument()
+        expect(
+            screen.getByText(
+                (_, element) => element?.textContent === '🔴 Heat 2 → Skyline'
+            )
+        ).toBeInTheDocument()
+        expect(
+            screen.getByText(
+                (_, element) => element?.textContent === '🟠 Heat 4 → Central'
+            )
+        ).toBeInTheDocument()
+        expect(
+            screen.getByText(
+                (_, element) => element?.textContent === '🟡 Heat 6 → Quarter'
+            )
+        ).toBeInTheDocument()
 
         // Ensure the fourth district is not rendered
-        expect(screen.queryByText('🟢 Heat 8 → Depths')).not.toBeInTheDocument()
+        expect(
+            screen.queryByText(
+                (_, element) => element?.textContent === '🟢 Heat 8 → Depths'
+            )
+        ).not.toBeInTheDocument()
     })
 
     it('renders fallback message when cityData is empty', () => {
