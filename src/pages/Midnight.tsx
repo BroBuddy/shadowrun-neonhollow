@@ -73,6 +73,10 @@ function Midnight() {
                     </li>
 
                     <li>
+                        Lose <strong>Health</strong> and <strong>Energy</strong> equal to half your current <strong>Heat</strong> level, rounded down.
+                    </li>
+
+                    <li>
                         Reset
                         <span className="mx-1">&#8594;</span>
                         <a
@@ -81,10 +85,6 @@ function Midnight() {
                         >
                             Temporary Attributes
                         </a>
-                    </li>
-
-                    <li>
-                        Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current <strong>Heat</strong> level.
                     </li>
 
                     <li>
