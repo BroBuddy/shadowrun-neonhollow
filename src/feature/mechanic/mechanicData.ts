@@ -17,12 +17,11 @@ const mechanicData: Mechanic[] = [
         tag: 'time',
         title: '🕒 Time Mechanic',
         description:
-            'Manage your Time wisely to achieve objectives within a limited framework.',
+            'Each day runs in three phases. There is no time limit — but your final rating depends on how few days it takes to bring MegaCorp down.',
         list: [
-            '6 days to dismantle the system, with 6 hours per cycle.',
-            'In total, only thirty-six actions to be allocated thoughtfully.',
-            'Each action consumes 1 hour and may only be performed once daily, except when at a SafeHouse.',
-            'Roll on the Event Matrix at the end of the day.',
+            'City: Visit up to 3 locations. Each action within a location can only be performed once per day.',
+            'Mission: Accept a contract from Mr. Johnson and complete all 6 steps.',
+            'Midnight: Roll on the Event Matrix. Temporary bonuses reset and the day counter advances.',
         ],
     },
     {
@@ -66,8 +65,19 @@ const mechanicData: Mechanic[] = [
         list: [
             'Edge ranges from 0 to 6 and cannot exceed these limits.',
             'Spend 1 Edge during a skill check to gain an additional roll.',
-            'Spend 1 Edge before a roll to add your current Edge level as a bonus to that check.',
-            'Service Providers: Skill Checks, Town Events, Mr. Johnson.',
+            'Spend 5 Edge at MegaCorp to advance your lifetime goal.',
+            'Earned through successful runs and city events.',
+        ],
+    },
+    {
+        tag: 'intel',
+        title: '💡 Intel Mechanic',
+        description:
+            'Information is leverage. Gather Intel during the City phase to gain an edge on your runs.',
+        list: [
+            'Intel ranges from 0 to 6 and cannot exceed these limits.',
+            'Spend Intel before a roll to add +2 to the result per Intel spent.',
+            'Service Providers: CyberLab, PulseBar, SmugglerDen.',
         ],
     },
     {
@@ -77,21 +87,9 @@ const mechanicData: Mechanic[] = [
             'Manage Heat to avoid being hunted and losing access to services.',
         list: [
             'Heat ranges from 0 to 6 and cannot exceed these limits.',
-            "Higher Heat levels cause the Corp's special ops to hunt you down.",
-            'Lose Health and Energy equal to your current Heat level.',
+            'Higher Heat levels cause the Corp\'s special ops to hunt you down.',
             'More Heat locks down town districts and restricts services.',
             'Service Providers: SecurityHub, EchoGarden, SafeHouse.',
-        ],
-    },
-    {
-        tag: 'intel',
-        title: '💡 Intel Mechanic',
-        description:
-            'Gather Intel to unlock missions and bring down adversaries strategically.',
-        list: [
-            'Intel ranges from 0 to 6 and cannot exceed these limits.',
-            "You'll need Intel to fund missions from Mr. Johnson.",
-            'Service Providers: CyberLab, PulseBar, SmugglerDen.',
         ],
     },
     {

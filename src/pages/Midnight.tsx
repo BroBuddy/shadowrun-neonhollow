@@ -82,10 +82,6 @@ function Midnight() {
                         Increase
                         <span className="mx-1">&#8594;</span> Day counter by 1
                     </li>
-                    <li>
-                        Reset
-                        <span className="mx-1">&#8594;</span>Hours back to 0
-                    </li>
                 </ol>
             </Card>
         </>
