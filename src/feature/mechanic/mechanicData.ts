@@ -15,81 +15,83 @@ const mechanicData: Mechanic[] = [
     },
     {
         tag: 'time',
-        title: '🕒 Time Mechanic',
+        title: '🕒 Day & Night',
         description:
             'Each day runs in three phases. There is no time limit — but your final rating depends on how few days it takes to bring MegaCorp down.',
         list: [
-            'City: Visit up to 3 locations. Each action within a location can only be performed once per day.',
-            'Mission: Accept a contract from Mr. Johnson and complete all 6 steps.',
-            'Midnight: Roll on the Event Matrix. Temporary bonuses reset and the day counter advances.',
+            'Streets — Hit up to 3 locations. Each action can only be burned once per day.',
+            'Run — Take the contract. Work through all 6 steps. Don\'t get caught.',
+            'Midnight — The city resets. Roll for the encounter, burn off your temp boosts, and mark another day gone.',
         ],
     },
     {
         tag: 'nuyen',
-        title: '💰 Nuyen Mechanic',
+        title: '💰 Nuyen',
         description:
-            'Earn, save, and spend Nuyen to progress through various challenges.',
+            'Money talks in NeonHollow. Earn it, spend it, don\'t run out.',
         list: [
             'Nuyen is the currency of the Shadowrun universe.',
-            'Most facility actions require Nuyen.',
-            'Facilities offer opportunities to earn Nuyen.',
+            'Most location actions require Nuyen.',
+            'Run contracts and city locations offer opportunities to earn Nuyen.',
         ],
     },
     {
         tag: 'health',
-        title: '❤️ Health Mechanic',
+        title: '❤️ Health',
         description:
-            'Maintain your Health to survive in the harsh environments of the game.',
+            'Stay alive. Everything else is secondary.',
         list: [
             'Health ranges from 0 to 10 and cannot exceed these limits.',
             'If Health reaches 0, the game is over.',
-            'Service Providers: VitalClinic, IronGym, SafeHouse.',
+            'At Midnight, lose Health equal to half your current Heat level.',
+            'Restored at: VitalClinic, IronGym, SafeHouse.',
         ],
     },
     {
         tag: 'energy',
-        title: '🔋 Energy Mechanic',
+        title: '🔋 Energy',
         description:
-            'Balance Energy to avoid consequences and keep moving forward.',
+            'You can\'t run the shadows on empty. Keep your Energy up.',
         list: [
             'Energy ranges from 0 to 10 and cannot exceed these limits.',
             'Each point below 0 costs 1 Health point.',
-            'Service Providers: DreamHaven, CyberLab, EchoGarden.',
+            'At Midnight, lose Energy equal to half your current Heat level.',
+            'Restored at: DreamHaven, CyberLab, EchoGarden.',
         ],
     },
     {
         tag: 'Edge',
-        title: '⭐ Edge Mechanic',
+        title: '⭐ Edge',
         description:
-            'Use Edge to gain advantages and influence outcomes in skill checks.',
+            'The difference between walking away and not.',
         list: [
-            'Edge ranges from 0 to 6 and cannot exceed these limits.',
+            'Edge ranges from 0 to 3 and cannot exceed these limits.',
             'Spend 1 Edge during a skill check to gain an additional roll.',
-            'Spend 5 Edge at MegaCorp to advance your lifetime goal.',
+            'Spend 3 Edge at MegaCorp to advance your lifetime goal.',
             'Earned through successful runs and city events.',
         ],
     },
     {
         tag: 'intel',
-        title: '💡 Intel Mechanic',
+        title: '💡 Intel',
         description:
-            'Information is leverage. Gather Intel during the City phase to gain an edge on your runs.',
+            'Information is leverage. Gather Intel during the Streets phase to gain an edge on your runs.',
         list: [
             'Intel ranges from 0 to 6 and cannot exceed these limits.',
             'Spend Intel before a roll to add +2 to the result per Intel spent.',
-            'Service Providers: CyberLab, PulseBar, SmugglerDen.',
+            'Gathered at: CyberLab, PulseBar, SmugglerDen.',
         ],
     },
     {
         tag: 'heat',
-        title: '🔥 Heat Mechanic',
+        title: '🔥 Heat',
         description:
-            'Manage Heat to avoid being hunted and losing access to services.',
+            'The hotter you burn, the harder they hunt.',
         list: [
             'Heat ranges from 0 to 6 and cannot exceed these limits.',
-            'Higher Heat levels cause the Corp\'s special ops to hunt you down.',
-            'More Heat locks down town districts and restricts services.',
-            'Service Providers: SecurityHub, EchoGarden, SafeHouse.',
+            'At Midnight, lose Health and Energy each equal to half your Heat level.',
+            'More Heat locks down districts and restricts access to locations.',
+            'Reduced at: SecurityHub, EchoGarden, SafeHouse.',
         ],
     },
     {

@@ -8,8 +8,8 @@ type LinkType = {
 
 const links: Array<LinkType> = [
     { path: '/rules', icon: '📑', text: 'Rules' },
-    { path: '/city', icon: '🏠', text: 'City' },
-    { path: '/mission', icon: '🎯', text: 'Mission' },
+    { path: '/city', icon: '🏠', text: 'Streets' },
+    { path: '/mission', icon: '🎯', text: 'Run' },
     { path: '/midnight', icon: '🌙', text: 'Midnight' },
 ]
 
