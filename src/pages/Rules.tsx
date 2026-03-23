@@ -17,6 +17,7 @@ const Rules = () => {
                     <p>
                         <strong>Settings:</strong>
                     </p>
+                    
                     <ul className="list-margin">
                         <li>
                             <a
@@ -39,7 +40,13 @@ const Rules = () => {
                     <p>
                         <strong>Start your Adventure:</strong>
                     </p>
+
                     <ul className="list-margin">
+                        <li>
+                            <PopUp title="⚔️ Mode Selection">
+                                <ModeView />
+                            </PopUp>
+                        </li>
                         <li>
                             <Link
                                 to="/character"
@@ -48,11 +55,6 @@ const Rules = () => {
                             >
                                 ✏️ Character Creation
                             </Link>
-                        </li>
-                        <li>
-                            <PopUp title="⚔️ Mode Selection">
-                                <ModeView />
-                            </PopUp>
                         </li>
                     </ul>
                 </section>

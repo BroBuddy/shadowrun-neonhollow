@@ -24,6 +24,7 @@ function MetatypeDetail() {
         return (
             <>
                 <Headline>Invalid Metatype</Headline>
+
                 <Card>
                     <p>The tag you provided is invalid.</p>
                 </Card>
@@ -34,6 +35,7 @@ function MetatypeDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
+            
             <Card>
                 <div className="flex gap-5">
                     <div className="flex-1 basis-2/5">
@@ -43,6 +45,7 @@ function MetatypeDetail() {
                             loading="lazy"
                         />
                     </div>
+
                     <div className="flex-1 basis-3/5">
                         <FadeIn>
                             <p>
@@ -54,10 +57,10 @@ function MetatypeDetail() {
             </Card>
 
             <Card>
-                <p>Attributes have been stored automatically.</p>
                 <p>
                     <strong className="highlight">Starting Attributes:</strong>
                 </p>
+
                 <ul className="list-margin">
                     {Object.entries(data.attributes).map(
                         ([attribute, value]) => (

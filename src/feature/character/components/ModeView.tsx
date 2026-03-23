@@ -21,6 +21,7 @@ function ModeView() {
                     >
                         {item.icon} {item.name}:
                     </strong>
+                    
                     <ul className="list-margin">
                         {Object.entries(item.resources).map(
                             ([resource, value], resourceIndex) => (

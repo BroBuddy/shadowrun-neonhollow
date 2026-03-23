@@ -32,30 +32,30 @@ const characterModes: readonly Mode[] = [
         name: 'Easy Mode',
         icon: '🟢',
         resources: {
-            Nuyen: 15,
             Health: 10,
             Energy: 10,
+            Nuyen: 20,
             Edge: 2,
+            Intel: 2,
         },
     },
     {
         name: 'Medium Mode',
         icon: '🟡',
         resources: {
+            Health: 10,
+            Energy: 10,
             Nuyen: 10,
-            Health: 8,
-            Energy: 8,
             Edge: 1,
+            Intel: 1,
         },
     },
     {
         name: 'Hard Mode',
         icon: '🔴',
         resources: {
-            Nuyen: 5,
-            Health: 6,
-            Energy: 6,
-            Edge: 0,
+            Health: 10,
+            Energy: 10,
         },
     },
 ]
