@@ -60,8 +60,9 @@ const useResourceStore = create<ResourceState>((set, get) => ({
     },
     isEmptyStore: () => {
         const resources = get().resources
-        const { Days, ...rest } = resources
-        const total = Object.values(rest).reduce((sum, value) => sum + value, 0)
+        const total = Object.entries(resources)
+            .filter(([key]) => key !== 'Days')
+            .reduce((sum, [, value]) => sum + value, 0)
         
         return total === 0
     },

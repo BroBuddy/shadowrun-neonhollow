@@ -30,7 +30,7 @@ function MissionDetail() {
                 result: event.autoSuccess ? 'success' : null,
             }
         })
-    }, [])
+    }, [mission.steps])
 
     const [stepStates, setStepStates] = useState<StepState[]>(preRolledSteps)
     const [missionProgress, setMissionProgress] = useState<number>(1)
