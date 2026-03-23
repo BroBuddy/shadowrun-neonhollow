@@ -9,7 +9,14 @@ const Rules = () => {
     return (
         <>
             <Headline>Rules</Headline>
+            
             <Card>
+                {MechanicView ? (
+                    <MechanicView />
+                ) : (
+                    <p>Mechanic view is unavailable.</p>
+                )}
+
                 <section>
                     <p>
                         <strong>Settings:</strong>
@@ -26,12 +33,6 @@ const Rules = () => {
                         </li>
                     </ul>
                 </section>
-
-                {MechanicView ? (
-                    <MechanicView />
-                ) : (
-                    <p>Mechanic view is unavailable.</p>
-                )}
             </Card>
         </>
     )

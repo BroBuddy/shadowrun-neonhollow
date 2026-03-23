@@ -2,6 +2,19 @@ import { Mechanic } from './MechanicType'
 
 const mechanicData: Mechanic[] = [
     {
+        tag: 'attributes',
+        title: 'Attributes',
+        description:
+            'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
+        list: [
+            'Physical Attributes: Strength, Agility, Reaction',
+            'Mental Attributes: Logic, Intuition, Charisma',
+            'Each attribute is limited to a maximum of six, excluding temporary boosts.',
+            'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
+            'No need to track your attributes — they’re fully implemented in the header.',
+        ],
+    },
+    {
         tag: 'dice',
         title: '🎲 Dice Rolling',
         description:
@@ -92,32 +105,6 @@ const mechanicData: Mechanic[] = [
             'At Midnight, lose Health and Energy each equal to half your Heat level.',
             'More Heat locks down districts and restricts access to locations.',
             'Reduced at: SecurityHub, EchoGarden, SafeHouse.',
-        ],
-    },
-    {
-        tag: 'attributes',
-        title: 'Attributes',
-        description:
-            'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
-        list: [
-            'Physical Attributes: Strength, Agility, Reaction',
-            'Mental Attributes: Logic, Intuition, Charisma',
-            'Each attribute is limited to a maximum of six, excluding temporary boosts.',
-            'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
-            'No need to track your attributes — they’re fully implemented in the header.',
-        ],
-    },
-    {
-        tag: 'sheet',
-        title: 'Player Sheet',
-        description: 'Which values do you need to track? Check the list below:',
-        list: [
-            'Days: Track your progress through time',
-            'Progress: Measure how close you are to your objective',
-            'Time (optional): Track hours within a day',
-            'Health & Energy (optional): Each ranges from 0 to 10',
-            'Edge & Intel (optional): Each ranges from 0 to 6',
-            'Heat (optional): Ranges from 0 to 6',
         ],
     },
 ]
