@@ -25,6 +25,7 @@ function Midnight() {
     return (
         <>
             <Headline>Midnight</Headline>
+
             <FadeIn>
                 <div className="flex gap-5 p-4">
                     <div className="flex-1 basis-2/5">
@@ -34,6 +35,7 @@ function Midnight() {
                             loading="lazy"
                         />
                     </div>
+
                     <div className="flex-1 basis-3/5">
                         <p>
                             <em>
@@ -49,6 +51,7 @@ function Midnight() {
                 <p>
                     <strong>Midnight Steps:</strong>
                 </p>
+
                 <ol className="list-margin">
                     <li>
                         {!randomEvent && (
@@ -68,6 +71,7 @@ function Midnight() {
                             </>
                         )}
                     </li>
+
                     <li>
                         Reset
                         <span className="mx-1">&#8594;</span>
@@ -78,11 +82,18 @@ function Midnight() {
                             Temporary Attributes
                         </a>
                     </li>
+
+                    <li>
+                        Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current <strong>Heat</strong> level.
+                    </li>
+
                     <li>
                         Increase
                         <span className="mx-1">&#8594;</span> Day counter by 1
                     </li>
                 </ol>
+
+                <p>When midnight passes, the city wakes again. Head back to the streets and start your next day.</p>
             </Card>
         </>
     )
