@@ -1,6 +1,6 @@
 import Card from '@/components/Card'
 
-const MissionInstruction = () => {
+const MissionRules = () => {
 
     return (
         <Card>
@@ -37,4 +37,4 @@ const MissionInstruction = () => {
     )
 }
 
-export default MissionInstruction
+export default MissionRules

@@ -1,24 +1,50 @@
+import Headline from '@/components/Headline'
 import FadeIn from '@/components/FadeIn'
+import Card from '@/components/Card'
+import { Mission } from '../types/MissionType'
 
-const MissionHeader = () => {
+type Props = {
+    mission: Mission
+}
+
+function MissionHeader({ mission }: Props) {
     return (
-        <FadeIn>
+        <>
+            <Headline>{mission.title}</Headline>
+
             <div className="flex gap-5 p-4">
                 <div className="flex-1 basis-2/5">
-                    <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
+                    <img
+                        src="/images/city/MegaCorp.jpg"
+                        alt="MegaCorp"
+                        loading="lazy"
+                    />
                 </div>
-                
                 <div className="flex-1 basis-3/5">
-                    <p>
-                        <em>
-                            "Mr. Johnson—the polished voice of the shadows.
-                            Deals are made, trust is tested, and the job always
-                            pays… for those who survive."
-                        </em>
-                    </p>
+                    <FadeIn>
+                        <p>
+                            <strong className="highlight">Client:</strong>
+                            <br />
+                            {mission.client}
+                        </p>
+                        <p>
+                            <strong className="highlight">Location:</strong>
+                            <br />
+                            {mission.location}
+                        </p>
+                    </FadeIn>
                 </div>
             </div>
-        </FadeIn>
+
+            <Card>
+                <FadeIn>
+                    <p>
+                        <strong className="highlight">Briefing:</strong>
+                        <br /> {mission.briefing}
+                    </p>
+                </FadeIn>
+            </Card>
+        </>
     )
 }
 

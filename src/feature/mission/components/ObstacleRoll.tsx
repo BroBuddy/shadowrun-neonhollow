@@ -5,7 +5,7 @@ const ObstacleRoll = () => (
     <>
         <InRow>
             <span>Roll</span>
-            <Dice dice={2} />
+            <Dice dice={1} />
         </InRow>
 
         <ul className="list-margin">

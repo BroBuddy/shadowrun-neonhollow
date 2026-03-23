@@ -1,14 +1,12 @@
-import Headline from '@/components/Headline'
-import MissionInstruction from '../components/MissionInstruction'
+import MissionRules from '../components/MissionRules'
 import MissionSelection from '../components/MissionSelection'
-import MissionHeader from '../components/MissionHeader'
+import MrJohnson from '../components/MrJohnson'
 
 function Mission() {
     return (
         <>
-            <Headline>Mr. Johnson</Headline>
-            <MissionHeader />
-            <MissionInstruction />
+            <MrJohnson />
+            <MissionRules />
             <MissionSelection />
         </>
     )
