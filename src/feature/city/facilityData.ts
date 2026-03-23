@@ -487,7 +487,11 @@ const facilityData: Facility[] = [
                 text: 'Secret Deal → +2.000 ¥',
                 resource: { Nuyen: +2 },
             },
-            { roll: '12', text: 'Hidden Message → +1 Intel' },
+            {
+                roll: '12',
+                text: 'Hidden Message → +1 Intel',
+                resource: { Intel: +1 },
+            },
         ],
         actionList: [
             {
@@ -542,7 +546,11 @@ const facilityData: Facility[] = [
                 text: 'Thief Caught → +1 Edge',
                 resource: { Edge: +1 },
             },
-            { roll: '12', text: 'Prestigious Contact → +1 Intel' },
+            {
+                roll: '12',
+                text: 'Prestigious Contact → +1 Intel',
+                resource: { Intel: +1 },
+            }
         ],
         actionList: [
             {

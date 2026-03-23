@@ -68,7 +68,7 @@ function ZeroZone() {
 
                 <ul className='list-margin'>
                     <li>Lost? <span>&#8594;</span> Lose Health equal to the gap</li>
-                    <li>Won? <span>&#8594;</span> 
+                    <li>Won? <span className='mr-1'>&#8594;</span> 
                         <span className='font-bold highlight cursor-pointer'
                             onClick={() => handleModify('Nuyen', 15)}>Gain 15k Nuyen</span>
                     </li>

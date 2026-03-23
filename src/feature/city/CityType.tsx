@@ -1,7 +1,7 @@
 type District = {
     id?: number
     name: string
-    heat: string
+    heat: number
     icon: string
     facilities?: FacilityType[]
 }
