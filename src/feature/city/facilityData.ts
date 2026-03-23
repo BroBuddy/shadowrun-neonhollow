@@ -207,7 +207,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Bounty Pursuit:',
                 steps: [
-                    { text: 'Spend 3 Health', resource: { Health: -3 } },
+                    { text: 'Spend 3 Energy', resource: { Energy: -3 } },
                     { text: 'Roll 2d6 + Strength or Intuition + 2' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
@@ -318,7 +318,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Memory Extraction:',
                 steps: [
-                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
+                    { text: 'Spend 2 Health', resource: { Health: -2 } },
                     { text: 'Roll 2d6 + Logic or Intuition' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
@@ -548,7 +548,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Fence Hot Goods:',
                 steps: [
-                    { text: 'Spend 1 Health', resource: { Health: -1 } },
+                    { text: 'Spend 1 Energy', resource: { Energy: -1 } },
                     { text: 'Roll 2d6 + Agility or Logic - 2' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
