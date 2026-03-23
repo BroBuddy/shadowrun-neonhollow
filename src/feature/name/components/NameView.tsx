@@ -16,7 +16,7 @@ function NameView() {
     return (
         <Card>
             <p>
-                <strong className="highlight">(Optional) Name:</strong>
+                <strong>(Optional) Name:</strong>
             </p>
             <p>Each archetype has its own name pool:</p>
             <ul className="list-margin">

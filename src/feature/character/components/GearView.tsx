@@ -10,7 +10,7 @@ function GearView() {
     return (
         <Card>
             <p>
-                <strong className="highlight">Gear:</strong>
+                <strong>Gear:</strong>
             </p>
             <p>Choose one item for free from the Fixer's Workshop:</p>
             <ul className="list-margin">

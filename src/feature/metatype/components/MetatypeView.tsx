@@ -18,7 +18,7 @@ function MetatypeView() {
     return (
         <Card>
             <p>
-                <strong className="highlight">Metatype:</strong>
+                <strong>Metatype:</strong>
             </p>
 
             <InRow>

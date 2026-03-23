@@ -3,6 +3,8 @@ import NameView from '../../name/components/NameView'
 import GearView from '../components/GearView'
 import ArchetypeView from '../../archetype/components/ArchetypeView'
 import MetatypeView from '../../metatype/components/MetatypeView'
+import ModeView from '../components/ModeView'
+import Card from '@/components/Card'
 
 function Character() {
     return (
@@ -12,6 +14,12 @@ function Character() {
             <ArchetypeView />
             <GearView />
             <NameView />
+            <ModeView />
+
+            <Card>
+                <p><strong>System Online:</strong></p>
+                <p>Day one begins. Step into the <strong>streets</strong> and make your name.</p>
+            </Card>
         </>
     )
 }

@@ -18,7 +18,7 @@ function ArchetypeView() {
     return (
         <Card>
             <p>
-                <strong className="highlight">
+                <strong>
                     Archetype &amp; Background:
                 </strong>
             </p>

@@ -31,7 +31,7 @@ const fadeTextData: Text[] = [
         italic: true,
     },
     { text: '[SYSTEM SYNC COMPLETE]', delay: 9000 },
-    { text: '[BEGIN SIMULATION]', delay: 10000, link: '/rules' },
+    { text: '[BEGIN SIMULATION]', delay: 10000, link: '/character' },
 ]
 
 function Welcome() {

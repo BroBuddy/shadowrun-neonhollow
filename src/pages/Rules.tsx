@@ -35,29 +35,6 @@ const Rules = () => {
                 ) : (
                     <p>Mechanic view is unavailable.</p>
                 )}
-
-                <section>
-                    <p>
-                        <strong>Start your Adventure:</strong>
-                    </p>
-
-                    <ul className="list-margin">
-                        <li>
-                            <PopUp title="⚔️ Mode Selection">
-                                <ModeView />
-                            </PopUp>
-                        </li>
-                        <li>
-                            <Link
-                                to="/character"
-                                aria-label="Character Creation"
-                                title="Character Creation"
-                            >
-                                ✏️ Character Creation
-                            </Link>
-                        </li>
-                    </ul>
-                </section>
             </Card>
         </>
     )
