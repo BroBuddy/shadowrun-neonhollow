@@ -6,7 +6,9 @@ const resourceIcons: Record<string, string> = {
     Energy: '🔋',
     Edge: '⭐',
     Intel: '💡',
-    Heat: '🔥',
+    Heat: '🔥', 
+    Days: '🕒',
+    Progress: '🏆',
 }
 
 const ResourceManager = () => {

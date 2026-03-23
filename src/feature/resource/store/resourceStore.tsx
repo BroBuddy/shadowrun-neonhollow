@@ -6,6 +6,7 @@ const MAX_VALUES: Record<string, number> = {
     Edge: 6,
     Intel: 6,
     Heat: 6,
+    Progress: 5,
 }
 
 type ResourceState = {
@@ -23,6 +24,8 @@ const useResourceStore = create<ResourceState>((set, get) => ({
         Edge: 0,
         Intel: 0,
         Heat: 0,
+        Days: 1,
+        Progress: 0,
     },
     setResources: (newResources) => {
         set((state) => {
@@ -57,10 +60,9 @@ const useResourceStore = create<ResourceState>((set, get) => ({
     },
     isEmptyStore: () => {
         const resources = get().resources
-        const total = Object.values(resources).reduce(
-            (sum, value) => sum + value,
-            0
-        )
+        const { Days, ...rest } = resources
+        const total = Object.values(rest).reduce((sum, value) => sum + value, 0)
+        
         return total === 0
     },
 }))

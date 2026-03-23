@@ -7,8 +7,8 @@ const MissionPerformance: MissionPerformancesType[] = [
         level: 'Exceptional',
         resources: {
             Nuyen: +15,
+            Progress: +1,
             Edge: +1,
-            Progress: +2
         },
     },
     {
@@ -17,7 +17,6 @@ const MissionPerformance: MissionPerformancesType[] = [
         level: 'Impressive',
         resources: {
             Nuyen: +10,
-            Edge: +1,
             Progress: +1
         },
     },

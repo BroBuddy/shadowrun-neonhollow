@@ -6,10 +6,12 @@ import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { getEventById } from '@/feature/event/eventData'
 import { Event } from '@/feature/event/EventType'
 import EventDetail from '@/feature/event/pages/EventDetail'
+import useResourceStore from '@/feature/resource/store/resourceStore'
 import { rollDice } from '@/lib/helper'
 import { useState } from 'react'
 
 function Midnight() {
+    const modifyResources = useResourceStore((state) => state.modifyResources)
     const [randomEvent, setRandomEvent] = useState<Event | null>(null)
     const resetTemporaryAttributes = useAttributeStore(
         (state) => state.resetTemporaryAttributes
@@ -79,17 +81,21 @@ function Midnight() {
                     <li>
                         Reset
                         <span className="mx-1">&#8594;</span>
-                        <a
-                            className="cursor-pointer"
+                        <span
+                            className="font-bold highlight cursor-pointer"
                             onClick={resetTemporaryAttributes}
                         >
                             Temporary Attributes
-                        </a>
+                        </span>
                     </li>
 
                     <li>
                         Increase
-                        <span className="mx-1">&#8594;</span> Day counter by 1
+                        <span className="mx-1">&#8594;</span>
+                        <span className='font-bold highlight cursor-pointer'
+                            onClick={() => modifyResources({ Days: 1 })}>
+                                Day counter
+                            </span>
                     </li>
                 </ol>
 

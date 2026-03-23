@@ -22,6 +22,7 @@ const facilityData: Facility[] = [
                     },
                     {
                         text: '+2 Progress',
+                        resource: { Progress: +2 }
                     },
                 ],
             },
@@ -38,6 +39,7 @@ const facilityData: Facility[] = [
                     },
                     {
                         text: '+2 Progress',
+                        resource: { Progress: +2 }
                     },
                 ],
             },
