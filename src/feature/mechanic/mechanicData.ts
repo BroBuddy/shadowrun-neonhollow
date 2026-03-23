@@ -112,10 +112,12 @@ const mechanicData: Mechanic[] = [
         title: 'Player Sheet',
         description: 'Which values do you need to track? Check the list below:',
         list: [
-            'Time: Track days (0–6) and hours (0–6)',
-            'Health & Energy: Each ranges from 0 to 10',
-            'Edge & Intel : Each ranges from 0 to 6',
-            'Heat: Ranges from 0 to 6',
+            'Days: Track your progress through time',
+            'Progress: Measure how close you are to your objective',
+            'Time (optional): Track hours within a day',
+            'Health & Energy (optional): Each ranges from 0 to 10',
+            'Edge & Intel (optional): Each ranges from 0 to 6',
+            'Heat (optional): Ranges from 0 to 6',
         ],
     },
 ]
