@@ -1,10 +1,7 @@
-import { Link } from 'react-router-dom'
 import Card from '../components/Card'
 import Headline from '@/components/Headline'
 import MechanicView from '../feature/mechanic/components/MechanicView'
 import { useColorScheme } from '@/context/useColorScheme'
-import ModeView from '@/feature/character/components/ModeView'
-import PopUp from '@/components/Popup'
 
 const Rules = () => {
     const { toggleColorScheme } = useColorScheme()
