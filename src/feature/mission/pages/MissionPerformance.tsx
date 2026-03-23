@@ -1,8 +1,8 @@
 import {
     MissionEffect,
     MissionPerformance as MissionPerformanceType,
-} from '../MissionType'
-import { getMissionPerformance } from '../performanceData'
+} from '../types/MissionType'
+import { getMissionPerformance } from '../data/performanceData'
 import { useMemo } from 'react'
 import EffectView from '../components/EffectView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
@@ -33,6 +33,7 @@ function MissionPerformance() {
                         <strong className="highlight">{item.title}</strong>{' '}
                         &#8594; {item.level}
                     </p>
+                    
                     <ul className="list-margin">
                         {item.resources &&
                             Object.entries(item.resources).map(

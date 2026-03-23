@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { MissionEffect } from '../MissionType'
+import { MissionEffect } from '../types/MissionType'
 
 type MissionEffectProps = {
     effect: MissionEffect

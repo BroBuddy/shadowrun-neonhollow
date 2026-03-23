@@ -2,8 +2,7 @@ import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
 const Mission = React.lazy(() => import('./pages/Mission'))
-const MissionDetail = React.lazy(() => import('./pages/MissionDetail'))
-const MissionRules = React.lazy(() => import('./pages/MissionRules'))
+const ExtractionDetail = React.lazy(() => import('./pages/MissionDetail'))
 
 const MissionRouter = [
     {
@@ -18,18 +17,10 @@ const MissionRouter = [
                 ),
             },
             {
-                path: 'rules',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <MissionRules />
-                    </Suspense>
-                ),
-            },
-            {
                 path: ':id',
                 element: (
                     <Suspense fallback={<Preloader />}>
-                        <MissionDetail />
+                        <ExtractionDetail />
                     </Suspense>
                 ),
             },

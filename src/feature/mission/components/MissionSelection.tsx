@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { Mission as MissionType } from '../MissionType'
 import Card from '@/components/Card'
-import { getMissionData } from '../missionData'
+import { getMissionData } from '../data/runData'
+import { MissionType } from '../types/MissionType'
 
-const MissionTypes = () => {
+const MissionSelection = () => {
     const missionData = getMissionData()
 
     if (!missionData || missionData.length === 0) {
@@ -15,11 +15,12 @@ const MissionTypes = () => {
             <p>
                 <strong>Select a Run:</strong>
             </p>
+
             <ul className="list-margin">
                 {missionData.map((item: MissionType, index: number) => (
                     <li key={index}>
                         <Link to={`/mission/${item.id}`}>{item.title}:</Link>
-                        <span className="mx-1">(Focus: {item.attributes})</span>
+                        <span className="mx-1">(Focus: {item.focus})</span>
                     </li>
                 ))}
             </ul>
@@ -27,4 +28,4 @@ const MissionTypes = () => {
     )
 }
 
-export default MissionTypes
+export default MissionSelection

@@ -1,54 +1,38 @@
-import PopUp from '@/components/Popup'
-import InRow from '@/components/InRow'
-import Dice from '@/components/Dice'
-import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
-import MissionRules from '../pages/MissionRules'
 import Card from '@/components/Card'
-import useResourceStore from '@/feature/resource/store/resourceStore'
 
 const MissionInstruction = () => {
-    const modifyResources = useResourceStore((state) => state.modifyResources)
 
-    const handleStepClick = (resourceChange?: Record<string, number>) => {
-        if (resourceChange) {
-            modifyResources(resourceChange)
-        }
-    }
     return (
         <Card>
             <div className="mb-4">
-                Before your run begins
-                <span className="mx-1">&#8594;</span>
-                <PopUp title="Mission Rules">
-                    <MissionRules />
-                </PopUp>
+                <p>
+                    <strong className="highlight">Mission Rules:</strong>
+                </p>
+                
+                <ul className="list-margin">
+                    <li>
+                        Each run can only be completed once per day.
+                    </li>
+                    <li>
+                        Each run has 6 steps. Every step reveals a random event.
+                    </li>
+                    <li>
+                        Roll 1D6 to determine the difficulty. DC 8, 10 or 12.
+                    </li>
+                    <li>
+                        Roll 2D6 and add your chosen attribute. Meet or beat the DC to succeed.
+                    </li>
+                    <li>
+                        The final step is always a twist with a fixed DC 12.
+                    </li>
+                    <li>
+                        Each success adds +1 Performance, each failure -1.
+                    </li>
+                    <li>
+                        Your final Performance determines your reward.
+                    </li>
+                </ul>
             </div>
-            <p>
-                <strong>Negotiate hazard pay:</strong>
-            </p>
-            <ol className="list-margin">
-                <li>
-                    <a
-                        className="cursor-pointer"
-                        onClick={() => handleStepClick({ Intel: -3 })}
-                    >
-                        Spend 3 Intel
-                    </a>
-                </li>
-                <li>
-                    <InRow>
-                        <span>Roll</span>
-                        <Dice dice={2} />
-                        <span>+ Charisma</span>
-                    </InRow>
-                </li>
-                <li>
-                    <PopUp title="Gain Nuyen">
-                        <ResourceDetail tag="nuyen" />
-                    </PopUp>
-                </li>
-                <li>Run the Shadows</li>
-            </ol>
         </Card>
     )
 }

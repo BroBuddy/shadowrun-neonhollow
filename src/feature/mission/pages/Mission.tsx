@@ -1,6 +1,6 @@
 import Headline from '@/components/Headline'
 import MissionInstruction from '../components/MissionInstruction'
-import MissionTypes from '../components/MissionTypes'
+import MissionSelection from '../components/MissionSelection'
 import MissionHeader from '../components/MissionHeader'
 
 function Mission() {
@@ -9,7 +9,7 @@ function Mission() {
             <Headline>Mr. Johnson</Headline>
             <MissionHeader />
             <MissionInstruction />
-            <MissionTypes />
+            <MissionSelection />
         </>
     )
 }

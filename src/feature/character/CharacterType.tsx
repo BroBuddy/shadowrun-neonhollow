@@ -18,6 +18,7 @@ type Resources = {
     Edge?: number
     Intel?: number
     Heat?: number
+    Progress?: number
 }
 
 export type { Equipment, Mode, Resources }

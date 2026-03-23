@@ -7,6 +7,7 @@ const MissionHeader = () => {
                 <div className="flex-1 basis-2/5">
                     <img src="/images/MrJohnson.jpg" alt="MrJohnson" />
                 </div>
+                
                 <div className="flex-1 basis-3/5">
                     <p>
                         <em>
