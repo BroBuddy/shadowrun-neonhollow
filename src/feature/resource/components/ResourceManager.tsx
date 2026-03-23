@@ -20,9 +20,9 @@ const ResourceManager = () => {
     }
 
     return (
-        <>
+        <div className="grid grid-cols-8 w-full">
             {Object.entries(resources).map(([key, value]) => (
-                <div key={key} className="w-1/6 text-center p-1">
+                <div key={key} className="text-center py-1">
                     <div className="mb-1 text-xs">
                         <strong className="highlight mr-1">
                             {resourceIcons[key]}
@@ -31,7 +31,7 @@ const ResourceManager = () => {
                     </div>
                 </div>
             ))}
-        </>
+        </div>
     )
 }
 

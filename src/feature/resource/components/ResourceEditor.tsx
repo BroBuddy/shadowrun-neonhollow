@@ -5,8 +5,8 @@ const ResourceEditor = () => {
     const resources = useResourceStore((state) => state.resources)
     const modifyResources = useResourceStore((state) => state.modifyResources)
     const resourceEntries = Object.entries(resources)
-    const leftResources = resourceEntries.slice(0, 3)
-    const rightResources = resourceEntries.slice(3, 6)
+    const leftResources = resourceEntries.slice(0, 4)
+    const rightResources = resourceEntries.slice(4, 8)
 
     const handleModify = (resource: string, value: number) => {
         modifyResources({ [resource]: value })
