@@ -48,7 +48,7 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
 
                                 <p>{event.description}</p>
 
-                                {!event.autoSuccess && (
+                                {isActive && !event.autoSuccess && (
                                     <>
                                         <ObstacleRoll />
 
