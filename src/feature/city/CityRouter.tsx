@@ -4,6 +4,7 @@ import React, { Suspense } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 
 const City = React.lazy(() => import('./pages/City'))
+const MegaCorp = React.lazy(() => import('./pages/MegaCorp'))
 const CityDetail = React.lazy(() => import('./pages/CityDetail'))
 
 import('./pages/City')
@@ -19,6 +20,16 @@ const CityRouter = [
                     <ErrorBoundary fallback={<Error />}>
                         <Suspense fallback={<Preloader />}>
                             <City />
+                        </Suspense>
+                    </ErrorBoundary>
+                ),
+            },
+            {
+                path: 'megacorp',
+                element: (
+                    <ErrorBoundary fallback={<Error />}>
+                        <Suspense fallback={<Preloader />}>
+                            <MegaCorp />
                         </Suspense>
                     </ErrorBoundary>
                 ),
