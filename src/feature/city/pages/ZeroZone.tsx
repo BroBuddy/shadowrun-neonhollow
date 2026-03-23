@@ -70,7 +70,7 @@ function ZeroZone() {
                     <li>Lost? <span>&#8594;</span> Lose Health equal to the gap</li>
                     <li>Won? <span>&#8594;</span> 
                         <span className='font-bold highlight cursor-pointer'
-                            onClick={() => handleModify('Nuyen', 10)}>Gain 10k Nuyen</span>
+                            onClick={() => handleModify('Nuyen', 15)}>Gain 15k Nuyen</span>
                     </li>
                 </ul>
             </Card>
