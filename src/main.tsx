@@ -20,17 +20,11 @@ const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
     Rules: React.lazy(() => import('./pages/Rules')),
     Midnight: React.lazy(() => import('./pages/Midnight')),
-    WellDone: React.lazy(() => import('./pages/WellDone')),
-    OverwhelminglyGreat: React.lazy(
-        () => import('./pages/OverwhelminglyGreat')
-    ),
 }
 
 import('./pages/Welcome')
 import('./pages/Rules')
 import('./pages/Midnight')
-import('./pages/WellDone')
-import('./pages/OverwhelminglyGreat')
 
 const router = createBrowserRouter([
     {
@@ -63,22 +57,6 @@ const router = createBrowserRouter([
                 element: (
                     <Suspense fallback={<Preloader />}>
                         <Pages.Midnight />
-                    </Suspense>
-                ),
-            },
-            {
-                path: '/welldone',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Pages.WellDone />
-                    </Suspense>
-                ),
-            },
-            {
-                path: '/overwhelminglygreat',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Pages.OverwhelminglyGreat />
                     </Suspense>
                 ),
             },

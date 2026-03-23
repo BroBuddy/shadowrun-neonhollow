@@ -10,28 +10,28 @@ type Text = {
 
 const fadeTextData: Text[] = [
     { text: '[SYSTEM BOOTING…]', delay: 0 },
-    { text: '[SIGNAL TRACE INITIATED…]', delay: 1500 },
-    { text: '[CONNECTION ATTEMPT: FAILED]', delay: 3000 },
-    { text: '"We need more power, chummer."', delay: 4500, italic: true },
-    { text: '[RETRYING…]', delay: 6500 },
-    { text: '"Here we go. Welcome to NeonHollow."', delay: 8000, italic: true },
+    { text: '[SIGNAL TRACE INITIATED…]', delay: 1000 },
+    { text: '[CONNECTION ATTEMPT: FAILED]', delay: 2000 },
+    { text: '"We need more power, chummer."', delay: 3000, italic: true },
+    { text: '[RETRYING…]', delay: 4000 },
+    { text: '"Here we go. Welcome to NeonHollow."', delay: 5000, italic: true },
     {
-        text: '"You are inside a controlled simulation. A test—crafted by rogue deckers and ex-corp AIs. Every sight, every sound, every action—engineered to measure your limits."',
-        delay: 10000,
+        text: '"You are inside a controlled simulation. Prove you belong."',
+        delay: 6000,
         italic: true,
     },
     {
-        text: '"The megacorp thinks it owns you. The simulation says otherwise. Prove you belong. Survive the trials. Make your mark."',
-        delay: 13000,
+        text: '"Survive the trials."',
+        delay: 7000,
         italic: true,
     },
     {
-        text: '"NeonHollow waits. Step in. Rewrite the script."',
-        delay: 16000,
+        text: '"The megacorp thinks it owns you. Show them otherwise."',
+        delay: 8000,
         italic: true,
     },
-    { text: '[SYSTEM SYNC COMPLETE]', delay: 17500 },
-    { text: '[BEGIN SIMULATION]', delay: 19000, link: '/rules' },
+    { text: '[SYSTEM SYNC COMPLETE]', delay: 9000 },
+    { text: '[BEGIN SIMULATION]', delay: 10000, link: '/rules' },
 ]
 
 function Welcome() {
