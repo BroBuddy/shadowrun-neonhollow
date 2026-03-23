@@ -12,20 +12,32 @@ const facilityData: Facility[] = [
             {
                 title: '🚷 Incite Rebellion:',
                 steps: [
-                    { text: 'Spend 5 Edge', resource: { Edge: -5 } },
-                    { text: '+3 Heat', resource: { Heat: +3 } },
+                    {
+                        text: 'Spend 3 Edge',
+                        resource: { Edge: -3 }
+                    },
+                    {
+                        text: '+3 Heat',
+                        resource: { Heat: +3 }
+                    },
+                    {
+                        text: '+2 Progress',
+                    },
                 ],
             },
             {
                 title: '📢 Propaganda Campaign:',
                 steps: [
                     {
-                        text: 'Pay 30.000 ¥',
-                        resource: { Nuyen: -30 },
+                        text: 'Pay 20.000 ¥',
+                        resource: { Nuyen: -20 },
                     },
                     {
                         text: '+3 Heat',
                         resource: { Heat: +3 },
+                    },
+                    {
+                        text: '+2 Progress',
                     },
                 ],
             },
@@ -237,7 +249,7 @@ const facilityData: Facility[] = [
             {
                 title: '💰 Gambling Table:',
                 steps: [
-                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
+                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
                     { text: 'Roll 2d6 + Reaction or Charisma' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
@@ -245,7 +257,7 @@ const facilityData: Facility[] = [
             {
                 title: '💡 Pay the Insider:',
                 steps: [
-                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
+                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
                     { text: 'Roll 2d6 + Intuition or Charisma' },
                     { text: 'Gain Intel', tag: 'intel' },
                 ],
