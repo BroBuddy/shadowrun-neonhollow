@@ -42,11 +42,11 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                             <FadeIn>
                                 <p>
                                     <strong className="highlight">
-                                        {index + 1}. {step.name}: {event.title}
+                                        {event.title}
                                     </strong>
-                                    <br />
-                                    {event.description}
                                 </p>
+
+                                <p>{event.description}</p>
 
                                 {!event.autoSuccess && (
                                     <>
