@@ -17,7 +17,7 @@ type Resources = {
     Energy?: number
     Edge?: number
     Intel?: number
-    Heat?: number
+    Noto?: number
     Progress?: number
 }
 

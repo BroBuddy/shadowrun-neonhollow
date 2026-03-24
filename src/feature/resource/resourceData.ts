@@ -9,14 +9,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                     Nuyen: +3,
                 },
             },
@@ -42,14 +42,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                     Health: +2,
                 },
             },
@@ -93,14 +93,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                     Energy: +2,
                 },
             },
@@ -144,14 +144,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                 },
             },
             {
@@ -187,42 +187,42 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'heat',
-        title: 'Reduce Heat',
+        tag: 'Noto',
+        title: 'Reduce Noto',
         rollList: [
             {
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                 },
             },
             {
                 range: '9-11',
                 result: 'Standard',
                 resources: {
-                    Heat: -1,
+                    Noto: -1,
                 },
             },
             {
                 range: '12-14',
                 result: 'Good',
                 resources: {
-                    Heat: -2,
+                    Noto: -2,
                 },
             },
             {
                 range: '15-17',
                 result: 'Great',
                 resources: {
-                    Heat: -2,
+                    Noto: -2,
                     Edge: +1,
                 },
             },
@@ -230,7 +230,7 @@ export const resourceData: Resource[] = [
                 range: '18+',
                 result: 'Exceptional',
                 resources: {
-                    Heat: -3,
+                    Noto: -3,
                     Edge: +2,
                 },
             },
@@ -244,14 +244,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                 },
                 effects: ['+1 Attribute Temporary'],
             },
@@ -291,14 +291,14 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Critical Failure',
                 resources: {
-                    Heat: +2,
+                    Noto: +2,
                 },
             },
             {
                 range: '6-8',
                 result: 'Failure',
                 resources: {
-                    Heat: +1,
+                    Noto: +1,
                 },
             },
             {

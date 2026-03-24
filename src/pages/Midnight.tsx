@@ -75,7 +75,7 @@ function Midnight() {
                     </li>
 
                     <li>
-                        Lose <strong>Health</strong> and <strong>Energy</strong> equal to half your current <strong>Heat</strong> level, rounded down.
+                        Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current <strong>Noto</strong> level.
                     </li>
 
                     <li>

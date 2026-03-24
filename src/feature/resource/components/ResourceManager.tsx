@@ -6,7 +6,7 @@ const resourceIcons: Record<string, string> = {
     Energy: '🔋',
     Edge: '⭐',
     Intel: '💡',
-    Heat: '🔥', 
+    Noto: '👁️', 
     Days: '🕒',
 }
 
@@ -27,7 +27,7 @@ const ResourceManager = () => {
                         <strong className="highlight mr-1">
                             {resourceIcons[key]}
                         </strong>
-                        
+
                         <span>{key === 'Nuyen' ? `${value}k` : value}</span>
                     </div>
                 </div>

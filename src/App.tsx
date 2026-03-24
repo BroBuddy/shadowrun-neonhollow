@@ -14,9 +14,11 @@ function App() {
     }, [location.pathname])
 
     return (
-        <div className={isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
+        <div className={ isDefaultMode ? 'turquoise-mode' : 'violet-mode'}>
             <Header />
-            <Outlet />
+            <div className="pt-3">
+                <Outlet />
+            </div>
             <Footer />
         </div>
     )

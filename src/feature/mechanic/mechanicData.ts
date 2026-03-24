@@ -22,7 +22,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Roll 1d6 for a result between 1 and 6.',
             'Roll 2d6 to add results together.',
-            'Rolling double ones escalate the heat level by one.',
+            'Rolling double ones escalate the Noto level by one.',
             'Rolling double sixes rewards you with 1 Intel.',
         ],
     },
@@ -56,7 +56,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Health ranges from 0 to 10 and cannot exceed these limits.',
             'If Health reaches 0, the game is over.',
-            'At Midnight, lose Health equal to half your current Heat level.',
+            'At Midnight, lose Health equal to your current Noto level.',
             'Restored at: VitalClinic, IronGym, SafeHouse.',
         ],
     },
@@ -68,7 +68,7 @@ const mechanicData: Mechanic[] = [
         list: [
             'Energy ranges from 0 to 10 and cannot exceed these limits.',
             'Each point below 0 costs 1 Health point.',
-            'At Midnight, lose Energy equal to half your current Heat level.',
+            'At Midnight, lose Energy equal to your current Noto level.',
             'Restored at: DreamHaven, CyberLab, EchoGarden.',
         ],
     },
@@ -96,14 +96,14 @@ const mechanicData: Mechanic[] = [
         ],
     },
     {
-        tag: 'heat',
-        title: '🔥 Heat',
+        tag: 'Noto',
+        title: '👁️ Noto (Notoriety)',
         description:
-            'The hotter you burn, the harder they hunt.',
+            'The more they know your name, the harder they hunt.',
         list: [
-            'Heat ranges from 0 to 6 and cannot exceed these limits.',
-            'At Midnight, lose Health and Energy each equal to half your Heat level.',
-            'More Heat locks down districts and restricts access to locations.',
+            'Noto ranges from 0 to 3 and cannot exceed these limits.',
+            'At Midnight, lose Health and Energy equal to your current Noto level.',
+            'More Noto locks down districts and restricts access to locations.',
             'Reduced at: SecurityHub, EchoGarden, SafeHouse.',
         ],
     },

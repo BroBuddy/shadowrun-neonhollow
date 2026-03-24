@@ -4,7 +4,7 @@ const cityData: District[] = [
     {
         id: 1,
         name: 'Skyline',
-        heat: 2,
+        noto: 1,
         icon: '🔴',
         facilities: [
             {
@@ -24,7 +24,7 @@ const cityData: District[] = [
     {
         id: 2,
         name: 'Central',
-        heat: 4,
+        noto: 2,
         icon: '🟠',
         facilities: [
             {
@@ -44,7 +44,7 @@ const cityData: District[] = [
     {
         id: 3,
         name: 'Quarter',
-        heat: 6,
+        noto: 3,
         icon: '🟡',
         facilities: [
             {
@@ -64,7 +64,7 @@ const cityData: District[] = [
     {
         id: 4,
         name: 'Depths',
-        heat: 8,
+        noto: 4,
         icon: '🟢',
         facilities: [
             {

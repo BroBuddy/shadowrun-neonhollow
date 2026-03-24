@@ -23,7 +23,7 @@ const eventOnes: readonly Event[] = [
                 description:
                     'Navigate the chaos and avoid hazards in the dark.',
                 success: { text: '+2 Energy', resource: { Energy: +2 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -49,7 +49,7 @@ const eventOnes: readonly Event[] = [
                 description:
                     'Dodge debris and gunfire while escaping the scene.',
                 success: { text: '+2 Energy', resource: { Energy: +2 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -65,8 +65,8 @@ const eventOnes: readonly Event[] = [
                 dc: 10,
                 description:
                     'Convince officials you’re just a harmless citizen.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Logic',
@@ -113,7 +113,7 @@ const eventOnes: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description: 'Slip through the crowds unnoticed and unharmed.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -138,7 +138,7 @@ const eventOnes: readonly Event[] = [
                 dc: 10,
                 description: 'Locate the source and capture valuable files.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Charisma',
@@ -165,8 +165,8 @@ const eventTwos: readonly Event[] = [
                 dc: 8,
                 description:
                     "Evade malfunctioning drones before you're tagged.",
-                success: { text: '-2 Heat', resource: { Heat: -2 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-2 Noto', resource: { Noto: -2 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Logic',
@@ -216,7 +216,7 @@ const eventTwos: readonly Event[] = [
                 description:
                     'Dash in, grab goods, and escape before backup arrives.',
                 success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Charisma',
@@ -273,7 +273,7 @@ const eventTwos: readonly Event[] = [
                 dc: 10,
                 description: 'Predict the courier’s next location.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -297,7 +297,7 @@ const eventTwos: readonly Event[] = [
                 dc: 8,
                 description: 'Piece together what the prophet truly knows.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -325,7 +325,7 @@ const eventThrees: readonly Event[] = [
                 dc: 8,
                 description:
                     'Slip between crossfire and vanish into the shadows.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -342,7 +342,7 @@ const eventThrees: readonly Event[] = [
                 dc: 10,
                 description: 'Decode the stream before it gets scrubbed.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Intuition',
@@ -366,7 +366,7 @@ const eventThrees: readonly Event[] = [
                 dc: 10,
                 description: 'Blend in with the crowd and fake a corp ID.',
                 success: { text: '+1 Edge', resource: { Edge: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Reaction',
@@ -418,7 +418,7 @@ const eventThrees: readonly Event[] = [
                 description:
                     'Quickly recover the container before corp drones arrive.',
                 success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Intuition',
@@ -443,7 +443,7 @@ const eventThrees: readonly Event[] = [
                 description:
                     'Interface with the terminal and pull data before it fades.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Charisma',
@@ -470,8 +470,8 @@ const eventFours: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Reprogram a med-drone to scan and clear you.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Agility',
@@ -504,7 +504,7 @@ const eventFours: readonly Event[] = [
                 dc: 12,
                 description: 'Track the origin of the false feed.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -553,8 +553,8 @@ const eventFours: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description: 'Notice the hidden ambush and slip out early.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -604,7 +604,7 @@ const eventFours: readonly Event[] = [
                 dc: 10,
                 description: 'Outrun competitors and reach the cache first.',
                 success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -632,8 +632,8 @@ const eventFives: readonly Event[] = [
                 dc: 12,
                 description:
                     "Track the team's movements and sabotage their plan.",
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -657,8 +657,8 @@ const eventFives: readonly Event[] = [
                 dc: 10,
                 description:
                     'Hack into their systems and disable riot controls.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -809,8 +809,8 @@ const eventSixes: readonly Event[] = [
                 dc: 12,
                 description:
                     'Hack the AI to shut it down before it causes more damage.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -835,8 +835,8 @@ const eventSixes: readonly Event[] = [
                 dc: 8,
                 description:
                     'Use diplomacy to calm the gangs and stop the violence.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+2 Heat', resource: { Heat: +2 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+2 Noto', resource: { Noto: +2 } },
             },
         ],
     },
@@ -909,8 +909,8 @@ const eventSixes: readonly Event[] = [
                 dc: 10,
                 description:
                     'Rally people to stay calm and follow safety procedures.',
-                success: { text: '-1 Heat', resource: { Heat: -1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                success: { text: '-1 Noto', resource: { Noto: -1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -942,7 +942,7 @@ const eventFacility: readonly Event[] = [
                 description:
                     'Spot the hidden cause and anticipate the next failure point.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -961,7 +961,7 @@ const eventFacility: readonly Event[] = [
                     text: '+1 Temporary Strength',
                     resource: { Strength: +1 },
                 },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Charisma',
@@ -970,7 +970,7 @@ const eventFacility: readonly Event[] = [
                 description:
                     'Charm or persuade the officers to smooth over the situation.',
                 success: { text: '+1 Intel', resource: { Intel: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -999,7 +999,7 @@ const eventFacility: readonly Event[] = [
                 description:
                     'Move patients or assist with heavy equipment using strength.',
                 success: { text: '+1 Edge', resource: { Edge: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -1027,7 +1027,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description: 'Keep the device hidden or avoid suspicion.',
                 success: { text: '+1 Edge', resource: { Edge: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -1075,7 +1075,7 @@ const eventFacility: readonly Event[] = [
                     text: '+1 Temporary Charisma',
                     resource: { Charisma: +1 },
                 },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Intuition',
@@ -1111,7 +1111,7 @@ const eventFacility: readonly Event[] = [
                 description:
                     'Assist in freeing the person or avoid further danger.',
                 success: { text: '+1 Edge', resource: { Edge: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
@@ -1130,7 +1130,7 @@ const eventFacility: readonly Event[] = [
                     text: '+1 Temporary Agility',
                     resource: { Agility: +1 },
                 },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Logic',
@@ -1165,7 +1165,7 @@ const eventFacility: readonly Event[] = [
                 dc: 12,
                 description: 'Defuse tension and earn reluctant respect.',
                 success: { text: '+1 Edge', resource: { Edge: +1 } },
-                fail: { text: '+1 Heat', resource: { Heat: +1 } },
+                fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },

@@ -26,10 +26,12 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
                             District Lockdowns:
                         </strong>
                     </p>
+
                     {cityData.slice(0, 3).map((district) => (
                         <div key={district.name}>
-                            {district.icon} Heat {district.heat} →{' '}
-                            {district.name}
+                            {district.icon} {district.name}
+                            <span className='mx-1'>&#8594;</span>
+                            👁️ {district.noto}
                         </div>
                     ))}
                 </div>

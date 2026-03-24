@@ -5,7 +5,7 @@ const MAX_VALUES: Record<string, number> = {
     Energy: 10,
     Edge: 6,
     Intel: 6,
-    Heat: 6,
+    Noto: 3,
     Progress: 5,
 }
 
@@ -23,7 +23,7 @@ const useResourceStore = create<ResourceState>((set, get) => ({
         Energy: 0,
         Edge: 0,
         Intel: 0,
-        Heat: 0,
+        Noto: 0,
         Days: 1,
         Progress: 0,
     },

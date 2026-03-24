@@ -9,7 +9,9 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 
 function City() {
     const cityData = getCityData()   
-     const heat = useResourceStore((state) => state.resources.Heat)
+     const noto = useResourceStore((state) => state.resources.Noto)
+
+     console.log('noto', noto)
 
     const [openId, setOpenId] = useState<number | null>(
         cityData[cityData.length - 1]?.id ?? null
@@ -26,7 +28,7 @@ function City() {
 
             <Card>
                 {cityData.map((district: DistrictType) => {
-                    const isLocked = district.heat !== undefined && heat >= district.heat
+                    const isLocked = district.noto !== undefined && noto >= district.noto
 
                     return (
                         <DistrictView

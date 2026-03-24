@@ -17,8 +17,8 @@ const facilityData: Facility[] = [
                         resource: { Edge: -3 }
                     },
                     {
-                        text: '+3 Heat',
-                        resource: { Heat: +3 }
+                        text: '+3 Noto',
+                        resource: { Noto: +3 }
                     },
                     {
                         text: '+2 Progress',
@@ -34,8 +34,8 @@ const facilityData: Facility[] = [
                         resource: { Nuyen: -20 },
                     },
                     {
-                        text: '+3 Heat',
-                        resource: { Heat: +3 },
+                        text: '+3 Noto',
+                        resource: { Noto: +3 },
                     },
                     {
                         text: '+2 Progress',
@@ -55,8 +55,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'System Anomaly', id: '71' },
             {
                 roll: '3-4',
-                text: 'Illegal Trial → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Illegal Trial → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -119,8 +119,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Medical Malfunction', id: '73' },
             {
                 roll: '3-4',
-                text: 'Defiant Case → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Defiant Case → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -180,8 +180,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Security Check', id: '72' },
             {
                 roll: '3-4',
-                text: 'Security Breach → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Security Breach → +1 Noto',
+                resource: { Noto: +1 },
             },
             { roll: '5-6', text: 'Blamed → -1 Edge', resource: { Edge: -1 } },
             { roll: '7', text: 'Random Encounter' },
@@ -192,18 +192,18 @@ const facilityData: Facility[] = [
             },
             {
                 roll: '10-11',
-                text: 'Familiar Face → -1 Heat',
-                resource: { Heat: -1 },
+                text: 'Familiar Face → -1 Noto',
+                resource: { Noto: -1 },
             },
             { roll: '12', text: 'Access Granted → +1 Edge' },
         ],
         actionList: [
             {
-                title: '🔥 Quiet Bribe:',
+                title: '👁️ Quiet Bribe:',
                 steps: [
                     { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
                     { text: 'Roll 2d6 + Strength or Charisma + 2' },
-                    { text: 'Reduce Heat', tag: 'heat' },
+                    { text: 'Reduce Noto', tag: 'Noto' },
                 ],
             },
             {
@@ -226,8 +226,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'The Whisper Network', id: '76' },
             {
                 roll: '3-4',
-                text: 'Drunk and Disorderly → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Drunk and Disorderly → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -287,8 +287,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Dream Glitch', id: '75' },
             {
                 roll: '3-4',
-                text: 'Shady Moves → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Shady Moves → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -348,8 +348,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Lost Data', id: '74' },
             {
                 roll: '3-4',
-                text: 'Plant Harvest → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Plant Harvest → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -379,11 +379,11 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '🔥 Meditative Escape:',
+                title: '👁️ Meditative Escape:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
                     { text: 'Roll 2d6 + Reaction or Logic' },
-                    { text: 'Reduce Heat', tag: 'heat' },
+                    { text: 'Reduce Noto', tag: 'Noto' },
                 ],
             },
             {
@@ -409,8 +409,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Unplanned Challenge', id: '77' },
             {
                 roll: '3-4',
-                text: 'Wrong Locker Room → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Wrong Locker Room → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -470,8 +470,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Old Rival Spotted', id: '80' },
             {
                 roll: '3-4',
-                text: 'Corrupt Runner → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Corrupt Runner → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -529,8 +529,8 @@ const facilityData: Facility[] = [
             { roll: '2', text: 'Smuggler’s Test', id: '78' },
             {
                 roll: '3-4',
-                text: 'Police Raid → +1 Heat',
-                resource: { Heat: +1 },
+                text: 'Police Raid → +1 Noto',
+                resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
@@ -592,11 +592,11 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '🔥 False Credentials:',
+                title: '👁️ False Credentials:',
                 steps: [
                     { text: 'Pay 2.000 ¥', resource: { Nuyen: -2 } },
                     { text: 'Roll 2d6 + Agility or Charisma - 2' },
-                    { text: 'Reduce Heat', tag: 'heat' },
+                    { text: 'Reduce Noto', tag: 'Noto' },
                 ],
             },
         ],

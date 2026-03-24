@@ -33,7 +33,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟠 Performance -2',
         level: 'Underwhelming',
         resources: {
-            Heat: +1,
+            Noto: +1,
         },
     },
     {
@@ -41,7 +41,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🔴 Performance -4',
         level: 'Disastrous',
         resources: {
-            Heat: +2,
+            Noto: +2,
         },
     },
 ]
