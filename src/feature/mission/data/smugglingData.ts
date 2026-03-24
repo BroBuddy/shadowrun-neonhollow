@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const smugglingRun: Mission = {
     id: '3',
     title: 'Smuggling',
-    focus: 'Reaction, Strength',
+    focus: 'REA, STR',
+    description: 'Move illegal cargo through hostile territory.',
     client: 'Juno Voss',
     location: 'NeonHollow',
     briefing: 'A high-value shipment needs to move across the city undetected. Pick it up, keep it safe, and deliver it to the drop point. No questions asked.',

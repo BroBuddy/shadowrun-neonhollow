@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const sabotageRun: Mission = {
     id: '4',
     title: 'Sabotage',
-    focus: 'Logic, Intuition',
+    focus: 'LOG, INT',
+    description: 'Break systems. Cripple operations.',
     client: 'Rook Everhart',
     location: 'MegaCorp',
     briefing: 'A critical MegaCorp facility needs to go dark. Get inside, identify the target systems, plant the payload, and trigger it before anyone knows you were there.',

@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const extractionRun: Mission = {
     id: '1',
     title: 'Extraction',
-    focus: 'Strength, Agility',
+    focus: 'STR, AGI',
+    description: 'Get in, grab the asset, get out.',
     client: 'Dax Mercer',
     location: 'MegaCorp',
     briefing: 'A valuable asset is being held inside a MegaCorp compound. Get in, locate the target, and bring them out alive. Do not leave a trail.',

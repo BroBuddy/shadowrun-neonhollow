@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const infiltrationRun: Mission = {
     id: '6',
     title: 'Infiltration',
-    focus: 'Charisma, Logic',
+    focus: 'CHA, LOG',
+    description: 'Walk in like you belong. Leave before they know.',
     client: 'Veyna Strix',
     location: 'MegaCorp',
     briefing: 'MegaCorp\'s inner circle is meeting. Get inside as one of them, move through their world without raising suspicion, complete the objective, and walk out the front door.',

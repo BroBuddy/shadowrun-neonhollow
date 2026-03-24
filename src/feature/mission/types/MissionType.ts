@@ -35,13 +35,14 @@ type Mission = {
     id: string;
     title: string;
     focus: string;
+    description: string;
     client: string;
     location: string;
     briefing: string;
     steps: MissionStep[];
 }
 
-type MissionType = Pick<Mission, 'id' | 'title' | 'focus'>
+type MissionType = Pick<Mission, 'id' | 'title' | 'focus' | 'description'>
 
 type MissionEffect = {
     description: string

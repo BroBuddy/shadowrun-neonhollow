@@ -16,8 +16,7 @@ const MrJohnson = () => {
                         <p>
                             <em>
                                 "Mr. Johnson—the polished voice of the shadows.
-                                Deals are made, trust is tested, and the job always
-                                pays… for those who survive."
+                                He never asks twice. The job pays… if you make it back."
                             </em>
                         </p>
                     </div>

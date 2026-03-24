@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const assassinationRun: Mission = {
     id: '2',
     title: 'Assassination',
-    focus: 'Agility, Reaction',
+    focus: 'AGI, REA',
+    description: 'One target. No witnesses. No mistakes.',
     client: 'Nyx Holloway',
     location: 'MegaCorp',
     briefing: 'A high-value target moves through the city under heavy protection. Get close, take the shot, and vanish before anyone knows what happened.',

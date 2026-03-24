@@ -15,11 +15,12 @@ const missionData: Mission[] = [
     infiltrationRun
 ];
 
-const getMissionData = (): Pick<Mission, 'id' | 'title' | 'focus'>[] => {
-    return missionData.map(({ id, title, focus }) => ({
+const getMissionData = (): Pick<Mission, 'id' | 'title' | 'focus' | 'description'>[] => {
+    return missionData.map(({ id, title, focus, description }) => ({
         id,
         title,
         focus,
+        description,
     }))
 }
 

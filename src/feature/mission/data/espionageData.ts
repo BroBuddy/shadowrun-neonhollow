@@ -3,7 +3,8 @@ import { Mission } from "../types/MissionType";
 export const espionageRun: Mission = {
     id: '5',
     title: 'Espionage',
-    focus: 'Intuition, Charisma',
+    focus: 'INT, CHA',
+    description: 'Steal secrets without leaving a trace.',
     client: 'Liora Black',
     location: 'MegaCorp',
     briefing: 'MegaCorp is sitting on intelligence that could change everything. Get inside, get close to the right people, extract the information, and walk out without anyone knowing you were ever there.',

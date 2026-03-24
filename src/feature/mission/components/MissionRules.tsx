@@ -7,10 +7,10 @@ const MissionRules = () => {
         <Card>
             <div className="mb-4">
                 <p>
-                    <strong>Know your Business:</strong>
+                    <strong>Do Your Homework:</strong>
                 </p>
 
-                <p>Before you commit to a run, know what you're walking into.</p>
+                <p>Before you take the contract, understand the risks. Every run has a cost and the corps always push back.</p>
 
                 <span className='mr-1'>&#8594;</span>
 
