@@ -34,12 +34,8 @@ function MissionDetail() {
 
     const [stepStates, setStepStates] = useState<StepState[]>(preRolledSteps)
     const [missionProgress, setMissionProgress] = useState<number>(1)
-
-    const performanceScore = stepStates.reduce((acc, s) => {
-        if (s.result === 'success') return acc + 1
-        if (s.result === 'failure') return acc - 1
-        return acc
-    }, 0)
+    const successCount = stepStates.filter(s => s.result === 'success').length
+    const totalSteps = stepStates.length
 
     const handleNext = (currentIndex: number) => {
         setMissionProgress(currentIndex + 1)
@@ -79,7 +75,7 @@ function MissionDetail() {
             />
 
             {missionProgress > 6 && (
-                <MissionPerformance score={performanceScore} />
+                <MissionPerformance successes={successCount} total={totalSteps} />
             )}
         </>
     )

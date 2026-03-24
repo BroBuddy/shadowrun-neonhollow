@@ -79,7 +79,7 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                                         onClick={() => onSuccess(index)}
                                     >
                                         <span className="mx-1">✅</span>
-                                        <span className="font-bold">+1 Performance</span>
+                                        <span className="font-bold">Success</span>
                                     </p>
                                 )}
 
@@ -90,14 +90,14 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                                             onClick={() => onSuccess(index)}
                                         >
                                             <span className="mx-1">✅</span>
-                                            <span className="font-bold">+1 Performance</span>
+                                            <span className="font-bold">Success</span>
                                         </p>
                                         <p
                                             className="mt-3 mb-1 cursor-pointer highlight"
                                             onClick={() => onFailure(index)}
                                         >
                                             <span className="mx-1">❌</span>
-                                            <span className="font-bold">-1 Performance</span>
+                                            <span className="font-bold">Failure</span>
                                         </p>
                                     </InRow>
                                 )}

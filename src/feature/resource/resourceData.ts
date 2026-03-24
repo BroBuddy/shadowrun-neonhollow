@@ -8,18 +8,18 @@ export const resourceData: Resource[] = [
             {
                 range: '2-5',
                 result: 'Fragged',
-                resources: { Nuyen: -5 },
+                resources: { Nuyen: -4 },
             },
             {
                 range: '6-8',
                 result: 'Drek',
             },
-            { range: '9-11', result: 'Standard', resources: { Nuyen: +5 } },
-            { range: '12-14', result: 'Good', resources: { Nuyen: +10 } },
+            { range: '9-11', result: 'Standard', resources: { Nuyen: +4 } },
+            { range: '12-14', result: 'Good', resources: { Nuyen: +8 } },
             {
                 range: '15+',
                 result: 'Terminal',
-                resources: { Nuyen: +15, Edge: +1 },
+                resources: { Nuyen: +12, Edge: +1 },
             },
         ],
     },

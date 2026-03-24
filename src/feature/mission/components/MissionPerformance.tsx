@@ -11,16 +11,13 @@ import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
 
 type Props = {
-    score: number
+    successes: number
+    total: number
 }
 
-function MissionPerformance({ score }: Props) {
+function MissionPerformance({ successes, total }: Props) {
     const modifyResources = useResourceStore((state) => state.modifyResources)
     const missionPerformance = useMemo(() => getMissionPerformance(), [])
-
-    const display = score > 0 
-        ? `+${score}` 
-        : `${score}`
 
     const handleModifyResources = (resources?: Resources) => {
         if (resources) {
@@ -37,7 +34,7 @@ function MissionPerformance({ score }: Props) {
             <FadeIn>
                 <p>
                     <strong className="highlight">Mission Performance:</strong>
-                    <span className="px-2">{display}</span>
+                    <span className="px-2">{successes}/{total}</span>
                 </p>
 
                 <div className="mt-3">
