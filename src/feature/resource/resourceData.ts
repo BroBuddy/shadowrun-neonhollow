@@ -141,7 +141,7 @@ export const resourceData: Resource[] = [
         ],
     },
     {
-        tag: 'Noto',
+        tag: 'noto',
         title: 'Reduce Noto',
         rollList: [
             {
