@@ -13,7 +13,7 @@ const eventOnes: readonly Event[] = [
                 dc: 10,
                 description:
                     'Diagnose grid failures and reroute energy manually.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -73,7 +73,7 @@ const eventOnes: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description: 'Forge clean credentials on the fly.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
         ],
@@ -89,7 +89,7 @@ const eventOnes: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description: 'Identify a safe route through the visual chaos.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -130,14 +130,14 @@ const eventOnes: readonly Event[] = [
         id: '16',
         title: 'Data Leak',
         description:
-            'Confidential data floods the net. Fixers and runners scramble to secure valuable intel before it’s lost—or weaponized.',
+            'Confidential data floods the net. Fixers and runners scramble to secure valuable files before it’s lost—or weaponized.',
         skillChecks: [
             {
                 attribute: 'Intuition',
                 icon: '🧠',
                 dc: 10,
                 description: 'Locate the source and capture valuable files.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
@@ -173,7 +173,7 @@ const eventTwos: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Override a drone’s routine and redirect it.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -224,7 +224,7 @@ const eventTwos: readonly Event[] = [
                 dc: 8,
                 description:
                     'Convince raiders you’re part of the cleanup crew.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
         ],
@@ -240,7 +240,7 @@ const eventTwos: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Decode the pulse and stabilize your implant.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -257,7 +257,7 @@ const eventTwos: readonly Event[] = [
         id: '25',
         title: 'Rogue Courier',
         description:
-            'A rogue courier bot jets through alleys, rumored to carry valuable data chips or secret AI intel.',
+            'A rogue courier bot jets through alleys, rumored to carry valuable data chips or secret AI files.',
         skillChecks: [
             {
                 attribute: 'Reaction',
@@ -272,7 +272,7 @@ const eventTwos: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Predict the courier’s next location.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -296,7 +296,7 @@ const eventTwos: readonly Event[] = [
                 icon: '🧠',
                 dc: 8,
                 description: 'Piece together what the prophet truly knows.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -341,7 +341,7 @@ const eventThrees: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Decode the stream before it gets scrubbed.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
@@ -391,7 +391,7 @@ const eventThrees: readonly Event[] = [
                 dc: 10,
                 description:
                     'Ground your system and save your gear from frying.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -425,7 +425,7 @@ const eventThrees: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Scan for traps and avoid potential setup.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
         ],
@@ -442,7 +442,7 @@ const eventThrees: readonly Event[] = [
                 dc: 8,
                 description:
                     'Interface with the terminal and pull data before it fades.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
@@ -503,7 +503,7 @@ const eventFours: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description: 'Track the origin of the false feed.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -529,7 +529,7 @@ const eventFours: readonly Event[] = [
                 dc: 8,
                 description:
                     'Dodge falling wreckage and reach the scene first.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -570,7 +570,7 @@ const eventFours: readonly Event[] = [
                 dc: 12,
                 description:
                     'Patch the code manually before your implants fry.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -595,7 +595,7 @@ const eventFours: readonly Event[] = [
                 dc: 8,
                 description:
                     'Crack the encryption before rival runners catch on.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -623,7 +623,7 @@ const eventFives: readonly Event[] = [
                 dc: 10,
                 description:
                     'Convince a bystander to leak crucial information.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-1 Edge', resource: { Edge: -1 } },
             },
             {
@@ -681,8 +681,8 @@ const eventFives: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description:
-                    'Investigate for more intelligence on the official.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                    'Investigate for more karma on the official.',
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
         ],
@@ -730,7 +730,7 @@ const eventFives: readonly Event[] = [
                 icon: '💪',
                 dc: 12,
                 description: 'Dodge debris and move swiftly through the chaos.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
@@ -774,7 +774,7 @@ const eventSixes: readonly Event[] = [
                 dc: 12,
                 description:
                     'Investigate the cause of the blackout by accessing nearby systems.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -859,7 +859,7 @@ const eventSixes: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Investigate the scandal for leverage.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
         ],
@@ -900,7 +900,7 @@ const eventSixes: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description: 'Analyze the virus and create a makeshift cure.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -941,7 +941,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Spot the hidden cause and anticipate the next failure point.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -969,7 +969,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Charm or persuade the officers to smooth over the situation.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -1082,7 +1082,7 @@ const eventFacility: readonly Event[] = [
                 icon: '🧠',
                 dc: 10,
                 description: 'Spot subtle cues in the conversation.',
-                success: { text: '+1 Intel', resource: { Intel: +1 } },
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '-1 Energy', resource: { Energy: -1 } },
             },
         ],

@@ -39,7 +39,7 @@ function ResourceDetail({ tag }: ResourceDetailProps) {
                 data.rollList.map((item: ResourceRoll) => (
                     <div key={item.range}>
                         <>
-                            {getIcon(item.range)}{' '}
+                            {getIcon(item.result)}{' '}
                             <strong
                                 className="cursor-pointer highlight"
                                 onClick={() =>
@@ -60,7 +60,7 @@ function ResourceDetail({ tag }: ResourceDetailProps) {
                                         ) => (
                                             <li key={resourceIndex}>
                                                 {key === 'Nuyen'
-                                                    ? `+${value}.000`
+                                                    ? `${value > 0 ? `+${value}` : value}.000`
                                                     : `${value > 0 ? `+${value}` : value}`}{' '}
                                                 {key}
                                             </li>

@@ -71,21 +71,21 @@ const facilityData: Facility[] = [
             },
             {
                 roll: '10-11',
-                text: 'Major Break → +1 Intel',
-                resource: { Intel: +1 },
+                text: 'Major Break → +1 Karma',
+                resource: { Karma: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '81' },
         ],
         actionList: [
             {
-                title: '💡 Mind Overdrive:',
+                title: '💡 Memory Mining:',
                 steps: [
                     {
                         text: 'Spend 3 Health',
                         resource: { Health: -3 },
                     },
                     { text: 'Roll 2d6 + Logic or Intuition + 2' },
-                    { text: 'Gain Intel', tag: 'intel' },
+                    { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
             {
@@ -203,7 +203,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
                     { text: 'Roll 2d6 + Strength or Charisma + 2' },
-                    { text: 'Reduce Noto', tag: 'Noto' },
+                    { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
             {
@@ -257,11 +257,11 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '💡 Pay the Insider:',
+                title: '💡 Shadow Network:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
                     { text: 'Roll 2d6 + Intuition or Charisma' },
-                    { text: 'Gain Intel', tag: 'intel' },
+                    { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
             {
@@ -383,7 +383,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
                     { text: 'Roll 2d6 + Reaction or Logic' },
-                    { text: 'Reduce Noto', tag: 'Noto' },
+                    { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
             {
@@ -491,8 +491,8 @@ const facilityData: Facility[] = [
             },
             {
                 roll: '12',
-                text: 'Hidden Message → +1 Intel',
-                resource: { Intel: +1 },
+                text: 'Hidden Message → +1 Karma',
+                resource: { Karma: +1 },
             },
         ],
         actionList: [
@@ -550,8 +550,8 @@ const facilityData: Facility[] = [
             },
             {
                 roll: '12',
-                text: 'Prestigious Contact → +1 Intel',
-                resource: { Intel: +1 },
+                text: 'Prestigious Contact → +1 Karma',
+                resource: { Karma: +1 },
             }
         ],
         actionList: [
@@ -564,13 +564,13 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '💡 Corrupted Files:',
+                title: '💡 Raid the Stash:',
                 steps: [
-                    { text: 'Pay 2.000 ¥', resource: { Nuyen: -2 } },
+                    { text: 'Spend 1 Health', resource: { Health: -1 } },
                     {
                         text: 'Roll 2d6 + Agility or Intuition - 2',
                     },
-                    { text: 'Gain Intel', tag: 'intel' },
+                    { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
         ],
@@ -596,7 +596,7 @@ const facilityData: Facility[] = [
                 steps: [
                     { text: 'Pay 2.000 ¥', resource: { Nuyen: -2 } },
                     { text: 'Roll 2d6 + Agility or Charisma - 2' },
-                    { text: 'Reduce Noto', tag: 'Noto' },
+                    { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
         ],

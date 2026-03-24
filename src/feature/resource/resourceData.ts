@@ -7,30 +7,19 @@ export const resourceData: Resource[] = [
         rollList: [
             {
                 range: '2-5',
-                result: 'Critical Failure',
-                resources: {
-                    Noto: +2,
-                },
+                result: 'Fragged',
+                resources: { Nuyen: -5 },
             },
             {
                 range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                    Nuyen: +3,
-                },
+                result: 'Drek',
             },
-            { range: '9-11', result: 'Standard', resources: { Nuyen: +6 } },
-            { range: '12-14', result: 'Good', resources: { Nuyen: +9 } },
+            { range: '9-11', result: 'Standard', resources: { Nuyen: +5 } },
+            { range: '12-14', result: 'Good', resources: { Nuyen: +10 } },
             {
-                range: '15-17',
-                result: 'Great',
-                resources: { Nuyen: +12, Edge: +1 },
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: { Nuyen: +15, Edge: +2 },
+                range: '15+',
+                result: 'Terminal',
+                resources: { Nuyen: +15, Edge: +1 },
             },
         ],
     },
@@ -40,47 +29,35 @@ export const resourceData: Resource[] = [
         rollList: [
             {
                 range: '2-5',
-                result: 'Critical Failure',
+                result: 'Fragged',
                 resources: {
-                    Noto: +2,
+                    Health: -3,
                 },
             },
             {
                 range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                    Health: +2,
-                },
+                result: 'Drek',
             },
             {
                 range: '9-11',
                 result: 'Standard',
                 resources: {
-                    Health: +4,
+                    Health: +3,
                 },
             },
             {
                 range: '12-14',
-                result: 'Good',
+                result: 'Solid',
                 resources: {
                     Health: +6,
                 },
             },
             {
-                range: '15-17',
-                result: 'Great',
+                range: '15+',
+                result: 'Terminal',
                 resources: {
-                    Health: +8,
+                    Health: +9,
                     Edge: +1,
-                },
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: {
-                    Health: +10,
-                    Edge: +2,
                 },
             },
         ],
@@ -91,97 +68,74 @@ export const resourceData: Resource[] = [
         rollList: [
             {
                 range: '2-5',
-                result: 'Critical Failure',
+                result: 'Fragged',
                 resources: {
-                    Noto: +2,
+                    Energy: -3,
                 },
             },
             {
                 range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                    Energy: +2,
-                },
+                result: 'Drek',
             },
             {
                 range: '9-11',
                 result: 'Standard',
                 resources: {
-                    Energy: +4,
+                    Energy: +3,
                 },
             },
             {
                 range: '12-14',
-                result: 'Good',
+                result: 'Solid',
                 resources: {
                     Energy: +6,
                 },
             },
             {
-                range: '15-17',
-                result: 'Great',
+                range: '15+',
+                result: 'Terminal',
                 resources: {
-                    Energy: +8,
+                    Energy: +9,
                     Edge: +1,
-                },
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: {
-                    Energy: +10,
-                    Edge: +2,
                 },
             },
         ],
     },
     {
-        tag: 'intel',
-        title: 'Gain Intel',
+        tag: 'karma',
+        title: 'Gain Karma',
         rollList: [
             {
                 range: '2-5',
-                result: 'Critical Failure',
+                result: 'Fragged',
                 resources: {
-                    Noto: +2,
+                    Karma: -2,
                 },
             },
             {
                 range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                },
+                result: 'Drek',
             },
             {
                 range: '9-11',
                 result: 'Standard',
                 resources: {
-                    Intel: +1,
+                    Karma: +2,
                 },
             },
             {
                 range: '12-14',
-                result: 'Good',
+                result: 'Solid',
                 resources: {
-                    Intel: +2,
+                    Karma: +4,
                 },
             },
             {
-                range: '15-17',
-                result: 'Great',
+                range: '15+',
+                result: 'Terminal',
                 resources: {
-                    Intel: +2,
+                    Karma: +6,
                     Edge: +1,
-                },
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: {
-                    Intel: +3,
-                    Edge: +2,
                 },
             },
         ],
@@ -192,17 +146,14 @@ export const resourceData: Resource[] = [
         rollList: [
             {
                 range: '2-5',
-                result: 'Critical Failure',
+                result: 'Fragged',
                 resources: {
-                    Noto: +2,
+                    Noto: +1,
                 },
             },
             {
                 range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                },
+                result: 'Drek',
             },
             {
                 range: '9-11',
@@ -213,73 +164,19 @@ export const resourceData: Resource[] = [
             },
             {
                 range: '12-14',
-                result: 'Good',
+                result: 'Solid',
                 resources: {
-                    Noto: -2,
-                },
-            },
-            {
-                range: '15-17',
-                result: 'Great',
-                resources: {
-                    Noto: -2,
+                    Noto: -1,
                     Edge: +1,
                 },
             },
             {
-                range: '18+',
-                result: 'Exceptional',
+                range: '15+',
+                result: 'Terminal',
                 resources: {
-                    Noto: -3,
-                    Edge: +2,
-                },
-            },
-        ],
-    },
-    {
-        tag: 'runner',
-        title: 'Hire Runner',
-        rollList: [
-            {
-                range: '2-5',
-                result: 'Critical Failure',
-                resources: {
-                    Noto: +2,
-                },
-            },
-            {
-                range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                },
-                effects: ['+1 Attribute Temporary'],
-            },
-            {
-                range: '9-11',
-                result: 'Standard',
-                effects: ['+1 Attribute'],
-            },
-            {
-                range: '12-14',
-                result: 'Good',
-                effects: ['+1 Attribute', '+1 Attribute Temporary'],
-            },
-            {
-                range: '15-17',
-                result: 'Great',
-                resources: {
+                    Noto: -2,
                     Edge: +1,
                 },
-                effects: ['+2 Attributes'],
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: {
-                    Edge: +2,
-                },
-                effects: ['+2 Attributes'],
             },
         ],
     },

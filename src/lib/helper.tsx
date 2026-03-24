@@ -1,13 +1,12 @@
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 
-const getIcon = (range: string) => {
-    if (range.includes('2-5')) return '🔴'
-    if (range.includes('6-8')) return '🟠'
-    if (range.includes('9-11')) return '🟡'
-    if (range.includes('12-14')) return '🟢'
-    if (range.includes('15-17')) return '🔵'
-    if (range.includes('18+')) return '🟣'
+const getIcon = (result: string) => {
+    if (result === 'Fragged') return '🔴'
+    if (result === 'Drek') return '🟠'
+    if (result === 'Standard') return '🟡'
+    if (result === 'Solid') return '🟢'
+    if (result === 'Terminal') return '🔵'
     return '⚪'
 }
 

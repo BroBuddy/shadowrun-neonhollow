@@ -4,8 +4,8 @@ const resourceIcons: Record<string, string> = {
     Nuyen: '💰',
     Health: '❤️',
     Energy: '🔋',
-    Edge: '⭐',
-    Intel: '💡',
+    Edge: '🎲',
+    Karma: '⭐',
     Noto: '👁️', 
     Days: '🕒',
 }

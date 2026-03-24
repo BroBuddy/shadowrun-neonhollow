@@ -249,7 +249,7 @@ export const espionageRun: Mission = {
                 },
                 {
                     roll: 3,
-                    title: 'Counter-Intel',
+                    title: 'Counter-Karma',
                     description: 'The intelligence you extracted has a tracer embedded in it – standard practice for sensitive files. You need to find and neutralise it before it leads anyone back to Liora.',
                     skillChecks: ['Logic', 'Reaction'],
                     fixedDC: 12,

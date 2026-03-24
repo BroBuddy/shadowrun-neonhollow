@@ -16,7 +16,7 @@ type Resources = {
     Health?: number
     Energy?: number
     Edge?: number
-    Intel?: number
+    Karma?: number
     Noto?: number
     Progress?: number
 }

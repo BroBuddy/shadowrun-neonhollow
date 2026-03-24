@@ -9,9 +9,7 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 
 function City() {
     const cityData = getCityData()   
-     const noto = useResourceStore((state) => state.resources.Noto)
-
-     console.log('noto', noto)
+    const noto = useResourceStore((state) => state.resources.Noto)
 
     const [openId, setOpenId] = useState<number | null>(
         cityData[cityData.length - 1]?.id ?? null

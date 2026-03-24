@@ -23,7 +23,7 @@ const mechanicData: Mechanic[] = [
             'Roll 1d6 for a result between 1 and 6.',
             'Roll 2d6 to add results together.',
             'Rolling double ones escalate the Noto level by one.',
-            'Rolling double sixes rewards you with 1 Intel.',
+            'Rolling double sixes rewards you with 1 Edge.',
         ],
     },
     {
@@ -85,13 +85,13 @@ const mechanicData: Mechanic[] = [
         ],
     },
     {
-        tag: 'intel',
-        title: '💡 Intel',
+        tag: 'Karma',
+        title: '💡 Karma',
         description:
-            'Information is leverage. Gather Intel during the Streets phase to gain an edge on your runs.',
+            'Experience is earned, never given. Every run, every deal, every scar teaches you something.',
         list: [
-            'Intel ranges from 0 to 6 and cannot exceed these limits.',
-            'Spend Intel before a roll to add +2 to the result per Intel spent.',
+            'Karma ranges from 0 to 6 and cannot exceed these limits.',
+            'Spend Karma to improve your Attributes.',
             'Gathered at: CyberLab, PulseBar, SmugglerDen.',
         ],
     },
