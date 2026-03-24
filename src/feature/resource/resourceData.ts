@@ -15,7 +15,7 @@ export const resourceData: Resource[] = [
                 result: 'Drek',
             },
             { range: '9-11', result: 'Standard', resources: { Nuyen: +4 } },
-            { range: '12-14', result: 'Good', resources: { Nuyen: +8 } },
+            { range: '12-14', result: 'Solid', resources: { Nuyen: +8 } },
             {
                 range: '15+',
                 result: 'Terminal',
@@ -177,48 +177,6 @@ export const resourceData: Resource[] = [
                     Noto: -2,
                     Edge: +1,
                 },
-            },
-        ],
-    },
-    {
-        tag: 'attribute',
-        title: 'Improve Attribute',
-        rollList: [
-            {
-                range: '2-5',
-                result: 'Critical Failure',
-                resources: {
-                    Noto: +2,
-                },
-            },
-            {
-                range: '6-8',
-                result: 'Failure',
-                resources: {
-                    Noto: +1,
-                },
-            },
-            {
-                range: '9-11',
-                result: 'Standard',
-                effects: ['+1 to Attribute Temporary'],
-            },
-            { range: '12-14', result: 'Good', effects: ['+1 to Attribute'] },
-            {
-                range: '15-17',
-                result: 'Great',
-                resources: {
-                    Edge: +1,
-                },
-                effects: ['+1 to Attribute', '+1 to Attribute Temporary'],
-            },
-            {
-                range: '18+',
-                result: 'Exceptional',
-                resources: {
-                    Edge: +2,
-                },
-                effects: ['+2 to Attribute'],
             },
         ],
     },

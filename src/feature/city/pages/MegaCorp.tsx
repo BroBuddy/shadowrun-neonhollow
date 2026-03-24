@@ -38,21 +38,20 @@ function MegaCorp() {
             )}
 
             <Card>
-                <p><strong>The Reckoning:</strong></p>
-                <p className="mt-2">Once you have reached <strong>5 Progress</strong>, consult your final rating below.</p>
-    
+                <p><strong>💥 Corporate Collapse:</strong></p>
+
                 {isUnlocked ? (
-                    <>
-                        <span className='mr-1'>&#8594;</span>
-                        <PopUp title='Final Rating'>
-                            <p>How Fast Did You Burn It Down?</p>
-                            <p>🟣 <strong className='highlight'>3 Days</strong> → Legendary</p>
-                            <p>🔵 <strong className='highlight'>4–5 Days</strong> → Exceptional</p>
-                            <p>🟢 <strong className='highlight'>6–7 Days</strong> → Impressive</p>
-                            <p>🟡 <strong className='highlight'>8-9 Days</strong> → Survivor</p>
-                            <p>🔴 <strong className='highlight'>10+ Days</strong> → Barely Made It</p>
-                        </PopUp>
-                    </>
+                    <ul className='list-margin'>
+                        <li>
+                            <PopUp title='Mission Efficiency Rating'>
+                                <p>🔵 <strong className='highlight'>3 Days</strong> → Ghost</p>
+                                <p>🟢 <strong className='highlight'>4–5 Days</strong> → Prime Runner</p>
+                                <p>🟡 <strong className='highlight'>6–7 Days</strong> → Shadow Asset</p>
+                                <p>🟠 <strong className='highlight'>8-9 Days</strong> → Street Noise</p>
+                                <p>🔴 <strong className='highlight'>10+ Days</strong> → Data Trash</p>
+                            </PopUp>
+                        </li>
+                    </ul>
                 ) : (
                     <p className="opacity-50 mt-2">🔒 Requires 5 Progress</p>
                 )}

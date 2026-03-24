@@ -17,12 +17,8 @@ const facilityData: Facility[] = [
                         resource: { Edge: -3 }
                     },
                     {
-                        text: '+3 Noto',
-                        resource: { Noto: +3 }
-                    },
-                    {
-                        text: '+2 Progress',
-                        resource: { Progress: +2 }
+                        text: 'Gain 3 Noto, 2 Progress',
+                        resource: { Noto: +3, Progress: +2 }
                     },
                 ],
             },
@@ -34,12 +30,8 @@ const facilityData: Facility[] = [
                         resource: { Nuyen: -20 },
                     },
                     {
-                        text: '+3 Noto',
-                        resource: { Noto: +3 },
-                    },
-                    {
-                        text: '+2 Progress',
-                        resource: { Progress: +2 }
+                        text: 'Gain 3 Noto, 2 Progress',
+                        resource: { Noto: +3, Progress: +2 }
                     },
                 ],
             },
