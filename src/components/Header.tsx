@@ -2,6 +2,7 @@ import { useState } from 'react'
 import ResourceManager from '@/feature/resource/components/ResourceManager'
 import AttributeManager from '@/feature/attribute/components/AttributeManager'
 import AttributeModal from '@/feature/attribute/components/AttributeModal'
+import ProgressBar from './ProgressBar'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -19,6 +20,8 @@ const Header = () => {
                 aria-controls="attribute-modal"
                 onClick={() => toggleModal()}
             >
+                <ProgressBar />
+
                 <div className="w-full flex justify-center">
                     <ResourceManager />
                 </div>

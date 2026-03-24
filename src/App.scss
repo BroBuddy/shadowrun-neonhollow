@@ -4,6 +4,7 @@
 
 :root {
     --black: #000;
+    --grey: #333;
     --white: #ddd;
     --turquoise: #09eae1;
     --violet: #c09;
@@ -63,6 +64,14 @@ body {
     .card {
         border-color: $primary;
         box-shadow: inset 0 0.625em 1.25em $light;
+    }
+
+    .progress {
+        background: var(--grey);
+    }
+
+    .progress-active {
+        background: $primary;
     }
 }
 

@@ -14,10 +14,11 @@ const AttributeModal = ({
                 isOpen ? 'translate-y-0' : '-translate-y-full'
             }`}
         >
-            <div className="shadow-lg w-3/4 max-w-md pt-5 mt-5 mx-auto text-center">
+            <div className="w-3/4 max-w-md pt-7 mt-7 mx-auto text-center">
                 <div className="flex">
                     <ResourceEditor />
                 </div>
+
                 <div className="flex">
                     <AttributeEditor />
                 </div>

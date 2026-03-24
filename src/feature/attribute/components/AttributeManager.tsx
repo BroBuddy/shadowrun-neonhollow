@@ -2,7 +2,7 @@ import useAttributeStore from '@/feature/attribute/store/attributeStore'
 
 const AttributeManager = () => {
     const attributes = useAttributeStore((state) => state.attributes)
-    const isStoreEmpty = useAttributeStore.getState().isEmptyStore()
+    const isStoreEmpty = useAttributeStore((state) => state.isEmptyStore())
 
     if (isStoreEmpty) {
         return <></>
