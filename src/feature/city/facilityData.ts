@@ -78,7 +78,7 @@ const facilityData: Facility[] = [
         ],
         actionList: [
             {
-                title: '⭐ Memory Mining:',
+                title: '⭐ Memory Extraction:',
                 steps: [
                     {
                         text: 'Spend 3 Health',
@@ -303,7 +303,7 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '💰 Memory Extraction:',
+                title: '💰 Mind Overdrive:',
                 steps: [
                     { text: 'Spend 2 Health', resource: { Health: -2 } },
                     { text: 'Roll 2d6 + Logic or Intuition' },
