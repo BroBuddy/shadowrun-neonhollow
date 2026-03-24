@@ -10,7 +10,7 @@ const facilityData: Facility[] = [
         rollList: [],
         actionList: [
             {
-                title: '🚷 Incite Rebellion:',
+                title: '🚷 Spark Rebellion:',
                 steps: [
                     {
                         text: 'Spend 3 Edge',
@@ -23,7 +23,7 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '📢 Propaganda Campaign:',
+                title: '📢 Run Propaganda:',
                 steps: [
                     {
                         text: 'Pay 20.000 ¥',
