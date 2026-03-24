@@ -4,6 +4,7 @@ import PopUp from '@/components/Popup'
 import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
 import RunnerView from '@/feature/runner/components/RunnerView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
+import AttributeTraining from '@/feature/attribute/components/AttributeTraining'
 
 type ActionStepProps = {
     step: ActionStepType
@@ -21,6 +22,10 @@ const ActionStep = ({ step }: ActionStepProps) => {
     const renderStepContent = () => {
         if (step.text === 'Random Runner') {
             return <RunnerView />
+        }
+
+        if (step.tag === 'attribute') {
+            return <AttributeTraining attribute={step.text} />
         }
 
         if (step.resource) {

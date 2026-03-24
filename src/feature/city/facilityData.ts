@@ -99,12 +99,7 @@ const facilityData: Facility[] = [
             {
                 title: '🧠 Logic Refinement:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Logic',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Logic' },
-                    { text: 'Improve Logic', tag: 'attribute' },
+                    { text: 'Logic', tag: 'attribute' },
                 ],
             },
         ],
@@ -160,12 +155,7 @@ const facilityData: Facility[] = [
             {
                 title: '💪 Agility Recalibration:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Agility',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Agility' },
-                    { text: 'Improve Agility', tag: 'attribute' },
+                    { text: 'Agility', tag: 'attribute' },
                 ],
             },
         ],
@@ -267,12 +257,7 @@ const facilityData: Facility[] = [
             {
                 title: '🧠 Charisma Negotiation:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Charisma',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Charisma' },
-                    { text: 'Improve Charisma', tag: 'attribute' },
+                    { text: 'Charisma', tag: 'attribute' },
                 ],
             },
         ],
@@ -328,12 +313,7 @@ const facilityData: Facility[] = [
             {
                 title: '🧠 Intuition Awareness:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Intuition',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Intuition' },
-                    { text: 'Improve Intuition', tag: 'attribute' },
+                    { text: 'Intuition', tag: 'attribute' },
                 ],
             },
         ],
@@ -389,12 +369,7 @@ const facilityData: Facility[] = [
             {
                 title: '💪 Reaction Sharpening:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Reaction',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Reaction' },
-                    { text: 'Improve Reaction', tag: 'attribute' },
+                    { text: 'Reaction', tag: 'attribute' },
                 ],
             },
         ],
@@ -450,12 +425,7 @@ const facilityData: Facility[] = [
             {
                 title: '💪 Strength Conditioning:',
                 steps: [
-                    {
-                        text: 'Pay 2.000 ¥ per point of Strength',
-                        resource: { Nuyen: -2 },
-                    },
-                    { text: 'Roll 2d6 + 7 - Strength' },
-                    { text: 'Improve Strength', tag: 'attribute' },
+                    { text: 'Strength', tag: 'attribute' },
                 ],
             },
         ],
