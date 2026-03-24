@@ -36,7 +36,6 @@ const characterModes: readonly Mode[] = [
             Energy: 10,
             Nuyen: 20,
             Edge: 2,
-            Karma: 2,
         },
     },
     {
@@ -47,7 +46,6 @@ const characterModes: readonly Mode[] = [
             Energy: 10,
             Nuyen: 10,
             Edge: 1,
-            Karma: 1,
         },
     },
     {
