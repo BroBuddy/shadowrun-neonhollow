@@ -78,7 +78,7 @@ const facilityData: Facility[] = [
         ],
         actionList: [
             {
-                title: '💡 Memory Mining:',
+                title: '⭐ Memory Mining:',
                 steps: [
                     {
                         text: 'Spend 3 Health',
@@ -257,7 +257,7 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '💡 Shadow Network:',
+                title: '⭐ Shadow Network:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
                     { text: 'Roll 2d6 + Intuition or Charisma' },
@@ -564,7 +564,7 @@ const facilityData: Facility[] = [
                 ],
             },
             {
-                title: '💡 Raid the Stash:',
+                title: '⭐ Raid the Stash:',
                 steps: [
                     { text: 'Spend 1 Health', resource: { Health: -1 } },
                     {

@@ -74,19 +74,19 @@ const mechanicData: Mechanic[] = [
     },
     {
         tag: 'Edge',
-        title: '⭐ Edge',
+        title: '🎲 Edge',
         description:
             'The difference between walking away and not.',
         list: [
             'Edge ranges from 0 to 3 and cannot exceed these limits.',
             'Spend 1 Edge during a skill check to gain an additional roll.',
-            'Spend 3 Edge at MegaCorp to advance your lifetime goal.',
+            'Spend 3 Edge at MegaCorp to advance your progress.',
             'Earned through successful runs and city events.',
         ],
     },
     {
         tag: 'Karma',
-        title: '💡 Karma',
+        title: '⭐ Karma',
         description:
             'Experience is earned, never given. Every run, every deal, every scar teaches you something.',
         list: [
