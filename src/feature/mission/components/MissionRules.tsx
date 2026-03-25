@@ -10,35 +10,22 @@ const MissionRules = () => {
                     <strong>Do Your Homework:</strong>
                 </p>
 
-                <p>Before you take the contract, understand the risks. Every run has a cost and the corps always push back.</p>
-
-                <span className='mr-1'>&#8594;</span>
-
-                <PopUp title='Mission Rules'>
-                    <ul className="list-margin">
-                        <li>
-                            Each run can only be completed once per day.
-                        </li>
-                        <li>
-                            Each run has 6 steps. Every step reveals a random event.
-                        </li>
-                        <li>
-                            Roll 1D6 to determine the difficulty. DC 8, 10 or 12.
-                        </li>
-                        <li>
-                            Roll 2D6 and add your chosen attribute. Meet or beat the DC to succeed.
-                        </li>
-                        <li>
-                            The final step is always a twist with a fixed DC 12.
-                        </li>
-                        <li>
-                            Each success adds +1 Performance, each failure -1.
-                        </li>
-                        <li>
-                            Your final Performance determines your reward.
-                        </li>
-                    </ul>
-                </PopUp>
+                <p>
+                    Know the risks before you run.
+                    <span className='mx-1'>&#8594;</span>
+                    <PopUp title='Rules'>
+                        <p>You can only complete one run per day.</p>
+                        <ul className="list-margin">
+                            <li>Each run has 6 steps. Each step reveals a random event.</li>
+                            <li>Roll 1D6 for difficulty: DC 8, 10 or 12.</li>
+                            <li>Roll 2D6 + chosen attribute. Meet or beat the DC to succeed.</li>
+                            <li>Final step: fixed DC 12 twist.</li>
+                            <li>+1 Performance per success, -1 per failure.</li>
+                            <li>Your Performance determines your reward.</li>
+                        </ul>
+                        <p>When the run is done, the city goes dark. Midnight begins.</p>
+                    </PopUp>
+                </p>
             </div>
         </Card>
     )

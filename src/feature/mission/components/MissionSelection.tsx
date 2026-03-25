@@ -16,16 +16,13 @@ const MissionSelection = () => {
                 <strong>Choose your run:</strong>
             </p>
 
-            <ul className="list-margin">
-                {missionData.map((item: MissionType, index: number) => (
-                    <li key={index}>
-                        <Link to={`/mission/${item.id}`}>{item.title}:</Link>  
-                        <span className="mx-1">&#8594;</span>
-                        <span>Focus: {item.focus}</span>                      
-                        <br /><em>"{item.description}"</em>
-                    </li>
+            {missionData.map((mission: MissionType, index: number) => (
+                <div>
+                    <span className='mr-1'>{index <= 2 ? '💪' : '🧠'}</span>
+                    <Link to={`/mission/${mission.id}`}>{mission.title}:</Link>  
+                    <br /><em>"{mission.description}"</em>
+                </div>
                 ))}
-            </ul>
         </Card>
     )
 }
