@@ -18,6 +18,9 @@ function MechanicView() {
             <p>
                 <strong>Know the Basics:</strong>
             </p>
+            
+            <p><em>"Tap any highlighted text to apply its effect."</em></p>
+
             <ul className="list-margin">
                 {data.map((item: Mechanic, index: number) => (
                     <li key={index}>

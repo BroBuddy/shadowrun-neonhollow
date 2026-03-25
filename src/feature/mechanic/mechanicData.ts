@@ -7,10 +7,9 @@ const mechanicData: Mechanic[] = [
         description:
             'Roll Dice to determine outcomes and navigate chance-based scenarios.',
         list: [
+            'Tap the dice icon next to Roll to throw.',
             'Roll 1d6 for a result between 1 and 6.',
             'Roll 2d6 to add results together.',
-            'Rolling double ones escalate the Noto level by one.',
-            'Rolling double sixes rewards you with 1 Edge.',
         ],
     },
     {
@@ -85,13 +84,24 @@ const mechanicData: Mechanic[] = [
     },
     {
         tag: 'time',
-        title: '🕒 Day & Night',
+        title: '🕒 Day Cycle',
         description:
             'Each day runs in three phases. There is no time limit — but your final rating depends on how few days it takes to bring MegaCorp down.',
         list: [
             'Streets — Hit up to 3 locations. Each action can only be burned once per day.',
             'Run — Take the contract. Work through all 6 steps. Don\'t get caught.',
             'Midnight — The city resets. Roll for the encounter, burn off your temp boosts, and mark another day gone.',
+        ],
+    },
+    {
+        tag: 'progress',
+        title: '📈 Progress',
+        description:
+            'Progress tracks how close you are to bringing MegaCorp down.',
+        list: [
+            'Complete runs to gain Progress based on your final Performance.',
+            'Go all-in at the corp directly for a bigger push — but at Noto 3 you\'re already on their radar.',
+            'Reach 5 Progress to trigger Corporate Collapse and end the game.',
         ],
     },
     {
