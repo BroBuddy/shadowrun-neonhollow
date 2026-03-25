@@ -55,7 +55,7 @@ const skylineData: Facility[] = [
                 text: 'Test Failure → -1 Health',
                 resource: { Health: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Unplanned Find → +1 Energy',
@@ -114,7 +114,7 @@ const skylineData: Facility[] = [
                 text: 'Grim Report → -1 Health',
                 resource: { Health: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Energy Boost → +1 Energy',
@@ -169,7 +169,7 @@ const centralData: Facility[] = [
                 resource: { Noto: +1 },
             },
             { roll: '5-6', text: 'Blamed → -1 Edge', resource: { Edge: -1 } },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Backup Support → +1 Energy',
@@ -219,7 +219,7 @@ const centralData: Facility[] = [
                 text: 'Toxic Cocktail → -1 Health',
                 resource: { Health: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Nutritious Snack → +1 Energy',
@@ -275,7 +275,7 @@ const centralData: Facility[] = [
                 text: 'Price Jump → -2.000 ¥',
                 resource: { Nuyen: -2 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Massage Chair → +1 Energy',
@@ -334,7 +334,7 @@ const quarterData: Facility[] = [
                 text: 'Toxic Fungal → -1 Health',
                 resource: { Health: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Friendly Chat → +1 Energy',
@@ -390,7 +390,7 @@ const quarterData: Facility[] = [
                 text: 'Unpaid Membership → -2.000 ¥',
                 resource: { Nuyen: -2 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Promo Energy Bar → +1 Energy',
@@ -446,7 +446,7 @@ const quarterData: Facility[] = [
                 text: 'Rough Night → -1 Energy',
                 resource: { Energy: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Elixir Boost → +1 Health',
@@ -508,7 +508,7 @@ const depthsData: Facility[] = [
                 text: 'Knife Fight → -1 Health',
                 resource: { Health: -1 },
             },
-            { roll: '7', text: 'Random Encounter' },
+            { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
                 text: 'Discount Promotion → +2.000 ¥',

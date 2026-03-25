@@ -1,9 +1,9 @@
 import { rollDice } from '@/lib/helper'
 import { useState } from 'react'
-import { getRunnerById } from '../runnerData'
-import { Runner } from '../RunnerType'
 import PopUp from '@/components/Popup'
 import RunnerDetail from '../pages/RunnerDetail'
+import { getRunnerById } from '../services/RunnerService'
+import { Runner } from '../types/RunnerType'
 
 function RunnerView() {
     const [randomRunner, setRandomRunner] = useState<Runner | null>(null)
@@ -11,8 +11,9 @@ function RunnerView() {
     const onRandomRunner = () => {
         const firstRoll = rollDice(1)
         const secondRoll = rollDice(1)
-        const result = `${firstRoll}${secondRoll}`
-        setRandomRunner(getRunnerById(result as string) as Runner)
+        const result = String(`${firstRoll}${secondRoll}`)
+        const runner = getRunnerById(result)
+        if (runner) setRandomRunner(runner)
     }
 
     return (

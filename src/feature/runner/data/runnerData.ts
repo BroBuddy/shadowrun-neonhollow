@@ -1,4 +1,4 @@
-import { Runner } from './RunnerType'
+import { Runner } from "../types/RunnerType"
 
 const runnerOnes: readonly Runner[] = [
     {
@@ -594,7 +594,7 @@ const runnerSixes: readonly Runner[] = [
     },
 ]
 
-const runnerData: readonly Runner[] = [
+export const runnerData: readonly Runner[] = [
     ...runnerOnes,
     ...runnerTwos,
     ...runnerThrees,
@@ -602,13 +602,3 @@ const runnerData: readonly Runner[] = [
     ...runnerFives,
     ...runnerSixes,
 ]
-
-const runnerMap = new Map(
-    runnerData.map((runner: Runner) => [runner.id, runner])
-)
-
-const getRunnerById = (id: string): Runner | undefined => {
-    return runnerMap.get(id)
-}
-
-export { getRunnerById }

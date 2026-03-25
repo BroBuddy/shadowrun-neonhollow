@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
-import { Runner } from '../RunnerType'
-import { getRunnerById } from '../runnerData'
+import { getRunnerById } from '../services/RunnerService'
+import { Runner } from '../types/RunnerType'
 
 const defaultRunner: Runner = {
     id: '',
@@ -34,9 +34,11 @@ function RunnerDetail({ id }: RunnerDetailProps) {
     return (
         <>
             <p>{data.description}</p>
+            
             <p>
                 <strong className="highlight">Attributes:</strong>
             </p>
+
             <ul className="list-margin">
                 {Object.entries(data.attributes).map(([key, value]) => (
                     <li key={key}>
@@ -44,9 +46,11 @@ function RunnerDetail({ id }: RunnerDetailProps) {
                     </li>
                 ))}
             </ul>
+
             <p>
                 <strong className="highlight">Background:</strong>
             </p>
+
             <p>{data.background}</p>
         </>
     )
