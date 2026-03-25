@@ -3,9 +3,9 @@ import { scrollToBottom } from '@/lib/helper'
 import { useParams } from 'react-router-dom'
 import { StepState } from '../types/MissionType'
 import MissionPerformance from '../components/MissionPerformance'
-import { getMissionById } from '../data/runData'
 import MissionHeader from '../components/MissionHeader'
 import MissionSteps from '../components/MissionSteps'
+import { getMissionById } from '../services/MissionService'
 
 const DC_MAP: Record<number, number> = { 1: 12, 2: 12, 3: 10, 4: 10, 5: 8, 6: 8 }
 const rollD6 = () => Math.floor(Math.random() * 6) + 1

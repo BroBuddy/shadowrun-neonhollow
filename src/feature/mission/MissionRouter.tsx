@@ -1,31 +1,18 @@
-import Preloader from '@/components/Preloader'
-import React, { Suspense } from 'react'
+import React from 'react'
+import MissionLayout from './layout/MissionLayout'
 
 const Mission = React.lazy(() => import('./pages/Mission'))
-const ExtractionDetail = React.lazy(() => import('./pages/MissionDetail'))
+const MissionDetail = React.lazy(() => import('./pages/MissionDetail'))
 
 const MissionRouter = [
-    {
-        path: '/mission',
-        children: [
-            {
-                index: true,
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Mission />
-                    </Suspense>
-                ),
-            },
-            {
-                path: ':id',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <ExtractionDetail />
-                    </Suspense>
-                ),
-            },
-        ],
-    },
+  {
+    path: '/mission',
+    element: <MissionLayout />,
+    children: [
+      { index: true, element: <Mission /> },
+      { path: ':id', element: <MissionDetail /> },
+    ],
+  },
 ]
 
 export default MissionRouter

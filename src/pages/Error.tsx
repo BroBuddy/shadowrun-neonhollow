@@ -19,6 +19,7 @@ function Error() {
                 <p>
                     <strong className="highlight">Critial Glitch</strong>
                 </p>
+                
                 <p>Reload the app to wake up in your secured hideout.</p>
             </Card>
         </>

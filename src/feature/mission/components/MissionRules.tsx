@@ -10,7 +10,7 @@ const MissionRules = () => {
                     <strong>Do Your Homework:</strong>
                 </p>
 
-                <p>
+                <span>
                     Know the risks before you run.
                     <span className='mx-1'>&#8594;</span>
                     <PopUp title='Rules'>
@@ -25,7 +25,7 @@ const MissionRules = () => {
                         </ul>
                         <p>When the run is done, the city goes dark. Midnight begins.</p>
                     </PopUp>
-                </p>
+                </span>
             </div>
         </Card>
     )
