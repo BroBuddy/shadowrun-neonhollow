@@ -54,6 +54,8 @@ export const characterModes: readonly Mode[] = [
         resources: {
             Health: 10,
             Energy: 10,
+            Nuyen: 0,
+            Edge: 0,
         },
     },
 ]
