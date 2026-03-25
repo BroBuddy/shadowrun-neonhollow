@@ -1,3 +1,4 @@
+import Arrow from '@/components/Arrow'
 import Card from '@/components/Card'
 import PopUp from '@/components/Popup'
 
@@ -10,7 +11,7 @@ const MissionRules = () => {
 
                 <span>
                     Know the risks before you run.
-                    <span className='mx-1'>&#8594;</span>
+                    <Arrow className='mx-1' />
                     <PopUp title='Rules'>
                         <p>You can only complete one run per day.</p>
                         <ul className="list-margin">

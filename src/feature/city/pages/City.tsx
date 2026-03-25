@@ -6,6 +6,7 @@ import Card from '@/components/Card'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import { getCityData } from '../services/CityService'
 import PageHeader from '@/components/PageHeader'
+import Arrow from '@/components/Arrow'
 
 function City() {
     const cityData = getCityData()   
@@ -35,7 +36,7 @@ function City() {
                 {cityData.slice(0, 3).map((district) => (
                     <div key={district.name}>
                         {district.icon} {district.name}
-                        <span className='mx-1'>&#8594;</span>
+                        <Arrow className='mx-1' />
                         👁️ {district.noto}
                     </div>
                 ))}

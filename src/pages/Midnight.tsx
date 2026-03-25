@@ -7,6 +7,7 @@ import { getEventById } from '@/feature/event/services/EventService'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import { rollDice } from '@/lib/helper'
 import { useState } from 'react'
+import PageHeader from '@/components/PageHeader'
 
 function Midnight() {
     const modifyResources = useResourceStore((state) => state.modifyResources)
@@ -23,28 +24,18 @@ function Midnight() {
         <>
             <Headline>Midnight</Headline>
 
-            <div className="flex gap-5 p-4">
-                <div className="flex-1 basis-2/5">
-                    <img
-                        src="/images/city/Midnight.png"
-                        alt="Midnight"
-                        loading="lazy"
-                    />
-                </div>
-
-                <div className="flex-1 basis-3/5">
+            <PageHeader
+                title='Midnight'
+                image='/images/city/Midnight.png'>
                     <p>
                         <em>
                             "At midnight, the cycle resets and steps are completed and the city holds its breath."
                         </em>
                     </p>
-                </div>
-            </div>
+            </PageHeader>
 
             <Card>
-                <p>
-                    <strong>Midnight Steps:</strong>
-                </p>
+                <p><strong>Midnight Steps:</strong></p>
 
                 <ol className="list-margin">
                     <li>
@@ -71,11 +62,9 @@ function Midnight() {
                     </li>
 
                     <li>
-                        Increase
-                        <span className="mx-1">&#8594;</span>
                         <span className='font-bold highlight cursor-pointer'
                             onClick={() => modifyResources({ Days: 1 })}>
-                                Day counter
+                                Increase Day counter
                             </span>
                     </li>
                 </ol>

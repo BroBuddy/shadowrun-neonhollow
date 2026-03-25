@@ -4,6 +4,7 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import SkillCheckResult from './SkillCheckResult'
+import Arrow from '@/components/Arrow'
 
 type SkillCheckProps = {
     skillCheck: SkillCheckType
@@ -24,7 +25,7 @@ const SkillCheck = ({ skillCheck, hidden }: SkillCheckProps) => {
         return (
             <div className="mt-4">
                 <span className="text-sm">{skillCheck.description}</span>
-                <span className='mx-1'>&#8594;</span>
+                <Arrow className='mx-1' />
                 <button
                     className="cursor-pointer font-bold highlight"
                     onClick={() => { setRevealed(true); }}

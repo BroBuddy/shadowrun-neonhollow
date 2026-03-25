@@ -9,7 +9,6 @@ type Resource = {
 type ResourceRoll = {
     range: string
     result: string
-    effects?: string[]
     resources?: Resources
 }
 

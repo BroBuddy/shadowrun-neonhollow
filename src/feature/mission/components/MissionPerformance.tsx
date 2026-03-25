@@ -1,12 +1,11 @@
 import {
-    MissionEffect,
     MissionPerformance as MissionPerformanceType,
 } from '../types/MissionType'
 import { getMissionPerformance } from '../data/performanceData'
-import EffectView from './EffectView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
 import { Resources } from '@/feature/character/types/CharacterType'
+import Arrow from '@/components/Arrow'
 
 type Props = {
     successes: number
@@ -41,8 +40,9 @@ function MissionPerformance({ successes, total }: Props) {
                             className="cursor-pointer"
                             onClick={() => handleModifyResources(item.resources)}
                         >
-                            <strong className="highlight">{item.title}</strong>{' '}
-                            &#8594; {item.level}
+                            <strong className="highlight">{item.title}</strong>
+                            <Arrow />
+                            {item.level}
                         </p>
                         
                         <ul className="list-margin">
@@ -55,13 +55,6 @@ function MissionPerformance({ successes, total }: Props) {
                                                 : `${value > 0 ? `+${value}` : value}`}{' '}
                                             {key}
                                         </li>
-                                    )
-                                )}
-
-                            {item.effects &&
-                                item.effects.map(
-                                    (effect: MissionEffect, index: number) => (
-                                        <EffectView key={index} effect={effect} />
                                     )
                                 )}
                         </ul>

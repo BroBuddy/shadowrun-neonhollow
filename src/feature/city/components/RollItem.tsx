@@ -1,6 +1,7 @@
 import PopUp from '@/components/Popup'
 import EventDetail from '@/feature/event/pages/EventDetail'
 import { FacilityRoll } from '../types/FacilityType'
+import Arrow from '@/components/Arrow'
 
 type RollItemProps = {
     item: FacilityRoll
@@ -9,13 +10,13 @@ type RollItemProps = {
 
 const RollItem = ({ item, handleStepClick }: RollItemProps) => (
     <li>
-        <strong>Roll {item.roll}</strong> &#8594;{' '}
+        <strong>Roll {item.roll}</strong> <Arrow className='mr-1' />
         {item.roll === '7' ? (
             <>No Effect</>
         ) : item.resource ? (
             <>
                 <span>{item.text.split(' → ')[0]}</span>
-                <span className="mx-1">→</span>
+                <Arrow className='mx-1' />
                 <button
                     className="cursor-pointer font-bold highlight"
                     onClick={() => handleStepClick(item.resource)}

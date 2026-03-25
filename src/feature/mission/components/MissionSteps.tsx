@@ -4,6 +4,7 @@ import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import ObstacleRoll from './ObstacleRoll'
 import { Mission } from '../types/MissionType'
+import Arrow from '@/components/Arrow'
 
 type StepResult = 'success' | 'failure' | null
 
@@ -53,7 +54,7 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                                     <InRow>
                                         <span>Roll</span>
                                         <Dice dice={2} />
-                                        <span>&#8594;</span>
+                                        <Arrow />
                                         <span>Add</span>
                                         <span>
                                             {event.skillChecks.map(

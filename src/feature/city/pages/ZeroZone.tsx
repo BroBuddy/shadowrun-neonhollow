@@ -1,7 +1,7 @@
 import Headline from '@/components/Headline'
 import { Facility } from '../types/FacilityType'
 import Card from '@/components/Card'
-import RollView from '../components/RollView'
+import EnterTable from '../components/EnterTable'
 import RunnerView from '@/feature/runner/components/RunnerView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Dice from '@/components/Dice'
@@ -9,6 +9,7 @@ import InRow from '@/components/InRow'
 import { useState } from 'react'
 import { getFacilityByTag } from '../services/FacilityService'
 import PageHeader from '@/components/PageHeader'
+import Arrow from '@/components/Arrow'
 
 const ATTR_MAP: string[] = ['Strength', 'Agility', 'Reaction', 'Logic', 'Intuition', 'Charisma']
 
@@ -31,7 +32,7 @@ function ZeroZone() {
                 <p><em>"{data.description}"</em></p>
             </PageHeader>
 
-            {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
+            {data.rollList.length > 0 && <EnterTable rollList={data.rollList} />}
 
             <Card>
                 <p><strong className='highlight'>💰 Place a Bet:</strong></p>
@@ -43,24 +44,24 @@ function ZeroZone() {
                             <Dice dice={1} onRoll={(n) => setRolledAttr(ATTR_MAP[n - 1])} />
                             {rolledAttr && (
                                 <>
-                                    <span>&#8594;</span>
+                                    <Arrow />
                                     <span>{rolledAttr}</span>
                                 </>
                             )}
                         </InRow>
                     </li>
-                    <li>Challenger <span>&#8594;</span> <RunnerView /></li>
+                    <li>Challenger <Arrow /> <RunnerView /></li>
                     <li>
                         Win or lose?
-                        <span className='mx-1'>&#8594;</span>
+                        <Arrow className='mx-1' />
                         <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', -5)}>
                             Pay 5k Nuyen
                         </span>
                     </li>
-                    <li>Champion <span>&#8594;</span> <RunnerView /></li>
+                    <li>Champion <Arrow /> <RunnerView /></li>
                     <li>
                         Tie counts as a loss
-                        <span className='mx-1'>&#8594;</span>
+                        <Arrow className='mx-1' />
                         <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', 10)}>
                             Gain 10k Nuyen
                         </span>
@@ -75,10 +76,10 @@ function ZeroZone() {
 
                 <ul className='list-margin'>
                     <li>Pick your strongest attribute</li>
-                    <li>Enemy <span>&#8594;</span> <RunnerView /></li>
-                    <li>Compare matching attributes — the difference is the gap</li>
-                    <li>Lost? &#8594; Lose Health equal to the gap</li>
-                    <li>Won? <span>&#8594;</span>
+                    <li>Enemy <Arrow /> <RunnerView /></li>
+                    <li>Compare matching attributes</li>
+                    <li>Lost? <Arrow /> Lose Health equal to the gap</li>
+                    <li>Won? <Arrow />
                         <span className='font-bold highlight cursor-pointer mx-1'
                             onClick={() => handleModify('Edge', 2)}>Gain 2 Edge</span>
                     </li>

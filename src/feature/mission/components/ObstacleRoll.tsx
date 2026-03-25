@@ -1,3 +1,4 @@
+import Arrow from "@/components/Arrow"
 import Dice from "@/components/Dice"
 import InRow from "@/components/InRow"
 
@@ -9,9 +10,9 @@ const ObstacleRoll = () => (
         </InRow>
 
         <ul className="list-margin">
-            <li><strong>Roll 1-2</strong> &#8594; DC 12</li>
-            <li><strong>Roll 3-4</strong> &#8594; DC 10</li>
-            <li><strong>Roll 5-6</strong> &#8594; DC 8</li>
+            <li><strong>Roll 1-2</strong> <Arrow /> DC 12</li>
+            <li><strong>Roll 3-4</strong> <Arrow /> DC 10</li>
+            <li><strong>Roll 5-6</strong> <Arrow /> DC 8</li>
         </ul>
     </>
 )

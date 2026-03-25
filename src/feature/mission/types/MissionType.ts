@@ -54,7 +54,6 @@ type MissionPerformance = {
     title: string
     level: string
     resources?: Resources
-    effects?: MissionEffect[]
 }
 
 export type {

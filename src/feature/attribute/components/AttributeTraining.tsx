@@ -1,3 +1,4 @@
+import Arrow from '@/components/Arrow'
 import useAttributeStore from '../store/attributeStore'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 
@@ -29,7 +30,7 @@ const AttributeTraining = ({ attribute }: AttributeTrainingProps) => {
                 className={`highlight font-bold ${canAfford ? 'cursor-pointer' : 'opacity-30 cursor-not-allowed'}`}
             >
                 <span className='mr-1'>{attribute}</span>
-                {main} <span>&#8594;</span> {main + 1}
+                {main} <Arrow className='mx-1' /> {main + 1}
                 <span className='ml-1'>({cost} Karma)</span>
             </button>
         </>

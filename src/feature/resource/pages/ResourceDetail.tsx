@@ -54,15 +54,6 @@ function ResourceDetail({ tag }: ResourceDetailProps) {
                                             </li>
                                         )
                                     )}
-
-                                {item.effects &&
-                                    item.effects.map((effect, effectIndex) => (
-                                        <li
-                                            key={`${item.range}-effect-${effectIndex}`}
-                                        >
-                                            {effect}
-                                        </li>
-                                    ))}
                             </ul>
                         </>
                     </div>

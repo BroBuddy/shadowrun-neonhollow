@@ -2,7 +2,7 @@ import Headline from '@/components/Headline'
 import { useParams } from 'react-router-dom'
 import { Facility } from '../types/FacilityType'
 import ActionView from '../components/ActionView'
-import RollView from '../components/RollView'
+import EnterTable from '../components/EnterTable'
 import { getFacilityByTag } from '../services/FacilityService'
 import PageHeader from '@/components/PageHeader'
 
@@ -24,7 +24,7 @@ function CityDetail() {
                 <p><em>"{data.description}"</em></p>
             </PageHeader>
 
-            {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
+            {data.rollList.length > 0 && <EnterTable rollList={data.rollList} />}
 
             {data.actionList?.length > 0 && (
                 <ActionView actionList={data.actionList} />

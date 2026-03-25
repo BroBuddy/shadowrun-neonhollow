@@ -3,12 +3,13 @@ import { FacilityRoll } from '../types/FacilityType'
 import Dice from '@/components/Dice'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import RollItem from './RollItem'
+import Arrow from '@/components/Arrow'
 
 type FacilityRollsProps = {
     rollList: FacilityRoll[]
 }
 
-const RollView = ({ rollList }: FacilityRollsProps) => {
+const EnterTable = ({ rollList }: FacilityRollsProps) => {
     const modifyResources = useResourceStore((state) => state.modifyResources)
 
     const handleStepClick = (resourceChange?: Record<string, number>) => {
@@ -21,7 +22,7 @@ const RollView = ({ rollList }: FacilityRollsProps) => {
         <Card>
             <div className="flex items-center space-x-1">
                 <strong>Enter:</strong>
-                <span>&#8594;</span>
+                <Arrow />
                 <button
                     className="highlight font-bold"
                     aria-label="Spend 1 Energy"
@@ -29,7 +30,7 @@ const RollView = ({ rollList }: FacilityRollsProps) => {
                 >
                     Spend 1 Energy
                 </button>
-                <span>&#8594;</span>
+                <Arrow />
                 <span>Roll</span>
                 <Dice dice={2} />
             </div>
@@ -47,4 +48,4 @@ const RollView = ({ rollList }: FacilityRollsProps) => {
     )
 }
 
-export default RollView
+export default EnterTable
