@@ -1,11 +1,10 @@
-import { useMemo } from 'react'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
 import { Mode } from '../types/CharacterType'
 import { getCharacterModes } from '../services/CharacterService'
 
 function ModeView() {
-    const modes = useMemo(() => getCharacterModes(), [])
+    const modes = getCharacterModes()
     const setStats = useResourceStore((state) => state.setResources)
 
     const handleModeSelect = (stats: Record<string, number>) => {
@@ -14,10 +13,7 @@ function ModeView() {
 
     return (
         <Card>
-            <p>
-                <strong>Mode Selection:</strong>
-            </p>
-
+            <p><strong>Mode Selection:</strong></p>
             <p>The mode grants you starting resources.</p>
             
             {modes.map((item: Mode, index: number) => (

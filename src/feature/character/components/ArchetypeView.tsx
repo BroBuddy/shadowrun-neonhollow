@@ -1,27 +1,17 @@
 import Card from '@/components/Card'
-import { Link } from 'react-router-dom'
-import { useMemo } from 'react'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import { getArchetypeData } from '../services/ArchetypeService'
 import { Archetype } from '../types/ArchetypeType'
+import ArchetypeDetail from './ArchetypeDetail'
+import PopUp from '@/components/Popup'
 
 function ArchetypeView() {
-    const data = useMemo(() => {
-        return getArchetypeData() as Archetype[]
-    }, [])
-
-    if (!data) {
-        return <></>
-    }
+    const data = getArchetypeData() as Archetype[]
 
     return (
         <Card>
-            <p>
-                <strong>
-                    Archetype &amp; Background:
-                </strong>
-            </p>
+            <p><strong>Archetype &amp; Background:</strong></p>
 
             <InRow>
                 <span>Roll</span>
@@ -31,7 +21,9 @@ function ArchetypeView() {
             <ol className="list-margin">
                 {data.map((item: Archetype, index: number) => (
                     <li key={index}>
-                        <Link to={`/character/archetype/${item.id}`}>{item.title}</Link>
+                        <PopUp title={item.title}>
+                            <ArchetypeDetail id={item.id} />
+                        </PopUp>
                     </li>
                 ))}
             </ol>

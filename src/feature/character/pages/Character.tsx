@@ -5,6 +5,7 @@ import MetatypeView from '../components/MetatypeView'
 import ModeView from '../components/ModeView'
 import Card from '@/components/Card'
 import NameView from '../components/NameView'
+import { Link } from 'react-router-dom'
 
 function Character() {
     return (
@@ -18,7 +19,7 @@ function Character() {
 
             <Card>
                 <p><strong>System Online:</strong></p>
-                <p>Day one begins. Step into the <strong>streets</strong> and make your name.</p>
+                <p>Before you hit the streets — <Link to="/rules" className="highlight font-bold">read the rules</Link>.</p>
             </Card>
         </>
     )

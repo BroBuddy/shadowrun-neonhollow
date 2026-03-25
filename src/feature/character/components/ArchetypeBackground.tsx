@@ -1,50 +1,37 @@
-import Card from '@/components/Card'
-import Headline from '@/components/Headline'
 import { useMemo } from 'react'
-import { useParams } from 'react-router-dom'
 import { formatValue, rollDice } from '@/lib/helper'
 import { getBackgroundById, isValidBackground } from '../services/BackgroundService'
 
-const ArchetypeBackground = () => {
-    const { id } = useParams()
+type Props = {
+    id: number
+}
+
+const ArchetypeBackground = ({ id }: Props) => {
     const backgroundId = useMemo(() => String(id) + rollDice(), [id])
-    const data = useMemo(
-        () => getBackgroundById(backgroundId as string),
-        [backgroundId]
-    )
+    const data = getBackgroundById(backgroundId)
     const isValidData = data && isValidBackground(backgroundId as string)
 
     if (!isValidData) {
         return (
-            <>
-                <Headline>Invalid Background</Headline>
-                <Card>
-                    <p>The tag you provided is invalid.</p>
-                </Card>
-            </>
+            <p>The tag you provided is invalid.</p>
         )
     }
 
     return (
         <>
-            <Card>
-                <p>
-                    <strong className="highlight">{data.title}:</strong>
-                </p>
-                <p>{data.description}</p>
-                <p>
-                    <strong className="highlight">Attributes:</strong>
-                </p>
-                <ul className="list-margin">
-                    {Object.entries(data.attributes).map(
-                        ([attribute, value]) => (
-                            <li key={attribute}>
-                                {attribute}: {formatValue(value as number)}
-                            </li>
-                        )
-                    )}
-                </ul>
-            </Card>
+            <p className='mt-4'> <strong className="highlight">{data.title}:</strong></p>
+            <p>{data.description}</p>
+            <p><strong>Attributes:</strong></p>
+
+            <ul className="list-margin">
+                {Object.entries(data.attributes).map(
+                    ([attribute, value]) => (
+                        <li key={attribute}>
+                            {attribute}: {formatValue(value as number)}
+                        </li>
+                    )
+                )}
+            </ul>
         </>
     )
 }

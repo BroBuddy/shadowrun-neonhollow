@@ -1,19 +1,12 @@
-import React from 'react'
-import CharacterLayout from '../character/layout/CharacterLayout'
+import { Preloader } from '@/main'
+import React, { Suspense } from 'react'
 
 const Character = React.lazy(() => import('../character/pages/Character'))
-const ArchetypeDetail = React.lazy(() => import('../character/pages/ArchetypeDetail'))
-const MetatypeDetail = React.lazy(() => import('../character/pages/MetatypeDetail'))
 
 const CharacterRouter = [
   {
     path: '/character',
-    element: <CharacterLayout />,
-    children: [
-      { index: true, element: <Character /> },
-      { path: 'archetype/:id', element: <ArchetypeDetail /> },
-      { path: 'metatype/:id', element: <MetatypeDetail /> },
-    ],
+    element: <Suspense fallback={<Preloader />}><Character /></Suspense>,
   },
 ]
 

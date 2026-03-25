@@ -1,19 +1,14 @@
-import { useMemo } from 'react'
-import {  } from '../data/characterData'
 import Card from '@/components/Card'
 import { formatValue } from '@/lib/helper'
 import { Equipment } from '../types/CharacterType'
 import { getCharacterEquipments } from '../services/CharacterService'
 
 function GearView() {
-    const equipments = useMemo(() => getCharacterEquipments(), [])
+    const equipments = getCharacterEquipments()
 
     return (
         <Card>
-            <p>
-                <strong>Gear:</strong>
-            </p>
-
+            <p><strong>Gear:</strong></p>
             <p>Choose one item for free from the Fixer's Workshop:</p>
 
             <ul className="list-margin">

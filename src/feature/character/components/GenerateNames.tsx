@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { generateMultipleNames, isValidTag } from '../services/NameService'
@@ -8,16 +8,14 @@ type Props = {
 }
 
 function GenerateNames({ tag }: Props) {
-    const [names, setNames] = useState<string[]>([])
     const namesAmount = 5
+    const [names, setNames] = useState<string[]>(() => 
+        generateMultipleNames(tag, 5)
+    )
 
     const handleGenerate = () => {
         setNames(generateMultipleNames(tag, namesAmount))
     }
-
-    useEffect(() => {
-        handleGenerate()
-    }, [handleGenerate])
 
     if (!tag || !isValidTag(tag)) {
         return (
@@ -38,7 +36,7 @@ function GenerateNames({ tag }: Props) {
 
             {names.length > 0 && (
                 <ol className='list-margin'>
-                    {names.map((name, index) => (
+                    {names.map((name: string, index: number) => (
                         <li key={index}>{name}</li>
                     ))}
                 </ol>
