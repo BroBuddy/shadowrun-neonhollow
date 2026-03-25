@@ -2,6 +2,9 @@ import Preloader from '@/components/Preloader'
 import React, { Suspense } from 'react'
 
 const Character = React.lazy(() => import('../character/pages/Character'))
+const ArchetypeDetail = React.lazy(
+    () => import('../character/pages/ArchetypeDetail')
+)
 const NameDetail = React.lazy(() => import('../character/pages/NameDetail'))
 
 const CharacterRouter = [
@@ -18,7 +21,20 @@ const CharacterRouter = [
             },
         ],
     },
-   {
+    {
+        path: '/archetype',
+        children: [
+            {
+                path: ':id',
+                element: (
+                    <Suspense fallback={<Preloader />}>
+                        <ArchetypeDetail />
+                    </Suspense>
+                ),
+            },
+        ],
+    },
+    {
         path: '/name',
         children: [
             {

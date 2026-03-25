@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { getArchetypeById, isValidArchetype } from '../archtypeData'
+import { getArchetypeById, isValidArchetype } from '../services/ArchetypeService'
 
 const useArchetypeData = (id: string | undefined) => {
     const data = useMemo(() => getArchetypeById(Number(id)), [id])
@@ -7,6 +7,7 @@ const useArchetypeData = (id: string | undefined) => {
         () => !data || !isValidArchetype(Number(id)),
         [data, id]
     )
+    
     return { data, isValidData }
 }
 

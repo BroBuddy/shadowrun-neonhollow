@@ -1,6 +1,6 @@
-import { Archetype } from './ArchetypeType'
+import { Archetype } from "../types/ArchetypeType"
 
-const archetypeData: readonly Archetype[] = [
+export const archetypeData: readonly Archetype[] = [
     {
         id: 1,
         title: 'Street Samurai',
@@ -62,16 +62,3 @@ const archetypeData: readonly Archetype[] = [
         },
     },
 ]
-
-const validIds = archetypeData.map(({ id }) => id)
-const isValidArchetype = (id: number): boolean => validIds.includes(id)
-
-const getArchetypeData = (): Pick<Archetype, 'id' | 'title'>[] => {
-    return archetypeData.map(({ id, title }) => ({ id, title }))
-}
-
-const getArchetypeById = (id: number): Archetype | undefined => {
-    return archetypeData.find((item: Archetype) => item.id === id)
-}
-
-export { getArchetypeData, getArchetypeById, isValidArchetype }

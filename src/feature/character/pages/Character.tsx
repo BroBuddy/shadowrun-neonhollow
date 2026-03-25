@@ -1,6 +1,6 @@
 import Headline from '@/components/Headline'
 import GearView from '../components/GearView'
-import ArchetypeView from '../../archetype/components/ArchetypeView'
+import ArchetypeView from '../components/ArchetypeView'
 import MetatypeView from '../../metatype/components/MetatypeView'
 import ModeView from '../components/ModeView'
 import Card from '@/components/Card'

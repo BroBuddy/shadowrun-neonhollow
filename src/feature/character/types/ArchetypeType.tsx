@@ -1,4 +1,4 @@
-import { Attributes } from '../metatype/MetatypeType'
+import { Attributes } from "@/feature/metatype/MetatypeType"
 
 type Archetype = {
     id: number

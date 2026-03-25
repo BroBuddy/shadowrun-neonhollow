@@ -2,7 +2,7 @@ import Card from '@/components/Card'
 import Headline from '@/components/Headline'
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
-import { getBackgroundById, isValidBackground } from '../backgroundData'
+import { getBackgroundById, isValidBackground } from '../data/backgroundData'
 import { formatValue, rollDice } from '@/lib/helper'
 
 const ArchetypeBackground = () => {

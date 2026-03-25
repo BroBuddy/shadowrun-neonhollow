@@ -7,7 +7,6 @@ import { register } from './serviceWorkerRegistration.ts'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
-import ArchetypeRouter from './feature/archetype/ArchetypeRouter.tsx'
 import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
 import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter'
@@ -62,7 +61,6 @@ const router = createBrowserRouter([
             ...MechanicRouter,
             ...CharacterRouter,
             ...MetatypeRouter,
-            ...ArchetypeRouter,
             ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,

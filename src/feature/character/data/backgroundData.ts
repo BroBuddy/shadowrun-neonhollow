@@ -1,4 +1,4 @@
-import { Background } from './ArchetypeType'
+import { Background } from '../../archetype/ArchetypeType'
 
 const backgroundStreetSamurai: readonly Background[] = [
     {

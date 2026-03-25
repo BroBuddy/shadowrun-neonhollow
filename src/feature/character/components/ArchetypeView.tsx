@@ -1,10 +1,10 @@
 import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
 import { useMemo } from 'react'
-import { getArchetypeData } from '../archtypeData'
-import { Archetype } from '../ArchetypeType'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
+import { getArchetypeData } from '../services/ArchetypeService'
+import { Archetype } from '../types/ArchetypeType'
 
 function ArchetypeView() {
     const data = useMemo(() => {
