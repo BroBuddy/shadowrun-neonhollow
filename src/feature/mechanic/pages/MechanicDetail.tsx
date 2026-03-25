@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
-import { Mechanic } from '../MechanicType'
-import { getMechanicByTag } from '../mechanicData'
+import { Mechanic } from '../types/MechanicType'
+import { getMechanicByTag } from '../services/MechanicService'
 
 type MechanicDetailProps = {
     tag?: string

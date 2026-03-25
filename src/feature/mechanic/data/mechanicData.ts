@@ -1,6 +1,6 @@
-import { Mechanic } from './MechanicType'
+import { Mechanic } from '../types/MechanicType'
 
-const mechanicData: Mechanic[] = [
+export const mechanicData: Mechanic[] = [
     {
         tag: 'dice',
         title: '🎲 Dice Rolling',
@@ -118,13 +118,3 @@ const mechanicData: Mechanic[] = [
         ],
     },
 ]
-
-const getMechanicData = (): Pick<Mechanic, 'tag' | 'title'>[] => {
-    return mechanicData.map(({ tag, title }) => ({ tag, title }))
-}
-
-const getMechanicByTag = (tag: string): Mechanic => {
-    return mechanicData.find((item: Mechanic) => item.tag === tag) as Mechanic
-}
-
-export { getMechanicData, getMechanicByTag }

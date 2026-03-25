@@ -1,8 +1,8 @@
 import { useMemo } from 'react'
-import { getMechanicData } from '../mechanicData'
-import { Mechanic } from '../MechanicType'
+import { Mechanic } from '../types/MechanicType'
 import PopUp from '@/components/Popup'
 import MechanicDetail from '../pages/MechanicDetail'
+import { getMechanicData } from '../services/MechanicService'
 
 function MechanicView() {
     const data = useMemo(() => {
