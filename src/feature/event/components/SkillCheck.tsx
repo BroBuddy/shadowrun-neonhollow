@@ -1,39 +1,38 @@
+import { useState } from 'react'
 import { SkillCheck as SkillCheckType } from '../EventType'
 import useResourceStore from '@/feature/resource/store/resourceStore'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
+import SkillCheckResult from './SkillCheckResult'
 
 type SkillCheckProps = {
     skillCheck: SkillCheckType
+    hidden: boolean
 }
 
-const SkillCheckResult = ({
-    icon,
-    text,
-    resource,
-    onClick,
-}: {
-    icon: string
-    text: string
-    resource: { [key: string]: number }
-    onClick: (resource: { [key: string]: number }) => void
-}) => (
-    <div className="my-1">
-        <span className="mx-1">{icon}</span>
-        <button
-            className="cursor-pointer font-bold highlight"
-            onClick={() => onClick(resource)}
-            role="button"
-            aria-label={`Trigger resource modification: ${text}`}
-        >
-            {text}
-        </button>
-    </div>
-)
-
-const SkillCheck = ({ skillCheck }: SkillCheckProps) => {
+const SkillCheck = ({ skillCheck, hidden }: SkillCheckProps) => {
     const modifyResources = useResourceStore((state) => state.modifyResources)
+    const [revealed, setRevealed] = useState(false)
 
     const handleResultClick = (resource: { [key: string]: number }) => {
         modifyResources(resource)
+    }
+
+    if (hidden) return null
+
+    if (!revealed) {
+        return (
+            <div className="mt-4">
+                <span className="text-sm">{skillCheck.description}</span>
+                <span className='mx-1'>&#8594;</span>
+                <button
+                    className="cursor-pointer font-bold highlight"
+                    onClick={() => { setRevealed(true); }}
+                >
+                    {skillCheck.icon} {skillCheck.attribute}
+                </button>
+            </div>
+        )
     }
 
     return (
@@ -45,11 +44,11 @@ const SkillCheck = ({ skillCheck }: SkillCheckProps) => {
                     (DC {skillCheck.dc}):
                 </strong>
             </p>
-            <p>
-                <span>
-                    {skillCheck.description || 'No description available'}
-                </span>
-            </p>
+            
+            <InRow>
+                <span>Roll</span>
+                <Dice dice={2} />
+            </InRow>
 
             <SkillCheckResult
                 icon="✅"

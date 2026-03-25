@@ -2,8 +2,6 @@ import { useMemo } from 'react'
 import { getEventById } from '../eventData'
 import { Event, SkillCheck as SkillCheckType } from '../EventType'
 import SkillCheck from '../components/SkillCheck'
-import Dice from '@/components/Dice'
-import InRow from '@/components/InRow'
 
 const defaultEvent: Event = {
     id: '',
@@ -53,14 +51,11 @@ function EventDetail({ id }: EventDetailProps) {
 
             {data.skillChecks && (
                 <>
-                    <InRow>
-                        <span>Roll</span>
-                        <Dice dice={2} />
-                    </InRow>
+                    <p><em>"How do you want to handle this, chummer?"</em></p>
 
                     {data.skillChecks.map(
                         (item: SkillCheckType, index: number) => (
-                            <SkillCheck key={index} skillCheck={item} />
+                            <SkillCheck key={index} skillCheck={item} hidden={false} />
                         )
                     )}
                 </>
