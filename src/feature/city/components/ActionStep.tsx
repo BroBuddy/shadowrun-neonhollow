@@ -50,7 +50,7 @@ const ActionStep = ({ step }: ActionStepProps) => {
         return renderRoll2d6(step.text)
     }
 
-    return <li>{renderStepContent()}</li>
+    return <>{renderStepContent()}</>
 }
 
 export default ActionStep

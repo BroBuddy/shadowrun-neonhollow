@@ -76,7 +76,7 @@ const skylineData: Facility[] = [
                         text: 'Spend 3 Health',
                         resource: { Health: -3 },
                     },
-                    { text: 'Roll 2d6 + Logic or Intuition + 2' },
+                    { text: '2d6 + LOG/INT + 2' },
                     { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
@@ -84,12 +84,12 @@ const skylineData: Facility[] = [
                 title: '🔋 Neural Sync Boost:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: 'Roll 2d6 + Logic or Charisma' },
+                    { text: '2d6 + LOG/CHA' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
             {
-                title: '🧠 Logic Refinement:',
+                title: '🧠 LOG Refinement:',
                 steps: [
                     { text: 'Logic', tag: 'attribute' },
                 ],
@@ -132,7 +132,7 @@ const skylineData: Facility[] = [
                 title: '❤️ Nano Restoration:',
                 steps: [
                     { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: 'Roll 2d6 + Strength or Agility + 2' },
+                    { text: '2d6 + STR/AGI + 2' },
                     { text: 'Gain Health', tag: 'health' },
                 ],
             },
@@ -140,12 +140,12 @@ const skylineData: Facility[] = [
                 title: '💰 Donate Plasma:',
                 steps: [
                     { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: 'Roll 2d6 + Agility or Reaction' },
+                    { text: '2d6 + AGI/REA' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '💪 Agility Recalibration:',
+                title: '💪 AGI Recalibration:',
                 steps: [
                     { text: 'Agility', tag: 'attribute' },
                 ],
@@ -187,7 +187,7 @@ const centralData: Facility[] = [
                 title: '👁️ Quiet Bribe:',
                 steps: [
                     { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: 'Roll 2d6 + Strength or Charisma + 2' },
+                    { text: '2d6 + STR/CHA + 2' },
                     { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
@@ -195,7 +195,7 @@ const centralData: Facility[] = [
                 title: '💰 Bounty Pursuit:',
                 steps: [
                     { text: 'Spend 3 Energy', resource: { Energy: -3 } },
-                    { text: 'Roll 2d6 + Strength or Intuition + 2' },
+                    { text: '2d6 + STR/INT + 2' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
@@ -237,7 +237,7 @@ const centralData: Facility[] = [
                 title: '💰 Gambling Table:',
                 steps: [
                     { text: 'Spend 2 Energy', resource: { Energy: -2 } },
-                    { text: 'Roll 2d6 + Reaction or Charisma' },
+                    { text: '2d6 + REA/CHA' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
@@ -245,12 +245,12 @@ const centralData: Facility[] = [
                 title: '⭐ Shadow Network:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: 'Roll 2d6 + Intuition or Charisma' },
+                    { text: '2d6 + INT/CHA' },
                     { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
             {
-                title: '🧠 Charisma Negotiation:',
+                title: '🧠 CHA Negotiation:',
                 steps: [
                     { text: 'Charisma', tag: 'attribute' },
                 ],
@@ -293,7 +293,7 @@ const centralData: Facility[] = [
                 title: '🔋 Energetic Reboot:',
                 steps: [
                     { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: 'Roll 2d6 + Reaction or Intuition + 2' },
+                    { text: '2d6 + REA/INT + 2' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
@@ -301,12 +301,12 @@ const centralData: Facility[] = [
                 title: '💰 Mind Overdrive:',
                 steps: [
                     { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: 'Roll 2d6 + Logic or Intuition' },
+                    { text: '2d6 + LOG/INT' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '🧠 Intuition Awareness:',
+                title: '🧠 INT Awareness:',
                 steps: [
                     { text: 'Intuition', tag: 'attribute' },
                 ],
@@ -352,7 +352,7 @@ const quarterData: Facility[] = [
                 title: '🔋 Vital Rejuvenation:',
                 steps: [
                     { text: 'Spend 1 Health', resource: { Health: -1 } },
-                    { text: 'Roll 2d6 + Agility or Reaction - 2' },
+                    { text: '2d6 + AGI/REA - 2' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
@@ -360,12 +360,12 @@ const quarterData: Facility[] = [
                 title: '👁️ Meditative Escape:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: 'Roll 2d6 + Reaction or Logic' },
+                    { text: '2d6 + REA/LOG' },
                     { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
             {
-                title: '💪 Reaction Sharpening:',
+                title: '💪 REA Sharpening:',
                 steps: [
                     { text: 'Reaction', tag: 'attribute' },
                 ],
@@ -377,7 +377,7 @@ const quarterData: Facility[] = [
         tag: 'irongym',
         title: 'IronGym',
         description:
-            'Where sweat forges strength, and every clang of metal echoes the determination to rise above.',
+            'Where sweat forges STR, and every clang of metal echoes the determination to rise above.',
         rollList: [
             { roll: '2', text: 'Unplanned Challenge', id: '77' },
             {
@@ -408,7 +408,7 @@ const quarterData: Facility[] = [
                 title: '❤️ Massage Therapy:',
                 steps: [
                     { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: 'Roll 2d6 + Strength or Reaction' },
+                    { text: '2d6 + STR/REA' },
                     { text: 'Gain Health', tag: 'health' },
                 ],
             },
@@ -416,12 +416,12 @@ const quarterData: Facility[] = [
                 title: '💰 Nutritional Experiments:',
                 steps: [
                     { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: 'Roll 2d6 + Strength or Agility' },
+                    { text: '2d6 + STR/AGI' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '💪 Strength Conditioning:',
+                title: '💪 STR Conditioning:',
                 steps: [
                     { text: 'Strength', tag: 'attribute' },
                 ],
@@ -470,7 +470,7 @@ const quarterData: Facility[] = [
                     { text: 'Random Runner' },
                     { text: 'Remember The two highest attributes' },
                     { text: 'Pay 10.000 ¥', resource: { Nuyen: -10 } },
-                    { text: 'Roll 2d6 + Charisma' },
+                    { text: '2d6 + CHA' },
                     { text: 'Hire Runner', tag: 'runner' },
                 ],
             },
@@ -530,7 +530,7 @@ const depthsData: Facility[] = [
                 title: '💰 Fence Hot Goods:',
                 steps: [
                     { text: 'Spend 1 Energy', resource: { Energy: -1 } },
-                    { text: 'Roll 2d6 + Agility or Logic - 2' },
+                    { text: '2d6 + AGI/LOG - 2' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
@@ -539,7 +539,7 @@ const depthsData: Facility[] = [
                 steps: [
                     { text: 'Spend 1 Health', resource: { Health: -1 } },
                     {
-                        text: 'Roll 2d6 + Agility or Intuition - 2',
+                        text: '2d6 + AGI/INT - 2',
                     },
                     { text: 'Gain Karma', tag: 'karma' },
                 ],
@@ -558,7 +558,7 @@ const depthsData: Facility[] = [
                 title: '❤️ Stimulant Injection:',
                 steps: [
                     { text: 'Spend 1 Energy', resource: { Energy: -1 } },
-                    { text: 'Roll 2d6 + Strength or Logic - 2' },
+                    { text: '2d6 + STR/LOG - 2' },
                     { text: 'Gain Health', tag: 'health' },
                 ],
             },
@@ -566,7 +566,7 @@ const depthsData: Facility[] = [
                 title: '👁️ False Credentials:',
                 steps: [
                     { text: 'Pay 2.000 ¥', resource: { Nuyen: -2 } },
-                    { text: 'Roll 2d6 + Agility or Charisma - 2' },
+                    { text: '2d6 + AGI/CHA - 2' },
                     { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },

@@ -7,14 +7,19 @@ type ActionItemProps = {
 }
 
 const ActionItem = ({ action }: ActionItemProps) => (
-    <div>
+    <div className='mb-4'>
         <p><strong>{action.title}</strong></p>
         
-        <ul className="list-margin">
+        <div className="flex flex-wrap items-center gap-2">
             {action.steps.map((step: ActionStepType, stepIndex: number) => (
-                <ActionStep key={stepIndex} step={step} />
+                <>
+                    <ActionStep key={stepIndex} step={step} />
+                    {stepIndex < action.steps.length - 1 && (
+                        <>&#8594;</>
+                    )}
+                </>
             ))}
-        </ul>
+        </div>
     </div>
 )
 

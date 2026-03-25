@@ -32,14 +32,13 @@ const rollDice = (dice = 1): number => {
 }
 
 const renderRoll2d6 = (text: string) => {
-    if (!text.includes('Roll 2d6')) return text
+    if (!text.includes('2d6')) return text
 
-    const [beforeDice, afterDice] = text.split('Roll 2d6')
+    const [beforeDice, afterDice] = text.split('2d6')
 
     return (
         <InRow>
             {beforeDice && <span>{beforeDice}</span>}
-            <span>Roll</span>
             <Dice dice={2} />
             {afterDice && <span>{afterDice}</span>}
         </InRow>
