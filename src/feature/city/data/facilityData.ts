@@ -47,23 +47,23 @@ const skylineData: Facility[] = [
             { roll: '2', text: 'System Anomaly', id: '71' },
             {
                 roll: '3-4',
-                text: 'Illegal Trial → +1 Noto',
+                text: 'Illegal Trial | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Test Failure → -1 Health',
+                text: 'Test Failure | -1 Health',
                 resource: { Health: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Unplanned Find → +1 Energy',
+                text: 'Unplanned Find | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Major Break → +1 Karma',
+                text: 'Major Break | +1 Karma',
                 resource: { Karma: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '81' },
@@ -89,7 +89,7 @@ const skylineData: Facility[] = [
                 ],
             },
             {
-                title: '🧠 LOG Refinement:',
+                title: '🧠 Logic Refinement:',
                 steps: [
                     { text: 'Logic', tag: 'attribute' },
                 ],
@@ -106,23 +106,23 @@ const skylineData: Facility[] = [
             { roll: '2', text: 'Medical Malfunction', id: '73' },
             {
                 roll: '3-4',
-                text: 'Defiant Case → +1 Noto',
+                text: 'Defiant Case | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Grim Report → -1 Health',
+                text: 'Grim Report | -1 Health',
                 resource: { Health: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Energy Boost → +1 Energy',
+                text: 'Energy Boost | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Civic Aid → +1 Edge',
+                text: 'Civic Aid | +1 Edge',
                 resource: { Edge: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '83' },
@@ -145,7 +145,7 @@ const skylineData: Facility[] = [
                 ],
             },
             {
-                title: '💪 AGI Recalibration:',
+                title: '💪 Agility Recalibration:',
                 steps: [
                     { text: 'Agility', tag: 'attribute' },
                 ],
@@ -165,22 +165,22 @@ const centralData: Facility[] = [
             { roll: '2', text: 'Security Check', id: '72' },
             {
                 roll: '3-4',
-                text: 'Security Breach → +1 Noto',
+                text: 'Security Breach | +1 Noto',
                 resource: { Noto: +1 },
             },
-            { roll: '5-6', text: 'Blamed → -1 Edge', resource: { Edge: -1 } },
+            { roll: '5-6', text: 'Blamed | -1 Edge', resource: { Edge: -1 } },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Backup Support → +1 Energy',
+                text: 'Backup Support | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Familiar Face → -1 Noto',
+                text: 'Familiar Face | -1 Noto',
                 resource: { Noto: -1 },
             },
-            { roll: '12', text: 'Access Granted → +1 Edge' },
+            { roll: '12', text: 'Access Granted | +1 Edge' },
         ],
         actionList: [
             {
@@ -211,23 +211,23 @@ const centralData: Facility[] = [
             { roll: '2', text: 'The Whisper Network', id: '76' },
             {
                 roll: '3-4',
-                text: 'Drunk and Disorderly → +1 Noto',
+                text: 'Drunk and Disorderly | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Toxic Cocktail → -1 Health',
+                text: 'Toxic Cocktail | -1 Health',
                 resource: { Health: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Nutritious Snack → +1 Energy',
+                text: 'Nutritious Snack | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Winning Bet → +2.000 ¥',
+                text: 'Winning Bet | +2.000 ¥',
                 resource: { Nuyen: +2 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '86' },
@@ -250,7 +250,7 @@ const centralData: Facility[] = [
                 ],
             },
             {
-                title: '🧠 CHA Negotiation:',
+                title: '🧠 Charisma Negotiation:',
                 steps: [
                     { text: 'Charisma', tag: 'attribute' },
                 ],
@@ -267,23 +267,23 @@ const centralData: Facility[] = [
             { roll: '2', text: 'Dream Glitch', id: '75' },
             {
                 roll: '3-4',
-                text: 'Shady Moves → +1 Noto',
+                text: 'Shady Moves | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Price Jump → -2.000 ¥',
+                text: 'Price Jump | -2.000 ¥',
                 resource: { Nuyen: -2 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Massage Chair → +1 Energy',
+                text: 'Massage Chair | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Social Pulse → +1 Edge',
+                text: 'Social Pulse | +1 Edge',
                 resource: { Edge: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '85' },
@@ -306,7 +306,7 @@ const centralData: Facility[] = [
                 ],
             },
             {
-                title: '🧠 INT Awareness:',
+                title: '🧠 Intuition Awareness:',
                 steps: [
                     { text: 'Intuition', tag: 'attribute' },
                 ],
@@ -326,23 +326,23 @@ const quarterData: Facility[] = [
             { roll: '2', text: 'Lost Data', id: '74' },
             {
                 roll: '3-4',
-                text: 'Plant Harvest → +1 Noto',
+                text: 'Plant Harvest | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Toxic Fungal → -1 Health',
+                text: 'Toxic Fungal | -1 Health',
                 resource: { Health: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Friendly Chat → +1 Energy',
+                text: 'Friendly Chat | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Solar Soak → +1 Health',
+                text: 'Solar Soak | +1 Health',
                 resource: { Health: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '84' },
@@ -365,7 +365,7 @@ const quarterData: Facility[] = [
                 ],
             },
             {
-                title: '💪 REA Sharpening:',
+                title: '💪 Reaction Sharpening:',
                 steps: [
                     { text: 'Reaction', tag: 'attribute' },
                 ],
@@ -382,23 +382,23 @@ const quarterData: Facility[] = [
             { roll: '2', text: 'Unplanned Challenge', id: '77' },
             {
                 roll: '3-4',
-                text: 'Wrong Locker Room → +1 Noto',
+                text: 'Wrong Locker Room | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Unpaid Membership → -2.000 ¥',
+                text: 'Unpaid Membership | -2.000 ¥',
                 resource: { Nuyen: -2 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Promo Energy Bar → +1 Energy',
+                text: 'Promo Energy Bar | +1 Energy',
                 resource: { Energy: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Perfect Form → +1 Edge',
+                text: 'Perfect Form | +1 Edge',
                 resource: { Edge: +1 },
             },
             { roll: '12', text: 'Mysterious Runner', id: '87' },
@@ -421,7 +421,7 @@ const quarterData: Facility[] = [
                 ],
             },
             {
-                title: '💪 STR Conditioning:',
+                title: '💪 Strength Conditioning:',
                 steps: [
                     { text: 'Strength', tag: 'attribute' },
                 ],
@@ -438,28 +438,28 @@ const quarterData: Facility[] = [
             { roll: '2', text: 'Old Rival Spotted', id: '80' },
             {
                 roll: '3-4',
-                text: 'Corrupt Runner → +1 Noto',
+                text: 'Corrupt Runner | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Rough Night → -1 Energy',
+                text: 'Rough Night | -1 Energy',
                 resource: { Energy: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Elixir Boost → +1 Health',
+                text: 'Elixir Boost | +1 Health',
                 resource: { Health: +1 },
             },
             {
                 roll: '10-11',
-                text: 'Secret Deal → +2.000 ¥',
+                text: 'Secret Deal | +2.000 ¥',
                 resource: { Nuyen: +2 },
             },
             {
                 roll: '12',
-                text: 'Hidden Message → +1 Karma',
+                text: 'Hidden Message | +1 Karma',
                 resource: { Karma: +1 },
             },
         ],
@@ -480,7 +480,7 @@ const quarterData: Facility[] = [
                     { text: 'Combine Your two highest attributes' },
                     { text: 'Random Runner' },
                     { text: 'Add Opponent’s corresponding values' },
-                    { text: 'You lost? → Lose Health equal to the gap' },
+                    { text: 'You lost? | Lose Health equal to the gap' },
                     { text: 'Add 10 to the gap' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
@@ -500,28 +500,28 @@ const depthsData: Facility[] = [
             { roll: '2', text: 'Smuggler’s Test', id: '78' },
             {
                 roll: '3-4',
-                text: 'Police Raid → +1 Noto',
+                text: 'Police Raid | +1 Noto',
                 resource: { Noto: +1 },
             },
             {
                 roll: '5-6',
-                text: 'Knife Fight → -1 Health',
+                text: 'Knife Fight | -1 Health',
                 resource: { Health: -1 },
             },
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Discount Promotion → +2.000 ¥',
+                text: 'Discount Promotion | +2.000 ¥',
                 resource: { Nuyen: +2 },
             },
             {
                 roll: '10-11',
-                text: 'Thief Caught → +1 Edge',
+                text: 'Thief Caught | +1 Edge',
                 resource: { Edge: +1 },
             },
             {
                 roll: '12',
-                text: 'Prestigious Contact → +1 Karma',
+                text: 'Prestigious Contact | +1 Karma',
                 resource: { Karma: +1 },
             }
         ],
@@ -551,7 +551,7 @@ const depthsData: Facility[] = [
         tag: 'safehouse',
         title: 'SafeHouse',
         description:
-            'An impenetrable sanctuary where the world’s troubles melt away, leaving only peace and security.',
+            'An impenetrable sanctuary where the world\'s troubles melt away, leaving only peace and security.',
         rollList: [],
         actionList: [
             {

@@ -6,6 +6,7 @@ import PopUp from '@/components/Popup'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import { getFacilityByTag } from '../services/FacilityService'
 import PageHeader from '@/components/PageHeader'
+import Arrow from '@/components/Arrow'
 
 function MegaCorp() {
     const data = getFacilityByTag('megacorp') as Facility
@@ -34,11 +35,11 @@ function MegaCorp() {
                     <ul className='list-margin'>
                         <li>
                             <PopUp title='Mission Efficiency Rating'>
-                                <p>🔵 <strong className='highlight'>3 Days</strong> → Ghost</p>
-                                <p>🟢 <strong className='highlight'>4–5 Days</strong> → Prime Runner</p>
-                                <p>🟡 <strong className='highlight'>6–7 Days</strong> → Shadow Asset</p>
-                                <p>🟠 <strong className='highlight'>8-9 Days</strong> → Street Noise</p>
-                                <p>🔴 <strong className='highlight'>10+ Days</strong> → Data Trash</p>
+                                <p>🔵 <strong className='highlight'>3 Days</strong> <Arrow /> Ghost</p>
+                                <p>🟢 <strong className='highlight'>4–5 Days</strong> <Arrow /> Prime Runner</p>
+                                <p>🟡 <strong className='highlight'>6–7 Days</strong> <Arrow /> Shadow Asset</p>
+                                <p>🟠 <strong className='highlight'>8-9 Days</strong> <Arrow /> Street Noise</p>
+                                <p>🔴 <strong className='highlight'>10+ Days</strong> <Arrow /> Data Trash</p>
                             </PopUp>
                         </li>
                     </ul>

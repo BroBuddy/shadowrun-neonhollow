@@ -15,13 +15,13 @@ const RollItem = ({ item, handleStepClick }: RollItemProps) => (
             <>No Effect</>
         ) : item.resource ? (
             <>
-                <span>{item.text.split(' → ')[0]}</span>
+                <span>{item.text.split(' | ')[0]}</span>
                 <Arrow className='mx-1' />
                 <button
                     className="cursor-pointer font-bold highlight"
                     onClick={() => handleStepClick(item.resource)}
                 >
-                    {item.text.split(' → ')[1]}
+                    {item.text.split(' | ')[1]}
                 </button>
             </>
         ) : item.id ? (

@@ -3,6 +3,7 @@ import { getIcon } from '@/lib/helper'
 import useResourceStore from '../store/resourceStore'
 import { Resources } from '@/feature/character/types/CharacterType'
 import { getResourceByTag } from '../services/ResourceService'
+import Arrow from '@/components/Arrow'
 
 type ResourceDetailProps = {
     tag?: string
@@ -36,8 +37,9 @@ function ResourceDetail({ tag }: ResourceDetailProps) {
                                 aria-label={`Modify resources for roll ${item.range}`}
                             >
                                 Roll {item.range}
-                            </strong>{' '}
-                            → {item.result}
+                            </strong>
+                            <Arrow className='ml-1' />
+                            {item.result}
                             
                             <ul className="list-margin">
                                 {item.resources &&
