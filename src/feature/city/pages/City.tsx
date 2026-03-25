@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import { getCityData } from '../cityData'
-import { District as DistrictType } from '../CityType'
+import { District as DistrictType } from '../types/CityType'
 import Headline from '@/components/Headline'
 import DistrictView from '../components/DistrictView'
 import Card from '@/components/Card'
 import CityHeader from '../components/CityHeader'
 import useResourceStore from '@/feature/resource/store/resourceStore'
+import { getCityData } from '../services/CityService'
 
 function City() {
     const cityData = getCityData()   

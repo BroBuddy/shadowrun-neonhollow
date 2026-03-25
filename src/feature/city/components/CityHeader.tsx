@@ -1,4 +1,4 @@
-import { District as DistrictType } from '../CityType'
+import { District as DistrictType } from '../types/CityType'
 import FadeIn from '@/components/FadeIn'
 
 type CityHeaderProps = {
@@ -20,6 +20,7 @@ const CityHeader = ({ cityData }: CityHeaderProps) => {
                         loading="lazy"
                     />
                 </div>
+                
                 <div className="flex-1 basis-3/5">
                     <p>
                         <strong className="highlight" role="heading">

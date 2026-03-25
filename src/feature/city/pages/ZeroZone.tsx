@@ -1,6 +1,5 @@
 import Headline from '@/components/Headline'
-import { getFacilityByTag } from '../facilityData'
-import { Facility } from '../FacilityType'
+import { Facility } from '../types/FacilityType'
 import FadeIn from '@/components/FadeIn'
 import Card from '@/components/Card'
 import RollView from '../components/RollView'
@@ -9,6 +8,7 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import { useState } from 'react'
+import { getFacilityByTag } from '../services/FacilityService'
 
 const ATTR_MAP: string[] = ['Strength', 'Agility', 'Reaction', 'Logic', 'Intuition', 'Charisma']
 

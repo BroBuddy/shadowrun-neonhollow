@@ -1,6 +1,6 @@
-import { District } from './CityType'
+import { District } from '../types/CityType'
 
-const cityData: District[] = [
+export const cityData: District[] = [
     {
         id: 1,
         name: 'Skyline',
@@ -78,9 +78,3 @@ const cityData: District[] = [
         ],
     },
 ]
-
-const getCityData = (): District[] => {
-    return cityData
-}
-
-export { cityData, getCityData }

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { District as DistrictType, FacilityType } from '../CityType'
+import { District as DistrictType, FacilityType } from '../types/CityType'
 
 type DistrictProps = {
     district: DistrictType

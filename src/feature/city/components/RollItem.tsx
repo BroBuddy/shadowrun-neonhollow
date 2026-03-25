@@ -1,6 +1,6 @@
 import PopUp from '@/components/Popup'
 import EventDetail from '@/feature/event/pages/EventDetail'
-import { FacilityRoll } from '../FacilityType'
+import { FacilityRoll } from '../types/FacilityType'
 
 type RollItemProps = {
     item: FacilityRoll

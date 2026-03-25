@@ -1,7 +1,7 @@
-import { Facility } from './FacilityType'
+import { Facility } from '../types/FacilityType'
 
-const facilityData: Facility[] = [
-    {
+const skylineData: Facility[] = [
+        {
         id: 1,
         tag: 'megacorp',
         title: 'MegaCorp',
@@ -152,6 +152,9 @@ const facilityData: Facility[] = [
             },
         ],
     },
+]
+
+const centralData: Facility[] = [
     {
         id: 4,
         tag: 'securityhub',
@@ -310,7 +313,10 @@ const facilityData: Facility[] = [
             },
         ],
     },
-    {
+]
+
+const quarterData: Facility[] = [
+     {
         id: 7,
         tag: 'echogarden',
         title: 'EchoGarden',
@@ -481,6 +487,9 @@ const facilityData: Facility[] = [
             },
         ],
     },
+]
+
+const depthsData: Facility[] = [
     {
         id: 10,
         tag: 'smugglerden',
@@ -565,8 +574,9 @@ const facilityData: Facility[] = [
     },
 ]
 
-const getFacilityByTag = (tag: string): Facility => {
-    return facilityData.find((item: Facility) => item.tag === tag) as Facility
-}
-
-export { facilityData, getFacilityByTag }
+export const facilityData: Facility[] = [
+    ...skylineData,
+    ...centralData,
+    ...quarterData,
+    ...depthsData
+]

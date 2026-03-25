@@ -1,4 +1,4 @@
-import { ActionStep as ActionStepType, FacilityAction } from '../FacilityType'
+import { ActionStep as ActionStepType, FacilityAction } from '../types/FacilityType'
 
 import ActionStep from './ActionStep'
 
@@ -11,6 +11,7 @@ const ActionItem = ({ action }: ActionItemProps) => (
         <p>
             <strong>{action.title}</strong>
         </p>
+        
         <ul className="list-margin">
             {action.steps.map((step: ActionStepType, stepIndex: number) => (
                 <ActionStep key={stepIndex} step={step} />

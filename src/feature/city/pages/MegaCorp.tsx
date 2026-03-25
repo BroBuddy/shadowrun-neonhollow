@@ -1,11 +1,11 @@
 import Headline from '@/components/Headline'
-import { getFacilityByTag } from '../facilityData'
-import { Facility } from '../FacilityType'
+import { Facility } from '../types/FacilityType'
 import ActionView from '../components/ActionView'
 import FadeIn from '@/components/FadeIn'
 import Card from '@/components/Card'
 import PopUp from '@/components/Popup'
 import useResourceStore from '@/feature/resource/store/resourceStore'
+import { getFacilityByTag } from '../services/FacilityService'
 
 function MegaCorp() {
     const data = getFacilityByTag('megacorp') as Facility

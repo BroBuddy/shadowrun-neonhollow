@@ -1,10 +1,10 @@
 import Headline from '@/components/Headline'
 import { useParams } from 'react-router-dom'
-import { getFacilityByTag } from '../facilityData'
-import { Facility } from '../FacilityType'
+import { Facility } from '../types/FacilityType'
 import ActionView from '../components/ActionView'
 import RollView from '../components/RollView'
 import FadeIn from '@/components/FadeIn'
+import { getFacilityByTag } from '../services/FacilityService'
 
 function CityDetail() {
     const { tag } = useParams()

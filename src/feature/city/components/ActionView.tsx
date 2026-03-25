@@ -1,5 +1,5 @@
 import Card from '@/components/Card'
-import { FacilityAction } from '../FacilityType'
+import { FacilityAction } from '../types/FacilityType'
 import ActionItem from './ActionItem'
 
 type FacilityActionsProps = {

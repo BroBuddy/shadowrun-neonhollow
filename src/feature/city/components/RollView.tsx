@@ -1,5 +1,5 @@
 import Card from '@/components/Card'
-import { FacilityRoll } from '../FacilityType'
+import { FacilityRoll } from '../types/FacilityType'
 import Dice from '@/components/Dice'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import RollItem from './RollItem'

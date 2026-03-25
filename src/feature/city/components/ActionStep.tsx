@@ -1,4 +1,4 @@
-import { ActionStep as ActionStepType } from '../FacilityType'
+import { ActionStep as ActionStepType } from '../types/FacilityType'
 import { renderRoll2d6 } from '@/lib/helper'
 import PopUp from '@/components/Popup'
 import ResourceDetail from '@/feature/resource/pages/ResourceDetail'
