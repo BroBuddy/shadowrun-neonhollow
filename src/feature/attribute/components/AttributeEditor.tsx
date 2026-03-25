@@ -8,38 +8,51 @@ const AttributeEditor = () => {
         (state) => state.modifyAttributes
     )
 
-    const handleModify = (
-        attribute: string,
-        value: number,
-        isTemporary: boolean
-    ) => {
-        modifyAttributes({ [attribute]: value }, isTemporary)
+    const handleModify = (attribute: string, value: number) => {
+        modifyAttributes({ [attribute]: value }, false)
     }
 
     return (
         <div className="flex flex-col items-center w-full my-2">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Main</th>
-                        <th>Attribute</th>
-                        <th>Temporary</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {Object.entries(attributes).map(
-                        ([attribute, [main, temp]]) => (
+            <div className="flex gap-8">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style={{ width: '140px' }}>Attribute</th>
+                            <th style={{ width: '90px' }}>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {['Strength', 'Agility', 'Reaction'].map((attribute) => (
                             <AttributeRow
                                 key={attribute}
                                 attribute={attribute}
-                                main={main}
-                                temp={temp}
+                                main={attributes[attribute][0]}
                                 onModify={handleModify}
                             />
-                        )
-                    )}
-                </tbody>
-            </table>
+                        ))}
+                    </tbody>
+                </table>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th style={{ width: '140px' }}>Attribute</th>
+                            <th style={{ width: '90px' }}>Value</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {['Logic', 'Intuition', 'Charisma'].map((attribute) => (
+                            <AttributeRow
+                                key={attribute}
+                                attribute={attribute}
+                                main={attributes[attribute][0]}
+                                onModify={handleModify}
+                            />
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }

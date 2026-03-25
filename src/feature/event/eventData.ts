@@ -929,10 +929,7 @@ const eventFacility: readonly Event[] = [
                 dc: 12,
                 description:
                     'Analyze the source of the anomaly and implement corrective actions.',
-                success: {
-                    text: '+1 Temporary Logic',
-                    resource: { Logic: +1 },
-                },
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -957,10 +954,7 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 12,
                 description: 'Use strength to intimidate the officers.',
-                success: {
-                    text: '+1 Temporary Strength',
-                    resource: { Strength: +1 },
-                },
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
@@ -986,10 +980,7 @@ const eventFacility: readonly Event[] = [
                 dc: 12,
                 description:
                     'Quickly navigate the chaos and assist patients to safety.',
-                success: {
-                    text: '+1 Temporary Agility',
-                    resource: { Agility: +1 },
-                },
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -998,7 +989,7 @@ const eventFacility: readonly Event[] = [
                 dc: 10,
                 description:
                     'Move patients or assist with heavy equipment using strength.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                success: { text: '+2 Health', resource: { Health: +2 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -1014,19 +1005,16 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 12,
                 description:
-                    'React quickly to stash or maneuver around others.',
-                success: {
-                    text: '+1 Temporary Agility',
-                    resource: { Agility: +1 },
-                },
+                    'React quickly to stash the device before anyone notices.',
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 10,
-                description: 'Keep the device hidden or avoid suspicion.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                description: 'Keep the device hidden and avoid suspicion.',
+                success: { text: '+2 Energy', resource: { Energy: +2 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
@@ -1035,7 +1023,7 @@ const eventFacility: readonly Event[] = [
         id: '75',
         title: 'Dream Glitch',
         description:
-            'Entering DreamHaven, you’re submerged into a virtual reality glitch that destabilizes the environment.',
+            'Entering DreamHaven, you\'re submerged into a virtual reality glitch that destabilizes the environment.',
         skillChecks: [
             {
                 attribute: 'Intuition',
@@ -1043,10 +1031,7 @@ const eventFacility: readonly Event[] = [
                 dc: 12,
                 description:
                     'Identify the core issue and stabilize the virtual environment.',
-                success: {
-                    text: '+1 Temporary Intuition',
-                    resource: { Intuition: +1 },
-                },
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
             {
@@ -1054,7 +1039,7 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description: 'Guide a lost runner to safety during the chaos.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                success: { text: '+2 Health', resource: { Health: +2 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
         ],
@@ -1070,20 +1055,17 @@ const eventFacility: readonly Event[] = [
                 icon: '🧠',
                 dc: 12,
                 description:
-                    'Charm your way into conversation with the figure.',
-                success: {
-                    text: '+1 Temporary Charisma',
-                    resource: { Charisma: +1 },
-                },
+                    'Charm your way into conversation and extract valuable intel.',
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Intuition',
                 icon: '🧠',
                 dc: 10,
-                description: 'Spot subtle cues in the conversation.',
+                description: 'Spot subtle cues and read between the lines.',
                 success: { text: '+1 Karma', resource: { Karma: +1 } },
-                fail: { text: '-1 Energy', resource: { Energy: -1 } },
+                fail: { text: '-2 Energy', resource: { Energy: -2 } },
             },
         ],
     },
@@ -1097,11 +1079,8 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Strength',
                 icon: '💪',
                 dc: 12,
-                description: 'Lift the heavy weight off the person.',
-                success: {
-                    text: '+1 Temporary Strength',
-                    resource: { Strength: +1 },
-                },
+                description: 'Lift the heavy weight and free the trapped person.',
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
@@ -1109,15 +1088,15 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 10,
                 description:
-                    'Assist in freeing the person or avoid further danger.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                    'Coordinate the rescue and keep bystanders clear.',
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],
     },
     {
         id: '78',
-        title: 'Smuggler’s Test',
+        title: 'Smuggler\'s Test',
         description:
             'At SmugglerDen, shady guards test your credentials. Prove yourself or slip through unnoticed.',
         skillChecks: [
@@ -1125,19 +1104,16 @@ const eventFacility: readonly Event[] = [
                 attribute: 'Agility',
                 icon: '💪',
                 dc: 12,
-                description: 'Slip past the guards or dodge confrontation.',
-                success: {
-                    text: '+1 Temporary Agility',
-                    resource: { Agility: +1 },
-                },
+                description: 'Slip past the guards before they clock you.',
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
             {
                 attribute: 'Logic',
                 icon: '🧠',
                 dc: 10,
-                description: 'Convince the guards that you belong.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                description: 'Talk your way through with a convincing cover story.',
+                success: { text: '+3.000 ¥', resource: { Nuyen: +3 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
         ],
@@ -1153,18 +1129,15 @@ const eventFacility: readonly Event[] = [
                 icon: '💪',
                 dc: 15,
                 description: 'Overpower your rival in a physical showdown.',
-                success: {
-                    text: '+1 Temporary Strength',
-                    resource: { Strength: +1 },
-                },
+                success: { text: '+1 Edge', resource: { Edge: +1 } },
                 fail: { text: '-2 Health', resource: { Health: -2 } },
             },
             {
                 attribute: 'Charisma',
                 icon: '🧠',
                 dc: 12,
-                description: 'Defuse tension and earn reluctant respect.',
-                success: { text: '+1 Edge', resource: { Edge: +1 } },
+                description: 'Defuse the tension and earn reluctant respect.',
+                success: { text: '+1 Karma', resource: { Karma: +1 } },
                 fail: { text: '+1 Noto', resource: { Noto: +1 } },
             },
         ],

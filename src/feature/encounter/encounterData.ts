@@ -9,11 +9,11 @@ const encounterCyberLab: readonly Encounter[] = [
         options: [
             {
                 title: 'Wear the suit and run diagnostics.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
                 title: 'Help with the software config.',
-                reward: ['+1 Edge', '-2 Energy'],
+                reward: ['+1 Karma', '-2 Energy'],
             },
         ],
     },
@@ -29,7 +29,7 @@ const encounterCyberLab: readonly Encounter[] = [
             },
             {
                 title: 'Sprint through an obstacle course.',
-                reward: ['+1 Temporary Agility', '-2 Health'],
+                reward: ['+2 Energy', '-2 Health'],
             },
         ],
     },
@@ -41,7 +41,7 @@ const encounterCyberLab: readonly Encounter[] = [
         options: [
             {
                 title: 'Step in and test it yourself.',
-                reward: ['+1 Temporary Reaction', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
                 title: 'Assist with the calibration remotely.',
@@ -57,7 +57,7 @@ const encounterCyberLab: readonly Encounter[] = [
         options: [
             {
                 title: 'Dive deep into the files.',
-                reward: ['+1 Temporary Logic', '-2 Energy'],
+                reward: ['+1 Karma', '-2 Energy'],
             },
             {
                 title: 'Extract keywords and sell them.',
@@ -77,7 +77,7 @@ const encounterCyberLab: readonly Encounter[] = [
             },
             {
                 title: 'Try it on yourself to verify.',
-                reward: ['+1 Temporary Intuition', '-2 Health'],
+                reward: ['+1 Karma', '-2 Health'],
             },
         ],
     },
@@ -93,7 +93,7 @@ const encounterCyberLab: readonly Encounter[] = [
             },
             {
                 title: 'Test its dialogue models.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Karma'],
             },
         ],
     },
@@ -104,15 +104,15 @@ const encounterVitalClinic: readonly Encounter[] = [
         tag: 'vitalclinic1',
         title: 'Unidentified Virus',
         description:
-            'A highly contagious illness spreads rapidly among VitalClinic’s patients. Quick intervention is needed.',
+            'A highly contagious illness spreads rapidly among VitalClinic\'s patients. Quick intervention is needed.',
         options: [
             {
                 title: 'Assist in isolating infected patients.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+2 Health', '-2 Health'],
             },
             {
                 title: 'Analyze medical samples for a cure.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
         ],
     },
@@ -128,7 +128,7 @@ const encounterVitalClinic: readonly Encounter[] = [
             },
             {
                 title: 'Receive the implant.',
-                reward: ['+1 Temporary Agility', '+1 Noto'],
+                reward: ['+2 Health', '+1 Noto'],
             },
         ],
     },
@@ -140,7 +140,7 @@ const encounterVitalClinic: readonly Encounter[] = [
         options: [
             {
                 title: 'Track down the smugglers.',
-                reward: ['+1 Temporary Reaction', '+1 Noto'],
+                reward: ['+1 Karma', '+1 Noto'],
             },
             {
                 title: 'Confiscate the supplies for personal use.',
@@ -152,7 +152,7 @@ const encounterVitalClinic: readonly Encounter[] = [
         tag: 'vitalclinic4',
         title: 'Rogue AI Malfunction',
         description:
-            'VitalClinic’s automated diagnostic system begins issuing dangerously incorrect medical orders. Immediate action required.',
+            'VitalClinic\'s automated diagnostic system begins issuing dangerously incorrect medical orders. Immediate action required.',
         options: [
             {
                 title: 'Attempt to hack and override the AI.',
@@ -160,7 +160,7 @@ const encounterVitalClinic: readonly Encounter[] = [
             },
             {
                 title: 'Physically disable the system.',
-                reward: ['+1 Temporary Logic', '-3.000 ¥'],
+                reward: ['+1 Edge', '-3.000 ¥'],
             },
         ],
     },
@@ -168,11 +168,11 @@ const encounterVitalClinic: readonly Encounter[] = [
         tag: 'vitalclinic5',
         title: 'Overloaded ER',
         description:
-            'An influx of patients from a nearby accident threatens to overwhelm VitalClinic’s staff. Volunteers needed to help stabilize the situation.',
+            'An influx of patients from a nearby accident threatens to overwhelm VitalClinic\'s staff. Volunteers needed to help stabilize the situation.',
         options: [
             {
                 title: 'Step in and assist with triage.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Secure supplies from storage.',
@@ -192,7 +192,7 @@ const encounterVitalClinic: readonly Encounter[] = [
             },
             {
                 title: 'Investigate security footage.',
-                reward: ['+1 Temporary Charisma', '-2 Energy'],
+                reward: ['+1 Edge', '-2 Energy'],
             },
         ],
     },
@@ -207,11 +207,11 @@ const encounterSecurityHub: readonly Encounter[] = [
         options: [
             {
                 title: 'Intercept the intruder head-on.',
-                reward: ['+1 Temporary Strength', '-1 Karma'],
+                reward: ['+1 Edge', '-1 Karma'],
             },
             {
                 title: 'Review surveillance footage to identify entry points.',
-                reward: ['+1 Edge', '+1 Noto'],
+                reward: ['+1 Karma', '+1 Noto'],
             },
         ],
     },
@@ -227,7 +227,7 @@ const encounterSecurityHub: readonly Encounter[] = [
             },
             {
                 title: 'Participate in agility drills.',
-                reward: ['+1 Temporary Agility', '+1 Noto'],
+                reward: ['+2 Energy', '+1 Noto'],
             },
         ],
     },
@@ -239,11 +239,11 @@ const encounterSecurityHub: readonly Encounter[] = [
         options: [
             {
                 title: 'Sprint after the target through the streets.',
-                reward: ['+1 Temporary Reaction', '-1 Karma'],
+                reward: ['+1 Edge', '-1 Karma'],
             },
             {
                 title: 'Coordinate with nearby patrols to trap them.',
-                reward: ['+1 Edge', '-3.000 ¥'],
+                reward: ['+1 Karma', '-3.000 ¥'],
             },
         ],
     },
@@ -251,15 +251,15 @@ const encounterSecurityHub: readonly Encounter[] = [
         tag: 'securityhub4',
         title: 'Encrypted Database Breach',
         description:
-            'Hackers are attempting to infiltrate the SecurityHub’s classified archives. Countermeasures are required.',
+            'Hackers are attempting to infiltrate the SecurityHub\'s classified archives. Countermeasures are required.',
         options: [
             {
-                title: 'Manipulate their access to gain karma.',
+                title: 'Manipulate their access to gain leverage.',
                 reward: ['+1 Karma', '+1 Noto'],
             },
             {
                 title: 'Trace the signal and shut them out.',
-                reward: ['+1 Temporary Logic', '-2 Energy'],
+                reward: ['+1 Edge', '-2 Energy'],
             },
         ],
     },
@@ -275,7 +275,7 @@ const encounterSecurityHub: readonly Encounter[] = [
             },
             {
                 title: 'Blend in and gather information discreetly.',
-                reward: ['+1 Temporary Intuition', '+1 Noto'],
+                reward: ['+1 Karma', '+1 Noto'],
             },
         ],
     },
@@ -287,7 +287,7 @@ const encounterSecurityHub: readonly Encounter[] = [
         options: [
             {
                 title: 'Smooth-talk your way through the tension.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Offer them alternative solutions to calm them down.',
@@ -306,11 +306,11 @@ const encounterPulseBar: readonly Encounter[] = [
         options: [
             {
                 title: 'Challenge them to prove your strength.',
-                reward: ['+1 Temporary Strength', '+1 Noto'],
+                reward: ['+1 Edge', '+1 Noto'],
             },
             {
                 title: 'Side bet on another contender.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
         ],
     },
@@ -326,7 +326,7 @@ const encounterPulseBar: readonly Encounter[] = [
             },
             {
                 title: 'Jump in and match their moves.',
-                reward: ['+1 Temporary Agility', '-2 Health'],
+                reward: ['+2 Energy', '-2 Health'],
             },
         ],
     },
@@ -338,10 +338,10 @@ const encounterPulseBar: readonly Encounter[] = [
         options: [
             {
                 title: 'Take on the challenge.',
-                reward: ['+1 Temporary Reaction', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
-                title: 'Monitor participants for cNotoing.',
+                title: 'Monitor participants for cheating.',
                 reward: ['+1 Karma', '-2 Energy'],
             },
         ],
@@ -358,7 +358,7 @@ const encounterPulseBar: readonly Encounter[] = [
             },
             {
                 title: 'Decode and analyze the transaction history.',
-                reward: ['+1 Temporary Logic', '-2 Energy'],
+                reward: ['+1 Karma', '-2 Energy'],
             },
         ],
     },
@@ -374,23 +374,23 @@ const encounterPulseBar: readonly Encounter[] = [
             },
             {
                 title: 'Trust your instincts and make a bold bet.',
-                reward: ['+1 Temporary Intuition', '+1 Noto'],
+                reward: ['+3.000 ¥', '+1 Noto'],
             },
         ],
     },
     {
         tag: 'pulsebar6',
-        title: 'Smooth Talker’s Challenge',
+        title: 'Smooth Talker\'s Challenge',
         description:
             'A social influencer dares you to out-charm them in a live-streamed debate.',
         options: [
             {
                 title: 'Show off your charisma in the challenge.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
             {
                 title: 'Sponsor the event to gain influence.',
-                reward: ['+3.000 ¥', '-1 Edge'],
+                reward: ['+1 Edge', '-3.000 ¥'],
             },
         ],
     },
@@ -399,17 +399,17 @@ const encounterPulseBar: readonly Encounter[] = [
 const encounterDreamHaven: readonly Encounter[] = [
     {
         tag: 'dreamhaven1',
-        title: 'Brawler’s Pit',
+        title: 'Brawler\'s Pit',
         description:
             'A group of fighters is hosting a no-rules sparring contest in a hidden corner of DreamHaven.',
         options: [
             {
                 title: 'Observe and place bets on the strongest fighter.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
             {
                 title: 'Step into the ring and test your might.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
         ],
     },
@@ -421,7 +421,7 @@ const encounterDreamHaven: readonly Encounter[] = [
         options: [
             {
                 title: 'Sprint across neon-lit rooftops to intercept them.',
-                reward: ['+1 Temporary Agility', '-2 Energy'],
+                reward: ['+1 Edge', '-2 Energy'],
             },
             {
                 title: 'Track their movements and signal their location.',
@@ -441,7 +441,7 @@ const encounterDreamHaven: readonly Encounter[] = [
             },
             {
                 title: 'Compete in the tournament and prove your reflexes.',
-                reward: ['+1 Temporary Reaction', '+1 Noto'],
+                reward: ['+2 Energy', '+1 Noto'],
             },
         ],
     },
@@ -453,7 +453,7 @@ const encounterDreamHaven: readonly Encounter[] = [
         options: [
             {
                 title: 'Decipher the encrypted fragments.',
-                reward: ['+1 Temporary Logic', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Sell the data to an interested party.',
@@ -469,7 +469,7 @@ const encounterDreamHaven: readonly Encounter[] = [
         options: [
             {
                 title: 'Trust the vision and make a daring wager.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                reward: ['+3.000 ¥', '-1 Edge'],
             },
             {
                 title: 'Study the anomaly for scientific insight.',
@@ -485,11 +485,11 @@ const encounterDreamHaven: readonly Encounter[] = [
         options: [
             {
                 title: 'Sponsor the event for influence.',
-                reward: ['+3.000 ¥', '-1 Edge'],
+                reward: ['+1 Edge', '-3.000 ¥'],
             },
             {
                 title: 'Step up and deliver your most convincing argument.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
         ],
     },
@@ -504,11 +504,11 @@ const encounterEchoGarden: readonly Encounter[] = [
         options: [
             {
                 title: 'Study its structure to understand its resilience.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Test your might against its unyielding bark.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
         ],
     },
@@ -524,7 +524,7 @@ const encounterEchoGarden: readonly Encounter[] = [
             },
             {
                 title: 'Dash through the path at full speed.',
-                reward: ['+1 Temporary Agility', '-2 Energy'],
+                reward: ['+2 Energy', '-2 Energy'],
             },
         ],
     },
@@ -536,11 +536,11 @@ const encounterEchoGarden: readonly Encounter[] = [
         options: [
             {
                 title: 'Sync your movements with the shifting lights.',
-                reward: ['+1 Temporary Reaction', '-2 Energy'],
+                reward: ['+2 Energy', '-2 Energy'],
             },
             {
                 title: 'Observe the pattern and predict the next pulses.',
-                reward: ['+3.000 ¥', '-1 Edge'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
         ],
     },
@@ -551,8 +551,8 @@ const encounterEchoGarden: readonly Encounter[] = [
             'A hidden botanical research site holds genetic data of rare plants—someone is trying to crack it open.',
         options: [
             {
-                title: 'Attempt to decrypt the vault’s security.',
-                reward: ['+1 Temporary Logic', '-1 Karma'],
+                title: 'Attempt to decrypt the vault\'s security.',
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Sell the access codes to a collector.',
@@ -572,7 +572,7 @@ const encounterEchoGarden: readonly Encounter[] = [
             },
             {
                 title: 'Trust the whispers and follow their guidance.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                reward: ['+1 Edge', '-1 Edge'],
             },
         ],
     },
@@ -584,7 +584,7 @@ const encounterEchoGarden: readonly Encounter[] = [
         options: [
             {
                 title: 'Step in and mediate with confidence.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Fund a private deal to tip the scales.',
@@ -603,11 +603,11 @@ const encounterIronGym: readonly Encounter[] = [
         options: [
             {
                 title: 'Spot for them and learn their technique.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Push yourself beyond your limits.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
         ],
     },
@@ -619,11 +619,11 @@ const encounterIronGym: readonly Encounter[] = [
         options: [
             {
                 title: 'Watch and analyze their technique for efficiency.',
-                reward: ['+3.000 ¥', '-2 Energy'],
+                reward: ['+1 Karma', '-2 Energy'],
             },
             {
-                title: 'Take the challenge and sharpen your reflexes.',
-                reward: ['+1 Temporary Agility', '-2 Health'],
+                title: 'Take the challenge and push your limits.',
+                reward: ['+2 Energy', '-2 Health'],
             },
         ],
     },
@@ -635,7 +635,7 @@ const encounterIronGym: readonly Encounter[] = [
         options: [
             {
                 title: 'Step into the ring and test your reaction speed.',
-                reward: ['+1 Temporary Reaction', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
                 title: 'Coach someone from the sidelines with strategic advice.',
@@ -655,7 +655,7 @@ const encounterIronGym: readonly Encounter[] = [
             },
             {
                 title: 'Investigate the tracker and fix its anomalies.',
-                reward: ['+1 Temporary Logic', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
         ],
     },
@@ -666,8 +666,8 @@ const encounterIronGym: readonly Encounter[] = [
             'An instructor preaches that true strength comes from mental awareness, not just muscle.',
         options: [
             {
-                title: 'Focus on deep intuition during your workout.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                title: 'Focus on form and push through the session.',
+                reward: ['+2 Health', '-2 Energy'],
             },
             {
                 title: 'Study their philosophy to understand their approach.',
@@ -683,7 +683,7 @@ const encounterIronGym: readonly Encounter[] = [
         options: [
             {
                 title: 'Step into the spotlight and show your charisma.',
-                reward: ['+1 Temporary Charisma', '+1 Noto'],
+                reward: ['+3.000 ¥', '+1 Noto'],
             },
             {
                 title: 'Sponsor the event to gain exposure.',
@@ -702,11 +702,11 @@ const encounterZeroZone: readonly Encounter[] = [
         options: [
             {
                 title: 'Force open the emergency generators manually.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
                 title: 'Override the system using technical expertise.',
-                reward: ['+1 Edge', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
         ],
     },
@@ -718,7 +718,7 @@ const encounterZeroZone: readonly Encounter[] = [
         options: [
             {
                 title: 'Run the gauntlet at full speed.',
-                reward: ['+1 Temporary Agility', '+1 Noto'],
+                reward: ['+2 Energy', '+1 Noto'],
             },
             {
                 title: 'Study the course and plan an optimized route.',
@@ -734,7 +734,7 @@ const encounterZeroZone: readonly Encounter[] = [
         options: [
             {
                 title: 'Accept the challenge and go head-to-head.',
-                reward: ['+1 Temporary Reaction', '+1 Noto'],
+                reward: ['+1 Edge', '+1 Noto'],
             },
             {
                 title: 'Analyze its programming to discover weaknesses.',
@@ -754,7 +754,7 @@ const encounterZeroZone: readonly Encounter[] = [
             },
             {
                 title: 'Break into the encryption and access the files.',
-                reward: ['+1 Temporary Logic', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
         ],
     },
@@ -762,7 +762,7 @@ const encounterZeroZone: readonly Encounter[] = [
         tag: 'zerozone5',
         title: 'Instinct Rush',
         description:
-            'ZeroZone’s underground betting ring thrives on gut-feeling wagers—uncertainty is part of the thrill.',
+            'ZeroZone\'s underground betting ring thrives on gut-feeling wagers—uncertainty is part of the thrill.',
         options: [
             {
                 title: 'Play it cautiously and collect nuyen.',
@@ -770,7 +770,7 @@ const encounterZeroZone: readonly Encounter[] = [
             },
             {
                 title: 'Trust your instincts and make a bold bet.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                reward: ['+1 Edge', '-3.000 ¥'],
             },
         ],
     },
@@ -786,7 +786,7 @@ const encounterZeroZone: readonly Encounter[] = [
             },
             {
                 title: 'Step in and secure the best possible deal.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
         ],
     },
@@ -801,7 +801,7 @@ const encounterSmugglerDen: readonly Encounter[] = [
         options: [
             {
                 title: 'Step in and settle it with brute force.',
-                reward: ['+1 Temporary Strength', '-2 Health'],
+                reward: ['+1 Edge', '-2 Health'],
             },
             {
                 title: 'Negotiate a deal to split the goods.',
@@ -813,11 +813,11 @@ const encounterSmugglerDen: readonly Encounter[] = [
         tag: 'smugglerden2',
         title: 'Underground Escape Route',
         description:
-            'A secret passage is closing fast—only the quickest can make it out before it’s locked down.',
+            'A secret passage is closing fast—only the quickest can make it out before it\'s locked down.',
         options: [
             {
                 title: 'Sprint through the narrow tunnels before they seal.',
-                reward: ['+1 Temporary Agility', '+1 Noto'],
+                reward: ['+2 Energy', '+1 Noto'],
             },
             {
                 title: 'Find an alternate way and secure an exit plan.',
@@ -837,7 +837,7 @@ const encounterSmugglerDen: readonly Encounter[] = [
             },
             {
                 title: 'React instantly and grab the goods.',
-                reward: ['+1 Temporary Reaction', '+1 Noto'],
+                reward: ['+3.000 ¥', '+1 Noto'],
             },
         ],
     },
@@ -849,7 +849,7 @@ const encounterSmugglerDen: readonly Encounter[] = [
         options: [
             {
                 title: 'Decode the files and gain access.',
-                reward: ['+1 Temporary Logic', '-1 Karma'],
+                reward: ['+1 Karma', '-1 Edge'],
             },
             {
                 title: 'Sell the encrypted data to an interested party.',
@@ -861,7 +861,7 @@ const encounterSmugglerDen: readonly Encounter[] = [
         tag: 'smugglerden5',
         title: 'Gut Instinct Trade',
         description:
-            'A mystery package arrives with no details—only intuition will reveal if it’s valuable or dangerous.',
+            'A mystery package arrives with no details—only intuition will reveal if it\'s valuable or dangerous.',
         options: [
             {
                 title: 'Investigate its origins before taking action.',
@@ -869,7 +869,7 @@ const encounterSmugglerDen: readonly Encounter[] = [
             },
             {
                 title: 'Trust your instincts and claim it.',
-                reward: ['+1 Temporary Intuition', '-1 Edge'],
+                reward: ['+1 Edge', '-2 Health'],
             },
         ],
     },
@@ -881,11 +881,11 @@ const encounterSmugglerDen: readonly Encounter[] = [
         options: [
             {
                 title: 'Persuade them with your charisma.',
-                reward: ['+1 Temporary Charisma', '-1 Karma'],
+                reward: ['+3.000 ¥', '-1 Karma'],
             },
             {
                 title: 'Offer them a cut in exchange for information.',
-                reward: ['+3.000 ¥', '-1 Edge'],
+                reward: ['+1 Edge', '-3.000 ¥'],
             },
         ],
     },

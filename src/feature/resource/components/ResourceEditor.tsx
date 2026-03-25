@@ -18,8 +18,8 @@ const ResourceEditor = () => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th>Resource</th>
-                            <th>Value</th>
+                            <th style={{ width: '140px' }}>Resource</th>
+                            <th style={{ width: '90px' }}>Value</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -39,8 +39,8 @@ const ResourceEditor = () => {
                 <table className="w-full">
                     <thead>
                         <tr>
-                            <th>Resource</th>
-                            <th>Value</th>
+                            <th style={{ width: '140px' }}>Resource</th>
+                            <th style={{ width: '90px' }}>Value</th>
                         </tr>
                     </thead>
                     <tbody>

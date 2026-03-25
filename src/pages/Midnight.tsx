@@ -2,7 +2,6 @@ import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
 import Headline from '@/components/Headline'
 import PopUp from '@/components/Popup'
-import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { getEventById } from '@/feature/event/eventData'
 import { Event } from '@/feature/event/EventType'
 import EventDetail from '@/feature/event/pages/EventDetail'
@@ -13,9 +12,6 @@ import { useState } from 'react'
 function Midnight() {
     const modifyResources = useResourceStore((state) => state.modifyResources)
     const [randomEvent, setRandomEvent] = useState<Event | null>(null)
-    const resetTemporaryAttributes = useAttributeStore(
-        (state) => state.resetTemporaryAttributes
-    )
 
     const onRandomEvent = () => {
         const firstRoll = rollDice(1)
@@ -41,8 +37,7 @@ function Midnight() {
                     <div className="flex-1 basis-3/5">
                         <p>
                             <em>
-                                "At midnight, the cycle resets — steps are
-                                completed, and temporary bonuses fade away."
+                                "At midnight, the cycle resets and steps are completed and the city holds its breath."
                             </em>
                         </p>
                     </div>
@@ -76,17 +71,6 @@ function Midnight() {
 
                     <li>
                         Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current <strong>Noto</strong> level.
-                    </li>
-
-                    <li>
-                        Reset
-                        <span className="mx-1">&#8594;</span>
-                        <span
-                            className="font-bold highlight cursor-pointer"
-                            onClick={resetTemporaryAttributes}
-                        >
-                            Temporary Attributes
-                        </span>
                     </li>
 
                     <li>

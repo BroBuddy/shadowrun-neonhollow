@@ -2,19 +2,6 @@ import { Mechanic } from './MechanicType'
 
 const mechanicData: Mechanic[] = [
     {
-        tag: 'attributes',
-        title: 'Attributes',
-        description:
-            'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
-        list: [
-            'Physical Attributes: Strength, Agility, Reaction',
-            'Mental Attributes: Logic, Intuition, Charisma',
-            'Each attribute is limited to a maximum of six, excluding temporary boosts.',
-            'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
-            'No need to track your attributes — they’re fully implemented in the header.',
-        ],
-    },
-    {
         tag: 'dice',
         title: '🎲 Dice Rolling',
         description:
@@ -24,17 +11,6 @@ const mechanicData: Mechanic[] = [
             'Roll 2d6 to add results together.',
             'Rolling double ones escalate the Noto level by one.',
             'Rolling double sixes rewards you with 1 Edge.',
-        ],
-    },
-    {
-        tag: 'time',
-        title: '🕒 Day & Night',
-        description:
-            'Each day runs in three phases. There is no time limit — but your final rating depends on how few days it takes to bring MegaCorp down.',
-        list: [
-            'Streets — Hit up to 3 locations. Each action can only be burned once per day.',
-            'Run — Take the contract. Work through all 6 steps. Don\'t get caught.',
-            'Midnight — The city resets. Roll for the encounter, burn off your temp boosts, and mark another day gone.',
         ],
     },
     {
@@ -105,6 +81,30 @@ const mechanicData: Mechanic[] = [
             'At Midnight, lose Health and Energy equal to your current Noto level.',
             'More Noto locks down districts and restricts access to locations.',
             'Reduced at: SecurityHub, EchoGarden, SafeHouse.',
+        ],
+    },
+    {
+        tag: 'time',
+        title: '🕒 Day & Night',
+        description:
+            'Each day runs in three phases. There is no time limit — but your final rating depends on how few days it takes to bring MegaCorp down.',
+        list: [
+            'Streets — Hit up to 3 locations. Each action can only be burned once per day.',
+            'Run — Take the contract. Work through all 6 steps. Don\'t get caught.',
+            'Midnight — The city resets. Roll for the encounter, burn off your temp boosts, and mark another day gone.',
+        ],
+    },
+    {
+        tag: 'attributes',
+        title: 'Attributes',
+        description:
+            'Your character is defined by three 💪 physical and three 🧠 mental attributes.',
+        list: [
+            'Physical Attributes: Strength, Agility, Reaction',
+            'Mental Attributes: Logic, Intuition, Charisma',
+            'Each attribute is limited to a maximum of six.',
+            'To succeed at a skill check, you must select one of your attributes and incorporate it into a targeted roll.',
+            'No need to track your attributes — they’re fully implemented in the header.',
         ],
     },
 ]
