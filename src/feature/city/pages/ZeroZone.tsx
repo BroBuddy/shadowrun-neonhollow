@@ -1,6 +1,5 @@
 import Headline from '@/components/Headline'
 import { Facility } from '../types/FacilityType'
-import FadeIn from '@/components/FadeIn'
 import Card from '@/components/Card'
 import RollView from '../components/RollView'
 import RunnerView from '@/feature/runner/components/RunnerView'
@@ -24,30 +23,25 @@ function ZeroZone() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <FadeIn>
-                <div className="flex gap-5 p-4">
-                    <div className="flex-1 basis-2/5">
-                        <img
-                            src={`/images/city/${data.title}.jpg`}
-                            alt={data.title}
-                            loading="lazy"
-                        />
-                    </div>
 
-                    <div className="flex-1 basis-3/5">
-                        <p>
-                            <em>"{data.description}"</em>
-                        </p>
-                    </div>
+            <div className="flex gap-5 p-4">
+                <div className="flex-1 basis-2/5">
+                    <img
+                        src={`/images/city/${data.title}.jpg`}
+                        alt={data.title}
+                        loading="lazy"
+                    />
                 </div>
-            </FadeIn>
+
+                <div className="flex-1 basis-3/5">
+                    <p><em>"{data.description}"</em></p>
+                </div>
+            </div>
 
             {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
 
             <Card>
-                <p>
-                    <strong className='highlight'>💰 Place a Bet:</strong>
-                </p>
+                <p><strong className='highlight'>💰 Place a Bet:</strong></p>
 
                 <ul className='list-margin'>
                     <li>

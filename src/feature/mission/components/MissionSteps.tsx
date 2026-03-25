@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from '@/components/Card'
-import FadeIn from '@/components/FadeIn'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import ObstacleRoll from './ObstacleRoll'
@@ -39,41 +38,51 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                 return (
                     <React.Fragment key={step.id}>
                         <Card>
-                            <FadeIn>
-                                <p>
-                                    <strong className="highlight">
-                                        {event.title}
-                                    </strong>
+                            <p>
+                                <strong className="highlight">
+                                    {event.title}
+                                </strong>
+                            </p>
+
+                            <p>{event.description}</p>
+
+                            {isActive && !event.autoSuccess && (
+                                <>
+                                    <ObstacleRoll />
+
+                                    <InRow>
+                                        <span>Roll</span>
+                                        <Dice dice={2} />
+                                        <span>&#8594;</span>
+                                        <span>Add</span>
+                                        <span>
+                                            {event.skillChecks.map(
+                                                (skillCheck: string, skillCheckIndex: number) => (
+                                                    <React.Fragment key={skillCheckIndex}>
+                                                        {skillCheck}
+                                                        {skillCheckIndex === 0 && (
+                                                            <span className="mx-1">or</span>
+                                                        )}
+                                                    </React.Fragment>
+                                                )
+                                            )}
+                                        </span>
+                                    </InRow>
+                                </>
+                            )}
+
+                            {isActive && event.autoSuccess && (
+                                <p
+                                    className="mt-3 mb-1 cursor-pointer highlight"
+                                    onClick={() => onSuccess(index)}
+                                >
+                                    <span className="mx-1">✅</span>
+                                    <span className="font-bold">Success</span>
                                 </p>
+                            )}
 
-                                <p>{event.description}</p>
-
-                                {isActive && !event.autoSuccess && (
-                                    <>
-                                        <ObstacleRoll />
-
-                                        <InRow>
-                                            <span>Roll</span>
-                                            <Dice dice={2} />
-                                            <span>&#8594;</span>
-                                            <span>Add</span>
-                                            <span>
-                                                {event.skillChecks.map(
-                                                    (skillCheck: string, skillCheckIndex: number) => (
-                                                        <React.Fragment key={skillCheckIndex}>
-                                                            {skillCheck}
-                                                            {skillCheckIndex === 0 && (
-                                                                <span className="mx-1">or</span>
-                                                            )}
-                                                        </React.Fragment>
-                                                    )
-                                                )}
-                                            </span>
-                                        </InRow>
-                                    </>
-                                )}
-
-                                {isActive && event.autoSuccess && (
+                            {isActive && !event.autoSuccess && missionProgress <= 6 && (
+                                <InRow>
                                     <p
                                         className="mt-3 mb-1 cursor-pointer highlight"
                                         onClick={() => onSuccess(index)}
@@ -81,27 +90,15 @@ function MissionSteps({ mission, stepStates, missionProgress, onSuccess, onFailu
                                         <span className="mx-1">✅</span>
                                         <span className="font-bold">Success</span>
                                     </p>
-                                )}
-
-                                {isActive && !event.autoSuccess && missionProgress <= 6 && (
-                                    <InRow>
-                                        <p
-                                            className="mt-3 mb-1 cursor-pointer highlight"
-                                            onClick={() => onSuccess(index)}
-                                        >
-                                            <span className="mx-1">✅</span>
-                                            <span className="font-bold">Success</span>
-                                        </p>
-                                        <p
-                                            className="mt-3 mb-1 cursor-pointer highlight"
-                                            onClick={() => onFailure(index)}
-                                        >
-                                            <span className="mx-1">❌</span>
-                                            <span className="font-bold">Failure</span>
-                                        </p>
-                                    </InRow>
-                                )}
-                            </FadeIn>
+                                    <p
+                                        className="mt-3 mb-1 cursor-pointer highlight"
+                                        onClick={() => onFailure(index)}
+                                    >
+                                        <span className="mx-1">❌</span>
+                                        <span className="font-bold">Failure</span>
+                                    </p>
+                                </InRow>
+                            )}
                         </Card>
                     </React.Fragment>
                 )

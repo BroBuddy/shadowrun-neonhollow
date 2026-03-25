@@ -1,5 +1,4 @@
 import Headline from '@/components/Headline'
-import FadeIn from '@/components/FadeIn'
 import Card from '@/components/Card'
 import { Mission } from '../types/MissionType'
 
@@ -20,29 +19,27 @@ function MissionHeader({ mission }: Props) {
                         loading="lazy"
                     />
                 </div>
+
                 <div className="flex-1 basis-3/5">
-                    <FadeIn>
-                        <p>
-                            <strong className="highlight">Client:</strong>
-                            <br />
-                            {mission.client}
-                        </p>
-                        <p>
-                            <strong className="highlight">Location:</strong>
-                            <br />
-                            {mission.location}
-                        </p>
-                    </FadeIn>
+                    <p>
+                        <strong className="highlight">Client:</strong>
+                        <br />
+                        {mission.client}
+                    </p>
+
+                    <p>
+                        <strong className="highlight">Location:</strong>
+                        <br />
+                        {mission.location}
+                    </p>
                 </div>
             </div>
 
             <Card>
-                <FadeIn>
-                    <p>
-                        <strong className="highlight">Briefing:</strong>
-                        <br /> {mission.briefing}
-                    </p>
-                </FadeIn>
+                <p>
+                    <strong className="highlight">Briefing:</strong>
+                    <br /> {mission.briefing}
+                </p>
             </Card>
         </>
     )

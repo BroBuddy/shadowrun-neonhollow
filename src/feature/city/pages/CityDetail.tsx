@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { Facility } from '../types/FacilityType'
 import ActionView from '../components/ActionView'
 import RollView from '../components/RollView'
-import FadeIn from '@/components/FadeIn'
 import { getFacilityByTag } from '../services/FacilityService'
 
 function CityDetail() {
@@ -17,22 +16,21 @@ function CityDetail() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <FadeIn>
-                <div className="flex gap-5 p-4">
-                    <div className="flex-1 basis-2/5">
-                        <img
-                            src={`/images/city/${data.title}.jpg`}
-                            alt={data.title}
-                            loading="lazy"
-                        />
-                    </div>
-                    <div className="flex-1 basis-3/5">
-                        <p>
-                            <em>"{data.description}"</em>
-                        </p>
-                    </div>
+
+            <div className="flex gap-5 p-4">
+                <div className="flex-1 basis-2/5">
+                    <img
+                        src={`/images/city/${data.title}.jpg`}
+                        alt={data.title}
+                        loading="lazy"
+                    />
                 </div>
-            </FadeIn>
+                <div className="flex-1 basis-3/5">
+                    <p>
+                        <em>"{data.description}"</em>
+                    </p>
+                </div>
+            </div>
 
             {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
 

@@ -8,9 +8,7 @@ type ActionItemProps = {
 
 const ActionItem = ({ action }: ActionItemProps) => (
     <div>
-        <p>
-            <strong>{action.title}</strong>
-        </p>
+        <p><strong>{action.title}</strong></p>
         
         <ul className="list-margin">
             {action.steps.map((step: ActionStepType, stepIndex: number) => (

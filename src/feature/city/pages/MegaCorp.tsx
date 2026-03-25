@@ -1,7 +1,6 @@
 import Headline from '@/components/Headline'
 import { Facility } from '../types/FacilityType'
 import ActionView from '../components/ActionView'
-import FadeIn from '@/components/FadeIn'
 import Card from '@/components/Card'
 import PopUp from '@/components/Popup'
 import useResourceStore from '@/feature/resource/store/resourceStore'
@@ -16,22 +15,20 @@ function MegaCorp() {
     return (
         <>
             <Headline>{data.title}</Headline>
-            <FadeIn>
-                <div className="flex gap-5 p-4">
-                    <div className="flex-1 basis-2/5">
-                        <img
-                            src={`/images/city/${data.title}.jpg`}
-                            alt={data.title}
-                            loading="lazy"
-                        />
-                    </div>
-                    <div className="flex-1 basis-3/5">
-                        <p>
-                            <em>"{data.description}"</em>
-                        </p>
-                    </div>
+
+            <div className="flex gap-5 p-4">
+                <div className="flex-1 basis-2/5">
+                    <img
+                        src={`/images/city/${data.title}.jpg`}
+                        alt={data.title}
+                        loading="lazy"
+                    />
                 </div>
-            </FadeIn>
+
+                <div className="flex-1 basis-3/5">
+                    <p><em>"{data.description}"</em></p>
+                </div>
+            </div>
 
             {data.actionList?.length > 0 && (
                 <ActionView actionList={data.actionList} />

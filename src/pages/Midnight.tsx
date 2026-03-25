@@ -1,5 +1,4 @@
 import Card from '@/components/Card'
-import FadeIn from '@/components/FadeIn'
 import Headline from '@/components/Headline'
 import PopUp from '@/components/Popup'
 import { Event } from '@/feature/event/types/EventType'
@@ -24,25 +23,23 @@ function Midnight() {
         <>
             <Headline>Midnight</Headline>
 
-            <FadeIn>
-                <div className="flex gap-5 p-4">
-                    <div className="flex-1 basis-2/5">
-                        <img
-                            src="/images/city/Midnight.png"
-                            alt="Midnight"
-                            loading="lazy"
-                        />
-                    </div>
-
-                    <div className="flex-1 basis-3/5">
-                        <p>
-                            <em>
-                                "At midnight, the cycle resets and steps are completed and the city holds its breath."
-                            </em>
-                        </p>
-                    </div>
+            <div className="flex gap-5 p-4">
+                <div className="flex-1 basis-2/5">
+                    <img
+                        src="/images/city/Midnight.png"
+                        alt="Midnight"
+                        loading="lazy"
+                    />
                 </div>
-            </FadeIn>
+
+                <div className="flex-1 basis-3/5">
+                    <p>
+                        <em>
+                            "At midnight, the cycle resets and steps are completed and the city holds its breath."
+                        </em>
+                    </p>
+                </div>
+            </div>
 
             <Card>
                 <p>
