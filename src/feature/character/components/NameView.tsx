@@ -1,8 +1,8 @@
 import Card from '@/components/Card'
 import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { Name } from '../NameType'
-import { getNameData } from '../nameData'
+import { Name } from '../types/NameType'
+import { getNameData } from '../services/NameService'
 
 function NameView() {
     const names = useMemo(() => {

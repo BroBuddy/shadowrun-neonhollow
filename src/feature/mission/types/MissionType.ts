@@ -1,4 +1,4 @@
-import { Resources } from "@/feature/character/CharacterType"
+import { Resources } from "@/feature/character/types/CharacterType"
 
 type StepResult = 'success' | 'failure' | null
 

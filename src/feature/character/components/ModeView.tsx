@@ -1,8 +1,8 @@
-import { Mode as ModeType } from '../CharacterType'
-import { getCharacterModes } from '../characterData'
 import { useMemo } from 'react'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
+import { Mode } from '../types/CharacterType'
+import { getCharacterModes } from '../services/CharacterService'
 
 function ModeView() {
     const modes = useMemo(() => getCharacterModes(), [])
@@ -20,7 +20,7 @@ function ModeView() {
 
             <p>The mode grants you starting resources.</p>
             
-            {modes.map((item: ModeType, index: number) => (
+            {modes.map((item: Mode, index: number) => (
                 <div key={index}>
                     <strong
                         className="cursor-pointer highlight"

@@ -1,10 +1,10 @@
 import Headline from '@/components/Headline'
-import NameView from '../../name/components/NameView'
 import GearView from '../components/GearView'
 import ArchetypeView from '../../archetype/components/ArchetypeView'
 import MetatypeView from '../../metatype/components/MetatypeView'
 import ModeView from '../components/ModeView'
 import Card from '@/components/Card'
+import NameView from '../components/NameView'
 
 function Character() {
     return (

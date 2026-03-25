@@ -6,9 +6,9 @@ import { getMissionPerformance } from '../data/performanceData'
 import { useMemo } from 'react'
 import EffectView from './EffectView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
-import { Resources } from '@/feature/character/CharacterType'
 import Card from '@/components/Card'
 import FadeIn from '@/components/FadeIn'
+import { Resources } from '@/feature/character/types/CharacterType'
 
 type Props = {
     successes: number

@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 import { useParams } from 'react-router-dom'
-import { getNameByTag, isValidName } from '../nameData'
-import { Name } from '../NameType'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
+import { getNameByTag, isValidName } from '../services/NameService'
+import { Name } from '../types/NameType'
 
 function NameDetail() {
     const { tag } = useParams()
@@ -52,6 +52,7 @@ function NameDetail() {
                             )}
                         </ol>
                     </div>
+                    
                     <div>
                         <p>
                             <strong className="highlight">Last Name:</strong>

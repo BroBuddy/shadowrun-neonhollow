@@ -1,6 +1,6 @@
-import { Equipment, Mode } from './CharacterType'
+import { Equipment, Mode } from "../types/CharacterType"
 
-const characterEquipments: readonly Equipment[] = [
+export const characterEquipments: readonly Equipment[] = [
     {
         name: 'Power Gauntlets',
         attributes: { Strength: 1 },
@@ -27,7 +27,7 @@ const characterEquipments: readonly Equipment[] = [
     },
 ]
 
-const characterModes: readonly Mode[] = [
+export const characterModes: readonly Mode[] = [
     {
         name: 'Easy Mode',
         icon: '🟢',
@@ -57,6 +57,3 @@ const characterModes: readonly Mode[] = [
         },
     },
 ]
-
-export const getCharacterEquipments = () => characterEquipments
-export const getCharacterModes = () => characterModes
