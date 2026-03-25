@@ -11,6 +11,14 @@ function GenerateNames({ tag }: Props) {
     const [names, setNames] = useState<string[]>([])
     const namesAmount = 5
 
+    const handleGenerate = () => {
+        setNames(generateMultipleNames(tag, namesAmount))
+    }
+
+    useEffect(() => {
+        handleGenerate()
+    }, [handleGenerate])
+
     if (!tag || !isValidTag(tag)) {
         return (
             <>
@@ -21,14 +29,6 @@ function GenerateNames({ tag }: Props) {
             </>
         )
     }
-
-    const handleGenerate = () => {
-        setNames(generateMultipleNames(tag, namesAmount))
-    }
-
-    useEffect(() => {
-        handleGenerate()
-    }, [])
 
     return (
         <>
