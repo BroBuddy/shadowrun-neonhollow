@@ -1,4 +1,4 @@
-import { Background } from '../../archetype/ArchetypeType'
+import { Background } from "../types/ArchetypeType"
 
 const backgroundStreetSamurai: readonly Background[] = [
     {
@@ -378,7 +378,7 @@ const backgroundShaman: readonly Background[] = [
     },
 ]
 
-const backgroundData: readonly Background[] = [
+export const backgroundData: readonly Background[] = [
     ...backgroundStreetSamurai,
     ...backgroundDecker,
     ...backgroundRigger,
@@ -386,16 +386,3 @@ const backgroundData: readonly Background[] = [
     ...backgroundFace,
     ...backgroundShaman,
 ]
-
-const validTags = backgroundData.map(({ id }) => id)
-const isValidBackground = (id: string): boolean => validTags.includes(id)
-
-const backgroundMap = new Map(
-    backgroundData.map((background: Background) => [background.id, background])
-)
-
-const getBackgroundById = (id: string): Background | undefined => {
-    return backgroundMap.get(id)
-}
-
-export { getBackgroundById, isValidBackground }
