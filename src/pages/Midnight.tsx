@@ -1,24 +1,12 @@
 import Card from '@/components/Card'
 import Headline from '@/components/Headline'
-import PopUp from '@/components/Popup'
-import { Event } from '@/feature/event/types/EventType'
-import EventDetail from '@/feature/event/pages/EventDetail'
-import { getEventById } from '@/feature/event/services/EventService'
 import useResourceStore from '@/feature/resource/store/resourceStore'
-import { rollDice } from '@/lib/helper'
-import { useState } from 'react'
 import PageHeader from '@/components/PageHeader'
+import RandomEvent from '@/feature/event/components/RandomEvent'
+import Arrow from '@/components/Arrow'
 
 function Midnight() {
     const modifyResources = useResourceStore((state) => state.modifyResources)
-    const [randomEvent, setRandomEvent] = useState<Event | null>(null)
-
-    const onRandomEvent = () => {
-        const firstRoll = rollDice(1)
-        const secondRoll = rollDice(1)
-        const result = `${firstRoll}${secondRoll}`
-        setRandomEvent(getEventById(result as string) as Event)
-    }
 
     return (
         <>
@@ -38,33 +26,17 @@ function Midnight() {
                 <p><strong>Midnight Steps:</strong></p>
 
                 <ol className="list-margin">
-                    <li>
-                        {!randomEvent && (
-                            <a
-                                className="cursor-pointer"
-                                onClick={onRandomEvent}
-                            >
-                                Random Event
-                            </a>
-                        )}
-
-                        {randomEvent && (
-                            <>
-                                <PopUp title={randomEvent.title}>
-                                    <EventDetail id={randomEvent.id} />
-                                </PopUp>
-                            </>
-                        )}
-                    </li>
+                    <li>Roll <Arrow /> <RandomEvent /></li>
 
                     <li>
                         Lose <strong>Health</strong> and <strong>Energy</strong> equal to your current <strong>Noto</strong> level.
                     </li>
 
                     <li>
+                        Increase <Arrow className='mr-1' />
                         <span className='font-bold highlight cursor-pointer'
                             onClick={() => modifyResources({ Days: 1 })}>
-                                Increase Day counter
+                                Day counter
                             </span>
                     </li>
                 </ol>
