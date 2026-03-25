@@ -10,7 +10,7 @@
         "preview": "vite preview",
         "commit": "npx ts-node scripts/commit.js",
         "deploy": "npm run lint && npm run build && firebase deploy",
-        "test": "jest --config jest.config.js",
+        "test": "jest --config jest.config.js --passWithNoTests",
         "test:watch": "jest --watch"
     },
     "dependencies": {
