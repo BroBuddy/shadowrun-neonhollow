@@ -62,17 +62,17 @@ function ZeroZone() {
                             )}
                         </InRow>
                     </li>
-                    <li>See Challenger <span>&#8594;</span> <RunnerView /></li>
+                    <li>Challenger <span>&#8594;</span> <RunnerView /></li>
                     <li>
+                        Win or lose?
+                        <span className='mx-1'>&#8594;</span>
                         <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', -5)}>
                             Pay 5k Nuyen
                         </span>
-                        <span className='mx-1'>&#8594;</span>
-                        Will the Challenger win or lose?
                     </li>
-                    <li>See Champion <span>&#8594;</span> <RunnerView /></li>
+                    <li>Champion <span>&#8594;</span> <RunnerView /></li>
                     <li>
-                        Right Bet
+                        Tie counts as a loss
                         <span className='mx-1'>&#8594;</span>
                         <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', 10)}>
                             Gain 10k Nuyen
