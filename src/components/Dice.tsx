@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from 'react'
 
 type DiceProps = {
     dice?: number
+    onRoll?: (result: number) => void
 }
 
-const Dice = ({ dice = 1 }: DiceProps) => {
+const Dice = ({ dice = 1, onRoll }: DiceProps) => {
     const defaultDice: string = '🎲'
     const [content, setContent] = useState<string>(defaultDice)
     const [isRolling, setIsRolling] = useState<boolean>(false)
@@ -26,6 +27,7 @@ const Dice = ({ dice = 1 }: DiceProps) => {
             const number = rollDice(min, max)
             setContent(number.toString())
             setIsRolling(false)
+            onRoll?.(number)
 
             timeoutRef.current = setTimeout(() => {
                 resetDice()

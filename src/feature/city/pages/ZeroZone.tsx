@@ -6,10 +6,16 @@ import Card from '@/components/Card'
 import RollView from '../components/RollView'
 import RunnerView from '@/feature/runner/components/RunnerView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
+import Dice from '@/components/Dice'
+import InRow from '@/components/InRow'
+import { useState } from 'react'
+
+const ATTR_MAP: string[] = ['Strength', 'Agility', 'Reaction', 'Logic', 'Intuition', 'Charisma']
 
 function ZeroZone() {
     const data = getFacilityByTag('zerozone') as Facility
     const modifyResources = useResourceStore((state) => state.modifyResources)
+    const [rolledAttr, setRolledAttr] = useState<string | null>(null)
 
     const handleModify = (resource: string, value: number) => {
         modifyResources({ [resource]: value })
@@ -37,6 +43,44 @@ function ZeroZone() {
             </FadeIn>
 
             {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
+
+            <Card>
+                <p>
+                    <strong className='highlight'>💰 Place a Bet:</strong>
+                </p>
+
+                <ul className='list-margin'>
+                    <li>
+                        <InRow>
+                            <span>What's the fight?</span>
+                            <Dice dice={1} onRoll={(n) => setRolledAttr(ATTR_MAP[n - 1])} />
+                            {rolledAttr && (
+                                <>
+                                    <span>&#8594;</span>
+                                    <span>{rolledAttr}</span>
+                                </>
+                            )}
+                        </InRow>
+                    </li>
+                    <li>See Challenger <span>&#8594;</span> <RunnerView /></li>
+                    <li>
+                        <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', -5)}>
+                            Pay 5k Nuyen
+                        </span>
+                        <span className='mx-1'>&#8594;</span>
+                        Will the Challenger win or lose?
+                    </li>
+                    <li>See Champion <span>&#8594;</span> <RunnerView /></li>
+                    <li>
+                        Right Bet
+                        <span className='mx-1'>&#8594;</span>
+                        <span className='font-bold highlight cursor-pointer' onClick={() => handleModify('Nuyen', 10)}>
+                            Gain 10k Nuyen
+                        </span>
+                    </li>
+                </ul>
+
+            </Card>
 
             <Card>
                 <p>
