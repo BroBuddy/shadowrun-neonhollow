@@ -79,7 +79,6 @@ function ZeroZone() {
                         </span>
                     </li>
                 </ul>
-
             </Card>
 
             <Card>
@@ -87,34 +86,14 @@ function ZeroZone() {
                     <strong className='highlight'>⚔️ Challenge a Runner:</strong>
                 </p>
 
-                <p>
-                    <strong>Type:</strong>
-                </p>
-
                 <ul className='list-margin'>
-                    <li><strong>Physical Brawl:</strong> Strength, Agility, Reaction</li>
-                    <li><strong>Mental Clash:</strong> Logic, Intuition, Charisma</li>
-                </ul>
-
-                <p>
-                    <strong>Battle:</strong>
-                </p>
-
-                <ul className='list-margin'>
-                    <li>Total your attributes based on the chosen type</li>
+                    <li>Pick your strongest attribute</li>
                     <li>Enemy <span>&#8594;</span> <RunnerView /></li>
-                    <li>Deduct the opponent’s matching attribute values</li>
-                </ul>
-
-                <p>
-                    <strong>Aftermath:</strong>
-                </p>
-
-                <ul className='list-margin'>
-                    <li>Lost? <span>&#8594;</span> Lose Health equal to the gap</li>
-                    <li>Won? <span className='mr-1'>&#8594;</span> 
-                        <span className='font-bold highlight cursor-pointer'
-                            onClick={() => handleModify('Nuyen', 15)}>Gain 15k Nuyen</span>
+                    <li>Compare matching attributes — the difference is the gap</li>
+                    <li>Lost? &#8594; Lose Health equal to the gap</li>
+                    <li>Won? <span>&#8594;</span>
+                        <span className='font-bold highlight cursor-pointer mx-1'
+                            onClick={() => handleModify('Edge', 2)}>Gain 2 Edge</span>
                     </li>
                 </ul>
             </Card>
