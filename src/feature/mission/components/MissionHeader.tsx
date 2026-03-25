@@ -1,6 +1,7 @@
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { Mission } from '../types/MissionType'
+import PageHeader from '@/components/PageHeader'
 
 type Props = {
     mission: Mission
@@ -11,16 +12,9 @@ function MissionHeader({ mission }: Props) {
         <>
             <Headline>{mission.title}</Headline>
 
-            <div className="flex gap-5 p-4">
-                <div className="flex-1 basis-2/5">
-                    <img
-                        src="/images/city/MegaCorp.jpg"
-                        alt="MegaCorp"
-                        loading="lazy"
-                    />
-                </div>
-
-                <div className="flex-1 basis-3/5">
+            <PageHeader
+                title="MegaCorp"
+                image="/images/city/MegaCorp.jpg">
                     <p>
                         <strong className="highlight">Client:</strong>
                         <br />
@@ -32,8 +26,7 @@ function MissionHeader({ mission }: Props) {
                         <br />
                         {mission.location}
                     </p>
-                </div>
-            </div>
+            </PageHeader>
 
             <Card>
                 <p>

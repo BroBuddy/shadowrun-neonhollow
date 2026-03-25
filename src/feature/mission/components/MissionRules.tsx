@@ -6,9 +6,7 @@ const MissionRules = () => {
     return (
         <Card>
             <div className="mb-4">
-                <p>
-                    <strong>Do Your Homework:</strong>
-                </p>
+                <p><strong>Do Your Homework:</strong></p>
 
                 <span>
                     Know the risks before you run.

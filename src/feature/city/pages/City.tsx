@@ -3,9 +3,9 @@ import { District as DistrictType } from '../types/CityType'
 import Headline from '@/components/Headline'
 import DistrictView from '../components/DistrictView'
 import Card from '@/components/Card'
-import CityHeader from '../components/CityHeader'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import { getCityData } from '../services/CityService'
+import PageHeader from '@/components/PageHeader'
 
 function City() {
     const cityData = getCityData()   
@@ -22,7 +22,24 @@ function City() {
     return (
         <>
             <Headline>NeonHollow</Headline>
-            <CityHeader cityData={cityData} />
+
+            <PageHeader
+                title='NeonHollow'
+                image='/images/city/NeonHollow.jpg'>
+                <p>
+                    <strong className="highlight" role="heading">
+                        District Lockdowns:
+                    </strong>
+                </p>
+
+                {cityData.slice(0, 3).map((district) => (
+                    <div key={district.name}>
+                        {district.icon} {district.name}
+                        <span className='mx-1'>&#8594;</span>
+                        👁️ {district.noto}
+                    </div>
+                ))}
+            </PageHeader>
 
             <Card>
                 {cityData.map((district: DistrictType) => {

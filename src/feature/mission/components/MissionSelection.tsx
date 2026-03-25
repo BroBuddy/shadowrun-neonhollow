@@ -12,9 +12,7 @@ const MissionSelection = () => {
 
     return (
         <Card>
-            <p>
-                <strong>Choose your run:</strong>
-            </p>
+            <p><strong>Choose your run:</strong></p>
 
             {missionData.map((mission: MissionType, index: number) => (
                 <div key={index}>

@@ -1,9 +1,10 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect } from 'react'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
 import { Metatype } from '../types/MetatypeType'
 import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import { getMetatypeById, isValidMetatype } from '../services/MetatypeService'
+import PageHeader from '@/components/PageHeader'
 
 type Props = {
     id: number
@@ -11,9 +12,7 @@ type Props = {
 
 function MetatypeDetail({ id }: Props) {
     const setAttributes = useAttributeStore((state) => state.setAttributes)
-    const data = useMemo(() => {
-        return getMetatypeById(Number(id)) as Metatype
-    }, [id])
+    const data = getMetatypeById(Number(id)) as Metatype
 
     useEffect(() => {
         if (data && isValidMetatype(Number(id))) {
@@ -35,21 +34,11 @@ function MetatypeDetail({ id }: Props) {
 
     return (
         <>
-            <div className="flex gap-5">
-                <div className="flex-1 basis-2/5">
-                    <img
-                        src={`/images/metatype/${data.title}.jpg`}
-                        alt={data.title}
-                        loading="lazy"
-                    />
-                </div>
-
-                <div className="flex-1 basis-3/5">
-                    <p>
-                        <em>"{data.description}"</em>
-                    </p>
-                </div>
-            </div>
+            <PageHeader
+                title={data.title}
+                image={`/images/metatype/${data.title}.jpg`}>
+                <p><em>"{data.description}"</em></p>
+            </PageHeader>
 
             <p className='mt-4'>
                 <strong className="highlight">Starting Attributes:</strong>

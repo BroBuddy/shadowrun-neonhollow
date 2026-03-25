@@ -5,6 +5,7 @@ import Card from '@/components/Card'
 import PopUp from '@/components/Popup'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import { getFacilityByTag } from '../services/FacilityService'
+import PageHeader from '@/components/PageHeader'
 
 function MegaCorp() {
     const data = getFacilityByTag('megacorp') as Facility
@@ -16,19 +17,11 @@ function MegaCorp() {
         <>
             <Headline>{data.title}</Headline>
 
-            <div className="flex gap-5 p-4">
-                <div className="flex-1 basis-2/5">
-                    <img
-                        src={`/images/city/${data.title}.jpg`}
-                        alt={data.title}
-                        loading="lazy"
-                    />
-                </div>
-
-                <div className="flex-1 basis-3/5">
-                    <p><em>"{data.description}"</em></p>
-                </div>
-            </div>
+            <PageHeader
+                title={data.title}
+                image={`/images/city/${data.title}.jpg`}>
+                <p><em>"{data.description}"</em></p>
+            </PageHeader>
 
             {data.actionList?.length > 0 && (
                 <ActionView actionList={data.actionList} />

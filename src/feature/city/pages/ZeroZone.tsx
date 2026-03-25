@@ -8,6 +8,7 @@ import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'
 import { useState } from 'react'
 import { getFacilityByTag } from '../services/FacilityService'
+import PageHeader from '@/components/PageHeader'
 
 const ATTR_MAP: string[] = ['Strength', 'Agility', 'Reaction', 'Logic', 'Intuition', 'Charisma']
 
@@ -24,19 +25,11 @@ function ZeroZone() {
         <>
             <Headline>{data.title}</Headline>
 
-            <div className="flex gap-5 p-4">
-                <div className="flex-1 basis-2/5">
-                    <img
-                        src={`/images/city/${data.title}.jpg`}
-                        alt={data.title}
-                        loading="lazy"
-                    />
-                </div>
-
-                <div className="flex-1 basis-3/5">
-                    <p><em>"{data.description}"</em></p>
-                </div>
-            </div>
+            <PageHeader
+                title={data.title}
+                image={`/images/city/${data.title}.jpg`}>
+                <p><em>"{data.description}"</em></p>
+            </PageHeader>
 
             {data.rollList.length > 0 && <RollView rollList={data.rollList} />}
 
