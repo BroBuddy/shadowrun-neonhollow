@@ -1,4 +1,3 @@
-import { useCallback, useMemo } from 'react'
 import { ResourceRoll, Resource as ResourceType } from '../types/ResourceType'
 import { getIcon } from '@/lib/helper'
 import useResourceStore from '../store/resourceStore'
@@ -11,23 +10,11 @@ type ResourceDetailProps = {
 
 function ResourceDetail({ tag }: ResourceDetailProps) {
     const modifyResources = useResourceStore((state) => state.modifyResources)
-    const data = useMemo(() => {
-        try {
-            return getResourceByTag(tag as string) as ResourceType
-        } catch (error) {
-            console.error('Error fetching resource data:', error)
-            return null
-        }
-    }, [tag])
+    const data = getResourceByTag(tag as string) as ResourceType
 
-    const handleModifyResources = useCallback(
-        (resources?: Resources) => {
-            if (resources) {
-                modifyResources(resources)
-            }
-        },
-        [modifyResources]
-    )
+    const handleModifyResources = (resources?: Resources) => {
+        if (resources) modifyResources(resources)
+    }
 
     if (!tag || !data || !data.rollList) {
         return <p>No resource data available.</p>
@@ -51,6 +38,7 @@ function ResourceDetail({ tag }: ResourceDetailProps) {
                                 Roll {item.range}
                             </strong>{' '}
                             → {item.result}
+                            
                             <ul className="list-margin">
                                 {item.resources &&
                                     Object.entries(item.resources).map(

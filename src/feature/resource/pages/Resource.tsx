@@ -2,11 +2,10 @@ import Card from '@/components/Card'
 import Headline from '@/components/Headline'
 import { Resource as ResourceType } from '../types/ResourceType'
 import { Link } from 'react-router-dom'
-import { useMemo } from 'react'
 import { getResourceData } from '../services/ResourceService'
 
 function Resource() {
-    const resourceData = useMemo(() => getResourceData(), [])
+    const resourceData = getResourceData()
 
     return (
         <>

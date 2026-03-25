@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import { Event, SkillCheck as SkillCheckType } from '../types/EventType'
 import SkillCheck from '../components/SkillCheck'
 import { getEventById } from '../services/EventService'
@@ -16,18 +15,11 @@ type EventDetailProps = {
 }
 
 function EventDetail({ id }: EventDetailProps) {
-    const data: Event = useMemo(() => {
-        try {
-            return getEventById(id as string) ?? defaultEvent
-        } catch (error) {
-            console.error('Error fetching event data:', error)
-            return defaultEvent
-        }
-    }, [id])
-
     if (!id) {
         return <p>No event ID provided.</p>
     }
+
+    const data: Event = getEventById(id) ?? defaultEvent
 
     if (!data) {
         return <p>No event data available.</p>

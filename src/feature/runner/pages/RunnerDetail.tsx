@@ -1,4 +1,3 @@
-import { useMemo } from 'react'
 import { getRunnerById } from '../services/RunnerService'
 import { Runner } from '../types/RunnerType'
 
@@ -22,22 +21,12 @@ type RunnerDetailProps = {
 }
 
 function RunnerDetail({ id }: RunnerDetailProps) {
-    const data: Runner = useMemo(
-        () => getRunnerById(id as string) ?? defaultRunner,
-        [id]
-    )
-
-    if (!data) {
-        return <></>
-    }
+    const data: Runner = getRunnerById(id as string) ?? defaultRunner
 
     return (
         <>
             <p>{data.description}</p>
-            
-            <p>
-                <strong className="highlight">Attributes:</strong>
-            </p>
+            <p><strong className="highlight">Attributes:</strong></p>
 
             <ul className="list-margin">
                 {Object.entries(data.attributes).map(([key, value]) => (
@@ -47,10 +36,7 @@ function RunnerDetail({ id }: RunnerDetailProps) {
                 ))}
             </ul>
 
-            <p>
-                <strong className="highlight">Background:</strong>
-            </p>
-
+            <p><strong className="highlight">Background:</strong></p>
             <p>{data.background}</p>
         </>
     )

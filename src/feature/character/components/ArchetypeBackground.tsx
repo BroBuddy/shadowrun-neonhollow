@@ -19,7 +19,9 @@ const ArchetypeBackground = ({ id }: Props) => {
 
     return (
         <>
-            <p className='mt-4'> <strong className="highlight">{data.title}:</strong></p>
+            <p className='mt-4'>
+                <strong className="highlight">{data.title}:</strong>
+            </p>
             <p>{data.description}</p>
             <p><strong>Attributes:</strong></p>
 

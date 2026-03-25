@@ -3,7 +3,6 @@ import {
     MissionPerformance as MissionPerformanceType,
 } from '../types/MissionType'
 import { getMissionPerformance } from '../data/performanceData'
-import { useMemo } from 'react'
 import EffectView from './EffectView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
@@ -16,7 +15,7 @@ type Props = {
 
 function MissionPerformance({ successes, total }: Props) {
     const modifyResources = useResourceStore((state) => state.modifyResources)
-    const missionPerformance = useMemo(() => getMissionPerformance(), [])
+    const missionPerformance = getMissionPerformance()
 
     const handleModifyResources = (resources?: Resources) => {
         if (resources) {
