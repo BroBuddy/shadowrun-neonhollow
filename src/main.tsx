@@ -7,7 +7,6 @@ import { register } from './serviceWorkerRegistration.ts'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
-import MetatypeRouter from './feature/metatype/MetatypeRouter.tsx'
 import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter'
 import Preloader from './components/Preloader.tsx'
@@ -58,9 +57,8 @@ const router = createBrowserRouter([
                     </Suspense>
                 ),
             },
-            ...MechanicRouter,
             ...CharacterRouter,
-            ...MetatypeRouter,
+            ...MechanicRouter,
             ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,

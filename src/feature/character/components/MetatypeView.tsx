@@ -1,10 +1,10 @@
 import Card from '@/components/Card'
 import { Link } from 'react-router-dom'
-import { Metatype } from '../MetatypeType'
+import { Metatype } from '../types/MetatypeType'
 import { useMemo } from 'react'
-import { getMetatypeData } from '../metatypeData'
 import InRow from '@/components/InRow'
 import Dice from '@/components/Dice'
+import { getMetatypeData } from '../services/MetatypeService'
 
 function MetatypeView() {
     const data = useMemo(() => {
@@ -29,10 +29,13 @@ function MetatypeView() {
             <ol className="list-margin">
                 {data.map((item: Metatype, index: number) => (
                     <li key={index}>
-                        <Link to={`/metatype/${item.id}`}>{item.title}</Link>
+                        <Link to={`/character/metatype/${item.id}`}>
+                            {item.title}
+                        </Link>
                     </li>
                 ))}
             </ol>
+            
             <p>On a 6, select your Metatype.</p>
         </Card>
     )

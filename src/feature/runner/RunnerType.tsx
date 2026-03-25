@@ -1,4 +1,4 @@
-import { Attributes } from '../metatype/MetatypeType'
+import { Attributes } from '../character/types/MetatypeType'
 
 type Runner = {
     id: string

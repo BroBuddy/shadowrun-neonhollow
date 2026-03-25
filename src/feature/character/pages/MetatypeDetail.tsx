@@ -2,10 +2,10 @@ import { useEffect, useMemo } from 'react'
 import { useParams } from 'react-router-dom'
 import Headline from '@/components/Headline'
 import Card from '@/components/Card'
-import { getMetatypeById, isValidMetatype } from '../metatypeData'
-import { Metatype } from '../MetatypeType'
+import { Metatype } from '../types/MetatypeType'
 import useAttributeStore from '@/feature/attribute/store/attributeStore'
 import FadeIn from '@/components/FadeIn'
+import { getMetatypeById, isValidMetatype } from '../services/MetatypeService'
 
 function MetatypeDetail() {
     const { id } = useParams()

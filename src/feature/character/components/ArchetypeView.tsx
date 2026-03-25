@@ -31,7 +31,7 @@ function ArchetypeView() {
             <ol className="list-margin">
                 {data.map((item: Archetype, index: number) => (
                     <li key={index}>
-                        <Link to={`/archetype/${item.id}`}>{item.title}</Link>
+                        <Link to={`/character/archetype/${item.id}`}>{item.title}</Link>
                     </li>
                 ))}
             </ol>

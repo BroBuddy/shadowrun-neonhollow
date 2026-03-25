@@ -13,14 +13,14 @@ function GearView() {
             <p>
                 <strong>Gear:</strong>
             </p>
-            
+
             <p>Choose one item for free from the Fixer's Workshop:</p>
 
             <ul className="list-margin">
                 {equipments.length > 0 ? (
                     equipments.map((item: Equipment, index: number) => (
                         <li key={index}>
-                            <strong className="highlight">{item.name}:</strong>{' '}
+                            <strong className="font-bold">{item.name}:</strong>{' '}
                             {Object.entries(item.attributes).map(
                                 ([attribute, value]) => (
                                     <span key={attribute}>

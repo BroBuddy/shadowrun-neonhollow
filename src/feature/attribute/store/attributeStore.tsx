@@ -1,4 +1,4 @@
-import { Attributes } from '@/feature/metatype/MetatypeType'
+import { Attributes } from '@/feature/character/types/MetatypeType'
 import { create } from 'zustand'
 
 type AttributeState = {

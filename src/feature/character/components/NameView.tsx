@@ -18,11 +18,13 @@ function NameView() {
             <p>
                 <strong>(Optional) Name:</strong>
             </p>
+            
             <p>Each archetype has its own name pool:</p>
+
             <ul className="list-margin">
                 {names.map((item: Name, index: number) => (
                     <li key={index}>
-                        <Link to={`/name/${item.tag}`}>{item.title}</Link>
+                        <Link to={`/character/name/${item.tag}`}>{item.title}</Link>
                     </li>
                 ))}
             </ul>
