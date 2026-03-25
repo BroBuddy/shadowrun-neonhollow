@@ -1,4 +1,4 @@
-import { Event } from './EventType'
+import { Event } from "../types/EventType"
 
 const eventOnes: readonly Event[] = [
     {
@@ -1189,7 +1189,7 @@ const eventEncounter: readonly Event[] = [
     },
 ]
 
-const eventData: readonly Event[] = [
+export const eventData: readonly Event[] = [
     ...eventOnes,
     ...eventTwos,
     ...eventThrees,
@@ -1199,11 +1199,3 @@ const eventData: readonly Event[] = [
     ...eventFacility,
     ...eventEncounter,
 ]
-
-const eventMap = new Map(eventData.map((event: Event) => [event.id, event]))
-
-const getEventById = (id: string): Event | undefined => {
-    return eventMap.get(id)
-}
-
-export { getEventById }

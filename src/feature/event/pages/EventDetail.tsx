@@ -1,7 +1,8 @@
 import { useMemo } from 'react'
-import { getEventById } from '../eventData'
-import { Event, SkillCheck as SkillCheckType } from '../EventType'
+import { Event, SkillCheck as SkillCheckType } from '../types/EventType'
 import SkillCheck from '../components/SkillCheck'
+import { getEventById } from '../services/EventService'
+import BonusAttribute from '../components/BonusAttribute'
 
 const defaultEvent: Event = {
     id: '',
@@ -13,17 +14,6 @@ const defaultEvent: Event = {
 type EventDetailProps = {
     id?: string
 }
-
-const BonusAttributes = ({ bonus }: { bonus: string }) => (
-    <>
-        <p>
-            <strong className="highlight">Bonus Attribute:</strong>
-        </p>
-        <ul className="list-margin">
-            <li>{bonus}</li>
-        </ul>
-    </>
-)
 
 function EventDetail({ id }: EventDetailProps) {
     const data: Event = useMemo(() => {
@@ -47,7 +37,7 @@ function EventDetail({ id }: EventDetailProps) {
         <>
             <p>{data.description}</p>
 
-            {data.bonus && <BonusAttributes bonus={data.bonus} />}
+            {data.bonus && <BonusAttribute bonus={data.bonus} />}
 
             {data.skillChecks && (
                 <>

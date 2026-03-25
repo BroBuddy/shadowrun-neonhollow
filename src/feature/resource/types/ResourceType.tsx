@@ -1,4 +1,4 @@
-import { Resources } from "../character/types/CharacterType"
+import { Resources } from "../../character/types/CharacterType"
 
 type Resource = {
     tag: string

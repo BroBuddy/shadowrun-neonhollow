@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { SkillCheck as SkillCheckType } from '../EventType'
+import { SkillCheck as SkillCheckType } from '../types/EventType'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Dice from '@/components/Dice'
 import InRow from '@/components/InRow'

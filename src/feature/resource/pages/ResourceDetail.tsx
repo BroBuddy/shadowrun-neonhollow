@@ -1,9 +1,9 @@
 import { useCallback, useMemo } from 'react'
-import { getResourceByTag } from '../resourceData'
-import { ResourceRoll, Resource as ResourceType } from '../ResourceType'
+import { ResourceRoll, Resource as ResourceType } from '../types/ResourceType'
 import { getIcon } from '@/lib/helper'
 import useResourceStore from '../store/resourceStore'
 import { Resources } from '@/feature/character/types/CharacterType'
+import { getResourceByTag } from '../services/ResourceService'
 
 type ResourceDetailProps = {
     tag?: string
