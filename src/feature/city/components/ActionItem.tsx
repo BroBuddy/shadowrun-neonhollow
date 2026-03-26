@@ -2,6 +2,7 @@ import Arrow from '@/components/Arrow'
 import { ActionStep as ActionStepType, FacilityAction } from '../types/FacilityType'
 
 import ActionStep from './ActionStep'
+import React from 'react'
 
 type ActionItemProps = {
     action: FacilityAction
@@ -13,12 +14,12 @@ const ActionItem = ({ action }: ActionItemProps) => (
         
         <div className="flex flex-wrap items-center gap-1">
             {action.steps.map((step: ActionStepType, stepIndex: number) => (
-                <>
+                <React.Fragment key={stepIndex}>
                     <ActionStep key={stepIndex} step={step} />
                     {stepIndex < action.steps.length - 1 && (
                         <Arrow />
                     )}
-                </>
+                </React.Fragment>
             ))}
         </div>
     </div>

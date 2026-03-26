@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ColorThemeProvider } from './context/ColorThemeProvider.tsx'
 import { ErrorBoundary } from 'react-error-boundary'
 import { register } from './serviceWorkerRegistration.ts'
-import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter'
@@ -46,7 +45,6 @@ const router = createBrowserRouter([
             },
             ...CharacterRouter,
             ...RuleRouter,
-            ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,
         ],

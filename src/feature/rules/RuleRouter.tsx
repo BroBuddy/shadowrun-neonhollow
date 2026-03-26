@@ -1,6 +1,7 @@
 import Preloader from '@/components/Preloader'
-import { Suspense } from 'react'
-import Rules from './pages/Rules'
+import React, { Suspense } from 'react'
+
+const Rules = React.lazy(() => import('./pages/Rules'))
 
 const RuleRouter = [
     {
