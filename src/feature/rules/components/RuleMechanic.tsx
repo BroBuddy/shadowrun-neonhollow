@@ -1,10 +1,10 @@
-import { Mechanic } from '../types/MechanicType'
 import PopUp from '@/components/Popup'
-import MechanicDetail from '../pages/MechanicDetail'
-import { getMechanicData } from '../services/MechanicService'
+import RuleDetail from './RuleDetail'
+import { Rule } from '../types/RuleType'
+import { getRuleData } from '../services/RuleService'
 
-function MechanicView() {
-    const data = getMechanicData() as Mechanic[]
+function RuleMechanic() {
+    const data = getRuleData() as Rule[]
 
     return (
         <section>
@@ -12,10 +12,10 @@ function MechanicView() {
             <p><em>"Tap any highlighted text to apply its effect."</em></p>
 
             <ul className="list-margin">
-                {data.map((item: Mechanic, index: number) => (
+                {data.map((item: Rule, index: number) => (
                     <li key={index}>
                         <PopUp title={item.title}>
-                            <MechanicDetail tag={item.tag} />
+                            <RuleDetail tag={item.tag} />
                         </PopUp>
                     </li>
                 ))}
@@ -24,4 +24,4 @@ function MechanicView() {
     )
 }
 
-export default MechanicView
+export default RuleMechanic

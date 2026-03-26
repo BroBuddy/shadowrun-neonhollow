@@ -4,9 +4,14 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 import PageHeader from '@/components/PageHeader'
 import RandomEvent from '@/feature/event/components/RandomEvent'
 import Arrow from '@/components/Arrow'
+import { useCallback } from 'react'
 
 function Midnight() {
     const modifyResources = useResourceStore((state) => state.modifyResources)
+
+    const handleIncreaseDay = useCallback(() => {
+        modifyResources({ Days: 1 })
+    }, [modifyResources])
 
     return (
         <>
@@ -34,10 +39,13 @@ function Midnight() {
 
                     <li>
                         Increase <Arrow className='mr-1' />
-                        <span className='font-bold highlight cursor-pointer'
-                            onClick={() => modifyResources({ Days: 1 })}>
-                                Day counter
-                            </span>
+                        <button
+                            type="button"
+                            onClick={handleIncreaseDay}
+                            className="font-bold highlight cursor-pointer"
+                        >
+                            Day counter
+                        </button>
                     </li>
                 </ol>
 

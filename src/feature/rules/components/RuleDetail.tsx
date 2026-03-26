@@ -1,12 +1,12 @@
-import { Mechanic } from '../types/MechanicType'
-import { getMechanicByTag } from '../services/MechanicService'
+import { getRuleByTag } from '../services/RuleService'
+import { Rule } from '../types/RuleType'
 
-type MechanicDetailProps = {
+type RuleDetailProps = {
     tag?: string
 }
 
-function MechanicDetail({ tag }: MechanicDetailProps) {
-    const data = getMechanicByTag(tag as string) as Mechanic
+function RuleDetail({ tag }: RuleDetailProps) {
+    const data = getRuleByTag(tag as string) as Rule
 
     return (
         <>
@@ -21,4 +21,4 @@ function MechanicDetail({ tag }: MechanicDetailProps) {
     )
 }
 
-export default MechanicDetail
+export default RuleDetail

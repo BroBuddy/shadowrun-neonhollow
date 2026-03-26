@@ -1,27 +1,22 @@
 import React, { StrictMode, Suspense } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import { ColorSchemeProvider } from './context/ColorSchemeProvider.tsx'
+import { ColorThemeProvider } from './context/ColorThemeProvider.tsx'
 import { ErrorBoundary } from 'react-error-boundary'
 import { register } from './serviceWorkerRegistration.ts'
 import ResourceRouter from './feature/resource/ResourceRouter.tsx'
 import CityRouter from './feature/city/CityRouter.tsx'
 import MissionRouter from './feature/mission/MissionRouter.tsx'
-import MechanicRouter from './feature/mechanic/MechanicRouter.tsx'
 import CharacterRouter from './feature/character/CharacterRouter'
 import Preloader from './components/Preloader.tsx'
 import Error from './pages/Error.tsx'
 import App from './App.tsx'
+import RuleRouter from './feature/rules/RuleRouter.tsx'
 
 const Pages = {
     Welcome: React.lazy(() => import('./pages/Welcome')),
-    Rules: React.lazy(() => import('./pages/Rules')),
     Midnight: React.lazy(() => import('./pages/Midnight')),
 }
-
-import('./pages/Welcome')
-import('./pages/Rules')
-import('./pages/Midnight')
 
 const router = createBrowserRouter([
     {
@@ -35,20 +30,12 @@ const router = createBrowserRouter([
     {
         element: (
             <ErrorBoundary fallback={<Error />}>
-                <ColorSchemeProvider>
+                <ColorThemeProvider>
                     <App />
-                </ColorSchemeProvider>
+                </ColorThemeProvider>
             </ErrorBoundary>
         ),
         children: [
-            {
-                path: '/rules',
-                element: (
-                    <Suspense fallback={<Preloader />}>
-                        <Pages.Rules />
-                    </Suspense>
-                ),
-            },
             {
                 path: '/midnight',
                 element: (
@@ -58,7 +45,7 @@ const router = createBrowserRouter([
                 ),
             },
             ...CharacterRouter,
-            ...MechanicRouter,
+            ...RuleRouter,
             ...ResourceRouter,
             ...CityRouter,
             ...MissionRouter,

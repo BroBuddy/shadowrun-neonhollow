@@ -1,6 +1,6 @@
-import { Mechanic } from '../types/MechanicType'
+import { Rule } from '../types/RuleType'
 
-export const mechanicData: Mechanic[] = [
+export const ruleData: Rule[] = [
     {
         tag: 'dice',
         title: '🎲 Dice Rolling',
