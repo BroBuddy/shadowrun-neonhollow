@@ -21,13 +21,17 @@ type RunnerDetailProps = {
 }
 
 function RunnerDetail({ id }: RunnerDetailProps) {
-    const data: Runner = getRunnerById(id as string) ?? defaultRunner
+    const data: Runner = id ? getRunnerById(id) ?? defaultRunner : defaultRunner
+
+    if (!id || !data.id) {
+        return <p>Runner not found.</p>
+    }
 
     return (
-        <>
+        <section>
             <p>{data.description}</p>
-            <p><strong className="highlight">Attributes:</strong></p>
 
+            <h3 className="highlight">Attributes:</h3>
             <ul className="list-margin">
                 {Object.entries(data.attributes).map(([key, value]) => (
                     <li key={key}>
@@ -36,9 +40,9 @@ function RunnerDetail({ id }: RunnerDetailProps) {
                 ))}
             </ul>
 
-            <p><strong className="highlight">Background:</strong></p>
+            <h3 className="highlight">Background:</h3>
             <p>{data.background}</p>
-        </>
+        </section>
     )
 }
 

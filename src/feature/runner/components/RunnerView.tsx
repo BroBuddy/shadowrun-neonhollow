@@ -6,32 +6,36 @@ import { getRunnerById } from '../services/RunnerService'
 import { Runner } from '../types/RunnerType'
 
 function RunnerView() {
-    const [randomRunner, setRandomRunner] = useState<Runner | null>(null)
+    const [runner, setRunner] = useState<Runner | null>(null)
 
-    const onRandomRunner = () => {
-        const firstRoll = rollDice(1)
-        const secondRoll = rollDice(1)
-        const result = String(`${firstRoll}${secondRoll}`)
-        const runner = getRunnerById(result)
-        if (runner) setRandomRunner(runner)
+    const getRandomRunnerId = (): string => {
+        const first = rollDice(1)
+        const second = rollDice(1)
+        return `${first}${second}`
+    }
+
+    const handleRandomRunner = () => {
+        const runnerId = getRandomRunnerId()
+        const selectedRunner = getRunnerById(runnerId)
+        if (selectedRunner) setRunner(selectedRunner)
+    }
+
+    if (!runner) {
+        return (
+            <button
+                type="button"
+                onClick={handleRandomRunner}
+                className="cursor-pointer font-bold highlight"
+            >
+                Random Runner
+            </button>
+        )
     }
 
     return (
-        <>
-            {!randomRunner && (
-                <a className="cursor-pointer" onClick={onRandomRunner}>
-                    Random Runner
-                </a>
-            )}
-
-            {randomRunner && (
-                <>
-                    <PopUp title={randomRunner.title}>
-                        <RunnerDetail id={randomRunner.id} />
-                    </PopUp>
-                </>
-            )}
-        </>
+        <PopUp title={runner.title}>
+            <RunnerDetail id={runner.id} />
+        </PopUp>
     )
 }
 
