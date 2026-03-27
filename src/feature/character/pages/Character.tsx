@@ -1,5 +1,4 @@
 import Headline from '@/components/Headline'
-import GearView from '../components/GearView'
 import ArchetypeView from '../components/ArchetypeView'
 import MetatypeView from '../components/MetatypeView'
 import ModeView from '../components/ModeView'
@@ -13,7 +12,6 @@ function Character() {
             <Headline>Character Creation</Headline>
             <MetatypeView />
             <ArchetypeView />
-            <GearView />
             <NameView />
             <ModeView />
 
