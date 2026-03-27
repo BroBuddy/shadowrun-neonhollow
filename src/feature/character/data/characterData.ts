@@ -1,4 +1,4 @@
-import { Equipment, Mode } from "../types/CharacterType"
+import { Mode } from "../types/CharacterType"
 
 export const characterModes: readonly Mode[] = [
     {
