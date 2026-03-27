@@ -12,7 +12,7 @@ const MissionRules = () => {
                 <span>
                     Know the risks before you run.
                     <Arrow className='mx-1' />
-                    <PopUp title='Rules'>
+                    <PopUp title='Mission Rules'>
                         <p>You can only complete one run per day.</p>
                         <ul className="list-margin">
                             <li>Each run has 6 steps. Each step reveals a random event.</li>

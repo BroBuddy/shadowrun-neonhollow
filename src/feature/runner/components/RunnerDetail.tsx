@@ -30,17 +30,7 @@ function RunnerDetail({ id }: RunnerDetailProps) {
     return (
         <section>
             <p>{data.description}</p>
-
-            <h3 className="highlight">Attributes:</h3>
-            <ul className="list-margin">
-                {Object.entries(data.attributes).map(([key, value]) => (
-                    <li key={key}>
-                        <strong>{key}:</strong> {value}
-                    </li>
-                ))}
-            </ul>
-
-            <h3 className="highlight">Background:</h3>
+            <p className="highlight"><strong>Background:</strong></p>
             <p>{data.background}</p>
         </section>
     )

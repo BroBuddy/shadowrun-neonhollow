@@ -1,7 +1,7 @@
 import { rollDice } from '@/lib/helper'
 import { useState } from 'react'
 import PopUp from '@/components/Popup'
-import RunnerDetail from '../pages/RunnerDetail'
+import RunnerDetail from './RunnerDetail'
 import { getRunnerById } from '../services/RunnerService'
 import { Runner } from '../types/RunnerType'
 
