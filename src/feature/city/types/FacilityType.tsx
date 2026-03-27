@@ -1,3 +1,4 @@
+import { Attributes } from "@/feature/character/types/MetatypeType"
 import { Resources } from "../../character/types/CharacterType"
 
 type Facility = {
@@ -13,6 +14,7 @@ type FacilityRoll = {
     roll: string
     text: string
     resource?: Resources
+    attribute?: Attributes
 }
 
 type FacilityAction = {
@@ -25,6 +27,7 @@ type ActionStep = {
     text: string
     tag?: string
     resource?: Resources
+    attribute?: Resources
 }
 
 export type { Facility, FacilityRoll, FacilityAction, ActionStep }

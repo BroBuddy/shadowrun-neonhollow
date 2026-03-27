@@ -1,10 +1,10 @@
 import { ActionStep as ActionStepType } from '../types/FacilityType'
 import { renderRoll2d6 } from '@/lib/helper'
 import PopUp from '@/components/Popup'
-import ResourceDetail from '@/feature/resource/components/ResourceDetail'
 import RunnerView from '@/feature/runner/components/RunnerView'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import AttributeTraining from '@/feature/attribute/components/AttributeTraining'
+import ResourceDetail from '@/feature/resource/components/ResourceDetail'
 
 type ActionStepProps = {
     step: ActionStepType
@@ -13,7 +13,7 @@ type ActionStepProps = {
 const ActionStep = ({ step }: ActionStepProps) => {
     const modifyResources = useResourceStore((state) => state.modifyResources)
 
-    const handleStepClick = (resourceChange?: Record<string, number>) => {
+    const handleResourceStep = (resourceChange?: Record<string, number>) => {
         if (resourceChange) {
             modifyResources(resourceChange)
         }
@@ -32,7 +32,7 @@ const ActionStep = ({ step }: ActionStepProps) => {
             return (
                 <button
                     className="cursor-pointer font-bold highlight"
-                    onClick={() => handleStepClick(step.resource)}
+                    onClick={() => handleResourceStep(step.resource)}
                 >
                     {step.text}
                 </button>

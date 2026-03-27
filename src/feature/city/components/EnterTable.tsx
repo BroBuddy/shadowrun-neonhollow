@@ -4,6 +4,7 @@ import Dice from '@/components/Dice'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import RollItem from './RollItem'
 import Arrow from '@/components/Arrow'
+import useAttributeStore from '@/feature/attribute/store/attributeStore'
 
 type FacilityRollsProps = {
     rollList: FacilityRoll[]
@@ -11,12 +12,19 @@ type FacilityRollsProps = {
 
 const EnterTable = ({ rollList }: FacilityRollsProps) => {
     const modifyResources = useResourceStore((state) => state.modifyResources)
+    const modifyAttributes = useAttributeStore((state) => state.modifyAttributes)
 
-    const handleStepClick = (resourceChange?: Record<string, number>) => {
+    const handleResourceStep = (resourceChange?: Record<string, number>) => {
         if (resourceChange) {
             modifyResources(resourceChange)
         }
     }
+
+    const handleAttributeStep = (resourceChange?: Record<string, number>) => {
+        if (resourceChange) {
+            modifyAttributes(resourceChange)
+        }
+    }  
 
     return (
         <Card>
@@ -26,7 +34,7 @@ const EnterTable = ({ rollList }: FacilityRollsProps) => {
                 <button
                     className="highlight font-bold"
                     aria-label="Spend 1 Energy"
-                    onClick={() => handleStepClick({ Energy: -1 })}
+                    onClick={() => handleResourceStep({ Energy: -1 })}
                 >
                     Spend 1 Energy
                 </button>
@@ -40,7 +48,8 @@ const EnterTable = ({ rollList }: FacilityRollsProps) => {
                     <RollItem
                         key={index}
                         item={item}
-                        handleStepClick={handleStepClick}
+                        handleResourceStep={handleResourceStep}
+                        handleAttributeStep={handleAttributeStep}
                     />
                 ))}
             </ul>

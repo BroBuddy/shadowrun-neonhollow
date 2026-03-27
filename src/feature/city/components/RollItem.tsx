@@ -6,10 +6,11 @@ import RunnerView from '@/feature/runner/components/RunnerView'
 
 type RollItemProps = {
     item: FacilityRoll
-    handleStepClick: (resourceChange?: Record<string, number>) => void
+    handleResourceStep: (resourceChange?: Record<string, number>) => void
+    handleAttributeStep: (resourceChange?: Record<string, number>) => void
 }
 
-const RollItem = ({ item, handleStepClick }: RollItemProps) => (
+const RollItem = ({ item, handleResourceStep, handleAttributeStep }: RollItemProps) => (
     <li>
         <strong>Roll {item.roll}</strong> <Arrow className='mr-1' />
         {item.roll === '7' ? (
@@ -20,7 +21,18 @@ const RollItem = ({ item, handleStepClick }: RollItemProps) => (
                 <Arrow className='mx-1' />
                 <button
                     className="cursor-pointer font-bold highlight"
-                    onClick={() => handleStepClick(item.resource)}
+                    onClick={() => handleResourceStep(item.resource)}
+                >
+                    {item.text.split(' | ')[1]}
+                </button>
+            </>
+        ) : item.attribute ? (
+            <>
+                <span>{item.text.split(' | ')[0]}</span>
+                <Arrow className='mx-1' />
+                <button
+                    className="cursor-pointer font-bold highlight"
+                    onClick={() => handleAttributeStep(item.attribute)}
                 >
                     {item.text.split(' | ')[1]}
                 </button>
