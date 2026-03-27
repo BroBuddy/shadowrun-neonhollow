@@ -2,6 +2,7 @@ import PopUp from '@/components/Popup'
 import EventDetail from '@/feature/event/pages/EventDetail'
 import { FacilityRoll } from '../types/FacilityType'
 import Arrow from '@/components/Arrow'
+import RunnerView from '@/feature/runner/components/RunnerView'
 
 type RollItemProps = {
     item: FacilityRoll
@@ -12,7 +13,7 @@ const RollItem = ({ item, handleStepClick }: RollItemProps) => (
     <li>
         <strong>Roll {item.roll}</strong> <Arrow className='mr-1' />
         {item.roll === '7' ? (
-            <>No Effect</>
+            <>You meet <Arrow /> <RunnerView /></>
         ) : item.resource ? (
             <>
                 <span>{item.text.split(' | ')[0]}</span>
