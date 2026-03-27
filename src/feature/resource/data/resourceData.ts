@@ -8,18 +8,18 @@ export const resourceData: Resource[] = [
             {
                 range: '2-5',
                 result: 'Fragged',
-                resources: { Nuyen: -4 },
+                resources: { Noto: +1 },
             },
             {
                 range: '6-8',
                 result: 'Drek',
             },
-            { range: '9-11', result: 'Standard', resources: { Nuyen: +4 } },
-            { range: '12-14', result: 'Solid', resources: { Nuyen: +8 } },
+            { range: '9-11', result: 'Standard', resources: { Nuyen: +5 } },
+            { range: '12-14', result: 'Solid', resources: { Nuyen: +10 } },
             {
                 range: '15+',
                 result: 'Terminal',
-                resources: { Nuyen: +12, Edge: +1 },
+                resources: { Nuyen: +15, Edge: +1 },
             },
         ],
     },
@@ -31,7 +31,7 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Fragged',
                 resources: {
-                    Health: -3,
+                    Noto: +1,
                 },
             },
             {
@@ -70,7 +70,7 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Fragged',
                 resources: {
-                    Energy: -3,
+                    Noto: +1,
                 },
             },
             {
@@ -109,7 +109,7 @@ export const resourceData: Resource[] = [
                 range: '2-5',
                 result: 'Fragged',
                 resources: {
-                    Karma: -2,
+                    Noto: +1,
                 },
             },
             {
@@ -166,8 +166,7 @@ export const resourceData: Resource[] = [
                 range: '12-14',
                 result: 'Solid',
                 resources: {
-                    Noto: -1,
-                    Edge: +1,
+                    Noto: -2,
                 },
             },
             {

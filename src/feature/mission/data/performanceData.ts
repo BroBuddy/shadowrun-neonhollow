@@ -6,7 +6,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🔴 0 Successes',
         level: 'Fragged',
         resources: {
-            Noto: +2,
+            Noto: +1,
         },
     },
     {
@@ -15,6 +15,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         level: 'Drek',
         resources: {
             Noto: +1,
+            Nuyen: +5,
         },
     },
     {
@@ -22,7 +23,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟡 3 Successes',
         level: 'Standard',
         resources: {
-            Nuyen: +4,
+            Nuyen: +10,
         },
     },
     {
@@ -30,7 +31,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 4-5 Successes',
         level: 'Solid',
         resources: {
-            Nuyen: +8,
+            Nuyen: +20,
             Progress: +1,
         },
     },
@@ -39,7 +40,7 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🔵 6 Successes',
         level: 'Terminal',
         resources: {
-            Nuyen: +12,
+            Nuyen: +30,
             Progress: +1,
             Edge: +1,
         },

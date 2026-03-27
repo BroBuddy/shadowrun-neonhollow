@@ -33,7 +33,7 @@ function EventDetail({ id }: EventDetailProps) {
 
             {data.skillChecks && (
                 <>
-                    <p><strong>Your move:</strong></p>
+                    <p><strong>Choose wisely:</strong></p>
 
                     {data.skillChecks.map(
                         (item: SkillCheckType, index: number) => (
