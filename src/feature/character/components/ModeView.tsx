@@ -26,7 +26,7 @@ function ModeView() {
                     </strong>
                     
                     <ul className="list-margin">
-                        <li>
+                        <li key={item.name}>
                             {Object.entries(item.resources).map(
                                 ([resource, value], resourceIndex) => (
                                     <>
