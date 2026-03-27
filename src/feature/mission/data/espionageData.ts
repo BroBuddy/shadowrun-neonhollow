@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const espionageRun: Mission = {
-    id: '5',
+    id: 5,
+    icon: '🧠',
     title: 'Espionage',
     focus: 'INT, CHA',
     description: 'Steal secrets without leaving a trace.',

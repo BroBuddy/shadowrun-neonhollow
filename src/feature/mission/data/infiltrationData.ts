@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const infiltrationRun: Mission = {
-    id: '6',
+    id: 6,
+    icon: '🧠',
     title: 'Infiltration',
     focus: 'CHA, LOG',
     description: 'Walk in like you belong. Leave before they know.',

@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const smugglingRun: Mission = {
-    id: '3',
+    id: 3,
+    icon: '💪',
     title: 'Smuggling',
     focus: 'REA, STR',
     description: 'Move illegal cargo through hostile territory.',

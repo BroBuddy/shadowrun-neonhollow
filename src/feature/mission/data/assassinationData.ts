@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const assassinationRun: Mission = {
-    id: '2',
+    id: 2,
+    icon: '💪',
     title: 'Assassination',
     focus: 'AGI, REA',
     description: 'One target. No witnesses. No mistakes.',

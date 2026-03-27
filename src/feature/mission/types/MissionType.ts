@@ -32,7 +32,8 @@ type MissionStep = {
 }
 
 type Mission = {
-    id: string;
+    id: number;
+    icon: string;
     title: string;
     focus: string;
     description: string;
@@ -42,7 +43,7 @@ type Mission = {
     steps: MissionStep[];
 }
 
-type MissionType = Pick<Mission, 'id' | 'title' | 'focus' | 'description'>
+type MissionType = Pick<Mission, 'id' | 'icon' | 'title' | 'focus' | 'description'>
 
 type MissionEffect = {
     description: string

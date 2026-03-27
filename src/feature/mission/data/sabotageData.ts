@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const sabotageRun: Mission = {
-    id: '4',
+    id: 4,
+    icon: '🧠',
     title: 'Sabotage',
     focus: 'LOG, INT',
     description: 'Break systems. Cripple operations.',

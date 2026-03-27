@@ -1,7 +1,8 @@
 import { Mission } from "../types/MissionType";
 
 export const extractionRun: Mission = {
-    id: '1',
+    id: 1,
+    icon: '💪',
     title: 'Extraction',
     focus: 'STR, AGI',
     description: 'Get in, grab the asset, get out.',
