@@ -2,6 +2,7 @@ import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
 import { Mode } from '../types/CharacterType'
 import { getCharacterModes } from '../services/CharacterService'
+import React from 'react'
 
 function ModeView() {
     const modes = getCharacterModes()
@@ -29,11 +30,11 @@ function ModeView() {
                         <li key={item.name}>
                             {Object.entries(item.resources).map(
                                 ([resource, value], resourceIndex) => (
-                                    <>
+                                    <React.Fragment key={resourceIndex}>
                                         {resourceIndex >= 1 ? ', ' : ''}
                                         {resource}:{' '}
                                         {resource === 'Nuyen' ? `${value}k` : value}
-                                    </>
+                                    </React.Fragment>
                                 )
                             )}
                         </li>
