@@ -26,14 +26,17 @@ function ModeView() {
                     </strong>
                     
                     <ul className="list-margin">
-                        {Object.entries(item.resources).map(
-                            ([resource, value], resourceIndex) => (
-                                <li key={resourceIndex}>
-                                    {resource}:{' '}
-                                    {resource === 'Nuyen' ? `${value}k` : value}
-                                </li>
-                            )
-                        )}
+                        <li>
+                            {Object.entries(item.resources).map(
+                                ([resource, value], resourceIndex) => (
+                                    <>
+                                        {resourceIndex >= 1 ? ', ' : ''}
+                                        {resource}:{' '}
+                                        {resource === 'Nuyen' ? `${value}k` : value}
+                                    </>
+                                )
+                            )}
+                        </li>
                     </ul>
                 </div>
             ))}
