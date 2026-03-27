@@ -124,8 +124,8 @@ const skylineData: Facility[] = [
             { roll: '7', text: 'No Effect' },
             {
                 roll: '8-9',
-                text: 'Misrouted Credit | +1 Nuyen',
-                resource: { Nuyen: +1 },
+                text: 'Misrouted Credit | +2.000 ¥',
+                resource: { Nuyen: +2 },
             },
             {
                 roll: '10-11',
