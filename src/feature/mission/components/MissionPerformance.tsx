@@ -1,11 +1,11 @@
 import {
     MissionPerformance as MissionPerformanceType,
 } from '../types/MissionType'
-import { getMissionPerformance } from '../data/performanceData'
 import useResourceStore from '@/feature/resource/store/resourceStore'
 import Card from '@/components/Card'
 import { Resources } from '@/feature/character/types/CharacterType'
 import Arrow from '@/components/Arrow'
+import { getMissionPerformance } from '../services/PerformanceService'
 
 type Props = {
     successes: number

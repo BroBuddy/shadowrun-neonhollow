@@ -1,13 +1,13 @@
 import { MissionPerformance as MissionPerformancesType } from '../types/MissionType'
 
-const MissionPerformance: MissionPerformancesType[] = [
+export const MissionPerformance: MissionPerformancesType[] = [
     {
         id: 1,
         title: '🔴 0 Successes',
         level: 'Fragged',
         resources: {
-            Noto: +1,
-            Nuyen: +5,
+            Nuyen: +4,
+            Noto: +2,
         },
     },
     {
@@ -15,8 +15,8 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟠 1-2 Successes',
         level: 'Drek',
         resources: {
+            Nuyen: +8,
             Noto: +1,
-            Nuyen: +10,
         },
     },
     {
@@ -24,7 +24,8 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟡 3 Successes',
         level: 'Standard',
         resources: {
-            Nuyen: +15,
+            Nuyen: +12,
+            Karma: +1,
         },
     },
     {
@@ -32,7 +33,8 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🟢 4-5 Successes',
         level: 'Solid',
         resources: {
-            Nuyen: +20,
+            Nuyen: +16,
+            Karma: +1,
             Progress: +1,
         },
     },
@@ -41,15 +43,10 @@ const MissionPerformance: MissionPerformancesType[] = [
         title: '🔵 6 Successes',
         level: 'Terminal',
         resources: {
-            Nuyen: +25,
+            Nuyen: +20,
+            Karma: +2,
             Progress: +1,
             Edge: +1,
         },
     },
 ]
-
-const getMissionPerformance = (): MissionPerformancesType[] => {
-    return MissionPerformance
-}
-
-export { getMissionPerformance }
