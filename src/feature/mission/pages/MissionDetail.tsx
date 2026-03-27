@@ -12,7 +12,7 @@ const rollD6 = () => Math.floor(Math.random() * 6) + 1
 
 function MissionDetail() {
     const { id } = useParams()
-    const mission = useMemo(() => getMissionById(id as string), [id])
+    const mission = useMemo(() => getMissionById(Number(id)), [id])
 
     const preRolledSteps = useMemo<StepState[]>(() => {
         return mission.steps.map((step) => {
