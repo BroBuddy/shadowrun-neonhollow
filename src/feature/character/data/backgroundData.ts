@@ -5,7 +5,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '11',
         title: 'Ex-Corp Mercenary',
         description:
-            "Once a top-tier mercenary in a megacorp's elite security division, you were betrayed during a covert operation and discarded. Now, you're a lone warrior in the shadows of the city, seeking vengeance and a purpose beyond corporate greed.",
+            'You were top tier corporate muscle until they burned you on a black op. Now you run the shadows alone, hunting payback and something worth fighting for.',
         attributes: {
             Strength: 1,
             Charisma: -1,
@@ -15,7 +15,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '12',
         title: 'Nomadic Fighter',
         description:
-            'Growing up on the streets, you were forced to fight in illegal arenas to survive. The constant need for combat honed your reflexes and made you cold, calculating, and ruthless. Though you excel at combat, you find it hard to trust anyone.',
+            'You grew up swinging fists in illegal arenas just to eat. The streets made you fast, cold and ruthless. Trust is a luxury you never learned to afford.',
         attributes: {
             Strength: 1,
             Logic: -1,
@@ -25,7 +25,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '13',
         title: 'Street Protector',
         description:
-            'You took a vow to protect the weak after witnessing the horrors of unchecked corporate power. Operating as a vigilante, you combine your combat prowess with a sense of justice. However, your single-minded pursuit of your mission has made you somewhat disconnected from the social fabric of the city.',
+            'You saw what corps do to the weak and swore it would stop with you. A vigilante with a code, but that tunnel vision has cost you more than a few friends.',
         attributes: {
             Reaction: 1,
             Charisma: -1,
@@ -35,7 +35,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '14',
         title: 'Cybernetic Rebel',
         description:
-            "Having undergone extreme cybernetic enhancements to survive the harsh world, you're a walking weapon. While your cyberware gives you superior combat abilities, it's also a constant reminder of your dependence on technology, leading to a sense of detachment from humanity.",
+            'You chrome up to survive and now you are more machine than meat. Superior in a fight, but somewhere along the way you lost the thread back to humanity.',
         attributes: {
             Agility: 1,
             Intuition: -1,
@@ -45,7 +45,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '15',
         title: "Bounty Hunter's Legacy",
         description:
-            'Following in the footsteps of a legendary bounty hunter, you were trained in the art of tracking and eliminating targets. Now, you carry the weight of that legacy, striving to live up to the Edge your mentor left behind. Your focused nature often leads you to overlook more subtle aspects of situations.',
+            'Your mentor was a legend. You trained under them, carried on the work and now carry the weight. Laser focused on the target, blind to everything else.',
         attributes: {
             Strength: 1,
             Intuition: -1,
@@ -55,7 +55,7 @@ const backgroundStreetSamurai: readonly Background[] = [
         id: '16',
         title: 'Corporate Test Subject',
         description:
-            "Your cybernetic enhancements were once part of a corporate experimentation project. Now, you're a product of their greed and manipulation. Though you're a formidable fighter, your distrust of corporations and technology runs deep, leaving you isolated from others.",
+            'They wired you up, ran their tests and tossed you out. You survived their experiments and became something they never intended. Hard to fight, harder to trust.',
         attributes: {
             Reaction: 1,
             Logic: -1,
@@ -68,7 +68,7 @@ const backgroundDecker: readonly Background[] = [
         id: '21',
         title: 'Corporate Insider',
         description:
-            'You once worked as a lead developer for a powerful megacorp, creating cutting-edge software. But when the corporation betrayed you, you took your knowledge and skills to the shadows, selling secrets to the highest bidder.',
+            'You built their systems from the inside. When they stabbed you in the back, you walked out with every secret they had. Now you sell to the highest bidder.',
         attributes: {
             Logic: 1,
             Strength: -1,
@@ -78,7 +78,7 @@ const backgroundDecker: readonly Background[] = [
         id: '22',
         title: 'Black Hat Hacker',
         description:
-            'A notorious figure in the underground world of hacking, you specialize in infiltrating high-security systems and exposing corporate corruption. Your expertise in coding and bypassing digital defenses is unmatched, but your rebellious nature makes it difficult for you to work with authority.',
+            'You crack corporate ice for sport and profit. Your rep in the underground is solid, but authority of any kind makes your trigger finger itch.',
         attributes: {
             Logic: 1,
             Charisma: -1,
@@ -88,7 +88,7 @@ const backgroundDecker: readonly Background[] = [
         id: '23',
         title: 'Tech Salvager',
         description:
-            "You grew up scavenging old tech and learning how to repair, reprogram, and repurpose it. Now, you're a master at breaking into digital systems, reworking old security protocols, and stealing valuable data from the ruins of the past.",
+            'You learned code by ripping apart dead tech in the gutter. Old security protocols have no secrets from you, and neither does anything else people throw away.',
         attributes: {
             Logic: 1,
             Reaction: -1,
@@ -98,7 +98,7 @@ const backgroundDecker: readonly Background[] = [
         id: '24',
         title: 'Digital Ghost',
         description:
-            "After years of living off the grid, you became an expert in digital anonymity. No one can trace you through the networks, and you're a ghost in the system. However, this lifestyle has left you disconnected from the physical world, and you're not great at face-to-face interactions.",
+            'You do not exist on any network and that is exactly how you like it. A phantom in the system, but face to face you are about as smooth as broken glass.',
         attributes: {
             Intuition: 1,
             Charisma: -1,
@@ -108,7 +108,7 @@ const backgroundDecker: readonly Background[] = [
         id: '25',
         title: 'Data Smuggler',
         description:
-            'You specialize in transporting sensitive data across dangerous virtual and physical territories. Your knowledge of digital security and evasive tactics is unrivaled, but your constant dealings with shady individuals make it hard to trust anyone in your line of work.',
+            'Hot data moves through you like contraband through a border town. You know every digital back alley, but the people you work with are never quite trustworthy.',
         attributes: {
             Logic: 1,
             Intuition: -1,
@@ -118,7 +118,7 @@ const backgroundDecker: readonly Background[] = [
         id: '26',
         title: 'Cyber Detective',
         description:
-            'Once a private investigator, you now solve cases by delving deep into the digital world. With a sharp eye for detail and a mastery of investigative software, you dig into the dark corners of the internet, finding information others would never dream of.',
+            'You traded the trenchcoat for a deck and never looked back. Sharp eyes, sharper instincts and a talent for finding dirt people buried deep.',
         attributes: {
             Intuition: 1,
             Strength: -1,
@@ -131,7 +131,7 @@ const backgroundRigger: readonly Background[] = [
         id: '31',
         title: 'Mechanic Prodigy',
         description:
-            'Growing up around machines and drones, you quickly became a master at understanding their inner workings. From tinkering with simple tools to controlling sophisticated machinery, you`ve honed your skills and now use them to command a fleet of drones, making your living as a freelancer.',
+            'Machines made more sense to you than people ever did. You freelance your drone fleet to anyone who pays and you rarely need to say a word to get the job done.',
         attributes: {
             Agility: 1,
             Charisma: -1,
@@ -141,7 +141,7 @@ const backgroundRigger: readonly Background[] = [
         id: '32',
         title: 'Ex-Military Pilot',
         description:
-            'Once part of a special forces team, you were trained to command advanced drones in combat situations. After leaving the military, you took your skills to the streets, offering your drone expertise to those who need precision and power on their missions. However, your military discipline can sometimes make you seem distant and cold.',
+            'Special forces trained you to run drones in hot zones. Civilian life never quite stuck, so you brought the skills to the shadows. Cold, precise and effective.',
         attributes: {
             Reaction: 1,
             Charisma: -1,
@@ -151,7 +151,7 @@ const backgroundRigger: readonly Background[] = [
         id: '33',
         title: 'Drone Junkie',
         description:
-            'Your obsession with drones started early, spending hours disassembling and reassembling them until you perfected the craft. You`re now a Rigger with an unholy bond to your drones, spending more time with them than with actual people. This obsession has given you unparalleled control, but it has also distanced you from the rest of humanity.',
+            'Your drones are your family. You sleep with them, think about them and would rather jack in than talk to a real person. Unmatched control, zero social graces.',
         attributes: {
             Reaction: 1,
             Strength: -1,
@@ -161,7 +161,7 @@ const backgroundRigger: readonly Background[] = [
         id: '34',
         title: 'Street Mechanic',
         description:
-            'Working on vehicles and drones in the streets, you have a Edge for fixing anything that`s broken. Your hands-on knowledge makes you an invaluable asset when things go wrong. While you`re a genius with machines, your lack of formal training means you sometimes miss the finer details of more complicated systems.',
+            'You can fix anything with duct tape and spite. Hands on, street smart and invaluable when things break down. Just do not ask you to read the manual.',
         attributes: {
             Agility: 1,
             Logic: -1,
@@ -171,7 +171,7 @@ const backgroundRigger: readonly Background[] = [
         id: '35',
         title: 'Corporate Test Pilot',
         description:
-            'Once employed by a megacorp to test new drones and vehicles, you were the first to push the limits of experimental tech. After an accident during a test flight, you were let go, but now you use your expertise to freelance. Your inside knowledge makes you a dangerous asset, but it also leaves you haunted by past failures.',
+            'You pushed experimental rigs to the limit until one of them pushed back. The corp cut you loose. Now you freelance with scars and inside knowledge they wish you did not have.',
         attributes: {
             Intuition: 1,
             Logic: -1,
@@ -181,7 +181,7 @@ const backgroundRigger: readonly Background[] = [
         id: '36',
         title: 'Tech Scavenger',
         description:
-            'You`ve spent years scavenging for parts, taking what you can from abandoned tech and making it your own. This DIY approach to Rigger work means you`re always improvising, sometimes putting together drones from mismatched parts. Your unconventional methods make you unpredictable, but also highly resourceful.',
+            'You build your rigs from whatever you can find and somehow they always fly. Improvised, unpredictable and surprisingly effective. Corporate engineers hate you.',
         attributes: {
             Agility: 1,
             Intuition: -1,
@@ -194,7 +194,7 @@ const backgroundMage: readonly Background[] = [
         id: '41',
         title: 'Arcane Scholar',
         description:
-            'Once a student of ancient magical texts, you immersed yourself in the arcane arts, learning the hidden secrets of the mystical world. Your knowledge is vast, but sometimes your focus on theory leaves you unprepared for practical use in the field.',
+            'You have read every text, cracked every theory and know more about magic than most mages twice your age. Getting it to work under fire is another story.',
         attributes: {
             Logic: 1,
             Strength: -1,
@@ -204,7 +204,7 @@ const backgroundMage: readonly Background[] = [
         id: '42',
         title: 'Street Shaman',
         description:
-            'Raised in the slums, you learned magic not from books, but from the spirits that roam the streets. Your connection to the metaphysical world is raw and untamed, but your skills in magic can be unpredictable, especially when you push too far.',
+            'No academy, no mentor. You learned magic from the spirits haunting your block. Raw, unpredictable and powerful, but sometimes way too powerful to control.',
         attributes: {
             Intuition: 1,
             Charisma: -1,
@@ -214,7 +214,7 @@ const backgroundMage: readonly Background[] = [
         id: '43',
         title: 'Corporate Magician',
         description:
-            'Once you worked for a powerful megacorp, using your magical abilities to assist in corporate espionage, security, and psychological manipulation. But when the corp turned its back on you, you found yourself on the streets. Now, you use your magical expertise for personal gain, though you still feel the weight of the betrayal.',
+            'You ran espionage and psyops for a megacorp until they burned you. Now the magic works for you and the betrayal keeps you sharp.',
         attributes: {
             Charisma: 1,
             Intuition: -1,
@@ -224,7 +224,7 @@ const backgroundMage: readonly Background[] = [
         id: '44',
         title: 'Occult Investigator',
         description:
-            'You started your career investigating the paranormal, using magic to unravel mysteries that others couldn`t. Your sharp mind and connection to the supernatural world have made you a sought-after consultant, though sometimes your investigations reveal more than you bargained for.',
+            'You dig into the paranormal and the astral leaves trails others cannot see. Sought after for the hard cases, but sometimes what you uncover cannot be unlearned.',
         attributes: {
             Intuition: 1,
             Reaction: -1,
@@ -234,7 +234,7 @@ const backgroundMage: readonly Background[] = [
         id: '45',
         title: 'Spellbound Outlaw',
         description:
-            'Once a fugitive from the law, you turned to magic to stay one step ahead of the authorities. Your rogue nature and magical prowess make you a formidable force, but your tendency to operate outside the law often leads to dangerous consequences.',
+            'Magic kept you a step ahead of the law for years. You run outside every system and like it that way, even when it puts a target on your back.',
         attributes: {
             Charisma: 1,
             Logic: -1,
@@ -244,7 +244,7 @@ const backgroundMage: readonly Background[] = [
         id: '46',
         title: 'Mystic Healer',
         description:
-            'Focused on using your magical abilities to heal and protect others, you’ve developed a deep empathy for those in need. You’ve used your powers to mend the sick and wounded, but sometimes your compassion leads you to put others before yourself, putting you at a disadvantage.',
+            'You patch up the wounded with spells where medicine fails. Your empathy runs deep, maybe too deep. You put everyone else first and yourself last.',
         attributes: {
             Logic: 1,
             Strength: -1,
@@ -257,7 +257,7 @@ const backgroundFace: readonly Background[] = [
         id: '51',
         title: 'Corporate Negotiator',
         description:
-            "You were once the corporate mouthpiece for a powerful megacorp, using your charm and persuasion to broker deals, smooth over conflicts, and handle difficult clients. Now that you're out of the corporate world, your skills still serve you well, but you’re haunted by the corporate lies and betrayals you helped cover up.",
+            'You brokered deals and buried scandals for a megacorp until the lies got too heavy. The charm still works. The guilt is just background noise now.',
         attributes: {
             Charisma: 1,
             Strength: -1,
@@ -267,7 +267,7 @@ const backgroundFace: readonly Background[] = [
         id: '52',
         title: 'Street Hustler',
         description:
-            'Growing up in the underbelly of the city, you learned to talk your way out of trouble and manipulate those around you. Your ability to charm, deceive, and bargain makes you a force to be reckoned with, but your street-smart ways sometimes clash with more refined methods of negotiation.',
+            'You talked your way out of everything the streets threw at you. Silver tongue, quick hands and zero patience for anyone who plays it straight.',
         attributes: {
             Charisma: 1,
             Logic: -1,
@@ -277,7 +277,7 @@ const backgroundFace: readonly Background[] = [
         id: '53',
         title: 'Public Relations Specialist',
         description:
-            'You’ve spent your career crafting public personas and smoothing over scandals. People believe in the image you create, and that has earned you connections and influence. However, constantly living behind a facade makes you sometimes forget who you truly are and what you believe in.',
+            'You built images, killed stories and made people believe anything. Powerful connections, but after years behind a mask you are not sure who you are without one.',
         attributes: {
             Charisma: 1,
             Intuition: -1,
@@ -287,7 +287,7 @@ const backgroundFace: readonly Background[] = [
         id: '54',
         title: 'Smooth-Talking Fixer',
         description:
-            "You specialize in getting things done by using your charisma and your extensive network of contacts. Whether you're pulling strings for the rich and powerful or making shady deals on the side, your ability to talk your way through almost any situation is unmatched. However, your reliance on your charm means you might lack the physical abilities to back up your words.",
+            'You pull strings, broker favors and talk circles around everyone in the room. Words do the heavy lifting. Good thing, because your fists do not.',
         attributes: {
             Charisma: 1,
             Strength: -1,
@@ -297,7 +297,7 @@ const backgroundFace: readonly Background[] = [
         id: '55',
         title: 'Political Operator',
         description:
-            'With a background in politics, you know how to work the system, leverage power, and gain influence. Your experience in the political arena has taught you how to navigate complex social dynamics, but the constant scheming can sometimes leave you isolated and distrusted by others.',
+            'You know how power moves and how to move with it. A master of social chess, but the constant scheming has made people wary of you and with good reason.',
         attributes: {
             Charisma: 1,
             Reaction: -1,
@@ -307,7 +307,7 @@ const backgroundFace: readonly Background[] = [
         id: '56',
         title: 'Media Manipulator',
         description:
-            'Your past in the media industry has given you a deep understanding of how to control public perception. You can make people believe almost anything, but your focus on shaping reality through words sometimes causes you to overlook the raw, unvarnished truth.',
+            'You shaped public reality for a living. People believe what you want them to believe. Just do not ask you to tell you what is actually true anymore.',
         attributes: {
             Charisma: 1,
             Intuition: -1,
@@ -320,7 +320,7 @@ const backgroundShaman: readonly Background[] = [
         id: '61',
         title: 'Urban Spirit Whisperer',
         description:
-            'You’ve spent years in the cities, learning to commune with the spirits that haunt the streets and alleyways. You’ve forged strong bonds with urban entities and have learned how to tap into their power for guidance and protection. However, the constant exposure to the restless spirits sometimes clouds your own judgment.',
+            'The city is alive with spirits and you speak their language. Street entities trust you more than most people do. Their voices are constant and sometimes too loud.',
         attributes: {
             Intuition: 1,
             Charisma: -1,
@@ -330,7 +330,7 @@ const backgroundShaman: readonly Background[] = [
         id: '62',
         title: 'Wilderness Mystic',
         description:
-            'Raised deep in the wilds, you learned the ancient ways of nature and the spirits that dwell within it. Whether meditating beneath the trees or speaking to the winds, you are deeply connected to the forces of the natural world. But this connection sometimes makes it hard for you to adapt to urban life.',
+            'You were raised by the wild and the spirits that live in it. Deep connection to nature, but the concrete jungle still feels like foreign territory.',
         attributes: {
             Intuition: 1,
             Logic: -1,
@@ -340,7 +340,7 @@ const backgroundShaman: readonly Background[] = [
         id: '63',
         title: 'Ritualistic Shaman',
         description:
-            'Your life has been shaped by ancient rituals and spiritual ceremonies, drawing on the power of the earth and the astral realm. Through your elaborate ceremonies, you channel powerful spirits, but your reliance on ritual can make it difficult to think on your feet in more modern situations.',
+            'Ceremony and ritual are how you channel real power. Ancient and precise, but when things move fast and there is no time to prepare you tend to fall behind.',
         attributes: {
             Intuition: 1,
             Strength: -1,
@@ -350,7 +350,7 @@ const backgroundShaman: readonly Background[] = [
         id: '64',
         title: 'Shamanic Healer',
         description:
-            'Your connection to the spirits has allowed you to tap into their power to heal and protect others. You’ve saved countless lives with your spiritual abilities, but your dedication to others sometimes means you neglect your own well-being or personal growth.',
+            'Spirits guide your hands and you have pulled people back from the edge more than once. You give everything to others and rarely leave anything for yourself.',
         attributes: {
             Intuition: 1,
             Reaction: -1,
@@ -360,7 +360,7 @@ const backgroundShaman: readonly Background[] = [
         id: '65',
         title: 'Totemic Shaman',
         description:
-            'With a deep reverence for animal spirits and totemic power, you’ve bonded with creatures of the wild to gain their strength.',
+            'You bonded with animal spirits and carry their strength. Fierce, instinctive and loyal to your totem above all else, even when it complicates things.',
         attributes: {
             Intuition: 1,
             Charisma: -1,
@@ -370,7 +370,7 @@ const backgroundShaman: readonly Background[] = [
         id: '66',
         title: 'Astrological Shaman',
         description:
-            'You’ve long studied the stars and celestial forces, interpreting their movements to guide your decisions. Your spiritual connection to the cosmos allows you to read signs and foresee events, but your reliance on fate and cosmic wisdom sometimes makes you slow to act in the face of immediate challenges.',
+            'The stars tell you things others cannot hear. Cosmic patterns guide your path, but when the moment demands fast action the stars are not always quick to answer.',
         attributes: {
             Intuition: 1,
             Agility: -1,

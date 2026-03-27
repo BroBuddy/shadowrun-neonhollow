@@ -5,7 +5,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 1,
         title: 'Street Samurai',
         description:
-            'A master of combat, both physical and ranged. Often a hired gun or mercenary, the Street Samurai relies on strength and agility to survive in the harsh world of the shadows.',
+            'Chrome and muscle, that is all you need. The Street Sam is a blade in the dark, a mercenary of the old school. Shoot, hit, survive.',
         attributes: {
             Strength: 1,
             Agility: 1,
@@ -15,7 +15,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 2,
         title: 'Decker',
         description:
-            "The digital cowboy. A Decker navigates the Matrix, hacking and controlling systems with a mix of tech skills and speed. They're often the go-to for gathering information or manipulating digital environments.",
+            'Ghost in the machine. While others run and gun, the Decker dances through the Matrix. Hacks systems, steals data, wipes traces.',
         attributes: {
             Reaction: 1,
             Logic: 1,
@@ -25,7 +25,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 3,
         title: 'Rigger',
         description:
-            'Riggers specialize in controlling drones, vehicles, and machinery. Their physical prowess allows them to take charge of mechanical and robotic assets, making them versatile in combat and exploration.',
+            'Eyes everywhere, hands in everything. The Rigger is merged with drones and vehicles. His mind flies, drives and fights all at once.',
         attributes: {
             Agility: 1,
             Logic: 1,
@@ -35,7 +35,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 4,
         title: 'Mage',
         description:
-            'The wielder of magical powers. Mages use their abilities to manipulate the elements, enchant objects, and protect themselves from harm. They rely heavily on their mental attributes to tap into their magical forces.',
+            'Magic is power and the Mage knows it. He bends reality, hurls spells and laughs at your bulletproof vest. The astral plane is his turf.',
         attributes: {
             Intuition: 1,
             Charisma: 1,
@@ -45,7 +45,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 5,
         title: 'Face',
         description:
-            'The social expert, often the face of the team. Faces specialize in negotiations, deception, and influence. They rely on charisma to manipulate others and can charm or intimidate their way through various situations.',
+            'Words are his weapon. The Face talks his way in, out and through. Corp lobby or underworld bar, he owns every room. Charm or threat, he chooses.',
         attributes: {
             Reaction: 1,
             Charisma: 1,
@@ -55,7 +55,7 @@ export const archetypeData: readonly Archetype[] = [
         id: 6,
         title: 'Shaman',
         description:
-            "A spiritual leader and practitioner of magic. Shamans are deeply connected to the natural world and communicate with spirits to enhance their abilities. They're more attuned to nature and can summon and control spirits.",
+            'The spirits listen to him. The Shaman walks between worlds, calls on ancient powers and sets them loose. Nature and magic rolled into one.',
         attributes: {
             Strength: 1,
             Intuition: 1,
