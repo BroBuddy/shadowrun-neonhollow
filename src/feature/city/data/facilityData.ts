@@ -2,7 +2,6 @@ import { Facility } from '../types/FacilityType'
 
 const skylineData: Facility[] = [
         {
-        id: 1,
         tag: 'megacorp',
         title: 'MegaCorp',
         description:
@@ -10,7 +9,8 @@ const skylineData: Facility[] = [
         rollList: [],
         actionList: [
             {
-                title: '🚷 Spark Rebellion:',
+                icon: '🔥',
+                title: 'Incite Revolt',
                 steps: [
                     {
                         text: 'Spend 3 Edge',
@@ -23,7 +23,8 @@ const skylineData: Facility[] = [
                 ],
             },
             {
-                title: '📢 Run Propaganda:',
+                icon: '📢',
+                title: 'Run Propaganda',
                 steps: [
                     {
                         text: 'Pay 20.000 ¥',
@@ -38,7 +39,6 @@ const skylineData: Facility[] = [
         ],
     },
     {
-        id: 2,
         tag: 'cyberlab',
         title: 'CyberLab',
         description:
@@ -66,38 +66,153 @@ const skylineData: Facility[] = [
                 text: 'Major Break | +1 Karma',
                 resource: { Karma: +1 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '81' },
+            {
+                roll: '12',
+                text: 'System Exploit | +1 Edge',
+                resource: { Edge: +1 },
+            }
         ],
         actionList: [
             {
-                title: '⭐ Memory Extraction:',
+                icon: '🔋',
+                title: 'Mind Link',
                 steps: [
-                    {
-                        text: 'Spend 3 Health',
-                        resource: { Health: -3 },
-                    },
-                    { text: '2d6 + LOG/INT + 2' },
-                    { text: 'Gain Karma', tag: 'karma' },
-                ],
-            },
-            {
-                title: '🔋 Neural Sync Boost:',
-                steps: [
-                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: '2d6 + LOG/CHA' },
+                    { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
+                    { text: '2d6 + INT/STR + 3' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
             {
-                title: '🧠 Logic Refinement:',
+                icon: '⭐',
+                title: 'Data Rip',
                 steps: [
-                    { text: 'Logic', tag: 'attribute' },
+                    {
+                        text: 'Spend 4 Energy',
+                        resource: { Energy: -4 },
+                    },
+                    { text: '2d6 + INT/AGI + 3' },
+                    { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
         ],
     },
     {
-        id: 3,
+        tag: 'quantumvault',
+        title: 'QuantumVault',
+        description:
+            'A high-security corporate bank where digital wealth flows faster than the neon lights. Data vaults hum with encrypted secrets.',
+        rollList: [
+            { roll: '2', text: 'Security Lockdown', id: '92' },
+            {
+                roll: '3-4',
+                text: 'Locked Circuit | +1 Noto',
+                resource: { Noto: +1 },
+            },
+            {
+                roll: '5-6',
+                text: 'Circuit Feedback | -1 Energy',
+                resource: { Energy: -1 },
+            },
+            { roll: '7', text: 'No Effect' },
+            {
+                roll: '8-9',
+                text: 'Misrouted Credit | +1 Nuyen',
+                resource: { Nuyen: +1 },
+            },
+            {
+                roll: '10-11',
+                text: 'Exploit Discovery | +1 Karma',
+                resource: { Karma: +1 },
+            },
+            {
+                roll: '12',
+                text: 'Encrypted Backdoor | +1 Edge',
+                resource: { Edge: +1 },
+            }
+        ],
+        actionList: [
+            {
+                icon: '🔋',
+                title: 'Vault Breach',
+                steps: [
+                    { text: 'Gain 3 Noto', resource: { Noto: 3 } },
+                    { text: '2d6 + CHA/LOG + 3' },
+                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                ],
+            },
+            {
+                icon: '⭐',
+                title: 'Pay the Snitch',
+                steps: [
+                    {
+                        text: 'Pay 8.000 ¥',
+                        resource: { Nuyen: -8 },
+                    },
+                    { text: '2d6 + CHA/REA + 3' },
+                    { text: 'Gain Karma', tag: 'karma' },
+                ],
+            },
+        ],
+    },
+]
+
+const centralData: Facility[] = [
+    {
+        tag: 'securityhub',
+        title: 'SecurityHub',
+        description:
+            'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
+        rollList: [
+            { roll: '2', text: 'Security Check', id: '72' },
+            {
+                roll: '3-4',
+                text: 'Security Breach | +1 Noto',
+                resource: { Noto: +1 },
+            },
+            { roll: '5-6', text: 'Blamed | -1 Edge', resource: { Edge: -1 } },
+            { roll: '7', text: 'No Effect' },
+            {
+                roll: '8-9',
+                text: 'Backup Support | +1 Energy',
+                resource: { Energy: +1 },
+            },
+            {
+                roll: '10-11',
+                text: 'Familiar Face | -1 Noto',
+                resource: { Noto: -1 },
+            },
+            { roll: '12', text: 'Access Granted | +1 Edge',
+                resource: { Edge: +1 }, },
+        ],
+        actionList: [
+            {
+                icon: '💰',
+                title: 'Track Target',
+                steps: [
+                    { text: 'Spend 2 Health', resource: { Health: -2 } },
+                    { text: '2d6 + AGI/REA + 2' },
+                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                ],
+            },
+            {
+                icon: '👁️',
+                title: 'Pay Off Informant',
+                steps: [
+                    { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
+                    { text: '2d6 + AGI/LOG + 2' },
+                    { text: 'Reduce Noto', tag: 'noto' },
+                ],
+            },
+            {
+                icon: '💪',
+                title: 'Agility Recalibration',
+                steps: [
+                    { text: 'Agility', tag: 'attribute' },
+                ],
+            },
+        ],
+    },
+    {
         tag: 'vitalclinic',
         title: 'VitalClinic',
         description:
@@ -129,136 +244,33 @@ const skylineData: Facility[] = [
         ],
         actionList: [
             {
-                title: '❤️ Nano Restoration:',
+                icon: '❤️',
+                title: 'Nano Heal',
                 steps: [
-                    { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: '2d6 + STR/AGI + 2' },
+                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
+                    { text: '2d6 + REA/STR + 2' },
                     { text: 'Gain Health', tag: 'health' },
                 ],
             },
             {
-                title: '💰 Donate Plasma:',
+                icon: '💰',
+                title: 'Life Tap',
                 steps: [
-                    { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: '2d6 + AGI/REA' },
+                    { text: 'Spend 3 Health', resource: { Health: -3 } },
+                    { text: '2d6 + REA/INT + 2' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '💪 Agility Recalibration:',
+                icon: '💪',
+                title: 'Reaction Sharpening',
                 steps: [
-                    { text: 'Agility', tag: 'attribute' },
-                ],
-            },
-        ],
-    },
-]
-
-const centralData: Facility[] = [
-    {
-        id: 4,
-        tag: 'securityhub',
-        title: 'SecurityHub',
-        description:
-            'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
-        rollList: [
-            { roll: '2', text: 'Security Check', id: '72' },
-            {
-                roll: '3-4',
-                text: 'Security Breach | +1 Noto',
-                resource: { Noto: +1 },
-            },
-            { roll: '5-6', text: 'Blamed | -1 Edge', resource: { Edge: -1 } },
-            { roll: '7', text: 'No Effect' },
-            {
-                roll: '8-9',
-                text: 'Backup Support | +1 Energy',
-                resource: { Energy: +1 },
-            },
-            {
-                roll: '10-11',
-                text: 'Familiar Face | -1 Noto',
-                resource: { Noto: -1 },
-            },
-            { roll: '12', text: 'Access Granted | +1 Edge' },
-        ],
-        actionList: [
-            {
-                title: '👁️ Quiet Bribe:',
-                steps: [
-                    { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: '2d6 + STR/CHA + 2' },
-                    { text: 'Reduce Noto', tag: 'noto' },
-                ],
-            },
-            {
-                title: '💰 Bounty Pursuit:',
-                steps: [
-                    { text: 'Spend 3 Energy', resource: { Energy: -3 } },
-                    { text: '2d6 + STR/INT + 2' },
-                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                    { text: 'Reaction', tag: 'attribute' },
                 ],
             },
         ],
     },
     {
-        id: 5,
-        tag: 'pulsebar',
-        title: 'PulseBar',
-        description:
-            'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
-        rollList: [
-            { roll: '2', text: 'The Whisper Network', id: '76' },
-            {
-                roll: '3-4',
-                text: 'Drunk and Disorderly | +1 Noto',
-                resource: { Noto: +1 },
-            },
-            {
-                roll: '5-6',
-                text: 'Toxic Cocktail | -1 Health',
-                resource: { Health: -1 },
-            },
-            { roll: '7', text: 'No Effect' },
-            {
-                roll: '8-9',
-                text: 'Nutritious Snack | +1 Energy',
-                resource: { Energy: +1 },
-            },
-            {
-                roll: '10-11',
-                text: 'Winning Bet | +2.000 ¥',
-                resource: { Nuyen: +2 },
-            },
-            { roll: '12', text: 'Mysterious Runner', id: '86' },
-        ],
-        actionList: [
-            {
-                title: '💰 Gambling Table:',
-                steps: [
-                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
-                    { text: '2d6 + REA/CHA' },
-                    { text: 'Gain Nuyen', tag: 'nuyen' },
-                ],
-            },
-            {
-                title: '⭐ Shadow Network:',
-                steps: [
-                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: '2d6 + INT/CHA' },
-                    { text: 'Gain Karma', tag: 'karma' },
-                ],
-            },
-            {
-                title: '🧠 Charisma Negotiation:',
-                steps: [
-                    { text: 'Charisma', tag: 'attribute' },
-                ],
-            },
-        ],
-    },
-    {
-        id: 6,
         tag: 'dreamhaven',
         title: 'DreamHaven',
         description:
@@ -290,25 +302,28 @@ const centralData: Facility[] = [
         ],
         actionList: [
             {
-                title: '🔋 Energetic Reboot:',
+                icon: '🔋',
+                title: 'Mind Recharge',
                 steps: [
-                    { text: 'Pay 6.000 ¥', resource: { Nuyen: -6 } },
-                    { text: '2d6 + REA/INT + 2' },
+                    { text: 'Gain 2 Noto', resource: { Noto: 2 } },
+                    { text: '2d6 + LOG/CHA + 2' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
             {
-                title: '💰 Mind Overdrive:',
+                icon: '⭐',
+                title: 'Brain Surge',
                 steps: [
-                    { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: '2d6 + LOG/INT' },
-                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
+                    { text: '2d6 + LOG/AGI + 2' },
+                    { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
             {
-                title: '🧠 Intuition Awareness:',
+                icon: '🧠',
+                title: 'Logic Refinement',
                 steps: [
-                    { text: 'Intuition', tag: 'attribute' },
+                    { text: 'Logic', tag: 'attribute' },
                 ],
             },
         ],
@@ -316,8 +331,65 @@ const centralData: Facility[] = [
 ]
 
 const quarterData: Facility[] = [
+    {
+        tag: 'pulsebar',
+        title: 'PulseBar',
+        description:
+            'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
+        rollList: [
+            { roll: '2', text: 'The Whisper Network', id: '76' },
+            {
+                roll: '3-4',
+                text: 'Drunk and Disorderly | +1 Noto',
+                resource: { Noto: +1 },
+            },
+            {
+                roll: '5-6',
+                text: 'Toxic Cocktail | -1 Health',
+                resource: { Health: -1 },
+            },
+            { roll: '7', text: 'No Effect' },
+            {
+                roll: '8-9',
+                text: 'Nutritious Snack | +1 Energy',
+                resource: { Energy: +1 },
+            },
+            {
+                roll: '10-11',
+                text: 'Winning Bet | +2.000 ¥',
+                resource: { Nuyen: +2 },
+            },
+            { roll: '12', text: 'Mysterious Runner', id: '86' },
+        ],
+        actionList: [
+            {
+                icon: '💰',
+                title: 'High Stakes',
+                steps: [
+                    { text: 'Spend 1 Energy', resource: { Energy: -1 } },
+                    { text: '2d6 + CHA/INT + 1' },
+                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                ],
+            },
+            {
+                icon: '⭐',
+                title: 'Shadow Deal',
+                steps: [
+                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
+                    { text: '2d6 + CHA/LOG + 1' },
+                    { text: 'Gain Karma', tag: 'karma' },
+                ],
+            },
+            {
+                icon: '🧠',
+                title: 'Charisma Networking',
+                steps: [
+                    { text: 'Charisma', tag: 'attribute' },
+                ],
+            },
+        ],
+    },
      {
-        id: 7,
         tag: 'echogarden',
         title: 'EchoGarden',
         description:
@@ -349,31 +421,33 @@ const quarterData: Facility[] = [
         ],
         actionList: [
             {
-                title: '🔋 Vital Rejuvenation:',
+                icon: '🔋',
+                title: 'Holospring Relax',
                 steps: [
-                    { text: 'Spend 1 Health', resource: { Health: -1 } },
-                    { text: '2d6 + AGI/REA - 2' },
+                    { text: 'Pay 2.000 ¥', resource: { Nuyen: -1 } },
+                    { text: '2d6 + INT/LOG + 1' },
                     { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
             {
-                title: '👁️ Meditative Escape:',
+                icon: '👁️',
+                title: 'Meditative Escape',
                 steps: [
-                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: '2d6 + REA/LOG' },
+                    { text: 'Spend 2 Energy', resource: { Energy: -2 } },
+                    { text: '2d6 + INT/REA + 1' },
                     { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },
             {
-                title: '💪 Reaction Sharpening:',
+                icon: '🧠',
+                title: 'Intuition Calibration',
                 steps: [
-                    { text: 'Reaction', tag: 'attribute' },
+                    { text: 'Intuition', tag: 'attribute' },
                 ],
             },
         ],
     },
     {
-        id: 8,
         tag: 'irongym',
         title: 'IronGym',
         description:
@@ -405,84 +479,28 @@ const quarterData: Facility[] = [
         ],
         actionList: [
             {
-                title: '❤️ Massage Therapy:',
+                icon: '❤️',
+                title: 'Rogue Mods',
                 steps: [
-                    { text: 'Pay 4.000 ¥', resource: { Nuyen: -4 } },
-                    { text: '2d6 + STR/REA' },
+                    { text: 'Gain 1 Noto', resource: { Noto: 1 } },
+                    { text: '2d6 + STR/AGI + 1' },
                     { text: 'Gain Health', tag: 'health' },
                 ],
             },
             {
-                title: '💰 Nutritional Experiments:',
+                icon: '💰',
+                title: 'Chem Boost',
                 steps: [
                     { text: 'Spend 2 Health', resource: { Health: -2 } },
-                    { text: '2d6 + STR/AGI' },
+                    { text: '2d6 + STR/CHA + 1' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '💪 Strength Conditioning:',
+                icon: '💪',
+                title: 'Strength Conditioning',
                 steps: [
                     { text: 'Strength', tag: 'attribute' },
-                ],
-            },
-        ],
-    },
-    {
-        id: 9,
-        tag: 'zerozone',
-        title: 'ZeroZone',
-        description:
-            'The epicenter of icy calm and calculated precision—a space where sharp minds outmatch the chaos.',
-        rollList: [
-            { roll: '2', text: 'Old Rival Spotted', id: '80' },
-            {
-                roll: '3-4',
-                text: 'Corrupt Runner | +1 Noto',
-                resource: { Noto: +1 },
-            },
-            {
-                roll: '5-6',
-                text: 'Rough Night | -1 Energy',
-                resource: { Energy: -1 },
-            },
-            { roll: '7', text: 'No Effect' },
-            {
-                roll: '8-9',
-                text: 'Elixir Boost | +1 Health',
-                resource: { Health: +1 },
-            },
-            {
-                roll: '10-11',
-                text: 'Secret Deal | +2.000 ¥',
-                resource: { Nuyen: +2 },
-            },
-            {
-                roll: '12',
-                text: 'Hidden Message | +1 Karma',
-                resource: { Karma: +1 },
-            },
-        ],
-        actionList: [
-            {
-                title: '🤝 Recruit a Runner:',
-                steps: [
-                    { text: 'Random Runner' },
-                    { text: 'Remember The two highest attributes' },
-                    { text: 'Pay 10.000 ¥', resource: { Nuyen: -10 } },
-                    { text: '2d6 + CHA' },
-                    { text: 'Hire Runner', tag: 'runner' },
-                ],
-            },
-            {
-                title: '⚔️ Challenge a Runner:',
-                steps: [
-                    { text: 'Combine Your two highest attributes' },
-                    { text: 'Random Runner' },
-                    { text: 'Add Opponent’s corresponding values' },
-                    { text: 'You lost? | Lose Health equal to the gap' },
-                    { text: 'Add 10 to the gap' },
-                    { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
         ],
@@ -491,63 +509,60 @@ const quarterData: Facility[] = [
 
 const depthsData: Facility[] = [
     {
-        id: 10,
+        tag: 'zerozone',
+        title: 'ZeroZone',
+        description:
+            'The epicenter of icy calm and calculated precision—a space where sharp minds outmatch the chaos.',
+        rollList: [],
+        actionList: [
+            {
+                icon: '❤️',
+                title: 'Jury-Rig',
+                steps: [
+                    { text: 'Pay 0 ¥', resource: { Nuyen: 0 } },
+                    { text: '2d6 + REA/INT' },
+                    { text: 'Gain Health', tag: 'health' },
+                ],
+            },
+            {
+                icon: '💰',
+                title: 'Fight Night',
+                steps: [
+                    { text: 'Spend 1 Health', resource: { Health: -1 } },
+                    { text: '2d6 + REA/STR' },
+                    { text: 'Gain Nuyen', tag: 'nuyen' },
+                ],
+            },
+        ],
+    },
+    {
         tag: 'smugglerden',
         title: 'SmugglerDen',
         description:
             'A shadowy refuge for the bold, where secrets are currency, and fortune favors the daring.',
-        rollList: [
-            { roll: '2', text: 'Smuggler’s Test', id: '78' },
-            {
-                roll: '3-4',
-                text: 'Police Raid | +1 Noto',
-                resource: { Noto: +1 },
-            },
-            {
-                roll: '5-6',
-                text: 'Knife Fight | -1 Health',
-                resource: { Health: -1 },
-            },
-            { roll: '7', text: 'No Effect' },
-            {
-                roll: '8-9',
-                text: 'Discount Promotion | +2.000 ¥',
-                resource: { Nuyen: +2 },
-            },
-            {
-                roll: '10-11',
-                text: 'Thief Caught | +1 Edge',
-                resource: { Edge: +1 },
-            },
-            {
-                roll: '12',
-                text: 'Prestigious Contact | +1 Karma',
-                resource: { Karma: +1 },
-            }
-        ],
+        rollList: [],
         actionList: [
             {
-                title: '💰 Fence Hot Goods:',
+                icon: '💰',
+                title: 'Hot Trade',
                 steps: [
-                    { text: 'Spend 1 Energy', resource: { Energy: -1 } },
-                    { text: '2d6 + AGI/LOG - 2' },
+                    { text: 'Spend 0 Energy', resource: { Energy: 0 } },
+                    { text: '2d6 + AGI/LOG' },
                     { text: 'Gain Nuyen', tag: 'nuyen' },
                 ],
             },
             {
-                title: '⭐ Raid the Stash:',
+                icon: '⭐',
+                title: 'Fake ID',
                 steps: [
-                    { text: 'Spend 1 Health', resource: { Health: -1 } },
-                    {
-                        text: '2d6 + AGI/INT - 2',
-                    },
+                    { text: 'Pay 2.000 ¥', resource: { Nuyen: -1 } },
+                    { text: '2d6 + AGI/CHA', },
                     { text: 'Gain Karma', tag: 'karma' },
                 ],
             },
         ],
     },
     {
-        id: 11,
         tag: 'safehouse',
         title: 'SafeHouse',
         description:
@@ -555,18 +570,20 @@ const depthsData: Facility[] = [
         rollList: [],
         actionList: [
             {
-                title: '❤️ Stimulant Injection:',
+                icon: '❤️',
+                title: 'Stim Shoot',
                 steps: [
-                    { text: 'Spend 1 Energy', resource: { Energy: -1 } },
-                    { text: '2d6 + STR/LOG - 2' },
-                    { text: 'Gain Health', tag: 'health' },
+                    { text: 'Spend 0 Health', resource: { Health: 0 } },
+                    { text: '2d6 + STR/REA' },
+                    { text: 'Gain Energy', tag: 'energy' },
                 ],
             },
             {
-                title: '👁️ False Credentials:',
+                icon: '👁️',
+                title: 'Hide Out',
                 steps: [
-                    { text: 'Pay 2.000 ¥', resource: { Nuyen: -2 } },
-                    { text: '2d6 + AGI/CHA - 2' },
+                    { text: 'Spend 1 Energy', resource: { Energy: -1 } },
+                    { text: '2d6 + STR/LOG' },
                     { text: 'Reduce Noto', tag: 'noto' },
                 ],
             },

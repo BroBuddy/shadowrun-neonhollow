@@ -10,7 +10,10 @@ type ActionItemProps = {
 
 const ActionItem = ({ action }: ActionItemProps) => (
     <div className='mb-4'>
-        <p><strong>{action.title}</strong></p>
+        <p>
+            <span className='mr-1'>{action.icon}</span>
+            <strong>{action.title}:</strong>
+        </p>
         
         <div className="flex flex-wrap items-center gap-1">
             {action.steps.map((step: ActionStepType, stepIndex: number) => (

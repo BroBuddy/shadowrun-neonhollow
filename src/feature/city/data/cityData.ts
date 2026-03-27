@@ -16,8 +16,8 @@ export const cityData: District[] = [
                 link: '/city/cyberlab',
             },
             {
-                name: 'VitalClinic',
-                link: '/city/vitalclinic',
+                name: 'QuantumVault',
+                link: '/city/quantumvault',
             },
         ]
     },
@@ -32,8 +32,8 @@ export const cityData: District[] = [
                 link: '/city/securityhub',
             },
             {
-                name: 'PulseBar',
-                link: '/city/pulsebar',
+                name: 'VitalClinic',
+                link: '/city/vitalclinic',
             },
             {
                 name: 'DreamHaven',
@@ -48,16 +48,16 @@ export const cityData: District[] = [
         icon: '🟡',
         facilities: [
             {
+                name: 'PulseBar',
+                link: '/city/pulsebar',
+            },
+            {
                 name: 'EchoGarden',
                 link: '/city/echogarden',
             },
             {
                 name: 'IronGym',
                 link: '/city/irongym',
-            },
-            {
-                name: 'ZeroZone',
-                link: '/city/zerozone',
             },
         ],
     },
@@ -67,6 +67,10 @@ export const cityData: District[] = [
         noto: 4,
         icon: '🟢',
         facilities: [
+            {
+                name: 'ZeroZone',
+                link: '/city/zerozone',
+            },
             {
                 name: 'SmugglerDen',
                 link: '/city/smugglerden',

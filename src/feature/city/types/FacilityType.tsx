@@ -1,7 +1,6 @@
 import { Resources } from "../../character/types/CharacterType"
 
 type Facility = {
-    id: number
     tag: string
     title: string
     description: string
@@ -17,6 +16,7 @@ type FacilityRoll = {
 }
 
 type FacilityAction = {
+    icon: string
     title: string
     steps: ActionStep[]
 }
