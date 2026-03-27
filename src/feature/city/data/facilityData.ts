@@ -44,7 +44,7 @@ const skylineData: Facility[] = [
         description:
             'The digital heart of NeonHollow, where minds merge with machines and the future pulses in streams of data.',
         rollList: [
-            { roll: '2', text: 'System Anomaly', id: '71' },
+            { roll: '2', text: 'Instinct Disruption (-1 INT)' },
             {
                 roll: '3-4',
                 text: 'Illegal Trial | +1 Noto',
@@ -68,8 +68,7 @@ const skylineData: Facility[] = [
             },
             {
                 roll: '12',
-                text: 'System Exploit | +1 Edge',
-                resource: { Edge: +1 },
+                text: 'Perceptive Awakening (+1 INT)',
             }
         ],
         actionList: [
@@ -102,7 +101,7 @@ const skylineData: Facility[] = [
         description:
             'A high-security corporate bank where digital wealth flows faster than the neon lights. Data vaults hum with encrypted secrets.',
         rollList: [
-            { roll: '2', text: 'Security Lockdown', id: '92' },
+            { roll: '2', text: 'Confidence Drop (-1 CHA)', },
             {
                 roll: '3-4',
                 text: 'Locked Circuit | +1 Noto',
@@ -126,8 +125,7 @@ const skylineData: Facility[] = [
             },
             {
                 roll: '12',
-                text: 'Encrypted Backdoor | +1 Edge',
-                resource: { Edge: +1 },
+                text: 'Magnetic Presence (+1 CHA)',
             }
         ],
         actionList: [
@@ -163,7 +161,7 @@ const centralData: Facility[] = [
         description:
             'The city`s watchful eye, where enforcers gather, drones launch, and order teeters on the edge of chaos.',
         rollList: [
-            { roll: '2', text: 'Security Check', id: '72' },
+            { roll: '2', text: 'Coordination Disruption (-1 AGI)' },
             {
                 roll: '3-4',
                 text: 'Security Breach | +1 Noto',
@@ -181,8 +179,7 @@ const centralData: Facility[] = [
                 text: 'Familiar Face | -1 Noto',
                 resource: { Noto: -1 },
             },
-            { roll: '12', text: 'Access Granted | +1 Edge',
-                resource: { Edge: +1 }, },
+            { roll: '12', text: 'Precision Boost (+1 AGI)', }
         ],
         actionList: [
             {
@@ -218,7 +215,7 @@ const centralData: Facility[] = [
         description:
             'Pioneers of life, healing the city’s wounds and unlocking the secrets of humanity — at a price.',
         rollList: [
-            { roll: '2', text: 'Medical Malfunction', id: '73' },
+            { roll: '2', text: 'Distraction Pulse (-1 REA)', },
             {
                 roll: '3-4',
                 text: 'Defiant Case | +1 Noto',
@@ -240,7 +237,7 @@ const centralData: Facility[] = [
                 text: 'Civic Aid | +1 Edge',
                 resource: { Edge: +1 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '83' },
+            { roll: '12', text: 'Sensory Acceleration (+1 REA)', },
         ],
         actionList: [
             {
@@ -276,7 +273,7 @@ const centralData: Facility[] = [
         description:
             'An immersive realm where fantasies awaken and reality bends under layers of shimmering light.',
         rollList: [
-            { roll: '2', text: 'Dream Glitch', id: '75' },
+            { roll: '2', text: 'Cognitive Fog (-1 LOG)', },
             {
                 roll: '3-4',
                 text: 'Shady Moves | +1 Noto',
@@ -298,7 +295,7 @@ const centralData: Facility[] = [
                 text: 'Social Pulse | +1 Edge',
                 resource: { Edge: +1 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '85' },
+            { roll: '12', text: 'Analytical Breakthrough (+1 LOG)', },
         ],
         actionList: [
             {
@@ -337,7 +334,7 @@ const quarterData: Facility[] = [
         description:
             'The city`s pulse made tangible — a kaleidoscope of holograms, music, and endless possibilities.',
         rollList: [
-            { roll: '2', text: 'The Whisper Network', id: '76' },
+            { roll: '2', text: 'Confidence Drop (-1 CHA)', },
             {
                 roll: '3-4',
                 text: 'Drunk and Disorderly | +1 Noto',
@@ -359,7 +356,10 @@ const quarterData: Facility[] = [
                 text: 'Winning Bet | +2.000 ¥',
                 resource: { Nuyen: +2 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '86' },
+            {
+                roll: '12',
+                text: 'Magnetic Presence (+1 CHA)',
+            }
         ],
         actionList: [
             {
@@ -395,7 +395,7 @@ const quarterData: Facility[] = [
         description:
             'A tranquil haven where whispers of the past bloom into vibrant memories, rooted in neon dreams.',
         rollList: [
-            { roll: '2', text: 'Lost Data', id: '74' },
+            { roll: '2', text: 'Instinct Disruption (-1 INT)' },
             {
                 roll: '3-4',
                 text: 'Plant Harvest | +1 Noto',
@@ -417,7 +417,10 @@ const quarterData: Facility[] = [
                 text: 'Solar Soak | +1 Health',
                 resource: { Health: +1 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '84' },
+            {
+                roll: '12',
+                text: 'Perceptive Awakening (+1 INT)',
+            }
         ],
         actionList: [
             {
@@ -453,7 +456,7 @@ const quarterData: Facility[] = [
         description:
             'Where sweat forges STR, and every clang of metal echoes the determination to rise above.',
         rollList: [
-            { roll: '2', text: 'Unplanned Challenge', id: '77' },
+            { roll: '2', text: 'Muscle Strain (-1 STR)' },
             {
                 roll: '3-4',
                 text: 'Wrong Locker Room | +1 Noto',
@@ -475,7 +478,7 @@ const quarterData: Facility[] = [
                 text: 'Perfect Form | +1 Edge',
                 resource: { Edge: +1 },
             },
-            { roll: '12', text: 'Mysterious Runner', id: '87' },
+            { roll: '12', text: 'Force Amplification (+1 STR)' },
         ],
         actionList: [
             {

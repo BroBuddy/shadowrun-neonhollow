@@ -41,7 +41,7 @@ function MissionPerformance({ successes, total }: Props) {
                             onClick={() => handleModifyResources(item.resources)}
                         >
                             <strong className="highlight">{item.title}</strong>
-                            <Arrow />
+                            <Arrow className='mx-1' />
                             {item.level}
                         </p>
                         
